@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Logs
+logs
+*.log
+
+# Editor
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.*
+!.env.example

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+
+  /* Primary */
+  --color-primary-50: #e8eef5;
+  --color-primary-100: #c2d6e9;
+  --color-primary-200: #8aaed2;
+  --color-primary-300: #5286ba;
+  --color-primary-400: #205fa0;
+  --color-primary-500: #013d6b;
+  --color-primary-600: #013060;
+  --color-primary-700: #012554;
+  --color-primary-800: #011849;
+  --color-primary-900: #010b1d;
+
+  /* Secondary */
+  --color-secondary-50: #faeae9;
+  --color-secondary-100: #f3cac9;
+  --color-secondary-200: #e79d99;
+  --color-secondary-300: #d87068;
+  --color-secondary-400: #c84840;
+  --color-secondary-500: #af4035;
+  --color-secondary-600: #93352b;
+  --color-secondary-700: #762a22;
+  --color-secondary-800: #591f18;
+  --color-secondary-900: #3c140f;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-serif);
+}

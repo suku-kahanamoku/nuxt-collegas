@@ -1,0 +1,16 @@
+{
+  "$": {
+    "theme": {
+      "light": "Switch to light mode",
+      "dark": "Switch to dark mode"
+    },
+    "cs": "cz",
+    "base": {
+      "title": "Collegas",
+      "description": "Collegas"
+    },
+    "navbar": {
+      "home": "Home"
+    }
+  }
+}
