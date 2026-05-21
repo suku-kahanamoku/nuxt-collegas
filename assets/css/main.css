@@ -1,42 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
 @import "tailwindcss";
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: system-ui, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-sans: "Work Sans", system-ui, sans-serif;
+  --font-serif: "Noto Serif", Georgia, serif;
 
-  /* Primary */
-  --color-primary-50: #e8eef5;
-  --color-primary-100: #c2d6e9;
-  --color-primary-200: #8aaed2;
-  --color-primary-300: #5286ba;
-  --color-primary-400: #205fa0;
-  --color-primary-500: #013d6b;
-  --color-primary-600: #013060;
-  --color-primary-700: #012554;
-  --color-primary-800: #011849;
-  --color-primary-900: #010b1d;
+  /* ── Primary – Forest Green (#04291e) ── */
+  --color-primary-50:  #ecf4f0;
+  --color-primary-100: #cce3d8;
+  --color-primary-200: #9fcfba;
+  --color-primary-300: #6eb89a;
+  --color-primary-400: #3da07c;
+  --color-primary-500: #1d8060;
+  --color-primary-600: #12614a;
+  --color-primary-700: #0a4835;
+  --color-primary-800: #053126;
+  --color-primary-900: #04291e;
+  --color-primary-950: #021510;
 
-  /* Secondary */
-  --color-secondary-50: #faeae9;
-  --color-secondary-100: #f3cac9;
-  --color-secondary-200: #e79d99;
-  --color-secondary-300: #d87068;
-  --color-secondary-400: #c84840;
-  --color-secondary-500: #af4035;
-  --color-secondary-600: #93352b;
-  --color-secondary-700: #762a22;
-  --color-secondary-800: #591f18;
-  --color-secondary-900: #3c140f;
+  /* ── Secondary – Gold (#745b26) ── */
+  --color-secondary-50:  #fdf9ee;
+  --color-secondary-100: #f8edcc;
+  --color-secondary-200: #f0d899;
+  --color-secondary-300: #e3c067;
+  --color-secondary-400: #d4a840;
+  --color-secondary-500: #b88930;
+  --color-secondary-600: #9c6f22;
+  --color-secondary-700: #745b26;
+  --color-secondary-800: #5c4520;
+  --color-secondary-900: #3f3018;
+  --color-secondary-950: #261d0e;
+
+  /* ── Neutral / Surface tokens ── */
+  --color-surface:                   #f9f9f9;
+  --color-surface-bright:            #ffffff;
+  --color-surface-dim:               #dadada;
+  --color-surface-container-lowest:  #ffffff;
+  --color-surface-container-low:     #f3f3f3;
+  --color-surface-container:         #eeeeee;
+  --color-surface-container-high:    #e8e8e8;
+  --color-surface-container-highest: #e2e2e2;
+  --color-surface-variant:           #e2e2e2;
+
+  /* ── On-surface ── */
+  --color-on-surface:         #1a1c1c;
+  --color-on-surface-variant: #414845;
+  --color-on-primary:         #ffffff;
+  --color-on-primary-container: #86aa9b;
+
+  /* ── On-secondary ── */
+  --color-on-secondary:       #ffffff;
+  --color-secondary-fixed:    #ffdea3;
+  --color-secondary-fixed-dim: #e4c283;
+  --color-secondary-container: #ffdb99;
+
+  /* ── Primary container ── */
+  --color-primary-container:  #1d3f33;
+
+  /* ── Outline ── */
+  --color-outline:         #717974;
+  --color-outline-variant: #c1c8c3;
+
+  /* ── Background ── */
+  --color-background: #f9f9f9;
+
+  /* ── Custom spacing tokens ── */
+  --spacing-gutter:      2rem;       /* 32px */
+  --spacing-section-gap: 7.5rem;     /* 120px */
+  --spacing-stack-xl:    4rem;       /* 64px */
+  --spacing-stack-lg:    3rem;       /* 48px */
+  --spacing-stack-md:    1.5rem;     /* 24px */
+  --spacing-stack-sm:    0.75rem;    /* 12px */
+  --spacing-stack-xs:    0.5rem;     /* 8px */
+
+  /* ── Custom text sizes ── */
+  --text-display-xl:  4rem;    /* 64px */
+  --text-headline-lg: 2.5rem;  /* 40px */
+  --text-headline-md: 2rem;    /* 32px */
+  --text-title-lg:    1.375rem; /* 22px */
+  --text-title-md:    1.125rem; /* 18px */
+  --text-body-lg:     1.125rem; /* 18px */
+  --text-body-md:     1rem;    /* 16px */
+  --text-label-caps:  0.75rem; /* 12px */
+}
+
+/* ── Material Symbols ── */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ── Gold underline ── */
+.gold-underline {
+  position: relative;
+}
+.gold-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-secondary-700);
+}
+
+/* ── Hero gradient ── */
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(4, 41, 30, 0.4), rgba(4, 41, 30, 0.7));
+}
+
+/* ── Map filter ── */
+.map-container {
+  filter: grayscale(1) contrast(1.1) brightness(0.9);
 }
 
 button {
   cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-.font-serif {
+h1, h2, h3 {
   font-family: var(--font-serif);
 }

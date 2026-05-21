@@ -1,0 +1,68 @@
+<script setup lang="ts">
+defineProps<{
+  name: string;
+  role: string;
+  email: string;
+  phone: string;
+  website?: string | null;
+  photo?: string | null;
+  bio: string;
+}>();
+</script>
+
+<template>
+  <div class="bg-surface border border-outline-variant/30 flex flex-col">
+
+    <!-- Photo -->
+    <div class="aspect-video bg-surface-container overflow-hidden">
+      <img
+        v-if="photo"
+        :src="photo"
+        :alt="name"
+        class="w-full h-full object-cover object-top"
+      />
+      <div v-else class="w-full h-full flex items-center justify-center bg-surface-container">
+        <span class="material-symbols-outlined text-on-surface-variant/30" style="font-size: 4rem;">person</span>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="p-stack-md flex flex-col gap-stack-sm flex-1">
+      <div>
+        <h3 class="text-title-lg font-serif text-primary-900">{{ name }}</h3>
+        <p class="text-label-caps text-secondary-700 uppercase tracking-widest font-semibold">{{ role }}</p>
+      </div>
+
+      <p class="text-body-md text-on-surface-variant flex-1">{{ bio }}</p>
+
+      <!-- Contact links -->
+      <div class="flex flex-col gap-1 pt-stack-sm border-t border-outline-variant/30">
+        <a
+          :href="`mailto:${email}`"
+          class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
+        >
+          <span class="material-symbols-outlined text-base">mail</span>
+          {{ email }}
+        </a>
+        <a
+          :href="`tel:${phone.replace(/\s+/g, '')}`"
+          class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
+        >
+          <span class="material-symbols-outlined text-base">phone</span>
+          {{ phone }}
+        </a>
+        <a
+          v-if="website"
+          :href="website"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center gap-2 text-body-md text-secondary-700 hover:underline transition-colors"
+        >
+          <span class="material-symbols-outlined text-base">open_in_new</span>
+          Osobní web
+        </a>
+      </div>
+    </div>
+
+  </div>
+</template>
