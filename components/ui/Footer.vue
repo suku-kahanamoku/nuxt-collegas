@@ -16,8 +16,7 @@
           transparentnost a dlouhodobé partnerství.
         </p>
         <p class="text-body-md text-on-primary-container mt-stack-md">
-          &copy; {{ new Date().getFullYear() }} Finanční poradenství. Všechna
-          práva vyhrazena.
+          &copy; {{ new Date().getFullYear() }} Všechna práva vyhrazena.
         </p>
       </div>
 

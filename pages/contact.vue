@@ -40,12 +40,15 @@ function handleSubmit() {
   <div class="w-full">
 
     <!-- ── Hero ── -->
-    <section class="max-w-7xl mx-auto px-gutter pt-stack-lg pb-stack-md">
-      <h1 class="text-display-xl font-serif text-primary-900 mb-stack-xs leading-none">Spojte se s námi</h1>
+    <UiPageHero
+      class="pb-stack-lg!"
+      eyebrow="Kontakt"
+      title="Spojte se s námi"
+    >
       <p class="text-body-lg text-on-surface-variant max-w-2xl">
         Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně najdeme ten správný první krok.
       </p>
-    </section>
+    </UiPageHero>
 
     <!-- ── Dvousloupcový obsah ── -->
     <section class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-0 mb-section-gap">
@@ -92,11 +95,12 @@ function handleSubmit() {
           </div>
         </div>
 
-        <!-- Mapa placeholder -->
-        <div class="relative w-full overflow-hidden bg-surface-container shadow-sm border border-outline-variant/20" style="aspect-ratio: 4/3;">
-          <div class="w-full h-full bg-surface-container map-container flex items-center justify-center">
-            <span class="text-on-surface-variant/30 text-body-md">Mapa – AZ Tower Brno</span>
-          </div>
+        <div class="relative w-full aspect-video lg:aspect-4/3 overflow-hidden rounded-sm bg-surface-container shadow-sm border border-outline-variant/20">
+          <img
+            class="w-full h-full object-cover map-container"
+            alt="Mapa lokace kanceláře – AZ Tower Brno"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzq1xi-LrxBGgAOlUUWsEFi_-Va0u2-g8Pg117jQnZrBQB0-RGR9r7RkieGawy1vegyxxea0UAPVymcqUUndqydpyFhVU2iJ0-WlFscTvipBVNiVcTjo4-1oRxwh-Ps1l_AwnUrVTAB5jH6RMQqY2DZFLl4li3SQIEWWGzvyGjb5cXjXl9h8LYlmjAAcCxNnqGBKkfot4xShX2-wYEhnQd1ldyYJL-495Bl6OlF1JKhJNcGh1Wxu3lfRtzsITdijoIm8aQjWKbGyQ"
+          >
           <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div class="w-12 h-12 bg-primary-900 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
               <span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">location_on</span>
