@@ -19,7 +19,7 @@ const relatedLinks = [
     <UiIntro
       eyebrow="Kapitálové investice"
       title="Developerské projekty"
-      subtitle="Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek."
+      description="Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Nejde jen o samotnou výstavbu, ale o vytvoření projektu, který má dlouhodobou hodnotu – pro investora i pro budoucí uživatele. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek."
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
     />
 
@@ -31,9 +31,6 @@ const relatedLinks = [
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
               <div class="order-2 md:order-1 space-y-stack-md">
-                <p class="text-body-md text-on-surface-variant">
-                  Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek.
-                </p>
                 <p class="text-body-md text-on-surface-variant">
                   Podílíme se na celém procesu – od analýzy příležitosti, návrhu projektu a ekonomického modelu až
                   po jeho realizaci a následný prodej. Zajišťujeme přípravu projektu, koordinaci jednotlivých profesí,
@@ -103,35 +100,11 @@ const relatedLinks = [
 
           </div>
 
-          <!-- Sidebar -->
-          <aside class="lg:col-span-4">
-            <div class="bg-surface-container-highest p-stack-lg border-t-4 border-secondary-700">
-              <h3 class="text-headline-md font-serif text-primary-900 mb-stack-md">Související služby</h3>
-              <nav class="space-y-stack-md">
-                <NuxtLink
-                  v-for="link in relatedLinks"
-                  :key="link.to"
-                  :to="link.to"
-                  class="group flex justify-between items-center py-stack-sm border-b border-outline-variant/50 hover:text-secondary-700 transition-colors"
-                >
-                  <span class="text-body-md font-semibold">{{ link.label }}</span>
-                  <span class="material-symbols-outlined text-secondary-700 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                </NuxtLink>
-              </nav>
-            </div>
-          </aside>
+          <UiAside title="Související služby" :menus="relatedLinks" />
 
         </div>
       </div>
     </section>
-
-    <UiCtaSection
-      title="Máte zájem o developerský projekt?"
-      body="Kontaktujte nás a zjistěte aktuální investiční příležitosti skupiny COLLEGA."
-      primary-label="Sjednat konzultaci"
-      primary-to="/contact"
-      variant="dark"
-    />
 
   </div>
 </template>
