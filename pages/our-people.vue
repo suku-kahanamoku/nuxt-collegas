@@ -2,7 +2,13 @@
 definePageMeta({ title: "Naši lidé | COLLEGA ENTERPRISE" });
 useHead({
   title: "Naši lidé | COLLEGA ENTERPRISE",
-  meta: [{ name: "description", content: "Tým poradců a asistentů skupiny COLLEGA ENTERPRISE a.s. – zkušení odborníci, kteří pečují o vaše finance a majetek." }],
+  meta: [
+    {
+      name: "description",
+      content:
+        "Tým poradců a asistentů skupiny COLLEGA ENTERPRISE a.s. – zkušení odborníci, kteří pečují o vaše finance a majetek.",
+    },
+  ],
 });
 
 const advisors = [
@@ -59,7 +65,6 @@ const assistants = [
 
 <template>
   <div class="w-full">
-
     <!-- ── Intro ── -->
     <UiIntro
       eyebrow="Kdo jsme"
@@ -76,7 +81,9 @@ const assistants = [
           title="Poradci"
           description="Naši poradci jsou držiteli příslušných licencí ČNB a pravidelně se vzdělávají, aby vám vždy mohli nabídnout řešení odpovídající aktuálním podmínkám."
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
           <CustomTeamCard v-for="p in advisors" :key="p.email" v-bind="p" />
         </div>
       </div>
@@ -90,7 +97,9 @@ const assistants = [
           title="Asistenti a servis"
           description="Profesionální zázemí, které zajišťuje, aby komunikace s vámi byla vždy rychlá, přesná a diskrétní."
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
           <CustomTeamCard v-for="p in assistants" :key="p.email" v-bind="p" />
         </div>
       </div>
@@ -104,6 +113,5 @@ const assistants = [
       primary-to="/career"
       variant="dark"
     />
-
   </div>
 </template>
