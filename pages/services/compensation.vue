@@ -2,26 +2,50 @@
 definePageMeta({ title: "Odškodnění | Finanční poradenství" });
 useHead({
   title: "Odškodnění | Finanční poradenství",
-  meta: [{ name: "description", content: "Pracovní úrazy, autonehody, školní úrazy i jiné pojistné události. Zajišťujeme spravedlivé odškodnění v plné výši." }],
+  meta: [
+    {
+      name: "description",
+      content:
+        "Pracovní úrazy, autonehody, školní úrazy i jiné pojistné události. Zajišťujeme spravedlivé odškodnění v plné výši.",
+    },
+  ],
 });
 
 const types = [
-  { icon: "directions_car", title: "Autonehody", description: "Odškodnění z povinného ručení a havarijního pojištění – bolestné, ztráta výdělku, trvalé následky." },
-  { icon: "construction", title: "Pracovní úrazy", description: "Uplatňování nároků vůči zaměstnavateli a pojišťovně při pracovním úrazu nebo nemoci z povolání." },
-  { icon: "school", title: "Školní úrazy", description: "Odškodnění za úrazy způsobené při školní výuce, akcích nebo sportu." },
-  { icon: "local_hospital", title: "Zdravotní pochybení", description: "Pomoc při uplatňování nároků za pochybení ve zdravotní péči." },
+  {
+    icon: "directions_car",
+    title: "Autonehody",
+    description:
+      "Odškodnění z povinného ručení a havarijního pojištění – bolestné, ztráta výdělku, trvalé následky.",
+  },
+  {
+    icon: "construction",
+    title: "Pracovní úrazy",
+    description:
+      "Uplatňování nároků vůči zaměstnavateli a pojišťovně při pracovním úrazu nebo nemoci z povolání.",
+  },
+  {
+    icon: "school",
+    title: "Školní úrazy",
+    description:
+      "Odškodnění za úrazy způsobené při školní výuce, akcích nebo sportu.",
+  },
+  {
+    icon: "local_hospital",
+    title: "Zdravotní pochybení",
+    description: "Pomoc při uplatňování nároků za pochybení ve zdravotní péči.",
+  },
 ];
 
 const relatedLinks = [
-  { label: 'Zajištění rizik', to: '/services/risk-management' },
-  { label: 'Právní poradenství', to: '/services/legal-advisory' },
-  { label: 'Daňové poradenství', to: '/services/tax-advisory' },
+  { label: "Zajištění rizik", to: "/services/risk-management" },
+  { label: "Právní poradenství", to: "/services/legal-advisory" },
+  { label: "Daňové poradenství", to: "/services/tax-advisory" },
 ];
 </script>
 
 <template>
   <div class="w-full">
-
     <UiIntro
       eyebrow="Finanční poradenství"
       title="Odškodnění"
@@ -31,34 +55,50 @@ const relatedLinks = [
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap">
-          <div class="lg:col-span-8 space-y-stack-md">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
-              <div class="order-2 md:order-1 space-y-stack-md">
-            <p class="text-body-md text-on-surface-variant">
-              Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné pojistné události, cílem je jediné – získat spravedlivé odškodnění v plné výši.
-            </p>
-            <p class="text-body-md text-on-surface-variant">
-              Pomáháme vám zorientovat se v nárocích, které vám skutečně vznikají, a postaráme se o jejich
-              uplatnění vůči pojišťovnám nebo odpovědným subjektům. Řešíme celý proces – od prvotního
-              posouzení přes komunikaci až po samotnou likvidaci pojistné události. Díky zkušenostem víme, kde
-              často dochází k podhodnocení nebo opomenutí nároků, a umíme tyto situace efektivně řešit.
-            </p>
-            <p class="text-body-md text-on-surface-variant">
-              Výsledkem je nejen vyšší finanční kompenzace, ale především úleva. Nemusíte se orientovat ve
-              složitém procesu ani bojovat o svá práva sami. Máte jistotu, že se o vaši situaci stará někdo, kdo ví,
-              jak postupovat a jak dosáhnout maximálního možného výsledku.
-            </p>
-            <NuxtLink
-              to="/contact"
-              class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
+        >
+          <div class="lg:col-span-8 space-y-stack-xl">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
             >
-              Postavte se za mé nároky
-              <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-            </NuxtLink>
+              <div class="order-2 md:order-1 space-y-stack-md">
+                <p class="text-body-md text-on-surface-variant">
+                  Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné
+                  pojistné události, cílem je jediné – získat spravedlivé
+                  odškodnění v plné výši.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Pomáháme vám zorientovat se v nárocích, které vám skutečně
+                  vznikají, a postaráme se o jejich uplatnění vůči pojišťovnám
+                  nebo odpovědným subjektům. Řešíme celý proces – od prvotního
+                  posouzení přes komunikaci až po samotnou likvidaci pojistné
+                  události. Díky zkušenostem víme, kde často dochází k
+                  podhodnocení nebo opomenutí nároků, a umíme tyto situace
+                  efektivně řešit.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Výsledkem je nejen vyšší finanční kompenzace, ale především
+                  úleva. Nemusíte se orientovat ve složitém procesu ani bojovat
+                  o svá práva sami. Máte jistotu, že se o vaši situaci stará
+                  někdo, kdo ví, jak postupovat a jak dosáhnout maximálního
+                  možného výsledku.
+                </p>
+                <NuxtLink
+                  to="/contact"
+                  class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                >
+                  Postavte se za mé nároky
+                  <span
+                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
+                    >arrow_forward</span
+                  >
+                </NuxtLink>
               </div>
-              <div class="order-1 md:order-2 bg-surface-container-highest overflow-hidden" style="aspect-ratio: 4/5;">
+              <div
+                class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"
+                style="aspect-ratio: 4/5"
+              >
                 <img
                   class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
                   alt="Finanční poradce při konzultaci"
@@ -66,8 +106,16 @@ const relatedLinks = [
                 />
               </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-stack-md">
-              <UiValueCard v-for="t in types" :key="t.title" :icon="t.icon" :title="t.title" :description="t.description" />
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-stack-md"
+            >
+              <UiValueCard
+                v-for="t in types"
+                :key="t.title"
+                :icon="t.icon"
+                :title="t.title"
+                :description="t.description"
+              />
             </div>
           </div>
           <UiAside
@@ -81,6 +129,5 @@ const relatedLinks = [
         </div>
       </div>
     </section>
-
   </div>
 </template>

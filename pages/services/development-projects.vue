@@ -2,11 +2,20 @@
 definePageMeta({ title: "Developerské projekty | Finanční poradenství" });
 useHead({
   title: "Developerské projekty | Finanční poradenství",
-  meta: [{ name: "description", content: "Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Podílíme se na celém procesu od analýzy příležitosti až po finální prodej." }],
+  meta: [
+    {
+      name: "description",
+      content:
+        "Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Podílíme se na celém procesu od analýzy příležitosti až po finální prodej.",
+    },
+  ],
 });
 
 const relatedLinks = [
-  { label: "Péče o investiční majetek", to: "/services/investment-asset-management" },
+  {
+    label: "Péče o investiční majetek",
+    to: "/services/investment-asset-management",
+  },
   { label: "Správa nemovitostí", to: "/services/property-management" },
   { label: "Realitní služby", to: "/services/real-estate" },
   { label: "Právní poradenství", to: "/services/legal-advisory" },
@@ -15,7 +24,6 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-
     <UiIntro
       eyebrow="Kapitálové investice"
       title="Developerské projekty"
@@ -25,35 +33,46 @@ const relatedLinks = [
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap">
-
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
+        >
           <div class="lg:col-span-8 space-y-section-gap">
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
+            >
               <div class="order-2 md:order-1 space-y-stack-md">
                 <p class="text-body-md text-on-surface-variant">
-                  Podílíme se na celém procesu – od analýzy příležitosti, návrhu projektu a ekonomického modelu až
-                  po jeho realizaci a následný prodej. Zajišťujeme přípravu projektu, koordinaci jednotlivých profesí,
-                  financování i nastavení prodejní strategie.
+                  Podílíme se na celém procesu – od analýzy příležitosti, návrhu
+                  projektu a ekonomického modelu až po jeho realizaci a následný
+                  prodej. Zajišťujeme přípravu projektu, koordinaci jednotlivých
+                  profesí, financování i nastavení prodejní strategie.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Díky znalosti trhu dokážeme správně nastavit produkt, cenu i načasování tak, aby projekt dával
-                  smysl nejen na papíře, ale i v praxi.
+                  Díky znalosti trhu dokážeme správně nastavit produkt, cenu i
+                  načasování tak, aby projekt dával smysl nejen na papíře, ale i
+                  v praxi.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Výsledkem jsou projekty, které jsou funkční, ekonomicky udržitelné a atraktivní pro trh. Pro investory
-                  to znamená jasně řízený proces a kontrolu nad kapitálem, pro klienty pak kvalitní a promyšlené
-                  bydlení či investiční příležitost.
+                  Výsledkem jsou projekty, které jsou funkční, ekonomicky
+                  udržitelné a atraktivní pro trh. Pro investory to znamená
+                  jasně řízený proces a kontrolu nad kapitálem, pro klienty pak
+                  kvalitní a promyšlené bydlení či investiční příležitost.
                 </p>
                 <NuxtLink
                   to="/contact"
                   class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
                 >
                   Zapojte se do developerských projektů
-                  <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+                  <span
+                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
+                    >arrow_forward</span
+                  >
                 </NuxtLink>
               </div>
-              <div class="order-1 md:order-2 bg-surface-container-highest overflow-hidden" style="aspect-ratio: 4/5;">
+              <div
+                class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"
+                style="aspect-ratio: 4/5"
+              >
                 <img
                   class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
                   alt="Architektonický detail moderní budovy"
@@ -62,8 +81,13 @@ const relatedLinks = [
               </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
-              <div class="bg-surface-container-highest overflow-hidden" style="aspect-ratio: 4/5;">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
+            >
+              <div
+                class="bg-surface-container-highest overflow-hidden"
+                style="aspect-ratio: 4/5"
+              >
                 <img
                   class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
                   alt="Finanční poradce při konzultaci"
@@ -71,40 +95,55 @@ const relatedLinks = [
                 />
               </div>
               <div class="space-y-stack-md">
-                <h2 class="text-headline-lg font-serif text-primary-900">Investiční příležitosti</h2>
+                <h2 class="text-headline-lg font-serif text-primary-900">
+                  Investiční příležitosti
+                </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Investiční příležitosti nevznikají každý den – a ještě méně těch, které dávají skutečný smysl v širším
-                  kontextu vašeho portfolia. Naším cílem není nabídnout „cokoliv, co zrovna funguje", ale vybírat a
-                  vytvářet příležitosti, které obstojí z pohledu výnosu, rizika i dlouhodobé strategie.
+                  Investiční příležitosti nevznikají každý den – a ještě méně
+                  těch, které dávají skutečný smysl v širším kontextu vašeho
+                  portfolia. Naším cílem není nabídnout „cokoliv, co zrovna
+                  funguje", ale vybírat a vytvářet příležitosti, které obstojí z
+                  pohledu výnosu, rizika i dlouhodobé strategie.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Aktivně vyhledáváme projekty a investice napříč oblastmi, jako jsou nemovitosti, developerské
-                  záměry nebo další kapitálové příležitosti. Každou z nich detailně analyzujeme – z pohledu
-                  návratnosti, struktury, rizik i reálného potenciálu. Díky tomu vám předkládáme pouze ty příležitosti,
-                  za kterými si dokážeme stát a které dávají smysl nejen na papíře, ale i v praxi.
+                  Aktivně vyhledáváme projekty a investice napříč oblastmi, jako
+                  jsou nemovitosti, developerské záměry nebo další kapitálové
+                  příležitosti. Každou z nich detailně analyzujeme – z pohledu
+                  návratnosti, struktury, rizik i reálného potenciálu. Díky tomu
+                  vám předkládáme pouze ty příležitosti, za kterými si dokážeme
+                  stát a které dávají smysl nejen na papíře, ale i v praxi.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Výsledkem je přístup k investicím, ke kterým se běžný investor často nedostane, a zároveň jistota,
-                  že každé rozhodnutí zapadá do vaší celkové strategie. Investování tak přestává být o náhodě a
-                  stává se řízeným procesem s jasným cílem – dlouhodobě růst a chránit váš kapitál.
+                  Výsledkem je přístup k investicím, ke kterým se běžný investor
+                  často nedostane, a zároveň jistota, že každé rozhodnutí zapadá
+                  do vaší celkové strategie. Investování tak přestává být o
+                  náhodě a stává se řízeným procesem s jasným cílem – dlouhodobě
+                  růst a chránit váš kapitál.
                 </p>
                 <NuxtLink
                   to="/contact"
                   class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
                 >
                   Získejte přístup k investičním příležitostem
-                  <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+                  <span
+                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
+                    >arrow_forward</span
+                  >
                 </NuxtLink>
               </div>
             </div>
-
           </div>
 
-          <UiAside title="Související služby" :menus="relatedLinks" />
-
+          <UiAside
+            title="Související služby"
+            :menus="relatedLinks"
+            callout-title="Máte developerský záměr?"
+            callout-description="Probereme s vámi investiční potenciál, strukturu projektu i další kroky od příležitosti po realizaci."
+            callout-label="Nezávazná konzultace"
+            callout-to="/contact"
+          />
         </div>
       </div>
     </section>
-
   </div>
 </template>
