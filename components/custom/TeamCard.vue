@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="border border-outline-variant/20 rounded-md flex flex-col transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
+  <div class="border border-outline-variant/20 rounded-md flex flex-col overflow-hidden transition-[transform,border-color,box-shadow] duration-300 ease-in-out hover:scale-[1.02] hover:border-secondary-700/50" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
 
     <!-- Photo -->
     <div class="aspect-video bg-surface-container overflow-hidden">
