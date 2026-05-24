@@ -78,48 +78,46 @@ const services = [
   <div class="w-full overflow-hidden">
 
     <!-- ── Hero ── -->
-    <section class="pt-section-gap pb-section-gap px-gutter max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
-        <div class="lg:col-span-8">
-          <span class="text-label-caps text-secondary-700 uppercase mb-stack-sm block tracking-widest font-semibold">
-            Naše přístupy
-          </span>
-          <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">
-            Nezávislý finanční<br />audit
-          </h1>
-          <div class="space-y-4">
-            <p class="text-body-lg text-on-surface-variant max-w-2xl">
-              Nezávislý finanční audit je první krok k tomu, abyste ve svých financích měli skutečný přehled a jistotu.
-              Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše finance jako na celek – jak spolu jednotlivé části
-              fungují, kde dávají smysl a kde naopak vznikají zbytečné náklady nebo rizika.
-            </p>
-            <p class="text-body-lg text-on-surface-variant max-w-2xl">
+    <UiServiceHero
+      eyebrow="Finanční poradenství"
+      title="Nezávislý finanční audit"
+      subtitle="Nezávislý finanční audit je první krok k tomu, abyste ve svých financích měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše finance jako na celek – jak spolu jednotlivé části fungují, kde dávají smysl a kde naopak vznikají zbytečné náklady nebo rizika."
+      hero-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+      hero-alt="Moderní korporátní budova – čisté linie tmavého dřeva a kovu v přirozeném světle"
+    />
+
+    <!-- ── Audit intro ── -->
+    <section class="py-section-gap bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-gutter">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl items-start">
+          <div class="lg:col-span-8 space-y-stack-md">
+            <p class="text-body-lg text-on-surface-variant">
               Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu financí a přeložíme vám je do
               srozumitelného obrazu. Ukážeme vám, co je nastavené správně, kde zbytečně přeplácíte a kde vám
               naopak unikají příležitosti. Díky tomu získáte jasný základ pro další rozhodování – bez tlaku, bez
               chaosu a bez závislosti na konkrétních produktech nebo institucích.
             </p>
-            <p class="text-body-lg text-on-surface-variant max-w-2xl">
+            <p class="text-body-lg text-on-surface-variant">
               Audit vám nepřinese jen seznam změn, ale především klid a kontrolu. Budete přesně vědět, jak na
               tom jste a jaké kroky dávají smysl dál – ať už chcete optimalizovat současný stav, nebo se připravit na
               další životní etapu.
             </p>
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
+            >
+              Chci jasno ve svých financích
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </NuxtLink>
           </div>
-          <NuxtLink
-            to="/contact"
-            class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-lg"
-          >
-            Chci jasno ve svých financích
-            <span class="material-symbols-outlined text-base">arrow_forward</span>
-          </NuxtLink>
-        </div>
-        <div class="lg:col-span-4 flex justify-end">
-          <div class="w-full aspect-4/5 bg-surface-container overflow-hidden" style="aspect-ratio: 4/5;">
-            <img
-              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              alt="Moderní korporátní budova – čisté linie tmavého dřeva a kovu v přirozeném světle"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-            />
+          <div class="lg:col-span-4">
+            <div class="w-full bg-surface-container overflow-hidden" style="aspect-ratio: 4/5;">
+              <img
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                alt="Moderní korporátní budova – čisté linie tmavého dřeva a kovu v přirozeném světle"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+              />
+            </div>
           </div>
         </div>
       </div>

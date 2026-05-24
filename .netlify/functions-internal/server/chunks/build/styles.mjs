@@ -1,2 +1,0 @@
-const interopDefault=e=>e.default||e||[],e={"pages/holding.vue":()=>import("./holding-styles.Cq6ZK2q_.mjs").then(interopDefault),"components/custom/Timeline.vue":()=>import("./holding-styles.Cq6ZK2q_.mjs").then(interopDefault),"node_modules/nuxt/dist/app/components/error-404.vue":()=>import("./error-404-styles.xf2R7Kcb.mjs").then(interopDefault),"node_modules/nuxt/dist/app/components/error-500.vue":()=>import("./error-500-styles.CkOlAevR.mjs").then(interopDefault)};export{e as default};
-//# sourceMappingURL=styles.mjs.map
