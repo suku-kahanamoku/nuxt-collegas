@@ -108,10 +108,10 @@ const services = [
             </p>
             <NuxtLink
               to="/contact"
-              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
+              class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
             >
               Chci jasno ve svých financích
-              <span class="material-symbols-outlined text-base">arrow_forward</span>
+              <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
             </NuxtLink>
           </div>
           <div class="lg:col-span-4">
@@ -159,10 +159,10 @@ const services = [
           </p>
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
+            class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
           >
             Chci plánovat dnes i v budoucnu
-            <span class="material-symbols-outlined text-base">arrow_forward</span>
+            <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
           </NuxtLink>
         </div>
       </div>

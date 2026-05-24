@@ -190,10 +190,10 @@ function handleSubmit() {
           <div class="pt-stack-md">
             <button
               type="submit"
-              class="w-full md:w-auto px-stack-lg py-stack-sm bg-secondary-fixed text-primary-900 text-label-caps font-semibold uppercase tracking-widest hover:bg-secondary-100 transition-all flex items-center justify-center gap-stack-xs"
+              class="group w-full md:w-auto px-stack-lg py-stack-sm bg-secondary-fixed text-primary-900 text-label-caps font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity flex items-center justify-center gap-stack-xs"
             >
               Odeslat poptávku
-              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
             </button>
           </div>
 

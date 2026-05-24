@@ -42,17 +42,17 @@ const relatedLinks = [
             <div class="flex flex-col gap-stack-sm">
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
               >
                 Ozvěte se a přestaňte platit „daň z neznalosti"
-                <span class="material-symbols-outlined text-base">arrow_forward</span>
+                <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
               </NuxtLink>
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
               >
                 Chci (ne)platit daně
-                <span class="material-symbols-outlined text-base">arrow_forward</span>
+                <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
               </NuxtLink>
             </div>
               </div>

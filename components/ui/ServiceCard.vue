@@ -20,7 +20,7 @@ defineProps<{
       <p class="text-body-md text-on-surface-variant flex-1">{{ description }}</p>
       <span class="inline-flex items-center gap-1 text-secondary-700 text-label-caps font-semibold uppercase tracking-widest mt-stack-sm group-hover:opacity-70 transition-opacity">
         {{ linkLabel || "Více informací" }}
-        <span class="material-symbols-outlined text-body-md transition-transform group-hover:translate-x-1">arrow_forward</span>
+        <span class="material-symbols-outlined text-body-md transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
       </span>
     </div>
   </NuxtLink>

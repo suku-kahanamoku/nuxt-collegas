@@ -112,10 +112,10 @@ const mediaItems = [
           </p>
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center gap-2 mt-stack-md bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest hover:bg-primary-700 transition-colors"
+            class="group inline-flex items-center gap-2 mt-stack-md bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity"
           >
             Napsat nám
-            <span class="material-symbols-outlined text-base">arrow_forward</span>
+            <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
           </NuxtLink>
         </div>
       </div>

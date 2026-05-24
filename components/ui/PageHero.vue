@@ -14,7 +14,8 @@ defineProps<{
 </script>
 
 <template>
-  <section class="max-w-7xl mx-auto px-gutter pt-stack-lg pb-section-gap">
+  <section class="relative max-w-7xl mx-auto px-gutter pt-stack-lg pb-section-gap overflow-hidden">
+    <div class="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-secondary-fixed/20 blur-3xl"></div>
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
 
       <div class="lg:col-span-8">
@@ -22,6 +23,7 @@ defineProps<{
           {{ eyebrow }}
         </span>
         <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none" v-html="title" />
+        <div class="h-px w-20 rounded-full mb-stack-md bg-[linear-gradient(90deg,#745b26,#e4c283,#745b26)]"></div>
         <slot />
       </div>
 
@@ -37,7 +39,7 @@ defineProps<{
         <NuxtLink
           v-else-if="ctaLabel && ctaTo"
           :to="ctaTo"
-          class="inline-flex items-center gap-2 bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest hover:bg-primary-700 transition-colors"
+          class="inline-flex items-center gap-2 bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,background-color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-700 hover:shadow-[0_10px_24px_rgba(4,41,30,0.2)]"
         >
           {{ ctaLabel }}
           <span v-if="ctaIcon" class="material-symbols-outlined text-base">{{ ctaIcon }}</span>
