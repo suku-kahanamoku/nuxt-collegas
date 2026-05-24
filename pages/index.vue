@@ -117,7 +117,7 @@ const services = [
           <div class="lg:col-span-4">
             <div class="w-full bg-surface-container overflow-hidden" style="aspect-ratio: 4/5;">
               <img
-                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]"
                 alt="Moderní korporátní budova – čisté linie tmavého dřeva a kovu v přirozeném světle"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
               />
@@ -130,9 +130,9 @@ const services = [
     <!-- ── Finanční plán ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
-        <div class="relative order-2 md:order-1">
+        <div class="relative order-2 md:order-1 overflow-hidden">
           <img
-            class="w-full aspect-square object-cover shadow-sm"
+            class="w-full aspect-square object-cover shadow-sm transition-transform duration-700 ease-out hover:scale-[1.03]"
             alt="Zkušený finanční poradce v profesionálním prostředí – důvěra a odbornost"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
           />

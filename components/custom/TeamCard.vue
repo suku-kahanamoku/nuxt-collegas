@@ -19,7 +19,7 @@ defineProps<{
         v-if="photo"
         :src="photo"
         :alt="name"
-        class="w-full h-full object-cover object-top"
+        class="w-full h-full object-cover object-top transition-transform duration-700 ease-out hover:scale-[1.03]"
       />
       <div v-else class="w-full h-full flex items-center justify-center bg-surface-container">
         <span class="material-symbols-outlined text-on-surface-variant/30" style="font-size: 4rem;">person</span>

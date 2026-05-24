@@ -46,7 +46,7 @@ const relatedLinks = [
                 </NuxtLink>
               </div>
               <div class="order-1 md:order-2 bg-surface-container-highest overflow-hidden" style="aspect-ratio: 4/5;">
-                <img src="/img/risk-shield.svg" alt="Zajištění rizik" class="w-full h-full object-cover" />
+                <img src="/img/risk-shield.svg" alt="Zajištění rizik" class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]" />
               </div>
             </div>
 
@@ -55,7 +55,7 @@ const relatedLinks = [
                 <img
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
                   alt="Finanční poradce při konzultaci"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
                 />
               </div>
               <div class="space-y-stack-md">
