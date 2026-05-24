@@ -31,6 +31,32 @@ const stripeTop = computed(() => {
   return clampedCenter - stripeHalf;
 });
 
+const activeDotIndex = computed(() => {
+  const trackEl = timelineTrackRef.value;
+  if (!trackEl || !stripeVisible.value) return -1;
+
+  const stripeCenter = stripeTop.value + stripeHeight / 2;
+  const trackTop = top.value;
+
+  const dots = Array.from(
+    trackEl.querySelectorAll<HTMLElement>("[data-tl-dot]"),
+  );
+  let bestIndex = -1;
+  let bestDistance = 20; // px threshold
+
+  dots.forEach((el, i) => {
+    const rect = el.getBoundingClientRect();
+    const dotCenter = rect.top + rect.height / 2 - trackTop;
+    const distance = Math.abs(dotCenter - stripeCenter);
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      bestIndex = i;
+    }
+  });
+
+  return bestIndex;
+});
+
 const events: TimelineEvent[] = [
   { year: "2013", name: "Collegas, s.r.o.", note: "Založení skupiny" },
   { year: null, name: "Collegas Reality, s.r.o.", note: "Vznik společnosti" },
@@ -162,13 +188,21 @@ const events: TimelineEvent[] = [
           <!-- CENTER: dot -->
           <div class="flex justify-center items-start pt-5 relative z-10">
             <div
-              class="rounded-full border-2 border-secondary-700 transition-transform duration-200 ease-out group-hover:scale-110"
-              :class="
-                ev.year
-                  ? 'w-4 h-4 bg-secondary-400'
-                  : 'w-3 h-3 bg-secondary-fixed'
+              data-tl-dot
+              class="rounded-full border-2 transition-[transform,box-shadow,background-color,border-color] duration-200 ease-out group-hover:scale-110"
+              :class="[
+                ev.year ? 'w-4 h-4' : 'w-3 h-3',
+                activeDotIndex === i
+                  ? 'bg-secondary-200 border-secondary-200 scale-150'
+                  : ev.year
+                    ? 'bg-secondary-400 border-secondary-700'
+                    : 'bg-secondary-fixed border-secondary-700',
+              ]"
+              :style="
+                activeDotIndex === i
+                  ? 'box-shadow: 0 0 0 5px rgba(255,222,163,0.45), 0 0 20px 6px rgba(255,214,130,0.75);'
+                  : 'box-shadow: 0 0 0 3px rgba(255, 222, 163, 0.32);'
               "
-              style="box-shadow: 0 0 0 3px rgba(255, 222, 163, 0.32)"
             ></div>
           </div>
 
