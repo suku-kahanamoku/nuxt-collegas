@@ -28,19 +28,13 @@ const mediaItems = [
 <template>
   <div class="w-full">
 
-    <!-- ── Hero ── -->
-    <UiPageHero
+    <!-- ── Intro ── -->
+    <UiIntro
       eyebrow="Přidejte se k nám"
       title="Kariéra"
-      cta-label="Otevřené pozice"
-      cta-to="#otevrene-pozice"
-      cta-icon="arrow_downward"
-    >
-      <p class="text-body-lg text-on-surface-variant max-w-2xl">
-        Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem
-        o klienta. Nabízíme prostředí, kde se rozvíjíte, ne jen prodáváte.
-      </p>
-    </UiPageHero>
+      description="Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta. Nabízíme prostředí, kde se rozvíjíte, ne jen prodáváte."
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
+    />
 
     <!-- ── Firemní kultura ── -->
     <section class="py-section-gap bg-surface-container-lowest">

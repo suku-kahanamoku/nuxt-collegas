@@ -60,19 +60,13 @@ const assistants = [
 <template>
   <div class="w-full">
 
-    <!-- ── Hero ── -->
-    <UiPageHero
+    <!-- ── Intro ── -->
+    <UiIntro
       eyebrow="Kdo jsme"
       title="Naši lidé"
-      cta-label="Sjednat schůzku"
-      cta-to="/contact"
-      cta-icon="calendar_month"
-    >
-      <p class="text-body-lg text-on-surface-variant max-w-2xl">
-        Za každým řešením stojí konkrétní člověk. Tým poradců a asistentů skupiny COLLEGA
-        přistupuje ke každému klientovi individuálně – s plnou odpovědností za svěřená rozhodnutí.
-      </p>
-    </UiPageHero>
+      description="Za každým řešením stojí konkrétní člověk. Tým poradců a asistentů skupiny COLLEGA přistupuje ke každému klientovi individuálně – s plnou odpovědností za svěřená rozhodnutí."
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
+    />
 
     <!-- ── Poradci ── -->
     <section class="py-section-gap bg-surface-container-lowest">
@@ -89,7 +83,7 @@ const assistants = [
     </section>
 
     <!-- ── Asistenti ── -->
-    <section class="py-section-gap">
+    <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader
           eyebrow="Podpora"
