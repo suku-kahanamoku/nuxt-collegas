@@ -141,3 +141,20 @@ h5,
 h6 {
   font-family: var(--font-serif);
 }
+
+/* ── Scroll reveal ── */
+.from-bottom,
+.from-left,
+.from-right,
+.from-top,
+.zoom-in {
+  opacity: 0 !important;
+}
+
+.from-bottom.animate__animated,
+.from-left.animate__animated,
+.from-right.animate__animated,
+.from-top.animate__animated,
+.zoom-in.animate__animated {
+  opacity: unset !important;
+}

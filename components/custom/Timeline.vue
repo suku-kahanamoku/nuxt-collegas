@@ -8,8 +8,8 @@ interface TimelineEvent {
 }
 
 const timelineTrackRef = ref<HTMLElement | null>(null);
-const stripeHeight = 64;
-const trackPadding = 16;
+const stripeHeight = 70;
+const trackPadding = 20;
 
 const { top, bottom, height } = useElementBounding(timelineTrackRef);
 const { height: viewportHeight } = useWindowSize();
@@ -25,7 +25,7 @@ const stripeTop = computed(() => {
     minCenter,
     height.value - trackPadding - stripeHalf,
   );
-  const rawCenter = viewportHeight.value / 2 - top.value;
+  const rawCenter = viewportHeight.value / 1.5 - top.value;
   const clampedCenter = Math.min(maxCenter, Math.max(minCenter, rawCenter));
 
   return clampedCenter - stripeHalf;
@@ -150,7 +150,7 @@ const events: TimelineEvent[] = [
           <!-- LEFT: even = card, odd = empty -->
           <div v-if="i % 2 === 0" class="tl-card-left">
             <div
-              class="bg-white rounded-sm p-4 mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
+              class="from-bottom bg-white rounded-sm p-4 mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
               style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
             >
               <span
@@ -209,7 +209,7 @@ const events: TimelineEvent[] = [
           <!-- RIGHT: odd = card, even = empty -->
           <div v-if="i % 2 !== 0" class="tl-card-right">
             <div
-              class="bg-white rounded-sm p-4 ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
+              class="from-bottom bg-white rounded-sm p-4 ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
               style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
             >
               <span
