@@ -267,7 +267,7 @@ const backoffice = [
       eyebrow="Kdo jsme"
       title="Naši lidé"
       description="Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
     />
 
     <!-- ── Zakladatelé ── -->
@@ -279,7 +279,11 @@ const backoffice = [
           description="Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci."
         />
         <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-          <CustomTeamCard v-for="person in founders" :key="person.name" v-bind="person" />
+          <CustomTeamCard
+            v-for="person in founders"
+            :key="person.name"
+            v-bind="person"
+          />
         </div>
       </div>
     </section>
@@ -292,8 +296,14 @@ const backoffice = [
           title="Seniorní tým"
           description="Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou."
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-          <CustomTeamCard v-for="person in seniorTeam" :key="person.name" v-bind="person" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
+          <CustomTeamCard
+            v-for="person in seniorTeam"
+            :key="person.name"
+            v-bind="person"
+          />
         </div>
       </div>
     </section>
@@ -306,8 +316,14 @@ const backoffice = [
           title="Konzultanti a specialisté"
           description="Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků."
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-          <CustomTeamCard v-for="person in consultants" :key="person.name" v-bind="person" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
+          <CustomTeamCard
+            v-for="person in consultants"
+            :key="person.name"
+            v-bind="person"
+          />
         </div>
       </div>
     </section>
@@ -320,8 +336,14 @@ const backoffice = [
           title="Backoffice a podpora"
           description="Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou."
         />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-          <CustomTeamCard v-for="person in backoffice" :key="person.name" v-bind="person" />
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
+          <CustomTeamCard
+            v-for="person in backoffice"
+            :key="person.name"
+            v-bind="person"
+          />
         </div>
       </div>
     </section>
