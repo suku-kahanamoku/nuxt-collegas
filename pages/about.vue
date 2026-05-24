@@ -179,7 +179,7 @@ const principles = [
             >Náš závazek</span
           >
           <blockquote
-            class="text-headline-lg font-serif text-primary-900 leading-snug"
+            class="text-headline-md font-serif italic text-primary-700 leading-snug"
           >
             „Důvěra není výsledek marketingu.<br />Je to výsledek každého
             rozhodnutí, které jste udělali správně."

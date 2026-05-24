@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
+
+  routeRules: {
+    "/": { prerender: true },
+  },
   devtools: { enabled: true },
 
   modules: [
@@ -67,6 +71,16 @@ export default defineNuxtConfig({
 
   gtag: {
     id: process.env.NUXT_PUBLIC_GTAG_ID,
+  },
+
+  pwa: {
+    manifest: {
+      name: "Collegas",
+      short_name: "Collegas",
+      theme_color: "#ffffff",
+      background_color: "#ffffff",
+      display: "standalone",
+    },
   },
 
   vite: {
