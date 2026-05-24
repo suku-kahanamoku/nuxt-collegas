@@ -59,8 +59,8 @@ const levels: HoldingLevel[] = [
     style="
       background-image: radial-gradient(
         circle at center,
-        rgba(255, 222, 163, 0.12) 0%,
-        rgba(4, 41, 30, 0.94) 48%,
+        rgba(255, 222, 163, 0.08) 0%,
+        rgba(4, 41, 30, 0.96) 48%,
         rgba(4, 41, 30, 1) 100%
       );
     "
