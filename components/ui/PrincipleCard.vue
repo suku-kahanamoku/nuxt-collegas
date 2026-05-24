@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="rounded-md p-stack-lg flex gap-stack-md border border-secondary-700/15 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
+  <div class="rounded-md p-stack-lg flex gap-stack-md border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
     <div class="shrink-0 flex items-start pt-0.5">
       <span class="material-symbols-outlined text-secondary-700" style="font-size: 1.75rem;">{{ icon }}</span>
     </div>
