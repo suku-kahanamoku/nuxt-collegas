@@ -25,7 +25,7 @@ const stripeTop = computed(() => {
     minCenter,
     height.value - trackPadding - stripeHalf,
   );
-  const rawCenter = viewportHeight.value / 1.5 - top.value;
+  const rawCenter = viewportHeight.value / 1.6 - top.value;
   const clampedCenter = Math.min(maxCenter, Math.max(minCenter, rawCenter));
 
   return clampedCenter - stripeHalf;
@@ -150,7 +150,7 @@ const events: TimelineEvent[] = [
           <!-- LEFT: even = card, odd = empty -->
           <div v-if="i % 2 === 0" class="tl-card-left">
             <div
-              class="from-bottom bg-white rounded-sm p-4 mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
+              class="from-bottom bg-white rounded-sm p-3 sm:p-4 sm:mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
               style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
             >
               <span
@@ -186,7 +186,9 @@ const events: TimelineEvent[] = [
           <div v-else class="hidden sm:block"></div>
 
           <!-- CENTER: dot -->
-          <div class="flex justify-center items-start pt-5 relative z-10">
+          <div
+            class="hidden sm:flex justify-center items-start pt-5 relative z-10"
+          >
             <div
               data-tl-dot
               class="rounded-full border-2 transition-[transform,box-shadow,background-color,border-color] duration-200 ease-out group-hover:scale-110"
@@ -209,7 +211,7 @@ const events: TimelineEvent[] = [
           <!-- RIGHT: odd = card, even = empty -->
           <div v-if="i % 2 !== 0" class="tl-card-right">
             <div
-              class="from-bottom bg-white rounded-sm p-4 ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
+              class="from-bottom bg-white rounded-sm p-3 sm:p-4 sm:ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
               style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
             >
               <span
@@ -251,9 +253,11 @@ const events: TimelineEvent[] = [
 
 <style scoped>
 @media (max-width: 640px) {
-  .tl-card-left,
+  .tl-card-left {
+    grid-column: 1;
+  }
   .tl-card-right {
-    grid-column: span 2;
+    grid-column: 3;
   }
 }
 </style>
