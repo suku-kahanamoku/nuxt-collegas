@@ -48,9 +48,12 @@ defineProps<{
           class="group inline-flex items-center justify-center gap-2 px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,box-shadow,background-color,opacity] duration-200 ease-out hover:-translate-y-0.5"
           :class="
             variant === 'dark'
-              ? 'bg-secondary-fixed text-primary-900 shadow-[0_8px_24px_rgba(255,222,163,0.18)] hover:opacity-90'
-              : 'bg-primary-900 text-on-primary hover:bg-primary-700 hover:shadow-[0_10px_24px_rgba(4,41,30,0.2)]'
+              ? 'bg-secondary-fixed text-primary-900 hover:opacity-90'
+              : 'bg-primary-900 text-on-primary hover:bg-primary-700'
           "
+          :style="variant === 'dark'
+            ? { boxShadow: '0 2px 0 rgba(255,255,255,0.35) inset, 0 -1px 0 rgba(0,0,0,0.15) inset, 0 4px 12px rgba(255,214,130,0.30), 0 8px 24px rgba(255,214,130,0.18)' }
+            : { boxShadow: '0 2px 0 rgba(255,255,255,0.12) inset, 0 -1px 0 rgba(0,0,0,0.25) inset, 0 4px 12px rgba(4,41,30,0.25), 0 8px 24px rgba(4,41,30,0.15)' }"
         >
           {{ primaryLabel }}
           <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
