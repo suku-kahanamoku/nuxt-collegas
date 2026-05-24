@@ -45,14 +45,12 @@ const mediaItems = [
           description="Nejsme korporát. Jsme tým lidí, kteří si věří, slaví úspěchy dohromady a vzájemně si pomáhají. Podívejte se, jak to u nás vypadá."
         />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-sm">
-          <div
+          <UiMediaCard
             v-for="item in mediaItems"
             :key="item.label"
-            class="aspect-video bg-surface-container border border-outline-variant/30 flex flex-col items-center justify-center gap-stack-sm text-on-surface-variant/40 cursor-pointer"
-          >
-            <span class="material-symbols-outlined" style="font-size: 3rem;">{{ item.icon }}</span>
-            <p class="text-body-md text-center px-4">{{ item.label }}</p>
-          </div>
+            :icon="item.icon"
+            :label="item.label"
+          />
         </div>
       </div>
     </section>
@@ -76,15 +74,13 @@ const mediaItems = [
             </div>
           </div>
           <div class="grid grid-cols-2 gap-stack-sm">
-            <div
+            <UiFeatureCard
               v-for="item in pfpItems"
               :key="item.title"
-              class="border border-outline-variant/30 bg-surface p-stack-lg flex flex-col gap-stack-sm items-start"
-            >
-              <span class="material-symbols-outlined text-secondary-700" style="font-size: 1.75rem;">{{ item.icon }}</span>
-              <h3 class="text-title-md font-serif text-primary-900">{{ item.title }}</h3>
-              <p class="text-body-md text-on-surface-variant">{{ item.description }}</p>
-            </div>
+              :icon="item.icon"
+              :title="item.title"
+              :description="item.description"
+            />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ defineProps<{
 <template>
   <NuxtLink
     :to="to"
-    class="group block border border-outline-variant/30 bg-surface p-stack-lg hover:border-secondary-700 transition-colors"
+    class="group block border border-outline-variant/30 bg-surface rounded-md p-stack-lg shadow-[0_1px_2px_rgba(4,41,30,0.05),0_8px_24px_rgba(4,41,30,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-700/35 hover:shadow-[0_2px_6px_rgba(4,41,30,0.08),0_16px_36px_rgba(4,41,30,0.11)] focus-visible:outline-2 focus-visible:outline-secondary-700/60 focus-visible:outline-offset-2"
   >
     <div class="flex flex-col gap-stack-sm h-full">
       <span class="material-symbols-outlined text-secondary-700 text-2xl">{{ icon }}</span>
