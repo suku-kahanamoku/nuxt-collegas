@@ -127,7 +127,7 @@ const principles = [
       body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
       primary-label="Kontaktovat nás"
       primary-to="/contact"
-      variant="bordered"
+      variant="dark"
     />
 
   </div>

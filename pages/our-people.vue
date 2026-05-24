@@ -102,7 +102,7 @@ const assistants = [
       body="Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta."
       primary-label="Podívat se na kariéru"
       primary-to="/career"
-      variant="bordered"
+      variant="dark"
     />
 
   </div>

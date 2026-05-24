@@ -50,12 +50,12 @@ const events: TimelineEvent[] = [
         <div
           v-for="(ev, i) in events"
           :key="i"
-          class="grid gap-0 mb-5"
+          class="group grid gap-0 mb-5"
           :class="i % 2 === 0 ? 'grid-cols-[1fr_48px_1fr] sm:grid-cols-[1fr_48px_1fr]' : 'grid-cols-[1fr_48px_1fr]'"
         >
           <!-- LEFT: even = card, odd = empty -->
           <div v-if="i % 2 === 0" class="tl-card-left">
-            <div class="bg-white rounded-sm p-4 mr-4 border border-primary-100/35" style="border-top: 2px solid rgba(4,41,30,0.25);">
+            <div class="bg-white rounded-sm p-4 mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.8)]" style="border-top: 2px solid rgba(4,41,30,0.25);">
               <span v-if="ev.year" class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1">{{ ev.year }}</span>
               <div class="font-serif font-bold text-primary-900 text-sm leading-snug">{{ ev.name }}</div>
               <template v-if="ev.note">
@@ -69,7 +69,7 @@ const events: TimelineEvent[] = [
           <!-- CENTER: dot -->
           <div class="flex justify-center items-start pt-5 relative z-10">
             <div
-              class="rounded-full border-2 border-primary-900"
+              class="rounded-full border-2 border-primary-900 transition-transform duration-200 ease-out group-hover:scale-110"
               :class="ev.year ? 'w-4 h-4 bg-secondary-400' : 'w-3 h-3 bg-secondary-fixed'"
               style="box-shadow: 0 0 0 3px rgba(255,222,163,0.25);"
             ></div>
@@ -77,7 +77,7 @@ const events: TimelineEvent[] = [
 
           <!-- RIGHT: odd = card, even = empty -->
           <div v-if="i % 2 !== 0" class="tl-card-right">
-            <div class="bg-white rounded-sm p-4 ml-4 border border-primary-100/35" style="border-top: 2px solid rgba(4,41,30,0.25);">
+            <div class="bg-white rounded-sm p-4 ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.8)]" style="border-top: 2px solid rgba(4,41,30,0.25);">
               <span v-if="ev.year" class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1">{{ ev.year }}</span>
               <div class="font-serif font-bold text-primary-900 text-sm leading-snug">{{ ev.name }}</div>
               <template v-if="ev.note">
