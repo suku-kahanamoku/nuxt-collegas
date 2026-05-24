@@ -39,7 +39,11 @@ defineProps<{
           v-if="primaryLabel && primaryTo"
           :to="primaryTo"
           class="inline-flex items-center justify-center gap-2 px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-colors"
-          :class="variant === 'dark' ? 'bg-on-primary text-primary-900 hover:opacity-90' : 'bg-primary-900 text-on-primary hover:bg-primary-700'"
+          :class="
+            variant === 'dark'
+              ? 'bg-on-primary text-primary-900 hover:opacity-90'
+              : 'bg-primary-900 text-on-primary hover:bg-primary-700'
+          "
         >
           {{ primaryLabel }}
           <span class="material-symbols-outlined text-base">arrow_forward</span>
@@ -48,7 +52,11 @@ defineProps<{
           v-if="secondaryLabel && secondaryTo"
           :to="secondaryTo"
           class="inline-flex items-center justify-center gap-2 border px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-colors"
-          :class="variant === 'dark' ? 'border-on-primary text-on-primary hover:bg-on-primary/10' : 'border-primary-900 text-primary-900 hover:bg-surface-container'"
+          :class="
+            variant === 'dark'
+              ? 'border-on-primary text-on-primary hover:bg-on-primary/10'
+              : 'border-primary-900 text-primary-900 hover:bg-surface-container'
+          "
         >
           {{ secondaryLabel }}
         </NuxtLink>

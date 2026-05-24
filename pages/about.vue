@@ -77,7 +77,7 @@ const principles = [
     </section>
 
     <!-- ── Hodnoty ── -->
-    <section class="py-section-gap">
+    <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader
           eyebrow="Naše hodnoty"
@@ -106,7 +106,7 @@ const principles = [
     </section>
 
     <!-- ── Citát ── -->
-    <section class="py-section-gap">
+    <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="max-w-3xl mx-auto text-center">
           <span class="text-label-caps text-secondary-700 uppercase block mb-stack-sm tracking-widest font-semibold">Náš závazek</span>
@@ -127,7 +127,7 @@ const principles = [
       body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
       primary-label="Kontaktovat nás"
       primary-to="/contact"
-      variant="dark"
+      variant="bordered"
     />
 
   </div>

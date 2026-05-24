@@ -58,7 +58,7 @@ const mediaItems = [
     </section>
 
     <!-- ── PFP certifikace ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
           <div>
@@ -91,7 +91,7 @@ const mediaItems = [
     </section>
 
     <!-- ── Charita ── -->
-    <section class="py-section-gap">
+    <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader
           eyebrow="Společenská odpovědnost"
@@ -105,7 +105,7 @@ const mediaItems = [
     </section>
 
     <!-- ── Otevřené pozice ── -->
-    <section id="otevrene-pozice" class="py-section-gap bg-surface-container-lowest">
+    <section id="otevrene-pozice" class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader eyebrow="Volná místa" title="Otevřené pozice" />
         <div class="border border-outline-variant/30 bg-surface p-16 text-center">
