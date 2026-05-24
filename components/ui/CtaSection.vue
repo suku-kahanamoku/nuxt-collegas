@@ -48,7 +48,7 @@ defineProps<{
           class="group inline-flex items-center justify-center gap-2 px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,box-shadow,background-color,opacity] duration-200 ease-out hover:-translate-y-0.5"
           :class="
             variant === 'dark'
-              ? 'bg-on-primary text-primary-900 shadow-[0_8px_24px_rgba(255,222,163,0.18)] hover:opacity-90'
+              ? 'bg-secondary-fixed text-primary-900 shadow-[0_8px_24px_rgba(255,222,163,0.18)] hover:opacity-90'
               : 'bg-primary-900 text-on-primary hover:bg-primary-700 hover:shadow-[0_10px_24px_rgba(4,41,30,0.2)]'
           "
         >
@@ -61,7 +61,7 @@ defineProps<{
           class="inline-flex items-center justify-center gap-2 border px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,color,background-color,border-color] duration-200 ease-out hover:-translate-y-0.5"
           :class="
             variant === 'dark'
-              ? 'border-secondary-fixed/80 text-on-primary hover:bg-on-primary/10 hover:border-secondary-fixed'
+              ? 'border-on-primary text-on-primary hover:bg-on-primary/10 hover:border-on-primary'
               : 'border-primary-900 text-primary-900 hover:bg-surface-container hover:border-secondary-700/60'
           "
         >
