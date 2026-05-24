@@ -11,55 +11,252 @@ useHead({
   ],
 });
 
-const advisors = [
-  {
-    name: "Jméno Příjmení",
-    role: "Finanční poradce",
-    email: "poradce@collega.cz",
-    phone: "+420 000 000 000",
-    website: "https://example.com",
-    photo: null,
-    bio: "Specializuje se na správu investičního majetku a finanční plánování pro soukromé klienty.",
-  },
-  {
-    name: "Jméno Příjmení",
-    role: "Poradce pro pojištění",
-    email: "poradce2@collega.cz",
-    phone: "+420 000 000 001",
-    website: null,
-    photo: null,
-    bio: "Zkušenosti v oblasti zajištění rizik a analýzy pojistných potřeb klientů z řad podnikatelů.",
-  },
-  {
-    name: "Jméno Příjmení",
-    role: "Realitní poradce",
-    email: "poradce3@collega.cz",
-    phone: "+420 000 000 002",
-    website: null,
-    photo: null,
-    bio: "Zaměřuje se na realitní investice, správu nemovitostí a developerské poradenství.",
-  },
+interface TeamMember {
+  name: string;
+  role: string;
+  website: string;
+  websiteLabel: string;
+  photo: string;
+  bio: string;
+}
+
+function createMember(
+  name: string,
+  role: string,
+  slug: string,
+  photo: string,
+  bio: string,
+): TeamMember {
+  return {
+    name,
+    role,
+    website: `https://collegas.cz/team/${slug}.php`,
+    websiteLabel: "Profil",
+    photo,
+    bio,
+  };
+}
+
+const founders = [
+  createMember(
+    "Tomáš Kalous",
+    "Zakladatel",
+    "tomas-kalous",
+    "https://collegas.cz/img/T_Kalous01.jpg",
+    "Spoluzakládá směr skupiny COLLEGA a dlouhodobě se věnuje strategickému rozvoji klientských služeb.",
+  ),
+  createMember(
+    "Marek Butula",
+    "Zakladatel",
+    "marek-butula",
+    "https://collegas.cz/img/new_team/marek_butula.jpg",
+    "Podílí se na budování značky a rozvoji poradenského přístupu postaveného na důvěře a dlouhodobých vztazích.",
+  ),
 ];
 
-const assistants = [
-  {
-    name: "Jméno Příjmení",
-    role: "Asistent poradce",
-    email: "asistent@collega.cz",
-    phone: "+420 000 000 003",
-    website: null,
-    photo: null,
-    bio: "Zajišťuje administrativní podporu a koordinaci schůzek pro tým poradců.",
-  },
-  {
-    name: "Jméno Příjmení",
-    role: "Klientský servis",
-    email: "servis@collega.cz",
-    phone: "+420 000 000 004",
-    website: null,
-    photo: null,
-    bio: "Stará se o každodenní komunikaci s klienty a správu dokumentace.",
-  },
+const seniorTeam = [
+  createMember(
+    "Lukáš Formánek",
+    "Senior finanční specialista",
+    "lukas-formanek",
+    "https://collegas.cz/img/new_team/formanek_new.jpg",
+    "Věnuje se práci s klienty, kteří hledají promyšlené a dlouhodobě udržitelné finanční řešení.",
+  ),
+  createMember(
+    "Filip Beneš",
+    "Senior finanční konzultant",
+    "filip-benes",
+    "https://collegas.cz/img/F_Bene%C5%A102.jpg",
+    "Specializuje se na konzultace, které propojují osobní cíle klienta s jasnou finanční strategií.",
+  ),
+  createMember(
+    "Jan Radosta",
+    "Specialista pro privátní klientelu",
+    "jan-radosta",
+    "https://collegas.cz/img/radosta-1.jpg",
+    "Zaměřuje se na náročnější klientskou agendu a individuální práci s majetkem a dlouhodobým plánem.",
+  ),
+  createMember(
+    "Eva Pánková",
+    "Majetkový specialista",
+    "eva-pankova",
+    "https://collegas.cz/img/new_team/eva_pankova.jpg",
+    "Pomáhá klientům řešit správu majetku v širších souvislostech a s důrazem na stabilitu a přehled.",
+  ),
+  createMember(
+    "Iveta Butulová",
+    "Senior finanční specialista",
+    "iveta-butulova",
+    "https://collegas.cz/img/new_team/iveta_butulova.jpg",
+    "Přináší zkušený pohled na finanční řešení, která vyžadují citlivé nastavení i dlouhodobou kontinuitu.",
+  ),
+  createMember(
+    "Josef Zídek",
+    "Senior finanční konzultant",
+    "josef-zidek",
+    "https://collegas.cz/img/J_Zidek.jpg",
+    "Věnuje se klientům, kteří chtějí mít své finance řízené systematicky, srozumitelně a odpovědně.",
+  ),
+  createMember(
+    "David Strnad",
+    "Senior finanční konzultant",
+    "david-strnad",
+    "https://collegas.cz/img/new_team/david_strnad.jpg",
+    "Zaměřuje se na dlouhodobé vztahy s klienty a řešení, která obstojí i v čase a proměnlivých podmínkách.",
+  ),
+  createMember(
+    "Igor Stránský",
+    "Senior finanční konzultant",
+    "igor-stransky",
+    "https://collegas.cz/img/new_team/igor_stransky.jpg",
+    "Klade důraz na individuální přístup a jasné nastavení priorit v osobních i rodinných financích.",
+  ),
+  createMember(
+    "Lukáš Bajgar",
+    "Senior finanční konzultant",
+    "lukas-bajgar",
+    "https://collegas.cz/img/new_team/lukas_bajgar.jpg",
+    "Pomáhá klientům převádět složitější finanční rozhodnutí do srozumitelných a praktických kroků.",
+  ),
+];
+
+const consultants = [
+  createMember(
+    "Tomáš Rozsypal",
+    "Finanční konzultant",
+    "tomas-rozsypal",
+    "https://collegas.cz/img/T_Rozsypal.jpg",
+    "Věnuje se klientům, kteří chtějí mít finance nastavené přehledně a v souladu se svými cíli.",
+  ),
+  createMember(
+    "Lenka Ságlová",
+    "Finanční specialista",
+    "lenka-saglova",
+    "https://collegas.cz/img/lenka_new.jpg",
+    "Pomáhá klientům orientovat se ve finančních tématech s důrazem na praktičnost a klidné vedení spolupráce.",
+  ),
+  createMember(
+    "Zuzana Čapková",
+    "Finanční specialista",
+    "zuzana-capkova",
+    "https://collegas.cz/img/new_team/zuzana_capkova.jpg",
+    "Součástí její práce je hledání řešení, která odpovídají konkrétní životní situaci každého klienta.",
+  ),
+  createMember(
+    "Jakub Zemánek",
+    "Junior finanční konzultant",
+    "jakub-zemanek",
+    "https://collegas.cz/img/new_team/jakub_zemanek.jpg",
+    "Sbírá zkušenosti v klientské práci a podílí se na přípravě finančních řešení s důrazem na detail.",
+  ),
+  createMember(
+    "Jakub Plachý",
+    "Junior finanční konzultant",
+    "jakub-plachy",
+    "https://collegas.cz/img/new_team/jakub_plachy.jpg",
+    "Zapojen je do každodenní podpory klientské agendy a postupně rozvíjí vlastní poradenskou praxi.",
+  ),
+  createMember(
+    "Martin Martinčík",
+    "Finanční konzultant",
+    "martin-martincik",
+    "https://collegas.cz/img/M_Martincik.jpg",
+    "Pomáhá klientům nastavovat finance tak, aby byly funkční v běžném životě i dlouhodobém horizontu.",
+  ),
+  createMember(
+    "Nicola Růsková",
+    "Junior finanční konzultant",
+    "nicola-ruskova",
+    "https://collegas.cz/img/H_Nicola01.jpg",
+    "Podílí se na péči o klienty a na přípravě podkladů pro finanční řešení přizpůsobená konkrétní situaci.",
+  ),
+  createMember(
+    "Pavel Prudil",
+    "Finanční konzultant",
+    "pavel-prudil",
+    "https://collegas.cz/img/P_Prudil01.jpg",
+    "Věnuje se klientům, kteří hledají dlouhodobého partnera pro správu financí a odpovědné rozhodování.",
+  ),
+  createMember(
+    "Nikola Nováková",
+    "Finanční konzultant",
+    "nikola-novakova",
+    "https://collegas.cz/img/new_team/nikola_novakova.jpg",
+    "Pomáhá hledat jasná a srozumitelná řešení pro klienty v různých fázích osobního i profesního života.",
+  ),
+  createMember(
+    "Zuzana Rokošinyi",
+    "Finanční konzultant",
+    "zuzana-rokosinyi",
+    "https://collegas.cz/img/new_team/zuzana_rosinyi.jpg",
+    "Zaměřuje se na individuální poradenský přístup a systematickou práci s klientskými potřebami.",
+  ),
+  createMember(
+    "Antonín Jež",
+    "Finanční konzultant",
+    "antonin-jez",
+    "https://collegas.cz/img/new_team/antonin_jez.jpg",
+    "Je součástí poradenského týmu a podílí se na řešeních, která propojují každodenní finance s dlouhodobými cíli.",
+  ),
+];
+
+const backoffice = [
+  createMember(
+    "Hana Kurečková",
+    "Finanční oddělení",
+    "hana-kureckova",
+    "https://collegas.cz/img/new_team/hana_kureckova.jpg",
+    "Je součástí interního zázemí, které podporuje plynulý chod klientských i administrativních procesů.",
+  ),
+  createMember(
+    "Lucie Bohatá",
+    "Asistentka",
+    "lucie-bohata",
+    "https://collegas.cz/img/new_team/lucie_bohata.jpg",
+    "Zajišťuje organizační a komunikační podporu, aby spolupráce s klienty probíhala hladce a bez zdržení.",
+  ),
+  createMember(
+    "Anna Kupková",
+    "Registrační oddělení",
+    "anna-kupkova",
+    "https://collegas.cz/img/new_team/anna_kupkova.jpg",
+    "Stará se o správnost a návaznost interních procesů spojených s registrací a evidencí klientské agendy.",
+  ),
+  createMember(
+    "Nikola Bednaříková",
+    "Zpracování smluv",
+    "nikola-bednarikova",
+    "https://collegas.cz/img/new_team/nikola_bednarikova.jpg",
+    "Věnuje se přípravě a administraci smluvní dokumentace s důrazem na přesnost a přehlednost.",
+  ),
+  createMember(
+    "Nikola Šmídová",
+    "Manažer backoffice",
+    "nikola-smidova",
+    "https://collegas.cz/img/new_team/nikola_smidova.jpg",
+    "Koordinuje backoffice podporu a pomáhá nastavovat procesy, které drží služby pro klienty v pohybu.",
+  ),
+  createMember(
+    "Hanka Hanke",
+    "Provizní oddělení",
+    "hanka-hanke",
+    "https://collegas.cz/img/new_team/hanka_hanke.jpg",
+    "Zajišťuje agendu provizního oddělení a administrativní návaznost klíčových interních činností.",
+  ),
+  createMember(
+    "Petra Hrachovinová",
+    "Asistentka",
+    "petra-hrachovinova",
+    "https://collegas.cz/img/new_team/petra_harichova.jpg",
+    "Podporuje každodenní chod týmu a dbá na to, aby komunikace i administrativa fungovaly bez zbytečných prodlev.",
+  ),
+  createMember(
+    "Jana Grebenščiková",
+    "Asistentka",
+    "jana-grebenscikova",
+    "https://collegas.cz/img/new_team/jana_gregen%C5%A1%C4%8Dikov%C3%A1.jpg",
+    "Je součástí servisního zázemí, které pomáhá držet klientskou zkušenost přesnou, rychlou a profesionální.",
+  ),
 ];
 </script>
 
@@ -69,38 +266,62 @@ const assistants = [
     <UiIntro
       eyebrow="Kdo jsme"
       title="Naši lidé"
-      description="Za každým řešením stojí konkrétní člověk. Tým poradců a asistentů skupiny COLLEGA přistupuje ke každému klientovi individuálně – s plnou odpovědností za svěřená rozhodnutí."
+      description="Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci."
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
     />
 
-    <!-- ── Poradci ── -->
+    <!-- ── Zakladatelé ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader
-          eyebrow="Odbornost"
-          title="Poradci"
-          description="Naši poradci jsou držiteli příslušných licencí ČNB a pravidelně se vzdělávají, aby vám vždy mohli nabídnout řešení odpovídající aktuálním podmínkám."
+          eyebrow="Vedení"
+          title="Zakladatelé"
+          description="Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci."
         />
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard v-for="p in advisors" :key="p.email" v-bind="p" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+          <CustomTeamCard v-for="person in founders" :key="person.name" v-bind="person" />
         </div>
       </div>
     </section>
 
-    <!-- ── Asistenti ── -->
+    <!-- ── Seniorní tým ── -->
     <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
         <UiSectionHeader
-          eyebrow="Podpora"
-          title="Asistenti a servis"
-          description="Profesionální zázemí, které zajišťuje, aby komunikace s vámi byla vždy rychlá, přesná a diskrétní."
+          eyebrow="Zkušenost"
+          title="Seniorní tým"
+          description="Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou."
         />
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard v-for="p in assistants" :key="p.email" v-bind="p" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+          <CustomTeamCard v-for="person in seniorTeam" :key="person.name" v-bind="person" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Konzultanti a specialisté ── -->
+    <section class="py-section-gap bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto px-gutter">
+        <UiSectionHeader
+          eyebrow="Tým"
+          title="Konzultanti a specialisté"
+          description="Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků."
+        />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+          <CustomTeamCard v-for="person in consultants" :key="person.name" v-bind="person" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Backoffice ── -->
+    <section class="py-section-gap bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-gutter">
+        <UiSectionHeader
+          eyebrow="Zázemí"
+          title="Backoffice a podpora"
+          description="Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou."
+        />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+          <CustomTeamCard v-for="person in backoffice" :key="person.name" v-bind="person" />
         </div>
       </div>
     </section>

@@ -2,9 +2,10 @@
 defineProps<{
   name: string;
   role: string;
-  email: string;
-  phone: string;
+  email?: string | null;
+  phone?: string | null;
   website?: string | null;
+  websiteLabel?: string;
   photo?: string | null;
   bio: string;
 }>();
@@ -38,6 +39,7 @@ defineProps<{
       <!-- Contact links -->
       <div class="flex flex-col gap-1 pt-stack-sm border-t border-outline-variant/30">
         <a
+          v-if="email"
           :href="`mailto:${email}`"
           class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
         >
@@ -45,6 +47,7 @@ defineProps<{
           {{ email }}
         </a>
         <a
+          v-if="phone"
           :href="`tel:${phone.replace(/\s+/g, '')}`"
           class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
         >
@@ -59,7 +62,7 @@ defineProps<{
           class="flex items-center gap-2 text-body-md text-secondary-700 hover:underline transition-colors"
         >
           <span class="material-symbols-outlined text-base">open_in_new</span>
-          Osobní web
+          {{ websiteLabel || "Osobní web" }}
         </a>
       </div>
     </div>
