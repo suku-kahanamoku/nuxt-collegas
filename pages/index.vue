@@ -92,6 +92,11 @@ const services = [
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl items-start">
           <div class="lg:col-span-8 space-y-stack-md">
             <p class="text-body-lg text-on-surface-variant">
+              Nezávislý finanční audit je první krok k tomu, abyste ve svých financích měli skutečný přehled a jistotu.
+              Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše finance jako na celek – jak spolu jednotlivé části
+              fungují, kde dávají smysl a kde naopak vznikají zbytečné náklady nebo rizika.
+            </p>
+            <p class="text-body-lg text-on-surface-variant">
               Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu financí a přeložíme vám je do
               srozumitelného obrazu. Ukážeme vám, co je nastavené správně, kde zbytečně přeplácíte a kde vám
               naopak unikají příležitosti. Díky tomu získáte jasný základ pro další rozhodování – bez tlaku, bez
@@ -144,14 +149,14 @@ const services = [
             z vašich cílů, priorit a životní situace. Ať už řešíte bydlení, rodinu, budování majetku nebo finanční
             nezávislost, vše propojujeme do jednoho funkčního celku, který vás systematicky posouvá vpřed.
           </p>
-          <p class="text-body-md text-on-surface-variant border-l-2 border-secondary-700 pl-stack-md italic">
-            „Výsledkem není jen plán na papíře, ale konkrétní strategie, podle které se můžete rozhodovat každý den.
-            Získáte jistotu, že vaše finance pracují pro vás a že každý krok, který uděláte, vás přibližuje k vašim cílům."
-          </p>
           <p class="text-body-md text-on-surface-variant">
             Společně nastavíme strukturu vašich financí tak, aby odpovídala tomu, kde se právě nacházíte, i tomu, kam
             chcete dojít. Pracujeme s rezervami, investicemi i financováním tak, aby dávaly smysl jako celek a vzájemně
-            se podporovaly.
+            se podporovaly. Důraz klademe na dlouhodobou udržitelnost, flexibilitu a schopnost reagovat na změny, které život přináší.
+          </p>
+          <p class="text-body-md text-on-surface-variant">
+            Výsledkem není jen plán „na papíře", ale konkrétní strategie, podle které se můžete rozhodovat každý den.
+            Získáte jistotu, že vaše finance pracují pro vás a že každý krok, který uděláte, vás přibližuje k vašim cílům.
           </p>
           <NuxtLink
             to="/contact"

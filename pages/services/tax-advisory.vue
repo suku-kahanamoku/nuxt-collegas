@@ -21,25 +21,39 @@ useHead({
           <div class="lg:col-span-8 space-y-stack-lg">
             <h2 class="text-headline-lg font-serif text-primary-900">Daňová optimalizace jako celek</h2>
             <p class="text-body-md text-on-surface-variant">
-              Přistupujeme k daňové problematice komplexně – neřešíme pouze daňové přiznání, ale celkovou
-              daňovou situaci klienta. Propojujeme příjmy z různých zdrojů, podnikatelskou aktivitu, investice
-              a majetek do jednoho uceleného obrazu.
+              Daně v širším kontextu – příjmy, podnikání, investice i majetek jako jeden celek. Přestaňte platit víc, než musíte.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Identifikujeme legální možnosti optimalizace, upozorňujeme na rizika a navrhujeme struktury, které
-              jsou efektivní z daňového pohledu – aniž by narušovaly celkové finanční nastavení klienta.
+              Daně asi nikdy nebudou vaše oblíbené téma. To ale neznamená, že byste jim měli zbytečně nechávat
+              víc, než je nutné. Stát si vezme svoje – otázka je, kolik mu necháte navíc jen proto, že systém není
+              nastavený chytře.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Spolupracujeme s certifikovanými daňovými poradci, aby každé naše doporučení bylo odborně podloženo
-              a odpovídalo aktuální legislativě.
+              Díváme se na vaše daně v souvislostech, ne izolovaně. Příjmy, podnikání, investice i majetek tvoří
+              jeden celek – a právě v tom celku často vznikají příležitosti, které běžně zůstávají nevyužité. Ukážeme
+              vám, kde dává smysl upravit strukturu, co využít a co naopak nedělat, abyste se vyhnuli zbytečným
+              nákladům i rizikům. Nehledáme kličky, hledáme logiku, která funguje dlouhodobě.
             </p>
-            <NuxtLink
-              to="/contact"
-              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
-            >
-              Chci přestat přeplácet daně
-              <span class="material-symbols-outlined text-base">arrow_forward</span>
-            </NuxtLink>
+            <p class="text-body-md text-on-surface-variant">
+              Výsledkem není jen nižší daňová zátěž, ale hlavně klid. Víte, že máte věci nastavené správně, že
+              neplatíte víc, než musíte, a že vás nic nepřekvapí ve chvíli, kdy to nejméně čekáte.
+            </p>
+            <div class="flex flex-col gap-stack-sm">
+              <NuxtLink
+                to="/contact"
+                class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+              >
+                Ozvěte se a přestaňte platit „daň z neznalosti"
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </NuxtLink>
+              <NuxtLink
+                to="/contact"
+                class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+              >
+                Chci (ne)platit daně
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+              </NuxtLink>
+            </div>
           </div>
           <aside class="lg:col-span-4">
             <div class="border border-outline-variant/30 bg-surface p-stack-lg space-y-stack-md">

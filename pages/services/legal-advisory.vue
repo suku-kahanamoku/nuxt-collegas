@@ -29,14 +29,34 @@ const services = [
           <div class="lg:col-span-8 space-y-stack-md">
             <h2 class="text-headline-lg font-serif text-primary-900">Právo v kontextu Vašeho majetku</h2>
             <p class="text-body-md text-on-surface-variant">
-              Právní poradenství u nás není izolovanou službou – je nedílnou součástí komplexní péče o váš majetek.
-              Pracujeme ruku v ruce s finančními poradci, aby každé právní řešení odpovídalo i vašim finanční a
-              daňové situaci.
+              Dlouhodobé partnerství postavené na důvěře. Smluvní agenda, převody nemovitostí, vlastnické struktury a ochrana majetku.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Spolupracujeme s advokátní kanceláří BULA & COLLEGAS s.r.o., která disponuje zkušenostmi
-              v oblasti soukromého, obchodního i majetkového práva.
+              Právní poradenství u nás není jednorázová služba, ale dlouhodobá spolupráce postavená na důvěře,
+              diskrétnosti a profesionalitě. Věříme, že kvalitní právní zázemí má být pevnou oporou pro vaše
+              rozhodování – ať už řešíte osobní majetek, podnikání nebo investice. Proto ke každému klientovi
+              přistupujeme individuálně a s respektem k jeho situaci i soukromí.
             </p>
+            <p class="text-body-md text-on-surface-variant">
+              Specializujeme se především na oblasti, které přímo souvisejí s vaším majetkem a jeho správou –
+              smluvní agenda, převody nemovitostí, nastavení vlastnických struktur, investiční vztahy nebo
+              ochrana majetku. Neřešíme trestní právo ani obecnou právní agendu, ale soustředíme se na to, kde
+              dokážeme přinést skutečnou hodnotu a odbornost. Díky tomu víte, že pracujete s odborníky, kteří se
+              pohybují ve svém oboru a rozumí jeho detailům.
+            </p>
+            <p class="text-body-md text-on-surface-variant">
+              Naším cílem není jen reagovat na vzniklé situace, ale především jim předcházet. Pomáháme
+              nastavovat právní vztahy tak, aby byly funkční, srozumitelné a dlouhodobě udržitelné. Výsledkem je
+              klid, jistota a vědomí, že vaše rozhodnutí stojí na pevných základech a jsou podpořena
+              profesionálním zázemím.
+            </p>
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+            >
+              Opřete se o právní partnerství
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </NuxtLink>
           </div>
         </div>
 

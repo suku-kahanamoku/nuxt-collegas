@@ -33,6 +33,9 @@ const relatedLinks = [
             <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
               <div class="order-2 md:order-1 space-y-stack-md">
                 <p class="text-body-md text-on-surface-variant">
+                  Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
                   Podílíme se na celém procesu – od analýzy příležitosti, návrhu projektu a ekonomického modelu až
                   po jeho realizaci a následný prodej. Zajišťujeme přípravu projektu, koordinaci jednotlivých profesí,
                   financování i nastavení prodejní strategie.
@@ -40,6 +43,11 @@ const relatedLinks = [
                 <p class="text-body-md text-on-surface-variant">
                   Díky znalosti trhu dokážeme správně nastavit produkt, cenu i načasování tak, aby projekt dával
                   smysl nejen na papíře, ale i v praxi.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Výsledkem jsou projekty, které jsou funkční, ekonomicky udržitelné a atraktivní pro trh. Pro investory
+                  to znamená jasně řízený proces a kontrolu nad kapitálem, pro klienty pak kvalitní a promyšlené
+                  bydlení či investiční příležitost.
                 </p>
                 <NuxtLink
                   to="/contact"
@@ -70,12 +78,19 @@ const relatedLinks = [
                 <h2 class="text-headline-lg font-serif text-primary-900">Investiční příležitosti</h2>
                 <p class="text-body-md text-on-surface-variant">
                   Investiční příležitosti nevznikají každý den – a ještě méně těch, které dávají skutečný smysl v širším
-                  kontextu vašeho portfolia. Aktivně vyhledáváme projekty a investice napříč oblastmi nemovitostí,
-                  developerských záměrů nebo dalších kapitálových příležitostí.
+                  kontextu vašeho portfolia. Naším cílem není nabídnout „cokoliv, co zrovna funguje", ale vybírat a
+                  vytvářet příležitosti, které obstojí z pohledu výnosu, rizika i dlouhodobé strategie.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Každou příležitost detailně analyzujeme – z pohledu návratnosti, struktury, rizik i reálného
-                  potenciálu. Výsledkem je přístup k investicím, ke kterým se běžný investor často nedostane.
+                  Aktivně vyhledáváme projekty a investice napříč oblastmi, jako jsou nemovitosti, developerské
+                  záměry nebo další kapitálové příležitosti. Každou z nich detailně analyzujeme – z pohledu
+                  návratnosti, struktury, rizik i reálného potenciálu. Díky tomu vám předkládáme pouze ty příležitosti,
+                  za kterými si dokážeme stát a které dávají smysl nejen na papíře, ale i v praxi.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Výsledkem je přístup k investicím, ke kterým se běžný investor často nedostane, a zároveň jistota,
+                  že každé rozhodnutí zapadá do vaší celkové strategie. Investování tak přestává být o náhodě a
+                  stává se řízeným procesem s jasným cílem – dlouhodobě růst a chránit váš kapitál.
                 </p>
                 <NuxtLink
                   to="/contact"

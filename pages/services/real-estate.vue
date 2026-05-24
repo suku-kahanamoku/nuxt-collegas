@@ -29,13 +29,32 @@ const steps = [
           <div class="lg:col-span-8 space-y-stack-md">
             <h2 class="text-headline-lg font-serif text-primary-900">Prodej nebo pronájem bez starostí</h2>
             <p class="text-body-md text-on-surface-variant">
-              Realitní trh je komplexní a každá nemovitost je jedinečná. Přistupujeme k prodeji nebo pronájmu
-              strategicky – s ohledem na tržní situaci, cíle klienta a specifika konkrétní nemovitosti.
+              Kompletní zajištění prodeje nebo pronájmu – od přípravy, marketingu a prohlídek až po právní servis a bezpečné vypořádání.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Zajišťujeme celý proces od A do Z: počínaje stanovením ceny a přípravou nemovitosti, přes marketing
-              a prohlídky, až po smluvní dokumentaci a bezpečné vypořádání kupní ceny.
+              Realitní služby u nás nejsou jen o zprostředkování prodeje nebo pronájmu, ale o kompletním zajištění
+              celého procesu od prvního rozhodnutí až po úspěšné předání nemovitosti. Každý krok má svůj
+              význam – správné nastavení ceny, kvalitní prezentace, výběr vhodného zájemce i právní zajištění.
+              Právě v detailu se často rozhoduje o výsledku.
             </p>
+            <p class="text-body-md text-on-surface-variant">
+              Zajišťujeme profesionální přípravu nemovitosti včetně konzultace ceny, homestagingu a kvalitních
+              fotografií či videoprohlídek. Postaráme se o inzerci, marketing a komunikaci se zájemci, organizaci
+              prohlídek i samotné vyjednávání podmínek. Samozřejmostí je kompletní právní servis – příprava
+              smluv, úschova kupní ceny, kontrola dokumentace i bezpečné vypořádání celé transakce.
+            </p>
+            <p class="text-body-md text-on-surface-variant">
+              Výsledkem je hladký průběh bez zbytečných komplikací a maximální možný výsledek pro vás.
+              Nemusíte řešit desítky detailů ani nést rizika spojená s prodejem či pronájmem – máte jistotu, že vše
+              probíhá profesionálně a pod kontrolou.
+            </p>
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+            >
+              Chci pro svou nemovitost maximální hodnotu
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </NuxtLink>
           </div>
         </div>
 

@@ -29,18 +29,31 @@ const features = [
           <div class="lg:col-span-8 space-y-stack-md">
             <h2 class="text-headline-lg font-serif text-primary-900">Váš majetek pracuje pro vás</h2>
             <p class="text-body-md text-on-surface-variant">
-              Péče o investiční majetek není jednorázová záležitost – je to kontinuální proces přizpůsobování
-              strategie podmínkám na trzích, vašim cílům a životní situaci. Sledujeme vaše portfolio průběžně
-              a reagujeme proaktivně, ne reaktivně.
+              Průběžná analýza a řízení portfolia s důrazem na dlouhodobý růst, diverzifikaci a ochranu kapitálu v souladu s vašimi cíli.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Nezávisle analyzujeme investiční produkty a volíme řešení, která nejlépe odpovídají vašim
-              potřebám – bez vazby na konkrétní instituce nebo produkty s vyšší provizí.
+              Péči o investiční majetek vnímáme jako dlouhodobé partnerství, jehož cílem je chránit a rozvíjet váš
+              kapitál v souladu s vašimi ambicemi i životním stylem. Nejde pouze o výběr investic, ale o citlivé a
+              kontinuální řízení celého portfolia s ohledem na vaše priority, časový horizont i toleranci k riziku.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Pracujeme s celým spektrem investičních nástrojů – od kapitálového trhu a dluhopisů přes
-              nemovitosti a alternativní investice až po strukturované produkty.
+              Vaše investice průběžně analyzujeme, vyhodnocujeme jejich výkonnost a aktivně je přizpůsobujeme
+              aktuální situaci na trzích i vašim individuálním potřebám. Dbáme na vyváženost portfolia, diverzifikaci
+              i ochranu majetku v obdobích volatility. Každé rozhodnutí má své opodstatnění a zapadá do širší
+              strategie, která směřuje k dlouhodobému růstu a stabilitě.
             </p>
+            <p class="text-body-md text-on-surface-variant">
+              Díky tomuto přístupu získáváte nejen výkonnější správu majetku, ale především klid a jistotu, že se o
+              vaše finance stará někdo, kdo rozumí souvislostem a přemýšlí v širším kontextu. Vaše investice tak
+              nejsou jen „uložené", ale řízené s jasným záměrem a důrazem na dlouhodobou hodnotu.
+            </p>
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+            >
+              Svěřte kapitál do individuální péče
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </NuxtLink>
           </div>
         </div>
 

@@ -29,14 +29,31 @@ const included = [
           <div class="lg:col-span-8 space-y-stack-md">
             <h2 class="text-headline-lg font-serif text-primary-900">Investujte, my se postaráme</h2>
             <p class="text-body-md text-on-surface-variant">
-              Vlastnictví investičních nemovitostí přináší výnosy, ale i povinnosti – výběr nájemníků, technická
-              údržba, administrativa i daňová evidence. To vše přebíráme za vás, abyste se mohli soustředit na
-              to, co je pro vás důležité.
+              Kompletní péče o váš investiční majetek – výběr nájemníků, technická správa, administrativa i ekonomická agenda bez zbytečných starostí.
             </p>
             <p class="text-body-md text-on-surface-variant">
-              Naší prioritou je maximalizovat výnosnost vašeho majetku při minimalizaci rizik a starostí. Pravidelně
-              reportujeme o stavu nemovitostí, finančních výsledcích a plánovaných investicích.
+              Správa nemovitostí znamená především to, že váš majetek funguje tak, jak má – bez zbytečných
+              starostí, výpadků příjmů nebo neřešených problémů. Ať už vlastníte jednu investiční nemovitost nebo
+              celé portfolio, klíčem je systematická péče, která zajišťuje stabilní výnos a dlouhodobou hodnotu.
             </p>
+            <p class="text-body-md text-on-surface-variant">
+              Zajišťujeme kompletní správu – od výběru a prověření nájemníků, nastavení nájemních smluv a
+              přebírání plateb až po řešení běžné komunikace, servisu a případných problémů. Postaráme se o
+              technický stav nemovitosti, koordinaci oprav, revize i kontrolu nákladů. Součástí je také
+              administrativní a ekonomická agenda, abyste měli vždy přehled o výnosech i výdajích.
+            </p>
+            <p class="text-body-md text-on-surface-variant">
+              Výsledkem je nemovitost, která vám vydělává, aniž by vás zatěžovala. Nemusíte řešit každodenní
+              provoz ani nečekané situace – máte jistotu, že se o váš majetek stará někdo, kdo hlídá jeho hodnotu
+              i výkonnost.
+            </p>
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+            >
+              Zažijte správu bez starostí
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </NuxtLink>
           </div>
         </div>
 
