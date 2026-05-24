@@ -78,12 +78,11 @@ const services = [
   <div class="w-full overflow-hidden">
 
     <!-- ── Hero ── -->
-    <UiServiceHero
+    <UiIntro
       eyebrow="Finanční poradenství"
       title="Nezávislý finanční audit"
       subtitle="Nezávislý finanční audit je první krok k tomu, abyste ve svých financích měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše finance jako na celek – jak spolu jednotlivé části fungují, kde dávají smysl a kde naopak vznikají zbytečné náklady nebo rizika."
-      hero-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-      hero-alt="Moderní korporátní budova – čisté linie tmavého dřeva a kovu v přirozeném světle"
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
     />
 
     <!-- ── Audit intro ── -->
