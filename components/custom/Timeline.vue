@@ -29,7 +29,17 @@ const events: TimelineEvent[] = [
 </script>
 
 <template>
-  <section class="py-section-gap px-gutter" style="background: linear-gradient(160deg, #04291e 0%, #0b3d2b 45%, #1d3f33 100%);">
+  <section
+    class="py-section-gap px-gutter bg-primary-900"
+    style="
+      background-image: radial-gradient(
+        circle at center,
+        rgba(255, 222, 163, 0.12) 0%,
+        rgba(4, 41, 30, 0.94) 48%,
+        rgba(4, 41, 30, 1) 100%
+      );
+    "
+  >
     <div class="max-w-7xl mx-auto">
 
       <!-- Header -->
