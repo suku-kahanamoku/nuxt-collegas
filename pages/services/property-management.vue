@@ -83,16 +83,16 @@ const relatedLinks = [
                   situace – máte jistotu, že se o váš majetek stará někdo, kdo
                   hlídá jeho hodnotu i výkonnost.
                 </p>
-                <NuxtLink
+                <UButton
                   to="/contact"
-                  class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                  variant="link"
+                  color="secondary"
+                  trailing-icon="i-material-symbols-arrow-forward"
+                  class="!p-0"
+                  :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1' }"
                 >
                   Zažijte správu bez starostí
-                  <span
-                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
-                    >arrow_forward</span
-                  >
-                </NuxtLink>
+                </UButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

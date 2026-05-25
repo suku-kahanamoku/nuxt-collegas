@@ -82,16 +82,16 @@ const topics = [
                   že máte věci nastavené správně, že neplatíte víc, než musíte,
                   a že vás nic nepřekvapí ve chvíli, kdy to nejméně čekáte.
                 </p>
-                <NuxtLink
+                <UButton
                   to="/contact"
-                  class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                  variant="link"
+                  color="secondary"
+                  trailing-icon="i-material-symbols-arrow-forward"
+                  class="!p-0"
+                  :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1' }"
                 >
-                  Ozvěte se a přestaňte platit „daň z neznalosti"
-                  <span
-                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
-                    >arrow_forward</span
-                  >
-                </NuxtLink>
+                  Ozvěte se a přestaňte platit „daň z neznalosti“
+                </UButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

@@ -278,16 +278,17 @@ function handleSubmit() {
           </div>
 
           <div class="pt-stack-md">
-            <button
+            <UButton
               type="submit"
-              class="group w-full md:w-auto px-stack-lg py-stack-sm bg-secondary-fixed text-primary-900 text-label-caps font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity flex items-center justify-center gap-stack-xs"
+              color="secondary"
+              variant="solid"
+              trailing-icon="i-material-symbols-arrow-forward"
+              size="xl"
+              class="w-full md:w-auto justify-center px-10 bg-secondary-fixed! text-primary-900! hover:bg-secondary-fixed/80! transition-colors"
+              :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
             >
               Odeslat poptávku
-              <span
-                class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1"
-                >arrow_forward</span
-              >
-            </button>
+            </UButton>
           </div>
 
           <p

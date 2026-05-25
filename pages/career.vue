@@ -172,16 +172,17 @@ const mediaItems = [
             uvítáme
             <strong>spontánní přihlášku</strong> od šikovného člověka.
           </p>
-          <NuxtLink
+          <UButton
             to="/contact"
-            class="group inline-flex items-center gap-2 mt-stack-md bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity"
+            color="primary"
+            variant="solid"
+            trailing-icon="i-material-symbols-arrow-forward"
+            size="xl"
+            class="mt-stack-md"
+            :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
           >
             Napsat nám
-            <span
-              class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
-              >arrow_forward</span
-            >
-          </NuxtLink>
+          </UButton>
         </div>
       </div>
     </section>

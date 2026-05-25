@@ -24,7 +24,9 @@ defineProps<{
       <span
         v-if="eyebrow"
         class="text-label-caps uppercase tracking-widest font-semibold mb-stack-sm block"
-        :class="variant === 'dark' ? 'text-secondary-fixed' : 'text-secondary-700'"
+        :class="
+          variant === 'dark' ? 'text-secondary-fixed' : 'text-secondary-700'
+        "
       >
         {{ eyebrow }}
       </span>
@@ -42,31 +44,33 @@ defineProps<{
         {{ body }}
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
-        <NuxtLink
+        <UButton
           v-if="primaryLabel && primaryTo"
           :to="primaryTo"
-          class="group inline-flex items-center justify-center gap-stack-xs px-stack-lg py-stack-sm text-label-caps font-semibold uppercase tracking-widest transition-[opacity,transform] duration-200 ease-out hover:opacity-90 hover:-translate-y-0.5"
-          :class="
-            variant === 'dark'
-              ? 'bg-secondary-fixed text-primary-900'
-              : 'bg-primary-900 text-on-primary'
-          "
+          :color="variant === 'dark' ? 'secondary' : 'primary'"
+          variant="solid"
+          trailing-icon="i-material-symbols-arrow-forward"
+          size="xl"
+          class="justify-center px-10 py-4 text-base"
+          :class="variant === 'dark' ? 'bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors' : ''"
+          :ui="{
+            trailingIcon:
+              'transition-transform duration-200 group-hover:translate-x-1 size-5',
+          }"
         >
           {{ primaryLabel }}
-          <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
-        </NuxtLink>
-        <NuxtLink
+        </UButton>
+        <UButton
           v-if="secondaryLabel && secondaryTo"
           :to="secondaryTo"
-          class="inline-flex items-center justify-center gap-2 border px-stack-lg py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,color,background-color,border-color] duration-200 ease-out hover:-translate-y-0.5"
-          :class="
-            variant === 'dark'
-              ? 'border-on-primary text-on-primary hover:bg-on-primary/10 hover:border-on-primary'
-              : 'border-primary-900 text-primary-900 hover:bg-surface-container hover:border-secondary-700/60'
-          "
+          color="primary"
+          variant="outline"
+          size="xl"
+          class="justify-center px-10 py-4 text-base"
+          :class="variant === 'dark' ? 'border-on-primary text-on-primary hover:bg-on-primary/10' : ''"
         >
           {{ secondaryLabel }}
-        </NuxtLink>
+        </UButton>
       </div>
     </div>
   </section>

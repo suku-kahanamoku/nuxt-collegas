@@ -24,45 +24,78 @@
         <div
           class="flex flex-wrap gap-x-stack-md gap-y-stack-sm md:justify-end"
         >
-          <NuxtLink
-            class="text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors"
+          <UButton
+            variant="link"
+            color="primary"
             to="#"
-            >Ochrana soukromí</NuxtLink
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Ochrana soukromí</UButton
           >
-          <NuxtLink
-            class="text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors"
+          <UButton
+            variant="link"
+            color="primary"
             to="#"
-            >Obchodní podmínky</NuxtLink
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Obchodní podmínky</UButton
           >
-          <NuxtLink
-            class="text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors"
+          <UButton
+            variant="link"
+            color="primary"
             to="#"
-            >Regulatorní info</NuxtLink
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Regulatorní info</UButton
           >
-          <NuxtLink
-            class="text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors"
+          <UButton
+            variant="link"
+            color="primary"
             to="#"
-            >Cookies</NuxtLink
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Cookies</UButton
           >
-          <NuxtLink
-            class="text-body-md text-on-primary-container hover:text-secondary-fixed transition-colors"
+          <UButton
+            variant="link"
+            color="primary"
             to="/contact"
-            >Kontakt</NuxtLink
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Kontakt</UButton
           >
         </div>
-        <div class="flex gap-stack-md mt-stack-lg">
-          <span
-            class="material-symbols-outlined text-secondary-fixed cursor-pointer hover:opacity-80"
-            >lock_open</span
+        <div class="flex gap-stack-md mt-stack-lg items-center">
+          <UButton
+            variant="link"
+            color="secondary"
+            to="/client-zone"
+            aria-label="Klientská zóna"
+            class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
           >
-          <span
-            class="material-symbols-outlined text-secondary-fixed cursor-pointer hover:opacity-80"
-            >language</span
+            <UIcon
+              name="i-material-symbols-lock-open-outline"
+              style="width: 1.75rem; height: 1.75rem"
+            />
+          </UButton>
+          <UButton
+            variant="link"
+            color="secondary"
+            aria-label="Jazyk"
+            class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
           >
-          <span
-            class="material-symbols-outlined text-secondary-fixed cursor-pointer hover:opacity-80"
-            >mail</span
+            <UIcon
+              name="i-material-symbols-language"
+              style="width: 1.75rem; height: 1.75rem"
+            />
+          </UButton>
+          <UButton
+            variant="link"
+            color="secondary"
+            to="/contact"
+            aria-label="Kontakt"
+            class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
           >
+            <UIcon
+              name="i-material-symbols-mail-outline"
+              style="width: 1.75rem; height: 1.75rem"
+            />
+          </UButton>
         </div>
       </div>
     </div>

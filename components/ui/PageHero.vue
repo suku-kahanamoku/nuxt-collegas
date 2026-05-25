@@ -37,15 +37,17 @@ defineProps<{
           <p v-if="decorLabel" class="text-label-caps text-secondary-700 uppercase tracking-widest font-semibold">{{ decorLabel }}</p>
         </div>
         <!-- CTA button -->
-        <NuxtLink
+        <UButton
           v-else-if="ctaLabel && ctaTo"
           :to="ctaTo"
-          class="inline-flex items-center gap-2 bg-primary-900 text-on-primary px-6 py-stack-md text-label-caps font-semibold uppercase tracking-widest transition-[transform,background-color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-700"
-          style="box-shadow: 0 2px 0 rgba(255,255,255,0.12) inset, 0 -1px 0 rgba(0,0,0,0.25) inset, 0 4px 12px rgba(4,41,30,0.25), 0 8px 24px rgba(4,41,30,0.15);"
+          color="primary"
+          variant="solid"
+          :trailing-icon="ctaIcon || undefined"
+          size="xl"
+          :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
         >
           {{ ctaLabel }}
-          <span v-if="ctaIcon" class="material-symbols-outlined text-base">{{ ctaIcon }}</span>
-        </NuxtLink>
+        </UButton>
       </div>
 
     </div>

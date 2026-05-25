@@ -49,17 +49,16 @@ const relatedLinks = [
                   řešení, které dává smysl nejen z pohledu ceny, ale především
                   kvality ochrany.
                 </p>
-                <NuxtLink
+                <UButton
                   to="/contact"
-                  class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                  variant="link"
+                  color="secondary"
+                  trailing-icon="i-material-symbols-arrow-forward"
+                  class="!p-0"
+                  :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1' }"
                 >
-                  Nechte si nastavit ochranu, na kterou se můžete opravdu
-                  spolehnout
-                  <span
-                    class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
-                    >arrow_forward</span
-                  >
-                </NuxtLink>
+                  Nechte si nastavit ochranu, na kterou se můžete opravdu spolehnout
+                </UButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"
