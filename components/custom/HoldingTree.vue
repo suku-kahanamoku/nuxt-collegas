@@ -9,7 +9,6 @@ interface HoldingSection {
   levels: { nodes: HoldingNode[] }[];
 }
 
-
 const sections: HoldingSection[] = [
   {
     title: "Finance a právo",

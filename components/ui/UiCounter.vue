@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted, watch } from "vue";
-import { useIntervalFn } from "@vueuse/core";
+import { ref, onMounted, watch, onBeforeUnmount } from "vue";
+import { useRafFn } from "@vueuse/core";
 
 const props = defineProps<{
   value: string | number;
@@ -11,6 +11,7 @@ const props = defineProps<{
 
 const display = ref(String(props.value));
 const el = ref<HTMLElement | null>(null);
+let rafControls: ReturnType<typeof useRafFn> | null = null;
 
 function parseTarget(v: string | number) {
   const s = String(v);
@@ -30,33 +31,35 @@ function startCounter(v: string | number) {
   // If SSR already rendered the final value and we want to preserve it,
   // do not reset to 0 or start the animation (prevents visual jump).
   if (props.preserveOnSSR !== false && el.value) {
-    const ssrText = (el.value.textContent || '').trim();
+    const ssrText = (el.value.textContent || "").trim();
     if (ssrText === String(v)) {
       display.value = ssrText;
       return;
     }
   }
 
+  // stop previous animation if running
+  if (rafControls && rafControls.pause) rafControls.pause();
+
   const duration = props.duration ?? 2000;
-  const intervalMs = props.interval ?? 50;
-  const frames = Math.max(1, Math.round(duration / intervalMs));
-  const step = Math.max(1, Math.ceil(target / frames));
-  const current = ref(0);
-  const { pause } = useIntervalFn(
-    () => {
-      current.value += step;
-      if (current.value >= target) {
-        current.value = target;
-        display.value = `${current.value}${suffix}`;
-        pause();
-      } else {
-        display.value = `${current.value}${suffix}`;
-      }
+  // use requestAnimationFrame to drive smooth animation
+  let elapsed = 0;
+  rafControls = useRafFn(
+    ({ delta }) => {
+      elapsed += delta;
+      const progress = Math.min(1, elapsed / duration);
+      const valueNow = Math.round(progress * target);
+      display.value = `${valueNow}${suffix}`;
+      if (progress >= 1 && rafControls && rafControls.pause)
+        rafControls.pause();
     },
-    intervalMs,
     { immediate: true },
   );
 }
+
+onBeforeUnmount(() => {
+  if (rafControls && rafControls.pause) rafControls.pause();
+});
 
 watch(
   () => props.value,
@@ -68,5 +71,15 @@ onMounted(() => startCounter(props.value));
 </script>
 
 <template>
-  <span ref="el">{{ display }}</span>
+  <span
+    ref="el"
+    role="button"
+    tabindex="0"
+    class="cursor-pointer select-none"
+    @click="startCounter(props.value)"
+    @keydown.enter.prevent="startCounter(props.value)"
+    @keydown.space.prevent="startCounter(props.value)"
+  >
+    {{ display }}
+  </span>
 </template>
