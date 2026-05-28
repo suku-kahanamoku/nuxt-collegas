@@ -84,6 +84,7 @@ const services = [
 <template>
   <div class="w-full overflow-hidden">
     <CustomIntroCarousel />
+    <CustomSlogan&Stats />
 
     <!-- ── Naše služby ── -->
     <section class="bg-surface-container-low py-section-gap">

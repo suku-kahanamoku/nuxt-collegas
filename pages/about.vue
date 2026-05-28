@@ -11,13 +11,6 @@ useHead({
   ],
 });
 
-const stats = [
-  { value: "3", label: "Licencované subjekty pod ČNB" },
-  { value: "10+", label: "Let v oboru" },
-  { value: "9+", label: "Společností ve skupině" },
-  { value: "100%", label: "Nezávislost na bankách" },
-];
-
 const values = [
   {
     icon: "lock",
@@ -76,58 +69,6 @@ const principles = [
       description="Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů."
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
     />
-
-    <!-- ── Příběh ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
-          <div class="lg:col-span-7 flex flex-col gap-stack-lg">
-            <div>
-              <span
-                class="text-label-caps text-secondary-700 uppercase block mb-stack-sm tracking-widest font-semibold"
-                >Jak to začalo</span
-              >
-              <h2
-                class="text-headline-lg font-serif text-primary-900 mb-stack-md"
-              >
-                Dvě myšlenky.<br />Jeden závazek.
-              </h2>
-              <div
-                class="flex flex-col gap-stack-md text-body-lg text-on-surface-variant"
-              >
-                <p>
-                  Všechno začalo jednoduchou myšlenkou dvou přátel. Viděli jsme,
-                  jak finanční poradenství funguje v praxi – prodej produktů,
-                  plnění kvót, tlak na objem. A rozhodli jsme se, že to může
-                  fungovat jinak.
-                </p>
-                <p>
-                  V roce 2014 jsme se rozhodli odejít z korporátního prostředí a
-                  vybudovat poradenství, kde klient je vždy na prvním místě. Ne
-                  produkt. Ne provize. Ne plán prodeje.
-                </p>
-                <p>
-                  Dnes máme tři licencované subjekty pod dohledem ČNB, tým
-                  zkušených poradců a správce a klienty, kteří nám důvěřují s
-                  tím nejcennějším – svým majetkem, rodinou a budoucností.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
-            <div class="grid grid-cols-2 gap-stack-sm">
-              <UiStatCard
-                v-for="s in stats"
-                :key="s.label"
-                :value="s.value"
-                :label="s.label"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ── Hodnoty ── -->
     <section class="py-section-gap bg-surface-container-low">

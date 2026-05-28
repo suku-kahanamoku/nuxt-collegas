@@ -24,7 +24,7 @@ defineProps<{
           {{ eyebrow }}
         </span>
         <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none" v-html="title" />
-        <div class="h-0.5 w-20 rounded-full mb-stack-md" style="background: linear-gradient(90deg,#745b26,#e4c283,#745b26); box-shadow: 0 1px 6px rgba(228,194,131,0.45);"></div>
+        <div class="h-0.5 w-20 rounded-full mb-stack-md bg-gradient-to-r from-[#745b26] via-[#e4c283] to-[#745b26] shadow-md"></div>
         <slot />
       </div>
 
