@@ -83,7 +83,7 @@ const services = [
 
 <template>
   <div class="w-full overflow-hidden">
-    <!-- Note: Audit and Finanční plán content moved to /services/financial-audit -->
+    <CustomIntroCarousel />
 
     <!-- ── Naše služby ── -->
     <section class="bg-surface-container-low py-section-gap">
