@@ -20,7 +20,7 @@ useHead({
 <template>
   <div class="w-full overflow-hidden">
     <CustomIntroCarousel />
-    <CustomSloganAndStats />
+    <CustomSlogan&Stats />
 
     <CustomServices />
 

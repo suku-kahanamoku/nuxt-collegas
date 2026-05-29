@@ -49,7 +49,7 @@ const stats = [
 
         <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
           <div class="grid grid-cols-2 gap-stack-sm">
-            <UiBaseCard v-for="s in stats" :key="s.label" compact>
+            <UiBaseCard v-for="s in stats" :key="s.label" :ui="{ body: 'h-full pt-4!' }">
               <template #header>
                 <UiTitle size="sm">
                   <template #eyebrow>

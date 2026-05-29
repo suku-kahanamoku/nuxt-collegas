@@ -81,7 +81,7 @@ const services = [
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-        <UiBaseCard v-for="s in services" :key="s.to" :to="s.to">
+        <UiBaseCard v-for="s in services" :key="s.to" :to="s.to" :ui="{ body: 'h-full p-12!' }">
           <template #header>
             <UiTitle size="sm">
               <template #eyebrow>
