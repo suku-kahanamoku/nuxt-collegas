@@ -49,9 +49,13 @@ const stats = [
 
         <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
           <div class="grid grid-cols-2 gap-stack-sm">
-            <UiBaseCard v-for="s in stats" :key="s.label" :ui="{ body: 'h-full pt-4!' }">
+            <UiBaseCard
+              v-for="s in stats"
+              :key="s.label"
+              :ui="{ body: 'h-full pt-4!' }"
+            >
               <template #header>
-                <UiTitle size="sm">
+                <UiTitle size="sm" :divider="false">
                   <template #eyebrow>
                     <span
                       class="text-headline-lg font-serif text-secondary-700"
@@ -64,13 +68,14 @@ const stats = [
                     </span>
                   </template>
                   <template #title>
-                    <h3 class="sr-only">{{ s.label }}</h3>
+                    <h3
+                      class="text-body-md text-on-surface-variant/80 font-medium"
+                    >
+                      {{ s.label }}
+                    </h3>
                   </template>
                 </UiTitle>
               </template>
-              <p class="text-body-md text-on-surface-variant mt-1">
-                {{ s.label }}
-              </p>
             </UiBaseCard>
           </div>
         </div>

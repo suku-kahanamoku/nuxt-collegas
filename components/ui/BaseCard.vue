@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const props = defineProps({
   to: { type: [String, Object], required: false },
-  divider: { type: Boolean, default: true },
 });
 </script>
 
@@ -19,6 +18,7 @@ const props = defineProps({
         <slot name="header" />
 
         <slot />
+
         <div v-if="$slots.footer" class="mt-auto">
           <slot name="footer" />
         </div>
@@ -32,6 +32,7 @@ const props = defineProps({
         <slot name="header" />
 
         <slot />
+
         <div v-if="$slots.footer" class="mt-auto">
           <slot name="footer" />
         </div>
