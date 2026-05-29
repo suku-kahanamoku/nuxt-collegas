@@ -263,12 +263,17 @@ const backoffice = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro
-      eyebrow="Kdo jsme"
-      title="Naši lidé"
-      description="Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Kdo jsme" size="md">
+          <template #title>Naši lidé</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci.</p>
+      </template>
+    </UiIntro>
 
     <!-- ── Zakladatelé ── -->
     <section class="py-section-gap bg-surface-container-lowest">

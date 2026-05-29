@@ -40,27 +40,11 @@ const pillars = [
       <template #description>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
           <div class="lg:col-span-8">
-            <span
-              class="text-label-caps text-secondary-700 uppercase mb-stack-sm block tracking-widest font-semibold"
-              >Skupina COLLEGA</span
-            >
-            <h1
-              class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none"
-            >
-              Holdingová<br />struktura
-            </h1>
-            <div
-              class="h-0.5 w-20 rounded-full mb-stack-md"
-              style="
-                background: linear-gradient(
-                  90deg,
-                  rgb(116, 91, 38),
-                  rgb(228, 194, 131),
-                  rgb(116, 91, 38)
-                );
-                box-shadow: rgba(228, 194, 131, 0.45) 0px 1px 6px;
-              "
-            ></div>
+            <UiTitle eyebrow="Skupina COLLEGA" size="md">
+              <template #title>
+                Holdingová<br />struktura
+              </template>
+            </UiTitle>
             <p class="text-body-lg text-on-surface-variant max-w-2xl">
               Skupina COLLEGA ENTERPRISE a.s. sdružuje přední společnosti z
               oblasti financí, investic, realitního rozvoje, práva a podpůrných

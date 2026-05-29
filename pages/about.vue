@@ -63,17 +63,27 @@ const principles = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro
-      eyebrow="Náš příběh"
-      title="O nás"
-      description="Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Náš příběh" size="md">
+          <template #title>O nás</template>
+        </UiTitle>
+      </template>
 
-    <!-- ── Hodnoty ── -->
-    <section class="py-section-gap bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
+      <template #description>
+        <p>Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů.</p>
+      </template>
+    <UiIntro bg-image="/img/intro-about.webp">
+      <template #title>
+        <UiTitle eyebrow="Kdo jsme" size="md">
+          <template #title>O nás</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Jsme tým poradců a specialistů poskytujících komplexní finanční služby s důrazem na dlouhodobé partnerství. Naše přístupy staví na profesionalitě, transparenci a osobním přístupu.</p>
+      </template>
+    </UiIntro>
           eyebrow="Naše hodnoty"
           title="Diskrétnost. Nezávislost. Odpovědnost."
           description="Tři slova, která nejsou jen sloganem. Jsou závazkem, který dodržujeme každý den – vůči každému klientovi, v každém rozhodnutí."

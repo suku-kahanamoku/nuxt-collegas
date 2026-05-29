@@ -48,12 +48,17 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro
-      eyebrow="Finanční poradenství"
-      title="Péče o investiční majetek"
-      description="Péči o investiční majetek vnímáme jako dlouhodobé partnerství, jehož cílem je chránit a rozvíjet váš kapitál v souladu s vašimi ambicemi i životním stylem. Nejde pouze o výběr investic, ale o citlivé a kontinuální řízení celého portfolia s ohledem na vaše priority, časový horizont i toleranci k riziku."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Finanční poradenství" size="md">
+          <template #title>Péče o investiční majetek</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Péči o investiční majetek vnímáme jako dlouhodobé partnerství, jehož cílem je chránit a rozvíjet váš kapitál v souladu s vašimi ambicemi i životním stylem. Nejde pouze o výběr investic, ale o citlivé a kontinuální řízení celého portfolia s ohledem na vaše priority, časový horizont i toleranci k riziku.</p>
+      </template>
+    </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">

@@ -24,12 +24,17 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro
-      eyebrow="Kapitálové investice"
-      title="Developerské projekty"
-      description="Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Nejde jen o samotnou výstavbu, ale o vytvoření projektu, který má dlouhodobou hodnotu – pro investora i pro budoucí uživatele. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Kapitálové investice" size="md">
+          <template #title>Developerské projekty</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Developerské projekty vnímáme jako komplexní proces, kde se propojuje vize, kapitál, trh i správné načasování. Nejde jen o samotnou výstavbu, ale o vytvoření projektu, který má dlouhodobou hodnotu – pro investora i pro budoucí uživatele. Každý krok, od výběru lokality až po finální prodej, má zásadní vliv na celkový výsledek.</p>
+      </template>
+    </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">

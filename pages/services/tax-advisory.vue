@@ -51,12 +51,17 @@ const topics = [
 
 <template>
   <div class="w-full">
-    <UiIntro
-      eyebrow="Finanční poradenství"
-      title="Daňové poradenství"
-      description="Daně asi nikdy nebudou vaše oblíbené téma. To ale neznamená, že byste jim měli zbytečně nechávat víc, než je nutné. Stát si vezme svoje – otázka je, kolik mu necháte navíc jen proto, že systém není nastavený chytře."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Finanční poradenství" size="md">
+          <template #title>Daňové poradenství</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Daně asi nikdy nebudou vaše oblíbené téma. To ale neznamená, že byste jim měli zbytečně nechávat víc, než je nutné. Stát si vezme svoje – otázka je, kolik mu necháte navíc jen proto, že systém není nastavený chytře.</p>
+      </template>
+    </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">

@@ -46,12 +46,17 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro
-      eyebrow="Finanční poradenství"
-      title="Odškodnění"
-      description="Odškodnění je oblast, do které se člověk dostane nečekaně – často ve chvíli, kdy řeší zdravotní, pracovní nebo osobní komplikace. A právě tehdy je nejdůležitější mít po svém boku někoho, kdo se v procesu vyzná a dokáže vás jím bezpečně provést."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Finanční poradenství" size="md">
+          <template #title>Odškodnění</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Odškodnění je oblast, do které se člověk dostane nečekaně – často ve chvíli, kdy řeší zdravotní, pracovní nebo osobní komplikace. A právě tehdy je nejdůležitější mít po svém boku někoho, kdo se v procesu vyzná a dokáže vás jím bezpečně provést.</p>
+      </template>
+    </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">

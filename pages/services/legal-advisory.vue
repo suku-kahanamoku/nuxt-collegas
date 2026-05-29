@@ -48,12 +48,17 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro
-      eyebrow="Finanční poradenství"
-      title="Právní poradenství"
-      description="Právní poradenství u nás není jednorázová služba, ale dlouhodobá spolupráce postavená na důvěře, diskrétnosti a profesionalitě. Proto ke každému klientovi přistupujeme individuálně a s respektem k jeho situaci i soukromí."
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    />
+    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+      <template #title>
+        <UiTitle eyebrow="Finanční poradenství" size="md">
+          <template #title>Právní poradenství</template>
+        </UiTitle>
+      </template>
+
+      <template #description>
+        <p>Právní poradenství u nás není jednorázová služba, ale dlouhodobá spolupráce postavená na důvěře, diskrétnosti a profesionalitě. Proto ke každému klientovi přistupujeme individuálně a s respektem k jeho situaci i soukromí.</p>
+      </template>
+    </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
       <div class="max-w-7xl mx-auto px-gutter">
