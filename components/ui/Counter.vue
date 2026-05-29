@@ -28,8 +28,6 @@ function startCounter(v: string | number) {
     return;
   }
 
-  // If SSR already rendered the final value and we want to preserve it,
-  // do not reset to 0 or start the animation (prevents visual jump).
   if (props.preserveOnSSR !== false && el.value) {
     const ssrText = (el.value.textContent || "").trim();
     if (ssrText === String(v)) {
@@ -38,11 +36,9 @@ function startCounter(v: string | number) {
     }
   }
 
-  // stop previous animation if running
   if (rafControls && rafControls.pause) rafControls.pause();
 
   const duration = props.duration ?? 2000;
-  // use requestAnimationFrame to drive smooth animation
   let elapsed = 0;
   rafControls = useRafFn(
     ({ delta }) => {
@@ -50,8 +46,7 @@ function startCounter(v: string | number) {
       const progress = Math.min(1, elapsed / duration);
       const valueNow = Math.round(progress * target);
       display.value = `${valueNow}${suffix}`;
-      if (progress >= 1 && rafControls && rafControls.pause)
-        rafControls.pause();
+      if (progress >= 1 && rafControls && rafControls.pause) rafControls.pause();
     },
     { immediate: true },
   );

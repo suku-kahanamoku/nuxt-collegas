@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UiCounter from "./UiCounter.vue";
+// use global UiCounter (auto-registered from components/ui)
 
 const { value, label, counterDuration, counterInterval } = defineProps<{
   value: string | number;
