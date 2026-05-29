@@ -108,8 +108,14 @@ const services = [
             :to="s.to"
           >
             <template #header>
-              <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ s.icon }}</span>
-              <h3 class="text-headline-md font-serif text-primary-900">{{ s.title }}</h3>
+              <UiTitle :divider="false">
+                <template #eyebrow>
+                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ s.icon }}</span>
+                </template>
+                <template #title>
+                  <h3 class="text-headline-md font-serif text-primary-900">{{ s.title }}</h3>
+                </template>
+              </UiTitle>
             </template>
             <p class="text-body-md text-on-surface-variant flex-1">{{ s.description }}</p>
             <template #footer>

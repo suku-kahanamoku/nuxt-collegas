@@ -156,7 +156,7 @@ const events: TimelineEvent[] = [
               <span
                 v-if="ev.year"
                 class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1"
-                >{{ ev.year }}</span
+              >{{ ev.year }}</span>
               >
               <div
                 class="font-serif font-bold text-primary-900 text-sm leading-snug"
@@ -217,7 +217,7 @@ const events: TimelineEvent[] = [
               <span
                 v-if="ev.year"
                 class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1"
-                >{{ ev.year }}</span
+              >{{ ev.year }}</span>
               >
               <div
                 class="font-serif font-bold text-primary-900 text-sm leading-snug"

@@ -51,7 +51,9 @@ const relatedLinks = [
     <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
       <template #header>
         <UiTitle eyebrow="Finanční poradenství" size="md">
-          <template #title>Právní poradenství</template>
+          <template #title>
+            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Právní poradenství</h1>
+          </template>
         </UiTitle>
       </template>
 
@@ -117,8 +119,14 @@ const relatedLinks = [
                 :key="s.title"
               >
                 <template #header>
-                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ s.icon }}</span>
-                  <h3 class="text-title-lg font-serif text-primary-900">{{ s.title }}</h3>
+                  <UiTitle :divider="false">
+                    <template #eyebrow>
+                      <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ s.icon }}</span>
+                    </template>
+                    <template #title>
+                      <h3 class="text-title-lg font-serif text-primary-900">{{ s.title }}</h3>
+                    </template>
+                  </UiTitle>
                 </template>
                 <p class="text-body-md text-on-surface-variant">{{ s.description }}</p>
               </UiBaseCard>

@@ -41,9 +41,9 @@ const titleCls = computed(() => {
     </slot>
 
     <slot name="title">
-      <span :class="[titleCls, 'font-serif text-primary-900 leading-none']">
+      <h3 :class="[titleCls, 'font-serif text-primary-900 leading-none']">
         {{ title }}
-      </span>
+      </h3>
     </slot>
 
     <div

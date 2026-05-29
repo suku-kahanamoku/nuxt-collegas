@@ -34,9 +34,9 @@ const { bgImage, ui } = toRefs(props);
     <div v-else-if="ui && ui.bg" class="absolute inset-0 bg-primary-900"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-gutter w-full pt-16 pb-24">
-      <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">
+      <div class="mb-stack-md">
         <slot name="header"></slot>
-      </h1>
+      </div>
 
       <div class="mt-stack-md">
         <slot name="description"></slot>

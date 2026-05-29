@@ -40,7 +40,7 @@ const pillars = [
       <template #header>
         <UiTitle eyebrow="Skupina COLLEGA" size="md">
           <template #title>
-            Holdingová<br />struktura
+            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Holdingová<br />struktura</h1>
           </template>
         </UiTitle>
       </template>
@@ -87,14 +87,20 @@ const pillars = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="p in pillars" :key="p.title">
             <template #header>
-              <span
-                class="material-symbols-outlined text-secondary-700"
-                style="font-size: 2rem"
-                >{{ p.icon }}</span
-              >
-              <h3 class="text-title-lg font-serif text-primary-900">
-                {{ p.title }}
-              </h3>
+              <UiTitle :divider="false">
+                <template #eyebrow>
+                  <span
+                    class="material-symbols-outlined text-secondary-700"
+                    style="font-size: 2rem"
+                    >{{ p.icon }}</span
+                  >
+                </template>
+                <template #title>
+                  <h3 class="text-title-lg font-serif text-primary-900">
+                    {{ p.title }}
+                  </h3>
+                </template>
+              </UiTitle>
             </template>
             <p class="text-body-md text-on-surface-variant">
               {{ p.description }}

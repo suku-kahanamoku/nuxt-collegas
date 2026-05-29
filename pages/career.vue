@@ -68,7 +68,9 @@ const mediaItems = [
     <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
       <template #header>
         <UiTitle eyebrow="Přidejte se k nám" size="md">
-          <template #title>Kariéra</template>
+          <template #title>
+            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Kariéra</h1>
+          </template>
         </UiTitle>
       </template>
 
@@ -130,10 +132,16 @@ const mediaItems = [
               :key="item.title"
             >
               <template #header>
-                <div class="shrink-0 flex items-start pt-0.5">
-                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ item.icon }}</span>
-                </div>
-                <h3 class="text-title-md font-serif text-primary-900 mb-stack-xs">{{ item.title }}</h3>
+                <UiTitle :divider="false">
+                  <template #eyebrow>
+                    <div class="shrink-0 flex items-start pt-0.5">
+                      <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ item.icon }}</span>
+                    </div>
+                  </template>
+                  <template #title>
+                    <h3 class="text-title-md font-serif text-primary-900 mb-stack-xs">{{ item.title }}</h3>
+                  </template>
+                </UiTitle>
               </template>
               <p class="text-body-md text-on-surface-variant">{{ item.description }}</p>
             </UiBaseCard>
@@ -156,8 +164,14 @@ const mediaItems = [
             :key="c.title"
           >
             <template #header>
-              <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ c.icon }}</span>
-              <h3 class="text-title-lg font-serif text-primary-900">{{ c.title }}</h3>
+              <UiTitle :divider="false">
+                <template #eyebrow>
+                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ c.icon }}</span>
+                </template>
+                <template #title>
+                  <h3 class="text-title-lg font-serif text-primary-900">{{ c.title }}</h3>
+                </template>
+              </UiTitle>
             </template>
             <p class="text-body-md text-on-surface-variant">{{ c.description }}</p>
           </UiBaseCard>

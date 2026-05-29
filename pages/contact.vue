@@ -44,7 +44,9 @@ function handleSubmit() {
     <UiIntro variant="light" :ui="{ bg: false }">
       <template #header>
         <UiTitle eyebrow="Kontakt" size="md">
-          <template #title>Spojte se s námi</template>
+          <template #title>
+            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Spojte se s námi</h1>
+          </template>
         </UiTitle>
       </template>
 
