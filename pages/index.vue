@@ -102,14 +102,23 @@ const services = [
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >
-          <UiServiceCard
+          <UiBaseCard
             v-for="s in services"
             :key="s.to"
-            :icon="s.icon"
-            :title="s.title"
-            :description="s.description"
             :to="s.to"
-          />
+          >
+            <template #header>
+              <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ s.icon }}</span>
+              <h3 class="text-headline-md font-serif text-primary-900">{{ s.title }}</h3>
+            </template>
+            <p class="text-body-md text-on-surface-variant flex-1">{{ s.description }}</p>
+            <template #footer>
+              <span class="inline-flex items-center gap-1 text-secondary-700 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity">
+                Více informací
+                <span class="material-symbols-outlined text-body-md transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </span>
+            </template>
+          </UiBaseCard>
         </div>
       </div>
     </section>

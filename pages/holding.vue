@@ -62,13 +62,16 @@ const pillars = [
           title="Tři klíčové oblasti skupiny"
         />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <UiValueCard
+          <UiBaseCard
             v-for="p in pillars"
             :key="p.title"
-            :icon="p.icon"
-            :title="p.title"
-            :description="p.description"
-          />
+          >
+            <template #header>
+              <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ p.icon }}</span>
+              <h3 class="text-title-lg font-serif text-primary-900">{{ p.title }}</h3>
+            </template>
+            <p class="text-body-md text-on-surface-variant">{{ p.description }}</p>
+          </UiBaseCard>
         </div>
       </div>
     </section>

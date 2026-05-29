@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="rounded-md flex flex-col border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
+  <UCard :ui="{ body: 'p-stack-md flex flex-col h-full', footer: 'pt-stack-sm border-t border-outline-variant/30' }" class="h-full rounded-md border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
 
     <!-- Photo -->
     <div class="aspect-video bg-surface-container overflow-hidden">
@@ -28,16 +28,17 @@ defineProps<{
     </div>
 
     <!-- Info -->
-    <div class="p-stack-md flex flex-col gap-stack-sm flex-1">
+    <div class="flex flex-col gap-stack-sm flex-1">
       <div>
         <h3 class="text-title-lg font-serif text-primary-900">{{ name }}</h3>
         <p class="text-label-caps text-secondary-700 uppercase tracking-widest font-semibold">{{ role }}</p>
       </div>
 
       <p class="text-body-md text-on-surface-variant flex-1">{{ bio }}</p>
+    </div>
 
-      <!-- Contact links -->
-      <div class="flex flex-col gap-1 pt-stack-sm border-t border-outline-variant/30">
+    <template #footer>
+      <div class="flex flex-col gap-1">
         <a
           v-if="email"
           :href="`mailto:${email}`"
@@ -65,7 +66,7 @@ defineProps<{
           {{ websiteLabel || "Osobní web" }}
         </a>
       </div>
-    </div>
+    </template>
 
-  </div>
+  </UCard>
 </template>

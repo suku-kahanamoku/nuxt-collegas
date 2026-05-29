@@ -10,16 +10,13 @@ const { value, label, counterDuration, counterInterval } = defineProps<{
 </script>
 
 <template>
-  <div
-    class="rounded-md p-stack-md border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35 bg-gradient-to-br from-white to-[#f7faf8] shadow-inner shadow-lg"
-  >
-    <span class="text-headline-lg font-serif text-secondary-700">
-      <UiCounter
-        :value="value"
-        :duration="counterDuration"
-        :interval="counterInterval"
-      />
-    </span>
+  <UiBaseCard>
+    <template #header>
+      <span class="text-headline-lg font-serif text-secondary-700">
+        <UiCounter :value="value" :duration="counterDuration" :interval="counterInterval" />
+      </span>
+      <h3 class="sr-only">{{ label }}</h3>
+    </template>
     <p class="text-body-md text-on-surface-variant mt-1">{{ label }}</p>
-  </div>
+  </UiBaseCard>
 </template>

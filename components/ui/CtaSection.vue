@@ -13,8 +13,8 @@ defineProps<{
 </script>
 
 <template>
-  <section
-    class="relative overflow-hidden py-section-gap"
+  <UPageCTA
+    class="relative overflow-hidden rounded-none py-stack-md"
     :class="{
       'bg-primary-900 text-on-primary': variant === 'dark',
       'border-t border-outline-variant/30': variant === 'bordered',
@@ -73,5 +73,5 @@ defineProps<{
         </UButton>
       </div>
     </div>
-  </section>
+  </UPageCTA>
 </template>

@@ -141,13 +141,16 @@ const mediaItems = [
           description="Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl."
         />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <UiValueCard
+          <UiBaseCard
             v-for="c in charityItems"
             :key="c.title"
-            :icon="c.icon"
-            :title="c.title"
-            :description="c.description"
-          />
+          >
+            <template #header>
+              <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ c.icon }}</span>
+              <h3 class="text-title-lg font-serif text-primary-900">{{ c.title }}</h3>
+            </template>
+            <p class="text-body-md text-on-surface-variant">{{ c.description }}</p>
+          </UiBaseCard>
         </div>
       </div>
     </section>

@@ -107,13 +107,16 @@ const topics = [
             <div
               class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-stack-md"
             >
-              <UiValueCard
+              <UiBaseCard
                 v-for="topic in topics"
                 :key="topic.title"
-                :icon="topic.icon"
-                :title="topic.title"
-                :description="topic.description"
-              />
+              >
+                <template #header>
+                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ topic.icon }}</span>
+                  <h3 class="text-title-lg font-serif text-primary-900">{{ topic.title }}</h3>
+                </template>
+                <p class="text-body-md text-on-surface-variant">{{ topic.description }}</p>
+              </UiBaseCard>
             </div>
           </div>
           <UiAside

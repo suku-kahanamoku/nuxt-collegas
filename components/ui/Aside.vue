@@ -10,7 +10,7 @@ defineProps<{
 </script>
 
 <template>
-  <aside class="lg:col-span-4 space-y-stack-md">
+  <UPageAside class="lg:col-span-4 p-0! self-start mt-0 space-y-stack-md">
     <div
       class="bg-surface-container-highest p-stack-lg border-t-4 border-secondary-700"
     >
@@ -60,5 +60,5 @@ defineProps<{
         {{ calloutLabel }}
       </UButton>
     </div>
-  </aside>
+  </UPageAside>
 </template>

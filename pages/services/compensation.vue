@@ -109,13 +109,16 @@ const relatedLinks = [
             <div
               class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-stack-md"
             >
-              <UiValueCard
+              <UiBaseCard
                 v-for="t in types"
                 :key="t.title"
-                :icon="t.icon"
-                :title="t.title"
-                :description="t.description"
-              />
+              >
+                <template #header>
+                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ t.icon }}</span>
+                  <h3 class="text-title-lg font-serif text-primary-900">{{ t.title }}</h3>
+                </template>
+                <p class="text-body-md text-on-surface-variant">{{ t.description }}</p>
+              </UiBaseCard>
             </div>
           </div>
           <UiAside
