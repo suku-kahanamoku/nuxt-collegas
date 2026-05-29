@@ -25,7 +25,7 @@ const dividerWidths: Record<string, string> = {
     <slot name="eyebrow">
       <span
         v-if="eyebrow"
-        class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+        class="text-label-caps text-secondary-700 uppercase block tracking-widest font-semibold"
       >
         {{ eyebrow }}
       </span>
