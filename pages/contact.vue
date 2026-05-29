@@ -41,27 +41,25 @@ function handleSubmit() {
 <template>
   <div class="w-full">
     <!-- ── Hero ── -->
-        <UiIntro variant="light" :ui="{ bg: false }">
-          <template #title>
-            <UiTitle eyebrow="Kontakt" size="md">
-              <template #title>Spojte se s námi</template>
-            </UiTitle>
-          </template>
+    <UiIntro variant="light" :ui="{ bg: false }">
+      <template #header>
+        <UiTitle eyebrow="Kontakt" size="md">
+          <template #title>Spojte se s námi</template>
+        </UiTitle>
+      </template>
 
-          <template #description>
-            <p>Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně najdeme ten správný první krok.</p>
-          </template>
-        <UiIntro bg-image="/img/intro-contact.webp">
-          <template #title>
-            <UiTitle eyebrow="Kontaktujte nás" size="md">
-              <template #title>Kontakt</template>
-            </UiTitle>
-          </template>
+      <template #description>
+        <p>
+          Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně
+          najdeme ten správný první krok.
+        </p>
+      </template>
+    </UiIntro>
 
-          <template #description>
-            <p>Jste připraveni probrat vaši situaci? Ozvěte se nám a domluvíme osobní schůzku – nebo konzultaci online.</p>
-          </template>
-        </UiIntro>
+    <!-- ── Dvousloupcový obsah ── -->
+    <section
+      class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-0 mb-section-gap"
+    >
       <!-- Levá strana: info + mapa -->
       <div
         class="bg-surface-container-lowest p-stack-lg lg:p-16 border border-outline-variant/30"

@@ -64,7 +64,7 @@ const principles = [
   <div class="w-full">
     <!-- ── Intro ── -->
     <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
-      <template #title>
+      <template #header>
         <UiTitle eyebrow="Náš příběh" size="md">
           <template #title>O nás</template>
         </UiTitle>
@@ -73,8 +73,10 @@ const principles = [
       <template #description>
         <p>Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů.</p>
       </template>
+    </UiIntro>
+
     <UiIntro bg-image="/img/intro-about.webp">
-      <template #title>
+      <template #header>
         <UiTitle eyebrow="Kdo jsme" size="md">
           <template #title>O nás</template>
         </UiTitle>
@@ -84,6 +86,9 @@ const principles = [
         <p>Jsme tým poradců a specialistů poskytujících komplexní finanční služby s důrazem na dlouhodobé partnerství. Naše přístupy staví na profesionalitě, transparenci a osobním přístupu.</p>
       </template>
     </UiIntro>
+    <section class="py-section-gap bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto px-gutter">
+        <UiSectionHeader
           eyebrow="Naše hodnoty"
           title="Diskrétnost. Nezávislost. Odpovědnost."
           description="Tři slova, která nejsou jen sloganem. Jsou závazkem, který dodržujeme každý den – vůči každému klientovi, v každém rozhodnutí."

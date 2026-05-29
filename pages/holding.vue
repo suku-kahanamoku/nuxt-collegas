@@ -37,14 +37,17 @@ const pillars = [
   <div class="w-full">
     <!-- ── Hero ── -->
     <UiIntro variant="light" :ui="{ bg: false }">
+      <template #header>
+        <UiTitle eyebrow="Skupina COLLEGA" size="md">
+          <template #title>
+            Holdingová<br />struktura
+          </template>
+        </UiTitle>
+      </template>
+
       <template #description>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
           <div class="lg:col-span-8">
-            <UiTitle eyebrow="Skupina COLLEGA" size="md">
-              <template #title>
-                Holdingová<br />struktura
-              </template>
-            </UiTitle>
             <p class="text-body-lg text-on-surface-variant max-w-2xl">
               Skupina COLLEGA ENTERPRISE a.s. sdružuje přední společnosti z
               oblasti financí, investic, realitního rozvoje, práva a podpůrných

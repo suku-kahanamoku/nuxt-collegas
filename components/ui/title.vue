@@ -30,28 +30,25 @@ const titleCls = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div class="w-full flex flex-col items-start gap-stack-md">
     <slot name="eyebrow">
       <span
         v-if="eyebrow"
-        class="text-label-caps text-secondary-700 uppercase mb-stack-sm block tracking-widest font-semibold"
+        class="text-label-caps text-secondary-700 uppercase block tracking-widest font-semibold"
       >
         {{ eyebrow }}
       </span>
     </slot>
 
-    <h1
-      :class="[
-        titleCls,
-        'font-serif text-primary-900 mb-stack-md leading-none',
-      ]"
-    >
-      <slot name="title">{{ title }}</slot>
-    </h1>
+    <slot name="title">
+      <span :class="[titleCls, 'font-serif text-primary-900 leading-none']">
+        {{ title }}
+      </span>
+    </slot>
 
     <div
       v-if="divider"
-      class="h-0.5 w-20 rounded-full mb-stack-md"
+      class="h-0.5 w-20 rounded-full"
       style="
         background: linear-gradient(
           90deg,
