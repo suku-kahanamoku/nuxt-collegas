@@ -69,7 +69,7 @@ const mediaItems = [
       <template #header>
         <UiTitle eyebrow="Přidejte se k nám" size="md">
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Kariéra</h1>
+            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Kariéra</h1>
           </template>
         </UiTitle>
       </template>

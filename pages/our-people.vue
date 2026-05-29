@@ -267,7 +267,7 @@ const backoffice = [
       <template #header>
         <UiTitle eyebrow="Kdo jsme" size="md">
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Naši lidé</h1>
+            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Naši lidé</h1>
           </template>
         </UiTitle>
       </template>

@@ -55,7 +55,7 @@ const topics = [
       <template #header>
         <UiTitle eyebrow="Finanční poradenství" size="md">
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Daňové poradenství</h1>
+            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Daňové poradenství</h1>
           </template>
         </UiTitle>
       </template>

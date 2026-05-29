@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from "vue";
-
 const props = withDefaults(
   defineProps<{
     eyebrow?: string;
@@ -8,25 +6,12 @@ const props = withDefaults(
     /** sm | md | lg */
     size?: "sm" | "md" | "lg";
     divider?: boolean;
-    titleClass?: string;
   }>(),
   {
     size: "md",
     divider: true,
   },
 );
-
-const titleCls = computed(() => {
-  if (props.titleClass) return props.titleClass;
-  switch (props.size) {
-    case "sm":
-      return "text-headline-md";
-    case "lg":
-      return "text-display-2xl";
-    default:
-      return "text-display-xl";
-  }
-});
 </script>
 
 <template>
@@ -41,7 +26,7 @@ const titleCls = computed(() => {
     </slot>
 
     <slot name="title">
-      <h3 :class="[titleCls, 'font-serif text-primary-900 leading-none']">
+      <h3 :class="[(props.size === 'sm' ? 'text-headline-md' : props.size === 'lg' ? 'text-display-2xl' : 'text-display-xl'), 'font-serif text-primary-900 leading-none']">
         {{ title }}
       </h3>
     </slot>

@@ -50,7 +50,7 @@ const relatedLinks = [
       <template #header>
         <UiTitle eyebrow="Finanční poradenství" size="md">
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 mb-stack-md leading-none">Odškodnění</h1>
+            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Odškodnění</h1>
           </template>
         </UiTitle>
       </template>
