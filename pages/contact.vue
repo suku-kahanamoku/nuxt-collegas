@@ -41,12 +41,13 @@ function handleSubmit() {
 <template>
   <div class="w-full">
     <!-- ── Hero ── -->
-    <UiPageHero class="pb-stack-lg!" eyebrow="Kontakt" title="Spojte se s námi">
-      <p class="text-body-lg text-on-surface-variant max-w-2xl">
-        Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně
-        najdeme ten správný první krok.
-      </p>
-    </UiPageHero>
+        <UiIntro
+          variant="light"
+          :ui="{ bg: false }"
+          eyebrow="Kontakt"
+          title="Spojte se s námi"
+          description="Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně najdeme ten správný první krok."
+        />
 
     <!-- ── Dvousloupcový obsah ── -->
     <section
@@ -285,7 +286,10 @@ function handleSubmit() {
               trailing-icon="i-material-symbols-arrow-forward"
               size="xl"
               class="w-full md:w-auto justify-center px-10 bg-secondary-fixed! text-primary-900! hover:bg-secondary-fixed/80! transition-colors"
-              :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
+              :ui="{
+                trailingIcon:
+                  'transition-transform duration-200 group-hover:translate-x-1 size-5',
+              }"
             >
               Odeslat poptávku
             </UButton>

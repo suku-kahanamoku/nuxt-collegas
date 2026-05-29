@@ -2,6 +2,7 @@
 const props = defineProps({
   to: { type: [String, Object], required: false },
   divider: { type: Boolean, default: true },
+  compact: { type: Boolean, default: false },
 });
 </script>
 
@@ -13,7 +14,10 @@ const props = defineProps({
     <NuxtLink
       v-if="to"
       :to="to"
-      class="group block rounded-md p-stack-md focus-visible:outline-2 focus-visible:outline-secondary-700/60 focus-visible:outline-offset-2 bg-gradient-to-br from-white to-[#f7faf8] h-full"
+      :class="[
+        'group block rounded-md focus-visible:outline-2 focus-visible:outline-secondary-700/60 focus-visible:outline-offset-2 bg-gradient-to-br from-white to-[#f7faf8] h-full',
+        compact ? 'p-stack-sm' : 'p-stack-md',
+      ]"
     >
       <div class="flex flex-col gap-stack-sm h-full">
         <slot name="header" />
@@ -26,7 +30,10 @@ const props = defineProps({
     </NuxtLink>
     <div
       v-else
-      class="group block rounded-md p-stack-md focus-visible:outline-2 focus-visible:outline-secondary-700/60 focus-visible:outline-offset-2 bg-gradient-to-br from-white to-[#f7faf8] h-full"
+      :class="[
+        'group block rounded-md focus-visible:outline-2 focus-visible:outline-secondary-700/60 focus-visible:outline-offset-2 bg-gradient-to-br from-white to-[#f7faf8] h-full',
+        compact ? 'p-stack-sm' : 'p-stack-md',
+      ]"
     >
       <div class="flex flex-col gap-stack-sm h-full">
         <slot name="header" />

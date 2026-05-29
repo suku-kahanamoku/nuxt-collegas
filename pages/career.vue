@@ -120,13 +120,18 @@ const mediaItems = [
             </div>
           </div>
           <div class="grid grid-cols-2 gap-stack-sm">
-            <UiFeatureCard
+            <UiBaseCard
               v-for="item in pfpItems"
               :key="item.title"
-              :icon="item.icon"
-              :title="item.title"
-              :description="item.description"
-            />
+            >
+              <template #header>
+                <div class="shrink-0 flex items-start pt-0.5">
+                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ item.icon }}</span>
+                </div>
+                <h3 class="text-title-md font-serif text-primary-900 mb-stack-xs">{{ item.title }}</h3>
+              </template>
+              <p class="text-body-md text-on-surface-variant">{{ item.description }}</p>
+            </UiBaseCard>
           </div>
         </div>
       </div>

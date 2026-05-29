@@ -49,14 +49,19 @@ const stats = [
 
         <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
           <div class="grid grid-cols-2 gap-stack-sm">
-            <UiStatCard
+            <UiBaseCard
               v-for="s in stats"
               :key="s.label"
-              :value="s.value"
-              :label="s.label"
-              :counter-duration="s.duration"
-              :counter-interval="s.interval"
-            />
+              compact
+            >
+              <template #header>
+                <span class="text-headline-lg font-serif text-secondary-700">
+                  <UiCounter :value="s.value" :duration="s.duration" :interval="s.interval" />
+                </span>
+                <h3 class="sr-only">{{ s.label }}</h3>
+              </template>
+              <p class="text-body-md text-on-surface-variant mt-1">{{ s.label }}</p>
+            </UiBaseCard>
           </div>
         </div>
       </div>
