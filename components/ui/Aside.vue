@@ -10,7 +10,10 @@ defineProps<{
 </script>
 
 <template>
-  <UPageAside class="lg:col-span-4 p-0! self-start mt-0 space-y-stack-md">
+  <UPageAside
+    class="lg:col-span-4 p-0! self-start mt-0"
+    :ui="{ container: 'space-y-stack-md' }"
+  >
     <div
       class="bg-surface-container-highest p-stack-lg border-t-4 border-secondary-700"
     >
@@ -35,6 +38,7 @@ defineProps<{
         </UButton>
       </nav>
     </div>
+
     <div v-if="calloutTitle" class="bg-surface-container p-stack-lg">
       <h4 class="text-lg font-serif text-primary-900 mb-stack-sm">
         {{ calloutTitle }}
