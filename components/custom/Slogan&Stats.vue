@@ -55,10 +55,16 @@ const stats = [
               compact
             >
               <template #header>
-                <span class="text-headline-lg font-serif text-secondary-700">
-                  <UiCounter :value="s.value" :duration="s.duration" :interval="s.interval" />
-                </span>
-                <h3 class="sr-only">{{ s.label }}</h3>
+                <UiTitle size="sm">
+                  <template #eyebrow>
+                    <span class="text-headline-lg font-serif text-secondary-700">
+                      <UiCounter :value="s.value" :duration="s.duration" :interval="s.interval" />
+                    </span>
+                  </template>
+                  <template #title>
+                    <h3 class="sr-only">{{ s.label }}</h3>
+                  </template>
+                </UiTitle>
               </template>
               <p class="text-body-md text-on-surface-variant mt-1">{{ s.label }}</p>
             </UiBaseCard>

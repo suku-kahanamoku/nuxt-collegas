@@ -128,14 +128,20 @@ const relatedLinks = [
             >
               <UiBaseCard v-for="item in included" :key="item.title">
                 <template #header>
-                  <span
-                    class="material-symbols-outlined text-secondary-700"
-                    style="font-size: 2rem"
-                    >{{ item.icon }}</span
-                  >
-                  <h3 class="text-title-lg font-serif text-primary-900">
-                    {{ item.title }}
-                  </h3>
+                  <UiTitle size="sm">
+                    <template #eyebrow>
+                      <span
+                        class="material-symbols-outlined text-secondary-700"
+                        style="font-size: 2rem"
+                        >{{ item.icon }}</span
+                      >
+                    </template>
+                    <template #title>
+                      <h3 class="text-title-lg font-serif text-primary-900">
+                        {{ item.title }}
+                      </h3>
+                    </template>
+                  </UiTitle>
                 </template>
                 <p class="text-body-md text-on-surface-variant">
                   {{ item.description }}

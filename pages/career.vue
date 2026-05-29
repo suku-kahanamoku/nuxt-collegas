@@ -132,7 +132,7 @@ const mediaItems = [
               :key="item.title"
             >
               <template #header>
-                <UiTitle :divider="false">
+                <UiTitle size="sm">
                   <template #eyebrow>
                     <div class="shrink-0 flex items-start pt-0.5">
                       <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ item.icon }}</span>
@@ -164,7 +164,7 @@ const mediaItems = [
             :key="c.title"
           >
             <template #header>
-              <UiTitle :divider="false">
+              <UiTitle size="sm">
                 <template #eyebrow>
                   <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ c.icon }}</span>
                 </template>

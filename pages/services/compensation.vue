@@ -121,7 +121,7 @@ const relatedLinks = [
                 :key="t.title"
               >
                 <template #header>
-                  <UiTitle :divider="false">
+                  <UiTitle size="sm">
                     <template #eyebrow>
                       <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ t.icon }}</span>
                     </template>

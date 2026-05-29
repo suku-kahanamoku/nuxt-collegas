@@ -12,10 +12,16 @@ const props = withDefaults(
     divider: true,
   },
 );
+
+const dividerWidths: Record<string, string> = {
+  sm: "w-12",
+  md: "w-20",
+  lg: "w-28",
+};
 </script>
 
 <template>
-  <div class="w-full flex flex-col items-start gap-stack-md">
+  <div :class="['w-full flex flex-col items-start', 'gap-stack-' + props.size]">
     <slot name="eyebrow">
       <span
         v-if="eyebrow"
@@ -26,14 +32,14 @@ const props = withDefaults(
     </slot>
 
     <slot name="title">
-      <h3 :class="[(props.size === 'sm' ? 'text-headline-md' : props.size === 'lg' ? 'text-display-2xl' : 'text-display-xl'), 'font-serif text-primary-900 leading-none']">
+      <h3 class="text-display-xl font-serif text-primary-900 leading-none">
         {{ title }}
       </h3>
     </slot>
 
     <div
       v-if="divider"
-      class="h-0.5 w-20 rounded-full"
+      :class="['h-0.5', dividerWidths[props.size] ?? 'w-20', 'rounded-full']"
       style="
         background: linear-gradient(
           90deg,

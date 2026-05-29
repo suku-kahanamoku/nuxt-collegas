@@ -21,7 +21,7 @@ const props = defineProps({
     >
       <div class="flex flex-col gap-stack-sm h-full">
         <slot name="header" />
-        <div v-if="divider" class="w-8 h-0.5 bg-secondary-700/40"></div>
+
         <slot />
         <div v-if="$slots.footer" class="mt-auto">
           <slot name="footer" />
@@ -37,7 +37,7 @@ const props = defineProps({
     >
       <div class="flex flex-col gap-stack-sm h-full">
         <slot name="header" />
-        <div v-if="divider" class="w-8 h-0.5 bg-secondary-700/40"></div>
+
         <slot />
         <div v-if="$slots.footer" class="mt-auto">
           <slot name="footer" />

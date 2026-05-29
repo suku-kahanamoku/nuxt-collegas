@@ -97,7 +97,7 @@ const principles = [
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="v in values" :key="v.title">
             <template #header>
-              <UiTitle :divider="false">
+              <UiTitle size="sm">
                 <template #eyebrow>
                   <span
                     class="material-symbols-outlined text-secondary-700"
@@ -131,7 +131,7 @@ const principles = [
         <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
           <UiBaseCard v-for="p in principles" :key="p.title">
             <template #header>
-              <UiTitle :divider="false">
+              <UiTitle size="sm">
                 <template #eyebrow>
                   <div class="shrink-0 flex items-start pt-0.5">
                     <span
