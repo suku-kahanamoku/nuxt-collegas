@@ -14,7 +14,7 @@ defineProps<{
   >
     <span
       v-if="eyebrow"
-      class="text-label-caps text-secondary-700 uppercase block mb-stack-sm tracking-widest font-semibold"
+      class="text-label-caps text-secondary-fixed uppercase block mb-stack-sm tracking-widest font-semibold"
     >
       {{ eyebrow }}
     </span>

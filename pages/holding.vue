@@ -64,7 +64,7 @@ const pillars = [
                 >9+</span
               >
               <p
-                class="text-label-caps text-secondary-700 uppercase tracking-widest font-semibold"
+                class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold"
               >
                 společností ve skupině
               </p>

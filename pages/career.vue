@@ -67,15 +67,18 @@ const mediaItems = [
     <!-- ── Intro ── -->
     <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
       <template #header>
-        <UiTitle eyebrow="Přidejte se k nám" size="md">
+        <UiTitle size="md">
+          <template #eyebrow>
+            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Přidejte se k nám</span>
+          </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Kariéra</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">Kariéra</h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p>Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta. Nabízíme prostředí, kde se rozvíjíte, ne jen prodáváte.</p>
+        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta. Nabízíme prostředí, kde se rozvíjíte, ne jen prodáváte.</p>
       </template>
     </UiIntro>
 
@@ -104,7 +107,7 @@ const mediaItems = [
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
           <div>
             <span
-              class="text-label-caps text-secondary-700 uppercase block mb-stack-sm tracking-widest font-semibold"
+              class="text-label-caps text-secondary-fixed uppercase block mb-stack-sm tracking-widest font-semibold"
               >Vzdělávání</span
             >
             <h2

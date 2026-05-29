@@ -67,10 +67,13 @@ const principles = [
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
     >
       <template #header>
-        <UiTitle eyebrow="Náš příběh" size="md">
+        <UiTitle size="md">
+          <template #eyebrow>
+            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Náš příběh</span>
+          </template>
           <template #title>
             <h1
-              class="text-display-xl font-serif text-primary-900 leading-none"
+              class="text-display-xl font-serif text-on-primary leading-none"
             >
               O nás
             </h1>
@@ -79,7 +82,7 @@ const principles = [
       </template>
 
       <template #description>
-        <p>
+        <p class="text-body-lg text-on-primary-container mt-stack-md max-w-2xl opacity-90">
           Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství
           jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů.
         </p>
@@ -163,7 +166,7 @@ const principles = [
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="max-w-3xl mx-auto text-center">
           <span
-            class="text-label-caps text-secondary-700 uppercase block mb-stack-sm tracking-widest font-semibold"
+            class="text-label-caps text-secondary-fixed uppercase block mb-stack-sm tracking-widest font-semibold"
             >Náš závazek</span
           >
           <blockquote

@@ -91,7 +91,7 @@ const services = [
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="text-center mb-20">
           <span
-            class="text-label-caps text-secondary-700 uppercase mb-stack-sm block tracking-widest font-semibold"
+            class="text-label-caps text-secondary-fixed uppercase mb-stack-sm block tracking-widest font-semibold"
           >
             Naše služby
           </span>

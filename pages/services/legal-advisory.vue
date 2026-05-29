@@ -50,15 +50,18 @@ const relatedLinks = [
   <div class="w-full">
     <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
       <template #header>
-        <UiTitle eyebrow="Finanční poradenství" size="md">
+        <UiTitle size="md">
+          <template #eyebrow>
+            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Finanční poradenství</span>
+          </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Právní poradenství</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">Právní poradenství</h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p>Právní poradenství u nás není jednorázová služba, ale dlouhodobá spolupráce postavená na důvěře, diskrétnosti a profesionalitě. Proto ke každému klientovi přistupujeme individuálně a s respektem k jeho situaci i soukromí.</p>
+        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Právní poradenství u nás není jednorázová služba, ale dlouhodobá spolupráce postavená na důvěře, diskrétnosti a profesionalitě. Proto ke každému klientovi přistupujeme individuálně a s respektem k jeho situaci i soukromí.</p>
       </template>
     </UiIntro>
 

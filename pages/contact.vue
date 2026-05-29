@@ -69,7 +69,7 @@ function handleSubmit() {
         <div class="space-y-stack-lg mb-stack-lg">
           <div>
             <span
-              class="text-label-caps text-secondary-700 block mb-stack-sm uppercase tracking-widest font-semibold"
+              class="text-label-caps text-secondary-fixed block mb-stack-sm uppercase tracking-widest font-semibold"
             >
               Identifikace společnosti
             </span>
@@ -81,7 +81,7 @@ function handleSubmit() {
             <dl class="space-y-stack-sm">
               <div class="flex flex-col sm:flex-row sm:gap-4">
                 <dt
-                  class="text-label-caps text-secondary-700 uppercase shrink-0 w-40 tracking-widest font-semibold"
+                  class="text-label-caps text-secondary-fixed uppercase shrink-0 w-40 tracking-widest font-semibold"
                 >
                   IČO
                 </dt>
@@ -89,7 +89,7 @@ function handleSubmit() {
               </div>
               <div class="flex flex-col sm:flex-row sm:gap-4">
                 <dt
-                  class="text-label-caps text-secondary-700 uppercase shrink-0 w-40 tracking-widest font-semibold"
+                  class="text-label-caps text-secondary-fixed uppercase shrink-0 w-40 tracking-widest font-semibold"
                 >
                   Spisová značka
                 </dt>
@@ -99,7 +99,7 @@ function handleSubmit() {
               </div>
               <div class="flex flex-col sm:flex-row sm:gap-4">
                 <dt
-                  class="text-label-caps text-secondary-700 uppercase shrink-0 w-40 tracking-widest font-semibold"
+                  class="text-label-caps text-secondary-fixed uppercase shrink-0 w-40 tracking-widest font-semibold"
                 >
                   Sídlo
                 </dt>
@@ -112,7 +112,7 @@ function handleSubmit() {
 
           <div>
             <span
-              class="text-label-caps text-secondary-700 block mb-stack-sm uppercase tracking-widest font-semibold"
+              class="text-label-caps text-secondary-fixed block mb-stack-sm uppercase tracking-widest font-semibold"
               >Provozovny</span
             >
             <ul class="space-y-stack-sm">
