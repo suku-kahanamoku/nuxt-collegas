@@ -2,7 +2,7 @@
 const navItems = [
   {
     label: "Naše služby",
-    to: "/",
+    to: "/services",
     children: [
       {
         label: "Zajištění rizik",
