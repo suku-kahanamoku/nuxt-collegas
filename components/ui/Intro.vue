@@ -30,6 +30,7 @@ const { eyebrow, title, subtitle, description, bgImage, ui } = toRefs(props);
       class="absolute inset-0 bg-cover bg-center"
       :style="`background-image: url('${bgImage}')`"
     ></div>
+    
     <div
       v-if="bgImage && ui && ui.bg"
       class="absolute inset-0 hero-gradient"
