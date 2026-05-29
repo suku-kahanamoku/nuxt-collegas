@@ -137,7 +137,14 @@ const relatedLinks = [
             </div>
           </div>
 
-          <UiAside title="Naše služby" :menus="relatedLinks" />
+          <UiAside
+            title="Naše služby"
+            :menus="relatedLinks"
+            callout-title="Nezávazná konzultace"
+            callout-description="Rádi posoudíme vaši situaci a navrhneme řešení."
+            callout-label="Nezávazná konzultace"
+            callout-to="/contact"
+          />
         </div>
       </div>
     </section>
