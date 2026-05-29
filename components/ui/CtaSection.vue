@@ -52,7 +52,11 @@ defineProps<{
           trailing-icon="i-material-symbols-arrow-forward"
           size="xl"
           class="justify-center px-10 py-4 text-base"
-          :class="variant === 'dark' ? 'bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors' : ''"
+          :class="
+            variant === 'dark'
+              ? 'bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors'
+              : ''
+          "
           :ui="{
             trailingIcon:
               'transition-transform duration-200 group-hover:translate-x-1 size-5',
@@ -67,7 +71,11 @@ defineProps<{
           variant="outline"
           size="xl"
           class="justify-center px-10 py-4 text-base"
-          :class="variant === 'dark' ? 'border-on-primary text-on-primary hover:bg-on-primary/10' : ''"
+          :class="
+            variant === 'dark'
+              ? 'border-on-primary text-on-primary hover:bg-on-primary/10'
+              : ''
+          "
         >
           {{ secondaryLabel }}
         </UButton>

@@ -48,20 +48,35 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+    <UiIntro
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+    >
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Finanční poradenství</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Finanční poradenství</span
+            >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">Péče o investiční majetek</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+              Péče o investiční majetek
+            </h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Péči o investiční majetek vnímáme jako dlouhodobé partnerství, jehož cílem je chránit a rozvíjet váš kapitál v souladu s vašimi ambicemi i životním stylem. Nejde pouze o výběr investic, ale o citlivé a kontinuální řízení celého portfolia s ohledem na vaše priority, časový horizont i toleranci k riziku.</p>
+        <p
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        >
+          Péči o investiční majetek vnímáme jako dlouhodobé partnerství, jehož
+          cílem je chránit a rozvíjet váš kapitál v souladu s vašimi ambicemi i
+          životním stylem. Nejde pouze o výběr investic, ale o citlivé a
+          kontinuální řízení celého portfolia s ohledem na vaše priority, časový
+          horizont i toleranci k riziku.
+        </p>
       </template>
     </UiIntro>
 
@@ -97,7 +112,10 @@ const relatedLinks = [
                   color="secondary"
                   trailing-icon="i-material-symbols-arrow-forward"
                   class="!p-0"
-                  :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1' }"
+                  :ui="{
+                    trailingIcon:
+                      'transition-transform duration-200 group-hover:translate-x-1',
+                  }"
                 >
                   Svěřte kapitál do individuální péče
                 </UButton>
@@ -116,21 +134,26 @@ const relatedLinks = [
             <div
               class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-stack-md"
             >
-              <UiBaseCard
-                v-for="f in features"
-                :key="f.title"
-              >
+              <UiBaseCard v-for="f in features" :key="f.title">
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ f.icon }}</span>
+                      <span
+                        class="material-symbols-outlined text-secondary-700"
+                        style="font-size: 2rem"
+                        >{{ f.icon }}</span
+                      >
                     </template>
                     <template #title>
-                      <h3 class="text-title-lg font-serif text-primary-900">{{ f.title }}</h3>
+                      <h3 class="text-title-lg font-serif text-primary-900">
+                        {{ f.title }}
+                      </h3>
                     </template>
                   </UiTitle>
                 </template>
-                <p class="text-body-md text-on-surface-variant">{{ f.description }}</p>
+                <p class="text-body-md text-on-surface-variant">
+                  {{ f.description }}
+                </p>
               </UiBaseCard>
             </div>
           </div>

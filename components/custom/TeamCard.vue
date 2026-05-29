@@ -12,8 +12,21 @@ defineProps<{
 </script>
 
 <template>
-  <UCard :ui="{ body: 'p-stack-md flex flex-col h-full', footer: 'pt-stack-sm border-t border-outline-variant/30' }" class="h-full rounded-md border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35" style="background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%); box-shadow: 0 2px 0 rgba(255,255,255,0.9) inset, 0 -1px 0 rgba(4,41,30,0.06) inset, 0 2px 6px rgba(4,41,30,0.04), 0 8px 20px rgba(4,41,30,0.06);">
-
+  <UCard
+    :ui="{
+      body: 'p-stack-md flex flex-col h-full',
+      footer: 'pt-stack-sm border-t border-outline-variant/30',
+    }"
+    class="h-full rounded-md border border-secondary-700/8 transition-[border-color] duration-200 ease-out hover:border-secondary-700/35"
+    style="
+      background: linear-gradient(160deg, #ffffff 0%, #f7faf8 100%);
+      box-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.9) inset,
+        0 -1px 0 rgba(4, 41, 30, 0.06) inset,
+        0 2px 6px rgba(4, 41, 30, 0.04),
+        0 8px 20px rgba(4, 41, 30, 0.06);
+    "
+  >
     <!-- Photo -->
     <div class="aspect-video bg-surface-container overflow-hidden">
       <img
@@ -22,8 +35,15 @@ defineProps<{
         :alt="name"
         class="w-full h-full object-cover object-top transition-transform duration-700 ease-out hover:scale-[1.03]"
       />
-      <div v-else class="w-full h-full flex items-center justify-center bg-surface-container">
-        <span class="material-symbols-outlined text-on-surface-variant/30" style="font-size: 4rem;">person</span>
+      <div
+        v-else
+        class="w-full h-full flex items-center justify-center bg-surface-container"
+      >
+        <span
+          class="material-symbols-outlined text-on-surface-variant/30"
+          style="font-size: 4rem"
+          >person</span
+        >
       </div>
     </div>
 
@@ -31,7 +51,11 @@ defineProps<{
     <div class="flex flex-col gap-stack-sm flex-1">
       <div>
         <h3 class="text-title-lg font-serif text-primary-900">{{ name }}</h3>
-        <p class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold">{{ role }}</p>
+        <p
+          class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold"
+        >
+          {{ role }}
+        </p>
       </div>
 
       <p class="text-body-md text-on-surface-variant flex-1">{{ bio }}</p>
@@ -67,6 +91,5 @@ defineProps<{
         </a>
       </div>
     </template>
-
   </UCard>
 </template>

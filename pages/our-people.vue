@@ -263,20 +263,34 @@ const backoffice = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+    <UiIntro
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+    >
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Kdo jsme</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Kdo jsme</span
+            >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">Naši lidé</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+              Naši lidé
+            </h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci.</p>
+        <p
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        >
+          Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a
+          podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi
+          individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou
+          spolupráci.
+        </p>
       </template>
     </UiIntro>
 

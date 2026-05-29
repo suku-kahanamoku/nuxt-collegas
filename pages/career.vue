@@ -65,20 +65,33 @@ const mediaItems = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+    <UiIntro
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+    >
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Přidejte se k nám</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Přidejte se k nám</span
+            >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">Kariéra</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+              Kariéra
+            </h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta. Nabízíme prostředí, kde se rozvíjíte, ne jen prodáváte.</p>
+        <p
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        >
+          Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou
+          odpovědností a skutečným zájmem o klienta. Nabízíme prostředí, kde se
+          rozvíjíte, ne jen prodáváte.
+        </p>
       </template>
     </UiIntro>
 
@@ -130,23 +143,30 @@ const mediaItems = [
             </div>
           </div>
           <div class="grid grid-cols-2 gap-stack-sm">
-            <UiBaseCard
-              v-for="item in pfpItems"
-              :key="item.title"
-            >
+            <UiBaseCard v-for="item in pfpItems" :key="item.title">
               <template #header>
                 <UiTitle size="sm">
                   <template #eyebrow>
                     <div class="shrink-0 flex items-start pt-0.5">
-                      <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ item.icon }}</span>
+                      <span
+                        class="material-symbols-outlined text-secondary-700"
+                        style="font-size: 2rem"
+                        >{{ item.icon }}</span
+                      >
                     </div>
                   </template>
                   <template #title>
-                    <h3 class="text-title-md font-serif text-primary-900 mb-stack-xs">{{ item.title }}</h3>
+                    <h3
+                      class="text-title-md font-serif text-primary-900 mb-stack-xs"
+                    >
+                      {{ item.title }}
+                    </h3>
                   </template>
                 </UiTitle>
               </template>
-              <p class="text-body-md text-on-surface-variant">{{ item.description }}</p>
+              <p class="text-body-md text-on-surface-variant">
+                {{ item.description }}
+              </p>
             </UiBaseCard>
           </div>
         </div>
@@ -162,21 +182,26 @@ const mediaItems = [
           description="Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl."
         />
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <UiBaseCard
-            v-for="c in charityItems"
-            :key="c.title"
-          >
+          <UiBaseCard v-for="c in charityItems" :key="c.title">
             <template #header>
               <UiTitle size="sm">
                 <template #eyebrow>
-                  <span class="material-symbols-outlined text-secondary-700" style="font-size: 2rem">{{ c.icon }}</span>
+                  <span
+                    class="material-symbols-outlined text-secondary-700"
+                    style="font-size: 2rem"
+                    >{{ c.icon }}</span
+                  >
                 </template>
                 <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-900">{{ c.title }}</h3>
+                  <h3 class="text-title-lg font-serif text-primary-900">
+                    {{ c.title }}
+                  </h3>
                 </template>
               </UiTitle>
             </template>
-            <p class="text-body-md text-on-surface-variant">{{ c.description }}</p>
+            <p class="text-body-md text-on-surface-variant">
+              {{ c.description }}
+            </p>
           </UiBaseCard>
         </div>
       </div>
@@ -209,7 +234,10 @@ const mediaItems = [
             trailing-icon="i-material-symbols-arrow-forward"
             size="xl"
             class="mt-stack-md"
-            :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
+            :ui="{
+              trailingIcon:
+                'transition-transform duration-200 group-hover:translate-x-1 size-5',
+            }"
           >
             Napsat nám
           </UButton>

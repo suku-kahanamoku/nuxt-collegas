@@ -69,12 +69,13 @@ const principles = [
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Náš příběh</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Náš příběh</span
+            >
           </template>
           <template #title>
-            <h1
-              class="text-display-xl font-serif text-on-primary leading-none"
-            >
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
               O nás
             </h1>
           </template>
@@ -82,7 +83,9 @@ const principles = [
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container mt-stack-md max-w-2xl opacity-90">
+        <p
+          class="text-body-lg text-on-primary-container mt-stack-md max-w-2xl opacity-90"
+        >
           Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství
           jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů.
         </p>

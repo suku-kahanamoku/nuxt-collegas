@@ -56,16 +56,23 @@ const relatedLinks = [
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Finanční poradenství</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Finanční poradenství</span
+            >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">Realitní služby</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+              Realitní služby
+            </h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">
+        <p
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        >
           Realitní služby u nás nejsou jen o zprostředkování prodeje nebo
           pronájmu, ale o kompletním zajištění celého procesu od prvního
           rozhodnutí až po úspěšné předání nemovitosti. Každý krok má svůj

@@ -24,20 +24,36 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <UiIntro bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ">
+    <UiIntro
+      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+    >
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
-            <span class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold">Finanční poradenství</span>
+            <span
+              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
+              >Finanční poradenství</span
+            >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">Zajištění rizik</h1>
+            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+              Zajištění rizik
+            </h1>
           </template>
         </UiTitle>
       </template>
 
       <template #description>
-        <p class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90">Zajištění rizik je základním stavebním kamenem každé stabilní finanční strategie. Nejde jen o to mít sjednané pojištění, ale mít ho nastavené tak, aby vás skutečně chránilo v situacích, kdy to nejvíce potřebujete. Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší reálné situaci.</p>
+        <p
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        >
+          Zajištění rizik je základním stavebním kamenem každé stabilní finanční
+          strategie. Nejde jen o to mít sjednané pojištění, ale mít ho nastavené
+          tak, aby vás skutečně chránilo v situacích, kdy to nejvíce
+          potřebujete. Ať už jde o ochranu majetku, zdraví nebo podnikání,
+          klíčové je správně vyhodnotit rizika a nastavit krytí, které odpovídá
+          vaší reálné situaci.
+        </p>
       </template>
     </UiIntro>
 
@@ -65,9 +81,13 @@ const relatedLinks = [
                   color="secondary"
                   trailing-icon="i-material-symbols-arrow-forward"
                   class="!p-0"
-                  :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1' }"
+                  :ui="{
+                    trailingIcon:
+                      'transition-transform duration-200 group-hover:translate-x-1',
+                  }"
                 >
-                  Nechte si nastavit ochranu, na kterou se můžete opravdu spolehnout
+                  Nechte si nastavit ochranu, na kterou se můžete opravdu
+                  spolehnout
                 </UButton>
               </div>
               <div

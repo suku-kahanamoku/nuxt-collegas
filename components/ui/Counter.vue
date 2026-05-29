@@ -46,7 +46,8 @@ function startCounter(v: string | number) {
       const progress = Math.min(1, elapsed / duration);
       const valueNow = Math.round(progress * target);
       display.value = `${valueNow}${suffix}`;
-      if (progress >= 1 && rafControls && rafControls.pause) rafControls.pause();
+      if (progress >= 1 && rafControls && rafControls.pause)
+        rafControls.pause();
     },
     { immediate: true },
   );

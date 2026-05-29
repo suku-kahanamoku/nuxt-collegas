@@ -45,7 +45,11 @@ function handleSubmit() {
       <template #header>
         <UiTitle eyebrow="Kontakt" size="md">
           <template #title>
-            <h1 class="text-display-xl font-serif text-primary-900 leading-none">Spojte se s námi</h1>
+            <h1
+              class="text-display-xl font-serif text-primary-900 leading-none"
+            >
+              Spojte se s námi
+            </h1>
           </template>
         </UiTitle>
       </template>
