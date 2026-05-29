@@ -162,10 +162,13 @@ const relatedLinks = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Bezplatné ocenění"
-            callout-description="Získejte bezplatné odborné ocenění vaší nemovitosti."
-            callout-label="Požádat o ocenění"
-            callout-to="/contact"
+            :callout="{
+              title: 'Bezplatné ocenění',
+              description:
+                'Získejte bezplatné odborné ocenění vaší nemovitosti.',
+              label: 'Požádat o ocenění',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

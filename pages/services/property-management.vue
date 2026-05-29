@@ -162,10 +162,12 @@ const relatedLinks = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Nezávazná konzultace"
-            callout-description="Rádi posoudíme vaši situaci a navrhneme řešení."
-            callout-label="Nezávazná konzultace"
-            callout-to="/contact"
+            :callout="{
+              title: 'Nezávazná konzultace',
+              description: 'Rádi posoudíme vaši situaci a navrhneme řešení.',
+              label: 'Nezávazná konzultace',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

@@ -157,10 +157,13 @@ const topics = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Platíte víc, než musíte?"
-            callout-description="Nechte nás zkontrolovat vaši daňovou situaci a najít legální možnosti úspor."
-            callout-label="Sjednat konzultaci"
-            callout-to="/contact"
+            :callout="{
+              title: 'Platíte víc, než musíte?',
+              description:
+                'Nechte nás zkontrolovat vaši daňovou situaci a najít legální možnosti úspor.',
+              label: 'Sjednat konzultaci',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

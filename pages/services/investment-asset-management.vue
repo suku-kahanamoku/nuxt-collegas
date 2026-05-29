@@ -160,10 +160,13 @@ const relatedLinks = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Analýza portfolia zdarma"
-            callout-description="Získejte bezplatnou analýzu vašeho investičního portfolia a doporučení na míru."
-            callout-label="Požádat o analýzu"
-            callout-to="/contact"
+            :callout="{
+              title: 'Analýza portfolia zdarma',
+              description:
+                'Získejte bezplatnou analýzu vašeho investičního portfolia a doporučení na míru.',
+              label: 'Požádat o analýzu',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

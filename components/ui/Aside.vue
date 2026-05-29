@@ -2,10 +2,12 @@
 defineProps<{
   title: string;
   menus: Array<{ label: string; to: string }>;
-  calloutTitle?: string;
-  calloutDescription?: string;
-  calloutLabel?: string;
-  calloutTo?: string;
+  callout?: {
+    title?: string;
+    description?: string;
+    label?: string;
+    to?: string;
+  };
 }>();
 </script>
 
@@ -39,19 +41,22 @@ defineProps<{
       </nav>
     </div>
 
-    <div v-if="calloutTitle" class="bg-surface-container p-stack-lg">
+    <div
+      v-if="callout && callout.title"
+      class="bg-surface-container p-stack-lg"
+    >
       <h4 class="text-lg font-serif text-primary-900 mb-stack-sm">
-        {{ calloutTitle }}
+        {{ callout.title }}
       </h4>
       <p
-        v-if="calloutDescription"
+        v-if="callout.description"
         class="text-body-sm text-on-surface-variant mb-stack-md"
       >
-        {{ calloutDescription }}
+        {{ callout.description }}
       </p>
       <UButton
-        v-if="calloutLabel && calloutTo"
-        :to="calloutTo"
+        v-if="callout.label && callout.to"
+        :to="callout.to"
         variant="link"
         color="secondary"
         trailing-icon="i-material-symbols-arrow-forward"
@@ -61,7 +66,7 @@ defineProps<{
             'transition-transform duration-200 group-hover:translate-x-1',
         }"
       >
-        {{ calloutLabel }}
+        {{ callout.label }}
       </UButton>
     </div>
   </UPageAside>

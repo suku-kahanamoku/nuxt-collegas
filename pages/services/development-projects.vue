@@ -32,8 +32,9 @@ const relatedLinks = [
           <template #eyebrow>
             <span
               class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-              >Kapitálové investice</span
             >
+              Finanční poradenství
+            </span>
           </template>
           <template #title>
             <h1 class="text-display-xl font-serif text-on-primary leading-none">
@@ -168,10 +169,13 @@ const relatedLinks = [
           <UiAside
             title="Související služby"
             :menus="relatedLinks"
-            callout-title="Máte developerský záměr?"
-            callout-description="Probereme s vámi investiční potenciál, strukturu projektu i další kroky od příležitosti po realizaci."
-            callout-label="Nezávazná konzultace"
-            callout-to="/contact"
+            :callout="{
+              title: 'Máte developerský záměr?',
+              description:
+                'Probereme s vámi investiční potenciál, strukturu projektu i další kroky od příležitosti po realizaci.',
+              label: 'Nezávazná konzultace',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

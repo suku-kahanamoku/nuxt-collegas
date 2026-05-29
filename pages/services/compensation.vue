@@ -162,10 +162,13 @@ const relatedLinks = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Máte nárok na odškodnění?"
-            callout-description="Bezplatně posoudíme váš případ a sdělíme vám, na co máte nárok."
-            callout-label="Bezplatná konzultace"
-            callout-to="/contact"
+            :callout="{
+              title: 'Máte nárok na odškodnění?',
+              description:
+                'Bezplatně posoudíme váš případ a sdělíme vám, na co máte nárok.',
+              label: 'Bezplatná konzultace',
+              to: '/contact',
+            }"
           />
         </div>
       </div>

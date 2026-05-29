@@ -160,10 +160,13 @@ const relatedLinks = [
           <UiAside
             title="Naše služby"
             :menus="relatedLinks"
-            callout-title="Potřebujete právní podporu?"
-            callout-description="Kontaktujte nás a zjistěte, jak vám právní poradenství skupiny COLLEGA může pomoci."
-            callout-label="Sjednat konzultaci"
-            callout-to="/contact"
+            :callout="{
+              title: 'Potřebujete právní podporu?',
+              description:
+                'Kontaktujte nás a zjistěte, jak vám právní poradenství skupiny COLLEGA může pomoci.',
+              label: 'Sjednat konzultaci',
+              to: '/contact',
+            }"
           />
         </div>
       </div>
