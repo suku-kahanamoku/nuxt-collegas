@@ -85,26 +85,27 @@ function onImgErrorByIndex(i: number) {
         </div>
 
         <!-- Right: certification badge images grid -->
-        <div class="grid grid-cols-3 gap-6 items-center">
-          <div
+        <div class="grid grid-cols-3 gap-4 items-stretch">
+          <UiBaseCard
             v-for="(cert, i) in certifications"
             :key="cert.name"
-            class="flex items-center justify-center p-4 rounded-md bg-surface border border-secondary-700/10 aspect-[3/2]"
           >
-            <img
-              v-if="cert.img && !imgErrorByIndex[i]"
-              :src="cert.img"
-              :alt="cert.alt"
-              class="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-              @error="onImgErrorByIndex(i)"
-            />
-            <span
-              v-else
-              class="text-title-md font-serif font-bold text-primary-900 tracking-wide"
-              >{{ cert.abbr }}</span
-            >
-          </div>
+            <div class="flex items-center justify-center aspect-[3/2]">
+              <img
+                v-if="cert.img && !imgErrorByIndex[i]"
+                :src="cert.img"
+                :alt="cert.alt"
+                class="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity"
+                loading="lazy"
+                @error="onImgErrorByIndex(i)"
+              />
+              <span
+                v-else
+                class="text-title-md font-serif font-bold text-primary-900 tracking-wide"
+                >{{ cert.abbr }}</span
+              >
+            </div>
+          </UiBaseCard>
         </div>
       </div>
     </UContainer>

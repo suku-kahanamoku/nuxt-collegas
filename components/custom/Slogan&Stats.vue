@@ -48,7 +48,7 @@ const stats = [
         </div>
 
         <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
-          <div class="grid grid-cols-2 gap-stack-sm">
+          <div class="grid grid-cols-2 gap-stack-md">
             <UiBaseCard
               v-for="s in stats"
               :key="s.label"
