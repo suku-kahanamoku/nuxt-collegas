@@ -38,7 +38,7 @@ async function handleSubmit() {
               required
               class="flex-1 max-w-sm rounded-md border border-primary-container/40 bg-primary-container/20 px-5 py-3 text-on-primary placeholder:text-on-primary/40 outline-none focus:border-secondary-fixed/60 transition-colors text-body-md"
             />
-            <UButton
+            <UiButton
               type="submit"
               color="secondary"
               variant="solid"
@@ -47,7 +47,7 @@ async function handleSubmit() {
               class="bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors px-8 shrink-0"
             >
               Zanechat kontakt
-            </UButton>
+            </UiButton>
           </form>
         </Transition>
       </div>

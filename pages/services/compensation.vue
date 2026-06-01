@@ -108,7 +108,7 @@ const relatedLinks = [
                   někdo, kdo ví, jak postupovat a jak dosáhnout maximálního
                   možného výsledku.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -120,7 +120,7 @@ const relatedLinks = [
                   }"
                 >
                   Postavte se za mé nároky
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

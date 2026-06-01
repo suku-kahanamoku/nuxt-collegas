@@ -44,7 +44,7 @@ defineProps<{
         {{ body }}
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
-        <UButton
+        <UiButton
           v-if="primaryLabel && primaryTo"
           :to="primaryTo"
           :color="variant === 'dark' ? 'secondary' : 'primary'"
@@ -63,8 +63,8 @@ defineProps<{
           }"
         >
           {{ primaryLabel }}
-        </UButton>
-        <UButton
+        </UiButton>
+        <UiButton
           v-if="secondaryLabel && secondaryTo"
           :to="secondaryTo"
           color="primary"
@@ -78,7 +78,7 @@ defineProps<{
           "
         >
           {{ secondaryLabel }}
-        </UButton>
+        </UiButton>
       </div>
     </div>
   </UPageCTA>

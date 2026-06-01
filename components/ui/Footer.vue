@@ -24,44 +24,44 @@
         <div
           class="flex flex-wrap gap-x-stack-md gap-y-stack-sm md:justify-end"
         >
-          <UButton
+          <UiButton
             variant="link"
             color="primary"
             to="#"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Ochrana soukromí</UButton
+            >Ochrana soukromí</UiButton
           >
-          <UButton
+          <UiButton
             variant="link"
             color="primary"
             to="#"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Obchodní podmínky</UButton
+            >Obchodní podmínky</UiButton
           >
-          <UButton
+          <UiButton
             variant="link"
             color="primary"
             to="#"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Regulatorní info</UButton
+            >Regulatorní info</UiButton
           >
-          <UButton
+          <UiButton
             variant="link"
             color="primary"
             to="#"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Cookies</UButton
+            >Cookies</UiButton
           >
-          <UButton
+          <UiButton
             variant="link"
             color="primary"
             to="/contact"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Kontakt</UButton
+            >Kontakt</UiButton
           >
         </div>
         <div class="flex gap-stack-md mt-stack-lg items-center">
-          <UButton
+          <UiButton
             variant="link"
             color="secondary"
             to="/client-zone"
@@ -72,8 +72,8 @@
               name="i-material-symbols-lock-open-outline"
               style="width: 1.75rem; height: 1.75rem"
             />
-          </UButton>
-          <UButton
+          </UiButton>
+          <UiButton
             variant="link"
             color="secondary"
             aria-label="Jazyk"
@@ -83,8 +83,8 @@
               name="i-material-symbols-language"
               style="width: 1.75rem; height: 1.75rem"
             />
-          </UButton>
-          <UButton
+          </UiButton>
+          <UiButton
             variant="link"
             color="secondary"
             to="/contact"
@@ -95,7 +95,7 @@
               name="i-material-symbols-mail-outline"
               style="width: 1.75rem; height: 1.75rem"
             />
-          </UButton>
+          </UiButton>
         </div>
       </div>
     </div>

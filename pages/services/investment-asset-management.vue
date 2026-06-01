@@ -106,7 +106,7 @@ const relatedLinks = [
                   kontextu. Vaše investice tak nejsou jen „uložené", ale řízené
                   s jasným záměrem a důrazem na dlouhodobou hodnotu.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -118,7 +118,7 @@ const relatedLinks = [
                   }"
                 >
                   Svěřte kapitál do individuální péče
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

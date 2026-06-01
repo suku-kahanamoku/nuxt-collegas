@@ -87,7 +87,7 @@ const navItems = [
     />
 
     <template #right>
-      <UButton
+      <UiButton
         to="/client-zone"
         color="primary"
         variant="outline"
@@ -96,7 +96,7 @@ const navItems = [
         class="uppercase tracking-widest font-semibold text-xs px-4 py-2 whitespace-nowrap"
       >
         Klientská zóna
-      </UButton>
+      </UiButton>
     </template>
 
     <template #body>
@@ -108,7 +108,7 @@ const navItems = [
         :ui="{ list: 'space-y-1', link: 'text-lg' }"
       />
       <div class="mt-4 px-2">
-        <UButton
+        <UiButton
           to="/client-zone"
           color="primary"
           variant="outline"
@@ -118,7 +118,7 @@ const navItems = [
           class="uppercase tracking-widest font-semibold text-xs"
         >
           Klientská zóna
-        </UButton>
+        </UiButton>
       </div>
     </template>
   </UHeader>

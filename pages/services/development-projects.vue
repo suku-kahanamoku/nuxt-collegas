@@ -84,7 +84,7 @@ const relatedLinks = [
                   jasně řízený proces a kontrolu nad kapitálem, pro klienty pak
                   kvalitní a promyšlené bydlení či investiční příležitost.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -96,7 +96,7 @@ const relatedLinks = [
                   }"
                 >
                   Zapojte se do developerských projektů
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"
@@ -149,7 +149,7 @@ const relatedLinks = [
                   náhodě a stává se řízeným procesem s jasným cílem – dlouhodobě
                   růst a chránit váš kapitál.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -161,7 +161,7 @@ const relatedLinks = [
                   }"
                 >
                   Získejte přístup k investičním příležitostem
-                </UButton>
+                </UiButton>
               </div>
             </div>
           </div>

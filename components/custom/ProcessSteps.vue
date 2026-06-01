@@ -115,11 +115,7 @@ const steps = [
                     >{{ step.icon }}</span
                   >
                 </div>
-                <!-- Step number badge -->
-                <span
-                  class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-secondary-fixed flex items-center justify-center text-primary-900 font-bold text-[10px] leading-none z-20"
-                  >{{ i + 1 }}</span
-                >
+
               </div>
 
               <!-- Title -->
@@ -161,7 +157,7 @@ const steps = [
 
       <!-- CTA -->
       <div class="text-center mt-16">
-        <UButton
+        <UiButton
           to="/contact"
           size="lg"
           color="secondary"
@@ -174,7 +170,7 @@ const steps = [
           }"
         >
           Začít první krok zdarma
-        </UButton>
+        </UiButton>
       </div>
     </UContainer>
   </section>

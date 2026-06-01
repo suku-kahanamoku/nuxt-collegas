@@ -103,7 +103,7 @@ const topics = [
                   že máte věci nastavené správně, že neplatíte víc, než musíte,
                   a že vás nic nepřekvapí ve chvíli, kdy to nejméně čekáte.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -115,7 +115,7 @@ const topics = [
                   }"
                 >
                   Ozvěte se a přestaňte platit „daň z neznalosti“
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

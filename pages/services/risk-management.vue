@@ -75,7 +75,7 @@ const relatedLinks = [
                   řešení, které dává smysl nejen z pohledu ceny, ale především
                   kvality ochrany.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -88,7 +88,7 @@ const relatedLinks = [
                 >
                   Nechte si nastavit ochranu, na kterou se můžete opravdu
                   spolehnout
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

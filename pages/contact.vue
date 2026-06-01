@@ -292,7 +292,7 @@ function handleSubmit() {
           </div>
 
           <div class="pt-stack-md">
-            <UButton
+            <UiButton
               type="submit"
               color="secondary"
               variant="solid"
@@ -305,7 +305,7 @@ function handleSubmit() {
               }"
             >
               Odeslat poptávku
-            </UButton>
+            </UiButton>
           </div>
 
           <p

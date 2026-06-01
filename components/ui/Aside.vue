@@ -23,7 +23,7 @@ defineProps<{
         {{ title }}
       </h3>
       <nav class="space-y-stack-md">
-        <UButton
+        <UiButton
           v-for="link in menus"
           :key="link.to"
           :to="link.to"
@@ -37,7 +37,7 @@ defineProps<{
           }"
         >
           <span class="text-body-sm font-semibold">{{ link.label }}</span>
-        </UButton>
+        </UiButton>
       </nav>
     </div>
 
@@ -54,7 +54,7 @@ defineProps<{
       >
         {{ callout.description }}
       </p>
-      <UButton
+      <UiButton
         v-if="callout.label && callout.to"
         :to="callout.to"
         variant="link"
@@ -67,7 +67,7 @@ defineProps<{
         }"
       >
         {{ callout.label }}
-      </UButton>
+      </UiButton>
     </div>
   </UPageAside>
 </template>

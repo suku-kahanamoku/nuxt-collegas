@@ -108,7 +108,7 @@ const relatedLinks = [
                   detailů ani nést rizika spojená s prodejem či pronájmem – máte
                   jistotu, že vše probíhá profesionálně a pod kontrolou.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -120,7 +120,7 @@ const relatedLinks = [
                   }"
                 >
                   Chci pro svou nemovitost maximální hodnotu
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

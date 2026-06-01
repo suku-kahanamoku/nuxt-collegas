@@ -106,7 +106,7 @@ const relatedLinks = [
                   Výsledkem je klid, jistota a vědomí, že vaše rozhodnutí stojí
                   na pevných základech a jsou podpořena profesionálním zázemím.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -118,7 +118,7 @@ const relatedLinks = [
                   }"
                 >
                   Opřete se o právní partnerství
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

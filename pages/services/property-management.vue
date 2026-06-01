@@ -108,7 +108,7 @@ const relatedLinks = [
                   situace – máte jistotu, že se o váš majetek stará někdo, kdo
                   hlídá jeho hodnotu i výkonnost.
                 </p>
-                <UButton
+                <UiButton
                   to="/contact"
                   variant="link"
                   color="secondary"
@@ -120,7 +120,7 @@ const relatedLinks = [
                   }"
                 >
                   Zažijte správu bez starostí
-                </UButton>
+                </UiButton>
               </div>
               <div
                 class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"

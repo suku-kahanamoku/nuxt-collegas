@@ -3,6 +3,21 @@ import type { ButtonProps } from "@nuxt/ui";
 
 const props = defineProps<ButtonProps>();
 
+const colorMap: Record<string, string> = {
+  primary: 'var(--color-primary-700)',
+  secondary: 'var(--color-secondary-700)',
+  neutral: 'var(--color-neutral-500)',
+  success: 'var(--color-success-600)',
+  warning: 'var(--color-warning-500)',
+  error: 'var(--color-error-600)',
+  info: 'var(--color-info-600)',
+};
+
+const glowColor = computed(() => {
+  const c = props.color as string | undefined;
+  return colorMap[c ?? 'primary'] ?? colorMap.primary;
+});
+
 const spotlightStyle = ref<Record<string, string>>({
   "--spotlight-x": "-9999px",
   "--spotlight-y": "-9999px",
@@ -44,8 +59,8 @@ function onMouseLeave() {
 
 <template>
   <div
-    class="relative inline-flex [--spotlight-size:300px] [--spotlight-color:var(--color-secondary-700)] [--shadow-color:var(--color-secondary-700)] [box-shadow:calc(var(--shadow-x,0px))_calc(var(--shadow-y,2px))_20px_2px_color-mix(in_srgb,var(--shadow-color)_calc(var(--shadow-opacity,0)*20%),transparent)] transition-shadow duration-200 ease-out rounded-[inherit]"
-    :style="spotlightStyle"
+    class="relative inline-flex [--spotlight-size:300px] [box-shadow:calc(var(--shadow-x,0px))_calc(var(--shadow-y,2px))_12px_0px_color-mix(in_srgb,var(--spotlight-color)_calc(var(--shadow-opacity,0)*12%),transparent)] transition-shadow duration-200 ease-out rounded-[inherit]"
+    :style="{ ...spotlightStyle, '--spotlight-color': glowColor }"
     @mousemove="onMouseMove"
     @mouseleave="onMouseLeave"
   >

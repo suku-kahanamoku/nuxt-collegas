@@ -227,7 +227,7 @@ const mediaItems = [
             uvítáme
             <strong>spontánní přihlášku</strong> od šikovného člověka.
           </p>
-          <UButton
+          <UiButton
             to="/contact"
             color="primary"
             variant="solid"
@@ -240,7 +240,7 @@ const mediaItems = [
             }"
           >
             Napsat nám
-          </UButton>
+          </UiButton>
         </div>
       </div>
     </section>

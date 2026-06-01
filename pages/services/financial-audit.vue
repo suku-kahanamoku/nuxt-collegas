@@ -144,7 +144,7 @@ useHead({
             finance pracují pro vás a že každý krok, který uděláte, vás
             přibližuje k vašim cílům.
           </p>
-          <UButton
+          <UiButton
             to="/contact"
             variant="link"
             color="secondary"
@@ -154,7 +154,7 @@ useHead({
               trailingIcon:
                 'transition-transform duration-200 group-hover:translate-x-1',
             }"
-            >Chci plánovat dnes i v budoucnu</UButton
+            >Chci plánovat dnes i v budoucnu</UiButton
           >
         </div>
       </div>
