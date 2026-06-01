@@ -21,7 +21,7 @@ useHead({
   <div class="w-full overflow-hidden">
     <CustomIntroCarousel />
     <CustomSlogan&Stats />
-
+    <CustomReferenceGoogle />
     <CustomServices />
 
     <!-- ── CTA ── -->

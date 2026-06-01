@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref, computed, onMounted } from "vue";
 import type { UserProps } from "@nuxt/ui";
 
 const testimonials: { user: UserProps; quote: string }[] = [
@@ -102,43 +103,78 @@ const testimonials: { user: UserProps; quote: string }[] = [
       "Nuxt UI Pro is my preferred choice for everything, from a POC to a web platform. It's ready to use out-of-the-box and assists me in crafting pixel-perfect UIs. It saves me a significant amount of time while remaining highly customizable. Give it a try, and you won't be let down.",
   },
 ];
+
+// Toggle this to `true` to pick a random initial card instead of the first
+const useRandomInitial = false;
+
+const testimonialsWithAvatar = computed(() =>
+  testimonials.filter((t) => !!(t.user?.avatar?.src || t.user?.avatar?.srcset)),
+);
+
+const selected = ref<number | null>(null);
+const selectedTestimonial = ref<
+  (typeof testimonialsWithAvatar.value)[0] | null
+>(null);
+const showCta = ref(false);
+
+onMounted(() => {
+  const len = testimonialsWithAvatar.value.length;
+  if (len === 0) {
+    selected.value = null;
+    showCta.value = false;
+    return;
+  }
+  const idx = useRandomInitial ? Math.floor(Math.random() * len) : 0;
+  selected.value = idx;
+  selectedTestimonial.value = testimonialsWithAvatar.value[idx] || null;
+  showCta.value = true;
+});
+
+function onCardClick(indexOrTestimonial: number | (typeof testimonials)[0]) {
+  // allow either index or the testimonial object
+  if (typeof indexOrTestimonial === "number") {
+    const i = indexOrTestimonial as number;
+    selected.value = i;
+    selectedTestimonial.value = testimonialsWithAvatar.value[i] || null;
+  } else {
+    const t = indexOrTestimonial as (typeof testimonials)[0];
+    selectedTestimonial.value = t;
+    // sync selected index to filtered list
+    selected.value = testimonialsWithAvatar.value.findIndex((x) => x === t);
+  }
+  showCta.value = true;
+}
 </script>
 
 <template>
   <div class="flex flex-col gap-4 w-full">
-    <UMarquee
-      pause-on-hover
-      :overlay="false"
-      :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
-    >
-      <UPageCard
-        v-for="(testimonial, index) in testimonials"
-        :key="index"
-        variant="subtle"
-        :description="testimonial.quote"
-        :ui="{
-          description:
-            'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
-        }"
-        class="w-64 shrink-0"
-      >
-        <template #footer>
-          <UUser
-            v-bind="testimonial.user"
-            size="xl"
-            :ui="{ description: 'line-clamp-1' }"
-          />
-        </template>
-      </UPageCard>
-    </UMarquee>
-    <UMarquee
-      pause-on-hover
+    <UPageCTA
+      v-if="showCta"
+      title="Trusted and supported by our amazing community"
+      description="We've built a strong, lasting partnership. Their trust is our driving force, propelling us towards shared success."
+      orientation="horizontal"
       reverse
+      class="mb-4"
+    >
+      <template #default>
+        <img
+          v-if="selectedTestimonial !== null"
+          :src="selectedTestimonial.user.avatar?.src"
+          width="320"
+          height="364"
+          alt="Illustration"
+          class="w-full rounded-lg"
+          loading="lazy"
+        />
+      </template>
+    </UPageCTA>
+    <UMarquee
+      pause-on-hover
       :overlay="false"
       :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
     >
       <UPageCard
-        v-for="(testimonial, index) in testimonials"
+        v-for="(testimonial, index) in testimonialsWithAvatar"
         :key="index"
         variant="subtle"
         :description="testimonial.quote"
@@ -146,7 +182,8 @@ const testimonials: { user: UserProps; quote: string }[] = [
           description:
             'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
         }"
-        class="w-64 shrink-0"
+        class="w-64 shrink-0 cursor-pointer"
+        @click="onCardClick(testimonial)"
       >
         <template #footer>
           <UUser
