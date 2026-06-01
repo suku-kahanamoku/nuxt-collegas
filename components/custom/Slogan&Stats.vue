@@ -24,7 +24,7 @@ const stats = [
 
 <template>
   <section class="py-section-gap bg-surface-container-lowest">
-    <div class="max-w-7xl mx-auto px-gutter">
+    <UContainer>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
         <div class="lg:col-span-7 flex flex-col gap-stack-lg">
           <blockquote
@@ -80,6 +80,6 @@ const stats = [
           </div>
         </div>
       </div>
-    </div>
+    </UContainer>
   </section>
 </template>

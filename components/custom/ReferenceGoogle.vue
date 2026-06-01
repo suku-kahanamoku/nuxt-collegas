@@ -64,52 +64,58 @@ const selectedReference = computed(() => {
 
 <template>
   <div class="flex flex-col gap-4 w-full">
-    <UPageCTA
-      v-if="selectedReference"
-      :title="selectedReference.user.name"
-      :description="selectedReference.quote"
-      orientation="horizontal"
-      variant="naked"
-      reverse
-      :ui="{
-        container: 'pt-4! pb-12! px-4! gap-4!',
-      }"
-    >
-      <template #default>
-        <NuxtImg
-          :src="selectedReference.user.avatar?.src"
-          :alt="selectedReference.user.name"
-          class="h-90 rounded-lg object-cover mx-auto"
-          loading="lazy"
-        />
-      </template>
-    </UPageCTA>
+    <UContainer>
+      <div class="text-center mb-20">
+        <h2 class="text-headline-lg font-serif text-primary-900">Reference</h2>
+      </div>
 
-    <UMarquee
-      pause-on-hover
-      :overlay="false"
-      :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
-    >
-      <UPageCard
-        v-for="(testimonial, index) in references"
-        :key="index"
-        variant="subtle"
-        :description="testimonial.quote"
+      <UPageCTA
+        v-if="selectedReference"
+        :title="selectedReference.user.name"
+        :description="selectedReference.quote"
+        orientation="horizontal"
+        variant="naked"
+        reverse
         :ui="{
-          description:
-            'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+          container: 'pt-0! px-4! gap-4!',
         }"
-        class="w-64 shrink-0 cursor-pointer"
-        @click="selectedIndex = index"
       >
-        <template #footer>
-          <UUser
-            v-bind="testimonial.user"
-            size="xl"
-            :ui="{ description: 'line-clamp-1' }"
+        <template #default>
+          <NuxtImg
+            :src="selectedReference.user.avatar?.src"
+            :alt="selectedReference.user.name"
+            class="h-90 rounded-lg object-cover mx-auto"
+            loading="lazy"
           />
         </template>
-      </UPageCard>
-    </UMarquee>
+      </UPageCTA>
+
+      <UMarquee
+        pause-on-hover
+        :overlay="false"
+        :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
+      >
+        <UPageCard
+          v-for="(testimonial, index) in references"
+          :key="index"
+          variant="subtle"
+          :description="testimonial.quote"
+          :ui="{
+            description:
+              'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+          }"
+          class="w-64 shrink-0 cursor-pointer"
+          @click="selectedIndex = index"
+        >
+          <template #footer>
+            <UUser
+              v-bind="testimonial.user"
+              size="xl"
+              :ui="{ description: 'line-clamp-1' }"
+            />
+          </template>
+        </UPageCard>
+      </UMarquee>
+    </UContainer>
   </div>
 </template>
