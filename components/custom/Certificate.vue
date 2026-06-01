@@ -95,7 +95,7 @@ const sections: Section[] = [
           <template #header>
             <UiTitle :title="section.label" size="sm">
               <template #eyebrow>
-                <UIcon :name="section.icon" class="size-8 text-secondary-700" />
+                <UIcon :name="section.icon" class="size-9 text-secondary-700" />
               </template>
               <template #title>
                 <h3 class="text-title-md font-serif text-primary-900">
@@ -108,9 +108,9 @@ const sections: Section[] = [
             <li
               v-for="item in section.items"
               :key="item.name"
-              class="flex items-start justify-between gap-4 text-sm"
+              class="flex items-start justify-between gap-4"
             >
-              <span class="flex items-start gap-2 text-muted">
+              <span class="flex items-start gap-2 text-body-md text-on-surface-variant">
                 <UIcon
                   v-if="item.icon"
                   :name="item.icon"
