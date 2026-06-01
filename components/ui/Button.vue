@@ -66,7 +66,7 @@ function onMouseLeave() {
   >
     <!-- glow border layer -->
     <div
-      class="absolute -inset-px rounded-[inherit] pointer-events-none z-0 transition-opacity duration-400 bg-[radial-gradient(var(--spotlight-size)_var(--spotlight-size)_at_var(--spotlight-x)_var(--spotlight-y),var(--spotlight-color),transparent_60%)]"
+      class="absolute -inset-px rounded-[inherit] pointer-events-none z-0 transition-opacity duration-400 bg-[radial-gradient(var(--spotlight-size)_var(--spotlight-size)_at_var(--spotlight-x)_var(--spotlight-y),var(--spotlight-color),transparent_40%)]"
       :class="isHovered ? 'opacity-100' : 'opacity-0'"
     />
     <UButton v-bind="props" class="relative z-[1]">

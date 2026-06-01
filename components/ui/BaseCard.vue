@@ -41,7 +41,7 @@ function onMouseLeave() {
 const rootClass =
   'group relative flex flex-col rounded-md h-full ' +
   '[--spotlight-size:420px] ' +
-  '[box-shadow:calc(var(--shadow-x,0px))_calc(var(--shadow-y,2px))_20px_2px_color-mix(in_srgb,var(--shadow-color)_calc(var(--shadow-opacity,0)*20%),transparent)] ' +
+  '[box-shadow:calc(var(--shadow-x,0px))_calc(var(--shadow-y,2px))_12px_0px_color-mix(in_srgb,var(--shadow-color)_calc(var(--shadow-opacity,0)*10%),transparent)] ' +
   'transition-shadow duration-200 ease-out';
 </script>
 
@@ -93,7 +93,7 @@ const rootClass =
     @mouseleave="onMouseLeave"
   >
     <div
-      class="absolute -inset-px rounded-[inherit] pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 bg-[radial-gradient(var(--spotlight-size)_var(--spotlight-size)_at_var(--spotlight-x)_var(--spotlight-y),var(--spotlight-color),transparent_60%)]"
+      class="absolute -inset-px rounded-[inherit] pointer-events-none z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 bg-[radial-gradient(var(--spotlight-size)_var(--spotlight-size)_at_var(--spotlight-x)_var(--spotlight-y),var(--spotlight-color),transparent_40%)]"
     />
     <div
       class="absolute inset-0 rounded-[inherit] pointer-events-none z-[1] border transition-colors duration-200"
