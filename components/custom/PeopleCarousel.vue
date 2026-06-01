@@ -71,6 +71,7 @@ const people = [
 
     <UMarquee
       pause-on-hover
+      reverse
       :overlay="false"
       :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
     >

@@ -43,6 +43,7 @@ const destinations = [
         <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">
           Vyberte oblast, která vás zajímá, a zjistěte, co pro vás COLLEGA může udělat.
         </p>
+        <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-stack-md">
