@@ -71,23 +71,22 @@ const services = [
   <section class="bg-surface-container-low py-section-gap">
     <div class="max-w-7xl mx-auto px-gutter">
       <div class="text-center mb-20">
-        <span
-          class="text-label-caps text-secondary-fixed uppercase mb-stack-sm block tracking-widest font-semibold"
-        >
-          Naše služby
-        </span>
         <h2 class="text-headline-lg font-serif text-primary-900">
-          Kompletní přehled
+          Naše služby
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-        <UiBaseCard v-for="s in services" :key="s.to" :to="s.to" :ui="{ body: 'h-full p-12!' }">
+        <UiBaseCard
+          v-for="s in services"
+          :key="s.to"
+          :to="s.to"
+          :ui="{ body: 'h-full p-12!' }"
+        >
           <template #header>
             <UiTitle size="sm">
               <template #eyebrow>
                 <span
-                  class="material-symbols-outlined text-secondary-700"
-                  style="font-size: 2rem"
+                  class="material-symbols-outlined text-secondary-700 text-4xl"
                   >{{ s.icon }}</span
                 >
               </template>

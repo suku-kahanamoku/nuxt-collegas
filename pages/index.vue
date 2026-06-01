@@ -22,6 +22,7 @@ useHead({
     <CustomIntroCarousel />
     <CustomSlogan&Stats />
     <CustomReferenceGoogle />
+    <CustomCertificate />
     <CustomServices />
 
     <!-- ── CTA ── -->

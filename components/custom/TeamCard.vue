@@ -40,8 +40,7 @@ defineProps<{
         class="w-full h-full flex items-center justify-center bg-surface-container"
       >
         <span
-          class="material-symbols-outlined text-on-surface-variant/30"
-          style="font-size: 4rem"
+          class="material-symbols-outlined text-on-surface-variant/30 text-7xl"
           >person</span
         >
       </div>
