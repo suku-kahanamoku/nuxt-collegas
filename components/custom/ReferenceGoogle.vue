@@ -89,33 +89,33 @@ const selectedReference = computed(() => {
           />
         </template>
       </UPageCTA>
-
-      <UMarquee
-        pause-on-hover
-        :overlay="false"
-        :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
-      >
-        <UPageCard
-          v-for="(testimonial, index) in references"
-          :key="index"
-          variant="subtle"
-          :description="testimonial.quote"
-          :ui="{
-            description:
-              'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
-          }"
-          class="w-64 shrink-0 cursor-pointer"
-          @click="selectedIndex = index"
-        >
-          <template #footer>
-            <UUser
-              v-bind="testimonial.user"
-              size="xl"
-              :ui="{ description: 'line-clamp-1' }"
-            />
-          </template>
-        </UPageCard>
-      </UMarquee>
     </UContainer>
+
+    <UMarquee
+      pause-on-hover
+      :overlay="false"
+      :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
+    >
+      <UPageCard
+        v-for="(testimonial, index) in references"
+        :key="index"
+        variant="subtle"
+        :description="testimonial.quote"
+        :ui="{
+          description:
+            'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+        }"
+        class="w-64 shrink-0 cursor-pointer"
+        @click="selectedIndex = index"
+      >
+        <template #footer>
+          <UUser
+            v-bind="testimonial.user"
+            size="xl"
+            :ui="{ description: 'line-clamp-1' }"
+          />
+        </template>
+      </UPageCard>
+    </UMarquee>
   </section>
 </template>

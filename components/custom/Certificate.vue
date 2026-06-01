@@ -1,126 +1,111 @@
 <script setup lang="ts">
-type SectionItem = {
-  name: string;
-  year?: string;
-  icon?: string;
-};
-
-type Section = {
-  label: string;
-  icon: string;
-  items: SectionItem[];
-};
-
-const sections: Section[] = [
+const certifications = [
   {
-    label: "Odbornost",
-    icon: "i-lucide-graduation-cap",
-    items: [
-      { name: "Finanční plánování a poradenství" },
-      { name: "Investiční strategie a portfolia" },
-      { name: "Pojistná ochrana a rizikový management" },
-      { name: "Hypoteční a úvěrové financování" },
-    ],
+    name: "CFP® – Certified Financial Planner",
+    abbr: "CFP®",
+    year: "2015",
+    img: "https://www.cfp.net/assets/images/logo-cfp-board-black-white.svg",
+    alt: "CFP® Certified Financial Planner",
   },
   {
-    label: "Seniorita",
-    icon: "i-lucide-trophy",
-    items: [
-      { name: "15+ let praxe ve finančním poradenství" },
-      { name: "Stovky spokojených klientů" },
-      { name: "Zkušenosti s komplexními případy" },
-      { name: "Pravidelné vzdělávání a certifikace" },
-    ],
+    name: "EFA – European Financial Advisor",
+    abbr: "EFA",
+    year: "2018",
+    img: "https://efpa.cz/static/img/10281/footer/EFPA_logo_paticka.png",
+    alt: "EFPA ČR – European Financial Advisor",
   },
   {
-    label: "Certifikáty",
-    icon: "i-lucide-badge-check",
-    items: [
-      {
-        name: "Certifikát CFP® (Certified Financial Planner)",
-        year: "2015",
-        icon: "i-lucide-award",
-      },
-      { name: "Makléřská licence ČNB", year: "2012", icon: "i-lucide-award" },
-      {
-        name: "Certifikát EFA (European Financial Advisor)",
-        year: "2018",
-        icon: "i-lucide-award",
-      },
-      {
-        name: "Licence pojišťovacího zprostředkovatele",
-        year: "2010",
-        icon: "i-lucide-award",
-      },
-    ],
+    name: "Makléřská licence ČNB",
+    abbr: "ČNB",
+    year: "2012",
+    img: "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
+    alt: "Česká národní banka",
   },
   {
-    label: "Vzdělání",
-    icon: "i-lucide-book-open",
-    items: [
-      {
-        name: "Ing. Ekonomie – VŠE Praha",
-        year: "2009",
-        icon: "i-lucide-award",
-      },
-      {
-        name: "MBA – Finance & Management, CEMI",
-        year: "2014",
-        icon: "i-lucide-award",
-      },
-      {
-        name: "Kurz Financial Risk Manager (FRM)",
-        year: "2017",
-        icon: "i-lucide-award",
-      },
-      {
-        name: "Kontinuální vzdělávání AFIZ",
-        year: "průběžně",
-        icon: "i-lucide-award",
-      },
-    ],
+    name: "Člen AFIZ",
+    abbr: "AFIZ",
+    year: "průběžně",
+    img: "",
+    alt: "AFIZ – Asociace finančních zprostředkovatelů a poradců",
+  },
+  {
+    name: "Licence pojišťovacího zprostředkovatele",
+    abbr: "ČNB",
+    year: "2010",
+    img: "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
+    alt: "Česká národní banka",
+  },
+  {
+    name: "Člen AFAM ČR",
+    abbr: "AFAM",
+    year: "průběžně",
+    img: "",
+    alt: "AFAM ČR – Asociace finančních a majetkových poradců",
   },
 ];
+
+const imgErrorByIndex = ref<boolean[]>(certifications.map(() => false));
+function onImgErrorByIndex(i: number) {
+  imgErrorByIndex.value[i] = true;
+}
 </script>
 
 <template>
-  <section class="py-section-gap">
+  <section class="py-section-gap bg-surface-container-lowest">
     <UContainer>
-      <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-900">Odbornost & certifikace</h2>
-      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
+        <!-- Left: title + list + CTA -->
+        <div class="flex flex-col gap-stack-lg">
+          <h2
+            class="text-headline-lg font-serif text-primary-900 leading-tight"
+          >
+            Certifikovaná odbornost a nezávislost
+          </h2>
 
-      <div class="grid sm:grid-cols-2 gap-stack-md">
-        <UiBaseCard v-for="section in sections" :key="section.label">
-          <template #header>
-            <UiTitle :title="section.label" size="sm">
-              <template #eyebrow>
-                <UIcon :name="section.icon" class="size-9 text-secondary-700" />
-              </template>
-              <template #title>
-                <h3 class="text-title-md font-serif text-primary-900">
-                  {{ section.label }}
-                </h3>
-              </template>
-            </UiTitle>
-          </template>
-          <ul class="space-y-2">
+          <ul class="flex flex-col gap-stack-sm">
             <li
-              v-for="item in section.items"
-              :key="item.name"
-              class="flex items-start justify-between gap-4"
+              v-for="cert in certifications"
+              :key="cert.name"
+              class="flex items-center gap-3"
             >
-              <span class="flex items-start gap-2 text-body-md text-on-surface-variant">
-                <UIcon
-                  v-if="item.icon"
-                  :name="item.icon"
-                  class="size-4 text-secondary-700 shrink-0 mt-0.5"
-                />
-                {{ item.name }}
+              <span
+                class="material-symbols-outlined text-secondary-700 text-base shrink-0"
+                >verified</span
+              >
+              <span class="text-body-md text-primary-900">
+                {{ cert.name }}
+                <span
+                  v-if="cert.year"
+                  class="text-on-surface-variant font-normal"
+                  >&thinsp;({{ cert.year }})</span
+                >
               </span>
             </li>
           </ul>
-        </UiBaseCard>
+        </div>
+
+        <!-- Right: certification badge images grid -->
+        <div class="grid grid-cols-3 gap-6 items-center">
+          <div
+            v-for="(cert, i) in certifications"
+            :key="cert.name"
+            class="flex items-center justify-center p-4 rounded-md bg-surface border border-secondary-700/10 aspect-[3/2]"
+          >
+            <img
+              v-if="cert.img && !imgErrorByIndex[i]"
+              :src="cert.img"
+              :alt="cert.alt"
+              class="max-h-12 max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+              @error="onImgErrorByIndex(i)"
+            />
+            <span
+              v-else
+              class="text-title-md font-serif font-bold text-primary-900 tracking-wide"
+              >{{ cert.abbr }}</span
+            >
+          </div>
+        </div>
       </div>
     </UContainer>
   </section>

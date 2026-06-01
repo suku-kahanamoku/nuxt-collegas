@@ -52,7 +52,6 @@ const stats = [
             <UiBaseCard
               v-for="s in stats"
               :key="s.label"
-              :ui="{ body: 'h-full pt-4!' }"
             >
               <template #header>
                 <UiTitle size="sm" :divider="false">

@@ -80,7 +80,6 @@ const services = [
           v-for="s in services"
           :key="s.to"
           :to="s.to"
-          :ui="{ body: 'h-full p-12!' }"
         >
           <template #header>
             <UiTitle size="sm">
