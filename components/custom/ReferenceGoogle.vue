@@ -1,32 +1,8 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import type { UserProps } from "@nuxt/ui";
 
-const testimonials: { user: UserProps; quote: string }[] = [
-  {
-    user: {
-      name: "Anthony Bettini",
-      description: "CEO and founder of VulnCheck",
-      avatar: {
-        src: "https://media.licdn.com/dms/image/v2/C4E03AQEY3pmXsH8hDg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1519741249442?e=1746057600&v=beta&t=dvQfBT9ah03MPNy9cnly30ugreeCdxG4nrxV3lwKAC8",
-        loading: "lazy" as const,
-      },
-    },
-    quote:
-      "We were using a SaaS service for the docs site, but were left unfulfilled. We put in the effort to do it in house, with UI Pro and not only did we get complimented by a prospect on our site, but they wanted to know our platform.",
-  },
-  {
-    user: {
-      name: "Yaz Jallad",
-      description: "Founder Ninjaparade Digital",
-      avatar: {
-        src: "https://pbs.twimg.com/profile_images/1824690890222485504/lQ7v1AGt_400x400.jpg",
-        loading: "lazy" as const,
-      },
-    },
-    quote:
-      "Wow, Nuxt UI Pro is a total game-changer! I'm seriously impressed with the quality, attention to detail, and the insane variety of components you get. It's like hitting the jackpot for any developer. I've saved countless hours that I would've spent stressing over making my apps look good, with amazing accessible UX,  and instead, I've been able to focus on the real deal – building the app itself. It's an instant buy for me, every single time. No second thoughts!",
-  },
+const references: { user: UserProps; quote: string }[] = [
   {
     user: {
       name: "Kevin Olson",
@@ -68,18 +44,6 @@ const testimonials: { user: UserProps; quote: string }[] = [
   },
   {
     user: {
-      name: "Thomas Sanlis",
-      description: "Freelance developer and designer",
-      avatar: {
-        src: "https://pbs.twimg.com/profile_images/1374040164180299791/ACw4G3nZ_400x400.jpg",
-        loading: "lazy" as const,
-      },
-    },
-    quote:
-      "I jumped at the chance to buy the Nuxt team's new UI kit as soon as I saw it. While I'm already a fan of Nuxt UI, the pro version takes it to a whole new level and lets me paste entire blocks into all my projects, saving me a ton of time.",
-  },
-  {
-    user: {
       name: "Benjamin Code",
       description: "YouTuber and SaaS builder",
       avatar: {
@@ -90,91 +54,48 @@ const testimonials: { user: UserProps; quote: string }[] = [
     quote:
       "Nuxt UI has allowed me to develop my SaaS without any prior mockups. The design quality of their components and the intelligence of the DX meant that I was able to try many different layouts for my application until I found the perfect UX for my users. Nuxt UI is the ui-kit I would have dreamed of building myself, and Nuxt UI Pro makes things even easier when you want to go further with your SaaS. Kudos to the team.",
   },
-  {
-    user: {
-      name: "Estéban Soubiran",
-      description: "Web developer and UnJS member",
-      avatar: {
-        src: "https://pbs.twimg.com/profile_images/1801649350319218689/aS_X_iTm_400x400.jpg",
-        loading: "lazy" as const,
-      },
-    },
-    quote:
-      "Nuxt UI Pro is my preferred choice for everything, from a POC to a web platform. It's ready to use out-of-the-box and assists me in crafting pixel-perfect UIs. It saves me a significant amount of time while remaining highly customizable. Give it a try, and you won't be let down.",
-  },
 ];
 
-// Toggle this to `true` to pick a random initial card instead of the first
-const useRandomInitial = false;
-
-const testimonialsWithAvatar = computed(() =>
-  testimonials.filter((t) => !!(t.user?.avatar?.src || t.user?.avatar?.srcset)),
-);
-
-const selected = ref<number | null>(null);
-const selectedTestimonial = ref<
-  (typeof testimonialsWithAvatar.value)[0] | null
->(null);
-const showCta = ref(false);
-
-onMounted(() => {
-  const len = testimonialsWithAvatar.value.length;
-  if (len === 0) {
-    selected.value = null;
-    showCta.value = false;
-    return;
-  }
-  const idx = useRandomInitial ? Math.floor(Math.random() * len) : 0;
-  selected.value = idx;
-  selectedTestimonial.value = testimonialsWithAvatar.value[idx] || null;
-  showCta.value = true;
+const selectedIndex = ref<number | null>(null);
+const selectedReference = computed(() => {
+  return references[selectedIndex.value ?? 0];
 });
 
-function onCardClick(indexOrTestimonial: number | (typeof testimonials)[0]) {
-  // allow either index or the testimonial object
-  if (typeof indexOrTestimonial === "number") {
-    const i = indexOrTestimonial as number;
-    selected.value = i;
-    selectedTestimonial.value = testimonialsWithAvatar.value[i] || null;
-  } else {
-    const t = indexOrTestimonial as (typeof testimonials)[0];
-    selectedTestimonial.value = t;
-    // sync selected index to filtered list
-    selected.value = testimonialsWithAvatar.value.findIndex((x) => x === t);
-  }
-  showCta.value = true;
+function onCardClick(index: number) {
+  selectedIndex.value = index;
 }
 </script>
 
 <template>
   <div class="flex flex-col gap-4 w-full">
     <UPageCTA
-      v-if="showCta"
-      title="Trusted and supported by our amazing community"
-      description="We've built a strong, lasting partnership. Their trust is our driving force, propelling us towards shared success."
+      v-if="selectedReference"
+      :title="selectedReference.user.name"
+      :description="selectedReference.quote"
       orientation="horizontal"
+      variant="naked"
       reverse
-      class="mb-4"
+      :ui="{
+        container: 'pt-4! pb-12! px-4! gap-4!',
+      }"
     >
       <template #default>
-        <img
-          v-if="selectedTestimonial !== null"
-          :src="selectedTestimonial.user.avatar?.src"
-          width="320"
-          height="364"
-          alt="Illustration"
-          class="w-full rounded-lg"
+        <NuxtImg
+          :src="selectedReference.user.avatar?.src"
+          :alt="selectedReference.user.name"
+          class="h-90 rounded-lg object-cover mx-auto"
           loading="lazy"
         />
       </template>
     </UPageCTA>
+
     <UMarquee
       pause-on-hover
       :overlay="false"
       :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
     >
       <UPageCard
-        v-for="(testimonial, index) in testimonialsWithAvatar"
+        v-for="(testimonial, index) in references"
         :key="index"
         variant="subtle"
         :description="testimonial.quote"
@@ -183,7 +104,7 @@ function onCardClick(indexOrTestimonial: number | (typeof testimonials)[0]) {
             'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
         }"
         class="w-64 shrink-0 cursor-pointer"
-        @click="onCardClick(testimonial)"
+        @click="onCardClick(index)"
       >
         <template #footer>
           <UUser
