@@ -94,12 +94,17 @@ const principles = [
 
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Naše hodnoty"
-          title="Diskrétnost. Nezávislost. Odpovědnost."
-          description="Tři slova, která nejsou jen sloganem. Jsou závazkem, který dodržujeme každý den – vůči každému klientovi, v každém rozhodnutí."
-          :centered="true"
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">
+            Diskrétnost. Nezávislost. Odpovědnost.
+          </h2>
+          <p
+            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+          >
+            Tři slova, která nejsou jen sloganem. Jsou závazkem, který
+            dodržujeme každý den – vůči každému klientovi, v každém rozhodnutí.
+          </p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="v in values" :key="v.title">
             <template #header>
@@ -129,11 +134,17 @@ const principles = [
     <!-- ── Principy ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Jak pracujeme"
-          title="Principy spolupráce"
-          description="Každý vztah s klientem stavíme na čtyřech základních principech. Nejde o proces – jde o způsob myšlení."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">
+            Principy spolupráce
+          </h2>
+          <p
+            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+          >
+            Každý vztah s klientem stavíme na čtyřech základních principech.
+            Nejde o proces – jde o způsob myšlení.
+          </p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
           <UiBaseCard v-for="p in principles" :key="p.title">
             <template #header>

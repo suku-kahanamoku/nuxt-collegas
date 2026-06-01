@@ -297,11 +297,10 @@ const backoffice = [
     <!-- ── Zakladatelé ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Vedení"
-          title="Zakladatelé"
-          description="Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Zakladatelé</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci.</p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
           <CustomTeamCard
             v-for="person in founders"
@@ -315,11 +314,10 @@ const backoffice = [
     <!-- ── Seniorní tým ── -->
     <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Zkušenost"
-          title="Seniorní tým"
-          description="Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Seniorní tým</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou.</p>
+        </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >
@@ -335,11 +333,10 @@ const backoffice = [
     <!-- ── Konzultanti a specialisté ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Tým"
-          title="Konzultanti a specialisté"
-          description="Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Konzultanti a specialisté</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků.</p>
+        </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >
@@ -355,11 +352,10 @@ const backoffice = [
     <!-- ── Backoffice ── -->
     <section class="py-section-gap bg-surface-container-low">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Zázemí"
-          title="Backoffice a podpora"
-          description="Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Backoffice a podpora</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou.</p>
+        </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >

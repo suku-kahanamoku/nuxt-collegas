@@ -70,7 +70,7 @@ const services = [
   <!-- ── Naše služby ── -->
   <section class="bg-surface-container-low py-section-gap">
     <UContainer>
-      <div class="text-center mb-20">
+      <div class="text-center mb-stack-lg">
         <h2 class="text-headline-lg font-serif text-primary-900">
           Naše služby
         </h2>
@@ -91,7 +91,7 @@ const services = [
                 >
               </template>
               <template #title>
-                <h3 class="text-3xl font-serif text-primary-900">
+                <h3 class="text-title-md font-serif text-primary-900">
                   {{ s.title }}
                 </h3>
               </template>

@@ -84,15 +84,13 @@ const sections: Section[] = [
 </script>
 
 <template>
-  <section class="py-16 sm:py-24">
+  <section class="py-section-gap">
     <UContainer>
-      <div class="text-center mb-12">
-        <h2 class="text-headline-lg font-serif text-primary-900">
-          Odbornost & certifikace
-        </h2>
+      <div class="text-center mb-stack-lg">
+        <h2 class="text-headline-lg font-serif text-primary-900">Odbornost & certifikace</h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-6">
+      <div class="grid sm:grid-cols-2 gap-stack-md">
         <UiBaseCard v-for="section in sections" :key="section.label">
           <template #header>
             <UiTitle :title="section.label" size="sm">

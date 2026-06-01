@@ -98,11 +98,10 @@ const mediaItems = [
     <!-- ── Firemní kultura ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Kdo jsme jako tým"
-          title="Pracovat v COLLEGA"
-          description="Nejsme korporát. Jsme tým lidí, kteří si věří, slaví úspěchy dohromady a vzájemně si pomáhají. Podívejte se, jak to u nás vypadá."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Pracovat v COLLEGA</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Nejsme korporát. Jsme tým lidí, kteří si věří, slaví úspěchy dohromady a vzájemně si pomáhají. Podívejte se, jak to u nás vypadá.</p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-sm">
           <UiMediaCard
             v-for="item in mediaItems"
@@ -176,11 +175,10 @@ const mediaItems = [
     <!-- ── Charita ── -->
     <section class="py-section-gap bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader
-          eyebrow="Společenská odpovědnost"
-          title="Pomáháme tam, kde je to třeba"
-          description="Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl."
-        />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Pomáháme tam, kde je to třeba</h2>
+          <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl.</p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="c in charityItems" :key="c.title">
             <template #header>
@@ -213,7 +211,9 @@ const mediaItems = [
       class="py-section-gap bg-surface-container-low"
     >
       <div class="max-w-7xl mx-auto px-gutter">
-        <UiSectionHeader eyebrow="Volná místa" title="Otevřené pozice" />
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-900">Otevřené pozice</h2>
+        </div>
         <div
           class="border border-outline-variant/30 bg-surface p-16 text-center"
         >

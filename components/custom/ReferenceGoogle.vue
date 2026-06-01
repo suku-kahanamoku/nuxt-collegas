@@ -63,9 +63,9 @@ const selectedReference = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 w-full">
+  <section class="py-section-gap">
     <UContainer>
-      <div class="text-center mb-20">
+      <div class="text-center mb-stack-lg">
         <h2 class="text-headline-lg font-serif text-primary-900">Reference</h2>
       </div>
 
@@ -117,5 +117,5 @@ const selectedReference = computed(() => {
         </UPageCard>
       </UMarquee>
     </UContainer>
-  </div>
+  </section>
 </template>
