@@ -81,7 +81,7 @@ const relatedLinks = [
     </UiIntro>
 
     <section class="bg-surface-container-low py-section-gap">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div
           class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
         >
@@ -169,7 +169,7 @@ const relatedLinks = [
             }"
           />
         </div>
-      </div>
+      </UContainer>
     </section>
   </div>
 </template>

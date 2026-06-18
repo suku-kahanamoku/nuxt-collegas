@@ -93,7 +93,7 @@ const principles = [
     </UiIntro>
 
     <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">
             Diskrétnost. Nezávislost. Odpovědnost.
@@ -128,12 +128,12 @@ const principles = [
             </p>
           </UiBaseCard>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── Principy ── -->
     <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">
             Principy spolupráce
@@ -172,12 +172,12 @@ const principles = [
             </p>
           </UiBaseCard>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── Citát ── -->
     <section class="py-section-gap bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="max-w-3xl mx-auto text-center">
           <span
             class="text-label-caps text-secondary-fixed uppercase block mb-stack-sm tracking-widest font-semibold"
@@ -194,7 +194,7 @@ const principles = [
             svůj majetek, nikdy neměli důvod litovat tohoto rozhodnutí.
           </p>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── CTA ── -->

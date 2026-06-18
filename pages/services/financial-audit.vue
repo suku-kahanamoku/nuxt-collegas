@@ -48,7 +48,7 @@ useHead({
     </UiIntro>
 
     <section class="py-section-gap bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl items-start">
           <div class="lg:col-span-8 space-y-stack-md">
             <p class="text-body-lg text-on-surface-variant">
@@ -96,7 +96,7 @@ useHead({
             </div>
           </div>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <section class="py-section-gap bg-surface-container-lowest">

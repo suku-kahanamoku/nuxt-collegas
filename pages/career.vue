@@ -97,7 +97,7 @@ const mediaItems = [
 
     <!-- ── Firemní kultura ── -->
     <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">Pracovat v COLLEGA</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Nejsme korporát. Jsme tým lidí, kteří si věří, slaví úspěchy dohromady a vzájemně si pomáhají. Podívejte se, jak to u nás vypadá.</p>
@@ -110,12 +110,12 @@ const mediaItems = [
             :label="item.label"
           />
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── PFP certifikace ── -->
     <section class="py-section-gap bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl items-center">
           <div>
             <span
@@ -169,12 +169,12 @@ const mediaItems = [
             </UiBaseCard>
           </div>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── Charita ── -->
     <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">Pomáháme tam, kde je to třeba</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl.</p>
@@ -202,7 +202,7 @@ const mediaItems = [
             </p>
           </UiBaseCard>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── Otevřené pozice ── -->
@@ -210,7 +210,7 @@ const mediaItems = [
       id="otevrene-pozice"
       class="py-section-gap bg-surface-container-low"
     >
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">Otevřené pozice</h2>
         </div>
@@ -242,7 +242,7 @@ const mediaItems = [
             Napsat nám
           </UiButton>
         </div>
-      </div>
+      </UContainer>
     </section>
   </div>
 </template>

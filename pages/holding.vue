@@ -83,7 +83,7 @@ const pillars = [
 
     <!-- ── Pilíře ── -->
     <section class="py-section-gap bg-surface-container-lowest">
-      <div class="max-w-7xl mx-auto px-gutter">
+      <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-900">Tři klíčové oblasti skupiny</h2>
         </div>
@@ -110,7 +110,7 @@ const pillars = [
             </p>
           </UiBaseCard>
         </div>
-      </div>
+      </UContainer>
     </section>
 
     <!-- ── Timeline ── -->
