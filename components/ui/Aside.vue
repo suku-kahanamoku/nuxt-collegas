@@ -1,7 +1,15 @@
 <script setup lang="ts">
 defineProps<{
-  title: string;
-  menus: Array<{ label: string; to: string }>;
+  title?: string;
+  menus: Array<{
+    label: string;
+    to: string;
+    target?: string;
+    rel?: string;
+    img?: string;
+    alt?: string;
+    abbr?: string;
+  }>;
   callout?: {
     title?: string;
     description?: string;
@@ -19,14 +27,19 @@ defineProps<{
     <div
       class="bg-surface-container-highest p-stack-lg border-t-4 border-secondary-700"
     >
-      <h3 class="text-headline-md font-serif text-primary-900 mb-stack-md">
+      <h3
+        v-if="title"
+        class="text-headline-md font-serif text-primary-900 mb-stack-md"
+      >
         {{ title }}
       </h3>
       <nav class="space-y-stack-md">
         <UButton
-          v-for="link in menus"
+          v-for="(link, index) in menus"
           :key="link.to"
           :to="link.to"
+          :target="link.target"
+          :rel="link.rel"
           variant="link"
           color="secondary"
           trailing-icon="i-material-symbols-arrow-forward"
@@ -36,7 +49,9 @@ defineProps<{
               'transition-transform duration-200 group-hover:translate-x-1 text-secondary-700',
           }"
         >
-          <span class="text-body-sm font-semibold">{{ link.label }}</span>
+          <slot name="item" :link="link" :index="index">
+            <span class="text-body-sm font-semibold">{{ link.label }}</span>
+          </slot>
         </UButton>
       </nav>
     </div>
