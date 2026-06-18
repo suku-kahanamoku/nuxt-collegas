@@ -12,7 +12,7 @@ const references = [
     name: "Michael Hoffmann",
     description: "Senior Frontend Developer",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs",
     quote:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -20,7 +20,7 @@ const references = [
     name: "Harlan Wilton",
     description: "Nuxt core team member",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw",
     quote:
       "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus nec vehicula.",
   },
@@ -28,7 +28,7 @@ const references = [
     name: "Benjamin Code",
     description: "YouTuber and SaaS builder",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDCzMVVbUiGDldEdjzoH0uh_tz8LFX5gUkIUrc37-84ytVq8ThVCqHJqUO0TIWSGeJYtQfCOYgNGagSdDprrZhxv1mWLY4kgwTMG2LNooznZU1GEuyKtZpS-I3yIScUN9vEUbuS4o1VHa3a7Xc4Bvb6qXmiL5fKeAAywb0IrX8R-dUUm7cHxuOAC5PeOO9m6MK1fo7apWRgYi7ehMmHFdQ-BB0mSsdhBNaeEMMJXGUmIBp5TXddP51kdf3vs-pkJXhFYHftRMgtssg",
     quote:
       "Nulla facilisi. Maecenas vel enim sit amet orci tincidunt rhoncus. Vivamus lacinia odio vitae vestibulum vestibulum. Donec in efficitur leo, in commodo odio.",
   },
@@ -36,7 +36,7 @@ const references = [
     name: "Sarah Mitchell",
     description: "CFO, Venture Partners",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCHtWHo56DD7xsjXPoFqxSHADwFGWEKN1DAR9yHDsU8ltGKDig7N7faZaDABQd7kCqGO3AGEy8EbYQnxHBKqJWQASzBOUNBd7a7gfdPfrBfMHOBH0NLDiftZTGsBlXPO_4Ty92f0DoWMbeQVv9mTQK5qy2E9GC4Y_ZPAshHOebxWhFIEWfhkZyQEyg5re0dVxcdjFVzrczMgJ0Qj5PRbrFFJSWMLcqcjIvMfdgYe4qrgTJRUmv4W0iLP9H3olq17adyOLIfcWmhQ4A",
     quote:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
@@ -44,7 +44,7 @@ const references = [
     name: "Tomáš Veselý",
     description: "Podnikatel, Praha",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAP8BHVaAZipz4DbyKsGK9u4TLFqyx98IaLnMp-j4RknuMJPoVAkJ8_Nx-P1dhvIJq61fBywGbaNBw45th_cIJq0EIoR-TkJJY0kw-FNMyUl8f4FHRt4Ohxn0vtr6OXHSHEm68nJBbYZ0ULfmn9rC75oxmRCQJiyd2n_JQFBBOuweKBLgsWLS-08IipBnuPCXeYO8d0vOv0SYXcUFHwooZRdQPVjS_0gEeKXTj2EqGNbqj97fiOldaJzVk2319dFtpskVqTUIMFSqk",
     quote:
       "Spolupráce s Collegasem byla přesně to, co jsem hledal – jasná doporučení bez zbytečného žargonu.",
   },
