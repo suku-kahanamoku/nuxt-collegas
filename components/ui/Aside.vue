@@ -29,7 +29,7 @@ defineProps<{
     >
       <h3
         v-if="title"
-        class="text-headline-md font-serif text-primary-900 mb-stack-md"
+        class="text-headline-md font-serif text-primary-800 mb-stack-md"
       >
         {{ title }}
       </h3>
@@ -43,7 +43,7 @@ defineProps<{
           variant="link"
           color="secondary"
           trailing-icon="i-material-symbols-arrow-forward"
-          class="w-full justify-between py-stack-sm border-b border-outline-variant/50 last:border-b-0 !text-primary-900 hover:!text-secondary-700"
+          class="w-full justify-between py-stack-sm border-b border-outline-variant/50 last:border-b-0 !text-primary-800 hover:!text-secondary-700"
           :ui="{
             trailingIcon:
               'transition-transform duration-200 group-hover:translate-x-1 text-secondary-700',
@@ -60,7 +60,7 @@ defineProps<{
       v-if="callout && callout.title"
       class="bg-surface-container p-stack-lg"
     >
-      <h4 class="text-lg font-serif text-primary-900 mb-stack-sm">
+      <h4 class="text-lg font-serif text-primary-800 mb-stack-sm">
         {{ callout.title }}
       </h4>
       <p

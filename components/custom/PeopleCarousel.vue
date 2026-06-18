@@ -59,65 +59,49 @@ const people = [
 </script>
 
 <template>
-  <section class="py-section-gap bg-surface-container-low overflow-hidden">
+  <section class="py-section-gap bg-background">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-900">Náš tým</h2>
+        <h2 class="text-headline-lg font-serif text-primary-800">Leadership</h2>
         <p
           class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
         >
-          Za každou radou stojí konkrétní člověk s odborností, zkušeností a
-          odpovědností.
+          The Stewards of Your Future
         </p>
+        <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
-    </UContainer>
 
-    <UMarquee
-      pause-on-hover
-      reverse
-      :overlay="false"
-      :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
-    >
-      <div
-        v-for="person in people"
-        :key="person.name"
-        class="flex flex-col items-center gap-3 w-44 shrink-0"
+      <UMarquee
+        pause-on-hover
+        :overlay="false"
+        :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
       >
-        <div
-          class="w-28 h-28 rounded-full overflow-hidden bg-surface-container border border-secondary-700/10"
-        >
-          <img
-            :src="person.photo"
-            :alt="person.name"
-            class="w-full h-full object-cover object-top"
-            loading="lazy"
-          />
-        </div>
-        <div class="text-center">
-          <p class="text-body-md font-semibold text-primary-900 leading-tight">
+        <div v-for="person in people" :key="person.name" class="w-72 shrink-0">
+          <div
+            class="aspect-3/4 mb-stack-sm overflow-hidden bg-surface-container relative"
+          >
+            <img
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105"
+              :alt="person.name"
+              :src="person.photo"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-headline-md text-2xl text-primary mb-1">
             {{ person.name }}
-          </p>
-          <p class="text-sm text-on-surface-variant mt-0.5 leading-tight">
+          </h3>
+          <p class="font-label-caps text-secondary uppercase mb-stack-sm">
             {{ person.role }}
           </p>
+          <a
+            class="inline-flex items-center text-on-surface-variant hover:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
+            href="/our-people"
+          >
+            View Biography
+            <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
+          </a>
         </div>
-      </div>
-    </UMarquee>
-
-    <UContainer class="mt-stack-lg text-center">
-      <UButton
-        to="/our-people"
-        color="primary"
-        variant="outline"
-        trailing-icon="i-material-symbols-arrow-forward"
-        size="lg"
-        :ui="{
-          trailingIcon:
-            'transition-transform duration-200 group-hover:translate-x-1 size-5',
-        }"
-      >
-        Poznat celý tým
-      </UButton>
+      </UMarquee>
     </UContainer>
   </section>
 </template>

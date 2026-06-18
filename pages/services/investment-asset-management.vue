@@ -145,7 +145,7 @@ const relatedLinks = [
                       >
                     </template>
                     <template #title>
-                      <h3 class="text-title-lg font-serif text-primary-900">
+                      <h3 class="text-title-lg font-serif text-primary-800">
                         {{ f.title }}
                       </h3>
                     </template>

@@ -71,7 +71,7 @@ const services = [
   <section class="bg-surface-container-low py-section-gap">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-900">
+        <h2 class="text-headline-lg font-serif text-primary-800">
           Naše služby
         </h2>
       </div>
@@ -90,7 +90,7 @@ const services = [
                 >
               </template>
               <template #title>
-                <h3 class="text-title-md font-serif text-primary-900">
+                <h3 class="text-title-md font-serif text-primary-800">
                   {{ s.title }}
                 </h3>
               </template>

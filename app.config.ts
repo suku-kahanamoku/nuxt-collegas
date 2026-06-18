@@ -25,7 +25,7 @@ export default defineAppConfig({
           color: "primary",
           variant: "outline",
           class:
-            "border border-primary-900 text-primary-900 hover:bg-primary-50 active:bg-primary-100",
+            "border border-primary-900 text-primary-800 hover:bg-primary-50 active:bg-primary-100",
         },
         {
           color: "secondary",
@@ -47,7 +47,7 @@ export default defineAppConfig({
         {
           color: "primary",
           variant: "ghost",
-          class: "text-primary-900 hover:bg-primary-50",
+          class: "text-primary-800 hover:bg-primary-50",
         },
         {
           color: "secondary",
@@ -57,7 +57,7 @@ export default defineAppConfig({
         {
           color: "primary",
           variant: "link",
-          class: "text-primary-900 hover:opacity-70 p-0",
+          class: "text-primary-800 hover:opacity-70 p-0",
         },
       ],
     },

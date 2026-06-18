@@ -32,7 +32,7 @@ defineProps<{
       </span>
       <h2
         class="text-headline-lg font-serif mb-stack-sm"
-        :class="variant === 'dark' ? '' : 'text-primary-900'"
+        :class="variant === 'dark' ? '' : 'text-primary-800'"
       >
         {{ title }}
       </h2>
@@ -54,7 +54,7 @@ defineProps<{
           class="justify-center px-10 py-4 text-base"
           :class="
             variant === 'dark'
-              ? 'bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors'
+              ? 'bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors'
               : ''
           "
           :ui="{

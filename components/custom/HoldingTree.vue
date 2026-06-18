@@ -137,7 +137,7 @@ const sections: HoldingSection[] = [
               "
             >
               <div
-                class="font-serif font-bold text-primary-900 leading-snug text-body-lg tracking-normal"
+                class="font-serif font-bold text-primary-800 leading-snug text-body-lg tracking-normal"
               >
                 {{ section.levels[0]?.nodes[0]?.name }}
               </div>
@@ -184,7 +184,7 @@ const sections: HoldingSection[] = [
                     "
                   >
                     <div
-                      class="font-serif font-bold text-primary-900 leading-snug text-body-md tracking-normal min-h-10"
+                      class="font-serif font-bold text-primary-800 leading-snug text-body-md tracking-normal min-h-10"
                     >
                       {{ node.name }}
                     </div>

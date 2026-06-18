@@ -298,7 +298,7 @@ const backoffice = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Zakladatelé</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Zakladatelé</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
@@ -315,7 +315,7 @@ const backoffice = [
     <section class="py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Seniorní tým</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Seniorní tým</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou.</p>
         </div>
         <div
@@ -334,7 +334,7 @@ const backoffice = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Konzultanti a specialisté</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Konzultanti a specialisté</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků.</p>
         </div>
         <div
@@ -353,7 +353,7 @@ const backoffice = [
     <section class="py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Backoffice a podpora</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Backoffice a podpora</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou.</p>
         </div>
         <div

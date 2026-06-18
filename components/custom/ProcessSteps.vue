@@ -163,7 +163,7 @@ const steps = [
           color="secondary"
           variant="solid"
           trailing-icon="i-material-symbols-arrow-forward"
-          class="bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors px-10 py-4 text-base"
+          class="bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors px-10 py-4 text-base"
           :ui="{
             trailingIcon:
               'transition-transform duration-200 group-hover:translate-x-1 size-5',

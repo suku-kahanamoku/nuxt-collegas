@@ -44,7 +44,7 @@ async function handleSubmit() {
               variant="solid"
               size="lg"
               :loading="loading"
-              class="bg-secondary-fixed text-primary-900 hover:bg-secondary-fixed/80 transition-colors px-8 shrink-0"
+              class="bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors px-8 shrink-0"
             >
               Zanechat kontakt
             </UButton>

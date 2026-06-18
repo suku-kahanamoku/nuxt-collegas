@@ -32,7 +32,7 @@ const dividerWidths: Record<string, string> = {
     </slot>
 
     <slot name="title">
-      <h3 class="text-display-xl font-serif text-primary-900 leading-none">
+      <h3 class="text-display-xl font-serif text-primary-800 leading-none">
         {{ title }}
       </h3>
     </slot>

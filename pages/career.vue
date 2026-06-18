@@ -99,7 +99,7 @@ const mediaItems = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Pracovat v COLLEGA</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Pracovat v COLLEGA</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Nejsme korporát. Jsme tým lidí, kteří si věří, slaví úspěchy dohromady a vzájemně si pomáhají. Podívejte se, jak to u nás vypadá.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-sm">
@@ -123,7 +123,7 @@ const mediaItems = [
               >Vzdělávání</span
             >
             <h2
-              class="text-headline-lg font-serif text-primary-900 mb-stack-md"
+              class="text-headline-lg font-serif text-primary-800 mb-stack-md"
             >
               Certifikace PFP
             </h2>
@@ -156,7 +156,7 @@ const mediaItems = [
                   </template>
                   <template #title>
                     <h3
-                      class="text-title-md font-serif text-primary-900 mb-stack-xs"
+                      class="text-title-md font-serif text-primary-800 mb-stack-xs"
                     >
                       {{ item.title }}
                     </h3>
@@ -176,7 +176,7 @@ const mediaItems = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Pomáháme tam, kde je to třeba</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Pomáháme tam, kde je to třeba</h2>
           <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">Jako tým věříme, že zodpovědnost přesahuje finanční poradenství. Podporujeme projekty, které dávají smysl.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
@@ -191,7 +191,7 @@ const mediaItems = [
                   >
                 </template>
                 <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-900">
+                  <h3 class="text-title-lg font-serif text-primary-800">
                     {{ c.title }}
                   </h3>
                 </template>
@@ -212,7 +212,7 @@ const mediaItems = [
     >
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Otevřené pozice</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Otevřené pozice</h2>
         </div>
         <div
           class="border border-outline-variant/30 bg-surface p-16 text-center"

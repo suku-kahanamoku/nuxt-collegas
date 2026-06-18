@@ -116,7 +116,7 @@ const relatedLinks = [
                 />
               </div>
               <div class="space-y-stack-md">
-                <h2 class="text-headline-lg font-serif text-primary-900">
+                <h2 class="text-headline-lg font-serif text-primary-800">
                   Komplexní ochrana
                 </h2>
                 <p class="text-body-md text-on-surface-variant">

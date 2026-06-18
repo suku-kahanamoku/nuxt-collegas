@@ -95,7 +95,7 @@ const principles = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">
+          <h2 class="text-headline-lg font-serif text-primary-800">
             Diskrétnost. Nezávislost. Odpovědnost.
           </h2>
           <p
@@ -117,7 +117,7 @@ const principles = [
                   >
                 </template>
                 <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-900">
+                  <h3 class="text-title-lg font-serif text-primary-800">
                     {{ v.title }}
                   </h3>
                 </template>
@@ -135,7 +135,7 @@ const principles = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">
+          <h2 class="text-headline-lg font-serif text-primary-800">
             Principy spolupráce
           </h2>
           <p
@@ -160,7 +160,7 @@ const principles = [
                 </template>
                 <template #title>
                   <h3
-                    class="text-title-md font-serif text-primary-900 mb-stack-xs"
+                    class="text-title-md font-serif text-primary-800 mb-stack-xs"
                   >
                     {{ p.title }}
                   </h3>

@@ -39,7 +39,7 @@ const destinations = [
   <section class="py-section-gap bg-surface-container-lowest">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-900">Kde vám můžeme pomoci?</h2>
+        <h2 class="text-headline-lg font-serif text-primary-800">Kde vám můžeme pomoci?</h2>
         <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">
           Vyberte oblast, která vás zajímá, a zjistěte, co pro vás COLLEGA může udělat.
         </p>
@@ -60,7 +60,7 @@ const destinations = [
 
           <h3
             class="text-title-md font-serif leading-tight"
-            :class="dest.highlight ? 'text-on-primary' : 'text-primary-900'"
+            :class="dest.highlight ? 'text-on-primary' : 'text-primary-800'"
           >
             {{ dest.title }}
           </h3>

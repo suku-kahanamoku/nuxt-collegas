@@ -74,7 +74,7 @@ const imageCertifications = computed(() =>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
             <div class="order-2 md:order-1 space-y-stack-md">
               <h2
-                class="text-headline-lg font-serif text-primary-900 leading-tight"
+                class="text-headline-lg font-serif text-primary-800 leading-tight"
               >
                 Certifikáty
               </h2>
@@ -88,7 +88,7 @@ const imageCertifications = computed(() =>
                     name="i-material-symbols-verified"
                     class="text-secondary-700 text-base shrink-0"
                   />
-                  <span class="text-body-md text-primary-900">
+                  <span class="text-body-md text-primary-800">
                     {{ cert.name }}
                     <span
                       v-if="cert.year"
@@ -121,7 +121,7 @@ const imageCertifications = computed(() =>
               />
             </div>
             <div class="space-y-stack-md">
-              <h2 class="text-headline-lg font-serif text-primary-900">
+              <h2 class="text-headline-lg font-serif text-primary-800">
                 Odbornost
               </h2>
               <ul class="flex flex-col gap-stack-sm">

@@ -159,7 +159,7 @@ const events: TimelineEvent[] = [
               >
               >
               <div
-                class="font-serif font-bold text-primary-900 text-sm leading-snug"
+                class="font-serif font-bold text-primary-800 text-sm leading-snug"
               >
                 {{ ev.name }}
               </div>
@@ -221,7 +221,7 @@ const events: TimelineEvent[] = [
               >
               >
               <div
-                class="font-serif font-bold text-primary-900 text-sm leading-snug"
+                class="font-serif font-bold text-primary-800 text-sm leading-snug"
               >
                 {{ ev.name }}
               </div>

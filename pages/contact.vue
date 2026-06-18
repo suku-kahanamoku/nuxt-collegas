@@ -46,7 +46,7 @@ function handleSubmit() {
         <UiTitle eyebrow="Kontakt" size="md">
           <template #title>
             <h1
-              class="text-display-xl font-serif text-primary-900 leading-none"
+              class="text-display-xl font-serif text-primary-800 leading-none"
             >
               Spojte se s námi
             </h1>
@@ -78,7 +78,7 @@ function handleSubmit() {
               Identifikace společnosti
             </span>
             <h2
-              class="text-headline-md font-serif text-primary-900 mb-stack-xs"
+              class="text-headline-md font-serif text-primary-800 mb-stack-xs"
             >
               Finanční poradenství
             </h2>
@@ -298,7 +298,7 @@ function handleSubmit() {
               variant="solid"
               trailing-icon="i-material-symbols-arrow-forward"
               size="xl"
-              class="w-full md:w-auto justify-center px-10 bg-secondary-fixed! text-primary-900! hover:bg-secondary-fixed/80! transition-colors"
+              class="w-full md:w-auto justify-center px-10 bg-secondary-fixed! text-primary-800! hover:bg-secondary-fixed/80! transition-colors"
               :ui="{
                 trailingIcon:
                   'transition-transform duration-200 group-hover:translate-x-1 size-5',

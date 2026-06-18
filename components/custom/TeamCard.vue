@@ -49,7 +49,7 @@ defineProps<{
     <!-- Info -->
     <div class="flex flex-col gap-stack-sm flex-1">
       <div>
-        <h3 class="text-title-lg font-serif text-primary-900">{{ name }}</h3>
+        <h3 class="text-title-lg font-serif text-primary-800">{{ name }}</h3>
         <p
           class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold"
         >

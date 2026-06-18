@@ -41,7 +41,7 @@ const pillars = [
         <UiTitle eyebrow="Skupina COLLEGA" size="md">
           <template #title>
             <h1
-              class="text-display-xl font-serif text-primary-900 leading-none"
+              class="text-display-xl font-serif text-primary-800 leading-none"
             >
               Holdingová<br />struktura
             </h1>
@@ -64,7 +64,7 @@ const pillars = [
           <div class="lg:col-span-4 flex justify-end items-end">
             <div class="text-right">
               <span
-                class="text-display-xl font-serif text-primary-900/10 leading-none select-none"
+                class="text-display-xl font-serif text-primary-800/10 leading-none select-none"
                 >9+</span
               >
               <p
@@ -85,7 +85,7 @@ const pillars = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-900">Tři klíčové oblasti skupiny</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">Tři klíčové oblasti skupiny</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="p in pillars" :key="p.title">
@@ -99,7 +99,7 @@ const pillars = [
                   >
                 </template>
                 <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-900">
+                  <h3 class="text-title-lg font-serif text-primary-800">
                     {{ p.title }}
                   </h3>
                 </template>

@@ -120,7 +120,7 @@ useHead({
           </div>
         </div>
         <div class="space-y-stack-md order-1 md:order-2">
-          <h2 class="text-headline-lg font-serif text-primary-900">
+          <h2 class="text-headline-lg font-serif text-primary-800">
             Finanční plán
           </h2>
           <p class="text-body-md text-on-surface-variant">
