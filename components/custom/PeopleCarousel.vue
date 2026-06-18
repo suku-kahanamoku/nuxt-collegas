@@ -63,8 +63,11 @@ const people = [
     <UContainer>
       <div class="text-center mb-stack-lg">
         <h2 class="text-headline-lg font-serif text-primary-900">Náš tým</h2>
-        <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">
-          Za každou radou stojí konkrétní člověk s odborností, zkušeností a odpovědností.
+        <p
+          class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+        >
+          Za každou radou stojí konkrétní člověk s odborností, zkušeností a
+          odpovědností.
         </p>
       </div>
     </UContainer>
@@ -80,7 +83,9 @@ const people = [
         :key="person.name"
         class="flex flex-col items-center gap-3 w-44 shrink-0"
       >
-        <div class="w-28 h-28 rounded-full overflow-hidden bg-surface-container border border-secondary-700/10">
+        <div
+          class="w-28 h-28 rounded-full overflow-hidden bg-surface-container border border-secondary-700/10"
+        >
           <img
             :src="person.photo"
             :alt="person.name"
@@ -89,8 +94,12 @@ const people = [
           />
         </div>
         <div class="text-center">
-          <p class="text-body-md font-semibold text-primary-900 leading-tight">{{ person.name }}</p>
-          <p class="text-sm text-on-surface-variant mt-0.5 leading-tight">{{ person.role }}</p>
+          <p class="text-body-md font-semibold text-primary-900 leading-tight">
+            {{ person.name }}
+          </p>
+          <p class="text-sm text-on-surface-variant mt-0.5 leading-tight">
+            {{ person.role }}
+          </p>
         </div>
       </div>
     </UMarquee>
@@ -102,7 +111,10 @@ const people = [
         variant="outline"
         trailing-icon="i-material-symbols-arrow-forward"
         size="lg"
-        :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
+        :ui="{
+          trailingIcon:
+            'transition-transform duration-200 group-hover:translate-x-1 size-5',
+        }"
       >
         Poznat celý tým
       </UButton>
