@@ -67,109 +67,103 @@ const imageCertifications = computed(() =>
 <template>
   <section class="py-section-gap bg-surface-container-lowest">
     <UContainer>
-      <div class="max-w-7xl mx-auto px-gutter">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
-        >
-          <div class="lg:col-span-8 space-y-section-gap">
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
-            >
-              <div class="order-2 md:order-1 space-y-stack-md">
-                <h2
-                  class="text-headline-lg font-serif text-primary-900 leading-tight"
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
+      >
+        <div class="lg:col-span-8 space-y-section-gap">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+            <div class="order-2 md:order-1 space-y-stack-md">
+              <h2
+                class="text-headline-lg font-serif text-primary-900 leading-tight"
+              >
+                Certifikáty
+              </h2>
+              <ul class="flex flex-col gap-stack-sm">
+                <li
+                  v-for="cert in certifications"
+                  :key="`list-a-${cert.name}`"
+                  class="flex items-center gap-3"
                 >
-                  Certifikáty
-                </h2>
-                <ul class="flex flex-col gap-stack-sm">
-                  <li
-                    v-for="cert in certifications"
-                    :key="`list-a-${cert.name}`"
-                    class="flex items-center gap-3"
-                  >
-                    <UIcon
-                      name="i-material-symbols-verified"
-                      class="text-secondary-700 text-base shrink-0"
-                    />
-                    <span class="text-body-md text-primary-900">
-                      {{ cert.name }}
-                      <span
-                        v-if="cert.year"
-                        class="text-on-surface-variant font-normal"
-                        >&thinsp;({{ cert.year }})</span
-                      >
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="order-1 md:order-2 bg-surface-container-highest overflow-hidden aspect-4/5"
-              >
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB3ex9wSUxLroSQvcTshXAvZ2w3G94V2d6wFRbOiptcLcz3J6QFD4QKJh0xcZRH1aH8_o1BtmYaa-hqBft9MNxAHDBS3ZWj5KSGCpeNNpteBpGNiczfb9lwRjBcZGZ6ZDANcCZGqGageYcw_526l3s5HoxiTRMOWSFNrlc_VRcY4qs4w_c3xG-3-O6d_V1cPPSmExzUPcf9AO8USYGNGPdx3erBbS8iK_bswez8QXKPnThvwwiEzrlRe8DlpA_xyXbkFbjDZUZeL8"
-                  alt="Certifikace"
-                  class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
-                />
-              </div>
+                  <UIcon
+                    name="i-material-symbols-verified"
+                    class="text-secondary-700 text-base shrink-0"
+                  />
+                  <span class="text-body-md text-primary-900">
+                    {{ cert.name }}
+                    <span
+                      v-if="cert.year"
+                      class="text-on-surface-variant font-normal"
+                      >&thinsp;({{ cert.year }})</span
+                    >
+                  </span>
+                </li>
+              </ul>
             </div>
-
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
+              class="order-1 md:order-2 bg-surface-container-highest overflow-hidden aspect-4/5"
             >
-              <div
-                class="bg-surface-container-highest overflow-hidden aspect-4/5"
-              >
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
-                  alt="Certifikace"
-                  class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
-                />
-              </div>
-              <div class="space-y-stack-md">
-                <h2 class="text-headline-lg font-serif text-primary-900">
-                  Odbornost
-                </h2>
-                <ul class="flex flex-col gap-stack-sm">
-                  <li
-                    v-for="cert in certifications"
-                    :key="`list-b-${cert.name}`"
-                    class="text-body-md text-on-surface-variant"
-                  >
-                    {{ cert.abbr }}: {{ cert.name }}
-                    <span v-if="cert.year">({{ cert.year }})</span>
-                  </li>
-                </ul>
-              </div>
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB3ex9wSUxLroSQvcTshXAvZ2w3G94V2d6wFRbOiptcLcz3J6QFD4QKJh0xcZRH1aH8_o1BtmYaa-hqBft9MNxAHDBS3ZWj5KSGCpeNNpteBpGNiczfb9lwRjBcZGZ6ZDANcCZGqGageYcw_526l3s5HoxiTRMOWSFNrlc_VRcY4qs4w_c3xG-3-O6d_V1cPPSmExzUPcf9AO8USYGNGPdx3erBbS8iK_bswez8QXKPnThvwwiEzrlRe8DlpA_xyXbkFbjDZUZeL8"
+                alt="Certifikace"
+                class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+              />
             </div>
           </div>
 
-          <UiAside
-            :menus="relatedLinks"
-            :callout="{
-              title: 'Nezávazná konzultace',
-              description:
-                'Rádi posoudíme vaši situaci a navrhneme vhodné řešení.',
-              label: 'Nezávazná konzultace',
-              to: '/contact',
-            }"
-          >
-            <template #item="{ link, index }">
-              <div class="h-10 w-full flex items-center">
-                <img
-                  v-if="link.img && !imgErrorByIndex[index]"
-                  :src="link.img"
-                  :alt="link.alt || link.label"
-                  class="h-8 w-auto max-w-full object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90 transition-opacity group-hover:opacity-100"
-                  loading="lazy"
-                  @error="onImgErrorByIndex(index)"
-                />
-                <span v-else class="text-body-sm font-semibold">{{
-                  link.abbr || link.label
-                }}</span>
-              </div>
-            </template>
-          </UiAside>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+            <div
+              class="bg-surface-container-highest overflow-hidden aspect-4/5"
+            >
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
+                alt="Certifikace"
+                class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+              />
+            </div>
+            <div class="space-y-stack-md">
+              <h2 class="text-headline-lg font-serif text-primary-900">
+                Odbornost
+              </h2>
+              <ul class="flex flex-col gap-stack-sm">
+                <li
+                  v-for="cert in certifications"
+                  :key="`list-b-${cert.name}`"
+                  class="text-body-md text-on-surface-variant"
+                >
+                  {{ cert.abbr }}: {{ cert.name }}
+                  <span v-if="cert.year">({{ cert.year }})</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <UiAside
+          :menus="relatedLinks"
+          :callout="{
+            title: 'Nezávazná konzultace',
+            description:
+              'Rádi posoudíme vaši situaci a navrhneme vhodné řešení.',
+            label: 'Nezávazná konzultace',
+            to: '/contact',
+          }"
+        >
+          <template #item="{ link, index }">
+            <div class="h-10 w-full flex items-center">
+              <img
+                v-if="link.img && !imgErrorByIndex[index]"
+                :src="link.img"
+                :alt="link.alt || link.label"
+                class="h-8 w-auto max-w-full object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90 transition-opacity group-hover:opacity-100"
+                loading="lazy"
+                @error="onImgErrorByIndex(index)"
+              />
+              <span v-else class="text-body-sm font-semibold">{{
+                link.abbr || link.label
+              }}</span>
+            </div>
+          </template>
+        </UiAside>
       </div>
     </UContainer>
   </section>
