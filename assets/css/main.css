@@ -125,6 +125,20 @@
   filter: grayscale(1) contrast(1.1) brightness(0.9);
 }
 
+/* ── Image mask gradient (left darker, right lighter) ── */
+.mask-gradient-to-right {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
 body {
   font-family: var(--font-sans);
 }
