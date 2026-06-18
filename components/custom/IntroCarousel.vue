@@ -34,24 +34,24 @@ const items = [
     <UContainer class="relative z-20 w-full">
       <div class="max-w-2xl">
         <span class="font-label-caps text-secondary-fixed mb-stack-sm block"
-          >PRIVATE WEALTH MANAGEMENT</span
+          >NEZÁVISLÉ FINANČNÍ PORADENSTVÍ</span
         >
         <h1
           class="font-display-xl text-display-xl text-on-primary mb-stack-md leading-tight"
         >
-          Investice s vizí,<br />správa s respektem
+          Finanční jistota,<br />na které záleží
         </h1>
         <p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-lg">
-          Dedicated to the preservation and growth of multi-generational wealth.
-          We combine traditional values with modern investment strategies to
-          ensure long-term stability for your legacy.
+          Jsme poradenský tým specializovaný na komplexní finanční plánování.
+          Klientům pomáháme zvládat zásadní životní rozhodnutí – od financování
+          bydlení přes ochranu majetku až po dlouhodobé budování kapitálu.
         </p>
         <div class="flex gap-stack-md items-center flex-wrap">
           <Button variant="solid">
-            Arrange a Consultation
+            Domluvit konzultaci
           </Button>
           <Button variant="outline" class="flex items-center gap-2">
-            Our Philosophy
+            Naše filozofie
             <span class="material-symbols-outlined text-sm">arrow_forward</span>
           </Button>
         </div>

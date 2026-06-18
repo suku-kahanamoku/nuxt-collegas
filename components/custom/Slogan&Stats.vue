@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const stats = [
+  { value: "20+", label: "Let v oboru", duration: 3000, interval: 400 },
   {
     value: "3",
     label: "Licencované subjekty pod ČNB",
     duration: 3000,
     interval: 1000,
   },
-  { value: "10+", label: "Let v oboru", duration: 3000, interval: 400 },
   {
     value: "9+",
     label: "Společností ve skupině",
@@ -31,20 +31,19 @@ const stats = [
         <div class="md:col-span-7 fade-in">
           <span
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-            >The Aurelius Vision</span
+            >Naše filozofie</span
           >
           <h2
             class="font-headline-lg text-headline-lg text-primary-800 mb-8 leading-tight"
           >
-            Integrity as our Foundation, <br />Excellence as our Standard.
+            Vše jde udělat lépe. <br />Rozhodli jsme se to dokázat.
           </h2>
           <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-            O Vaši spokojenost se postará specialista z každého odvětví.
-            Vyřešíme s vámi financování vašeho bydlení, pojištění veškerého
-            majetku a nezapomeneme pokrýt vaše životní rizika. Nepodceňujeme
-            finanční plán pro věci blízké i budoucí. Záleží nám i na vašem
-            zajištění v důchodovém věku, nebo řešení důležitých životních
-            situací.
+            Více než 20 let stavíme naši práci na individuálním přístupu,
+            analytickém myšlení a měřitelných výsledcích. Neprodáváme produkty.
+            Navrhujeme strategie, které dávají ekonomický smysl – ať už jde o
+            financování bydlení, ochranu majetku nebo dlouhodobé budování
+            kapitálu.
           </p>
         </div>
 
@@ -58,11 +57,12 @@ const stats = [
             <p
               class="font-body-md text-body-md italic text-primary-800 leading-relaxed"
             >
-              „Důvěra není výsledek marketingu. Je to výsledek každého
-              rozhodnutí, které jste udělali správně."
+              „Skutečná kvalita finančního plánování se neprojevuje v době
+              růstu, ale ve chvílích nejistoty. Právě tehdy se ukáže, zda
+              byla strategie nastavena odpovědně."
             </p>
             <p class="mt-6 font-label-caps text-secondary-700">
-              — Nuští kolegové
+              — Tomáš Kalous &amp; Marek Butula, zakladatelé
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ const stats = [
             class="text-headline-lg text-secondary-fixed"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >FCA Regulated <br />Institution</span
+            >Regulováno <br />ČNB</span
           >
         </div>
         <div class="flex items-center gap-4">
@@ -86,7 +86,7 @@ const stats = [
             class="text-headline-lg text-secondary-fixed"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Centennial <br />Legacy</span
+            >20+ let <br />v oboru</span
           >
         </div>
         <div class="flex items-center gap-4">
@@ -95,7 +95,7 @@ const stats = [
             class="text-headline-lg text-secondary-fixed"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Global Asset <br />Network</span
+            >Celorepubliková <br />působnost</span
           >
         </div>
         <div class="flex items-center gap-4">
@@ -104,7 +104,7 @@ const stats = [
             class="text-headline-lg text-secondary-fixed"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Award Winning <br />Portfolio Management</span
+            >Člen AFIZ <br />&amp; AFAM ČR</span
           >
         </div>
       </div>

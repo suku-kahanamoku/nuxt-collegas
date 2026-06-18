@@ -62,11 +62,11 @@ const people = [
   <section class="py-section-gap bg-background">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-800">Leadership</h2>
+        <h2 class="text-headline-lg font-serif text-primary-800">Náš tým</h2>
         <p
           class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
         >
-          The Stewards of Your Future
+          Odborníci, kteří se postarají o vaši finanční budoucnost
         </p>
         <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
@@ -87,17 +87,17 @@ const people = [
               loading="lazy"
             />
           </div>
-          <h3 class="font-headline-md text-2xl text-primary mb-1">
+          <h3 class="font-headline-md text-2xl text-primary-800 mb-1">
             {{ person.name }}
           </h3>
-          <p class="font-label-caps text-secondary uppercase mb-stack-sm">
+          <p class="font-label-caps text-secondary-800 uppercase mb-stack-sm">
             {{ person.role }}
           </p>
           <a
             class="inline-flex items-center text-on-surface-variant hover:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
             href="/our-people"
           >
-            View Biography
+            Zobrazit profil
             <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
           </a>
         </div>
