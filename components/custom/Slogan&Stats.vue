@@ -23,60 +23,89 @@ const stats = [
 </script>
 
 <template>
-  <section class="py-section-gap bg-surface-container-lowest">
-    <UContainer>
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
-        <div class="lg:col-span-7 flex flex-col gap-stack-lg">
-          <blockquote
-            class="text-headline-md font-serif italic text-primary-700 leading-snug"
+  <section class="py-section-gap bg-surface">
+    <UContainer class="space-y-20">
+      <div
+        class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"
+      >
+        <div class="md:col-span-7 fade-in">
+          <span
+            class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+            >The Aurelius Vision</span
           >
-            „Důvěra není výsledek marketingu.<br />Je to výsledek každého
-            rozhodnutí, které jste udělali správně."
-          </blockquote>
+          <h2
+            class="font-headline-lg text-headline-lg text-primary-800 mb-8 leading-tight"
+          >
+            Integrity as our Foundation, <br />Excellence as our Standard.
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            O Vaši spokojenost se postará specialista z každého odvětví.
+            Vyřešíme s vámi financování vašeho bydlení, pojištění veškerého
+            majetku a nezapomeneme pokrýt vaše životní rizika. Nepodceňujeme
+            finanční plán pro věci blízké i budoucí. Záleží nám i na vašem
+            zajištění v důchodovém věku, nebo řešení důležitých životních
+            situací.
+          </p>
+        </div>
+
+        <div class="md:col-span-5 fade-in">
           <div
-            class="flex flex-col gap-stack-md text-body-lg text-on-surface-variant"
+            class="relative p-stack-lg border border-outline-variant/30 bg-white shadow-sm"
           >
-            <p>
-              O Vaši spokojenost se postará specialista z každého odvětví.
-              Vyřešíme s vámi financování vašeho bydlení, pojištění veškerého
-              majetku a nezapomeneme pokrýt vaše životní rizika. Nepodceňujeme
-              finanční plán pro věci blízké i budoucí. Záleží nám i na vašem
-              zajištění v důchodovém věku, nebo řešení důležitých životních
-              situací.
+            <div
+              class="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-secondary-700"
+            ></div>
+            <p
+              class="font-body-md text-body-md italic text-primary-800 leading-relaxed"
+            >
+              „Důvěra není výsledek marketingu. Je to výsledek každého
+              rozhodnutí, které jste udělali správně."
+            </p>
+            <p class="mt-6 font-label-caps text-secondary-700">
+              — Nuští kolegové
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="lg:col-span-5 flex flex-col justify-center gap-stack-lg">
-          <div class="grid grid-cols-2 gap-stack-md">
-            <UiBaseCard
-              v-for="s in stats"
-              :key="s.label"
-            >
-              <template #header>
-                <UiTitle size="sm" :divider="false">
-                  <template #eyebrow>
-                    <span
-                      class="text-headline-lg font-serif text-secondary-700"
-                    >
-                      <UiCounter
-                        :value="s.value"
-                        :duration="s.duration"
-                        :interval="s.interval"
-                      />
-                    </span>
-                  </template>
-                  <template #title>
-                    <h3
-                      class="text-body-md text-on-surface-variant/80 font-medium"
-                    >
-                      {{ s.label }}
-                    </h3>
-                  </template>
-                </UiTitle>
-              </template>
-            </UiBaseCard>
-          </div>
+      <div
+        class="mx-auto px-gutter flex flex-wrap justify-between items-center gap-12"
+      >
+        <div class="flex items-center gap-4">
+          <UIcon
+            name="i-material-symbols-verified-user-outline"
+            class="text-headline-lg text-secondary-fixed"
+          />
+          <span class="font-label-caps text-xs tracking-widest uppercase"
+            >FCA Regulated <br />Institution</span
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <UIcon
+            name="i-material-symbols-history-edu"
+            class="text-headline-lg text-secondary-fixed"
+          />
+          <span class="font-label-caps text-xs tracking-widest uppercase"
+            >Centennial <br />Legacy</span
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <UIcon
+            name="i-material-symbols-language"
+            class="text-headline-lg text-secondary-fixed"
+          />
+          <span class="font-label-caps text-xs tracking-widest uppercase"
+            >Global Asset <br />Network</span
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <UIcon
+            name="i-material-symbols-military-tech"
+            class="text-headline-lg text-secondary-fixed"
+          />
+          <span class="font-label-caps text-xs tracking-widest uppercase"
+            >Award Winning <br />Portfolio Management</span
+          >
         </div>
       </div>
     </UContainer>

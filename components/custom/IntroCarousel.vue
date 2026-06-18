@@ -37,7 +37,7 @@ const items = [
           >PRIVATE WEALTH MANAGEMENT</span
         >
         <h1
-          class="font-display-xl text-display-xl text-on-primary mb-stack-md leading-[1.1]"
+          class="font-display-xl text-display-xl text-on-primary mb-stack-md leading-tight"
         >
           Investice s vizí,<br />správa s respektem
         </h1>

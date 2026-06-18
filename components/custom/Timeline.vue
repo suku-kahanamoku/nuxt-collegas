@@ -111,7 +111,7 @@ const events: TimelineEvent[] = [
           Historie skupiny
         </span>
         <h2
-          class="font-serif text-on-primary text-6xl leading-[1.1] tracking-[-0.01em]"
+          class="font-serif text-on-primary text-6xl leading-tight tracking-tight"
         >
           Naše milníky
         </h2>

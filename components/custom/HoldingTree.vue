@@ -116,12 +116,7 @@ const sections: HoldingSection[] = [
               Skupina COLLEGA
             </span>
             <h2
-              class="font-serif text-on-primary"
-              style="
-                font-size: 3.5rem;
-                line-height: 1.1;
-                letter-spacing: -0.01em;
-              "
+              class="font-serif text-on-primary text-display-xl leading-tight tracking-tight"
             >
               {{ section.title }}
             </h2>
@@ -142,7 +137,7 @@ const sections: HoldingSection[] = [
               "
             >
               <div
-                class="font-serif font-bold text-primary-900 leading-[1.4] text-[19px] tracking-[0.01em]"
+                class="font-serif font-bold text-primary-900 leading-snug text-body-lg tracking-normal"
               >
                 {{ section.levels[0]?.nodes[0]?.name }}
               </div>
@@ -150,7 +145,7 @@ const sections: HoldingSection[] = [
                 class="w-14.5 h-0.5 rounded-[2px] mx-auto my-3.5 bg-[linear-gradient(90deg,#745b26,#e4c283,#745b26)]"
               ></div>
               <div
-                class="font-semibold uppercase text-label-caps leading-normal tracking-[0.14em] text-[#2b4d41]"
+                class="font-semibold uppercase text-label-caps leading-normal tracking-widest text-[#2b4d41]"
               >
                 {{ section.levels[0]?.nodes[0]?.category }}
               </div>
@@ -189,7 +184,7 @@ const sections: HoldingSection[] = [
                     "
                   >
                     <div
-                      class="font-serif font-bold text-primary-900 leading-[1.4] text-[15px] tracking-[0.005em] min-h-[2.5rem]"
+                      class="font-serif font-bold text-primary-900 leading-snug text-body-md tracking-normal min-h-10"
                     >
                       {{ node.name }}
                     </div>
@@ -197,7 +192,7 @@ const sections: HoldingSection[] = [
                       class="w-10 h-[1.5px] rounded-[2px] mx-auto my-3 bg-[linear-gradient(90deg,#745b26,#e4c283,#745b26)]"
                     ></div>
                     <div
-                      class="font-semibold uppercase text-[11.5px] leading-normal tracking-[0.09em] text-secondary-700 min-h-[1.5rem]"
+                      class="font-semibold uppercase text-label-caps leading-normal tracking-widest text-secondary-700 min-h-6"
                     >
                       {{ node.category }}
                     </div>
