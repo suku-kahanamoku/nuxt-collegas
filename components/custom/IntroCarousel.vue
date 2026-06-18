@@ -15,17 +15,57 @@ const items = [
     :items="items"
     :autoplay="{ delay: 4000 }"
     loop
-    dots
     wheel-gestures
     :ui="{
       item: 'w-full ps-0',
       container: 'ms-0',
     }"
   >
-    <div
-      class="w-full h-[60vh] lg:h-[70vh] bg-center bg-cover"
-      :style="{ backgroundImage: `url(${item})` }"
-      :aria-label="`Slide ${index + 1}`"
-    />
+    <section
+      class="relative min-h-screen flex items-center overflow-hidden bg-primary-900"
+    >
+      <div class="absolute inset-0 z-0 opacity-40">
+        <img
+          class="w-full h-full object-cover grayscale"
+          :src="item"
+          :aria-label="`Slide ${index + 1}`"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary-900 via-primary-900/60 to-transparent z-10"
+      ></div>
+      <UContainer class="z-20 w-full">
+        <div class="max-w-2xl">
+          <span class="font-label-caps text-secondary-fixed mb-stack-sm block"
+            >PRIVATE WEALTH MANAGEMENT</span
+          >
+          <h1
+            class="font-display-xl text-display-xl text-on-primary mb-stack-md leading-[1.1]"
+          >
+            Investice s vizí,<br />správa s respektem
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-primary/70 mb-stack-lg">
+            Dedicated to the preservation and growth of multi-generational
+            wealth. We combine traditional values with modern investment
+            strategies to ensure long-term stability for your legacy.
+          </p>
+          <div class="flex gap-stack-md items-center flex-wrap">
+            <button
+              class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 font-label-caps uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all"
+            >
+              Arrange a Consultation
+            </button>
+            <button
+              class="border border-on-primary/30 text-on-primary px-8 py-4 font-label-caps uppercase tracking-widest hover:border-secondary-fixed hover:text-secondary-fixed transition-all flex items-center gap-2"
+            >
+              Our Philosophy
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </UContainer>
+    </section>
   </UCarousel>
 </template>
