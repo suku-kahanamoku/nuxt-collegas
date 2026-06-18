@@ -42,8 +42,5 @@ useHead({
 
     <!-- CTA – zanechat email -->
     <CustomEmailCapture />
-
-    <!-- 8. Kontakty -->
-    <CustomKontakty />
   </div>
 </template>
