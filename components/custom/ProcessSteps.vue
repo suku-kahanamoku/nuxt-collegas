@@ -157,7 +157,7 @@ const steps = [
 
       <!-- CTA -->
       <div class="text-center mt-16">
-        <UiButton
+        <UButton
           to="/contact"
           size="lg"
           color="secondary"
@@ -170,7 +170,7 @@ const steps = [
           }"
         >
           Začít první krok zdarma
-        </UiButton>
+        </UButton>
       </div>
     </UContainer>
   </section>

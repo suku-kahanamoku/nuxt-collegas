@@ -47,17 +47,13 @@ const items = [
           ensure long-term stability for your legacy.
         </p>
         <div class="flex gap-stack-md items-center flex-wrap">
-          <button
-            class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 font-label-caps uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all"
-          >
+          <Button variant="solid">
             Arrange a Consultation
-          </button>
-          <button
-            class="border border-on-primary/30 text-on-primary px-8 py-4 font-label-caps uppercase tracking-widest hover:border-secondary-fixed hover:text-secondary-fixed transition-all flex items-center gap-2"
-          >
+          </Button>
+          <Button variant="outline" class="flex items-center gap-2">
             Our Philosophy
             <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </button>
+          </Button>
         </div>
       </div>
     </UContainer>

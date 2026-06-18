@@ -96,7 +96,7 @@ const people = [
     </UMarquee>
 
     <UContainer class="mt-stack-lg text-center">
-      <UiButton
+      <UButton
         to="/our-people"
         color="primary"
         variant="outline"
@@ -105,7 +105,7 @@ const people = [
         :ui="{ trailingIcon: 'transition-transform duration-200 group-hover:translate-x-1 size-5' }"
       >
         Poznat celý tým
-      </UiButton>
+      </UButton>
     </UContainer>
   </section>
 </template>
