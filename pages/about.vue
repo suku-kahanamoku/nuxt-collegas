@@ -63,139 +63,166 @@ const principles = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-    >
-      <template #header>
-        <UiTitle size="md">
-          <template #eyebrow>
-            <span
-              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-              >Náš příběh</span
+    <section class="bg-primary-900 py-section-gap relative overflow-hidden">
+      <UContainer
+        class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
+      >
+        <div class="relative order-2 md:order-1">
+          <div class="aspect-[4/5] bg-primary-container overflow-hidden">
+            <img
+              class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
+              data-alt="A professional portrait of a senior financial advisor in a dark, tailored charcoal suit, captured in a grand, oak-paneled library. The lighting is warm and cinematic, mimicking the soft glow of a desk lamp, casting gentle highlights on the subject's face. The mood is authoritative and trustworthy, reflecting a sense of legacy and quiet luxury in a dark forest green and gold-accented environment."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxJagcbV6rZEBpcKTuLhy-PpSJgHnunDgtRE0pUGLjcjSaOscifWfZmsS8p7Fec5eT6tCBinrhk1RbQSnaDJS9IXiBNbGnPQb_qCQW93T12RutSBm2wm--HdBEyY4Q1arVE_F7BjOIDg75FJVblUW3wouNOT_yDqQ4FXq1vpu5UOK8ql_22ULX7nk3u1EbKPpxgBOEHyYrqXyyzJ6Ultl7bmXjdoGKOsWHuWWwBXuaA4_GeE1JE7jicrk5euPw3VIJsAQdhkrWa4"
+            />
+          </div>
+          <div
+            class="absolute -bottom-8 -right-8 bg-secondary-fixed p-stack-md max-w-xs shadow-xl hidden lg:block"
+          >
+            <p
+              class="text-on-secondary-fixed font-headline-md italic leading-tight"
             >
-          </template>
-          <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">
-              O nás
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p
-          class="text-body-lg text-on-primary-container mt-stack-md max-w-2xl opacity-90"
-        >
-          Všechno začalo jednoduchou myšlenkou dvou přátel – budovat poradenství
-          jinak. Bez kompromisů, bez závislosti na bankách, bez skrytých zájmů.
-        </p>
-      </template>
-    </UiIntro>
-
-    <section class="py-section-gap bg-surface-container-lowest">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-800">
-            Diskrétnost. Nezávislost. Odpovědnost.
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Tři slova, která nejsou jen sloganem. Jsou závazkem, který
-            dodržujeme každý den – vůči každému klientovi, v každém rozhodnutí.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <UiBaseCard v-for="v in values" :key="v.title">
-            <template #header>
-              <UiTitle size="sm">
-                <template #eyebrow>
-                  <span
-                    class="material-symbols-outlined text-secondary-700"
-                    style="font-size: 2rem"
-                    >{{ v.icon }}</span
-                  >
-                </template>
-                <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-800">
-                    {{ v.title }}
-                  </h3>
-                </template>
-              </UiTitle>
-            </template>
-            <p class="text-body-md text-on-surface-variant">
-              {{ v.description }}
+              "Integrity is the bedrock of every successful legacy."
             </p>
-          </UiBaseCard>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <span class="font-label-caps text-secondary-fixed block mb-stack-sm"
+            >THE AURELIUS PROMISE</span
+          >
+          <h2
+            class="font-headline-lg text-headline-lg text-on-primary mb-stack-md"
+          >
+            Why Excellence is Our Minimum Standard
+          </h2>
+          <div class="space-y-stack-md mb-stack-lg">
+            <div class="flex gap-stack-md">
+              <span class="text-secondary-fixed font-headline-md">01</span>
+              <div>
+                <h4 class="font-body-lg font-bold text-on-primary mb-1">
+                  Uncompromising Privacy
+                </h4>
+                <p class="text-on-primary-container">
+                  Total discretion is at the heart of our partnership,
+                  protecting your interests and your identity.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-stack-md">
+              <span class="text-secondary-fixed font-headline-md">02</span>
+              <div>
+                <h4 class="font-body-lg font-bold text-on-primary mb-1">
+                  Global Market Insight
+                </h4>
+                <p class="text-on-primary-container">
+                  Leveraging a proprietary network of analysts to identify
+                  institutional-grade opportunities.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-stack-md">
+              <span class="text-secondary-fixed font-headline-md">03</span>
+              <div>
+                <h4 class="font-body-lg font-bold text-on-primary mb-1">
+                  Generational Continuity
+                </h4>
+                <p class="text-on-primary-container">
+                  We focus on long-term stewardship, ensuring wealth passes
+                  seamlessly to the next generation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <Button variant="soft">Our History</Button>
         </div>
       </UContainer>
     </section>
 
-    <!-- ── Principy ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-800">
-            Principy spolupráce
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Každý vztah s klientem stavíme na čtyřech základních principech.
-            Nejde o proces – jde o způsob myšlení.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-          <UiBaseCard v-for="p in principles" :key="p.title">
-            <template #header>
-              <UiTitle size="sm">
-                <template #eyebrow>
-                  <div class="shrink-0 flex items-start pt-0.5">
-                    <span
-                      class="material-symbols-outlined text-secondary-700"
-                      style="font-size: 1.75rem"
-                      >{{ p.icon }}</span
-                    >
-                  </div>
-                </template>
-                <template #title>
-                  <h3
-                    class="text-title-md font-serif text-primary-800 mb-stack-xs"
-                  >
-                    {{ p.title }}
-                  </h3>
-                </template>
-              </UiTitle>
-            </template>
-            <p class="text-body-md text-on-surface-variant">
-              {{ p.description }}
-            </p>
-          </UiBaseCard>
-        </div>
-      </UContainer>
-    </section>
+    <CustomSlogan&Stats />
 
-    <!-- ── Citát ── -->
-    <section class="py-section-gap bg-surface-container-low">
-      <UContainer>
-        <div class="max-w-3xl mx-auto text-center">
+    <section class="py-section-gap relative overflow-hidden">
+      <UContainer
+        class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end"
+      >
+        <div class="lg:col-span-8">
           <span
-            class="text-label-caps text-secondary-fixed uppercase block mb-stack-sm tracking-widest font-semibold"
-            >Náš závazek</span
+            class="font-label-caps text-secondary-800 uppercase mb-stack-sm block"
+            >Our Heritage</span
           >
-          <blockquote
-            class="text-headline-md font-serif italic text-primary-700 leading-snug"
+          <h2
+            class="font-display-xl text-display-xl text-primary-800 mb-stack-md"
           >
-            „Důvěra není výsledek marketingu.<br />Je to výsledek každého
-            rozhodnutí, které jste udělali správně."
-          </blockquote>
-          <p class="text-body-lg text-on-surface-variant mt-stack-md">
-            Každý den pracujeme na tom, aby klienti, kteří nám svěřili péči o
-            svůj majetek, nikdy neměli důvod litovat tohoto rozhodnutí.
+            A Legacy of Discrete Excellence
+          </h2>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+          >
+            Founded on the principles of integrity and meticulous stewardship,
+            Aurelius Private Wealth Management serves as the cornerstone for
+            intergenerational prosperity. We translate complex financial
+            landscapes into clear, actionable paths for the world's most
+            discerning families.
+          </p>
+        </div>
+        <div class="lg:col-span-4 flex justify-end">
+          <div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+            <img
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+            />
+          </div>
+        </div>
+      </UContainer>
+    </section>
+
+    <section class="py-section-gap bg-surface">
+      <UContainer
+        class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
+      >
+        <div class="relative">
+          <img
+            class="w-full aspect-square object-cover shadow-sm"
+            data-alt="A high-end, close-up portrait of an experienced financial advisor in a tailored dark charcoal suit. He is looking off-camera with a thoughtful and confident expression. The background is a blurred, warm-toned private library with leather-bound books. The lighting is soft and directional, emphasizing textures and conveying deep trust and wisdom in a light-mode corporate setting."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
+          />
+          <div
+            class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end text-on-primary"
+          >
+            <span class="font-display-xl text-display-xl leading-none"
+              >25+</span
+            >
+            <span class="font-label-caps uppercase tracking-widest"
+              >Years of Stewardship</span
+            >
+          </div>
+        </div>
+        <div class="space-y-stack-md">
+          <h2 class="font-headline-lg text-headline-lg text-primary-800">
+            Quiet Luxury in Private Banking
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Our journey began with a singular focus: to provide a sanctuary for
+            wealth that transcends mere capital growth. At Aurelius, we believe
+            that true wealth is measured by the freedom it affords and the
+            legacy it leaves behind.
+          </p>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
+          >
+            "Financial management is not merely about numbers; it is about the
+            preservation of values across generations."
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Each client relationship is managed with the same level of precision
+            and exclusivity as the assets themselves. Our bespoke approach
+            ensures that every strategy is as unique as the family it serves.
           </p>
         </div>
       </UContainer>
     </section>
+
+    <!-- ── Timeline ── -->
+    <CustomTimeline />
 
     <!-- ── CTA ── -->
     <UiCtaSection
