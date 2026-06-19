@@ -70,7 +70,7 @@ const principles = [
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
       >
         <div class="relative order-2 md:order-1">
-          <div class="aspect-[4/5] bg-primary-container overflow-hidden">
+          <div class="aspect-4/5 bg-primary-container overflow-hidden">
             <img
               class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               data-alt="A professional portrait of a senior financial advisor in a dark, tailored charcoal suit, captured in a grand, oak-paneled library. The lighting is warm and cinematic, mimicking the soft glow of a desk lamp, casting gentle highlights on the subject's face. The mood is authoritative and trustworthy, reflecting a sense of legacy and quiet luxury in a dark forest green and gold-accented environment."
@@ -146,7 +146,7 @@ const principles = [
           </p>
         </div>
         <div class="lg:col-span-4 flex justify-end">
-          <div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+          <div class="w-full aspect-4/5 bg-surface-container overflow-hidden">
             <img
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
@@ -157,50 +157,39 @@ const principles = [
       </UContainer>
     </section>
 
-    <section class="py-section-gap bg-surface">
-      <UContainer
-        class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
+    <CustomUserPic&desc
+      img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
+      img-alt="Finanční poradce"
+      right-class="space-y-stack-md"
+    >
+      <template #overlay>
+        <div
+          class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end text-on-primary"
+        >
+          <span class="font-display-xl text-display-xl leading-none">20+</span>
+          <span class="font-label-caps uppercase tracking-widest">Let v oboru</span>
+        </div>
+      </template>
+
+      <span class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+        >Naše zásady</span
       >
-        <div class="relative">
-          <img
-            class="w-full aspect-square object-cover shadow-sm"
-            data-alt="A high-end, close-up portrait of an experienced financial advisor in a tailored dark charcoal suit. He is looking off-camera with a thoughtful and confident expression. The background is a blurred, warm-toned private library with leather-bound books. The lighting is soft and directional, emphasizing textures and conveying deep trust and wisdom in a light-mode corporate setting."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
-          />
-          <div
-            class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end text-on-primary"
-          >
-            <span class="font-display-xl text-display-xl leading-none"
-              >20+</span
-            >
-            <span class="font-label-caps uppercase tracking-widest"
-              >Let v oboru</span
-            >
-          </div>
-        </div>
-        <div class="space-y-stack-md">
-          <span
-            class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-            >Naše zásady</span
-          >
-          <h2 class="text-headline-lg font-serif text-primary-800">
-            Naše principy
-          </h2>
-          <p class="font-body-md text-body-md text-on-surface-variant">
-            Základem je důkladná analýza a otevřená komunikace. Nejprve
-            definujeme vaše cíle, časový horizont a toleranci k riziku. Teprve
-            poté navrhujeme konkrétní strukturu řešení.
-          </p>
-          <p
-            class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
-          >
-            „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-            scénáře – pozitivní i negativní. Naší rolí je tato rizika
-            transparentně pojmenovat, kvantifikovat a řídit."
-          </p>
-        </div>
-      </UContainer>
-    </section>
+      <h2 class="text-headline-lg font-serif text-primary-800">
+        Naše principy
+      </h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Základem je důkladná analýza a otevřená komunikace. Nejprve
+        definujeme vaše cíle, časový horizont a toleranci k riziku. Teprve
+        poté navrhujeme konkrétní strukturu řešení.
+      </p>
+      <p
+        class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
+      >
+        „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
+        scénáře – pozitivní i negativní. Naší rolí je tato rizika
+        transparentně pojmenovat, kvantifikovat a řídit."
+      </p>
+    </CustomUserPic&desc>
 
     <section
       class="py-section-gap bg-primary-900 text-on-primary overflow-hidden"
@@ -264,7 +253,7 @@ const principles = [
           <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
         </div>
 
-        <div class="w-full aspect-[21/9] bg-surface-container overflow-hidden">
+        <div class="w-full aspect-21/9 bg-surface-container overflow-hidden">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
             alt="Tým Collegas – skupinové foto"

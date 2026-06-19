@@ -62,85 +62,84 @@ const selectedIndex = ref(0);
 const selected = computed(() => references[selectedIndex.value]);
 </script>
 <template>
-  <section class="py-section-gap bg-surface-container-low">
-    <UContainer>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-        <!-- Left: portrait with overlay quote -->
-        <div class="fade-in">
-          <div class="aspect-4/5 relative" v-if="selected">
-            <div
-              class="w-full h-full bg-cover bg-center border-12 border-white rounded-md shadow-lg"
-              :style="{ backgroundImage: `url(${selected.avatar})` }"
-              :aria-label="selected.name"
-            ></div>
-
-            <div
-              v-if="selected"
-              class="absolute -bottom-8 -right-8 bg-primary-800 p-6 text-on-primary max-w-xs hidden md:block"
-            >
-              <p class="text-body-lg italic mb-4">“{{ selected.quote }}”</p>
-              <span class="font-label-caps text-secondary-fixed"
-                >— {{ selected.name }}</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: heading + a couple of highlights -->
-        <div class="fade-in">
-          <span
-            class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
-            >Ohlasy klientů</span
-          >
-          <h2 class="font-headline-lg text-headline-lg text-primary-800 mb-6">
-            {{ selected?.name }}
-          </h2>
-
-          <div class="space-y-8">
-            <div class="border-l-2 pl-6 border-secondary">
-              <p class="text-body-lg text-on-surface-variant italic mb-3">
-                {{ selected?.quote }}
-              </p>
-              <span class="font-label-caps text-primary-800">{{
-                selected?.description
-              }}</span>
-            </div>
-          </div>
-
-          <UMarquee
-            pause-on-hover
-            :overlay="false"
-            :ui="{
-              root: '[--gap:--spacing(4)] mt-20',
-              content: 'w-auto py-1 cursor-pointer',
-            }"
-          >
-            <!-- Horizontal card marquee -->
-            <UPageCard
-              v-for="(ref, i) in references"
-              :key="ref.name"
-              variant="subtle"
-              :description="ref.quote"
-              :ui="{
-                description:
-                  'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
-              }"
-              class="w-64 shrink-0"
-              @click="selectedIndex = i"
-            >
-              <template #footer>
-                <UUser
-                  :name="ref.name"
-                  :description="ref.description"
-                  :avatar="{ src: ref.avatar, alt: ref.name }"
-                  size="md"
-                  :ui="{ description: 'line-clamp-1' }"
-                />
-              </template>
-            </UPageCard>
-          </UMarquee>
-        </div>
+  <CustomUserPic&desc
+    bg="bg-surface-container-low"
+    cols="lg"
+    gap="gap-20"
+    left-class="fade-in"
+    right-class="fade-in"
+  >
+    <template #image>
+      <div class="aspect-4/5 relative" v-if="selected">
+        <div
+          class="w-full h-full bg-cover bg-center border-12 border-white rounded-md shadow-lg"
+          :style="{ backgroundImage: `url(${selected.avatar})` }"
+          :aria-label="selected.name"
+        ></div>
       </div>
-    </UContainer>
-  </section>
+    </template>
+
+    <template #overlay>
+      <div
+        v-if="selected"
+        class="absolute -bottom-8 -right-8 bg-primary-800 p-6 text-on-primary max-w-xs hidden md:block"
+      >
+        <p class="text-body-lg italic mb-4">"{{ selected.quote }}"</p>
+        <span class="font-label-caps text-secondary-fixed"
+          >— {{ selected.name }}</span
+        >
+      </div>
+    </template>
+
+    <span
+      class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
+      >Ohlasy klientů</span
+    >
+    <h2 class="font-headline-lg text-headline-lg text-primary-800 mb-6">
+      {{ selected?.name }}
+    </h2>
+
+    <div class="space-y-8">
+      <div class="border-l-2 pl-6 border-secondary">
+        <p class="text-body-lg text-on-surface-variant italic mb-3">
+          {{ selected?.quote }}
+        </p>
+        <span class="font-label-caps text-primary-800">{{
+          selected?.description
+        }}</span>
+      </div>
+    </div>
+
+    <UMarquee
+      pause-on-hover
+      :overlay="false"
+      :ui="{
+        root: '[--gap:--spacing(4)] mt-20',
+        content: 'w-auto py-1 cursor-pointer',
+      }"
+    >
+      <UPageCard
+        v-for="(ref, i) in references"
+        :key="ref.name"
+        variant="subtle"
+        :description="ref.quote"
+        :ui="{
+          description:
+            'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+        }"
+        class="w-64 shrink-0"
+        @click="selectedIndex = i"
+      >
+        <template #footer>
+          <UUser
+            :name="ref.name"
+            :description="ref.description"
+            :avatar="{ src: ref.avatar, alt: ref.name }"
+            size="md"
+            :ui="{ description: 'line-clamp-1' }"
+          />
+        </template>
+      </UPageCard>
+    </UMarquee>
+  </CustomUserPic&desc>
 </template>
