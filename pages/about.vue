@@ -86,11 +86,11 @@ const principles = [
           </div>
         </div>
         <div class="order-1 md:order-2">
-          <span class="font-label-caps text-secondary-fixed block mb-stack-sm"
+          <span class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
           >
           <h2
-            class="font-headline-lg text-headline-lg text-on-primary mb-stack-md"
+            class="text-headline-lg font-serif text-on-primary mb-stack-md"
           >
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>
@@ -122,15 +122,15 @@ const principles = [
 
     <section class="py-section-gap relative overflow-hidden">
       <UContainer
-        class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end"
+        class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-center"
       >
         <div class="lg:col-span-8">
           <span
-            class="font-label-caps text-secondary-800 uppercase mb-stack-sm block"
+            class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Co je pro nás podstatné</span
           >
           <h2
-            class="font-display-xl text-display-xl text-primary-800 mb-stack-md"
+            class="text-headline-lg font-serif text-primary-800 mb-stack-md"
           >
             Každý klient má jinou výchozí situaci
           </h2>
@@ -180,7 +180,10 @@ const principles = [
           </div>
         </div>
         <div class="space-y-stack-md">
-          <h2 class="font-headline-lg text-headline-lg text-primary-800">
+          <span class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+            >Naše zásady</span
+          >
+          <h2 class="text-headline-lg font-serif text-primary-800">
             Naše principy
           </h2>
           <p class="font-body-md text-body-md text-on-surface-variant">
@@ -203,9 +206,17 @@ const principles = [
       class="py-section-gap bg-primary-900 text-on-primary overflow-hidden"
     >
       <UContainer class="mx-auto px-gutter">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg"
-        >
+        <div class="text-center mb-stack-xl">
+          <span
+            class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
+            >Jak pracujeme</span
+          >
+          <h2 class="text-headline-lg font-serif text-on-primary">
+            Naše principy spolupráce
+          </h2>
+          <div class="w-12 h-px bg-secondary-fixed/50 mx-auto mt-stack-md" />
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg">
           <div
             v-for="principle in principles"
             :key="principle.title"
