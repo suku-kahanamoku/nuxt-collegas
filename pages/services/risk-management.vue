@@ -24,56 +24,27 @@ const relatedLinks = [
 
 <template>
   <div class="w-full">
-    <section class="py-section-gap bg-surface">
-      <UContainer class="space-y-20">
-        <div
-          class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"
-        >
-          <div class="md:col-span-7 fade-in">
-            <span
-              class="font-label-caps text-secondary-800 uppercase tracking-widest block mb-4"
-              >Finanční poradenství</span
-            >
-            <h1
-              class="font-headline-lg text-headline-lg text-primary-800 mb-8 leading-tight"
-            >
-              Zajištění rizik
-            </h1>
-            <p
-              class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
-            >
-              Zajištění rizik je základním stavebním kamenem každé stabilní
-              finanční strategie. Nejde jen o to mít sjednané pojištění, ale mít
-              ho nastavené tak, aby vás skutečně chránilo v situacích, kdy to
-              nejvíce potřebujete. Ať už jde o ochranu majetku, zdraví nebo
-              podnikání, klíčové je správně vyhodnotit rizika a nastavit krytí,
-              které odpovídá vaší reálné situaci.
-            </p>
-          </div>
+    <CustomTextComment heading-tag="h1" label="Finanční poradenství">
+      <template #heading>Zajištění rizik</template>
 
-          <div class="md:col-span-5 fade-in">
-            <div
-              class="relative p-stack-lg border border-outline-variant/30 bg-white shadow-sm"
-            >
-              <div
-                class="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-secondary-700"
-              ></div>
-              <p
-                class="font-body-md text-body-md italic text-primary-800 leading-relaxed"
-              >
-                „Správně nastavené zajištění vám přináší především klid. Víte,
-                že ať se stane cokoliv, máte oporu a vaše finanční stabilita
-                není ohrožena jednou nečekanou událostí."
-              </p>
-              <p class="mt-6 font-label-caps text-secondary-800">
-                — Nechte si nastavit ochranu, na kterou se můžete opravdu
-                spolehnout
-              </p>
-            </div>
-          </div>
-        </div>
-      </UContainer>
-    </section>
+      <template #body>
+        Zajištění rizik je základním stavebním kamenem každé stabilní finanční
+        strategie. Nejde jen o to mít sjednané pojištění, ale mít ho nastavené
+        tak, aby vás skutečně chránilo v situacích, kdy to nejvíce potřebujete.
+        Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je správně
+        vyhodnotit rizika a nastavit krytí, které odpovídá vaší reálné situaci.
+      </template>
+
+      <template #quote>
+        „Správně nastavené zajištění vám přináší především klid. Víte, že ať se
+        stane cokoliv, máte oporu a vaše finanční stabilita není ohrožena jednou
+        nečekanou událostí."
+      </template>
+
+      <template #attribution>
+        — Nechte si nastavit ochranu, na kterou se můžete opravdu spolehnout
+      </template>
+    </CustomTextComment>
 
     <!-- Insights / News -->
     <section class="py-section-gap bg-surface-container-lowest">
@@ -107,9 +78,7 @@ const relatedLinks = [
                 >Životní pojištění</span
               >
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span class="font-label-caps text-outline uppercase"
-                >2024</span
-              >
+              <span class="font-label-caps text-outline uppercase">2024</span>
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
@@ -118,8 +87,8 @@ const relatedLinks = [
             </h4>
             <p class="font-body-md text-on-surface-variant line-clamp-3">
               Klientka Karolína T. D. utrpěla při lyžování zlomeninu páteře.
-              Díky správně nastavenému zajištění získala plné pojistné plnění
-              a mohla se bez stresu věnovat léčbě.
+              Díky správně nastavenému zajištění získala plné pojistné plnění a
+              mohla se bez stresu věnovat léčbě.
             </p>
           </article>
           <!-- Case study Card 2 -->
@@ -134,11 +103,11 @@ const relatedLinks = [
               />
             </div>
             <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase">Podnikatelé</span>
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
               <span class="font-label-caps text-outline uppercase"
-                >2023</span
+                >Podnikatelé</span
               >
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              <span class="font-label-caps text-outline uppercase">2023</span>
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
@@ -147,8 +116,8 @@ const relatedLinks = [
             </h4>
             <p class="font-body-md text-on-surface-variant line-clamp-3">
               OSVČ s jedinou firmou neměl žádné zajištění. Po diagnostikování
-              vážné nemoci mu správně nastavené pojištění příjmu umožnilo
-              udržet podnikání v chodu celých 14 měsíců.
+              vážné nemoci mu správně nastavené pojištění příjmu umožnilo udržet
+              podnikání v chodu celých 14 měsíců.
             </p>
           </article>
           <!-- Case study Card 3 -->
@@ -163,13 +132,9 @@ const relatedLinks = [
               />
             </div>
             <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase"
-                >Rodina</span
-              >
+              <span class="font-label-caps text-outline uppercase">Rodina</span>
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span class="font-label-caps text-outline uppercase"
-                >2024</span
-              >
+              <span class="font-label-caps text-outline uppercase">2024</span>
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
@@ -312,8 +277,8 @@ const relatedLinks = [
               Specialista na zajištění rizik
             </p>
             <p class="font-body-md text-on-surface-variant">
-              Přes 10 let zkušeností s nastavováním pojistné ochrany pro
-              fyzické osoby i podnikatele. Certifikovaný finanční poradce.
+              Přes 10 let zkušeností s nastavováním pojistné ochrany pro fyzické
+              osoby i podnikatele. Certifikovaný finanční poradce.
             </p>
           </div>
           <!-- Member 2 -->
@@ -335,8 +300,8 @@ const relatedLinks = [
               Poradce pro pojistnou ochranu
             </p>
             <p class="font-body-md text-on-surface-variant">
-              Specializuje se na komplexní zajištění rizik v oblasti
-              majetkového a životního pojištění. Člen AFIZ.
+              Specializuje se na komplexní zajištění rizik v oblasti majetkového
+              a životního pojištění. Člen AFIZ.
             </p>
           </div>
           <!-- Member 3 -->
@@ -479,9 +444,9 @@ const relatedLinks = [
         <p
           class="font-body-lg text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
         >
-          Správně nastavená pojistná ochrana je základem každé stabilní
-          finanční strategie. Pomáháme vám identifikovat rizika a nastavit
-          krytí, které vás skutečně ochrání.
+          Správně nastavená pojistná ochrana je základem každé stabilní finanční
+          strategie. Pomáháme vám identifikovat rizika a nastavit krytí, které
+          vás skutečně ochrání.
         </p>
       </UContainer>
     </section>
@@ -617,8 +582,8 @@ const relatedLinks = [
               <p
                 class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
               >
-                Kancelář na hlavním náměstí Břeclavi. Pohodlné parkování
-                přímo před budovou, schůzky po domluvě s poradcem.
+                Kancelář na hlavním náměstí Břeclavi. Pohodlné parkování přímo
+                před budovou, schůzky po domluvě s poradcem.
               </p>
               <div
                 class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
@@ -895,8 +860,8 @@ const relatedLinks = [
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Zajištění rizik je součástí širšího finančního plánování.
-            Nabízíme i další služby, které spolu přirozeně navazují.
+            Zajištění rizik je součástí širšího finančního plánování. Nabízíme i
+            další služby, které spolu přirozeně navazují.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
@@ -904,10 +869,12 @@ const relatedLinks = [
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Daňové poradenství</h3>
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
+              Daňové poradenství
+            </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Optimalizace daňové zátěže, zpracování daňových přiznání
-              a zastupování před finančním úřadem. Vše v souladu s platnou
+              Optimalizace daňové zátěže, zpracování daňových přiznání a
+              zastupování před finančním úřadem. Vše v souladu s platnou
               legislativou a ve váš prospěch.
             </p>
             <a
@@ -922,11 +889,13 @@ const relatedLinks = [
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Právní poradenství</h3>
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
+              Právní poradenství
+            </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Právní ochrana majetku, smluvní dokumentace a poradenství
-              v oblasti dědictví a rodinného práva. Nezávislé právní
-              zastoupení ve váš prospěch.
+              Právní ochrana majetku, smluvní dokumentace a poradenství v
+              oblasti dědictví a rodinného práva. Nezávislé právní zastoupení ve
+              váš prospěch.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
@@ -940,11 +909,13 @@ const relatedLinks = [
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Péče o investiční majetek</h3>
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
+              Péče o investiční majetek
+            </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Správa investičního portfolia, výběr vhodných instrumentů
-              a průběžný dohled nad vývojem vašich aktiv s ohledem na váš
-              rizikový profil.
+              Správa investičního portfolia, výběr vhodných instrumentů a
+              průběžný dohled nad vývojem vašich aktiv s ohledem na váš rizikový
+              profil.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"

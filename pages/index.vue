@@ -18,7 +18,7 @@ useHead({
 </script>
 
 <template>
-  <div class="w-full overflow-hidden">
+  <div class="w-full">
     <!-- 1. Carousel -->
     <CustomIntroCarousel />
 

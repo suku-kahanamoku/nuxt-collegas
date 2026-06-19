@@ -21,7 +21,7 @@ defineProps<{
 
 <template>
   <UPageAside
-    class="lg:col-span-4 p-0! self-start mt-0"
+    class="lg:col-span-4 p-0! self-start sticky top-8 mt-0"
     :ui="{ container: 'space-y-stack-md' }"
   >
     <div
