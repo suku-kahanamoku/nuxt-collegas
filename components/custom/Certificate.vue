@@ -42,6 +42,14 @@ const certifications = [
   },
 ];
 
+const seniority = [
+  "Více než 20 let aktivní praxe v oblasti finančního poradenství",
+  "Zkušenosti s více než 1 500 klienty napříč celou ČR",
+  "Dlouhodobá spolupráce s předními pojišťovnami a investičními společnostmi",
+  "Pravidelné vzdělávání a sledování legislativních změn",
+  "Člen odborných asociací AFIZ a AFAM ČR od jejich vzniku",
+];
+
 const relatedLinks = computed(() =>
   certifications.map((cert) => ({
     label: cert.year ? `${cert.name} (${cert.year})` : cert.name,
@@ -71,7 +79,9 @@ const imageCertifications = computed(() =>
         class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
       >
         <div class="lg:col-span-8 space-y-section-gap">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center"
+          >
             <div class="order-2 md:order-1 space-y-stack-md">
               <h2
                 class="text-headline-lg font-serif text-primary-800 leading-tight"
@@ -110,7 +120,9 @@ const imageCertifications = computed(() =>
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center"
+          >
             <div
               class="bg-surface-container-highest overflow-hidden aspect-4/5"
             >
@@ -122,16 +134,19 @@ const imageCertifications = computed(() =>
             </div>
             <div class="space-y-stack-md">
               <h2 class="text-headline-lg font-serif text-primary-800">
-                Odbornost
+                Seniorita
               </h2>
               <ul class="flex flex-col gap-stack-sm">
                 <li
-                  v-for="cert in certifications"
-                  :key="`list-b-${cert.name}`"
-                  class="text-body-md text-on-surface-variant"
+                  v-for="item in seniority"
+                  :key="item"
+                  class="flex items-start gap-3 text-body-md text-on-surface-variant"
                 >
-                  {{ cert.abbr }}: {{ cert.name }}
-                  <span v-if="cert.year">({{ cert.year }})</span>
+                  <UIcon
+                    name="i-material-symbols-check-circle-outline"
+                    class="text-secondary-700 text-base shrink-0 mt-0.5"
+                  />
+                  {{ item }}
                 </li>
               </ul>
             </div>

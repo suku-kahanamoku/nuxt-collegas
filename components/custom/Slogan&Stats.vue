@@ -74,7 +74,7 @@ const stats = [
         <div class="flex items-center gap-4">
           <UIcon
             name="i-material-symbols-verified-user-outline"
-            class="text-headline-lg text-secondary-fixed"
+            class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
             >Regulováno <br />ČNB</span
@@ -83,7 +83,7 @@ const stats = [
         <div class="flex items-center gap-4">
           <UIcon
             name="i-material-symbols-history-edu"
-            class="text-headline-lg text-secondary-fixed"
+            class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
             >20+ let <br />v oboru</span
@@ -92,7 +92,7 @@ const stats = [
         <div class="flex items-center gap-4">
           <UIcon
             name="i-material-symbols-language"
-            class="text-headline-lg text-secondary-fixed"
+            class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
             >Celorepubliková <br />působnost</span
@@ -101,7 +101,7 @@ const stats = [
         <div class="flex items-center gap-4">
           <UIcon
             name="i-material-symbols-military-tech"
-            class="text-headline-lg text-secondary-fixed"
+            class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
             >Člen AFIZ <br />&amp; AFAM ČR</span

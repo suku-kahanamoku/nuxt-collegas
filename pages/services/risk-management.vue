@@ -80,114 +80,114 @@ const relatedLinks = [
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center mb-stack-lg">
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
-            Latest Insight
+            Case studies
           </h2>
           <a
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            href="#"
-            >VIEW ALL INSIGHTS</a
+            href="/contact"
+            >KONZULTOVAT PŘÍPAD</a
           >
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >
-          <!-- Insight Card 1 -->
+          <!-- Case study Card 1 -->
           <article class="flex flex-col group cursor-pointer">
             <div
               class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                data-alt="A minimalist architectural shot of a spiraling marble staircase in an upscale building, showcasing clean lines and geometry. The lighting is soft and neutral, highlighting the smooth textures of the white marble and dark metal railings. The image evokes a sense of upward movement and sophisticated structure, fitting the high-end financial advisory aesthetic."
+                alt="Rodina na horách – příklad správně nastaveného zajištění"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ"
               />
             </div>
             <div class="flex items-center gap-4 mb-3">
               <span class="font-label-caps text-outline uppercase"
-                >Market Analysis</span
+                >Životní pojištění</span
               >
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
               <span class="font-label-caps text-outline uppercase"
-                >Oct 2024</span
+                >2024</span
               >
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
             >
-              Navigating the New Interest Rate Paradigm
+              Úraz na sjezdovce: pojistné plnění 780 000 Kč
             </h4>
             <p class="font-body-md text-on-surface-variant line-clamp-3">
-              An in-depth look at how shifting central bank policies are
-              affecting fixed-income portfolios and long-term capital
-              preservation strategies for HNWIs.
+              Klientka Karolína T. D. utrpěla při lyžování zlomeninu páteře.
+              Díky správně nastavenému zajištění získala plné pojistné plnění
+              a mohla se bez stresu věnovat léčbě.
             </p>
           </article>
-          <!-- Insight Card 2 -->
+          <!-- Case study Card 2 -->
           <article class="flex flex-col group cursor-pointer">
             <div
               class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                data-alt="A macro photograph of high-end, textured executive stationary with a subtle metallic embossed logo. The lighting is low-key, focusing on the fine grain of the paper and the sharp edges of the gold foil details. The composition is clean and minimalist, conveying professionalism, detail-oriented work, and the exclusive nature of private wealth management."
+                alt="Podnikatel konzultuje s poradcem nastavení pojistné ochrany"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8"
               />
             </div>
             <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase">Legacy</span>
+              <span class="font-label-caps text-outline uppercase">Podnikatelé</span>
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
               <span class="font-label-caps text-outline uppercase"
-                >Sep 2024</span
+                >2023</span
               >
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
             >
-              The Psychology of Multi-Generational Wealth
+              Ochrana podnikatele: jak nepřijít o firmu při nemoci
             </h4>
             <p class="font-body-md text-on-surface-variant line-clamp-3">
-              Bridging the gap between generations: How families can effectively
-              prepare the next generation for the responsibilities of
-              stewardship.
+              OSVČ s jedinou firmou neměl žádné zajištění. Po diagnostikování
+              vážné nemoci mu správně nastavené pojištění příjmu umožnilo
+              udržet podnikání v chodu celých 14 měsíců.
             </p>
           </article>
-          <!-- Insight Card 3 -->
+          <!-- Case study Card 3 -->
           <article class="flex flex-col group cursor-pointer">
             <div
               class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
             >
               <img
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                data-alt="A wide-angle shot of a serene, high-end corporate boardroom with panoramic views of a modern cityscape at dusk. The interior features dark wood surfaces, leather chairs, and soft ambient lighting. The atmosphere is quiet and focused, suggesting high-level decision making and strategic planning within a safe, exclusive environment."
+                alt="Rodina se dvěma dětmi – nastavení rodinné finanční ochrany"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y"
               />
             </div>
             <div class="flex items-center gap-4 mb-3">
               <span class="font-label-caps text-outline uppercase"
-                >Strategy</span
+                >Rodina</span
               >
               <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
               <span class="font-label-caps text-outline uppercase"
-                >Aug 2024</span
+                >2024</span
               >
             </div>
             <h4
               class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
             >
-              Diversification in the Age of Digital Assets
+              Ztráta příjmu živitele: rodina bez existenčních starostí
             </h4>
             <p class="font-body-md text-on-surface-variant line-clamp-3">
-              Evaluating the role of alternative investments and digital assets
-              in a traditional private wealth portfolio through a risk-focused
-              lens.
+              Klient s hypotékou a dvěma dětmi přišel o práci ze zdravotních
+              důvodů. Včas nastavené pojištění invalidity a příjmu pokrylo
+              splátky i běžné náklady rodiny po celou dobu rekonvalescence.
             </p>
           </article>
         </div>
         <div class="mt-stack-lg md:hidden">
           <a
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            href="#"
-            >VIEW ALL INSIGHTS</a
+            href="/contact"
+            >KONZULTOVAT PŘÍPAD</a
           >
         </div>
       </UContainer>
@@ -223,7 +223,7 @@ const relatedLinks = [
       </UContainer>
       <!-- Decorative accent -->
       <div
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[1px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent"
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-200 h-px bg-linear-to-r from-transparent via-secondary/40 to-transparent"
       ></div>
     </section>
 
@@ -280,89 +280,86 @@ const relatedLinks = [
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
-              >Our Leadership</span
+              >Naši specialisté</span
             >
             <h2 class="font-headline-lg text-headline-lg text-primary-800">
-              Principals of the Firm
+              Poradci pro zajištění rizik
             </h2>
           </div>
           <a
             class="font-label-caps text-primary-800 border-b border-primary pb-1 mb-2 hover:text-secondary hover:border-secondary transition-all"
-            href="#"
-            >View Full Team</a
+            href="/our-people"
+            >Zobrazit celý tým</a
           >
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->
           <div class="fade-in">
-            <div class="aspect-[3/4] mb-6 overflow-hidden">
+            <div class="aspect-3/4 mb-6 overflow-hidden">
               <div
                 class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                data-alt="A professional headshot of a middle-aged man with sharp features and greying hair, Marcus Aurelius Thorne. He wears a bespoke dark grey suit and looks directly at the camera with an air of experienced authority. The background is a soft-focus office with dark wood paneling, lit by warm ambient lamps. Professional, authoritative, and trustworthy style."
                 style="
                   background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo&quot;);
                 "
               ></div>
             </div>
             <h3 class="font-headline-md text-[24px] text-primary-800">
-              Marcus Aurelius Thorne
+              Lukáš Formánek
             </h3>
             <p
               class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
             >
-              Managing Partner
+              Specialista na zajištění rizik
             </p>
             <p class="font-body-md text-on-surface-variant">
-              Over 40 years of expertise in intergenerational wealth transfer
-              and offshore structures.
+              Přes 10 let zkušeností s nastavováním pojistné ochrany pro
+              fyzické osoby i podnikatele. Certifikovaný finanční poradce.
             </p>
           </div>
           <!-- Member 2 -->
           <div class="fade-in" style="transition-delay: 100ms">
-            <div class="aspect-[3/4] mb-6 overflow-hidden">
+            <div class="aspect-3/4 mb-6 overflow-hidden">
               <div
                 class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                data-alt="A sophisticated woman in her early 50s, Helena Van der Meer, with a focused and intelligent gaze. She is dressed in a high-collared cream silk blouse. The lighting is crisp and modern, with a blurred background of a glass-walled boardroom overlooking a city. The aesthetic is modern corporate minimalism, reflecting excellence and strategic prowess."
                 style="
                   background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs&quot;);
                 "
               ></div>
             </div>
             <h3 class="font-headline-md text-[24px] text-primary-800">
-              Helena Van der Meer
+              Filip Beneš
             </h3>
             <p
               class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
             >
-              Chief Investment Officer
+              Poradce pro pojistnou ochranu
             </p>
             <p class="font-body-md text-on-surface-variant">
-              Former lead at major European institutions, specializing in
-              ESG-driven growth strategies.
+              Specializuje se na komplexní zajištění rizik v oblasti
+              majetkového a životního pojištění. Člen AFIZ.
             </p>
           </div>
           <!-- Member 3 -->
           <div class="fade-in" style="transition-delay: 200ms">
-            <div class="aspect-[3/4] mb-6 overflow-hidden">
+            <div class="aspect-3/4 mb-6 overflow-hidden">
               <div
                 class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                data-alt="A man in his 40s with a sharp, contemporary look, Julian Sterling. He is leaning against a dark stone wall in a modern office space. He wears a well-tailored charcoal suit without a tie, suggesting modern luxury and approachability. The lighting is high-contrast and dramatic, emphasizing clarity and precision."
                 style="
                   background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw&quot;);
                 "
               ></div>
             </div>
             <h3 class="font-headline-md text-[24px] text-primary-800">
-              Julian Sterling
+              Tomáš Kalous
             </h3>
             <p
               class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
             >
-              Head of Family Office
+              Zakladatel & senior poradce
             </p>
             <p class="font-body-md text-on-surface-variant">
-              Expert in concierge private banking and lifestyle asset management
-              for global residents.
+              Zakladatel skupiny Collegas s více než 20 lety praxe v oblasti
+              finančního plánování a řízení rizik.
             </p>
           </div>
         </div>
@@ -462,7 +459,7 @@ const relatedLinks = [
     </section>
 
     <section
-      class="relative h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden"
+      class="relative h-153.5 min-h-125 flex items-center justify-center overflow-hidden"
     >
       <div
         class="absolute inset-0 bg-cover bg-center"
@@ -474,16 +471,17 @@ const relatedLinks = [
       <div class="absolute inset-0 hero-gradient"></div>
       <UContainer class="relative z-10 mx-auto px-gutter w-full">
         <span class="font-label-caps text-secondary-fixed mb-stack-sm block"
-          >PRIVATE ADVISORY</span
+          >ZAJIŠTĚNÍ RIZIK</span
         >
         <h1 class="font-display-xl text-display-xl text-on-primary max-w-2xl">
-          Wealth Management
+          Chráníme to, na čem záleží
         </h1>
         <p
           class="font-body-lg text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
         >
-          A multi-generational approach to preserving and growing your legacy
-          through disciplined strategy and bespoke financial architecture.
+          Správně nastavená pojistná ochrana je základem každé stabilní
+          finanční strategie. Pomáháme vám identifikovat rizika a nastavit
+          krytí, které vás skutečně ochrání.
         </p>
       </UContainer>
     </section>
@@ -493,7 +491,7 @@ const relatedLinks = [
         <h2
           class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center"
         >
-          Naše mezinárodní pobočky
+          Naše pobočky
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <!-- London Card -->
@@ -507,40 +505,39 @@ const relatedLinks = [
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCrrEjX17PokdjJrf6HsrA6COb-8STCNIO4OdG4z-n4V9uIixRocQoBdXQnO25rPkgB-mQf3DEwcP6Kr2NmPZSHsiZtjXVTY80Bl5tWl_46bsw8Pr7UGnlfOIN1a5AMt5HQleVnPG5SsnxFGS4HLhFmV4-Qr6wxV182yqPdQFHW3VUqmTfyrkiQhuWJYWUlGnNrN1QULuOmCxq7N5aQ3EUb_Xcq4WwVMtnEhJJCU2F_OHIQznpyUiP6_D9dMpDVIuX2aOPY-DFG4Q"
               />
             </div>
-            <div class="p-stack-md flex-grow flex flex-col">
+            <div class="p-stack-md grow flex flex-col">
               <h3
                 class="font-headline-md text-headline-md text-primary-800 mb-base"
               >
-                London Headquarters
+                Centrála – Brno
               </h3>
               <p
                 class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm"
               >
-                48 Berkeley Square, Mayfair, London, W1J 5AX
+                AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno
               </p>
               <p
                 class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
               >
-                Pobočka se nachází v srdci Mayfair. Nejbližší stanice metra je
-                Green Park (Jubilee, Piccadilly a Victoria lines). Parkování je
-                možné v podzemních garážích na Berkeley Square.
+                Sídlo skupiny Collegas v nejvyšší kancelářské budově na Moravě.
+                Výborná dostupnost z centra Brna, parkování v areálu budovy.
               </p>
               <div
                 class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
               >
                 <img
-                  alt="Marcus Aurelius Thorne"
+                  alt="Tomáš Kalous"
                   class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgGsWlwCZT4mXgsytCfRBV6_0bC-rRRDp80GgGQaxYsO8mepaykrowL8W_UTuK2iqnDtCNmOlCb7nAXbc6X8ynNMHevwTJ0mH-dOMe5lsRIvpfXmkQjiRrg0o2Yw7EsYx1XwaBaHN-aPc47nJLYaTFEEAjgwJ2kJ1feFkwAH6rLZFrYhpDYL7SQ3prUsk1Kv-UTR59yMwAah6Fq9jFHtvZeIR8i7jQ8_dWaq6JQdOO6S-LFOGDq2tfuXJ8wp3Z-mQ-k5N4kksyrio"
                 />
                 <div>
                   <span
                     class="font-label-caps text-label-caps text-secondary-800 block uppercase"
-                    >Medailonek vedoucího</span
+                    >Vedoucí pobočky</span
                   >
                   <span
                     class="font-body-md text-body-md text-on-surface font-semibold"
-                    >Marcus Aurelius Thorne</span
+                    >Tomáš Kalous</span
                   >
                 </div>
               </div>
@@ -557,40 +554,39 @@ const relatedLinks = [
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPXXC5L0SKXfkHzdnWLnThxCzqAZcZPnriyWhx2yamt5PWeQT2m9NxTqM756A2lnnQFUY6AvfAK_zO9PlTkGjPZ-PyOqXzBNDJQ7dO6unN-OVJaVxcTApupoBJizqCgiGCF9dREvyaDuLDfFclCqijTYqBuQOH6ETpHc3sDJbltRVEhwVO0biikQQLodClSlQb2hcH_1ofQYJs90aspScpqQGOZ46kfkZJ8pE69mqTzjgvKgJhwKE_yQW0WYG1TlT9WvBxStPMFp4"
               />
             </div>
-            <div class="p-stack-md flex-grow flex flex-col">
+            <div class="p-stack-md grow flex flex-col">
               <h3
                 class="font-headline-md text-headline-md text-primary-800 mb-base"
               >
-                Zürich Office
+                Pobočka – Kroměříž
               </h3>
               <p
                 class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm"
               >
-                Talstrasse 1, 8001 Zürich, Switzerland
+                Tovačovského 2784/24, 767 01 Kroměříž
               </p>
               <p
                 class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
               >
-                Pobočka se nachází v blízkosti Bürkliplatz. Z hlavního nádraží
-                tramvají č. 11. Parkování je k dispozici přímo v budově pro
-                ohlášené klienty.
+                Kancelář v centru Kroměříže. Schůzky jsou možné po předchozí
+                domluvě s poradcem.
               </p>
               <div
                 class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
               >
                 <img
-                  alt="Helena Van der Meer"
+                  alt="Lukáš Formánek"
                   class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8xUgbx1a2xxVb2STVNl0i630ubjlVhgZGgyWUz91fVmE1fueU7Tnlr6Lv-j7AjqR1gCWUku4CBXGPDghX1WZMWgZvx68dNHhAXlELJgfcFeltuL5YE8NJt06Ko59eGU-uqpQ0QC33p_ECMQODXSu9pgJ_FptSMosBO3SrKGSB1vox6ZYGM8o-t1C884FFw-k3mYAIPGPjYL7JRza_rQyiQHa4IPVEIKMYVdcVQbW8_0MpAdhUyWB1awBQi1riimEqKyi_x5zyqAo"
                 />
                 <div>
                   <span
                     class="font-label-caps text-label-caps text-secondary-800 block uppercase"
-                    >Medailonek vedoucího</span
+                    >Vedoucí pobočky</span
                   >
                   <span
                     class="font-body-md text-body-md text-on-surface font-semibold"
-                    >Helena Van der Meer</span
+                    >Lukáš Formánek</span
                   >
                 </div>
               </div>
@@ -607,40 +603,39 @@ const relatedLinks = [
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuARMMKh_moDbWKIT_cW97rZhLg4IOtUnpSyW8RJzXMkOupEZ2_74rDazxMNKAPO08uWEwQG8FH2CevL9fQWSLDeMSYrVsDVY51TuwlMLC2V25fI0KqTc7olHZJj6Nlj-KbbY45QN7nJsfodhRfG4LkK74HzviPICpuyrOJjEUXtLTKYfPcMoJC0yTAl7FLR--uvhvOrJrGhMp0cIopPsddx3P8uwB5bg9bEizvCJLhkjGhhjqMu9Dib2Dub8rkzBhf6FoJtLEDIIow"
               />
             </div>
-            <div class="p-stack-md flex-grow flex flex-col">
+            <div class="p-stack-md grow flex flex-col">
               <h3
                 class="font-headline-md text-headline-md text-primary-800 mb-base"
               >
-                Luxembourg Office
+                Pobočka – Břeclav
               </h3>
               <p
                 class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm"
               >
-                12 Rue de la Chapelle, 1325 Luxembourg
+                nám. T. G. Masaryka 302/8, 690 02 Břeclav
               </p>
               <p
                 class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
               >
-                Sídlo v historickém centru v blízkosti Boulevard Royal. Dobrá
-                dostupnost tramvají T1. Veřejné parkoviště Glacis je vzdáleno 5
-                minut chůze.
+                Kancelář na hlavním náměstí Břeclavi. Pohodlné parkování
+                přímo před budovou, schůzky po domluvě s poradcem.
               </p>
               <div
                 class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
               >
                 <img
-                  alt="Julian Sterling"
+                  alt="Filip Beneš"
                   class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxqGjKB_uFq87B5HeULFl9yPkBfVH_quQsgqZNDWjWXhstdLz2STQ0fjHWs1PiND_W_0CtnW9n4eMaevqjgem-dqt4mrVPMAj6CKMyS_M0cPonv_ddS6jdJlOma8f8vC04As2VQs_PizmCSU45gXh0I8n6P2ZwPjUyDoyuK2QBPYSs8fNDXlVUoqaMNNRhVGBvmbMYUUhfxoo77oos40YnnKNRlUZZw57r-AlEpWdKQXMwzv8uwoizlPVsToXCNHyrmMRSdDlveAM"
                 />
                 <div>
                   <span
                     class="font-label-caps text-label-caps text-secondary-800 block uppercase"
-                    >Medailonek vedoucího</span
+                    >Vedoucí pobočky</span
                   >
                   <span
                     class="font-body-md text-body-md text-on-surface font-semibold"
-                    >Julian Sterling</span
+                    >Filip Beneš</span
                   >
                 </div>
               </div>
@@ -891,17 +886,17 @@ const relatedLinks = [
           <div class="max-w-2xl">
             <span
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
-              >Tailored Solutions</span
+              >Související služby</span
             >
             <h2 class="font-headline-lg text-headline-lg text-primary-800">
-              Strategic Financial Management
+              Komplexní finanční péče
             </h2>
           </div>
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Our services are designed for individuals and families who require a
-            higher degree of personalization and discretion.
+            Zajištění rizik je součástí širšího finančního plánování.
+            Nabízíme i další služby, které spolu přirozeně navazují.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
@@ -909,54 +904,54 @@ const relatedLinks = [
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            Logo
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Daňové poradenství</h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Comprehensive portfolio oversight focused on long-horizon capital
-              growth and risk mitigation through diversified global asset
-              allocation.
+              Optimalizace daňové zátěže, zpracování daňových přiznání
+              a zastupování před finančním úřadem. Vše v souladu s platnou
+              legislativou a ve váš prospěch.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="#"
+              href="/services/tax-advisory"
             >
-              EXPLORE SERVICE
-              <span class="material-symbols-outlined text-sm">north_east</span>
+              ZOBRAZIT SLUŽBU
+              <UIcon name="i-material-symbols-north-east" class="text-sm" />
             </a>
           </div>
           <!-- Service 2 -->
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            Logo
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Právní poradenství</h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Bespoke investment strategies and expert insights tailored to your
-              specific objectives, whether for income generation or capital
-              preservation.
+              Právní ochrana majetku, smluvní dokumentace a poradenství
+              v oblasti dědictví a rodinného práva. Nezávislé právní
+              zastoupení ve váš prospěch.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="#"
+              href="/services/legal-advisory"
             >
-              EXPLORE SERVICE
-              <span class="material-symbols-outlined text-sm">north_east</span>
+              ZOBRAZIT SLUŽBU
+              <UIcon name="i-material-symbols-north-east" class="text-sm" />
             </a>
           </div>
           <!-- Service 3 -->
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
-            Logo
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">Péče o investiční majetek</h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Integrated management of complex family wealth, including
-              succession planning, tax optimization, and philanthropic
-              management.
+              Správa investičního portfolia, výběr vhodných instrumentů
+              a průběžný dohled nad vývojem vašich aktiv s ohledem na váš
+              rizikový profil.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="#"
+              href="/services/investment-asset-management"
             >
-              EXPLORE SERVICE
-              <span class="material-symbols-outlined text-sm">north_east</span>
+              ZOBRAZIT SLUŽBU
+              <UIcon name="i-material-symbols-north-east" class="text-sm" />
             </a>
           </div>
         </div>
