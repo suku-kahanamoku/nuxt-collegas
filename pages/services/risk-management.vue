@@ -20,6 +20,39 @@ const relatedLinks = [
     to: "/services/investment-asset-management",
   },
 ];
+
+const caseStudies = [
+  {
+    imgSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
+    imgAlt: "Rodina na horách – příklad správně nastaveného zajištění",
+    category: "Životní pojištění",
+    year: "2024",
+    title: "Úraz na sjezdovce: pojistné plnění 780 000 Kč",
+    description:
+      "Klientka Karolína T. D. utrpěla při lyžování zlomeninu páteře. Díky správně nastavenému zajištění získala plné pojistné plnění a mohla se bez stresu věnovat léčbě.",
+  },
+  {
+    imgSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
+    imgAlt: "Podnikatel konzultuje s poradcem nastavení pojistné ochrany",
+    category: "Podnikatelé",
+    year: "2023",
+    title: "Ochrana podnikatele: jak nepřijít o firmu při nemoci",
+    description:
+      "OSVČ s jedinou firmou neměl žádné zajištění. Po diagnostikování vážné nemoci mu správně nastavené pojištění příjmu umožnilo udržet podnikání v chodu celých 14 měsíců.",
+  },
+  {
+    imgSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
+    imgAlt: "Rodina se dvěma dětmi – nastavení rodinné finanční ochrany",
+    category: "Rodina",
+    year: "2024",
+    title: "Ztráta příjmu živitele: rodina bez existenčních starostí",
+    description:
+      "Klient s hypotékou a dvěma dětmi přišel o práci ze zdravotních důvodů. Včas nastavené pojištění invalidity a příjmu pokrylo splátky i běžné náklady rodiny po celou dobu rekonvalescence.",
+  },
+];
 </script>
 
 <template>
@@ -62,91 +95,11 @@ const relatedLinks = [
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
         >
-          <!-- Case study Card 1 -->
-          <article class="flex flex-col group cursor-pointer">
-            <div
-              class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
-            >
-              <img
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                alt="Rodina na horách – příklad správně nastaveného zajištění"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ"
-              />
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase"
-                >Životní pojištění</span
-              >
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span class="font-label-caps text-outline uppercase">2024</span>
-            </div>
-            <h4
-              class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
-            >
-              Úraz na sjezdovce: pojistné plnění 780 000 Kč
-            </h4>
-            <p class="font-body-md text-on-surface-variant line-clamp-3">
-              Klientka Karolína T. D. utrpěla při lyžování zlomeninu páteře.
-              Díky správně nastavenému zajištění získala plné pojistné plnění a
-              mohla se bez stresu věnovat léčbě.
-            </p>
-          </article>
-          <!-- Case study Card 2 -->
-          <article class="flex flex-col group cursor-pointer">
-            <div
-              class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
-            >
-              <img
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                alt="Podnikatel konzultuje s poradcem nastavení pojistné ochrany"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8"
-              />
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase"
-                >Podnikatelé</span
-              >
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span class="font-label-caps text-outline uppercase">2023</span>
-            </div>
-            <h4
-              class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
-            >
-              Ochrana podnikatele: jak nepřijít o firmu při nemoci
-            </h4>
-            <p class="font-body-md text-on-surface-variant line-clamp-3">
-              OSVČ s jedinou firmou neměl žádné zajištění. Po diagnostikování
-              vážné nemoci mu správně nastavené pojištění příjmu umožnilo udržet
-              podnikání v chodu celých 14 měsíců.
-            </p>
-          </article>
-          <!-- Case study Card 3 -->
-          <article class="flex flex-col group cursor-pointer">
-            <div
-              class="overflow-hidden aspect-video mb-stack-md bg-surface-variant"
-            >
-              <img
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                alt="Rodina se dvěma dětmi – nastavení rodinné finanční ochrany"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y"
-              />
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <span class="font-label-caps text-outline uppercase">Rodina</span>
-              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-              <span class="font-label-caps text-outline uppercase">2024</span>
-            </div>
-            <h4
-              class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
-            >
-              Ztráta příjmu živitele: rodina bez existenčních starostí
-            </h4>
-            <p class="font-body-md text-on-surface-variant line-clamp-3">
-              Klient s hypotékou a dvěma dětmi přišel o práci ze zdravotních
-              důvodů. Včas nastavené pojištění invalidity a příjmu pokrylo
-              splátky i běžné náklady rodiny po celou dobu rekonvalescence.
-            </p>
-          </article>
+          <UiArticleCard
+            v-for="cs in caseStudies"
+            :key="cs.title"
+            v-bind="cs"
+          />
         </div>
         <div class="mt-stack-lg md:hidden">
           <a
@@ -158,39 +111,19 @@ const relatedLinks = [
       </UContainer>
     </section>
 
-    <section
-      class="bg-primary-900 py-section-gap text-center relative overflow-hidden"
+    <UiDarkBanner
+      title="Připraveni zajistit vaši budoucnost?"
+      body="Nechte si nastavit ochranu, na kterou se můžete skutečně spolehnout. Naši poradci jsou připraveni posoudit vaši situaci bez závazků."
     >
-      <UContainer class="max-w-2xl mx-auto px-gutter relative z-10">
-        <h2
-          class="font-headline-lg text-headline-lg text-on-primary mb-stack-md"
-        >
-          Připraveni zajistit vaši budoucnost?
-        </h2>
-        <p class="font-body-lg text-on-primary/70 mb-stack-lg">
-          Nechte si nastavit ochranu, na kterou se můžete skutečně spolehnout.
-          Naši poradci jsou připraveni posoudit vaši situaci bez závazků.
-        </p>
-        <UButton
-          to="/contact"
-          size="lg"
-          color="secondary"
-          variant="solid"
-          trailing-icon="i-material-symbols-arrow-forward"
-          class="bg-secondary-fixed! text-primary-800! hover:bg-secondary-fixed/80! transition-colors px-10"
-          :ui="{
-            trailingIcon:
-              'transition-transform duration-200 group-hover:translate-x-1 size-5',
-          }"
-        >
-          Domluvit konzultaci
-        </UButton>
-      </UContainer>
-      <!-- Decorative accent -->
-      <div
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-200 h-px bg-linear-to-r from-transparent via-secondary/40 to-transparent"
-      ></div>
-    </section>
+      <UButton
+        color="secondary"
+        variant="solid"
+        size="lg"
+        class="bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors px-8 shrink-0"
+      >
+        Domluvit konzultaci
+      </UButton>
+    </UiDarkBanner>
 
     <section class="py-section-gap bg-surface">
       <UContainer
