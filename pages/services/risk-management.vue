@@ -200,17 +200,26 @@ const relatedLinks = [
         <h2
           class="font-headline-lg text-headline-lg text-on-primary mb-stack-md"
         >
-          Ready to Secure Your Future?
+          Připraveni zajistit vaši budoucnost?
         </h2>
         <p class="font-body-lg text-on-primary/70 mb-stack-lg">
-          Join an exclusive circle of clients who trust us with their life's
-          work. Our partners are ready to discuss your unique financial path.
+          Nechte si nastavit ochranu, na kterou se můžete skutečně spolehnout.
+          Naši poradci jsou připraveni posoudit vaši situaci bez závazků.
         </p>
-        <button
-          class="bg-secondary-fixed text-on-secondary-fixed px-12 py-5 font-label-caps uppercase tracking-[0.2em] font-bold hover:bg-secondary-fixed-dim transition-all"
+        <UButton
+          to="/contact"
+          size="lg"
+          color="secondary"
+          variant="solid"
+          trailing-icon="i-material-symbols-arrow-forward"
+          class="bg-secondary-fixed! text-primary-800! hover:bg-secondary-fixed/80! transition-colors px-10"
+          :ui="{
+            trailingIcon:
+              'transition-transform duration-200 group-hover:translate-x-1 size-5',
+          }"
         >
-          Initiate Discussion
-        </button>
+          Domluvit konzultaci
+        </UButton>
       </UContainer>
       <!-- Decorative accent -->
       <div
