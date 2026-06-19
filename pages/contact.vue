@@ -139,10 +139,10 @@ function handleSubmit() {
                 :key="office.name"
                 class="flex gap-3 items-start"
               >
-                <span
-                  class="material-symbols-outlined text-secondary-800 text-base mt-0.5 shrink-0"
-                  >location_on</span
-                >
+                <UIcon
+                  name="i-material-symbols-location-on"
+                  class="text-secondary-800 text-base mt-0.5 shrink-0"
+                />
                 <div>
                   <p class="text-body-md font-semibold text-on-surface">
                     {{ office.name }}
@@ -170,11 +170,10 @@ function handleSubmit() {
             <div
               class="w-12 h-12 bg-primary-900 rounded-full flex items-center justify-center shadow-xl border-4 border-white"
             >
-              <span
-                class="material-symbols-outlined text-white"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >location_on</span
-              >
+              <UIcon
+                name="i-material-symbols-location-on"
+                class="text-white text-2xl"
+              />
             </div>
           </div>
         </div>
