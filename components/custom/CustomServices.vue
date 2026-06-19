@@ -1,63 +1,63 @@
 <script setup lang="ts">
 const services = [
   {
-    icon: "assessment",
+    icon: "i-material-symbols-assessment",
     title: "Nezávislý finanční audit",
     description:
       "Komplexní nezávislý audit vašich financí, smluv a nastavení s doporučeními pro další kroky.",
     to: "/services/financial-audit",
   },
   {
-    icon: "shield",
+    icon: "i-material-symbols-shield",
     title: "Zajištění rizik",
     description:
       "Správně nastavené pojistné krytí, které vás skutečně chrání – bez duplicit, bez zbytečných nákladů a s plnou ochranou majetku i zdraví.",
     to: "/services/risk-management",
   },
   {
-    icon: "receipt_long",
+    icon: "i-material-symbols-receipt-long",
     title: "Daňové poradenství",
     description:
       "Daně v širším kontextu – příjmy, podnikání, investice i majetek jako jeden celek. Přestaňte platit víc, než musíte.",
     to: "/services/tax-advisory",
   },
   {
-    icon: "gavel",
+    icon: "i-material-symbols-gavel",
     title: "Právní poradenství",
     description:
       "Dlouhodobé partnerství postavené na důvěře. Smluvní agenda, převody nemovitostí, vlastnické struktury a ochrana majetku.",
     to: "/services/legal-advisory",
   },
   {
-    icon: "balance",
+    icon: "i-material-symbols-balance",
     title: "Odškodnění",
     description:
       "Pracovní úrazy, autonehody, školní úrazy i jiné pojistné události. Zajišťujeme spravedlivé odškodnění v plné výši.",
     to: "/services/compensation",
   },
   {
-    icon: "home_work",
+    icon: "i-material-symbols-home-work",
     title: "Realitní služby",
     description:
       "Kompletní zajištění prodeje nebo pronájmu – od přípravy, marketingu a prohlídek až po právní servis a bezpečné vypořádání.",
     to: "/services/real-estate",
   },
   {
-    icon: "apartment",
+    icon: "i-material-symbols-apartment",
     title: "Správa nemovitostí",
     description:
       "Kompletní péče o váš investiční majetek – výběr nájemníků, technická správa, administrativa i ekonomická agenda bez zbytečných starostí.",
     to: "/services/property-management",
   },
   {
-    icon: "trending_up",
+    icon: "i-material-symbols-trending-up",
     title: "Péče o investiční majetek",
     description:
       "Průběžná analýza a řízení portfolia s důrazem na dlouhodobý růst, diverzifikaci a ochranu kapitálu v souladu s vašimi cíli.",
     to: "/services/investment-asset-management",
   },
   {
-    icon: "domain",
+    icon: "i-material-symbols-domain",
     title: "Developerské projekty",
     description:
       "Komplexní realizace developerských záměrů – od analýzy příležitosti a financování přes projekt až po prodejní strategii.",
@@ -84,10 +84,7 @@ const services = [
           <template #header>
             <UiTitle size="sm">
               <template #eyebrow>
-                <span
-                  class="material-symbols-outlined text-secondary-700 text-4xl"
-                  >{{ s.icon }}</span
-                >
+                <UIcon :name="s.icon" class="text-secondary-700 text-4xl" />
               </template>
               <template #title>
                 <h3 class="text-title-md font-serif text-primary-800">
@@ -106,10 +103,7 @@ const services = [
               class="inline-flex items-center gap-1 text-secondary-700 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity"
             >
               Více informací
-              <span
-                class="material-symbols-outlined text-body-md transition-transform duration-200 group-hover:translate-x-1"
-                >arrow_forward</span
-              >
+              <UIcon name="i-material-symbols-arrow-forward" class="text-body-md transition-transform duration-200 group-hover:translate-x-1" />
             </span>
           </template>
         </UiBaseCard>

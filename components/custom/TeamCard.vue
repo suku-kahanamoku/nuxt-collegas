@@ -39,10 +39,7 @@ defineProps<{
         v-else
         class="w-full h-full flex items-center justify-center bg-surface-container"
       >
-        <span
-          class="material-symbols-outlined text-on-surface-variant/30 text-7xl"
-          >person</span
-        >
+        <UIcon name="i-material-symbols-person" class="text-on-surface-variant/30 size-[4.5rem]" />
       </div>
     </div>
 
@@ -67,7 +64,7 @@ defineProps<{
           :href="`mailto:${email}`"
           class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
         >
-          <span class="material-symbols-outlined text-base">mail</span>
+          <UIcon name="i-material-symbols-mail" class="size-4" />
           {{ email }}
         </a>
         <a
@@ -75,7 +72,7 @@ defineProps<{
           :href="`tel:${phone.replace(/\s+/g, '')}`"
           class="flex items-center gap-2 text-body-md text-on-surface-variant hover:text-secondary-700 transition-colors"
         >
-          <span class="material-symbols-outlined text-base">phone</span>
+          <UIcon name="i-material-symbols-phone" class="size-4" />
           {{ phone }}
         </a>
         <a
@@ -85,7 +82,7 @@ defineProps<{
           rel="noopener"
           class="flex items-center gap-2 text-body-md text-secondary-700 hover:underline transition-colors"
         >
-          <span class="material-symbols-outlined text-base">open_in_new</span>
+          <UIcon name="i-material-symbols-open-in-new" class="size-4" />
           {{ websiteLabel || "Osobní web" }}
         </a>
       </div>

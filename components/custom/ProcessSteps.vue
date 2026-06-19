@@ -2,35 +2,35 @@
 const steps = [
   {
     number: "01",
-    icon: "forum",
+    icon: "i-material-symbols-forum",
     title: "Úvodní konzultace",
     description:
       "Bezplatně a nezávazně probereme vaši situaci, cíle a to, co vás trápí nebo brzdí.",
   },
   {
     number: "02",
-    icon: "search",
+    icon: "i-material-symbols-search",
     title: "Analýza a audit",
     description:
       "Projdeme vaše smlouvy, portfolio a celkovou strukturu financí – bez závislosti na produktech.",
   },
   {
     number: "03",
-    icon: "lightbulb",
+    icon: "i-material-symbols-lightbulb",
     title: "Strategie na míru",
     description:
       "Navrhneme konkrétní plán přesně pro vaši situaci, cíle a časový horizont.",
   },
   {
     number: "04",
-    icon: "rocket_launch",
+    icon: "i-material-symbols-rocket-launch",
     title: "Realizace",
     description:
       "Provedeme vás každým krokem – od výběru produktů po nastavení celé finanční struktury.",
   },
   {
     number: "05",
-    icon: "update",
+    icon: "i-material-symbols-update",
     title: "Průběžná péče",
     description:
       "Sledujeme vývoj, reagujeme na změny a jsme tu vždy, kdy nás potřebujete.",
@@ -110,10 +110,7 @@ const steps = [
                 <div
                   class="w-16 h-16 rounded-full border border-secondary-fixed/35 bg-primary-900 flex items-center justify-center relative z-10 transition-all duration-300 group-hover:border-secondary-fixed/80 group-hover:bg-secondary-fixed/10"
                 >
-                  <span
-                    class="material-symbols-outlined text-secondary-fixed text-2xl"
-                    >{{ step.icon }}</span
-                  >
+                  <UIcon :name="step.icon" class="text-secondary-fixed text-2xl" />
                 </div>
 
               </div>
@@ -144,10 +141,7 @@ const steps = [
             >
               <!-- Desktop: right arrow -->
               <div class="hidden lg:flex flex-col items-center gap-0.5 relative">
-                <span
-                  class="material-symbols-outlined text-secondary-fixed/40 text-xl"
-                  >chevron_right</span
-                >
+                <UIcon name="i-material-symbols-chevron-right" class="text-secondary-fixed/40 text-xl" />
               </div>
               <!-- Mobile: down arrow (shown as border above, handled separately) -->
             </div>

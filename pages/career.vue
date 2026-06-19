@@ -13,22 +13,22 @@ useHead({
 
 const pfpItems = [
   {
-    icon: "school",
+    icon: "i-material-symbols-school",
     title: "Přípravné kurzy",
     description: "Plně hrazené školení od zkušených lektorů.",
   },
   {
-    icon: "workspace_premium",
+    icon: "i-material-symbols-workspace-premium",
     title: "Certifikát PFP",
     description: "Uznávaná certifikace na trhu finančního poradenství.",
   },
   {
-    icon: "menu_book",
+    icon: "i-material-symbols-menu-book",
     title: "Studijní materiály",
     description: "Kompletní přístupy k výukovým zdrojům.",
   },
   {
-    icon: "trending_up",
+    icon: "i-material-symbols-trending-up",
     title: "Kariérní postup",
     description: "Certifikace otevírá cestu k seniorním rolím.",
   },
@@ -36,19 +36,19 @@ const pfpItems = [
 
 const charityItems = [
   {
-    icon: "favorite",
+    icon: "i-material-symbols-favorite",
     title: "Nadace",
     description:
       "Dlouhodobě podporujeme vybrané nadace a charitativní organizace přispívající komunitě.",
   },
   {
-    icon: "child_care",
+    icon: "i-material-symbols-child-care",
     title: "Nedoklubko",
     description:
       "Podporujeme Nedoklubko – organizaci pomáhající předčasně narozeným dětem a jejich rodinám.",
   },
   {
-    icon: "volunteer_activism",
+    icon: "i-material-symbols-volunteer-activism",
     title: "Dobrovolnictví",
     description:
       "Naši kolegové se aktivně zapojují do dobrovolnických akcí a sbírek.",
@@ -56,9 +56,9 @@ const charityItems = [
 ];
 
 const mediaItems = [
-  { icon: "videocam", label: "Vánoční večírek" },
-  { icon: "sports_soccer", label: "Sportovní den" },
-  { icon: "flight", label: "Team trip" },
+  { icon: "i-material-symbols-videocam", label: "Vánoční večírek" },
+  { icon: "i-material-symbols-sports-soccer", label: "Sportovní den" },
+  { icon: "i-material-symbols-flight", label: "Team trip" },
 ];
 </script>
 
@@ -147,11 +147,7 @@ const mediaItems = [
                 <UiTitle size="sm">
                   <template #eyebrow>
                     <div class="shrink-0 flex items-start pt-0.5">
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ item.icon }}</span
-                      >
+                      <UIcon :name="item.icon" class="text-secondary-700 size-8" />
                     </div>
                   </template>
                   <template #title>
@@ -184,11 +180,7 @@ const mediaItems = [
             <template #header>
               <UiTitle size="sm">
                 <template #eyebrow>
-                  <span
-                    class="material-symbols-outlined text-secondary-700"
-                    style="font-size: 2rem"
-                    >{{ c.icon }}</span
-                  >
+                  <UIcon :name="c.icon" class="text-secondary-700 size-8" />
                 </template>
                 <template #title>
                   <h3 class="text-title-lg font-serif text-primary-800">
@@ -217,11 +209,7 @@ const mediaItems = [
         <div
           class="border border-outline-variant/30 bg-surface p-16 text-center"
         >
-          <span
-            class="material-symbols-outlined text-on-surface-variant/30"
-            style="font-size: 3rem"
-            >work_outline</span
-          >
+          <UIcon name="i-material-symbols-work-outline" class="text-on-surface-variant/30 size-12" />
           <p class="text-body-lg text-on-surface-variant mt-stack-sm">
             Aktuálně nepřijímáme přihlášky na konkrétní pozice, ale vždy rádi
             uvítáme

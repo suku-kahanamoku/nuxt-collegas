@@ -26,7 +26,7 @@ async function handleSubmit() {
 
         <Transition name="fade" mode="out-in">
           <div v-if="submitted" class="mt-stack-lg flex flex-col items-center gap-3">
-            <span class="material-symbols-outlined text-secondary-fixed text-5xl">check_circle</span>
+            <UIcon name="i-material-symbols-check-circle" class="text-secondary-fixed text-5xl" />
             <p class="text-body-lg text-secondary-fixed font-medium">Díky! Ozveme se vám brzy.</p>
           </div>
 

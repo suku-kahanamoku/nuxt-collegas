@@ -13,19 +13,19 @@ useHead({
 
 const pillars = [
   {
-    icon: "account_balance",
+    icon: "i-material-symbols-account-balance",
     title: "Finance & Investice",
     description:
       "COLLEGA BROKERS a.s. a COLLEGA INVESTICE s.r.o. zajišťují finanční poradenství, investiční strategie, developerské projekty a správu investičního majetku.",
   },
   {
-    icon: "gavel",
+    icon: "i-material-symbols-gavel",
     title: "Právo & Administrativa",
     description:
       "COLLEGAS SOLUTION s.r.o., BULA & COLLEGAS s.r.o. a COLLEGAS s.r.o. poskytují právní poradenství, odškodnění, compliance a administrativní podporu celé skupině.",
   },
   {
-    icon: "apartment",
+    icon: "i-material-symbols-apartment",
     title: "Reality & Design",
     description:
       "COLLEGA DESIGN s.r.o. a COLLEGAS REALITY s.r.o. pokrývají architektonický návrh, interiérový design, správu nemovitostí a jejich prodej.",
@@ -92,11 +92,7 @@ const pillars = [
             <template #header>
               <UiTitle size="sm">
                 <template #eyebrow>
-                  <span
-                    class="material-symbols-outlined text-secondary-700"
-                    style="font-size: 2rem"
-                    >{{ p.icon }}</span
-                  >
+                  <UIcon :name="p.icon" class="text-secondary-700 size-8" />
                 </template>
                 <template #title>
                   <h3 class="text-title-lg font-serif text-primary-800">

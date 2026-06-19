@@ -4,7 +4,7 @@ const offices = [
     label: "Centrála – AZ Tower",
     address: "Pražákova 1008/69, 11. patro\n639 00 Brno",
     note: "Recepce budovy 24/7 · Kancelář Po–Pá 8:00–16:30",
-    icon: "location_city",
+    icon: "i-material-symbols-location-city",
     highlight: true,
     phone: "+420 800 100 200",
     email: "info@collegas.cz",
@@ -13,7 +13,7 @@ const offices = [
   {
     label: "Břeclav",
     address: "nám. T. G. Masaryka 302/8\n690 02 Břeclav",
-    icon: "location_on",
+    icon: "i-material-symbols-location-on",
     highlight: false,
     phone: null,
     email: null,
@@ -22,7 +22,7 @@ const offices = [
   {
     label: "Kroměříž",
     address: "Tovačovského 2784/24\n767 01 Kroměříž",
-    icon: "location_on",
+    icon: "i-material-symbols-location-on",
     highlight: false,
     phone: null,
     email: null,
@@ -31,7 +31,7 @@ const offices = [
   {
     label: "Pardubice",
     address: "Pardubice",
-    icon: "location_on",
+    icon: "i-material-symbols-location-on",
     highlight: false,
     phone: null,
     email: null,
@@ -40,7 +40,7 @@ const offices = [
   {
     label: "Boskovice",
     address: "Boskovice",
-    icon: "location_on",
+    icon: "i-material-symbols-location-on",
     highlight: false,
     phone: null,
     email: null,
@@ -77,10 +77,11 @@ const offices = [
               : 'bg-white border-outline-variant/30 text-primary-800 hover:border-secondary-700/50',
           ]"
         >
-          <span
-            class="material-symbols-outlined text-3xl"
+          <UIcon
+            :name="office.icon"
+            class="text-3xl"
             :class="office.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
-          >{{ office.icon }}</span>
+          />
 
           <h3
             class="text-title-md font-serif leading-tight"
@@ -111,7 +112,7 @@ const offices = [
               class="flex items-center gap-2 text-body-sm hover:opacity-70 transition-opacity"
               :class="office.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
             >
-              <span class="material-symbols-outlined text-base">phone</span>
+              <UIcon name="i-material-symbols-phone" class="size-4" />
               {{ office.phone }}
             </a>
             <a
@@ -120,7 +121,7 @@ const offices = [
               class="flex items-center gap-2 text-body-sm hover:opacity-70 transition-opacity"
               :class="office.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
             >
-              <span class="material-symbols-outlined text-base">mail</span>
+              <UIcon name="i-material-symbols-mail" class="size-4" />
               {{ office.email }}
             </a>
           </div>

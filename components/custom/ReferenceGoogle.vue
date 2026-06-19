@@ -110,7 +110,10 @@ const selected = computed(() => references[selectedIndex.value]);
           <UMarquee
             pause-on-hover
             :overlay="false"
-            :ui="{ root: '[--gap:--spacing(4)] mt-20', content: 'w-auto py-1' }"
+            :ui="{
+              root: '[--gap:--spacing(4)] mt-20',
+              content: 'w-auto py-1 cursor-pointer',
+            }"
           >
             <!-- Horizontal card marquee -->
             <UPageCard

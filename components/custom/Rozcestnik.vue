@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const destinations = [
   {
-    icon: "search",
+    icon: "i-material-symbols-search",
     title: "Chci finanční audit",
     description: "Zjistěte, jak skutečně fungují vaše finance. Nezávislé posouzení smluv, struktur a nastavení.",
     label: "Začít audit",
@@ -9,7 +9,7 @@ const destinations = [
     highlight: true,
   },
   {
-    icon: "account_balance",
+    icon: "i-material-symbols-account-balance",
     title: "Hledám poradenství",
     description: "Investice, pojištění, realitní služby nebo daně – ukažte nám téma a najdeme správné řešení.",
     label: "Naše služby",
@@ -17,7 +17,7 @@ const destinations = [
     highlight: false,
   },
   {
-    icon: "group",
+    icon: "i-material-symbols-group",
     title: "Chci vás poznat",
     description: "Přes 10 let praxe, desítky odborníků a stovky klientů. Podívejte se, kdo za COLLEGA stojí.",
     label: "O nás",
@@ -25,7 +25,7 @@ const destinations = [
     highlight: false,
   },
   {
-    icon: "work",
+    icon: "i-material-symbols-work",
     title: "Hledám práci v oboru",
     description: "Staňte se součástí týmu, kde si věříme, vzdělávame se a stavíme kariéru na pevných základech.",
     label: "Kariéra",
@@ -53,10 +53,11 @@ const destinations = [
           :to="dest.to"
           :highlight="dest.highlight"
         >
-          <span
-            class="material-symbols-outlined text-4xl"
+          <UIcon
+            :name="dest.icon"
+            class="text-4xl"
             :class="dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
-          >{{ dest.icon }}</span>
+          />
 
           <h3
             class="text-title-md font-serif leading-tight"
@@ -78,7 +79,7 @@ const destinations = [
               :class="dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
             >
               {{ dest.label }}
-              <span class="material-symbols-outlined text-body-md transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              <UIcon name="i-material-symbols-arrow-forward" class="text-body-md transition-transform duration-200 group-hover:translate-x-1" />
             </span>
           </template>
         </UiBaseCard>

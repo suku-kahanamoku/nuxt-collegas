@@ -77,10 +77,7 @@ useHead({
               class="group inline-flex items-center gap-stack-sm text-secondary-700 text-label-caps font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity mt-stack-sm"
             >
               Chci jasno ve svých financích
-              <span
-                class="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1"
-                >arrow_forward</span
-              >
+              <UIcon name="i-material-symbols-arrow-forward" class="text-base transition-transform duration-200 group-hover:translate-x-1" />
             </NuxtLink>
           </div>
           <div class="lg:col-span-4">

@@ -13,25 +13,25 @@ useHead({
 
 const services = [
   {
-    icon: "description",
+    icon: "i-material-symbols-description",
     title: "Smluvní agenda",
     description:
       "Příprava, revize a připomínkování smluv – kupní, nájemní, věřitelské i rámcové.",
   },
   {
-    icon: "home",
+    icon: "i-material-symbols-home",
     title: "Převody nemovitostí",
     description:
       "Kompletní právní servis při prodeji, koupi nebo darování nemovitého majetku.",
   },
   {
-    icon: "account_tree",
+    icon: "i-material-symbols-account-tree",
     title: "Vlastnické struktury",
     description:
       "Nastavení holdingových a rodinných struktur s cílem ochrany a předání majetku.",
   },
   {
-    icon: "shield",
+    icon: "i-material-symbols-shield",
     title: "Ochrana majetku",
     description:
       "Právní zajištění majetku před riziky podnikání, věřiteli i dědickými spory.",
@@ -138,11 +138,7 @@ const relatedLinks = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ s.icon }}</span
-                      >
+                      <UIcon :name="s.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">

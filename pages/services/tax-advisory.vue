@@ -23,25 +23,25 @@ const relatedLinks = [
 
 const topics = [
   {
-    icon: "receipt_long",
+    icon: "i-material-symbols-receipt-long",
     title: "Daňová optimalizace",
     description:
       "Nastavení příjmů, majetku a podnikání tak, aby vaše daňová zátěž odpovídala realitě a ne zbytečné neefektivitě.",
   },
   {
-    icon: "apartment",
+    icon: "i-material-symbols-apartment",
     title: "Daně z nemovitostí",
     description:
       "Poradenství při nákupu, prodeji, držbě i pronájmu nemovitostí včetně dopadů do celkové finanční strategie.",
   },
   {
-    icon: "trending_up",
+    icon: "i-material-symbols-trending-up",
     title: "Investice a výnosy",
     description:
       "Vyhodnocení daňových dopadů investic, kapitálových příjmů i dlouhodobého budování majetku v širších souvislostech.",
   },
   {
-    icon: "business_center",
+    icon: "i-material-symbols-business-center",
     title: "Podnikání a struktura",
     description:
       "Pomoc s nastavením podnikatelské a majetkové struktury tak, aby dávala smysl provozně, právně i daňově.",
@@ -135,11 +135,7 @@ const topics = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ topic.icon }}</span
-                      >
+                      <UIcon :name="topic.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">

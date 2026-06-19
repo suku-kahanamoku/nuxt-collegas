@@ -47,13 +47,14 @@ const items = [
           bydlení přes ochranu majetku až po dlouhodobé budování kapitálu.
         </p>
         <div class="flex gap-stack-md items-center flex-wrap">
-          <Button variant="solid">
-            Domluvit konzultaci
-          </Button>
-          <Button variant="outline" class="flex items-center gap-2">
+          <UiButton variant="solid"> Domluvit konzultaci </UiButton>
+          <UiButton variant="outline" class="group flex items-center gap-2">
             Naše filozofie
-            <span class="material-symbols-outlined text-sm">arrow_forward</span>
-          </Button>
+            <UIcon
+              name="i-material-symbols-arrow-forward"
+              class="text-xl transition-transform duration-200 group-hover:translate-x-1"
+            />
+          </UiButton>
         </div>
       </div>
     </UContainer>

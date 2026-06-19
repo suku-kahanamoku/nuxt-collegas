@@ -34,25 +34,25 @@ const values = [
 
 const principles = [
   {
-    icon: "search",
+    icon: "i-material-symbols-search",
     title: "Nejprve pochopit",
     description:
       "Než cokoli navrhneme, nejprve důkladně poznáme vás – vaše cíle, hodnoty, závazky a rizika. Dobrý plán začíná hlubokou analýzou, ne produktovým katalogem.",
   },
   {
-    icon: "handshake",
+    icon: "i-material-symbols-handshake",
     title: "Mluvit otevřeně",
     description:
       "Říkáme věci, jak jsou. Upozorníme vás na rizika, která jiní zamlčí. Naše přidaná hodnota není v pěkných tabulkách – je v upřímném rozhovoru.",
   },
   {
-    icon: "settings",
+    icon: "i-material-symbols-settings",
     title: "Řešení na míru",
     description:
       "Každý klient je jiný. Nepracujeme s šablonami – navrhujeme strategie, které přesně odpovídají vaší situaci a časovému horizontu.",
   },
   {
-    icon: "update",
+    icon: "i-material-symbols-update",
     title: "Průběžná péče",
     description:
       "Spolupráce nekončí podpisem smlouvy. Jsme k dispozici, sledujeme vývoj situace a proaktivně reagujeme na změny – ve vašem životě i na trzích.",
@@ -63,7 +63,9 @@ const principles = [
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <section class="bg-primary-900 py-section-gap relative overflow-hidden">
+    <section
+      class="bg-primary-900 py-section-gap relative min-h-screen overflow-hidden"
+    >
       <UContainer
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
       >
@@ -86,12 +88,11 @@ const principles = [
           </div>
         </div>
         <div class="order-1 md:order-2">
-          <span class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
+          <span
+            class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
           >
-          <h2
-            class="text-headline-lg font-serif text-on-primary mb-stack-md"
-          >
+          <h2 class="text-headline-lg font-serif text-on-primary mb-stack-md">
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>
           <div class="space-y-stack-md mb-stack-lg">
@@ -129,9 +130,7 @@ const principles = [
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Co je pro nás podstatné</span
           >
-          <h2
-            class="text-headline-lg font-serif text-primary-800 mb-stack-md"
-          >
+          <h2 class="text-headline-lg font-serif text-primary-800 mb-stack-md">
             Každý klient má jinou výchozí situaci
           </h2>
           <p
@@ -180,7 +179,8 @@ const principles = [
           </div>
         </div>
         <div class="space-y-stack-md">
-          <span class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+          <span
+            class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Naše zásady</span
           >
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -216,16 +216,18 @@ const principles = [
           </h2>
           <div class="w-12 h-px bg-secondary-fixed/50 mx-auto mt-stack-md" />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg"
+        >
           <div
             v-for="principle in principles"
             :key="principle.title"
             class="p-stack-md border border-primary-container hover:border-secondary transition-colors group"
           >
-            <span
-              class="material-symbols-outlined text-secondary-fixed text-[40px] mb-stack-md block"
-              >{{ principle.icon }}</span
-            >
+            <UIcon
+              :name="principle.icon"
+              class="text-secondary-fixed size-10 mb-stack-md block"
+            />
             <h3 class="font-headline-md text-headline-md mb-stack-sm">
               {{ principle.title }}
             </h3>
@@ -276,9 +278,7 @@ const principles = [
             class="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary-700 hover:text-secondary-800 transition-colors"
           >
             Poznat celý tým
-            <span class="material-symbols-outlined text-base"
-              >arrow_forward</span
-            >
+            <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
           </NuxtLink>
         </div>
       </UContainer>

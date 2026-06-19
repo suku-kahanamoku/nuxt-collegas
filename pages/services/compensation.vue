@@ -13,25 +13,25 @@ useHead({
 
 const types = [
   {
-    icon: "directions_car",
+    icon: "i-material-symbols-directions-car",
     title: "Autonehody",
     description:
       "Odškodnění z povinného ručení a havarijního pojištění – bolestné, ztráta výdělku, trvalé následky.",
   },
   {
-    icon: "construction",
+    icon: "i-material-symbols-construction",
     title: "Pracovní úrazy",
     description:
       "Uplatňování nároků vůči zaměstnavateli a pojišťovně při pracovním úrazu nebo nemoci z povolání.",
   },
   {
-    icon: "school",
+    icon: "i-material-symbols-school",
     title: "Školní úrazy",
     description:
       "Odškodnění za úrazy způsobené při školní výuce, akcích nebo sportu.",
   },
   {
-    icon: "local_hospital",
+    icon: "i-material-symbols-local-hospital",
     title: "Zdravotní pochybení",
     description: "Pomoc při uplatňování nároků za pochybení ve zdravotní péči.",
   },
@@ -140,11 +140,7 @@ const relatedLinks = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ t.icon }}</span
-                      >
+                      <UIcon :name="t.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">

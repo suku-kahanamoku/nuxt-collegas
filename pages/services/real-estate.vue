@@ -13,25 +13,25 @@ useHead({
 
 const steps = [
   {
-    icon: "search",
+    icon: "i-material-symbols-search",
     title: "Analýza a ocenění",
     description:
       "Tržní analýza a stanovení správné ceny nemovitosti pro maximalizaci výnosu.",
   },
   {
-    icon: "campaign",
+    icon: "i-material-symbols-campaign",
     title: "Marketing a prezentace",
     description:
       "Profesionální fotografie, 3D virtuální prohlídky a cílené oslovení potenciálních kupců.",
   },
   {
-    icon: "groups",
+    icon: "i-material-symbols-groups",
     title: "Prohlídky a jednání",
     description:
       "Organizace a vedení prohlídek, komunikace se zájemci a sjednání nejvýhodnějších podmínek.",
   },
   {
-    icon: "gavel",
+    icon: "i-material-symbols-gavel",
     title: "Právní a finanční servis",
     description:
       "Kompletní smluvní dokumentace, úschova kupní ceny a bezpečné vypořádání transakce.",
@@ -140,11 +140,7 @@ const relatedLinks = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ s.icon }}</span
-                      >
+                      <UIcon :name="s.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">

@@ -13,25 +13,25 @@ useHead({
 
 const features = [
   {
-    icon: "analytics",
+    icon: "i-material-symbols-analytics",
     title: "Analýza portfolia",
     description:
       "Detailní vyhodnocení stávajícího investičního portfolia – výkonnost, rizika a poplatky.",
   },
   {
-    icon: "pie_chart",
+    icon: "i-material-symbols-pie-chart",
     title: "Diverzifikace",
     description:
       "Optimální rozložení aktiv mezi různé třídy investic v souladu s vašimi cíli a horizontem.",
   },
   {
-    icon: "trending_up",
+    icon: "i-material-symbols-trending-up",
     title: "Sledování výkonnosti",
     description:
       "Průběžný monitoring a pravidelné reporty o vývoji a výkonnosti portfolia.",
   },
   {
-    icon: "autorenew",
+    icon: "i-material-symbols-autorenew",
     title: "Rebalancování",
     description:
       "Aktivní správa a přizpůsobování portfolia změnám na trzích i ve vaší životní situaci.",
@@ -138,11 +138,7 @@ const relatedLinks = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ f.icon }}</span
-                      >
+                      <UIcon :name="f.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">

@@ -13,25 +13,25 @@ useHead({
 
 const included = [
   {
-    icon: "person_search",
+    icon: "i-material-symbols-person-search",
     title: "Výběr nájemníků",
     description:
       "Prověřování zájemců, bonita, reference a sjednání nájemní smlouvy.",
   },
   {
-    icon: "build",
+    icon: "i-material-symbols-build",
     title: "Technická správa",
     description:
       "Koordinace oprav, revizí, rekonstrukcí a pravidelné technické kontroly.",
   },
   {
-    icon: "receipt",
+    icon: "i-material-symbols-receipt",
     title: "Administrativa",
     description:
       "Vyúčtování služeb, evidence plateb, komunikace s nájemníky a úřady.",
   },
   {
-    icon: "bar_chart",
+    icon: "i-material-symbols-bar-chart",
     title: "Ekonomická agenda",
     description:
       "Přehledné reporty, optimalizace výnosů a daňová evidence pronájmu.",
@@ -140,11 +140,7 @@ const relatedLinks = [
                 <template #header>
                   <UiTitle size="sm">
                     <template #eyebrow>
-                      <span
-                        class="material-symbols-outlined text-secondary-700"
-                        style="font-size: 2rem"
-                        >{{ item.icon }}</span
-                      >
+                      <UIcon :name="item.icon" class="text-secondary-700 size-8" />
                     </template>
                     <template #title>
                       <h3 class="text-title-lg font-serif text-primary-800">
