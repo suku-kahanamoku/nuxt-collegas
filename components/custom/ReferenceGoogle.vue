@@ -66,19 +66,11 @@ const selected = computed(() => references[selectedIndex.value]);
     bg="bg-surface-container-low"
     cols="lg"
     gap="gap-20"
+    img-class="border-12 border-white rounded-md shadow-lg"
+    :bg-image="selected?.avatar"
     left-class="fade-in"
     right-class="fade-in"
   >
-    <template #image>
-      <div class="aspect-4/5 relative" v-if="selected">
-        <div
-          class="w-full h-full bg-cover bg-center border-12 border-white rounded-md shadow-lg"
-          :style="{ backgroundImage: `url(${selected.avatar})` }"
-          :aria-label="selected.name"
-        ></div>
-      </div>
-    </template>
-
     <template #overlay>
       <div
         v-if="selected"

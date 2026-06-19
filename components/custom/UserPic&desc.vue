@@ -2,20 +2,18 @@
 withDefaults(
   defineProps<{
     bg?: string;
-    imgSrc?: string;
-    imgAlt?: string;
+    bgImage?: string;
     imgClass?: string;
-    gap?: string;
     cols?: "md" | "lg";
+    gap?: string;
     leftClass?: string;
     rightClass?: string;
   }>(),
   {
     bg: "bg-surface",
-    imgAlt: "",
-    imgClass: "w-full aspect-square object-cover shadow-sm",
-    gap: "gap-section-gap",
+    imgClass: "",
     cols: "md",
+    gap: "gap-section-gap",
     leftClass: "",
     rightClass: "",
   },
@@ -34,10 +32,13 @@ withDefaults(
       >
         <!-- Left: image + overlay -->
         <div :class="['relative', leftClass]">
-          <slot name="image">
-            <img v-if="imgSrc" :src="imgSrc" :alt="imgAlt" :class="imgClass" />
-          </slot>
-          <slot name="overlay" />
+          <div class="aspect-4/5 relative">
+            <div
+              :class="['w-full h-full bg-cover bg-center', imgClass]"
+              :style="bgImage ? { backgroundImage: `url(${bgImage})` } : undefined"
+            />
+            <slot name="overlay" />
+          </div>
         </div>
 
         <!-- Right: content -->
