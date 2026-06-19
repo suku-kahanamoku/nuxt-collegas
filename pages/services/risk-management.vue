@@ -115,14 +115,10 @@ const caseStudies = [
       title="Připraveni zajistit vaši budoucnost?"
       body="Nechte si nastavit ochranu, na kterou se můžete skutečně spolehnout. Naši poradci jsou připraveni posoudit vaši situaci bez závazků."
     >
-      <UButton
-        color="secondary"
-        variant="solid"
-        size="lg"
-        class="bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors px-8 shrink-0"
-      >
+      <UiButton to="/contact">
         Domluvit konzultaci
-      </UButton>
+        <UIcon name="i-material-symbols-arrow-forward" class="size-5 transition-transform duration-200 group-hover:translate-x-1" />
+      </UiButton>
     </UiDarkBanner>
 
     <section class="py-section-gap bg-surface">
