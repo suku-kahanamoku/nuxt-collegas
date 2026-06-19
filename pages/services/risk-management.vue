@@ -183,74 +183,28 @@ const caseStudies = [
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->
-          <div class="fade-in">
-            <div class="aspect-3/4 mb-6 overflow-hidden">
-              <div
-                class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                style="
-                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo&quot;);
-                "
-              ></div>
-            </div>
-            <h3 class="font-headline-md text-[24px] text-primary-800">
-              Lukáš Formánek
-            </h3>
-            <p
-              class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
-            >
-              Specialista na zajištění rizik
-            </p>
-            <p class="font-body-md text-on-surface-variant">
-              Přes 10 let zkušeností s nastavováním pojistné ochrany pro fyzické
-              osoby i podnikatele. Certifikovaný finanční poradce.
-            </p>
-          </div>
+          <UiUserCard
+            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo"
+            name="Lukáš Formánek"
+            role="Specialista na zajištění rizik"
+            description="Přes 10 let zkušeností s nastavováním pojistné ochrany pro fyzické osoby i podnikatele. Certifikovaný finanční poradce."
+          />
           <!-- Member 2 -->
-          <div class="fade-in" style="transition-delay: 100ms">
-            <div class="aspect-3/4 mb-6 overflow-hidden">
-              <div
-                class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                style="
-                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs&quot;);
-                "
-              ></div>
-            </div>
-            <h3 class="font-headline-md text-[24px] text-primary-800">
-              Filip Beneš
-            </h3>
-            <p
-              class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
-            >
-              Poradce pro pojistnou ochranu
-            </p>
-            <p class="font-body-md text-on-surface-variant">
-              Specializuje se na komplexní zajištění rizik v oblasti majetkového
-              a životního pojištění. Člen AFIZ.
-            </p>
-          </div>
+          <UiUserCard
+            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs"
+            name="Filip Beneš"
+            role="Poradce pro pojistnou ochranu"
+            description="Specializuje se na komplexní zajištění rizik v oblasti majetkového a životního pojištění. Člen AFIZ."
+            delay="100ms"
+          />
           <!-- Member 3 -->
-          <div class="fade-in" style="transition-delay: 200ms">
-            <div class="aspect-3/4 mb-6 overflow-hidden">
-              <div
-                class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-                style="
-                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw&quot;);
-                "
-              ></div>
-            </div>
-            <h3 class="font-headline-md text-[24px] text-primary-800">
-              Tomáš Kalous
-            </h3>
-            <p
-              class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
-            >
-              Zakladatel & senior poradce
-            </p>
-            <p class="font-body-md text-on-surface-variant">
-              Zakladatel skupiny Collegas s více než 20 lety praxe v oblasti
-              finančního plánování a řízení rizik.
-            </p>
-          </div>
+          <UiUserCard
+            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw"
+            name="Tomáš Kalous"
+            role="Zakladatel & senior poradce"
+            description="Zakladatel skupiny Collegas s více než 20 lety praxe v oblasti finančního plánování a řízení rizik."
+            delay="200ms"
+          />
         </div>
       </UContainer>
     </section>
@@ -262,75 +216,46 @@ const caseStudies = [
         >
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
+            <UiImageText
+              img-src="/img/risk-shield.svg"
+              img-alt="Zajištění rizik"
+              img-right
             >
-              <div class="order-2 md:order-1 space-y-stack-md">
-                <p class="text-body-md text-on-surface-variant">
-                  Detailně analyzujeme vaše stávající pojistné smlouvy a
-                  identifikujeme nedostatečné krytí, zbytečné duplicity i
-                  oblasti, kde naopak platíte více, než je nutné. Výsledkem je
-                  řešení, které dává smysl nejen z pohledu ceny, ale především
-                  kvality ochrany.
-                </p>
-                <UiButton
-                  to="/contact"
-                  color="secondary"
-                  trailing-icon="i-material-symbols-arrow-forward"
-                  :ui="{
-                    trailingIcon:
-                      'transition-transform duration-200 group-hover:translate-x-1',
-                  }"
-                >
-                  Nechte si nastavit ochranu, na kterou se můžete opravdu
-                  spolehnout
-                </UiButton>
-              </div>
-              <div
-                class="order-1 md:order-2 bg-surface-container-highest overflow-hidden"
-                style="aspect-ratio: 4/5"
-              >
-                <img
-                  src="/img/risk-shield.svg"
-                  alt="Zajištění rizik"
-                  class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
-                />
-              </div>
-            </div>
+              <p class="text-body-md text-on-surface-variant">
+                Detailně analyzujeme vaše stávající pojistné smlouvy a
+                identifikujeme nedostatečné krytí, zbytečné duplicity i oblasti,
+                kde naopak platíte více, než je nutné. Výsledkem je řešení,
+                které dává smysl nejen z pohledu ceny, ale především kvality
+                ochrany.
+              </p>
+              <UiButton to="/contact">
+                Nechte si nastavit ochranu, na kterou se můžete opravdu
+                spolehnout
+              </UiButton>
+            </UiImageText>
 
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start"
+            <UiImageText
+              img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
+              img-alt="Finanční poradce při konzultaci"
             >
-              <div
-                class="bg-surface-container-highest overflow-hidden"
-                style="aspect-ratio: 4/5"
-              >
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
-                  alt="Finanční poradce při konzultaci"
-                  class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
-                />
-              </div>
-              <div class="space-y-stack-md">
-                <h2 class="text-headline-lg font-serif text-primary-800">
-                  Komplexní ochrana
-                </h2>
-                <p class="text-body-md text-on-surface-variant">
-                  V případě podnikání nebo většího majetku pracujeme i s
-                  komplexnějšími scénáři, kde je cílem zajistit kontinuitu a
-                  minimalizovat dopady neočekávaných událostí. Řešíme nejen
-                  standardní životní a majetkové pojištění, ale i specifická
-                  rizika spojená s podnikatelskou činností, nemovitostmi nebo
-                  investičním portfoliem.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Správně nastavené zajištění vám přináší především klid. Víte,
-                  že ať se stane cokoliv, máte oporu a vaše finanční stabilita
-                  není ohrožena jednou nečekanou událostí. Přistupujeme k vám
-                  individuálně.
-                </p>
-              </div>
-            </div>
+              <h2 class="text-headline-lg font-serif text-primary-800">
+                Komplexní ochrana
+              </h2>
+              <p class="text-body-md text-on-surface-variant">
+                V případě podnikání nebo většího majetku pracujeme i s
+                komplexnějšími scénáři, kde je cílem zajistit kontinuitu a
+                minimalizovat dopady neočekávaných událostí. Řešíme nejen
+                standardní životní a majetkové pojištění, ale i specifická
+                rizika spojená s podnikatelskou činností, nemovitostmi nebo
+                investičním portfoliem.
+              </p>
+              <p class="text-body-md text-on-surface-variant">
+                Správně nastavené zajištění vám přináší především klid. Víte, že
+                ať se stane cokoliv, máte oporu a vaše finanční stabilita není
+                ohrožena jednou nečekanou událostí. Přistupujeme k vám
+                individuálně.
+              </p>
+            </UiImageText>
           </div>
 
           <UiAside

@@ -35,7 +35,9 @@ withDefaults(
           <div class="aspect-4/5 relative">
             <div
               :class="['w-full h-full bg-cover bg-center', imgClass]"
-              :style="bgImage ? { backgroundImage: `url(${bgImage})` } : undefined"
+              :style="
+                bgImage ? { backgroundImage: `url(${bgImage})` } : undefined
+              "
             />
             <slot name="overlay" />
           </div>
