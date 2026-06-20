@@ -19,7 +19,7 @@ defineProps<{
       />
     </div>
     <div
-      class="space-y-stack-md"
+      class="grid space-y-stack-md items-center"
       :class="imgRight ? 'order-2 md:order-1' : undefined"
     >
       <slot />

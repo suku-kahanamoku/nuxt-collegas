@@ -8,6 +8,7 @@ withDefaults(
     gap?: string;
     leftClass?: string;
     rightClass?: string;
+    overlayClass?: string;
   }>(),
   {
     bg: "bg-surface",
@@ -16,6 +17,7 @@ withDefaults(
     gap: "gap-section-gap",
     leftClass: "",
     rightClass: "",
+    overlayClass: "-bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end",
   },
 );
 </script>
@@ -39,7 +41,13 @@ withDefaults(
                 bgImage ? { backgroundImage: `url(${bgImage})` } : undefined
               "
             />
-            <slot name="overlay" />
+            <!-- Overlay box -->
+            <div
+              v-if="$slots.overlay"
+              :class="['absolute text-on-primary', overlayClass]"
+            >
+              <slot name="overlay" />
+            </div>
           </div>
         </div>
 

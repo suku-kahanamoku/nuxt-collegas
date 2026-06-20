@@ -1,0 +1,51 @@
+<script setup lang="ts">
+defineProps<{
+  imgSrc: string;
+  imgAlt?: string;
+  name: string;
+  address: string;
+  description?: string;
+  managerName: string;
+  managerImgSrc: string;
+  managerImgAlt?: string;
+  managerLabel?: string;
+}>();
+</script>
+
+<template>
+  <div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+    <div class="aspect-video overflow-hidden">
+      <img
+        :src="imgSrc"
+        :alt="imgAlt ?? name"
+        class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300"
+      />
+    </div>
+    <div class="p-stack-md grow flex flex-col">
+      <h3 class="font-headline-md text-headline-md text-primary-800 mb-base">
+        {{ name }}
+      </h3>
+      <p class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm">
+        {{ address }}
+      </p>
+      <p v-if="description" class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+        {{ description }}
+      </p>
+      <div class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base">
+        <img
+          :src="managerImgSrc"
+          :alt="managerImgAlt ?? managerName"
+          class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
+        />
+        <div>
+          <span class="font-label-caps text-label-caps text-secondary-800 block uppercase">
+            {{ managerLabel ?? 'Vedoucí pobočky' }}
+          </span>
+          <span class="font-body-md text-body-md text-on-surface font-semibold">
+            {{ managerName }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

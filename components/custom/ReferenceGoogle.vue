@@ -70,17 +70,11 @@ const selected = computed(() => references[selectedIndex.value]);
     :bg-image="selected?.avatar"
     left-class="fade-in"
     right-class="fade-in"
+    overlay-class="-bottom-8 -right-8 bg-primary-800 p-6 max-w-xs hidden md:flex flex-col"
   >
     <template #overlay>
-      <div
-        v-if="selected"
-        class="absolute -bottom-8 -right-8 bg-primary-800 p-6 text-on-primary max-w-xs hidden md:block"
-      >
-        <p class="text-body-lg italic mb-4">"{{ selected.quote }}"</p>
-        <span class="font-label-caps text-secondary-fixed"
-          >— {{ selected.name }}</span
-        >
-      </div>
+      <p class="text-body-lg italic mb-4">"{{ selected?.quote }}"</p>
+      <span class="font-label-caps text-secondary-fixed">— {{ selected?.name }}</span>
     </template>
 
     <span

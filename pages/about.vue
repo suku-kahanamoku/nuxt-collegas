@@ -163,12 +163,8 @@ const principles = [
       right-class="space-y-stack-md"
     >
       <template #overlay>
-        <div
-          class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end text-on-primary"
-        >
-          <span class="font-display-xl text-display-xl leading-none">20+</span>
-          <span class="font-label-caps uppercase tracking-widest">Let v oboru</span>
-        </div>
+        <span class="font-display-xl text-display-xl leading-none">20+</span>
+        <span class="font-label-caps uppercase tracking-widest">Let v oboru</span>
       </template>
 
       <span class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
