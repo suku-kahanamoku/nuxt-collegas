@@ -73,12 +73,12 @@ const testimonials = computed(
   <div class="w-full bg-primary-950">
     <!-- Hero: full-viewport dark + warm radial gradient -->
     <section
-      class="relative min-h-screen flex flex-col justify-end overflow-hidden"
+      class="relative min-h-screen flex flex-col justify-center overflow-hidden"
       style="
         background: radial-gradient(
           ellipse 90% 80% at 65% 35%,
-          rgba(92, 69, 32, 0.65) 0%,
-          rgba(2, 21, 16, 0.92) 70%
+          rgba(10, 72, 53, 0.7) 0%,
+          rgba(2, 21, 16, 0.95) 70%
         );
       "
     >
@@ -118,9 +118,7 @@ const testimonials = computed(
       </div>
 
       <!-- Text content -->
-      <div
-        class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 pb-24 pt-36"
-      >
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 py-24">
         <!-- Role badge -->
         <p
           class="text-xs font-bold uppercase tracking-widest mb-5 transition-all duration-700 text-secondary-400"
@@ -213,7 +211,7 @@ const testimonials = computed(
     <!-- About section -->
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <p
               class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
@@ -276,7 +274,9 @@ const testimonials = computed(
     <!-- Testimonials -->
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
-        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-16">
+        <h2
+          class="text-4xl lg:text-5xl font-bold text-white mb-16 text-center leading-tight"
+        >
           Výsledky a Reference
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -287,7 +287,7 @@ const testimonials = computed(
             style="
               background: linear-gradient(
                 230deg,
-                rgba(92, 69, 32, 0.2) 0%,
+                rgba(4, 41, 30, 0.35) 0%,
                 transparent 97%
               );
             "
@@ -324,7 +324,7 @@ const testimonials = computed(
         >
           Kontakt
         </p>
-        <h2 class="text-4xl font-bold text-white mb-12">Kontakt</h2>
+        <h2 class="text-4xl font-bold text-white mb-12">Kde mě najdete</h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div class="space-y-5">
             <NuxtLink
