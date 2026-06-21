@@ -4,98 +4,307 @@
     "name": "Tomáš Kalous",
     "role": "Zakladatel",
     "photo": "https://collegas.cz/img/T_Kalous01.jpg",
-    "description": "Zakladatel skupiny Collegas, zaměřuje se na strategický rozvoj klientských služeb, finanční analýzy a dlouhodobé plánování pro privátní klienty.",
-    "slogan": "Strategie pro reálné cíle",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Zakladatel & strateg",
+    "intro": "Zakladatel skupiny Collegas, se zaměřením na strategii služeb a finanční plánování pro privátní klienty.",
+    "about": "Tomáš spoluzakládal Collegas a vede strategický rozvoj firemních služeb. V praxi kombinuje finanční analýzu s dlouhodobým plánováním pro rodiny a podnikatele. Pomáhá klientům jasně definovat cíle a vytvořit realizovatelný plán, který roste s jejich životní fází.",
+    "email": "tomas.kalous@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Spolehlivý partner pro váš finanční růst.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "20+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "CEO",
+        "label": "Zakladatel"
+      },
+      {
+        "value": "500+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "marek-butula",
     "name": "Marek Butula",
     "role": "Zakladatel",
     "photo": "https://collegas.cz/img/new_team/marek_butula.jpg",
-    "description": "Zakladatel a stratég, buduje poradenský přístup založený na důvěře a dlouhodobých vztazích s klienty.",
-    "slogan": "Strategie, která funguje",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Zakladatel & byznys stratég",
+    "intro": "Marek se soustředí na budování vztahů a dlouhodobých strategií pro klienty i partnery.",
+    "about": "Marek se zaměřuje na strategické řízení a rozvoj poradenských služeb. Ve své práci preferuje přístup založený na důvěře, transparentnosti a dlouhodobém výsledku pro klienty.",
+    "email": "marek.butula@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Byznys bez strategie je jen náhoda.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "15+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "CEO",
+        "label": "Zakladatel"
+      },
+      {
+        "value": "400+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "lukas-formanek",
     "name": "Lukáš Formánek",
     "role": "Senior finanční specialista",
     "photo": "https://collegas.cz/img/new_team/formanek_new.jpg",
-    "description": "Senior finanční specialista s důrazem na vzdělání a praxi; pomáhá klientům navigovat investice, pojištění a úvěry.",
-    "slogan": "Dlouhodobá stabilita",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior finanční specialista",
+    "intro": "Lukáš pomáhá klientům s investicemi, pojištěním a úvěry — s důrazem na dlouhodobou udržitelnost.",
+    "about": "Lukáš přináší hluboké odborné znalosti a praxi v oblasti finančního plánování. Zaměřuje se na tvorbu strategií, které klientům umožní dosahovat finančních cílů s rozmyslem a stabilitou.",
+    "email": "lukas.formanek@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Dlouhodobě vítězí ti, kdo plánují s rozvahou.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "12+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "CFP",
+        "label": "Certifikát"
+      },
+      {
+        "value": "200+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "filip-benes",
     "name": "Filip Beneš",
     "role": "Senior finanční konzultant",
     "photo": "https://collegas.cz/img/F_Bene%C5%A102.jpg",
-    "description": "Senior konzultant propojující osobní cíle klientů s praktickou finanční strategií a ochranou majetku.",
-    "slogan": "Ochrana, na kterou spoléháte",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior konzultant pro komplexní finance",
+    "intro": "Filip pomáhá klientům sladit osobní cíle s reálnou finanční strategií a zabezpečením majetku.",
+    "about": "Filip přistupuje ke každému klientovi individuálně — od analýzy současného stavu po návrh konkretizovaných kroků. Zvládá komplexní kombinace investic a pojištění.",
+    "email": "filip.benes@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Každý klient si zaslouží řešení na míru.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "10+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "150+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "jan-radosta",
     "name": "Jan Radosta",
     "role": "Specialista pro privátní klientelu",
     "photo": "https://collegas.cz/img/radosta-1.jpg",
-    "description": "Specialista pro privátní klientelu s více než 17 lety praxe; klade důraz na pečlivý, individuální přístup a aktuální znalosti z oboru.",
-    "slogan": "Individuální přístup, pevné výsledky",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Specialista pro privátní klientelu",
+    "intro": "Jan nabízí individuální péči a řešení na míru pro náročnější privátní klienty.",
+    "about": "Jan disponuje dlouholetou praxí v práci s majetkem a privátní klientelou. Jeho přístup je založený na důkladném porozumění situaci klienta a pečlivém nastavení dlouhodobých plánů.",
+    "email": "jan.radosta@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Důvěra se buduje činem, ne slibem.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "12+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "180+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "eva-pankova",
     "name": "Eva Pánková",
     "role": "Majetkový specialista",
     "photo": "https://collegas.cz/img/new_team/eva_pankova.jpg",
-    "description": "Majetkový specialista soustředěný na hypotéky a úvěry; pomáhá klientům dosáhnout cíle vlastního bydlení.",
-    "slogan": "Váš průvodce k bydlení",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Majetkový specialista (hypotéky & úvěry)",
+    "intro": "Eva se specializuje na řešení financování bydlení a majetkové poradenství pro rodiny a jednotlivce.",
+    "about": "Eva klientům asistuje při plánování financování bydlení, včetně hypotečních řešení a úvěrových strategií. Pomáhá zjednodušit složitá rozhodnutí a zabezpečit stabilní cestu k vlastnímu bydlení.",
+    "email": "eva.pankova@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Vlastní bydlení je dostupné — stačí správný plán.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "8+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "Hypotéky",
+        "label": "Specializace"
+      },
+      {
+        "value": "120+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "iveta-butulova",
     "name": "Iveta Butulová",
     "role": "Senior finanční specialista",
     "photo": "https://collegas.cz/img/new_team/iveta_butulova.jpg",
-    "description": "Senior finanční specialistka poskytující citlivě nastavená dlouhodobá řešení a kontinuální servis klientům.",
-    "slogan": "Zkušenost, která pomáhá",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior finanční specialista",
+    "intro": "Iveta nabízí dlouhodobá a citlivě nastavená finanční řešení s důrazem na kontinuitu servisu.",
+    "about": "Iveta pomáhá klientům nastavit finanční produkty a servis tak, aby odpovídaly jejich životním změnám. Klade důraz na srozumitelnost, konzistenci a dostupný servis.",
+    "email": "iveta.butulova@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Kontinuita servisu je základ úspěšné spolupráce.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "10+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "CFP",
+        "label": "Certifikát"
+      },
+      {
+        "value": "160+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "josef-zidek",
     "name": "Josef Zídek",
     "role": "Senior finanční konzultant",
     "photo": "https://collegas.cz/img/J_Zidek.jpg",
-    "description": "Senior konzultant, zaměřený na systematické a transparentní řízení financí klientů.",
-    "slogan": "Řád a přehled ve financích",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior konzultant",
+    "intro": "Josef se soustředí na systematické nastavení financí a transparentní řízení majetku.",
+    "about": "Josef pomáhá klientům nastavit procesy a finanční řešení, která přinášejí pořádek a jasný přehled nad finanční situací. Preferuje dlouhodobě udržitelné řešení.",
+    "email": "josef.zidek@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Pořádek ve financích přináší klid v životě.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "11+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "140+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "david-strnad",
     "name": "David Strnad",
     "role": "Senior finanční konzultant",
     "photo": "https://collegas.cz/img/new_team/david_strnad.jpg",
-    "description": "Specialista s dlouholetou obchodní zkušeností; buduje dlouhodobé vztahy a řešení přizpůsobená životním situacím klientů.",
-    "slogan": "Důvěra v dlouhodobém partnerství",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior konzultant s obchodní praxí",
+    "intro": "David klade důraz na dlouhodobé vztahy s klienty a řešení přizpůsobená konkrétním životním situacím.",
+    "about": "David kombinuje obchodní zkušenost s poradenstvím — pomáhá klientům najít praktická a dlouhodobě udržitelná řešení pro jejich finance.",
+    "email": "david.strnad@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Vztahy a výsledky jdou ruku v ruce.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "9+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "130+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "igor-stransky",
     "name": "Igor Stránský",
     "role": "Senior finanční konzultant",
     "photo": "https://collegas.cz/img/new_team/igor_stransky.jpg",
-    "description": "Senior konzultant, klade důraz na jasné nastavení priorit a individuální přístup k rodinným financím.",
-    "slogan": "Jasné priority, klid na cestě",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior konzultant",
+    "intro": "Igor pomáhá klientům nastavit priority a plánovat finance s ohledem na rodinné i osobní cíle.",
+    "about": "Igor pracuje s klienty na vytváření přehledných plánů a priorit, které pomáhají dosáhnout klidné a stabilní finanční budoucnosti.",
+    "email": "igor.stransky@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Finanční stabilita začíná jasnou prioritou.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "10+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "110+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   },
   {
     "slug": "lukas-bajgar",
     "name": "Lukáš Bajgar",
     "role": "Senior finanční konzultant",
     "photo": "https://collegas.cz/img/new_team/lukas_bajgar.jpg",
-    "description": "Pomáhá převést složité finanční rozhodnutí do srozumitelných a praktických kroků pro klienty.",
-    "slogan": "Srozumitelná řešení",
-    "brand": "COLLEGA ENTERPRISE"
+    "headline": "Senior konzultant",
+    "intro": "Lukáš převádí složité finanční téma do srozumitelných kroků a konkrétních doporučení.",
+    "about": "Lukáš pomáhá klientům udělat informovaná rozhodnutí — od nastavení investic až po řízení rizik a pojištění.",
+    "email": "lukas.bajgar@collegas.cz",
+    "phone": "",
+    "brand": "COLLEGA ENTERPRISE",
+    "slogan": "Složité věci lze vysvětlit jednoduše — pokud jim rozumíte.",
+    "location": "Brno, Jihomoravský kraj",
+    "metrics": [
+      {
+        "value": "8+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "PFP",
+        "label": "Oborový Titul"
+      },
+      {
+        "value": "100+",
+        "label": "Spokojených Klientů"
+      }
+    ]
   }
 ]
