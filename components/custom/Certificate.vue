@@ -66,10 +66,6 @@ const imgErrorByIndex = ref<boolean[]>(certifications.map(() => false));
 function onImgErrorByIndex(i: number) {
   imgErrorByIndex.value[i] = true;
 }
-
-const imageCertifications = computed(() =>
-  certifications.filter((cert) => !!cert.img),
-);
 </script>
 
 <template>
@@ -84,53 +80,57 @@ const imageCertifications = computed(() =>
             img-alt="Certifikace"
             img-right
           >
-            <h2
-              class="text-headline-lg font-serif text-primary-800 leading-tight"
-            >
-              Certifikáty
-            </h2>
-            <ul class="flex flex-col gap-stack-sm">
-              <li
-                v-for="cert in certifications"
-                :key="`list-a-${cert.name}`"
-                class="flex items-center gap-3"
+            <div class="grid space-y-stack-md items-center from-left">
+              <h2
+                class="text-headline-lg font-serif text-primary-800 leading-tight"
               >
-                <UIcon
-                  name="i-material-symbols-verified"
-                  class="text-secondary-700 text-base shrink-0"
-                />
-                <span class="text-body-md text-primary-800">
-                  {{ cert.name }}
-                  <span
-                    v-if="cert.year"
-                    class="text-on-surface-variant font-normal"
-                    >&thinsp;({{ cert.year }})</span
-                  >
-                </span>
-              </li>
-            </ul>
+                Certifikáty
+              </h2>
+              <ul class="flex flex-col gap-stack-sm">
+                <li
+                  v-for="cert in certifications"
+                  :key="`list-a-${cert.name}`"
+                  class="flex items-center gap-3"
+                >
+                  <UIcon
+                    name="i-material-symbols-verified"
+                    class="text-secondary-700 text-base shrink-0"
+                  />
+                  <span class="text-body-md text-primary-800">
+                    {{ cert.name }}
+                    <span
+                      v-if="cert.year"
+                      class="text-on-surface-variant font-normal"
+                      >&thinsp;({{ cert.year }})</span
+                    >
+                  </span>
+                </li>
+              </ul>
+            </div>
           </UiImageText>
 
           <UiImageText
             img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
             img-alt="Certifikace"
           >
-            <h2 class="text-headline-lg font-serif text-primary-800">
-              Seniorita
-            </h2>
-            <ul class="flex flex-col gap-stack-sm">
-              <li
-                v-for="item in seniority"
-                :key="item"
-                class="flex items-start gap-3 text-body-md text-on-surface-variant"
-              >
-                <UIcon
-                  name="i-material-symbols-check-circle-outline"
-                  class="text-secondary-700 text-base shrink-0 mt-0.5"
-                />
-                {{ item }}
-              </li>
-            </ul>
+            <div class="grid space-y-stack-md items-center from-bottom">
+              <h2 class="text-headline-lg font-serif text-primary-800">
+                Seniorita
+              </h2>
+              <ul class="flex flex-col gap-stack-sm">
+                <li
+                  v-for="item in seniority"
+                  :key="item"
+                  class="flex items-start gap-3 text-body-md text-on-surface-variant"
+                >
+                  <UIcon
+                    name="i-material-symbols-check-circle-outline"
+                    class="text-secondary-700 text-base shrink-0 mt-0.5"
+                  />
+                  {{ item }}
+                </li>
+              </ul>
+            </div>
           </UiImageText>
         </div>
 

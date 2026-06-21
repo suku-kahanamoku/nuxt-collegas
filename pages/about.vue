@@ -78,7 +78,7 @@ const principles = [
             />
           </div>
           <div
-            class="absolute -bottom-8 -right-8 bg-secondary-fixed p-stack-md max-w-xs shadow-xl hidden lg:block"
+            class="absolute -bottom-8 -right-8 bg-secondary-fixed p-stack-md max-w-xs shadow-xl hidden lg:block from-bottom"
           >
             <p
               class="text-on-secondary-fixed font-headline-md italic leading-tight"
@@ -87,7 +87,7 @@ const principles = [
             </p>
           </div>
         </div>
-        <div class="order-1 md:order-2">
+        <div class="order-1 md:order-2 from-right">
           <span
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
@@ -164,26 +164,29 @@ const principles = [
     >
       <template #overlay>
         <span class="font-display-xl text-display-xl leading-none">20+</span>
-        <span class="font-label-caps uppercase tracking-widest">Let v oboru</span>
+        <span class="font-label-caps uppercase tracking-widest"
+          >Let v oboru</span
+        >
       </template>
 
-      <span class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+      <span
+        class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
         >Naše zásady</span
       >
       <h2 class="text-headline-lg font-serif text-primary-800">
         Naše principy
       </h2>
       <p class="font-body-md text-body-md text-on-surface-variant">
-        Základem je důkladná analýza a otevřená komunikace. Nejprve
-        definujeme vaše cíle, časový horizont a toleranci k riziku. Teprve
-        poté navrhujeme konkrétní strukturu řešení.
+        Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
+        vaše cíle, časový horizont a toleranci k riziku. Teprve poté navrhujeme
+        konkrétní strukturu řešení.
       </p>
       <p
         class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
       >
         „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-        scénáře – pozitivní i negativní. Naší rolí je tato rizika
-        transparentně pojmenovat, kvantifikovat a řídit."
+        scénáře – pozitivní i negativní. Naší rolí je tato rizika transparentně
+        pojmenovat, kvantifikovat a řídit."
       </p>
     </CustomUserPic&desc>
 
