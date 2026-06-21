@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRoute, useHead } from "#imports";
 import { ref, onMounted, computed } from "vue";
+import { useIntroAnimate } from "~/composables/useIntroAnimate";
 import usersData from "~/assets/data/users.json";
 
 const route = useRoute();
@@ -29,14 +30,12 @@ useHead({
 const email = user.email || `${slug.replace(/-/g, ".")}@collegas.cz`;
 const phone = user.phone || "";
 
-const mounted = ref(false);
-onMounted(() => setTimeout(() => (mounted.value = true), 80));
+const { mounted, splitChars } = useIntroAnimate({
+  stagger: 30,
+  initialDelay: 80,
+});
 
-const nameParts = computed(() =>
-  (user.name || "")
-    .split("")
-    .map((ch: string, idx: number) => ({ ch, delay: `${idx * 30}ms` })),
-);
+const nameParts = computed(() => splitChars(user.name));
 
 const metrics = computed(
   () =>
