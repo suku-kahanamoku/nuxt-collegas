@@ -87,7 +87,7 @@ const principles = [
             </p>
           </div>
         </div>
-        <div class="order-1 md:order-2 from-right">
+        <div class="order-1 md:order-2">
           <span
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
@@ -125,7 +125,7 @@ const principles = [
       <UContainer
         class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-center"
       >
-        <div class="lg:col-span-8">
+        <div class="lg:col-span-8 from-left">
           <span
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Co je pro nás podstatné</span
@@ -160,7 +160,6 @@ const principles = [
     <CustomUserPic&desc
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
       img-class="shadow-sm"
-      right-class="space-y-stack-md"
     >
       <template #overlay>
         <span class="font-display-xl text-display-xl leading-none">20+</span>
@@ -169,25 +168,27 @@ const principles = [
         >
       </template>
 
-      <span
-        class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-        >Naše zásady</span
-      >
-      <h2 class="text-headline-lg font-serif text-primary-800">
-        Naše principy
-      </h2>
-      <p class="font-body-md text-body-md text-on-surface-variant">
-        Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
-        vaše cíle, časový horizont a toleranci k riziku. Teprve poté navrhujeme
-        konkrétní strukturu řešení.
-      </p>
-      <p
-        class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
-      >
-        „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-        scénáře – pozitivní i negativní. Naší rolí je tato rizika transparentně
-        pojmenovat, kvantifikovat a řídit."
-      </p>
+      <div class="space-y-stack-md from-right">
+        <span
+          class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+          >Naše zásady</span
+        >
+        <h2 class="text-headline-lg font-serif text-primary-800">
+          Naše principy
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
+          vaše cíle, časový horizont a toleranci k riziku. Teprve poté
+          navrhujeme konkrétní strukturu řešení.
+        </p>
+        <p
+          class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
+        >
+          „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
+          scénáře – pozitivní i negativní. Naší rolí je tato rizika
+          transparentně pojmenovat, kvantifikovat a řídit."
+        </p>
+      </div>
     </CustomUserPic&desc>
 
     <section

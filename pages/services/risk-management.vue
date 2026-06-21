@@ -126,7 +126,6 @@ const caseStudies = [
     <CustomUserPic&desc
       bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
       img-class="shadow-sm"
-      right-class="space-y-stack-md"
     >
       <template #overlay>
         <span class="font-display-xl text-display-xl leading-none">20+</span>
@@ -135,25 +134,27 @@ const caseStudies = [
         >
       </template>
 
-      <span
-        class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-        >Naše zásady</span
-      >
-      <h2 class="text-headline-lg font-serif text-primary-800">
-        Naše principy
-      </h2>
-      <p class="font-body-md text-body-md text-on-surface-variant">
-        Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
-        vaše cíle, časový horizont a toleranci k riziku. Teprve poté navrhujeme
-        konkrétní strukturu řešení.
-      </p>
-      <p
-        class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
-      >
-        „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-        scénáře – pozitivní i negativní. Naší rolí je tato rizika transparentně
-        pojmenovat, kvantifikovat a řídit."
-      </p>
+      <div class="space-y-stack-md from-right">
+        <span
+          class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
+          >Naše zásady</span
+        >
+        <h2 class="text-headline-lg font-serif text-primary-800">
+          Naše principy
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
+          vaše cíle, časový horizont a toleranci k riziku. Teprve poté
+          navrhujeme konkrétní strukturu řešení.
+        </p>
+        <p
+          class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
+        >
+          „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
+          scénáře – pozitivní i negativní. Naší rolí je tato rizika
+          transparentně pojmenovat, kvantifikovat a řídit."
+        </p>
+      </div>
     </CustomUserPic&desc>
 
     <section class="py-section-gap bg-white">
@@ -214,40 +215,44 @@ const caseStudies = [
               img-alt="Zajištění rizik"
               img-right
             >
-              <p class="text-body-md text-on-surface-variant">
-                Detailně analyzujeme vaše stávající pojistné smlouvy a
-                identifikujeme nedostatečné krytí, zbytečné duplicity i oblasti,
-                kde naopak platíte více, než je nutné. Výsledkem je řešení,
-                které dává smysl nejen z pohledu ceny, ale především kvality
-                ochrany.
-              </p>
-              <UiButton to="/contact">
-                Nechte si nastavit ochranu, na kterou se můžete opravdu
-                spolehnout
-              </UiButton>
+              <div class="grid space-y-stack-md items-center from-left">
+                <p class="text-body-md text-on-surface-variant">
+                  Detailně analyzujeme vaše stávající pojistné smlouvy a
+                  identifikujeme nedostatečné krytí, zbytečné duplicity i
+                  oblasti, kde naopak platíte více, než je nutné. Výsledkem je
+                  řešení, které dává smysl nejen z pohledu ceny, ale především
+                  kvality ochrany.
+                </p>
+                <UiButton to="/contact">
+                  Nechte si nastavit ochranu, na kterou se můžete opravdu
+                  spolehnout
+                </UiButton>
+              </div>
             </UiImageText>
 
             <UiImageText
               img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
               img-alt="Finanční poradce při konzultaci"
             >
-              <h2 class="text-headline-lg font-serif text-primary-800">
-                Komplexní ochrana
-              </h2>
-              <p class="text-body-md text-on-surface-variant">
-                V případě podnikání nebo většího majetku pracujeme i s
-                komplexnějšími scénáři, kde je cílem zajistit kontinuitu a
-                minimalizovat dopady neočekávaných událostí. Řešíme nejen
-                standardní životní a majetkové pojištění, ale i specifická
-                rizika spojená s podnikatelskou činností, nemovitostmi nebo
-                investičním portfoliem.
-              </p>
-              <p class="text-body-md text-on-surface-variant">
-                Správně nastavené zajištění vám přináší především klid. Víte, že
-                ať se stane cokoliv, máte oporu a vaše finanční stabilita není
-                ohrožena jednou nečekanou událostí. Přistupujeme k vám
-                individuálně.
-              </p>
+              <div class="grid space-y-stack-md items-center from-bottom">
+                <h2 class="text-headline-lg font-serif text-primary-800">
+                  Komplexní ochrana
+                </h2>
+                <p class="text-body-md text-on-surface-variant">
+                  V případě podnikání nebo většího majetku pracujeme i s
+                  komplexnějšími scénáři, kde je cílem zajistit kontinuitu a
+                  minimalizovat dopady neočekávaných událostí. Řešíme nejen
+                  standardní životní a majetkové pojištění, ale i specifická
+                  rizika spojená s podnikatelskou činností, nemovitostmi nebo
+                  investičním portfoliem.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Správně nastavené zajištění vám přináší především klid. Víte,
+                  že ať se stane cokoliv, máte oporu a vaše finanční stabilita
+                  není ohrožena jednou nečekanou událostí. Přistupujeme k vám
+                  individuálně.
+                </p>
+              </div>
             </UiImageText>
           </div>
 

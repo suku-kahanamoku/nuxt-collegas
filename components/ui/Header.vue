@@ -9,7 +9,7 @@ const navItems = [
         to: "/services/risk-management",
         icon: "i-material-symbols-shield",
       },
-      {
+      /* {
         label: "Daňové poradenství",
         to: "/services/tax-advisory",
         icon: "i-material-symbols-receipt-long",
@@ -43,7 +43,7 @@ const navItems = [
         label: "Developerské projekty",
         to: "/services/development-projects",
         icon: "i-material-symbols-domain",
-      },
+      }, */
     ],
   },
   { label: "Holding", to: "/holding" },
