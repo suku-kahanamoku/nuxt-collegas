@@ -170,7 +170,7 @@ const testimonials = computed(
             class="flex items-center gap-2 hover:opacity-75 transition-opacity"
           >
             <UIcon
-              name="i-material-symbols-phone"
+              name="mdi:phone"
               class="w-5 h-5 shrink-0 text-secondary-400"
             />
             {{ phone }}
@@ -318,14 +318,14 @@ const testimonials = computed(
 
     <!-- Contact section -->
     <section class="py-24 border-t border-white/6 bg-primary-950">
-      <div class="max-w-7xl mx-auto px-6 lg:px-16">
-        <p
-          class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
-        >
-          Kontakt
-        </p>
-        <h2 class="text-4xl font-bold text-white mb-12">Kde mě najdete</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <UContainer class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+          <p
+            class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
+          >
+            Kontakt
+          </p>
+          <h2 class="text-4xl font-bold text-white mb-12">Kde mě najdete</h2>
           <div class="space-y-5">
             <NuxtLink
               v-if="phone"
@@ -333,7 +333,7 @@ const testimonials = computed(
               class="flex items-center gap-4 text-white hover:opacity-75 transition-opacity text-base"
             >
               <UIcon
-                name="i-material-symbols-phone"
+                name="mdi:phone"
                 class="w-6 h-6 shrink-0 text-secondary-400"
               />
               {{ phone }}
@@ -359,16 +359,16 @@ const testimonials = computed(
               {{ user.location }}
             </span>
           </div>
-          <div v-if="user.location" class="h-64 rounded-2xl overflow-hidden">
-            <iframe
-              class="w-full h-full border-0"
-              :src="`https://maps.google.com/maps?q=${encodeURIComponent(user.location)}&z=15&output=embed`"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            />
-          </div>
         </div>
-      </div>
+        <div v-if="user.location" class="h-64 rounded-2xl overflow-hidden">
+          <iframe
+            class="w-full h-full border-0"
+            :src="`https://maps.google.com/maps?q=${encodeURIComponent(user.location)}&z=15&output=embed`"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </UContainer>
     </section>
 
     <PeopleCarousel />
