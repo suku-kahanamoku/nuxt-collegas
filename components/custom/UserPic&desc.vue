@@ -17,7 +17,8 @@ withDefaults(
     gap: "gap-section-gap",
     leftClass: "",
     rightClass: "",
-    overlayClass: "-bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end",
+    overlayClass:
+      "-bottom-10 -right-10 w-64 h-64 bg-primary-900 p-stack-md hidden lg:flex flex-col justify-end",
   },
 );
 </script>
@@ -44,7 +45,7 @@ withDefaults(
             <!-- Overlay box -->
             <div
               v-if="$slots.overlay"
-              :class="['absolute text-on-primary', overlayClass]"
+              :class="['absolute text-on-primary from-bottom', overlayClass]"
             >
               <slot name="overlay" />
             </div>

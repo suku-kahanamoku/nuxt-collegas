@@ -158,9 +158,7 @@ const caseStudies = [
 
     <section class="py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
-        <div
-          class="flex flex-col md:flex-row justify-between items-end mb-16 fade-in"
-        >
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"

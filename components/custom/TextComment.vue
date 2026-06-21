@@ -13,7 +13,7 @@ defineProps<{
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"
       >
         <!-- Levá strana: label + heading + body -->
-        <div class="md:col-span-7 fade-in">
+        <div class="md:col-span-7">
           <span
             v-if="label"
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
@@ -26,13 +26,15 @@ defineProps<{
           >
             <slot name="heading" />
           </component>
-          <div class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          <div
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+          >
             <slot name="body" />
           </div>
         </div>
 
         <!-- Pravá strana: citát box -->
-        <div class="md:col-span-5 fade-in">
+        <div class="md:col-span-5 from-right">
           <div
             class="relative p-stack-lg border border-outline-variant/30 bg-white shadow-sm"
           >
@@ -52,10 +54,7 @@ defineProps<{
       </div>
 
       <!-- Volitelný footer slot (např. trust badges) -->
-      <div
-        v-if="$slots.footer"
-        class="mx-auto px-gutter"
-      >
+      <div v-if="$slots.footer" class="mx-auto px-gutter">
         <slot name="footer" />
       </div>
     </UContainer>
