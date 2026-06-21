@@ -4,4 +4,4 @@
 
 [build.environment]
   # Increase Node's max heap for builds to avoid "heap out of memory" on Netlify
-  NODE_OPTIONS = "--max-old-space-size=4096"
+  NODE_OPTIONS = "--max-old-space-size=8192"
