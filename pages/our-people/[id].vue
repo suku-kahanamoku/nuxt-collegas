@@ -70,15 +70,15 @@ const testimonials = computed(
 </script>
 
 <template>
-  <div class="w-full" style="background-color: #000">
+  <div class="w-full bg-primary-950">
     <!-- Hero: full-viewport dark + warm radial gradient -->
     <section
       class="relative min-h-screen flex flex-col justify-end overflow-hidden"
       style="
         background: radial-gradient(
           ellipse 90% 80% at 65% 35%,
-          rgba(140, 65, 18, 0.65) 0%,
-          rgba(10, 8, 6, 0.88) 70%
+          rgba(92, 69, 32, 0.65) 0%,
+          rgba(2, 21, 16, 0.92) 70%
         );
       "
     >
@@ -92,15 +92,15 @@ const testimonials = computed(
             max-width: 65%;
             -webkit-mask-image: linear-gradient(
               to left,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0.7) 40%,
-              rgba(0, 0, 0, 0) 100%
+              rgba(2, 21, 16, 1) 0%,
+              rgba(2, 21, 16, 0.7) 40%,
+              rgba(2, 21, 16, 0) 100%
             );
             mask-image: linear-gradient(
               to left,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(0, 0, 0, 0.7) 40%,
-              rgba(0, 0, 0, 0) 100%
+              rgba(2, 21, 16, 1) 0%,
+              rgba(2, 21, 16, 0.7) 40%,
+              rgba(2, 21, 16, 0) 100%
             );
           "
         />
@@ -109,9 +109,9 @@ const testimonials = computed(
           style="
             background: linear-gradient(
               to right,
-              rgba(0, 0, 0, 0.65) 0%,
-              rgba(0, 0, 0, 0.25) 50%,
-              rgba(0, 0, 0, 0) 100%
+              rgba(2, 21, 16, 0.75) 0%,
+              rgba(2, 21, 16, 0.25) 50%,
+              rgba(2, 21, 16, 0) 100%
             );
           "
         />
@@ -123,8 +123,7 @@ const testimonials = computed(
       >
         <!-- Role badge -->
         <p
-          class="text-xs font-bold uppercase tracking-widest mb-5 transition-all duration-700"
-          style="color: rgb(237, 108, 11)"
+          class="text-xs font-bold uppercase tracking-widest mb-5 transition-all duration-700 text-secondary-400"
           :class="
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
           "
@@ -152,8 +151,7 @@ const testimonials = computed(
         <!-- Quote -->
         <p
           v-if="user.slogan"
-          class="text-lg font-semibold mb-10 transition-all duration-700 delay-500"
-          style="color: rgb(255, 241, 230)"
+          class="text-lg font-semibold mb-10 transition-all duration-700 delay-500 text-secondary-50"
           :class="
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           "
@@ -168,50 +166,32 @@ const testimonials = computed(
             mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           "
         >
-          <a
+          <NuxtLink
             v-if="phone"
-            :href="`tel:${phone}`"
+            :to="`tel:${phone}`"
             class="flex items-center gap-2 hover:opacity-75 transition-opacity"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-              class="w-5 h-5 shrink-0"
-              style="fill: rgb(237, 108, 11)"
-            >
-              <path
-                d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"
-              />
-            </svg>
+            <UIcon
+              name="i-material-symbols-phone"
+              class="w-5 h-5 shrink-0 text-secondary-400"
+            />
             {{ phone }}
-          </a>
-          <a
-            :href="`mailto:${email}`"
+          </NuxtLink>
+          <NuxtLink
+            :to="`mailto:${email}`"
             class="flex items-center gap-2 hover:opacity-75 transition-opacity"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-              class="w-5 h-5 shrink-0"
-              style="fill: rgb(237, 108, 11)"
-            >
-              <path
-                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
-              />
-            </svg>
+            <UIcon
+              name="i-material-symbols-mail"
+              class="w-5 h-5 shrink-0 text-secondary-400"
+            />
             {{ email }}
-          </a>
+          </NuxtLink>
           <span v-if="user.location" class="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 256 256"
-              class="w-5 h-5 shrink-0"
-              style="fill: rgb(237, 108, 11)"
-            >
-              <path
-                d="M112,80a16,16,0,1,1,16,16A16,16,0,0,1,112,80ZM64,80a64,64,0,0,1,128,0c0,59.95-57.58,93.54-60,94.95a8,8,0,0,1-7.94,0C121.58,173.54,64,140,64,80Zm16,0c0,42.2,35.84,70.21,48,78.5,12.15-8.28,48-36.3,48-78.5a48,48,0,0,0-96,0Zm122.77,67.63a8,8,0,0,0-5.54,15C213.74,168.74,224,176.92,224,184c0,13.36-36.52,32-96,32s-96-18.64-96-32c0-7.08,10.26-15.26,26.77-21.36a8,8,0,0,0-5.54-15C29.22,156.49,16,169.41,16,184c0,31.18,57.71,48,112,48s112-16.82,112-48C240,169.41,226.78,156.49,202.77,147.63Z"
-              />
-            </svg>
+            <UIcon
+              name="i-material-symbols-location-on"
+              class="w-5 h-5 shrink-0 text-secondary-400"
+            />
             {{ user.location }}
           </span>
         </div>
@@ -223,24 +203,20 @@ const testimonials = computed(
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           "
         >
-          <a
-            :href="`/contact?to=${email}`"
-            class="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-sm text-white hover:opacity-90 transition-opacity"
-            style="background-color: rgb(237, 108, 11)"
-            >Naplánovat Konzultaci</a
+          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+            >Naplánovat Konzultaci</UiButton
           >
         </div>
       </div>
     </section>
 
     <!-- About section -->
-    <section class="py-24" style="background-color: #0a0a0a">
+    <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p
-              class="text-xs font-bold uppercase tracking-widest mb-4"
-              style="color: rgb(237, 108, 11)"
+              class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
             >
               O mně
             </p>
@@ -249,16 +225,13 @@ const testimonials = computed(
             >
               Něco Málo O Mně
             </h2>
-            <p
-              class="text-base leading-relaxed"
-              style="color: rgb(180, 180, 180)"
-            >
+            <p class="text-base leading-relaxed text-white/60">
               {{ user.about || user.description }}
             </p>
           </div>
           <div
-            class="overflow-hidden rounded-2xl"
-            style="background: rgba(30, 15, 5, 0.8); aspect-ratio: 4/5"
+            class="overflow-hidden rounded-2xl bg-primary-900/80"
+            style="aspect-ratio: 4/5"
           >
             <img
               :src="user.photo"
@@ -269,17 +242,14 @@ const testimonials = computed(
         </div>
 
         <!-- Metrics -->
-        <div
-          class="mt-20 grid grid-cols-3 gap-8 border-t pt-16"
-          style="border-color: rgba(255, 255, 255, 0.08)"
-        >
+        <div class="mt-20 grid grid-cols-3 gap-8 border-t pt-16 border-white/8">
           <div v-for="(m, idx) in metrics" :key="idx" class="text-center">
             <p
               class="text-5xl font-bold mb-2"
               style="
                 background: linear-gradient(
                   24deg,
-                  rgb(237, 108, 11) 0%,
+                  var(--color-secondary-400) 0%,
                   rgba(255, 255, 255, 0.55) 100%
                 );
                 -webkit-background-clip: text;
@@ -289,25 +259,22 @@ const testimonials = computed(
             >
               {{ m.value }}
             </p>
-            <p class="text-sm" style="color: rgb(122, 122, 122)">
+            <p class="text-sm text-white/40">
               {{ m.label }}
             </p>
           </div>
         </div>
 
         <div class="mt-16 text-center">
-          <a
-            :href="`/contact?to=${email}`"
-            class="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-sm text-white hover:opacity-90 transition-opacity"
-            style="background-color: rgb(237, 108, 11)"
-            >Naplánovat Konzultaci</a
+          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+            >Naplánovat Konzultaci</UiButton
           >
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-24" style="background-color: #000">
+    <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <h2 class="text-4xl lg:text-5xl font-bold text-white mb-16">
           Výsledky a Reference
@@ -316,113 +283,80 @@ const testimonials = computed(
           <div
             v-for="(t, i) in testimonials"
             :key="i"
-            class="rounded-2xl p-6 border"
+            class="rounded-2xl p-6 border border-primary-800 shadow-lg"
             style="
-              border-color: rgb(43, 43, 43);
               background: linear-gradient(
                 230deg,
-                rgba(92, 41, 3, 0.21) 0%,
-                rgba(0, 0, 0, 0) 97%
+                rgba(92, 69, 32, 0.2) 0%,
+                transparent 97%
               );
-              box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px 0px;
             "
           >
             <p class="text-white leading-relaxed mb-6 text-sm">
               "{{ t.quote }}"
             </p>
-            <p
-              class="text-sm font-medium"
-              style="color: rgba(255, 255, 255, 0.75)"
-            >
+            <p class="text-sm font-medium text-white/75">
               {{ t.author }}
             </p>
             <div class="flex gap-1 mt-3">
-              <svg
+              <UIcon
                 v-for="s in 5"
                 :key="s"
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-4 h-4"
-                style="fill: rgb(237, 108, 11)"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                />
-              </svg>
+                name="i-material-symbols-star"
+                class="w-4 h-4 text-secondary-400"
+              />
             </div>
           </div>
         </div>
         <div class="mt-16 text-center">
-          <a
-            :href="`/contact?to=${email}`"
-            class="inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-sm text-white hover:opacity-90 transition-opacity"
-            style="background-color: rgb(237, 108, 11)"
-            >Naplánovat Konzultaci</a
+          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+            >Naplánovat Konzultaci</UiButton
           >
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
-    <section
-      class="py-24 border-t"
-      style="background-color: #0a0a0a; border-color: rgba(255, 255, 255, 0.06)"
-    >
+    <section class="py-24 border-t border-white/6 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <p
-          class="text-xs font-bold uppercase tracking-widest mb-4"
-          style="color: rgb(237, 108, 11)"
+          class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
         >
           Kontakt
         </p>
         <h2 class="text-4xl font-bold text-white mb-12">Kontakt</h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div class="space-y-5">
-            <a
+            <NuxtLink
               v-if="phone"
-              :href="`tel:${phone}`"
+              :to="`tel:${phone}`"
               class="flex items-center gap-4 text-white hover:opacity-75 transition-opacity text-base"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 256 256"
-                class="w-6 h-6 shrink-0"
-                style="fill: rgb(237, 108, 11)"
-              >
-                <path
-                  d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"
-                /></svg
-              >{{ phone }}
-            </a>
-            <a
-              :href="`mailto:${email}`"
+              <UIcon
+                name="i-material-symbols-phone"
+                class="w-6 h-6 shrink-0 text-secondary-400"
+              />
+              {{ phone }}
+            </NuxtLink>
+            <NuxtLink
+              :to="`mailto:${email}`"
               class="flex items-center gap-4 text-white hover:opacity-75 transition-opacity text-base"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 256 256"
-                class="w-6 h-6 shrink-0"
-                style="fill: rgb(237, 108, 11)"
-              >
-                <path
-                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
-                /></svg
-              >{{ email }}
-            </a>
+              <UIcon
+                name="i-material-symbols-mail"
+                class="w-6 h-6 shrink-0 text-secondary-400"
+              />
+              {{ email }}
+            </NuxtLink>
             <span
               v-if="user.location"
               class="flex items-center gap-4 text-white text-base"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 256 256"
-                class="w-6 h-6 shrink-0"
-                style="fill: rgb(237, 108, 11)"
-              >
-                <path
-                  d="M112,80a16,16,0,1,1,16,16A16,16,0,0,1,112,80ZM64,80a64,64,0,0,1,128,0c0,59.95-57.58,93.54-60,94.95a8,8,0,0,1-7.94,0C121.58,173.54,64,140,64,80Zm16,0c0,42.2,35.84,70.21,48,78.5,12.15-8.28,48-36.3,48-78.5a48,48,0,0,0-96,0Zm122.77,67.63a8,8,0,0,0-5.54,15C213.74,168.74,224,176.92,224,184c0,13.36-36.52,32-96,32s-96-18.64-96-32c0-7.08,10.26-15.26,26.77-21.36a8,8,0,0,0-5.54-15C29.22,156.49,16,169.41,16,184c0,31.18,57.71,48,112,48s112-16.82,112-48C240,169.41,226.78,156.49,202.77,147.63Z"
-                /></svg
-              >{{ user.location }}
+              <UIcon
+                name="i-material-symbols-location-on"
+                class="w-6 h-6 shrink-0 text-secondary-400"
+              />
+              {{ user.location }}
             </span>
           </div>
           <div v-if="user.location" class="h-64 rounded-2xl overflow-hidden">
