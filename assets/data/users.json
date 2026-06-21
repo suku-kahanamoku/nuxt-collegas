@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "tomas-kalous",
+    "name": "Tomáš Kalous",
+    "role": "Zakladatel",
+    "photo": "https://collegas.cz/img/T_Kalous01.jpg",
+    "description": "Zakladatel skupiny Collegas, zaměřuje se na strategický rozvoj klientských služeb, finanční analýzy a dlouhodobé plánování pro privátní klienty.",
+    "slogan": "Strategie pro reálné cíle",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "marek-butula",
+    "name": "Marek Butula",
+    "role": "Zakladatel",
+    "photo": "https://collegas.cz/img/new_team/marek_butula.jpg",
+    "description": "Zakladatel a stratég, buduje poradenský přístup založený na důvěře a dlouhodobých vztazích s klienty.",
+    "slogan": "Strategie, která funguje",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "lukas-formanek",
+    "name": "Lukáš Formánek",
+    "role": "Senior finanční specialista",
+    "photo": "https://collegas.cz/img/new_team/formanek_new.jpg",
+    "description": "Senior finanční specialista s důrazem na vzdělání a praxi; pomáhá klientům navigovat investice, pojištění a úvěry.",
+    "slogan": "Dlouhodobá stabilita",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "filip-benes",
+    "name": "Filip Beneš",
+    "role": "Senior finanční konzultant",
+    "photo": "https://collegas.cz/img/F_Bene%C5%A102.jpg",
+    "description": "Senior konzultant propojující osobní cíle klientů s praktickou finanční strategií a ochranou majetku.",
+    "slogan": "Ochrana, na kterou spoléháte",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "jan-radosta",
+    "name": "Jan Radosta",
+    "role": "Specialista pro privátní klientelu",
+    "photo": "https://collegas.cz/img/radosta-1.jpg",
+    "description": "Specialista pro privátní klientelu s více než 17 lety praxe; klade důraz na pečlivý, individuální přístup a aktuální znalosti z oboru.",
+    "slogan": "Individuální přístup, pevné výsledky",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "eva-pankova",
+    "name": "Eva Pánková",
+    "role": "Majetkový specialista",
+    "photo": "https://collegas.cz/img/new_team/eva_pankova.jpg",
+    "description": "Majetkový specialista soustředěný na hypotéky a úvěry; pomáhá klientům dosáhnout cíle vlastního bydlení.",
+    "slogan": "Váš průvodce k bydlení",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "iveta-butulova",
+    "name": "Iveta Butulová",
+    "role": "Senior finanční specialista",
+    "photo": "https://collegas.cz/img/new_team/iveta_butulova.jpg",
+    "description": "Senior finanční specialistka poskytující citlivě nastavená dlouhodobá řešení a kontinuální servis klientům.",
+    "slogan": "Zkušenost, která pomáhá",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "josef-zidek",
+    "name": "Josef Zídek",
+    "role": "Senior finanční konzultant",
+    "photo": "https://collegas.cz/img/J_Zidek.jpg",
+    "description": "Senior konzultant, zaměřený na systematické a transparentní řízení financí klientů.",
+    "slogan": "Řád a přehled ve financích",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "david-strnad",
+    "name": "David Strnad",
+    "role": "Senior finanční konzultant",
+    "photo": "https://collegas.cz/img/new_team/david_strnad.jpg",
+    "description": "Specialista s dlouholetou obchodní zkušeností; buduje dlouhodobé vztahy a řešení přizpůsobená životním situacím klientů.",
+    "slogan": "Důvěra v dlouhodobém partnerství",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "igor-stransky",
+    "name": "Igor Stránský",
+    "role": "Senior finanční konzultant",
+    "photo": "https://collegas.cz/img/new_team/igor_stransky.jpg",
+    "description": "Senior konzultant, klade důraz na jasné nastavení priorit a individuální přístup k rodinným financím.",
+    "slogan": "Jasné priority, klid na cestě",
+    "brand": "COLLEGA ENTERPRISE"
+  },
+  {
+    "slug": "lukas-bajgar",
+    "name": "Lukáš Bajgar",
+    "role": "Senior finanční konzultant",
+    "photo": "https://collegas.cz/img/new_team/lukas_bajgar.jpg",
+    "description": "Pomáhá převést složité finanční rozhodnutí do srozumitelných a praktických kroků pro klienty.",
+    "slogan": "Srozumitelná řešení",
+    "brand": "COLLEGA ENTERPRISE"
+  }
+]

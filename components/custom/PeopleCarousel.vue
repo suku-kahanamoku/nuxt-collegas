@@ -1,61 +1,6 @@
 <script setup lang="ts">
-const people = [
-  {
-    name: "Tomáš Kalous",
-    role: "Zakladatel",
-    photo: "https://collegas.cz/img/T_Kalous01.jpg",
-  },
-  {
-    name: "Marek Butula",
-    role: "Zakladatel",
-    photo: "https://collegas.cz/img/new_team/marek_butula.jpg",
-  },
-  {
-    name: "Lukáš Formánek",
-    role: "Senior finanční specialista",
-    photo: "https://collegas.cz/img/new_team/formanek_new.jpg",
-  },
-  {
-    name: "Filip Beneš",
-    role: "Senior finanční konzultant",
-    photo: "https://collegas.cz/img/F_Bene%C5%A102.jpg",
-  },
-  {
-    name: "Jan Radosta",
-    role: "Specialista pro privátní klientelu",
-    photo: "https://collegas.cz/img/radosta-1.jpg",
-  },
-  {
-    name: "Eva Pánková",
-    role: "Majetkový specialista",
-    photo: "https://collegas.cz/img/new_team/eva_pankova.jpg",
-  },
-  {
-    name: "Iveta Butulová",
-    role: "Senior finanční specialista",
-    photo: "https://collegas.cz/img/new_team/iveta_butulova.jpg",
-  },
-  {
-    name: "Josef Zídek",
-    role: "Senior finanční konzultant",
-    photo: "https://collegas.cz/img/J_Zidek.jpg",
-  },
-  {
-    name: "David Strnad",
-    role: "Senior finanční konzultant",
-    photo: "https://collegas.cz/img/new_team/david_strnad.jpg",
-  },
-  {
-    name: "Igor Stránský",
-    role: "Senior finanční konzultant",
-    photo: "https://collegas.cz/img/new_team/igor_stransky.jpg",
-  },
-  {
-    name: "Lukáš Bajgar",
-    role: "Senior finanční konzultant",
-    photo: "https://collegas.cz/img/new_team/lukas_bajgar.jpg",
-  },
-];
+import usersData from "~/assets/data/users.json";
+const people = (Array.isArray(usersData) ? usersData : []) as any[];
 </script>
 
 <template>
@@ -76,7 +21,12 @@ const people = [
         :overlay="false"
         :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
       >
-        <div v-for="person in people" :key="person.name" class="w-72 shrink-0">
+        <NuxtLink
+          v-for="person in people"
+          :key="person.slug || person.name"
+          :to="`/our-people/${person.slug}`"
+          class="w-72 shrink-0 block group"
+        >
           <div
             class="aspect-3/4 mb-stack-sm overflow-hidden bg-surface-container relative"
           >
@@ -93,14 +43,13 @@ const people = [
           <p class="font-label-caps text-secondary-800 uppercase mb-stack-sm">
             {{ person.role }}
           </p>
-          <a
+          <div
             class="inline-flex items-center text-on-surface-variant hover:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
-            href="/our-people"
           >
             Zobrazit profil
             <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
-          </a>
-        </div>
+          </div>
+        </NuxtLink>
       </UMarquee>
     </UContainer>
   </section>
