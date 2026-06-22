@@ -211,7 +211,7 @@ const caseStudies = [
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
-              img-src="/img/risk-shield.svg"
+              img-src="/img/intro/notes.png"
               img-alt="Zajištění rizik"
               img-right
             >
@@ -271,7 +271,7 @@ const caseStudies = [
     </section>
 
     <UiImgDarkBanner
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuAVntdIC9G0Z1TSRxOgQATix4drSoAWBzH79eQZq_gfDem_bPLXUv9WdqaHI7GGPKkbjeAWvRdJZmJ3TOlx7MfsYdwNO3-mMULrYzC_PrHm89BqEMh94tit4qPvylW3ton35PCNuTBeX3sCKqFTdK4E9pTS6-D68KSSgO8igbGVUeAm0xUnfm5QgICzD204eGOF7XdP8QmJJY8A_6FSFQWIMDSk6ly68sQLcn9smfvbGCSnh4deEkVPaekvQoDBHf3kguHNvsXw3Q4"
+      bg-image="/img/intro/stamp.png"
       label="ZAJIŠTĚNÍ RIZIK"
       title="Chráníme to, na čem záleží"
       body="Správně nastavená pojistná ochrana je základem každé stabilní finanční strategie. Pomáháme vám identifikovat rizika a nastavit krytí, které vás skutečně ochrání."

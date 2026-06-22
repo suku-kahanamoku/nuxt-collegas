@@ -15,13 +15,12 @@ withDefaults(
 
 <template>
   <section
-    class="relative h-153.5 min-h-125 flex items-center justify-center overflow-hidden"
+    class="relative h-153.5 min-h-125 flex items-center justify-center overflow-hidden bg-primary-900"
   >
     <div
-      class="absolute inset-0 bg-cover bg-center"
+      class="absolute inset-0 bg-cover bg-center mask-gradient-to-right"
       :style="{ backgroundImage: `url(${bgImage})` }"
     />
-    <div class="absolute inset-0 hero-gradient" />
     <UContainer class="relative z-10 mx-auto px-gutter w-full from-left">
       <span
         v-if="label"
@@ -37,7 +36,7 @@ withDefaults(
       </component>
       <p
         v-if="body"
-        class="font-body-lg text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+        class="font-body-lg text-body-lg text-primary-100 max-w-xl mt-stack-md"
       >
         {{ body }}
       </p>
