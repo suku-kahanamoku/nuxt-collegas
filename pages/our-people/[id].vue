@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRoute, useHead } from "#imports";
 import { ref, onMounted, computed } from "vue";
+
 import { useIntroAnimate } from "~/composables/useIntroAnimate";
 import usersData from "~/assets/data/users.json";
 

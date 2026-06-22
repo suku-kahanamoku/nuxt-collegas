@@ -47,11 +47,17 @@ const steps = [
     >
       <div
         class="w-[900px] h-[500px] rounded-full blur-[160px]"
-        style="background: radial-gradient(ellipse, rgba(228,194,131,0.04) 0%, transparent 65%)"
+        style="
+          background: radial-gradient(
+            ellipse,
+            rgba(228, 194, 131, 0.04) 0%,
+            transparent 65%
+          );
+        "
       />
     </div>
 
-    <UContainer class="relative z-10">
+    <UContainer class="relative z-10 zoom-in">
       <!-- Header -->
       <div class="text-center mb-20">
         <span
@@ -61,9 +67,7 @@ const steps = [
         <h2 class="text-headline-lg font-serif text-on-primary">
           Proces spolupráce
         </h2>
-        <p
-          class="text-body-lg text-on-primary/55 mt-stack-sm max-w-xl mx-auto"
-        >
+        <p class="text-body-lg text-on-primary/55 mt-stack-sm max-w-xl mx-auto">
           Od prvního rozhovoru po dlouhodobou finanční jistotu – každý krok má
           svůj smysl.
         </p>
@@ -110,9 +114,11 @@ const steps = [
                 <div
                   class="w-16 h-16 rounded-full border border-secondary-fixed/35 bg-primary-900 flex items-center justify-center relative z-10 transition-all duration-300 group-hover:border-secondary-fixed/80 group-hover:bg-secondary-fixed/10"
                 >
-                  <UIcon :name="step.icon" class="text-secondary-fixed text-2xl" />
+                  <UIcon
+                    :name="step.icon"
+                    class="text-secondary-fixed text-2xl"
+                  />
                 </div>
-
               </div>
 
               <!-- Title -->
@@ -123,7 +129,9 @@ const steps = [
               </h3>
 
               <!-- Description -->
-              <p class="text-body-sm text-on-primary/55 leading-relaxed max-w-[15rem]">
+              <p
+                class="text-body-sm text-on-primary/55 leading-relaxed max-w-[15rem]"
+              >
                 {{ step.description }}
               </p>
 
@@ -140,8 +148,13 @@ const steps = [
               class="flex items-center justify-center shrink-0 lg:w-10 lg:pb-[5.5rem]"
             >
               <!-- Desktop: right arrow -->
-              <div class="hidden lg:flex flex-col items-center gap-0.5 relative">
-                <UIcon name="i-material-symbols-chevron-right" class="text-secondary-fixed/40 text-xl" />
+              <div
+                class="hidden lg:flex flex-col items-center gap-0.5 relative"
+              >
+                <UIcon
+                  name="i-material-symbols-chevron-right"
+                  class="text-secondary-fixed/40 text-xl"
+                />
               </div>
               <!-- Mobile: down arrow (shown as border above, handled separately) -->
             </div>

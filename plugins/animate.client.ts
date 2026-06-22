@@ -3,18 +3,32 @@ import "animate.css";
 export default defineNuxtPlugin((nuxtApp: any) => {
   if (typeof window === "undefined") return;
 
-  const selector = ".from-bottom, .from-left, .from-right, .animate-on-scroll";
+  const selector =
+    ".from-bottom, .from-top, .from-left, .from-right, .zoom-in, .animate-on-scroll";
 
   const io = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const el = entry.target as HTMLElement;
-          const defaultAnim = el.classList.contains("from-right")
-            ? "fadeInRight"
-            : el.classList.contains("from-left")
-              ? "fadeInLeft"
-              : "fadeInUp";
+
+          let defaultAnim = "fadeInUp";
+          if (el.classList.contains("from-right")) {
+            defaultAnim = "fadeInRight";
+          }
+          //
+          else if (el.classList.contains("from-left")) {
+            defaultAnim = "fadeInLeft";
+          }
+          //
+          else if (el.classList.contains("from-top")) {
+            defaultAnim = "fadeInDown";
+          }
+          //
+          else if (el.classList.contains("zoom-in")) {
+            defaultAnim = "zoomIn";
+          }
+
           const anim = (el.dataset.animate as string) || defaultAnim;
           if (!el.classList.contains("animate__animated")) {
             el.classList.add("animate__animated", `animate__${anim}`);
@@ -35,7 +49,7 @@ export default defineNuxtPlugin((nuxtApp: any) => {
 
   nuxtApp.hook("app:mounted", () => {
     // initial scan
-    setTimeout(observeAll, 50);
+    observeAll();
 
     // watch for dynamically added nodes
     const mo = new MutationObserver((mutations) => {
