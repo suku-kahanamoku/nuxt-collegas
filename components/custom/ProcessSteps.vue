@@ -1,35 +1,35 @@
 <script setup lang="ts">
 const steps = [
   {
-    number: "01",
+    number: 1,
     icon: "i-material-symbols-forum",
     title: "Úvodní konzultace",
     description:
       "Bezplatně a nezávazně probereme vaši situaci, cíle a to, co vás trápí nebo brzdí.",
   },
   {
-    number: "02",
+    number: 2,
     icon: "i-material-symbols-search",
     title: "Analýza a audit",
     description:
       "Projdeme vaše smlouvy, portfolio a celkovou strukturu financí – bez závislosti na produktech.",
   },
   {
-    number: "03",
+    number: 3,
     icon: "i-material-symbols-lightbulb",
     title: "Strategie na míru",
     description:
       "Navrhneme konkrétní plán přesně pro vaši situaci, cíle a časový horizont.",
   },
   {
-    number: "04",
+    number: 4,
     icon: "i-material-symbols-rocket-launch",
     title: "Realizace",
     description:
       "Provedeme vás každým krokem – od výběru produktů po nastavení celé finanční struktury.",
   },
   {
-    number: "05",
+    number: 5,
     icon: "i-material-symbols-update",
     title: "Průběžná péče",
     description:
@@ -100,7 +100,7 @@ const steps = [
               <!-- Ghost number watermark -->
               <span
                 aria-hidden="true"
-                class="absolute bottom-4 lg:bottom-auto lg:top-[-1.5rem] right-6 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 text-[5rem] leading-none font-serif text-on-primary/[0.04] select-none pointer-events-none tracking-tighter"
+                class="absolute bottom-4 lg:bottom-auto lg:top-[-3rem] right-6 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 text-[5rem] leading-none font-serif text-primary-800 select-none pointer-events-none tracking-tighter"
                 >{{ step.number }}</span
               >
 
@@ -112,7 +112,7 @@ const steps = [
                 />
                 <!-- Circle -->
                 <div
-                  class="w-16 h-16 rounded-full border border-secondary-fixed/35 bg-primary-900 flex items-center justify-center relative z-10 transition-all duration-300 group-hover:border-secondary-fixed/80 group-hover:bg-secondary-fixed/10"
+                  class="w-16 h-16 rounded-full border border-secondary-fixed/35 bg-primary-900/50 flex items-center justify-center relative z-10 transition-all duration-300 group-hover:border-secondary-fixed/80 group-hover:bg-secondary-fixed/10"
                 >
                   <UIcon
                     :name="step.icon"
