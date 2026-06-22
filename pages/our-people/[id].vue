@@ -73,47 +73,14 @@ const testimonials = computed(
   <div class="w-full bg-primary-950">
     <!-- Hero: full-viewport dark + warm radial gradient -->
     <section
-      class="relative min-h-screen flex flex-col justify-center overflow-hidden"
-      style="
-        background: radial-gradient(
-          ellipse 90% 80% at 65% 35%,
-          rgba(10, 72, 53, 0.7) 0%,
-          rgba(2, 21, 16, 0.95) 70%
-        );
-      "
+      class="relative min-h-screen flex items-center overflow-hidden bg-primary-900"
     >
       <!-- Photo (right side, fades left) -->
       <div class="absolute inset-0 pointer-events-none select-none">
         <img
           :src="user.photo"
           :alt="user.name"
-          class="absolute right-0 top-0 h-full w-auto object-cover object-top"
-          style="
-            max-width: 65%;
-            -webkit-mask-image: linear-gradient(
-              to left,
-              rgba(2, 21, 16, 1) 0%,
-              rgba(2, 21, 16, 0.7) 40%,
-              rgba(2, 21, 16, 0) 100%
-            );
-            mask-image: linear-gradient(
-              to left,
-              rgba(2, 21, 16, 1) 0%,
-              rgba(2, 21, 16, 0.7) 40%,
-              rgba(2, 21, 16, 0) 100%
-            );
-          "
-        />
-        <div
-          class="absolute inset-0"
-          style="
-            background: linear-gradient(
-              to right,
-              rgba(2, 21, 16, 0.75) 0%,
-              rgba(2, 21, 16, 0.25) 50%,
-              rgba(2, 21, 16, 0) 100%
-            );
-          "
+          class="absolute right-0 top-0 h-full w-auto object-cover mask-gradient-to-right-light"
         />
       </div>
 
@@ -212,6 +179,16 @@ const testimonials = computed(
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div
+            class="overflow-hidden rounded-2xl bg-primary-900/80"
+            style="aspect-ratio: 4/5"
+          >
+            <img
+              :src="user.photo"
+              :alt="user.name"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
           <div>
             <p
               class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
@@ -226,16 +203,6 @@ const testimonials = computed(
             <p class="text-base leading-relaxed text-white/60">
               {{ user.about || user.description }}
             </p>
-          </div>
-          <div
-            class="overflow-hidden rounded-2xl bg-primary-900/80"
-            style="aspect-ratio: 4/5"
-          >
-            <img
-              :src="user.photo"
-              :alt="user.name"
-              class="w-full h-full object-cover object-top"
-            />
           </div>
         </div>
 

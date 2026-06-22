@@ -28,7 +28,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
           class="w-72 shrink-0 block group"
         >
           <div
-            class="aspect-3/4 mb-stack-sm overflow-hidden bg-surface-container relative"
+            class="aspect-7/8 mb-stack-sm overflow-hidden bg-surface-container relative"
           >
             <img
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105"

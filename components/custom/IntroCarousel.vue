@@ -3,8 +3,10 @@ import { computed } from "vue";
 import { useIntroAnimate } from "~/composables/useIntroAnimate";
 
 const items = [
-  "https://collegas.cz/img/azTowerFull.jpg",
-  "https://collegas.cz/img/phonate-Finl.jpg",
+  "/img/intro/main.png",
+  "/img/intro/stamp.png",
+  "/img/intro/notes.png",
+  "/img/intro/cafe.png",
 ];
 
 const { mounted, splitChars } = useIntroAnimate({
