@@ -446,13 +446,30 @@ const teamMembers = specialistSlugs
     </section>
 
     <!-- ── CTA ── -->
-    <UiCtaSection
+    <UiDarkBanner
       title="Začněme nezávaznou konzultací"
       body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
-      primary-label="Kontaktovat nás"
-      primary-to="/contact"
-      secondary-label="Naše pobočky"
-      secondary-to="/contact"
-    />
+    >
+      <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+        <UiButton
+          to="/contact"
+          variant="solid"
+          class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
+        >
+          Kontaktovat nás
+          <UIcon
+            name="i-material-symbols-arrow-forward"
+            class="size-5 transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </UiButton>
+        <UiButton
+          to="/contact"
+          variant="outline"
+          class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
+        >
+          Naše pobočky
+        </UiButton>
+      </div>
+    </UiDarkBanner>
   </div>
 </template>

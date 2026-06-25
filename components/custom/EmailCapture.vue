@@ -33,7 +33,6 @@ onBeforeUnmount(() => {
   <UiDarkBanner
     title="Zanechte nám kontakt"
     body="Ozveme se vám do 24 hodin a domluvíme se na prvním kroku bez závazků."
-    :accent="false"
   >
     <div v-if="submitted" class="mt-stack-lg flex flex-col items-center gap-3">
       <UIcon

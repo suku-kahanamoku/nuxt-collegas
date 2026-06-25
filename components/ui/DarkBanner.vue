@@ -3,11 +3,9 @@ withDefaults(
   defineProps<{
     title: string;
     body?: string;
-    accent?: boolean;
   }>(),
   {
     body: "",
-    accent: true,
   },
 );
 </script>
@@ -25,11 +23,5 @@ withDefaults(
       </p>
       <slot />
     </UContainer>
-
-    <div
-      v-if="accent"
-      aria-hidden="true"
-      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-200 h-px bg-linear-to-r from-transparent via-secondary/40 to-transparent"
-    />
   </section>
 </template>

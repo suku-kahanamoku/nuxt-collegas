@@ -180,12 +180,23 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── CTA ── -->
-    <UiCtaSection
+    <UiDarkBanner
       title="Chcete se přidat?"
       body="Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta."
-      primary-label="Napište nám"
-      primary-to="/contact"
-      variant="dark"
-    />
+    >
+      <div class="flex justify-center">
+        <UiButton
+          to="/contact"
+          variant="solid"
+          class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
+        >
+          Napište nám
+          <UIcon
+            name="i-material-symbols-arrow-forward"
+            class="size-5 transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </UiButton>
+      </div>
+    </UiDarkBanner>
   </div>
 </template>
