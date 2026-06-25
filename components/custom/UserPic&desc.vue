@@ -3,6 +3,7 @@ withDefaults(
   defineProps<{
     bg?: string;
     bgImage?: string;
+    imgAlt?: string;
     imgClass?: string;
     cols?: "md" | "lg";
     gap?: string;
@@ -12,6 +13,7 @@ withDefaults(
   }>(),
   {
     bg: "bg-surface",
+    imgAlt: "",
     imgClass: "",
     cols: "md",
     gap: "gap-section-gap",
@@ -36,11 +38,21 @@ withDefaults(
         <!-- Left: image + overlay -->
         <div :class="['relative', leftClass]">
           <div class="aspect-4/5 relative">
+            <NuxtImg
+              v-if="bgImage"
+              :src="bgImage"
+              :alt="imgAlt"
+              :class="[
+                'absolute inset-0 w-full h-full object-cover object-center',
+                imgClass,
+              ]"
+              format="webp"
+              loading="lazy"
+              sizes="sm:100vw md:50vw lg:50vw xl:50vw"
+            />
             <div
-              :class="['w-full h-full bg-cover bg-center', imgClass]"
-              :style="
-                bgImage ? { backgroundImage: `url(${bgImage})` } : undefined
-              "
+              v-else
+              :class="['w-full h-full bg-surface-container', imgClass]"
             />
             <!-- Overlay box -->
             <div
