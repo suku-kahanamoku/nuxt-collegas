@@ -25,7 +25,11 @@ const buttonClass = computed(() => {
 </script>
 
 <template>
-  <NuxtLink v-if="to" :to="to" :class="['inline-flex items-center gap-2', buttonClass]">
+  <NuxtLink
+    v-if="to"
+    :to="to"
+    :class="['inline-flex items-center gap-2', buttonClass]"
+  >
     <slot />
   </NuxtLink>
   <button
@@ -34,7 +38,11 @@ const buttonClass = computed(() => {
     :disabled="props.loading"
     :class="['inline-flex items-center gap-2', buttonClass]"
   >
-    <UIcon v-if="loading" name="i-material-symbols-progress-activity" class="animate-spin size-4 shrink-0" />
+    <UIcon
+      v-if="loading"
+      name="i-material-symbols-progress-activity"
+      class="animate-spin size-4 shrink-0"
+    />
     <slot />
   </button>
 </template>

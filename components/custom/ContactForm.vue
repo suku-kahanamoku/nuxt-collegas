@@ -136,13 +136,7 @@ function handleSubmit() {
       </div>
 
       <div class="pt-stack-md">
-        <UiButton
-          type="submit"
-          variant="solid"
-          class="w-full md:w-auto justify-center px-10 bg-secondary-fixed! text-primary-800! hover:bg-secondary-fixed/80! transition-colors"
-        >
-          Odeslat poptávku
-        </UiButton>
+        <UiButton type="submit"> Odeslat poptávku </UiButton>
       </div>
 
       <p

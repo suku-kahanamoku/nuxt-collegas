@@ -118,7 +118,6 @@ const principles = [
               </div>
             </div>
           </div>
-          <Button variant="soft">Náš příběh</Button>
         </div>
       </UContainer>
     </section>

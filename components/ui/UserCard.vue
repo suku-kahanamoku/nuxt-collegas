@@ -8,13 +8,11 @@ withDefaults(
     name: string;
     role: string;
     description?: string;
-    delay?: string;
     to?: string;
   }>(),
   {
     imgAlt: "",
     description: "",
-    delay: "",
     to: "",
   },
 );
@@ -33,7 +31,6 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
           : { href: to, target: '_blank', rel: 'noopener' }
         : {}
     "
-    :style="delay ? { transitionDelay: delay } : undefined"
     class="flex h-full flex-col group/user-card"
     :class="to ? 'cursor-pointer' : ''"
   >

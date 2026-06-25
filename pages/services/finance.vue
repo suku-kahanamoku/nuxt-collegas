@@ -32,7 +32,7 @@ const caseStudies = caseStudiesData.finance.map((cs) => ({
 const specialistSlugs = ["lukas-formanek", "filip-benes", "tomas-kalous"];
 
 const teamMembers = specialistSlugs
-  .map((slug, index) => {
+  .map((slug) => {
     const user = usersData.find((item) => item.slug === slug);
 
     if (!user) return null;
@@ -43,7 +43,6 @@ const teamMembers = specialistSlugs
       role: user.role,
       description: user.intro || user.about || "",
       to: `/our-people/${user.slug}`,
-      delay: index === 0 ? undefined : `${index * 100}ms`,
     };
   })
   .filter((member): member is NonNullable<typeof member> => member !== null);
@@ -105,11 +104,11 @@ const teamMembers = specialistSlugs
       title="Připraveni získat kontrolu nad financemi?"
       body="Nezávisle posoudíme vaši situaci, nastavíme finanční plán, ochranu rizik i odškodnění tak, aby vaše finance pracovaly dlouhodobě ve váš prospěch."
     >
-      <UiButton to="/contact">
+      <UiButton to="/contact" class="shrink-0 group">
         Domluvit konzultaci
         <UIcon
           name="i-material-symbols-arrow-forward"
-          class="size-5 transition-transform duration-200 group-hover:translate-x-1"
+          class="text-xl transition-transform duration-200 group-hover:translate-x-1"
         />
       </UiButton>
     </UiDarkBanner>
@@ -177,7 +176,6 @@ const teamMembers = specialistSlugs
             :role="member.role"
             :description="member.description"
             :to="member.to"
-            :delay="member.delay"
           />
         </div>
       </UContainer>

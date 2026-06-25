@@ -37,7 +37,7 @@ const caseStudies = caseStudiesData.capital.map((cs) => ({
 const specialistSlugs = ["lukas-formanek", "filip-benes", "tomas-kalous"];
 
 const teamMembers = specialistSlugs
-  .map((slug, index) => {
+  .map((slug) => {
     const user = usersData.find((item) => item.slug === slug);
 
     if (!user) return null;
@@ -48,7 +48,6 @@ const teamMembers = specialistSlugs
       role: user.role,
       description: user.intro || user.about || "",
       to: `/our-people/${user.slug}`,
-      delay: index === 0 ? undefined : `${index * 100}ms`,
     };
   })
   .filter((member): member is NonNullable<typeof member> => member !== null);
@@ -110,11 +109,11 @@ const teamMembers = specialistSlugs
       title="Připraveni posunout kapitál dál?"
       body="Nastavíme péči o investice, financování i výběr příležitostí tak, aby vaše rozhodnutí zapadala do dlouhodobé strategie a podporovala růst majetku."
     >
-      <UiButton to="/contact">
+      <UiButton to="/contact" class="shrink-0 group">
         Domluvit konzultaci
         <UIcon
           name="i-material-symbols-arrow-forward"
-          class="size-5 transition-transform duration-200 group-hover:translate-x-1"
+          class="text-xl transition-transform duration-200 group-hover:translate-x-1"
         />
       </UiButton>
     </UiDarkBanner>
@@ -170,7 +169,9 @@ const teamMembers = specialistSlugs
             >Zobrazit celý tým</NuxtLink
           >
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg"
+        >
           <UiUserCard
             v-for="member in teamMembers"
             :key="member.name"
@@ -179,7 +180,6 @@ const teamMembers = specialistSlugs
             :role="member.role"
             :description="member.description"
             :to="member.to"
-            :delay="member.delay"
           />
         </div>
       </UContainer>

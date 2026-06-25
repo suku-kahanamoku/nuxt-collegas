@@ -164,20 +164,13 @@ const steps = [
 
       <!-- CTA -->
       <div class="text-center mt-16">
-        <UButton
-          to="/contact"
-          size="lg"
-          color="secondary"
-          variant="solid"
-          trailing-icon="i-material-symbols-arrow-forward"
-          class="bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors px-10 py-4 text-base"
-          :ui="{
-            trailingIcon:
-              'transition-transform duration-200 group-hover:translate-x-1 size-5',
-          }"
-        >
+        <UiButton to="/contact" class="shrink-0 group">
           Začít první krok zdarma
-        </UButton>
+          <UIcon
+            name="i-material-symbols-arrow-forward"
+            class="text-xl transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </UiButton>
       </div>
     </UContainer>
   </section>
