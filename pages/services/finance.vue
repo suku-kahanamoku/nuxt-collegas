@@ -57,7 +57,7 @@ const caseStudies = [
 
 <template>
   <div class="w-full">
-    <CustomTextComment heading-tag="h1" label="Finance">
+    <CustomTextComment heading-tag="h1" label="Naše služby">
       <template #heading>Finance</template>
 
       <template #body>
@@ -82,11 +82,10 @@ const caseStudies = [
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
             Modelové situace
           </h2>
-          <a
+          <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
@@ -98,11 +97,10 @@ const caseStudies = [
           />
         </div>
         <div class="mt-stack-lg md:hidden">
-          <a
+          <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
       </UContainer>
     </section>
@@ -166,11 +164,10 @@ const caseStudies = [
               Poradci pro finance
             </h2>
           </div>
-          <a
+          <NuxtLink
             class="font-label-caps text-primary-800 border-b border-primary pb-1 mb-2 hover:text-secondary hover:border-secondary transition-all"
-            href="/our-people"
-            >Zobrazit celý tým</a
-          >
+            to="/our-people"
+            >Zobrazit celý tým</NuxtLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->
@@ -382,13 +379,13 @@ const caseStudies = [
               jasný přehled, odhalení slabých míst a doporučení konkrétních
               kroků.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/finance#audit"
+              to="/services/finance#audit"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 2 -->
           <div
@@ -402,13 +399,13 @@ const caseStudies = [
               souladu s vašimi cíli. Praktický plán pro dnešní rozhodování i
               budoucí etapy života.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/finance#plan"
+              to="/services/finance#plan"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 3 -->
           <div
@@ -422,13 +419,13 @@ const caseStudies = [
               správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší
               reálné situaci.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/finance#risk"
+              to="/services/finance#risk"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 4 -->
           <div
@@ -442,13 +439,13 @@ const caseStudies = [
               pojistné události, cílem je jediné: získat spravedlivé odškodnění
               v plné výši.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/finance#compensation"
+              to="/services/finance#compensation"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </UContainer>

@@ -66,7 +66,7 @@ const caseStudies = [
 
 <template>
   <div class="w-full">
-    <CustomTextComment heading-tag="h1" label="Reality a energie">
+    <CustomTextComment heading-tag="h1" label="Naše služby">
       <template #heading>Reality a energie</template>
 
       <template #body>
@@ -93,11 +93,10 @@ const caseStudies = [
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
             Modelové situace
           </h2>
-          <a
+          <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
@@ -109,11 +108,10 @@ const caseStudies = [
           />
         </div>
         <div class="mt-stack-lg md:hidden">
-          <a
+          <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
       </UContainer>
     </section>
@@ -177,11 +175,10 @@ const caseStudies = [
               Poradci pro reality a energii
             </h2>
           </div>
-          <a
+          <NuxtLink
             class="font-label-caps text-primary-800 border-b border-primary pb-1 mb-2 hover:text-secondary hover:border-secondary transition-all"
-            href="/our-people"
-            >Zobrazit celý tým</a
-          >
+            to="/our-people"
+            >Zobrazit celý tým</NuxtLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->
@@ -383,13 +380,13 @@ const caseStudies = [
               Analyzujeme spotřebu, smlouvy i sazby a navrhujeme řešení, která
               dlouhodobě snižují energetické náklady v domácnosti i firmě.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/real-estate-energy#energy"
+              to="/services/real-estate-energy#energy"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 2 -->
           <div
@@ -402,13 +399,13 @@ const caseStudies = [
               Kompletní servis pro prodej i pronájem od přípravy nemovitosti po
               právní vypořádání transakce.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/real-estate-energy#real-estate"
+              to="/services/real-estate-energy#real-estate"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 3 -->
           <div
@@ -421,13 +418,13 @@ const caseStudies = [
               Zajišťujeme výběr nájemníků, provozní servis, administrativu i
               ekonomický přehled, aby majetek fungoval bez starostí.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/real-estate-energy#property-management"
+              to="/services/real-estate-energy#property-management"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 4 -->
           <div
@@ -440,13 +437,13 @@ const caseStudies = [
               Podílíme se na přípravě, financování, realizaci i prodeji projektů
               s důrazem na ekonomiku, načasování a tržní atraktivitu.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/real-estate-energy#development"
+              to="/services/real-estate-energy#development"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </UContainer>

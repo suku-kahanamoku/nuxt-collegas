@@ -58,7 +58,7 @@ const caseStudies = [
 
 <template>
   <div class="w-full">
-    <CustomTextComment heading-tag="h1" label="Daně a právo">
+    <CustomTextComment heading-tag="h1" label="Naše služby">
       <template #heading>Daně a právo</template>
 
       <template #body>
@@ -82,11 +82,10 @@ const caseStudies = [
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
             Modelové situace
           </h2>
-          <a
+          <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
@@ -98,11 +97,10 @@ const caseStudies = [
           />
         </div>
         <div class="mt-stack-lg md:hidden">
-          <a
+          <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            href="/contact"
-            >KONZULTOVAT SITUACI</a
-          >
+            to="/contact"
+            >KONZULTOVAT SITUACI</NuxtLink>
         </div>
       </UContainer>
     </section>
@@ -166,11 +164,10 @@ const caseStudies = [
               Poradci pro daně a právo
             </h2>
           </div>
-          <a
+          <NuxtLink
             class="font-label-caps text-primary-800 border-b border-primary pb-1 mb-2 hover:text-secondary hover:border-secondary transition-all"
-            href="/our-people"
-            >Zobrazit celý tým</a
-          >
+            to="/our-people"
+            >Zobrazit celý tým</NuxtLink>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->
@@ -347,13 +344,13 @@ const caseStudies = [
               Optimalizace daňové zátěže v návaznosti na příjmy, majetek,
               podnikání a investice. Srozumitelně, legálně a dlouhodobě.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/tax-legal#tax"
+              to="/services/tax-legal#tax"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 2 -->
           <div
@@ -366,13 +363,13 @@ const caseStudies = [
               Smluvní agenda, převody nemovitostí, vlastnické struktury a
               investiční vztahy nastavené s důrazem na jistotu a prevenci rizik.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/tax-legal#legal"
+              to="/services/tax-legal#legal"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
           <!-- Service 3 -->
           <div
@@ -385,13 +382,13 @@ const caseStudies = [
               Propojený přístup, který snižuje nejistotu, předchází problémům a
               pomáhá dělat důležitá rozhodnutí s klidem a kontrolou.
             </p>
-            <a
+            <NuxtLink
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/tax-legal#tax-legal-overview"
+              to="/services/tax-legal#tax-legal-overview"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </UContainer>
