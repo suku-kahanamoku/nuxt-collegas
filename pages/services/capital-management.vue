@@ -327,63 +327,72 @@ const teamMembers = specialistSlugs
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <!-- Service 1 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Péče o investiční majetek
-            </h3>
+          <UiBaseCard to="/services/capital-management#asset-care">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Péče o investiční majetek
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Kontinuální řízení portfolia, pravidelné vyhodnocování výkonnosti
               a úpravy strategie podle vývoje trhu i vašich cílů.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/capital-management#asset-care"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 2 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Financování
-            </h3>
+          <UiBaseCard to="/services/capital-management#financing">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Financování
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Nastavení úvěrů pro bydlení, rekonstrukce i projekty tak, aby byly
               bezpečné, přehledné a zároveň podporovaly další růst kapitálu.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/capital-management#financing"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 3 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Investiční příležitosti
-            </h3>
+          <UiBaseCard to="/services/capital-management#opportunities">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Investiční příležitosti
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Vyhledáváme a analyzujeme příležitosti, které dávají smysl z
               pohledu výnosu, struktury i rizik a zapadají do strategie vašeho
               portfolia.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/capital-management#opportunities"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
         </div>
       </UContainer>
     </section>

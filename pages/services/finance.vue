@@ -166,7 +166,9 @@ const teamMembers = specialistSlugs
             >Zobrazit celý tým</NuxtLink
           >
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg"
+        >
           <UiUserCard
             v-for="member in teamMembers"
             :key="member.name"
@@ -352,85 +354,97 @@ const teamMembers = specialistSlugs
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
         >
           <!-- Service 1 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Nezávislý finanční audit
-            </h3>
+          <UiBaseCard to="/services/finance#audit">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Nezávislý finanční audit
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Detailní rozbor smluv, nákladů a nastavení vašich financí. Získáte
               jasný přehled, odhalení slabých míst a doporučení konkrétních
               kroků.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/finance#audit"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 2 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Finanční plán
-            </h3>
+          <UiBaseCard to="/services/finance#plan">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Finanční plán
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Strategie, která propojuje rezervy, investice i financování v
               souladu s vašimi cíli. Praktický plán pro dnešní rozhodování i
               budoucí etapy života.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/finance#plan"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 3 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Zajištění rizik
-            </h3>
+          <UiBaseCard to="/services/finance#risk">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Zajištění rizik
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je
               správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší
               reálné situaci.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/finance#risk"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 4 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Odškodnění
-            </h3>
+          <UiBaseCard to="/services/finance#compensation">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Odškodnění
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné
               pojistné události, cílem je jediné: získat spravedlivé odškodnění
               v plné výši.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/finance#compensation"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
         </div>
       </UContainer>
     </section>

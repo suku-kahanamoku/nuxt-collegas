@@ -320,62 +320,71 @@ const teamMembers = specialistSlugs
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <!-- Service 1 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Daňové poradenství
-            </h3>
+          <UiBaseCard to="/services/tax-legal#tax">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Daňové poradenství
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Optimalizace daňové zátěže v návaznosti na příjmy, majetek,
               podnikání a investice. Srozumitelně, legálně a dlouhodobě.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/tax-legal#tax"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 2 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Právní poradenství
-            </h3>
+          <UiBaseCard to="/services/tax-legal#legal">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Právní poradenství
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Smluvní agenda, převody nemovitostí, vlastnické struktury a
               investiční vztahy nastavené s důrazem na jistotu a prevenci rizik.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/tax-legal#legal"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 3 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Daňové a právní zázemí
-            </h3>
+          <UiBaseCard to="/services/tax-legal#tax-legal-overview">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Daňové a právní zázemí
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Propojený přístup, který snižuje nejistotu, předchází problémům a
               pomáhá dělat důležitá rozhodnutí s klidem a kontrolou.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/tax-legal#tax-legal-overview"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
         </div>
       </UContainer>
     </section>

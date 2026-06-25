@@ -356,81 +356,93 @@ const teamMembers = specialistSlugs
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
         >
           <!-- Service 1 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Energetická optimalizace
-            </h3>
+          <UiBaseCard to="/services/real-estate-energy#energy">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Energetická optimalizace
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Analyzujeme spotřebu, smlouvy i sazby a navrhujeme řešení, která
               dlouhodobě snižují energetické náklady v domácnosti i firmě.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/real-estate-energy#energy"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 2 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Realitní služby
-            </h3>
+          <UiBaseCard to="/services/real-estate-energy#real-estate">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Realitní služby
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Kompletní servis pro prodej i pronájem od přípravy nemovitosti po
               právní vypořádání transakce.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/real-estate-energy#real-estate"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 3 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Správa nemovitostí
-            </h3>
+          <UiBaseCard to="/services/real-estate-energy#property-management">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Správa nemovitostí
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Zajišťujeme výběr nájemníků, provozní servis, administrativu i
               ekonomický přehled, aby majetek fungoval bez starostí.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/real-estate-energy#property-management"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
           <!-- Service 4 -->
-          <div
-            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
-          >
-            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Developerské projekty
-            </h3>
+          <UiBaseCard to="/services/real-estate-energy#development">
+            <template #header>
+              <h3
+                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+              >
+                Developerské projekty
+              </h3>
+            </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
               Podílíme se na přípravě, financování, realizaci i prodeji projektů
               s důrazem na ekonomiku, načasování a tržní atraktivitu.
             </p>
-            <NuxtLink
-              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              to="/services/real-estate-energy#development"
-            >
-              ZOBRAZIT SLUŽBU
-              <UIcon name="i-material-symbols-north-east" class="text-sm" />
-            </NuxtLink>
-          </div>
+            <template #footer>
+              <div
+                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
+              >
+                ZOBRAZIT SLUŽBU
+                <UIcon name="i-material-symbols-north-east" class="text-sm" />
+              </div>
+            </template>
+          </UiBaseCard>
         </div>
       </UContainer>
     </section>

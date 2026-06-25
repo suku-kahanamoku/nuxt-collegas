@@ -88,7 +88,7 @@ const spotlightColors = computed(() => {
     />
     <!-- background + border layer: covers the inside, exposes the 1px glow ring -->
     <div
-      class="absolute inset-0 rounded-[inherit] pointer-events-none z-1 border transition-colors duration-200"
+      class="absolute inset-0 rounded-[inherit] pointer-events-none z-1 border-[0.2px] transition-colors duration-200"
       :class="
         highlight
           ? 'bg-primary-900 border-primary-900 group-hover:bg-primary-800'
