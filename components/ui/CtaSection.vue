@@ -44,41 +44,36 @@ defineProps<{
         {{ body }}
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
-        <UButton
+        <UiButton
           v-if="primaryLabel && primaryTo"
           :to="primaryTo"
-          :color="variant === 'dark' ? 'secondary' : 'primary'"
           variant="solid"
-          trailing-icon="i-material-symbols-arrow-forward"
-          size="xl"
-          class="justify-center px-10 py-4 text-base"
+          class="group justify-center px-10 py-4 text-base"
           :class="
             variant === 'dark'
               ? 'bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors'
-              : ''
+              : 'bg-primary-800! text-on-primary hover:bg-primary-700! transition-colors'
           "
-          :ui="{
-            trailingIcon:
-              'transition-transform duration-200 group-hover:translate-x-1 size-5',
-          }"
         >
           {{ primaryLabel }}
-        </UButton>
-        <UButton
+          <UIcon
+            name="i-material-symbols-arrow-forward"
+            class="size-5 transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </UiButton>
+        <UiButton
           v-if="secondaryLabel && secondaryTo"
           :to="secondaryTo"
-          color="primary"
           variant="outline"
-          size="xl"
           class="justify-center px-10 py-4 text-base"
           :class="
             variant === 'dark'
               ? 'border-on-primary text-on-primary hover:bg-on-primary/10'
-              : ''
+              : 'border-primary-800! text-primary-800! hover:bg-primary-50!'
           "
         >
           {{ secondaryLabel }}
-        </UButton>
+        </UiButton>
       </div>
     </div>
   </UPageCTA>
