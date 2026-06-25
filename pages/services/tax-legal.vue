@@ -168,7 +168,7 @@ const teamMembers = specialistSlugs
             >Zobrazit celý tým</NuxtLink
           >
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
           <UiUserCard
             v-for="member in teamMembers"
             :key="member.name"

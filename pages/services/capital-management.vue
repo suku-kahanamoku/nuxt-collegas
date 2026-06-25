@@ -51,9 +51,7 @@ const teamMembers = specialistSlugs
       delay: index === 0 ? undefined : `${index * 100}ms`,
     };
   })
-  .filter(
-    (member): member is NonNullable<typeof member> => member !== null,
-  );
+  .filter((member): member is NonNullable<typeof member> => member !== null);
 </script>
 
 <template>
@@ -172,7 +170,7 @@ const teamMembers = specialistSlugs
             >Zobrazit celý tým</NuxtLink
           >
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
           <UiUserCard
             v-for="member in teamMembers"
             :key="member.name"
