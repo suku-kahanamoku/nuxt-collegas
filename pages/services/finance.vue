@@ -61,10 +61,10 @@ const caseStudies = [
       <template #heading>Finance</template>
 
       <template #body>
-        Nezávislý finanční audit je první krok k tomu, abyste ve svých
-        financích měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé
-        produkty, ale díváme se na vaše finance jako na celek. Ukážeme vám, co
-        je nastavené správně, kde zbytečně přeplácíte a kde vám naopak unikají
+        Nezávislý finanční audit je první krok k tomu, abyste ve svých financích
+        měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé produkty,
+        ale díváme se na vaše finance jako na celek. Ukážeme vám, co je
+        nastavené správně, kde zbytečně přeplácíte a kde vám naopak unikají
         příležitosti.
       </template>
 
@@ -73,9 +73,7 @@ const caseStudies = [
         Budete přesně vědět, jak na tom jste a jaké kroky dávají smysl dál."
       </template>
 
-      <template #attribution>
-        — Chci jasno ve svých financích
-      </template>
+      <template #attribution> — Chci jasno ve svých financích </template>
     </CustomTextComment>
 
     <section class="py-section-gap bg-surface-container-lowest">
@@ -220,9 +218,9 @@ const caseStudies = [
                   Nezávislý finanční audit
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Nezávislý finanční audit je první krok k tomu, abyste ve
-                  svých financích měli skutečný přehled a jistotu. Nehodnotíme
-                  jen jednotlivé produkty, ale díváme se na vaše finance jako na
+                  Nezávislý finanční audit je první krok k tomu, abyste ve svých
+                  financích měli skutečný přehled a jistotu. Nehodnotíme jen
+                  jednotlivé produkty, ale díváme se na vaše finance jako na
                   celek - jak spolu jednotlivé části fungují, kde dávají smysl a
                   kde naopak vznikají zbytečné náklady nebo rizika.
                 </p>
@@ -261,7 +259,9 @@ const caseStudies = [
                   dojít. Výsledkem není plán na papíře, ale konkrétní strategie,
                   podle které se můžete rozhodovat každý den.
                 </p>
-                <UiButton to="/contact">Chci plánovat dnes i v budoucnu</UiButton>
+                <UiButton to="/contact"
+                  >Chci plánovat dnes i v budoucnu</UiButton
+                >
               </div>
             </UiImageText>
 
@@ -327,7 +327,8 @@ const caseStudies = [
             :menus="relatedLinks"
             :callout="{
               title: 'Nezávazná konzultace',
-              description: 'Rádi posoudíme vaši situaci a navrhneme další kroky.',
+              description:
+                'Rádi posoudíme vaši situaci a navrhneme další kroky.',
               label: 'Nezávazná konzultace',
               to: '/contact',
             }"
@@ -377,7 +378,9 @@ const caseStudies = [
             navazuje na předchozí a podporuje dlouhodobou stabilitu.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
+        >
           <!-- Service 1 -->
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
