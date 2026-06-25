@@ -216,24 +216,27 @@ const principles = [
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg"
         >
-          <div
+          <UiBaseCard
             v-for="principle in principles"
             :key="principle.title"
-            class="p-stack-md border border-primary-container hover:border-secondary transition-colors group"
+            :highlight="true"
+            class="p-stack-md border border-primary-container"
           >
-            <UIcon
-              :name="principle.icon"
-              class="text-secondary-fixed size-10 mb-stack-md block"
-            />
-            <h3 class="font-headline-md text-headline-md mb-stack-sm">
-              {{ principle.title }}
-            </h3>
+            <template #header>
+              <UIcon
+                :name="principle.icon"
+                class="text-secondary-fixed size-10 mb-stack-md block"
+              />
+              <h3 class="font-headline-md text-headline-md mb-stack-sm">
+                {{ principle.title }}
+              </h3>
+            </template>
             <p
               class="font-body-md text-on-primary-container group-hover:text-on-primary transition-colors"
             >
               {{ principle.description }}
             </p>
-          </div>
+          </UiBaseCard>
         </div>
       </UContainer>
     </section>

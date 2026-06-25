@@ -79,7 +79,7 @@ const spotlightColors = computed(() => {
       class="absolute inset-0 rounded-[inherit] pointer-events-none z-1 border transition-colors duration-200"
       :class="
         highlight
-          ? 'bg-primary-900 border-primary-900 group-hover:bg-primary-800'
+          ? 'bg-primary-900 border-primary-900'
           : 'bg-surface border-secondary-700/10 group-hover:border-secondary-700/35'
       "
     />
