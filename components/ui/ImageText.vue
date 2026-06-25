@@ -12,10 +12,13 @@ defineProps<{
       class="bg-surface-container-highest overflow-hidden aspect-4/5"
       :class="imgRight ? 'order-1 md:order-2' : undefined"
     >
-      <img
+      <NuxtImg
         :src="imgSrc"
         :alt="imgAlt ?? ''"
         class="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:50vw lg:50vw xl:50vw"
       />
     </div>
     <div

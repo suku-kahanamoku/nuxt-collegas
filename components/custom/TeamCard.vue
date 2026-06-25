@@ -25,11 +25,14 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
   >
     <!-- Photo — portrait -->
     <div class="relative overflow-hidden bg-primary-50" style="aspect-ratio: 3/4">
-      <img
+      <NuxtImg
         v-if="photo"
         :src="photo"
         :alt="name"
         class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:50vw lg:33vw xl:25vw"
       />
       <div
         v-else
@@ -43,7 +46,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
 
       <!-- Dark gradient overlay at bottom -->
       <div
-        class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-primary-950/90 to-transparent pointer-events-none"
+        class="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-primary-950/90 to-transparent pointer-events-none"
       />
 
       <!-- Role badge on photo -->

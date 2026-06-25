@@ -92,10 +92,13 @@ const offices = [
     <div
       class="relative w-full aspect-video lg:aspect-4/3 overflow-hidden rounded-sm bg-surface-container shadow-sm border border-outline-variant/20"
     >
-      <img
+      <NuxtImg
         class="w-full h-full object-cover map-container"
         alt="Mapa lokace kanceláře – AZ Tower Brno"
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzq1xi-LrxBGgAOlUUWsEFi_-Va0u2-g8Pg117jQnZrBQB0-RGR9r7RkieGawy1vegyxxea0UAPVymcqUUndqydpyFhVU2iJ0-WlFscTvipBVNiVcTjo4-1oRxwh-Ps1l_AwnUrVTAB5jH6RMQqY2DZFLl4li3SQIEWWGzvyGjb5cXjXl9h8LYlmjAAcCxNnqGBKkfot4xShX2-wYEhnQd1ldyYJL-495Bl6OlF1JKhJNcGh1Wxu3lfRtzsITdijoIm8aQjWKbGyQ"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:70vw lg:45vw xl:40vw"
       />
       <div
         class="absolute inset-0 flex items-center justify-center pointer-events-none"

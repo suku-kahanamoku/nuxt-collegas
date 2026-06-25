@@ -53,10 +53,13 @@ useHead(() => ({
 
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-start">
 					<div class="overflow-hidden rounded-sm bg-surface-variant">
-						<img
+						<NuxtImg
 							:src="caseStudy.imgSrc"
 							:alt="caseStudy.imgAlt"
 							class="w-full h-full object-cover"
+							format="webp"
+							loading="lazy"
+							sizes="sm:100vw md:100vw lg:50vw xl:50vw"
 						/>
 					</div>
 

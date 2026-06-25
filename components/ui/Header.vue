@@ -37,7 +37,14 @@ const navItems = [
   <UHeader mode="slideover" :toggle="{ size: 'xl' }">
     <template #title>
       <NuxtLink to="/" aria-label="Collegas" class="block">
-        <img src="/img/logo.svg" alt="Collegas" class="h-10 w-auto" />
+        <NuxtImg
+          src="/img/logo.svg"
+          alt="Collegas"
+          class="h-10 w-auto"
+          format="webp"
+          loading="lazy"
+          sizes="sm:160px md:160px lg:160px xl:160px"
+        />
       </NuxtLink>
     </template>
 

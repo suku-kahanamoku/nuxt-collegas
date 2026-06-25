@@ -15,10 +15,13 @@ defineProps<{
 <template>
   <div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
     <div class="aspect-video overflow-hidden">
-      <img
+      <NuxtImg
         :src="imgSrc"
         :alt="imgAlt ?? name"
         class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:50vw lg:33vw xl:33vw"
       />
     </div>
     <div class="p-stack-md grow flex flex-col">
@@ -32,10 +35,13 @@ defineProps<{
         {{ description }}
       </p>
       <div class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base">
-        <img
+        <NuxtImg
           :src="managerImgSrc"
           :alt="managerImgAlt ?? managerName"
           class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
+          format="webp"
+          loading="lazy"
+          sizes="sm:48px md:48px lg:48px xl:48px"
         />
         <div>
           <span class="font-label-caps text-label-caps text-secondary-800 block uppercase">

@@ -35,9 +35,13 @@ const headingA = computed(() =>
         container: 'ms-0 h-full',
       }"
     >
-      <img
+      <NuxtImg
         class="w-full h-full object-cover mask-gradient-to-right"
         :src="item"
+        alt=""
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:100vw lg:100vw xl:100vw"
       />
     </UCarousel>
 

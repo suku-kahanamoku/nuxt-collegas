@@ -37,10 +37,13 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     class="flex flex-col group cursor-pointer"
   >
     <div class="overflow-hidden aspect-video mb-stack-md bg-surface-variant">
-      <img
+      <NuxtImg
         :src="imgSrc"
         :alt="imgAlt"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:50vw lg:33vw xl:33vw"
       />
     </div>
 

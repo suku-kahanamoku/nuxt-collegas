@@ -30,11 +30,13 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
           <div
             class="aspect-7/8 mb-stack-sm overflow-hidden bg-surface-container relative"
           >
-            <img
+            <NuxtImg
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105"
               :alt="person.name"
               :src="person.photo"
+              format="webp"
               loading="lazy"
+              sizes="sm:288px md:288px lg:288px xl:288px"
             />
           </div>
           <h3 class="font-headline-md text-2xl text-primary-800 mb-1">

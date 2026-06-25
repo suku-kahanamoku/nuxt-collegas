@@ -6,10 +6,13 @@
       class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-md"
     >
       <div class="space-y-stack-sm">
-        <img
+        <NuxtImg
           src="/img/logo.svg"
           alt="Collegas"
           class="h-10 w-auto brightness-0 invert"
+          format="webp"
+          loading="lazy"
+          sizes="sm:160px md:160px lg:160px xl:160px"
         />
         <p class="text-body-md text-on-primary-container max-w-sm">
           Finanční poradenství s přehledem a jistotou. Nezávislost,

@@ -77,10 +77,13 @@ const testimonials = computed(
     >
       <!-- Photo (right side, fades left) -->
       <div class="absolute inset-0 pointer-events-none select-none">
-        <img
+        <NuxtImg
           :src="user.photo"
           :alt="user.name"
           class="absolute right-0 top-0 h-full w-auto object-cover mask-gradient-to-right-light"
+          format="webp"
+          loading="lazy"
+          sizes="sm:100vw md:100vw lg:60vw xl:50vw"
         />
       </div>
 
@@ -183,10 +186,13 @@ const testimonials = computed(
             class="overflow-hidden rounded-2xl bg-primary-900/80"
             style="aspect-ratio: 4/5"
           >
-            <img
+            <NuxtImg
               :src="user.photo"
               :alt="user.name"
               class="w-full h-full object-cover object-top"
+              format="webp"
+              loading="lazy"
+              sizes="sm:100vw md:100vw lg:50vw xl:50vw"
             />
           </div>
           <div>

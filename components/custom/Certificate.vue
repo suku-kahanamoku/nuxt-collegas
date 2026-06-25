@@ -161,12 +161,14 @@ function onImgErrorByIndex(i: number) {
         >
           <template #item="{ link, index }">
             <div class="h-10 w-full flex items-center">
-              <img
+              <NuxtImg
                 v-if="link.img && !imgErrorByIndex[index]"
                 :src="link.img"
                 :alt="link.alt || link.label"
                 class="h-8 w-auto max-w-full object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90 transition-opacity group-hover:opacity-100"
+                format="webp"
                 loading="lazy"
+                sizes="sm:128px md:128px lg:128px xl:128px"
                 @error="onImgErrorByIndex(index)"
               />
               <span v-else class="text-body-sm font-semibold">{{
