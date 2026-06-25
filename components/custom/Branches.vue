@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import usersData from "~/assets/data/users.json";
+
 const branches = [
   {
     imgSrc:
@@ -8,9 +10,7 @@ const branches = [
     address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
     description:
       "Sídlo skupiny Collegas v nejvyšší kancelářské budově na Moravě. Výborná dostupnost z centra Brna, parkování v areálu budovy.",
-    managerName: "Tomáš Kalous",
-    managerImgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBgGsWlwCZT4mXgsytCfRBV6_0bC-rRRDp80GgGQaxYsO8mepaykrowL8W_UTuK2iqnDtCNmOlCb7nAXbc6X8ynNMHevwTJ0mH-dOMe5lsRIvpfXmkQjiRrg0o2Yw7EsYx1XwaBaHN-aPc47nJLYaTFEEAjgwJ2kJ1feFkwAH6rLZFrYhpDYL7SQ3prUsk1Kv-UTR59yMwAah6Fq9jFHtvZeIR8i7jQ8_dWaq6JQdOO6S-LFOGDq2tfuXJ8wp3Z-mQ-k5N4kksyrio",
+    managerSlug: "tomas-kalous",
   },
   {
     imgSrc:
@@ -20,9 +20,7 @@ const branches = [
     address: "Tovačovského 2784/24, 767 01 Kroměříž",
     description:
       "Kancelář v centru Kroměříže. Schůzky jsou možné po předchozí domluvě s poradcem.",
-    managerName: "Lukáš Formánek",
-    managerImgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD8xUgbx1a2xxVb2STVNl0i630ubjlVhgZGgyWUz91fVmE1fueU7Tnlr6Lv-j7AjqR1gCWUku4CBXGPDghX1WZMWgZvx68dNHhAXlELJgfcFeltuL5YE8NJt06Ko59eGU-uqpQ0QC33p_ECMQODXSu9pgJ_FptSMosBO3SrKGSB1vox6ZYGM8o-t1C884FFw-k3mYAIPGPjYL7JRza_rQyiQHa4IPVEIKMYVdcVQbW8_0MpAdhUyWB1awBQi1riimEqKyi_x5zyqAo",
+    managerSlug: "lukas-formanek",
   },
   {
     imgSrc:
@@ -32,22 +30,32 @@ const branches = [
     address: "nám. T. G. Masaryka 302/8, 690 02 Břeclav",
     description:
       "Kancelář na hlavním náměstí Břeclavi. Pohodlné parkování přímo před budovou, schůzky po domluvě s poradcem.",
-    managerName: "Filip Beneš",
-    managerImgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDxqGjKB_uFq87B5HeULFl9yPkBfVH_quQsgqZNDWjWXhstdLz2STQ0fjHWs1PiND_W_0CtnW9n4eMaevqjgem-dqt4mrVPMAj6CKMyS_M0cPonv_ddS6jdJlOma8f8vC04As2VQs_PizmCSU45gXh0I8n6P2ZwPjUyDoyuK2QBPYSs8fNDXlVUoqaMNNRhVGBvmbMYUUhfxoo77oos40YnnKNRlUZZw57r-AlEpWdKQXMwzv8uwoizlPVsToXCNHyrmMRSdDlveAM",
+    managerSlug: "filip-benes",
   },
 ];
+
+const branchesWithManagers = branches.map((branch) => {
+  const manager = usersData.find((user) => user.slug === branch.managerSlug);
+
+  return {
+    ...branch,
+    managerName: manager?.name ?? "",
+    managerImgSrc: manager?.photo ?? "",
+  };
+});
 </script>
 
 <template>
   <section class="bg-surface-container-low py-section-gap">
     <UContainer class="mx-auto px-gutter">
-      <h2 class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center">
+      <h2
+        class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center"
+      >
         Naše pobočky
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
         <UiBranchCard
-          v-for="branch in branches"
+          v-for="branch in branchesWithManagers"
           :key="branch.name"
           v-bind="branch"
         />
