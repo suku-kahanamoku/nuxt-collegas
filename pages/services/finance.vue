@@ -12,12 +12,12 @@ useHead({
 });
 
 const relatedLinks = [
-  { label: "Nezávislý finanční audit", to: "/services/financial-audit" },
-  { label: "Finanční plán", to: "/services/financial-plan" },
-  { label: "Zajištění rizik", to: "/services/risk-management" },
+  { label: "Nezávislý finanční audit", to: "/services/finance#audit" },
+  { label: "Finanční plán", to: "/services/finance#plan" },
+  { label: "Zajištění rizik", to: "/services/finance#risk" },
   {
     label: "Odškodnění",
-    to: "/services/compensation",
+    to: "/services/finance#compensation",
   },
 ];
 
@@ -61,16 +61,16 @@ const caseStudies = [
       <template #heading>Finance</template>
 
       <template #body>
-        Finance jsou víc než jednotlivé produkty. Propojujeme nezávislý
-        finanční audit, finanční plán, zajištění rizik i odškodnění do jednoho
-        funkčního celku, který vám dává přehled, jistotu a kontrolu. Díky tomu
-        víte, co je nastavené správně, kde vznikají zbytečné náklady a jaké
-        kroky dávají smysl dál.
+        Nezávislý finanční audit je první krok k tomu, abyste ve svých
+        financích měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé
+        produkty, ale díváme se na vaše finance jako na celek. Ukážeme vám, co
+        je nastavené správně, kde zbytečně přeplácíte a kde vám naopak unikají
+        příležitosti.
       </template>
 
       <template #quote>
-        „Výsledkem není jen seznam změn, ale především klid a kontrola. Přesně
-        víte, jak na tom jste a jaké kroky vás přibližují vašim cílům."
+        „Audit vám nepřinese jen seznam změn, ale především klid a kontrolu.
+        Budete přesně vědět, jak na tom jste a jaké kroky dávají smysl dál."
       </template>
 
       <template #attribution>
@@ -111,7 +111,7 @@ const caseStudies = [
 
     <UiDarkBanner
       title="Připraveni získat kontrolu nad financemi?"
-      body="Nezávisle posoudíme vaši situaci, navrhneme jasný plán a nastavíme kroky, které vám pomohou chránit i rozvíjet váš majetek."
+      body="Nezávisle posoudíme vaši situaci, nastavíme finanční plán, ochranu rizik i odškodnění tak, aby vaše finance pracovaly dlouhodobě ve váš prospěch."
     >
       <UiButton to="/contact">
         Domluvit konzultaci
@@ -142,15 +142,16 @@ const caseStudies = [
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Každou spolupráci začínáme důkladným auditem a pochopením vašich cílů.
-          Teprve potom navrhujeme finanční plán, ochranu rizik a další kroky tak,
-          aby vše fungovalo jako jeden celek.
+          Finance nastavujeme jako jeden funkční celek, který vychází z vašich
+          cílů, priorit a životní situace. Pracujeme s rezervami, investicemi i
+          financováním tak, aby se vzájemně podporovaly a dlouhodobě fungovaly.
         </p>
         <p
           class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
         >
-          „Nehledáme rychlá řešení na papíře. Nastavujeme dlouhodobě udržitelný
-          systém, který vám pomáhá rozhodovat se s jistotou dnes i v budoucnu."
+          „Nejde jen o produkty, ale o logiku celku. Důraz klademe na
+          dlouhodobou udržitelnost, flexibilitu a schopnost reagovat na změny,
+          které život přináší."
         </p>
       </div>
     </CustomUserPic&desc>
@@ -209,45 +210,114 @@ const caseStudies = [
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
+              id="audit"
               img-src="/img/intro/notes.png"
               img-alt="Nezávislý finanční audit a plán"
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
+                <h2 class="text-headline-lg font-serif text-primary-800">
+                  Nezávislý finanční audit
+                </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Nezávislý finanční audit je první krok k tomu, abyste ve
-                  svých financích měli skutečný přehled a jistotu. Navazující
-                  finanční plán propojuje vaše cíle, priority a aktuální
-                  možnosti do konkrétní strategie, podle které se můžete
-                  rozhodovat každý den.
+                  svých financích měli skutečný přehled a jistotu. Nehodnotíme
+                  jen jednotlivé produkty, ale díváme se na vaše finance jako na
+                  celek - jak spolu jednotlivé části fungují, kde dávají smysl a
+                  kde naopak vznikají zbytečné náklady nebo rizika.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu
+                  financí a přeložíme vám je do srozumitelného obrazu. Díky tomu
+                  získáte jasný základ pro další rozhodování - bez tlaku, bez
+                  chaosu a bez závislosti na konkrétních produktech nebo
+                  institucích.
                 </p>
                 <UiButton to="/contact">
-                  Chci plánovat dnes i v budoucnu
+                  Chci jasno ve svých financích
                 </UiButton>
               </div>
             </UiImageText>
 
             <UiImageText
+              id="plan"
               img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
               img-alt="Finanční poradce při konzultaci"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
                 <h2 class="text-headline-lg font-serif text-primary-800">
-                  Ochrana a odškodnění
+                  Finanční plán
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Zajištění rizik stavíme tak, aby vás reálně chránilo při
-                  situacích, které mají největší dopad na váš majetek,
-                  podnikání i rodinné zázemí. Analyzujeme smlouvy, odhalujeme
-                  nedostatečné krytí i zbytečné duplicity a nastavujeme ochranu,
-                  na kterou se můžete spolehnout.
+                  Finanční plán je nástroj, který dává vašim penězům jasný směr
+                  a smysl. Nevychází jen z čísel, ale především z vašich cílů,
+                  priorit a životní situace. Ať už řešíte bydlení, rodinu,
+                  budování majetku nebo finanční nezávislost, vše propojujeme do
+                  jednoho funkčního celku.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  V případě pojistné události vám pomáháme i s odškodněním.
-                  Postaráme se o celý proces uplatnění nároků vůči pojišťovnám
-                  nebo odpovědným subjektům, abyste získali spravedlivou
-                  kompenzaci v plné výši.
+                  Společně nastavíme strukturu vašich financí tak, aby
+                  odpovídala tomu, kde se právě nacházíte, i tomu, kam chcete
+                  dojít. Výsledkem není plán na papíře, ale konkrétní strategie,
+                  podle které se můžete rozhodovat každý den.
                 </p>
+                <UiButton to="/contact">Chci plánovat dnes i v budoucnu</UiButton>
+              </div>
+            </UiImageText>
+
+            <UiImageText
+              id="risk"
+              img-src="/img/intro/notes.png"
+              img-alt="Zajištění rizik"
+              img-right
+            >
+              <div class="grid space-y-stack-md items-center from-left">
+                <h2 class="text-headline-lg font-serif text-primary-800">
+                  Zajištění rizik
+                </h2>
+                <p class="text-body-md text-on-surface-variant">
+                  Zajištění rizik je základním stavebním kamenem každé stabilní
+                  finanční strategie. Nejde jen o to mít sjednané pojištění, ale
+                  mít ho nastavené tak, aby vás skutečně chránilo v situacích,
+                  kdy to nejvíce potřebujete.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Detailně analyzujeme vaše stávající pojistné smlouvy a
+                  identifikujeme nedostatečné krytí, zbytečné duplicity i
+                  oblasti, kde naopak platíte více, než je nutné. Výsledkem je
+                  řešení, které dává smysl nejen z pohledu ceny, ale především
+                  kvality ochrany.
+                </p>
+                <UiButton to="/contact">
+                  Nechte si nastavit ochranu, na kterou se můžete opravdu
+                  spolehnout
+                </UiButton>
+              </div>
+            </UiImageText>
+
+            <UiImageText
+              id="compensation"
+              img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
+              img-alt="Odškodnění"
+            >
+              <div class="grid space-y-stack-md items-center from-bottom">
+                <h2 class="text-headline-lg font-serif text-primary-800">
+                  Odškodnění
+                </h2>
+                <p class="text-body-md text-on-surface-variant">
+                  Odškodnění je oblast, do které se člověk dostane nečekaně -
+                  často ve chvíli, kdy řeší zdravotní, pracovní nebo osobní
+                  komplikace. A právě tehdy je nejdůležitější mít po svém boku
+                  někoho, kdo se v procesu vyzná a dokáže vás jím bezpečně
+                  provést.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Pomáháme vám zorientovat se v nárocích, které vám skutečně
+                  vznikají, a postaráme se o jejich uplatnění vůči pojišťovnám
+                  nebo odpovědným subjektům. Výsledkem je nejen vyšší finanční
+                  kompenzace, ale především úleva.
+                </p>
+                <UiButton to="/contact">Postavte se za mé nároky</UiButton>
               </div>
             </UiImageText>
           </div>
@@ -270,7 +340,7 @@ const caseStudies = [
       bg-image="/img/intro/stamp.png"
       label="FINANCE"
       title="Jasno, plán a ochrana"
-      body="Pomáháme vám nastavit finance jako funkční celek: od auditu a plánu přes zajištění rizik až po odškodnění."
+      body="Od nezávislého auditu přes finanční plán až po ochranu rizik a odškodnění. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
       heading-tag="h1"
     />
 
@@ -307,7 +377,7 @@ const caseStudies = [
             navazuje na předchozí a podporuje dlouhodobou stabilitu.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
           <!-- Service 1 -->
           <div
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
@@ -322,7 +392,7 @@ const caseStudies = [
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/financial-audit"
+              href="/services/finance#audit"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
@@ -342,7 +412,7 @@ const caseStudies = [
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/financial-plan"
+              href="/services/finance#plan"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
@@ -353,16 +423,36 @@ const caseStudies = [
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
             <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Odškodnění
+              Zajištění rizik
             </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Pomáháme uplatnit vaše nároky při pracovních úrazech,
-              autonehodách i dalších pojistných událostech. Cílem je spravedlivé
-              odškodnění v plné možné výši.
+              Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je
+              správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší
+              reálné situaci.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/compensation"
+              href="/services/finance#risk"
+            >
+              ZOBRAZIT SLUŽBU
+              <UIcon name="i-material-symbols-north-east" class="text-sm" />
+            </a>
+          </div>
+          <!-- Service 4 -->
+          <div
+            class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
+          >
+            <h3 class="font-headline-md text-primary-800 mb-stack-sm">
+              Odškodnění
+            </h3>
+            <p class="font-body-md text-on-surface-variant mb-stack-lg">
+              Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné
+              pojistné události, cílem je jediné: získat spravedlivé odškodnění
+              v plné výši.
+            </p>
+            <a
+              class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
+              href="/services/finance#compensation"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
