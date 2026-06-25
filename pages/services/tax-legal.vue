@@ -280,7 +280,7 @@ const teamMembers = specialistSlugs
       label="DANE A PRAVO"
       title="Jistota v danich i pravu"
       body="Propojujeme daňové a právní poradenství do jednoho funkčního rámce. Získáte nižší zbytečné náklady, pevnější ochranu majetku a klid při rozhodování."
-      heading-tag="h1"
+      heading-tag="h2"
     />
 
     <CustomBranches />

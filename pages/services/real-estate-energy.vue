@@ -9,7 +9,7 @@ useHead({
     {
       name: "description",
       content:
-        "Energetická optimalizace, realitní služby, správa nemovitostí a developerské projekty v jednom celku. Pomáháme vám zvyšovat hodnotu majetku a mít náklady pod kontrolou.",
+        "Energetická optimalizace, realitní služby, správa nemovitostí a development. Pomáháme snižovat náklady a dlouhodobě zvyšovat hodnotu majetku.",
     },
   ],
 });
@@ -314,7 +314,7 @@ const teamMembers = specialistSlugs
       label="REALITY A ENERGIE"
       title="Hodnota majetku pod kontrolou"
       body="Od energetické optimalizace přes realitní služby až po správu nemovitostí a developerské projekty. Nastavujeme systém, který dlouhodobě chrání i rozvíjí váš majetek."
-      heading-tag="h1"
+      heading-tag="h2"
     />
 
     <CustomBranches />

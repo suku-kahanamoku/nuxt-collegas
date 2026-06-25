@@ -9,7 +9,7 @@ useHead({
     {
       name: "description",
       content:
-        "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+        "Nezávislý audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme chránit majetek a rozhodovat se s jistotou.",
     },
   ],
 });
@@ -312,7 +312,7 @@ const teamMembers = specialistSlugs
       label="FINANCE"
       title="Jasno, plán a ochrana"
       body="Od nezávislého auditu přes finanční plán až po ochranu rizik a odškodnění. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
-      heading-tag="h1"
+      heading-tag="h2"
     />
 
     <CustomBranches />

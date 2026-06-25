@@ -7,7 +7,7 @@ useHead({
     {
       name: "description",
       content:
-        "Přehled služeb skupiny COLLEGA – audit, poradenství, správa majetku a další.",
+        "Přehled služeb COLLEGA ENTERPRISE: finance, správa kapitálu, daně a právo, reality i energie. Každou oblast propojujeme do funkčního celku.",
     },
   ],
 });

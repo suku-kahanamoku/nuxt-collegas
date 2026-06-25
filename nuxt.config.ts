@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
+  // @ts-expect-error added by @nuxtjs/seo runtime config extension
+  site: {
+    url: process.env.FRONTEND_HOST || "http://localhost:3000",
+    name: "COLLEGA ENTERPRISE",
+  },
+
   routeRules: {
     "/": { prerender: true },
   },
@@ -45,7 +51,9 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "netlify",
+    preset:
+      process.env.NITRO_PRESET ||
+      (process.env.NETLIFY ? "netlify" : "node-server"),
   },
 
   i18n: {

@@ -289,7 +289,7 @@ const teamMembers = specialistSlugs
       label="SPRAVA KAPITALU"
       title="Růst, stabilita a příležitosti"
       body="Kapitál řídíme aktivně a v souvislostech. Propojujeme péči o investice, financování i přístup k příležitostem s cílem dlouhodobě chránit a rozvíjet váš majetek."
-      heading-tag="h1"
+      heading-tag="h2"
     />
 
     <CustomBranches />

@@ -43,7 +43,7 @@ const pillars = [
             <h1
               class="text-display-xl font-serif text-primary-800 leading-none"
             >
-              Holdingová<br />struktura
+              Holdingová <br />struktura
             </h1>
           </template>
         </UiTitle>

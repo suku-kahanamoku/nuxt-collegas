@@ -96,6 +96,7 @@ const principles = [
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
           >
+          <h1 class="sr-only">O nás</h1>
           <h2 class="text-headline-lg font-serif text-on-primary mb-stack-md">
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>

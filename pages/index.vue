@@ -9,7 +9,7 @@ useHead({
     {
       name: "description",
       content:
-        "Nezávislý finanční audit je první krok k tomu, abyste ve svých financích měli skutečný přehled a jistotu. Projdeme vaše smlouvy, nastavení i celkovou strukturu financí.",
+        "Nezávislý finanční audit odhalí slabá místa ve smlouvách i nákladech. Získáte jasný přehled financí, konkrétní doporučení a plán dalších kroků.",
     },
   ],
 });

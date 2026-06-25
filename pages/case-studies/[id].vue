@@ -29,12 +29,21 @@ const serviceLabel: Record<string, string> = {
 	"real-estate": "Reality a energie",
 };
 
+const metaDescription = computed(() => {
+	const raw = caseStudy.value?.description || "Detail modelové studie.";
+	const maxLength = 155;
+
+	if (raw.length <= maxLength) return raw;
+
+	return `${raw.slice(0, maxLength - 1).trimEnd()}…`;
+});
+
 useHead(() => ({
 	title: `${caseStudy.value?.title || "Modelová studie"} | Finanční poradenství`,
 	meta: [
 		{
 			name: "description",
-			content: caseStudy.value?.description || "Detail modelové studie.",
+			content: metaDescription.value,
 		},
 	],
 }));
