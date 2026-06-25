@@ -1,0 +1,202 @@
+{
+  "finance": [
+    {
+      "slug": "audit-financi-uspora-148k",
+      "serviceCategory": "finance",
+      "category": "Financni audit",
+      "year": "2024",
+      "title": "Audit financi: uspora 148 000 Kc rocne",
+      "description": "U klienta jsme pri nezavislem auditu odhalili zbytecne naklady a duplicitni smlouvy. Po uprave struktury ziskal prehled, nizsi naklady a jasny plan dalsich kroku.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
+      "imgAlt": "Klient pri konzultaci nad financnim auditem",
+      "detail": {
+        "overview": "Klient mel vice historickych smluv bez provazani, nizkou transparentnost nakladu a nejasne priority dalsich kroku.",
+        "challenge": "Najit a odstranit duplicitni produkty, snizit celkove naklady a pripravit srozumitelny plan bez naruseni ochrany majetku.",
+        "solution": "Provedli jsme nezavisly rozbor vsech smluv, prehledne oddelili nutne a zbytecne polozky a nastavili novou strukturu financi podle realnych cilu klienta.",
+        "result": "Doslo ke snizeni rocni zateze o 148 000 Kc, klient ziskal plnou kontrolu nad produktem i cashflow a jasnou strategii dalsiho postupu."
+      }
+    },
+    {
+      "slug": "rodinny-plan-strategie-15-let",
+      "serviceCategory": "finance",
+      "category": "Financni plan",
+      "year": "2023",
+      "title": "Rodinny plan: jasna strategie na 15 let",
+      "description": "Rodina resila bydleni, rezervy i investice bez jasne navaznosti. Nastavili jsme jednotnou strategii, ktera propojuje kazdodenni rozhodovani s dlouhodobymi cily.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
+      "imgAlt": "Rodina planuje dlouhodobe cile s poradcem",
+      "detail": {
+        "overview": "Klienti potrebovali sladit bydleni, tvorbu rezerv i investice, ale dosavadni nastaveni bylo roztresene a bez jednotne logiky.",
+        "challenge": "Vytvorit jeden funkcni financni plan, ktery bude proveditelny v beznem zivote a soucasne odolny v case.",
+        "solution": "Nastavili jsme cilove milniky, pravidla pro rezervy, investicni rytmus i praci s financovanim tak, aby vsechny casti navzajem podporovaly dlouhodoby cil.",
+        "result": "Rodina ziskala jasny plan na 15 let, pravidla pro kazdodenni rozhodovani a vyssi jistotu pri zvladani zmen i neocekavanych vydaju."
+      }
+    },
+    {
+      "slug": "odskodneni-navyseni-420k",
+      "serviceCategory": "finance",
+      "category": "Odskodneni",
+      "year": "2024",
+      "title": "Po nehode: navyseni odskodneni o 420 000 Kc",
+      "description": "Klient mel po dopravni nehode podhodnocene naroky. Prevzali jsme cely proces komunikace s pojistovnou a pomohli uplatnit odskodneni v plne vysi.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
+      "imgAlt": "Klient resi odskodneni po dopravni nehode",
+      "detail": {
+        "overview": "Po nehode klient obdrzel predbezne plneni, ktere neodpovidalo rozsahu skutecnych dopadu na zdravi a prijem.",
+        "challenge": "Spravne vycislit naroky, dolozit je a ustát komunikaci s pojistovnou bez dalsi zateze pro klienta.",
+        "solution": "Prevzali jsme administrativu, doplnili potrebnou dokumentaci a systematicky uplatnili vsechny relevantni naroky vcetne casti, ktere byly puvodne opomenuty.",
+        "result": "Konecne plneni bylo navyseno o 420 000 Kc. Klient mel proces pod kontrolou a mohl se soustredit na rekonvalescenci."
+      }
+    }
+  ],
+  "capital": [
+    {
+      "slug": "rebalance-portfolia-stabilita-vynosu",
+      "serviceCategory": "capital",
+      "category": "Pece o majetek",
+      "year": "2024",
+      "title": "Rebalanci portfolia k vyssi stabilite vynosu",
+      "description": "Portfolio klienta jsme prubezne upravili podle vyvoje trhu i jeho cilu. Vysledkem byla vyvazenejsi struktura, nizsi kolisani a lepsi dlouhodoba vykonnost.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
+      "imgAlt": "Klient konzultuje slozeni investicniho portfolia",
+      "detail": {
+        "overview": "Klient mel dynamicke portfolio bez jasnych pravidel rebalancovani, coz vedlo k vyssimu kolisani nez odpovidalo jeho profilu.",
+        "challenge": "Udrzet potencial rustu, ale snizit kratkodobou volatilitu a zlepsit predvidatelnost dlouhodobeho vykonu.",
+        "solution": "Nastavili jsme disciplinovany rebalancni rezim, upravili vahy hlavnich trid aktiv a doplnili ochrannou slozku pro trzni turbulence.",
+        "result": "Portfolio dosahlo vyssi stability pri zachovani rustoveho potencialu a klient ziskal jasny investicni ramec pro dalsi obdobi."
+      }
+    },
+    {
+      "slug": "hypoteka-a-rekonstrukce-bez-pretizeni",
+      "serviceCategory": "capital",
+      "category": "Financovani",
+      "year": "2023",
+      "title": "Hypoteka a rekonstrukce bez pretizeni rozpoctu",
+      "description": "Nastavili jsme financovani bydleni a rekonstrukce tak, aby bylo dlouhodobe zvladnutelne a soucasne zachovalo dostatecnou likviditu pro dalsi investice.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
+      "imgAlt": "Par resi financovani bydleni s poradcem",
+      "detail": {
+        "overview": "Klienti potrebovali sloucit akvizici bydleni a naslednou rekonstrukci bez zhorseni cashflow a bez ztraty rezerv.",
+        "challenge": "Navrhnout strukturu uveru, ktera bude dlouhodobe bezpecna i pri zmenach sazeb a zachova provozni flexibilitu rodiny.",
+        "solution": "Pripravili jsme kombinaci fixace, rezervniho planu a etapizace cerpani tak, aby se financovani opiralo o realne prijmy a planovane vydaje.",
+        "result": "Klienti zvladli projekt bez rozpoctoveho tlaku, udrzeli si likvidni rezervu a otevrenou kapacitu pro dalsi investicni rozhodnuti."
+      }
+    },
+    {
+      "slug": "investicni-prilezitost-vynos-riziko",
+      "serviceCategory": "capital",
+      "category": "Investicni prilezitosti",
+      "year": "2024",
+      "title": "Vyber prilezitosti s durazem na vynos a riziko",
+      "description": "Po detailni analyze nekolika projektu jsme doporucili variantu, ktera zapadla do strategie klienta. Diky spravne strukture zvysil potencial rustu pri kontrolovanem riziku.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
+      "imgAlt": "Investor hodnoti developerskou prilezitost",
+      "detail": {
+        "overview": "Klient hledal investicni prilezitost s vyssim potencialem vynosu, ale bez neprimereneho navyseni rizikoveho profilu.",
+        "challenge": "Vybrat projekt, ktery bude mit realny ekonomicky potencial, transparentni strukturu a citlivou navaznost na zbytek portfolia.",
+        "solution": "Provedli jsme srovnani variant podle navratnosti, rizik a likvidity, nastavili vstupni parametry a doporucili vhodny zpusob alokace kapitálu.",
+        "result": "Klient vstoupil do prilezitosti, ktera odpovidala jeho strategii. Portfolio ziskalo rustovy prvek pri zachovani celkove rovnovahy."
+      }
+    }
+  ],
+  "tax": [
+    {
+      "slug": "danova-optimalizace-bez-rizik",
+      "serviceCategory": "tax",
+      "category": "Danove poradenstvi",
+      "year": "2024",
+      "title": "Danova optimalizace bez zbytecnych rizik",
+      "description": "Klient mel prijmy z podnikani i investic bez jednotne struktury. Nastavili jsme danove reseni v souvislostech a snizili zbytecnou danovou zatez.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
+      "imgAlt": "Podnikatel konzultuje danove nastaveni",
+      "detail": {
+        "overview": "Klient mel vice prijmovych zdroju, ale bez jednotneho danoveho ramce, coz vedlo k neefektivnimu zdaneni.",
+        "challenge": "Sjednotit danove nastaveni tak, aby respektovalo legislativu a soucasne neplatil vice, nez je nutne.",
+        "solution": "Provedli jsme analyzu struktury prijmu, upravili danove vazby mezi podnikanim a investicemi a nastavili dlouhodobe udrzitelny model.",
+        "result": "Snizila se zbytecna danova zatez, zvysila predvidatelnost cashflow a klient ziskal klid pro dalsi strategicka rozhodnuti."
+      }
+    },
+    {
+      "slug": "pravni-zazemi-majetek-investice",
+      "serviceCategory": "tax",
+      "category": "Pravni poradenstvi",
+      "year": "2023",
+      "title": "Pravni zazemi pro majetek a investice",
+      "description": "Nastavili jsme smluvni dokumentaci a vlastnicke vztahy tak, aby byly funkcni, srozumitelne a dlouhodobe udrzitelne.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
+      "imgAlt": "Klient resi pravni nastaveni majetku",
+      "detail": {
+        "overview": "Klient mel nejednotnou smluvni dokumentaci a vztahy, ktere mohly v budoucnu zpusobit provozni i majetkove komplikace.",
+        "challenge": "Nastavit pravni strukturu majetku a investic tak, aby byla prehledna, robustni a pripravená na dalsi rozvoj.",
+        "solution": "Zrevidovali jsme stavajici smluvni agendu, upravili vlastnicke vazby a nastavili pravidla pro nove investicni vztahy.",
+        "result": "Klient ziskal stabilni pravni zazemi, vyssi jistotu pri transakcich a nizsi pravdepodobnost budouciho sporu."
+      }
+    },
+    {
+      "slug": "komplexni-danove-pravni-zazemi",
+      "serviceCategory": "tax",
+      "category": "Dane a pravo",
+      "year": "2024",
+      "title": "Komplexni zazemi pro klidne rozhodovani",
+      "description": "Propojili jsme danove a pravni poradenstvi do jednoho celku. Klient ziskal jasny ramec pro rozhodovani bez zbytecnych nakladu a prekvapeni.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
+      "imgAlt": "Poradce vysvetluje danove a pravni souvislosti",
+      "detail": {
+        "overview": "Oddelene reseni dani a pravni agendy vedlo k nejasnostem, duplicitam a zbytecnym nakladum pri klicovych rozhodnutich.",
+        "challenge": "Propojit obe oblasti do jednotneho postupu, ktery bude srozumitelny, riditelny a dlouhodobe funkci.",
+        "solution": "Nastavili jsme koordinovany model spoluprace, ve kterem se danove i pravni kroky pripravuji v navaznosti na celek klientova majetku.",
+        "result": "Klient ziskal jednotny rozhodovaci ramec, lepsi kontrolu nad riziky a vyssi jistotu pri strategickych krocich."
+      }
+    }
+  ],
+  "real-estate": [
+    {
+      "slug": "energie-snizeni-nakladu-27",
+      "serviceCategory": "real-estate",
+      "category": "Energeticka optimalizace",
+      "year": "2024",
+      "title": "Snizeni energetickych nakladu o 27 procent rocne",
+      "description": "Po analyze spotreby, smluv a sazeb jsme nastavili efektivnejsi strukturu odberu. Klient ziskal dlouhodobe udrzitelny model s okamzitym dopadem na vydaje.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
+      "imgAlt": "Majitel firmy resi optimalizaci energetickych nakladu",
+      "detail": {
+        "overview": "Klient dlouhodobe platil vysoke energie bez jasneho vysvetleni, proc naklady rostou navzdory stabilnimu provozu.",
+        "challenge": "Identifikovat skutecne priciny ztraty efektivity a navrhnout model, ktery bude fungovat i pri budouci cenove volatilite.",
+        "solution": "Zrevidovali jsme smlouvy, tariffni nastaveni i spotrebni profily a pripravili technicko-provozni doporuceni s meritelnych dopadem.",
+        "result": "Rocni energeticke naklady poklesly o 27 procent, klient ziskal lepsi predvidatelnost vydaju a aktivni kontrolu nad odberem."
+      }
+    },
+    {
+      "slug": "prodej-nemovitosti-vyssi-cena",
+      "serviceCategory": "real-estate",
+      "category": "Realitni sluzby",
+      "year": "2023",
+      "title": "Prodej nemovitosti s vyssi realizovanou cenou",
+      "description": "Diky spravnemu naceneni, kvalitni prezentaci a vyjednavani jsme dosahli lepsiho vysledku pri zachovani bezpecneho pravniho prubehu cele transakce.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
+      "imgAlt": "Majitel prodava investicni byt s plnym servisem",
+      "detail": {
+        "overview": "Vlastnik chtel prodat investicni nemovitost rychle, ale zaroven maximalizovat cenu a vyhnout se pravnim i procesnim komplikacim.",
+        "challenge": "Spravne nacenit nemovitost, oslovit relevantni zajemce a udrzet bezpecny transakcni postup od prohlidek po vyporadani.",
+        "solution": "Pripravili jsme marketingovou prezentaci, ridili vyjednavani a koordinovali pravni kroky vcetne smluv a bezpecneho prevodu prostredku.",
+        "result": "Transakce probehla hladce a prodavajici dosahl vyssi realizovane ceny, nez byla puvodni trzni ocekavani."
+      }
+    },
+    {
+      "slug": "sprava-nemovitosti-stabilni-vynos",
+      "serviceCategory": "real-estate",
+      "category": "Sprava nemovitosti",
+      "year": "2024",
+      "title": "Stabilni vynos bez provoznich starosti",
+      "description": "Prevzali jsme kompletni spravu najemnich jednotek od vyberu najemniku po servis. Obsazenost i provozni kvalita zustaly stabilni bez zateze pro vlastnika.",
+      "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
+      "imgAlt": "Investor sleduje vynosy z portfolia najemnich nemovitosti",
+      "detail": {
+        "overview": "Majitel portfolia nemovitosti mel vysokou operativni zatez a nepravidelnost prijmu kvuli neefektivni sprave najmu.",
+        "challenge": "Stabilizovat obsazenost, snizit provozni incidenty a vytvorit transparentni reporting vykonnosti portfolia.",
+        "solution": "Prevzali jsme vyber najemniku, smluvni a platebni agendu, technicky servis i pravidelny ekonomicky monitoring.",
+        "result": "Portfolio dosahlo stabilniho vynosu, snizila se casova narocnost pro vlastnika a vyrazne se zlepsila predvidatelnost provozu."
+      }
+    }
+  ]
+}

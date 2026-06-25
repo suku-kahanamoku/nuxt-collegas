@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import caseStudiesData from "~/assets/data/case-studies.json";
+
 definePageMeta({ title: "Daně a právo | Finanční poradenství" });
 useHead({
   title: "Daně a právo | Finanční poradenství",
@@ -22,38 +24,10 @@ const relatedLinks = [
   },
 ];
 
-const caseStudies = [
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
-    imgAlt: "Podnikatel konzultuje daňové nastavení",
-    category: "Daňové poradenství",
-    year: "2024",
-    title: "Daňová optimalizace bez zbytečných rizik",
-    description:
-      "Klient měl příjmy z podnikání i investic bez jednotné struktury. Nastavili jsme daňové řešení v souvislostech a snížili zbytečnou daňovou zátěž.",
-  },
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
-    imgAlt: "Klient řeší právní nastavení majetku",
-    category: "Právní poradenství",
-    year: "2023",
-    title: "Právní zázemí pro majetek a investice",
-    description:
-      "Nastavili jsme smluvní dokumentaci a vlastnické vztahy tak, aby byly funkční, srozumitelné a dlouhodobě udržitelné.",
-  },
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
-    imgAlt: "Poradce vysvětluje daňové a právní souvislosti",
-    category: "Daně a právo",
-    year: "2024",
-    title: "Komplexní zázemí pro klidné rozhodování",
-    description:
-      "Propojili jsme daňové a právní poradenství do jednoho celku. Klient získal jasný rámec pro rozhodování bez zbytečných nákladů a překvapení.",
-  },
-];
+const caseStudies = caseStudiesData.tax.map((cs) => ({
+  ...cs,
+  to: `/case-studies/${cs.slug}`,
+}));
 </script>
 
 <template>

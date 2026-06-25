@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import caseStudiesData from "~/assets/data/case-studies.json";
+
 definePageMeta({ title: "Správa kapitálu | Finanční poradenství" });
 useHead({
   title: "Správa kapitálu | Finanční poradenství",
@@ -26,38 +28,10 @@ const relatedLinks = [
   },
 ];
 
-const caseStudies = [
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
-    imgAlt: "Klient konzultuje složení investičního portfolia",
-    category: "Péče o majetek",
-    year: "2024",
-    title: "Rebalancí portfolia k vyšší stabilitě výnosu",
-    description:
-      "Portfolio klienta jsme průběžně upravili podle vývoje trhů i jeho cílů. Výsledkem byla vyváženější struktura, nižší kolísání a lepší dlouhodobá výkonnost.",
-  },
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
-    imgAlt: "Pár řeší financování bydlení s poradcem",
-    category: "Financování",
-    year: "2023",
-    title: "Hypotéka a rekonstrukce bez přetížení rozpočtu",
-    description:
-      "Nastavili jsme financování bydlení a rekonstrukce tak, aby bylo dlouhodobě zvládnutelné a současně zachovalo dostatečnou likviditu pro další investiční kroky.",
-  },
-  {
-    imgSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
-    imgAlt: "Investor hodnotí developerskou příležitost",
-    category: "Investiční příležitosti",
-    year: "2024",
-    title: "Výběr příležitosti s důrazem na výnos a riziko",
-    description:
-      "Po detailní analýze několika projektů jsme doporučili variantu, která zapadla do strategie klienta. Díky správné struktuře zvýšil potenciál růstu při kontrolovaném riziku.",
-  },
-];
+const caseStudies = caseStudiesData.capital.map((cs) => ({
+  ...cs,
+  to: `/case-studies/${cs.slug}`,
+}));
 </script>
 
 <template>
