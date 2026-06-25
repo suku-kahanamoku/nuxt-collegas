@@ -29,24 +29,6 @@ const navItems = [
   { label: "Holding", to: "/holding" },
   { label: "Naši lidé", to: "/our-people" },
   { label: "O nás", to: "/about" },
-  { label: "Kariéra", to: "/career" },
-  {
-    label: "Ostatní",
-    children: [
-      { label: "FAQ", to: "/faq", icon: "i-material-symbols-help-outline" },
-      { label: "Aktuality", to: "/news", icon: "i-material-symbols-newspaper" },
-      {
-        label: "Kalkulačky",
-        to: "/calculators",
-        icon: "i-material-symbols-calculate",
-      },
-      {
-        label: "Online šanon",
-        to: "/document-portal",
-        icon: "i-material-symbols-folder-open",
-      },
-    ],
-  },
   { label: "Kontakt", to: "/contact" },
 ];
 </script>

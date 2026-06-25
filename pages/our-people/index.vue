@@ -183,8 +183,8 @@ const backoffice = computed(() =>
     <UiCtaSection
       title="Chcete se přidat?"
       body="Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta."
-      primary-label="Podívat se na kariéru"
-      primary-to="/career"
+      primary-label="Napište nám"
+      primary-to="/contact"
       variant="dark"
     />
   </div>

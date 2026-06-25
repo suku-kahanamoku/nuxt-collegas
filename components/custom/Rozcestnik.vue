@@ -25,11 +25,11 @@ const destinations = [
     highlight: false,
   },
   {
-    icon: "i-material-symbols-work",
-    title: "Hledám práci v oboru",
-    description: "Staňte se součástí týmu, kde si věříme, vzdělávame se a stavíme kariéru na pevných základech.",
-    label: "Kariéra",
-    to: "/career",
+    icon: "i-material-symbols-support-agent",
+    title: "Chci nezávaznou konzultaci",
+    description: "Probereme vaši situaci, navrhneme další kroky a ukážeme vám nejvhodnější řešení.",
+    label: "Kontakt",
+    to: "/contact",
     highlight: false,
   },
 ];
