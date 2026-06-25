@@ -15,9 +15,6 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
 const spotlightStyle = ref<Record<string, string>>({
   "--spotlight-x": "-9999px",
   "--spotlight-y": "-9999px",
-  "--shadow-x": "0px",
-  "--shadow-y": "2px",
-  "--shadow-opacity": "0",
 });
 
 function onMouseMove(e: MouseEvent) {
@@ -25,14 +22,9 @@ function onMouseMove(e: MouseEvent) {
   const rect = el.getBoundingClientRect();
   const relX = e.clientX - rect.left;
   const relY = e.clientY - rect.top;
-  const nx = (relX / rect.width - 0.5) * 2;
-  const ny = (relY / rect.height - 0.5) * 2;
   spotlightStyle.value = {
     "--spotlight-x": `${relX}px`,
     "--spotlight-y": `${relY}px`,
-    "--shadow-x": `${nx * 6}px`,
-    "--shadow-y": `${ny * 6}px`,
-    "--shadow-opacity": "1",
   };
 }
 
@@ -40,23 +32,19 @@ function onMouseLeave() {
   spotlightStyle.value = {
     "--spotlight-x": "-9999px",
     "--spotlight-y": "-9999px",
-    "--shadow-x": "0px",
-    "--shadow-y": "2px",
-    "--shadow-opacity": "0",
   };
 }
 
 const rootClass =
   "group relative flex flex-col rounded-md h-full " +
-  "[--spotlight-size:420px] " +
-  "[box-shadow:calc(var(--shadow-x,0px))_calc(var(--shadow-y,2px))_12px_0px_color-mix(in_srgb,var(--shadow-color)_calc(var(--shadow-opacity,0)*10%),transparent)] " +
-  "transition-shadow duration-200 ease-out";
+  "[--spotlight-size:300px] " +
+  "transition-colors duration-200 ease-out";
 
 const spotlightColors = computed(() => {
   const isHighlight = props.highlight;
   return isHighlight
-    ? "[--spotlight-color:var(--color-secondary-fixed)] [--shadow-color:var(--color-secondary-fixed)]"
-    : "[--spotlight-color:var(--color-secondary-700)] [--shadow-color:var(--color-secondary-700)]";
+    ? "[--spotlight-color:var(--color-secondary-fixed)]"
+    : "[--spotlight-color:var(--color-secondary-700)]";
 });
 </script>
 
@@ -88,7 +76,7 @@ const spotlightColors = computed(() => {
     />
     <!-- background + border layer: covers the inside, exposes the 1px glow ring -->
     <div
-      class="absolute inset-0 rounded-[inherit] pointer-events-none z-1 border-[0.2px] transition-colors duration-200"
+      class="absolute inset-0 rounded-[inherit] pointer-events-none z-1 border transition-colors duration-200"
       :class="
         highlight
           ? 'bg-primary-900 border-primary-900 group-hover:bg-primary-800'
