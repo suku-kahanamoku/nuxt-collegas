@@ -73,8 +73,8 @@ const headingA = computed(() =>
         </p>
 
         <div class="flex gap-stack-md items-center flex-wrap from-bottom">
-          <UiButton variant="solid"> Domluvit konzultaci </UiButton>
-          <UiButton variant="outline" class="group flex items-center gap-2">
+          <UiButton variant="solid" to="/contact"> Domluvit konzultaci </UiButton>
+          <UiButton variant="outline" class="group flex items-center gap-2" to="/about">
             Naše filozofie
             <UIcon
               name="i-material-symbols-arrow-forward"
