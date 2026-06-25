@@ -231,9 +231,6 @@ const caseStudies = [
                   chaosu a bez závislosti na konkrétních produktech nebo
                   institucích.
                 </p>
-                <UiButton to="/contact">
-                  Chci jasno ve svých financích
-                </UiButton>
               </div>
             </UiImageText>
 
@@ -259,9 +256,6 @@ const caseStudies = [
                   dojít. Výsledkem není plán na papíře, ale konkrétní strategie,
                   podle které se můžete rozhodovat každý den.
                 </p>
-                <UiButton to="/contact"
-                  >Chci plánovat dnes i v budoucnu</UiButton
-                >
               </div>
             </UiImageText>
 
@@ -288,10 +282,6 @@ const caseStudies = [
                   řešení, které dává smysl nejen z pohledu ceny, ale především
                   kvality ochrany.
                 </p>
-                <UiButton to="/contact">
-                  Nechte si nastavit ochranu, na kterou se můžete opravdu
-                  spolehnout
-                </UiButton>
               </div>
             </UiImageText>
 
@@ -317,7 +307,6 @@ const caseStudies = [
                   nebo odpovědným subjektům. Výsledkem je nejen vyšší finanční
                   kompenzace, ale především úleva.
                 </p>
-                <UiButton to="/contact">Postavte se za mé nároky</UiButton>
               </div>
             </UiImageText>
           </div>

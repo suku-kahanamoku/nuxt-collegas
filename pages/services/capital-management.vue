@@ -234,9 +234,6 @@ const caseStudies = [
                   stará někdo, kdo rozumí souvislostem a přemýšlí v širším
                   kontextu.
                 </p>
-                <UiButton to="/contact">
-                  Svěřte kapitál do individuální péče
-                </UiButton>
               </div>
             </UiImageText>
 
@@ -262,9 +259,6 @@ const caseStudies = [
                   financování, které odpovídá vaší situaci dnes a zároveň vás
                   neomezuje do budoucna.
                 </p>
-                <UiButton to="/contact"
-                  >Nechte si navrhnout financování, které vás nepoloží</UiButton
-                >
               </div>
             </UiImageText>
 
@@ -290,9 +284,6 @@ const caseStudies = [
                   příležitost detailně analyzujeme a předkládáme pouze ty, za
                   kterými si dokážeme stát.
                 </p>
-                <UiButton to="/contact">
-                  Získejte přístup k investičním příležitostem
-                </UiButton>
               </div>
             </UiImageText>
           </div>

@@ -229,9 +229,6 @@ const caseStudies = [
                   rizikům. Nehledáme kličky, hledáme logiku, která funguje
                   dlouhodobě.
                 </p>
-                <UiButton to="/contact">
-                  Ozvěte se a přestaňte platit dan z neznalosti
-                </UiButton>
               </div>
             </UiImageText>
 
@@ -255,9 +252,6 @@ const caseStudies = [
                   především jim předcházet. Pomáháme nastavovat právní vztahy
                   tak, aby byly funkční, srozumitelné a dlouhodobě udržitelné.
                 </p>
-                <UiButton to="/contact"
-                  >Opřete se o právní partnerství</UiButton
-                >
               </div>
             </UiImageText>
 
@@ -281,7 +275,6 @@ const caseStudies = [
                   Výsledkem je klid, jistota a vědomí, že vaše rozhodnutí stojí
                   na pevných základech a jsou podpořena profesionálním zázemím.
                 </p>
-                <UiButton to="/contact"> Chci (ne)platit dane </UiButton>
               </div>
             </UiImageText>
           </div>
