@@ -5,45 +5,25 @@ const navItems = [
     to: "/services",
     children: [
       {
-        label: "Zajištění rizik",
-        to: "/services/risk-management",
-        icon: "i-material-symbols-shield",
-      },
-      /* {
-        label: "Daňové poradenství",
-        to: "/services/tax-advisory",
-        icon: "i-material-symbols-receipt-long",
+        label: "Finance",
+        to: "/services/finance",
+        icon: "i-material-symbols-account-balance-wallet",
       },
       {
-        label: "Právní poradenství",
-        to: "/services/legal-advisory",
-        icon: "i-material-symbols-gavel",
-      },
-      {
-        label: "Odškodnění",
-        to: "/services/compensation",
-        icon: "i-material-symbols-balance",
-      },
-      {
-        label: "Realitní služby",
-        to: "/services/real-estate",
-        icon: "i-material-symbols-home-work",
-      },
-      {
-        label: "Správa nemovitostí",
-        to: "/services/property-management",
-        icon: "i-material-symbols-apartment",
-      },
-      {
-        label: "Péče o investiční majetek",
-        to: "/services/investment-asset-management",
+        label: "Správa kapitálu",
+        to: "/services/capital-management",
         icon: "i-material-symbols-trending-up",
       },
       {
-        label: "Developerské projekty",
-        to: "/services/development-projects",
-        icon: "i-material-symbols-domain",
-      }, */
+        label: "Daně a právo",
+        to: "/services/tax-legal",
+        icon: "i-material-symbols-balance",
+      },
+      {
+        label: "Reality a energie",
+        to: "/services/real-estate-energy",
+        icon: "i-material-symbols-home-work",
+      },
     ],
   },
   { label: "Holding", to: "/holding" },

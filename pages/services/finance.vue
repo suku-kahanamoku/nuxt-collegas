@@ -1,23 +1,23 @@
 <script setup lang="ts">
-definePageMeta({ title: "Zajištění rizik | Finanční poradenství" });
+definePageMeta({ title: "Finance | Finanční poradenství" });
 useHead({
-  title: "Zajištění rizik | Finanční poradenství",
+  title: "Finance | Finanční poradenství",
   meta: [
     {
       name: "description",
       content:
-        "Správně nastavené zajištění rizik je základem každé stabilní finanční strategie. Analyzujeme vaše smlouvy, identifikujeme nedostatky a nastavíme ochranu, která vás skutečně chrání.",
+        "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
     },
   ],
 });
 
 const relatedLinks = [
-  { label: "Daňové poradenství", to: "/services/tax-advisory" },
-  { label: "Právní poradenství", to: "/services/legal-advisory" },
-  { label: "Odškodnění", to: "/services/compensation" },
+  { label: "Nezávislý finanční audit", to: "/services/financial-audit" },
+  { label: "Finanční plán", to: "/services/financial-plan" },
+  { label: "Zajištění rizik", to: "/services/risk-management" },
   {
-    label: "Péče o investiční majetek",
-    to: "/services/investment-asset-management",
+    label: "Odškodnění",
+    to: "/services/compensation",
   },
 ];
 
@@ -25,57 +25,56 @@ const caseStudies = [
   {
     imgSrc:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
-    imgAlt: "Rodina na horách – příklad správně nastaveného zajištění",
-    category: "Životní pojištění",
+    imgAlt: "Klient při konzultaci nad finančním auditem",
+    category: "Finanční audit",
     year: "2024",
-    title: "Úraz na sjezdovce: pojistné plnění 780 000 Kč",
+    title: "Audit financí: úspora 148 000 Kč ročně",
     description:
-      "Klientka Karolína T. D. utrpěla při lyžování zlomeninu páteře. Díky správně nastavenému zajištění získala plné pojistné plnění a mohla se bez stresu věnovat léčbě.",
+      "U klienta jsme při nezávislém auditu odhalili zbytečné náklady a duplicitní smlouvy. Po úpravě struktury získal přehled, nižší náklady a jasný plán dalších kroků.",
   },
   {
     imgSrc:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
-    imgAlt: "Podnikatel konzultuje s poradcem nastavení pojistné ochrany",
-    category: "Podnikatelé",
+    imgAlt: "Rodina plánuje dlouhodobé cíle s poradcem",
+    category: "Finanční plán",
     year: "2023",
-    title: "Ochrana podnikatele: jak nepřijít o firmu při nemoci",
+    title: "Rodinný plán: jasná strategie na 15 let",
     description:
-      "OSVČ s jedinou firmou neměl žádné zajištění. Po diagnostikování vážné nemoci mu správně nastavené pojištění příjmu umožnilo udržet podnikání v chodu celých 14 měsíců.",
+      "Rodina řešila bydlení, rezervy i investice bez jasné návaznosti. Nastavili jsme jednotnou strategii, která propojuje každodenní rozhodování s dlouhodobými cíli.",
   },
   {
     imgSrc:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
-    imgAlt: "Rodina se dvěma dětmi – nastavení rodinné finanční ochrany",
-    category: "Rodina",
+    imgAlt: "Klient řeší odškodnění po dopravní nehodě",
+    category: "Odškodnění",
     year: "2024",
-    title: "Ztráta příjmu živitele: rodina bez existenčních starostí",
+    title: "Po nehodě: navýšení odškodnění o 420 000 Kč",
     description:
-      "Klient s hypotékou a dvěma dětmi přišel o práci ze zdravotních důvodů. Včas nastavené pojištění invalidity a příjmu pokrylo splátky i běžné náklady rodiny po celou dobu rekonvalescence.",
+      "Klient měl po dopravní nehodě podhodnocené nároky. Převzali jsme celý proces komunikace s pojišťovnou a pomohli uplatnit odškodnění v plné výši.",
   },
 ];
 </script>
 
 <template>
   <div class="w-full">
-    <CustomTextComment heading-tag="h1" label="Finanční poradenství">
-      <template #heading>Zajištění rizik</template>
+    <CustomTextComment heading-tag="h1" label="Finance">
+      <template #heading>Finance</template>
 
       <template #body>
-        Zajištění rizik je základním stavebním kamenem každé stabilní finanční
-        strategie. Nejde jen o to mít sjednané pojištění, ale mít ho nastavené
-        tak, aby vás skutečně chránilo v situacích, kdy to nejvíce potřebujete.
-        Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je správně
-        vyhodnotit rizika a nastavit krytí, které odpovídá vaší reálné situaci.
+        Finance jsou víc než jednotlivé produkty. Propojujeme nezávislý
+        finanční audit, finanční plán, zajištění rizik i odškodnění do jednoho
+        funkčního celku, který vám dává přehled, jistotu a kontrolu. Díky tomu
+        víte, co je nastavené správně, kde vznikají zbytečné náklady a jaké
+        kroky dávají smysl dál.
       </template>
 
       <template #quote>
-        „Správně nastavené zajištění vám přináší především klid. Víte, že ať se
-        stane cokoliv, máte oporu a vaše finanční stabilita není ohrožena jednou
-        nečekanou událostí."
+        „Výsledkem není jen seznam změn, ale především klid a kontrola. Přesně
+        víte, jak na tom jste a jaké kroky vás přibližují vašim cílům."
       </template>
 
       <template #attribution>
-        — Nechte si nastavit ochranu, na kterou se můžete opravdu spolehnout
+        — Chci jasno ve svých financích
       </template>
     </CustomTextComment>
 
@@ -83,12 +82,12 @@ const caseStudies = [
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center mb-stack-lg">
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
-            Case studies
+            Modelové situace
           </h2>
           <a
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
             href="/contact"
-            >KONZULTOVAT PŘÍPAD</a
+            >KONZULTOVAT SITUACI</a
           >
         </div>
         <div
@@ -104,15 +103,15 @@ const caseStudies = [
           <a
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
             href="/contact"
-            >KONZULTOVAT PŘÍPAD</a
+            >KONZULTOVAT SITUACI</a
           >
         </div>
       </UContainer>
     </section>
 
     <UiDarkBanner
-      title="Připraveni zajistit vaši budoucnost?"
-      body="Nechte si nastavit ochranu, na kterou se můžete skutečně spolehnout. Naši poradci jsou připraveni posoudit vaši situaci bez závazků."
+      title="Připraveni získat kontrolu nad financemi?"
+      body="Nezávisle posoudíme vaši situaci, navrhneme jasný plán a nastavíme kroky, které vám pomohou chránit i rozvíjet váš majetek."
     >
       <UiButton to="/contact">
         Domluvit konzultaci
@@ -143,16 +142,15 @@ const caseStudies = [
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
-          vaše cíle, časový horizont a toleranci k riziku. Teprve poté
-          navrhujeme konkrétní strukturu řešení.
+          Každou spolupráci začínáme důkladným auditem a pochopením vašich cílů.
+          Teprve potom navrhujeme finanční plán, ochranu rizik a další kroky tak,
+          aby vše fungovalo jako jeden celek.
         </p>
         <p
           class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
         >
-          „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-          scénáře – pozitivní i negativní. Naší rolí je tato rizika
-          transparentně pojmenovat, kvantifikovat a řídit."
+          „Nehledáme rychlá řešení na papíře. Nastavujeme dlouhodobě udržitelný
+          systém, který vám pomáhá rozhodovat se s jistotou dnes i v budoucnu."
         </p>
       </div>
     </CustomUserPic&desc>
@@ -166,7 +164,7 @@ const caseStudies = [
               >Naši specialisté</span
             >
             <h2 class="font-headline-lg text-headline-lg text-primary-800">
-              Poradci pro zajištění rizik
+              Poradci pro finance
             </h2>
           </div>
           <a
@@ -180,23 +178,23 @@ const caseStudies = [
           <UiUserCard
             img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo"
             name="Lukáš Formánek"
-            role="Specialista na zajištění rizik"
-            description="Přes 10 let zkušeností s nastavováním pojistné ochrany pro fyzické osoby i podnikatele. Certifikovaný finanční poradce."
+            role="Specialista na finanční audit"
+            description="Pomáhá klientům získat přehled o smlouvách, nákladech a rizicích. Zaměřuje se na optimalizaci struktury financí a dlouhodobou stabilitu."
           />
           <!-- Member 2 -->
           <UiUserCard
             img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs"
             name="Filip Beneš"
-            role="Poradce pro pojistnou ochranu"
-            description="Specializuje se na komplexní zajištění rizik v oblasti majetkového a životního pojištění. Člen AFIZ."
+            role="Poradce pro finanční plánování"
+            description="Specializuje se na návrh finančních plánů propojujících rezervy, investice i financování do jedné srozumitelné strategie."
             delay="100ms"
           />
           <!-- Member 3 -->
           <UiUserCard
             img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw"
             name="Tomáš Kalous"
-            role="Zakladatel & senior poradce"
-            description="Zakladatel skupiny Collegas s více než 20 lety praxe v oblasti finančního plánování a řízení rizik."
+            role="Senior poradce pro ochranu a odškodnění"
+            description="Vede klienty při nastavení pojistné ochrany i při uplatnění nároků na odškodnění tak, aby získali maximální možný výsledek."
             delay="200ms"
           />
         </div>
@@ -212,20 +210,19 @@ const caseStudies = [
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
               img-src="/img/intro/notes.png"
-              img-alt="Zajištění rizik"
+              img-alt="Nezávislý finanční audit a plán"
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
                 <p class="text-body-md text-on-surface-variant">
-                  Detailně analyzujeme vaše stávající pojistné smlouvy a
-                  identifikujeme nedostatečné krytí, zbytečné duplicity i
-                  oblasti, kde naopak platíte více, než je nutné. Výsledkem je
-                  řešení, které dává smysl nejen z pohledu ceny, ale především
-                  kvality ochrany.
+                  Nezávislý finanční audit je první krok k tomu, abyste ve
+                  svých financích měli skutečný přehled a jistotu. Navazující
+                  finanční plán propojuje vaše cíle, priority a aktuální
+                  možnosti do konkrétní strategie, podle které se můžete
+                  rozhodovat každý den.
                 </p>
                 <UiButton to="/contact">
-                  Nechte si nastavit ochranu, na kterou se můžete opravdu
-                  spolehnout
+                  Chci plánovat dnes i v budoucnu
                 </UiButton>
               </div>
             </UiImageText>
@@ -236,21 +233,20 @@ const caseStudies = [
             >
               <div class="grid space-y-stack-md items-center from-bottom">
                 <h2 class="text-headline-lg font-serif text-primary-800">
-                  Komplexní ochrana
+                  Ochrana a odškodnění
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  V případě podnikání nebo většího majetku pracujeme i s
-                  komplexnějšími scénáři, kde je cílem zajistit kontinuitu a
-                  minimalizovat dopady neočekávaných událostí. Řešíme nejen
-                  standardní životní a majetkové pojištění, ale i specifická
-                  rizika spojená s podnikatelskou činností, nemovitostmi nebo
-                  investičním portfoliem.
+                  Zajištění rizik stavíme tak, aby vás reálně chránilo při
+                  situacích, které mají největší dopad na váš majetek,
+                  podnikání i rodinné zázemí. Analyzujeme smlouvy, odhalujeme
+                  nedostatečné krytí i zbytečné duplicity a nastavujeme ochranu,
+                  na kterou se můžete spolehnout.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Správně nastavené zajištění vám přináší především klid. Víte,
-                  že ať se stane cokoliv, máte oporu a vaše finanční stabilita
-                  není ohrožena jednou nečekanou událostí. Přistupujeme k vám
-                  individuálně.
+                  V případě pojistné události vám pomáháme i s odškodněním.
+                  Postaráme se o celý proces uplatnění nároků vůči pojišťovnám
+                  nebo odpovědným subjektům, abyste získali spravedlivou
+                  kompenzaci v plné výši.
                 </p>
               </div>
             </UiImageText>
@@ -261,7 +257,7 @@ const caseStudies = [
             :menus="relatedLinks"
             :callout="{
               title: 'Nezávazná konzultace',
-              description: 'Rádi posoudíme vaši situaci a navrhneme řešení.',
+              description: 'Rádi posoudíme vaši situaci a navrhneme další kroky.',
               label: 'Nezávazná konzultace',
               to: '/contact',
             }"
@@ -272,9 +268,9 @@ const caseStudies = [
 
     <UiImgDarkBanner
       bg-image="/img/intro/stamp.png"
-      label="ZAJIŠTĚNÍ RIZIK"
-      title="Chráníme to, na čem záleží"
-      body="Správně nastavená pojistná ochrana je základem každé stabilní finanční strategie. Pomáháme vám identifikovat rizika a nastavit krytí, které vás skutečně ochrání."
+      label="FINANCE"
+      title="Jasno, plán a ochrana"
+      body="Pomáháme vám nastavit finance jako funkční celek: od auditu a plánu přes zajištění rizik až po odškodnění."
       heading-tag="h1"
     />
 
@@ -307,8 +303,8 @@ const caseStudies = [
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Zajištění rizik je součástí širšího finančního plánování. Nabízíme i
-            další služby, které spolu přirozeně navazují.
+            Všechny oblasti financí řešíme v souvislostech. Každá služba
+            navazuje na předchozí a podporuje dlouhodobou stabilitu.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
@@ -317,16 +313,16 @@ const caseStudies = [
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
             <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Daňové poradenství
+              Nezávislý finanční audit
             </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Optimalizace daňové zátěže, zpracování daňových přiznání a
-              zastupování před finančním úřadem. Vše v souladu s platnou
-              legislativou a ve váš prospěch.
+              Detailní rozbor smluv, nákladů a nastavení vašich financí. Získáte
+              jasný přehled, odhalení slabých míst a doporučení konkrétních
+              kroků.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/tax-advisory"
+              href="/services/financial-audit"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
@@ -337,16 +333,16 @@ const caseStudies = [
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
             <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Právní poradenství
+              Finanční plán
             </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Právní ochrana majetku, smluvní dokumentace a poradenství v
-              oblasti dědictví a rodinného práva. Nezávislé právní zastoupení ve
-              váš prospěch.
+              Strategie, která propojuje rezervy, investice i financování v
+              souladu s vašimi cíli. Praktický plán pro dnešní rozhodování i
+              budoucí etapy života.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/legal-advisory"
+              href="/services/financial-plan"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
@@ -357,16 +353,16 @@ const caseStudies = [
             class="group bg-surface-container-lowest p-stack-lg border border-outline-variant/30 hover:border-secondary transition-all duration-500"
           >
             <h3 class="font-headline-md text-primary-800 mb-stack-sm">
-              Péče o investiční majetek
+              Odškodnění
             </h3>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Správa investičního portfolia, výběr vhodných instrumentů a
-              průběžný dohled nad vývojem vašich aktiv s ohledem na váš rizikový
-              profil.
+              Pomáháme uplatnit vaše nároky při pracovních úrazech,
+              autonehodách i dalších pojistných událostech. Cílem je spravedlivé
+              odškodnění v plné možné výši.
             </p>
             <a
               class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent hover:border-secondary py-1 transition-all"
-              href="/services/investment-asset-management"
+              href="/services/compensation"
             >
               ZOBRAZIT SLUŽBU
               <UIcon name="i-material-symbols-north-east" class="text-sm" />
