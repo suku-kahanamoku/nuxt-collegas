@@ -56,7 +56,10 @@ const selected = computed(() => references[selectedIndex.value]);
           description:
             'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
         }"
-        class="w-64 shrink-0"
+        :class="[
+          'w-64 shrink-0',
+          selectedIndex === i && 'border-secondary/50 border-[0.5px]',
+        ]"
         @click="selectedIndex = i"
       >
         <template #footer>
