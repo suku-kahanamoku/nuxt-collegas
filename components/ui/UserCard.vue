@@ -34,32 +34,45 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
         : {}
     "
     :style="delay ? { transitionDelay: delay } : undefined"
-    class="flex flex-col group"
+    class="flex h-full flex-col group/user-card"
     :class="to ? 'cursor-pointer' : ''"
   >
     <div class="aspect-3/4 mb-6 overflow-hidden bg-surface-variant">
       <NuxtImg
         :src="imgSrc"
         :alt="imgAlt || name"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
+        class="w-full h-full object-cover group-hover/user-card:scale-105 transition-transform duration-700 grayscale group-hover/user-card:grayscale-0"
         format="webp"
         loading="lazy"
         sizes="sm:100vw md:50vw lg:33vw xl:33vw"
       />
     </div>
-    <h3
-      class="font-headline-md text-[24px] text-primary-800 group-hover:text-secondary transition-colors"
-    >
-      {{ name }}
-    </h3>
-    <p
-      class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
-    >
-      {{ role }}
-    </p>
-    <p v-if="description" class="font-body-md text-on-surface-variant">
-      {{ description }}
-    </p>
-    <slot />
+
+    <div class="flex flex-1 flex-col">
+      <div class="min-h-20">
+        <h3
+          class="font-headline-md text-[24px] text-primary-800 group-hover/user-card:text-secondary transition-colors line-clamp-2"
+        >
+          {{ name }}
+        </h3>
+        <p
+          class="font-label-caps text-secondary-800 uppercase tracking-widest mt-1 line-clamp-2"
+        >
+          {{ role }}
+        </p>
+      </div>
+
+      <div class="mt-auto min-h-[3rem] flex flex-col justify-end">
+        <p
+          v-if="description"
+          class="font-body-md text-on-surface-variant line-clamp-4"
+        >
+          {{ description }}
+        </p>
+        <div v-if="$slots.default" :class="description ? 'mt-4' : ''">
+          <slot />
+        </div>
+      </div>
+    </div>
   </component>
 </template>

@@ -19,39 +19,28 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
       <UMarquee
         pause-on-hover
         :overlay="false"
-        :ui="{ root: '[--gap:--spacing(4)] [--duration:40s]', content: 'w-auto py-1' }"
+        :ui="{
+          root: '[--gap:--spacing(4)] [--duration:40s]',
+          content: 'w-auto py-1',
+        }"
       >
-        <NuxtLink
+        <UiUserCard
           v-for="person in people"
           :key="person.slug || person.name"
+          class="w-72 shrink-0"
+          :img-src="person.photo"
+          :img-alt="person.name"
+          :name="person.name"
+          :role="person.role"
           :to="`/our-people/${person.slug}`"
-          class="w-72 shrink-0 block group"
         >
           <div
-            class="aspect-7/8 mb-stack-sm overflow-hidden bg-surface-container relative"
-          >
-            <NuxtImg
-              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105"
-              :alt="person.name"
-              :src="person.photo"
-              format="webp"
-              loading="lazy"
-              sizes="sm:288px md:288px lg:288px xl:288px"
-            />
-          </div>
-          <h3 class="font-headline-md text-2xl text-primary-800 mb-1">
-            {{ person.name }}
-          </h3>
-          <p class="font-label-caps text-secondary-800 uppercase mb-stack-sm">
-            {{ person.role }}
-          </p>
-          <div
-            class="inline-flex items-center text-on-surface-variant hover:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
+            class="inline-flex items-center text-on-surface-variant group-hover/user-card:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
           >
             Zobrazit profil
             <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
           </div>
-        </NuxtLink>
+        </UiUserCard>
       </UMarquee>
     </UContainer>
   </section>
