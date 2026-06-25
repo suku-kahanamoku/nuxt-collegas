@@ -41,11 +41,7 @@ const services = [
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-        <UiBaseCard
-          v-for="s in services"
-          :key="s.to"
-          :to="s.to"
-        >
+        <UiBaseCard v-for="s in services" :key="s.to" :to="s.to">
           <template #header>
             <UiTitle size="sm">
               <template #eyebrow>
@@ -68,7 +64,10 @@ const services = [
               class="inline-flex items-center gap-1 text-secondary-700 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity"
             >
               Více informací
-              <UIcon name="i-material-symbols-arrow-forward" class="text-body-md transition-transform duration-200 group-hover:translate-x-1" />
+              <UIcon
+                name="i-material-symbols-arrow-forward"
+                class="text-body-md transition-transform duration-200 group-hover:translate-x-1"
+              />
             </span>
           </template>
         </UiBaseCard>
