@@ -74,7 +74,7 @@ const principles = [
             <NuxtImg
               class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               data-alt="A professional portrait of a senior financial advisor in a dark, tailored charcoal suit, captured in a grand, oak-paneled library. The lighting is warm and cinematic, mimicking the soft glow of a desk lamp, casting gentle highlights on the subject's face. The mood is authoritative and trustworthy, reflecting a sense of legacy and quiet luxury in a dark forest green and gold-accented environment."
-              alt=""
+              alt="Zakladatelé COLLEGA ENTERPRISE"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxJagcbV6rZEBpcKTuLhy-PpSJgHnunDgtRE0pUGLjcjSaOscifWfZmsS8p7Fec5eT6tCBinrhk1RbQSnaDJS9IXiBNbGnPQb_qCQW93T12RutSBm2wm--HdBEyY4Q1arVE_F7BjOIDg75FJVblUW3wouNOT_yDqQ4FXq1vpu5UOK8ql_22ULX7nk3u1EbKPpxgBOEHyYrqXyyzJ6Ultl7bmXjdoGKOsWHuWWwBXuaA4_GeE1JE7jicrk5euPw3VIJsAQdhkrWa4"
               format="webp"
               loading="lazy"
@@ -154,7 +154,7 @@ const principles = [
             <NuxtImg
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
-              alt=""
+              alt="Sídlo a zázemí skupiny COLLEGA"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
               format="webp"
               loading="lazy"
