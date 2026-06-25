@@ -64,7 +64,8 @@ const caseStudies = caseStudiesData.capital.map((cs) => ({
           <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
             to="/contact"
-            >KONZULTOVAT SITUACI</NuxtLink>
+            >KONZULTOVAT SITUACI</NuxtLink
+          >
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
@@ -79,7 +80,8 @@ const caseStudies = caseStudiesData.capital.map((cs) => ({
           <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
             to="/contact"
-            >KONZULTOVAT SITUACI</NuxtLink>
+            >KONZULTOVAT SITUACI</NuxtLink
+          >
         </div>
       </UContainer>
     </section>
@@ -145,7 +147,8 @@ const caseStudies = caseStudiesData.capital.map((cs) => ({
           <NuxtLink
             class="font-label-caps text-primary-800 border-b border-primary pb-1 mb-2 hover:text-secondary hover:border-secondary transition-all"
             to="/our-people"
-            >Zobrazit celý tým</NuxtLink>
+            >Zobrazit celý tým</NuxtLink
+          >
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
           <!-- Member 1 -->

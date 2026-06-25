@@ -36,9 +36,9 @@ useHead({
         <p
           class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
         >
-          Přehled služeb a oblastí, ve kterých pomáháme našim klientům — od
-          auditu přes právní poradenství po správu nemovitostí a developerské
-          projekty.
+          Čtyři klíčové oblasti, ve kterých pomáháme našim klientům – finance,
+          správa kapitálu, daně a právo, reality a energie. Každá oblast je
+          propojená, aby tvořila jeden funkční celek.
         </p>
       </template>
     </UiIntro>

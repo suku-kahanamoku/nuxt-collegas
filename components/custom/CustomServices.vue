@@ -1,67 +1,32 @@
 <script setup lang="ts">
 const services = [
   {
-    icon: "i-material-symbols-assessment",
-    title: "Nezávislý finanční audit",
+    icon: "i-material-symbols-account-balance-wallet",
+    title: "Finance",
     description:
-      "Komplexní nezávislý audit vašich financí, smluv a nastavení s doporučeními pro další kroky.",
-    to: "/services/financial-audit",
-  },
-  {
-    icon: "i-material-symbols-shield",
-    title: "Zajištění rizik",
-    description:
-      "Správně nastavené pojistné krytí, které vás skutečně chrání – bez duplicit, bez zbytečných nákladů a s plnou ochranou majetku i zdraví.",
-    to: "/services/risk-management",
-  },
-  {
-    icon: "i-material-symbols-receipt-long",
-    title: "Daňové poradenství",
-    description:
-      "Daně v širším kontextu – příjmy, podnikání, investice i majetek jako jeden celek. Přestaňte platit víc, než musíte.",
-    to: "/services/tax-advisory",
-  },
-  {
-    icon: "i-material-symbols-gavel",
-    title: "Právní poradenství",
-    description:
-      "Dlouhodobé partnerství postavené na důvěře. Smluvní agenda, převody nemovitostí, vlastnické struktury a ochrana majetku.",
-    to: "/services/legal-advisory",
-  },
-  {
-    icon: "i-material-symbols-balance",
-    title: "Odškodnění",
-    description:
-      "Pracovní úrazy, autonehody, školní úrazy i jiné pojistné události. Zajišťujeme spravedlivé odškodnění v plné výši.",
-    to: "/services/compensation",
-  },
-  {
-    icon: "i-material-symbols-home-work",
-    title: "Realitní služby",
-    description:
-      "Kompletní zajištění prodeje nebo pronájmu – od přípravy, marketingu a prohlídek až po právní servis a bezpečné vypořádání.",
-    to: "/services/real-estate",
-  },
-  {
-    icon: "i-material-symbols-apartment",
-    title: "Správa nemovitostí",
-    description:
-      "Kompletní péče o váš investiční majetek – výběr nájemníků, technická správa, administrativa i ekonomická agenda bez zbytečných starostí.",
-    to: "/services/property-management",
+      "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+    to: "/services/finance",
   },
   {
     icon: "i-material-symbols-trending-up",
-    title: "Péče o investiční majetek",
+    title: "Správa kapitálu",
     description:
-      "Průběžná analýza a řízení portfolia s důrazem na dlouhodobý růst, diverzifikaci a ochranu kapitálu v souladu s vašimi cíli.",
-    to: "/services/investment-asset-management",
+      "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
+    to: "/services/capital-management",
   },
   {
-    icon: "i-material-symbols-domain",
-    title: "Developerské projekty",
+    icon: "i-material-symbols-balance",
+    title: "Daně a právo",
     description:
-      "Komplexní realizace developerských záměrů – od analýzy příležitosti a financování přes projekt až po prodejní strategii.",
-    to: "/services/development-projects",
+      "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
+    to: "/services/tax-legal",
+  },
+  {
+    icon: "i-material-symbols-home-work",
+    title: "Reality a energie",
+    description:
+      "Realitní služby, správa nemovitostí, optimalizace energetických nákladů a developerské projekty. Efektivní správa a využití majetku.",
+    to: "/services/real-estate-energy",
   },
 ];
 </script>
