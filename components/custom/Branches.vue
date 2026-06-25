@@ -42,10 +42,12 @@ const branches = [
 <template>
   <section class="bg-surface-container-low py-section-gap">
     <UContainer class="mx-auto px-gutter">
-      <h2 class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center">
+      <h2
+        class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center"
+      >
         Naše pobočky
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-stack-md">
         <UiBranchCard
           v-for="branch in branches"
           :key="branch.name"

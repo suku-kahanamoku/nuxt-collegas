@@ -1,23 +1,57 @@
 <script setup lang="ts">
-defineProps<{
-  imgSrc: string;
-  imgAlt?: string;
-  name: string;
-  role: string;
-  description?: string;
-  delay?: string;
-}>();
+import { resolveComponent } from "vue";
+
+withDefaults(
+  defineProps<{
+    imgSrc: string;
+    imgAlt?: string;
+    name: string;
+    role: string;
+    description?: string;
+    delay?: string;
+    to?: string;
+  }>(),
+  {
+    imgAlt: "",
+    description: "",
+    delay: "",
+    to: "",
+  },
+);
+
+const isInternal = (to?: string) => !!to && to.startsWith("/");
+const NuxtLinkComponent = resolveComponent("NuxtLink");
 </script>
 
 <template>
-  <div :style="delay ? { transitionDelay: delay } : undefined">
-    <div class="aspect-3/4 mb-6 overflow-hidden">
-      <div
-        class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
-        :style="{ backgroundImage: `url(${imgSrc})` }"
-      ></div>
+  <component
+    :is="to ? (isInternal(to) ? NuxtLinkComponent : 'a') : 'article'"
+    v-bind="
+      to
+        ? isInternal(to)
+          ? { to }
+          : { href: to, target: '_blank', rel: 'noopener' }
+        : {}
+    "
+    :style="delay ? { transitionDelay: delay } : undefined"
+    class="flex flex-col group"
+    :class="to ? 'cursor-pointer' : ''"
+  >
+    <div class="aspect-3/4 mb-6 overflow-hidden bg-surface-variant">
+      <NuxtImg
+        :src="imgSrc"
+        :alt="imgAlt || name"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
+        format="webp"
+        loading="lazy"
+        sizes="sm:100vw md:50vw lg:33vw xl:33vw"
+      />
     </div>
-    <h3 class="font-headline-md text-[24px] text-primary-800">{{ name }}</h3>
+    <h3
+      class="font-headline-md text-[24px] text-primary-800 group-hover:text-secondary transition-colors"
+    >
+      {{ name }}
+    </h3>
     <p
       class="font-label-caps text-secondary-800 uppercase tracking-widest mb-4"
     >
@@ -27,5 +61,5 @@ defineProps<{
       {{ description }}
     </p>
     <slot />
-  </div>
+  </component>
 </template>

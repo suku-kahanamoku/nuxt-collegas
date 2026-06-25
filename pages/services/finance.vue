@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
+import usersData from "~/assets/data/users.json";
 
 definePageMeta({ title: "Finance | Finanční poradenství" });
 useHead({
@@ -27,6 +28,25 @@ const caseStudies = caseStudiesData.finance.map((cs) => ({
   ...cs,
   to: `/case-studies/${cs.slug}`,
 }));
+
+const specialistSlugs = ["lukas-formanek", "filip-benes", "tomas-kalous"];
+
+const teamMembers = specialistSlugs
+  .map((slug, index) => {
+    const user = usersData.find((item) => item.slug === slug);
+
+    if (!user) return null;
+
+    return {
+      imgSrc: user.photo,
+      name: user.name,
+      role: user.role,
+      description: user.intro || user.about || "",
+      to: `/our-people/${user.slug}`,
+      delay: index === 0 ? undefined : `${index * 100}ms`,
+    };
+  })
+  .filter((member): member is NonNullable<typeof member> => member !== null);
 </script>
 
 <template>
@@ -147,28 +167,15 @@ const caseStudies = caseStudiesData.finance.map((cs) => ({
           >
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
-          <!-- Member 1 -->
           <UiUserCard
-            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo"
-            name="Lukáš Formánek"
-            role="Specialista na finanční audit"
-            description="Pomáhá klientům získat přehled o smlouvách, nákladech a rizicích. Zaměřuje se na optimalizaci struktury financí a dlouhodobou stabilitu."
-          />
-          <!-- Member 2 -->
-          <UiUserCard
-            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs"
-            name="Filip Beneš"
-            role="Poradce pro finanční plánování"
-            description="Specializuje se na návrh finančních plánů propojujících rezervy, investice i financování do jedné srozumitelné strategie."
-            delay="100ms"
-          />
-          <!-- Member 3 -->
-          <UiUserCard
-            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw"
-            name="Tomáš Kalous"
-            role="Senior poradce pro ochranu a odškodnění"
-            description="Vede klienty při nastavení pojistné ochrany i při uplatnění nároků na odškodnění tak, aby získali maximální možný výsledek."
-            delay="200ms"
+            v-for="member in teamMembers"
+            :key="member.name"
+            :img-src="member.imgSrc"
+            :name="member.name"
+            :role="member.role"
+            :description="member.description"
+            :to="member.to"
+            :delay="member.delay"
           />
         </div>
       </UContainer>

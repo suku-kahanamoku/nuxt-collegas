@@ -29,14 +29,14 @@ const headingA = computed(() =>
       :autoplay="{ delay: 4000 }"
       loop
       wheel-gestures
-      class="absolute inset-0"
+      class="absolute inset-0 min-h-screen"
       :ui="{
         item: 'w-full ps-0 h-full bg-primary-900',
         container: 'ms-0 h-full',
       }"
     >
       <NuxtImg
-        class="w-full h-full object-cover mask-gradient-to-right"
+        class="w-full h-full object-cover mask-gradient-to-right min-h-screen"
         :src="item"
         alt=""
         format="webp"
@@ -77,8 +77,14 @@ const headingA = computed(() =>
         </p>
 
         <div class="flex gap-stack-md items-center flex-wrap from-bottom">
-          <UiButton variant="solid" to="/contact"> Domluvit konzultaci </UiButton>
-          <UiButton variant="outline" class="group flex items-center gap-2" to="/about">
+          <UiButton variant="solid" to="/contact">
+            Domluvit konzultaci
+          </UiButton>
+          <UiButton
+            variant="outline"
+            class="group flex items-center gap-2"
+            to="/about"
+          >
             Naše filozofie
             <UIcon
               name="i-material-symbols-arrow-forward"

@@ -67,9 +67,9 @@ const principles = [
       class="bg-primary-900 py-section-gap relative min-h-screen overflow-hidden"
     >
       <UContainer
-        class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center"
+        class="mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center"
       >
-        <div class="relative order-2 md:order-1">
+        <div class="relative order-2 lg:order-1">
           <div class="aspect-4/5 bg-primary-container overflow-hidden">
             <NuxtImg
               class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
@@ -91,7 +91,7 @@ const principles = [
             </p>
           </div>
         </div>
-        <div class="order-1 md:order-2">
+        <div class="order-1 lg:order-2">
           <span
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >SLOVO ZAKLADATELŮ</span
