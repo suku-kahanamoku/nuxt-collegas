@@ -25,11 +25,11 @@ const destinations = [
     highlight: false,
   },
   {
-    icon: "i-material-symbols-support-agent",
-    title: "Chci nezávaznou konzultaci",
-    description: "Probereme vaši situaci, navrhneme další kroky a ukážeme vám nejvhodnější řešení.",
-    label: "Kontakt",
-    to: "/contact",
+    icon: "i-material-symbols-apartment",
+    title: "Chci vědět o Holdingu",
+    description: "Skupina s dlouhodobou historií, kterou tvoří desítky specialistů a tisíce klientů.",
+    label: "O Holdingu",
+    to: "/holding",
     highlight: false,
   },
 ];

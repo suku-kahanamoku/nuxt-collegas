@@ -43,11 +43,26 @@ const certifications = [
 ];
 
 const seniority = [
-  "Více než 20 let aktivní praxe v oblasti finančního poradenství",
-  "Zkušenosti s více než 1 500 klienty napříč celou ČR",
-  "Dlouhodobá spolupráce s předními pojišťovnami a investičními společnostmi",
-  "Pravidelné vzdělávání a sledování legislativních změn",
-  "Člen odborných asociací AFIZ a AFAM ČR od jejich vzniku",
+  {
+    icon: "i-material-symbols-library-books",
+    text: "Více než 20 let aktivní praxe v oblasti finančního poradenství",
+  },
+  {
+    icon: "i-material-symbols-group",
+    text: "Zkušenosti s více než 1 500 klienty napříč celou ČR",
+  },
+  {
+    icon: "i-material-symbols-handshake",
+    text: "Dlouhodobá spolupráce s předními pojišťovnami a investičními společnostmi",
+  },
+  {
+    icon: "i-material-symbols-school",
+    text: "Pravidelné vzdělávání a sledování legislativních změn",
+  },
+  {
+    icon: "i-material-symbols-workspace-premium",
+    text: "Člen odborných asociací AFIZ a AFAM ČR od jejich vzniku",
+  },
 ];
 
 const relatedLinks = computed(() =>
@@ -120,14 +135,14 @@ function onImgErrorByIndex(i: number) {
               <ul class="flex flex-col gap-stack-sm">
                 <li
                   v-for="item in seniority"
-                  :key="item"
-                  class="flex items-start gap-3 text-body-md text-on-surface-variant"
+                  :key="item.text"
+                  class="flex items-center gap-3 text-body-md text-on-surface-variant"
                 >
                   <UIcon
-                    name="i-material-symbols-check-circle-outline"
-                    class="text-secondary-700 text-base shrink-0 mt-0.5"
+                    :name="item.icon"
+                    class="text-secondary-700 text-lg shrink-0"
                   />
-                  {{ item }}
+                  {{ item.text }}
                 </li>
               </ul>
             </div>

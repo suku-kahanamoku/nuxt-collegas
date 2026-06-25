@@ -2,6 +2,7 @@
 const email = ref("");
 const submitted = ref(false);
 const loading = ref(false);
+let resetTimeout: ReturnType<typeof setTimeout> | null = null;
 
 async function handleSubmit() {
   if (!email.value || loading.value) return;
@@ -10,7 +11,22 @@ async function handleSubmit() {
   await new Promise((resolve) => setTimeout(resolve, 600));
   submitted.value = true;
   loading.value = false;
+
+  if (resetTimeout) {
+    clearTimeout(resetTimeout);
+  }
+
+  resetTimeout = setTimeout(() => {
+    submitted.value = false;
+    email.value = "";
+  }, 5000);
 }
+
+onBeforeUnmount(() => {
+  if (resetTimeout) {
+    clearTimeout(resetTimeout);
+  }
+});
 </script>
 
 <template>

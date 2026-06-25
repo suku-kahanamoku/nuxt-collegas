@@ -19,7 +19,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
       <UMarquee
         pause-on-hover
         :overlay="false"
-        :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
+        :ui="{ root: '[--gap:--spacing(4)] [--duration:40s]', content: 'w-auto py-1' }"
       >
         <NuxtLink
           v-for="person in people"
