@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
-  // @ts-expect-error added by @nuxtjs/seo runtime config extension
   site: {
     url: siteUrl,
     name: "COLLEGA ENTERPRISE",
