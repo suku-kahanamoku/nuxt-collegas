@@ -24,7 +24,10 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
     "
   >
     <!-- Photo — portrait -->
-    <div class="relative overflow-hidden bg-primary-50" style="aspect-ratio: 3/4">
+    <div
+      class="relative overflow-hidden bg-primary-50"
+      style="aspect-ratio: 3/4"
+    >
       <NuxtImg
         v-if="photo"
         :src="photo"
@@ -81,7 +84,10 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
           :href="`tel:${phone.replace(/\s+/g, '')}`"
           class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary-800 transition-colors"
         >
-          <UIcon name="i-material-symbols-phone" class="size-3.5 shrink-0 text-secondary-500" />
+          <UIcon
+            name="mdi:phone"
+            class="size-3.5 shrink-0 text-secondary-500"
+          />
           {{ phone }}
         </a>
         <a
@@ -89,7 +95,10 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
           :href="`mailto:${email}`"
           class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary-800 transition-colors"
         >
-          <UIcon name="i-material-symbols-mail" class="size-3.5 shrink-0 text-secondary-500" />
+          <UIcon
+            name="i-material-symbols-mail"
+            class="size-3.5 shrink-0 text-secondary-500"
+          />
           {{ email }}
         </a>
       </div>

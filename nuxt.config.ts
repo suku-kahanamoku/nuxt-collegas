@@ -12,21 +12,11 @@ export default defineNuxtConfig({
     name: "COLLEGA ENTERPRISE",
   },
 
-  robots: {
-    enabled: true,
-  },
-
-  sitemap: {
-    enabled: true,
-  },
-
-  routeRules: {
-    "/": { prerender: true },
-  },
   devtools: { enabled: true },
 
   modules: [
     "@nuxt/image",
+    "@nuxtjs/seo",
     "@suku-kahanamoku/auth-module",
     "@suku-kahanamoku/menu-module",
     "@suku-kahanamoku/form-module",

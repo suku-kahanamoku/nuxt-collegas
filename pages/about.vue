@@ -220,7 +220,7 @@ const principles = [
             v-for="principle in principles"
             :key="principle.title"
             :highlight="true"
-            class="p-stack-md border border-primary-container"
+            class="border border-primary-container"
           >
             <template #header>
               <UIcon
