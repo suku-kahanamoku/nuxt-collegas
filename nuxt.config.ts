@@ -4,15 +4,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
-  ogImage: {
-    renderer: 'satori'
-  },
-
   devtools: { enabled: true },
 
   modules: [
     "@nuxt/image",
-    "@nuxtjs/seo",
     "@suku-kahanamoku/auth-module",
     "@suku-kahanamoku/menu-module",
     "@suku-kahanamoku/form-module",
