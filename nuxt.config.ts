@@ -1,15 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const defaultSiteUrl = "https://collegas.netlify.app";
-const siteUrl = process.env.FRONTEND_HOST || defaultSiteUrl;
 
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
-
-  site: {
-    url: siteUrl,
-    name: "COLLEGA ENTERPRISE",
-  },
 
   devtools: { enabled: true },
 
@@ -52,12 +45,6 @@ export default defineNuxtConfig({
     options: {
       scrollBehaviorType: "smooth",
     },
-  },
-
-  nitro: {
-    preset:
-      process.env.NITRO_PRESET ||
-      (process.env.NETLIFY ? "netlify" : "node-server"),
   },
 
   i18n: {
