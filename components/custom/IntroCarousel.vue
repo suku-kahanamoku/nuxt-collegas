@@ -1,22 +1,10 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { useIntroAnimate } from "~/composables/useIntroAnimate";
-
 const items = [
   "/img/intro/main.png",
   "/img/intro/stamp.png",
   "/img/intro/notes.png",
   "/img/intro/cafe.png",
 ];
-
-const { mounted, splitChars } = useIntroAnimate({
-  stagger: 30,
-  initialDelay: 80,
-});
-
-const headingA = computed(() =>
-  splitChars("Finanční jistota, na které záleží"),
-);
 </script>
 
 <template>
@@ -56,16 +44,11 @@ const headingA = computed(() =>
         <h1
           class="max-w-lg font-display-xl text-display-xl text-on-primary mb-stack-md leading-tight"
         >
-          <span
-            v-for="(part, i) in headingA"
-            :key="i"
-            class="inline-block transition-all duration-500 ease-out"
-            :style="{ transitionDelay: part.delay }"
-            :class="
-              mounted ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-            "
-            >{{ part.ch === " " ? "\u00A0" : part.ch }}</span
-          >
+          <UiTypewriter
+            :words="['Finanční jistota, na které záleží']"
+            :loop="false"
+            :show-cursor="false"
+          />
         </h1>
 
         <p

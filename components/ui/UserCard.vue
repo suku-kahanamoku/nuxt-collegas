@@ -34,7 +34,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     class="flex h-full flex-col group/user-card"
     :class="to ? 'cursor-pointer' : ''"
   >
-    <div class="aspect-3/4 mb-6 overflow-hidden bg-surface-variant">
+    <div class="aspect-3/4 overflow-hidden mb-stack-md bg-surface-variant">
       <NuxtImg
         :src="imgSrc"
         :alt="imgAlt || name"

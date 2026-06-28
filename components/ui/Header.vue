@@ -3,6 +3,7 @@ const navItems = [
   {
     label: "Naše služby",
     to: "/services",
+    type: "trigger",
     children: [
       {
         label: "Finance",
@@ -76,19 +77,6 @@ const navItems = [
         orientation="vertical"
         :ui="{ list: 'space-y-1', link: 'text-lg' }"
       />
-      <div class="mt-4 px-2">
-        <UButton
-          to="/client-zone"
-          color="primary"
-          variant="outline"
-          size="sm"
-          icon="i-material-symbols-lock-person"
-          block
-          class="uppercase tracking-widest font-semibold text-xs"
-        >
-          Klientská zóna
-        </UButton>
-      </div>
     </template>
   </UHeader>
 </template>

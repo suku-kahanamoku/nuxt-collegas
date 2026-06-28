@@ -13,7 +13,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+  <div
+    class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col"
+  >
     <div class="aspect-video overflow-hidden">
       <NuxtImg
         :src="imgSrc"
@@ -28,13 +30,20 @@ defineProps<{
       <h3 class="font-headline-md text-headline-md text-primary-800 mb-base">
         {{ name }}
       </h3>
-      <p class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm">
+      <p
+        class="font-body-md text-body-md text-on-surface font-semibold mb-stack-sm"
+      >
         {{ address }}
       </p>
-      <p v-if="description" class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+      <p
+        v-if="description"
+        class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
+      >
         {{ description }}
       </p>
-      <div class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base">
+      <div
+        class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
+      >
         <NuxtImg
           :src="managerImgSrc"
           :alt="managerImgAlt ?? managerName"
@@ -44,8 +53,10 @@ defineProps<{
           sizes="sm:48px md:48px lg:48px xl:48px"
         />
         <div>
-          <span class="font-label-caps text-label-caps text-secondary-800 block uppercase">
-            {{ managerLabel ?? 'Vedoucí pobočky' }}
+          <span
+            class="font-label-caps text-label-caps text-secondary-800 block uppercase"
+          >
+            {{ managerLabel ?? "Vedoucí pobočky" }}
           </span>
           <span class="font-body-md text-body-md text-on-surface font-semibold">
             {{ managerName }}

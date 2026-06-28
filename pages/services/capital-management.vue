@@ -76,7 +76,7 @@ const teamMembers = specialistSlugs
 
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex justify-between items-center mb-stack-lg">
+        <div class="flex justify-between items-center">
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
             Modelové situace
           </h2>
@@ -87,7 +87,7 @@ const teamMembers = specialistSlugs
           >
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg"
         >
           <UiArticleCard
             v-for="cs in caseStudies"

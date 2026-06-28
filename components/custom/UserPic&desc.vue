@@ -16,7 +16,7 @@ withDefaults(
     imgAlt: "",
     imgClass: "",
     cols: "md",
-    gap: "gap-section-gap",
+    gap: "gap-12 lg:gap-section-gap",
     leftClass: "",
     rightClass: "",
     overlayClass:

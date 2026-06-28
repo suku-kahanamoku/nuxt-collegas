@@ -10,7 +10,7 @@ const branches = [
     address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
     description:
       "Sídlo skupiny Collegas v nejvyšší kancelářské budově na Moravě. Výborná dostupnost z centra Brna, parkování v areálu budovy.",
-    managerSlug: "tomas-kalous",
+    managerSlug: "iveta-butulova",
   },
   {
     imgSrc:
@@ -20,7 +20,7 @@ const branches = [
     address: "Tovačovského 2784/24, 767 01 Kroměříž",
     description:
       "Kancelář v centru Kroměříže. Schůzky jsou možné po předchozí domluvě s poradcem.",
-    managerSlug: "lukas-formanek",
+    managerSlug: "igor-stransky",
   },
   {
     imgSrc:
@@ -30,7 +30,7 @@ const branches = [
     address: "nám. T. G. Masaryka 302/8, 690 02 Břeclav",
     description:
       "Kancelář na hlavním náměstí Břeclavi. Pohodlné parkování přímo před budovou, schůzky po domluvě s poradcem.",
-    managerSlug: "filip-benes",
+    managerSlug: "zuzana-capkova",
   },
 ];
 
@@ -41,6 +41,7 @@ const branchesWithManagers = branches.map((branch) => {
     ...branch,
     managerName: manager?.name ?? "",
     managerImgSrc: manager?.photo ?? "",
+    managerImgAlt: manager?.name ?? "",
   };
 });
 </script>
