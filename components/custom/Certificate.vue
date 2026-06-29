@@ -33,12 +33,12 @@ const certifications = [
     alt: "AFIZ – Asociace finančních zprostředkovatelů a poradců",
   },
   {
-    name: "Člen AFAM ČR",
-    abbr: "AFAM",
+    name: "Člen AFP ČR",
+    abbr: "AFP",
     year: "průběžně",
-    to: "https://www.afamcr.cz/",
+    to: "https://www.afpcr.cz/",
     img: "https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=400,height=400,fit=scale-down,quality=90,anim=true/by9itr17wbldjwhfjs1834be/o6v4q6sviylox2dd2y22i300/qp2LOfTFhpd0qHZoI09PI.png",
-    alt: "AFAM ČR – Asociace finančních a majetkových poradců",
+    alt: "AFP ČR – Asociace finančních a majetkových poradců",
   },
 ];
 
@@ -49,7 +49,7 @@ const seniority = [
   },
   {
     icon: "i-material-symbols-group",
-    text: "Zkušenosti s více než 1 500 klienty napříč celou ČR",
+    text: "Zkušenosti s více než 20 000 klienty napříč celou ČR",
   },
   {
     icon: "i-material-symbols-handshake",
@@ -61,7 +61,7 @@ const seniority = [
   },
   {
     icon: "i-material-symbols-workspace-premium",
-    text: "Člen odborných asociací AFIZ a AFAM ČR od jejich vzniku",
+    text: "Člen odborných asociací AFIZ a AFP ČR od jejich vzniku",
   },
 ];
 
@@ -130,7 +130,7 @@ function onImgErrorByIndex(i: number) {
           >
             <div class="grid space-y-stack-md items-center from-bottom">
               <h2 class="text-headline-lg font-serif text-primary-800">
-                Seniorita
+                Zkušenost
               </h2>
               <ul class="flex flex-col gap-stack-sm">
                 <li
@@ -156,7 +156,7 @@ function onImgErrorByIndex(i: number) {
             description:
               'Rádi posoudíme vaši situaci a navrhneme vhodné řešení.',
             label: 'Nezávazná konzultace',
-            to: '/contact',
+            to: '/contact?#contact-form',
           }"
         >
           <template #item="{ link, index }">

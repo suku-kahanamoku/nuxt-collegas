@@ -30,9 +30,18 @@
           <UButton
             variant="link"
             color="primary"
-            to="/ochrana-soukromi"
+            to="/legal-information"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Ochrana soukromí</UButton>
+            >Právní informace</UButton
+          >
+          >
+          <UButton
+            variant="link"
+            color="primary"
+            to="/privacy-policy"
+            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
+            >Ochrana soukromí</UButton
+          >
           >
           <UButton
             variant="link"

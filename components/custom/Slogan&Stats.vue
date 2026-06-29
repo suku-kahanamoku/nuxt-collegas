@@ -30,9 +30,8 @@ const stats = [
 
     <template #body>
       Více než 20 let stavíme naši práci na individuálním přístupu, analytickém
-      myšlení a měřitelných výsledcích. Neprodáváme produkty. Navrhujeme
-      strategie, které dávají ekonomický smysl – ať už jde o financování
-      bydlení, ochranu majetku nebo dlouhodobé budování kapitálu.
+      myšlení a měřitelných výsledcích. Jsme partnerem při důležitých finančních
+      rozhodnutích a hledáme řešení, která dávají smysl v souvislostech.
     </template>
 
     <template #quote>
@@ -42,7 +41,7 @@ const stats = [
     </template>
 
     <template #attribution>
-      — Tomáš Kalous &amp; Marek Butula, zakladatelé
+      — Ing. Tomáš Kalous &amp; Marek Butula, zakladatelé
     </template>
 
     <template #footer>
@@ -82,7 +81,7 @@ const stats = [
             class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Člen AFIZ <br />&amp; AFAM ČR</span
+            >Člen AFIZ <br />&amp; AFP ČR</span
           >
         </div>
       </div>

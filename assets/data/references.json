@@ -1,44 +1,51 @@
 [
   {
-    "name": "Aleš T.",
-    "description": "Kroměříž",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
-    "quote": "Díky analýze od firmy Collegas jsem dokázal ušetřit téměř polovinu na splátkách svých úvěrů."
+    "short_name": "Igor V.",
+    "name": "Igor Večerka",
+    "destination": "Kroměříž",
+    "avatar": "/img/reference/vecerka.jpg",
+    "company": "SILMOS s.r.o.",
+    "quote": "Abych svěřil někomu své životní úspory, tak mu musím především věřit. Důvěra je základní podmínka.",
+    "description": "Také vám volají každý týden neznámí lidé, kteří vám nabízejí úžasné investiční možnosti a kterým s díky pokládáte telefon? Asi jste si vyhodnotili tuto situaci stejně jako já. Abych svěřil někomu své životní úspory, tak mu musím především věřit. Důvěra je základní podmínka."
   },
   {
-    "name": "Alena Š.",
-    "description": "Soběšice",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzmzismqyaSNJx4aPbOAOCzhzgz3dzC3GRDjoggfMSAWEaXTcIUHuKL5wZsLbaq4rKA4sGsr7iC1Ka5wk4F9rfhSWx34IYrW0SXxTrqTXdYEy7SuqZGxqIrxrGBlqrIWx0flYLQ_QQki9XOH7Wnt2uLTXdGuAY3Mi6a-IRaMSAgxotleLnPeD1h0JQcziYoSoTV-qnXTVhmBrvdOg69WDMVdmrawe3dXz1HuekLI6u0b-h4DOSXTaqrQG861DzpoBrLCm-ynl7Ogs",
-    "quote": "Pokaždé když něčemu ve svých smlouvách nerozumím, obracím se už jen na vás."
+    "short_name": "Daniela S.",
+    "name": "Daniela Slizova",
+    "destination": "Brno",
+    "avatar": "/img/reference/slizova.png",
+    "quote": "Pana Radostu mohu vřele doporučit a pokud bych v budoucnu řešila podobnou záležitost, rozhodně se na něj znovu obrátím.",
+    "description": "Spolupráce s panem Janem Radostou byla naprosto skvělá. Nejenže svému oboru velmi dobře rozumí, ale byl také mimořádně promptní v e-mailové komunikaci a vždy ochotný zodpovědět veškeré otázky. Úspěšně dokázal najít řešení pro mou situaci, která nebyla zcela standardní (jako cizinka s příjmy ze zahraničí jsem potřebovala refinancovat hypotéku v ČR), za což jsem mu velmi vděčná. Pana Radostu mohu vřele doporučit a pokud bych v budoucnu řešila podobnou záležitost, rozhodně se na něj znovu obrátím."
   },
   {
-    "name": "Roman A.",
-    "description": "Brno",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbYOB4SgdZUbHZ0M1NLLUdfBp3XmnvinI8oi9CastYD1Q7YZiFgFrgGvXJGfKlj5ZEdz46qWu0SoKlUUF4egPU6BTitGOV_MxKLM9VnZxm0MgzcylW17_hTw_7IFAKFWKI8EI5OSyoE6sQocpxN_FYznfRAGw5INcLcBRtkEXl2MH8RV9u7-qeM1ZAmq9mzdIYS42hx9G2nDyKrpOckF40iCgvrfXM2gYPqx6LbYkpLwFDv--StWGARN4g0YhytQRhSQoCHJWvdPw",
-    "quote": "Na vašem semináři o investičním zlatě jsem měl po dlouhé době pocit, že jsem něco pochopil!"
+    "short_name": "Michal L.",
+    "name": "Michal Liška",
+    "destination": "Nové Město na Moravě",
+    "avatar": "/img/reference/liska.png",
+    "quote": "Oceňuji jeho profesionální a lidský přístup, znalosti a všeobecný přehled. Velmi mu za jeho pomoc děkuji. Pana Prudila doporučuji.",
+    "description": "Dlouhodobě jsem v kontaktu s panem Pavlem Prudilem, který mě a mé rodině pomáhá s finančními produkty už více jak 10 let. Ať už z hlediska investování, pojištění a i hypotéky. Oceňuji jeho profesionální a lidský přístup, znalosti a všeobecný přehled. Velmi mu za jeho pomoc děkuji. Pana Prudila doporučuji."
   },
   {
-    "name": "Karolína T. D.",
-    "description": "Šlapanice",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDCzMVVbUiGDldEdjzoH0uh_tz8LFX5gUkIUrc37-84ytVq8ThVCqHJqUO0TIWSGeJYtQfCOYgNGagSdDprrZhxv1mWLY4kgwTMG2LNooznZU1GEuyKtZpS-I3yIScUN9vEUbuS4o1VHa3a7Xc4Bvb6qXmiL5fKeAAywb0IrX8R-dUUm7cHxuOAC5PeOO9m6MK1fo7apWRgYi7ehMmHFdQ-BB0mSsdhBNaeEMMJXGUmIBp5TXddP51kdf3vs-pkJXhFYHftRMgtssg",
-    "quote": "Díky Collegas mi pojišťovna po úrazu vyplatila o 30 procent více než původně chtěla."
+    "short_name": "Ivana N.",
+    "name": "Ivana Němcová",
+    "destination": "Šlapanice",
+    "avatar": "/img/reference/nemcova.png",
+    "quote": "A pan Strnad mi pomohl, tam kde ostatní říkali, že je to nesmysl.",
+    "description": "K panu Strnadovi jsem se dostala na doporučení od mé bejvalé klientky. Šla jsem na schůzku plná nedůvěry, protože jsem měla špatné zkušenosti z dřívějska. Nicméně mě schůzka mile překvapila. A pan Strnad mi pomohl, tam kde ostatní říkali, že je to nesmysl. Společně jsme dali do pořádku můj bordel ve smouvách. Zrušili, to co nedávalo smysl. Vše mi bylo opakovaně vysvětlováno než jsme podepsali. A za to velké díky."
   },
   {
-    "name": "Petr P.",
-    "description": "Hradec Králové",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCHtWHo56DD7xsjXPoFqxSHADwFGWEKN1DAR9yHDsU8ltGKDig7N7faZaDABQd7kCqGO3AGEy8EbYQnxHBKqJWQASzBOUNBd7a7gfdPfrBfMHOBH0NLDiftZTGsBlXPO_4Ty92f0DoWMbeQVv9mTQK5qy2E9GC4Y_ZPAshHOebxWhFIEWfhkZyQEyg5re0dVxcdjFVzrczMgJ0Qj5PRbrFFJSWMLcqcjIvMfdgYe4qrgTJRUmv4W0iLP9H3olq17adyOLIfcWmhQ4A",
-    "quote": "Nikdy jsem nevěřil, že by se i o moje finance mohl postarat tak profesionální tým odborníků."
+    "short_name": "Lucie K.",
+    "name": "Lucie Kopecká",
+    "destination": "Hradec Králové",
+    "avatar": "/img/reference/kopecka.png",
+    "quote": "Oceňuji její profesionální, ale zároveň velmi lidský přístup. Určitě doporučuji!",
+    "description": "Spolupráce s paní Ivetou Butulovou byla naprosto skvělá. Vše mi pečlivě vysvětlila, měla přehled o trhu i aktuálních možnostech a pomohla mi nastavit finanční plán, který dává smysl a je realistický. Oceňuji její ochotu, trpělivost a to, že se skutečně snaží najít to nejlepší řešení pro konkrétní situaci, ne jen “něco prodat”. Oceňuji její profesionální, ale zároveň velmi lidský přístup. Určitě doporučuji!"
   },
   {
-    "name": "Jana D.",
-    "description": "Brno",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAP8BHVaAZipz4DbyKsGK9u4TLFqyx98IaLnMp-j4RknuMJPoVAkJ8_Nx-P1dhvIJq61fBywGbaNBw45th_cIJq0EIoR-TkJJY0kw-FNMyUl8f4FHRt4Ohxn0vtr6OXHSHEm68nJBbYZ0ULfmn9rC75oxmRCQJiyd2n_JQFBBOuweKBLgsWLS-08IipBnuPCXeYO8d0vOv0SYXcUFHwooZRdQPVjS_0gEeKXTj2EqGNbqj97fiOldaJzVk2319dFtpskVqTUIMFSqk",
-    "quote": "Díky společnosti Collegas jsem na poplatcích ušetřila skoro 800 Kč měsíčně."
-  },
-  {
-    "name": "Martin K.",
-    "description": "Brno",
-    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWD_YiLDfai0SI335pR_nnf-7AKqb0E0Gy-TTre0hFoLi1oYBZBSKndKMRraA8U-4Z8c62gqIPWRuNMbgvVr6b2wE5oGsjjSSiWSoTE8tFqPXYoqj88rhkrA1_HcP7yjRovl4oo-pd9RNwH7ZShCByYl1rx5cF3cDQxBZeKS9VzJ_r2_lX7wNKRUFPw4EZQYg9eBuuk2tnqdBqf9OGCMSgej8RKC-063BW6iG_u_GJRiwWduYxYm1kOPeT6GjwNUofSjyWrtYdzMo",
-    "quote": "Do detailu mi vysvětlili mé produkty a díky tomu teď vím, jak se lépe zabezpečit."
+    "short_name": "Iveta P.",
+    "name": "Iveta Prášková",
+    "destination": "Brno",
+    "avatar": "/img/reference/praskova.png",
+    "quote": "Jednala profesionálně, měla příjemné vystupování a především mi poradila a nastavila smlouvy dle mých požadavků.",
+    "description": "Děkuji paní Nikole Novákové za její dobře odváděnou práci při finančním poradenství. Jednala profesionálně, měla příjemné vystupování a především mi poradila a nastavila smlouvy dle mých požadavků, abych své peníze dobře zhodnotila. Jsem s jejím poradenstvím spokojená a mohu jen doporučit."
   }
 ]

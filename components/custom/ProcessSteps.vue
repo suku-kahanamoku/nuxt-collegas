@@ -164,8 +164,8 @@ const steps = [
 
       <!-- CTA -->
       <div class="text-center mt-16">
-        <UiButton to="/contact" class="shrink-0 group">
-          Začít první krok zdarma
+        <UiButton to="/contact?#contact-form" class="shrink-0 group">
+          Začít první krok
           <UIcon
             name="i-material-symbols-arrow-forward"
             class="text-xl transition-transform duration-200 group-hover:translate-x-1"

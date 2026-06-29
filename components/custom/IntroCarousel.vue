@@ -60,7 +60,7 @@ const items = [
         </p>
 
         <div class="flex gap-stack-md items-center flex-wrap from-bottom">
-          <UiButton variant="solid" to="/contact">
+          <UiButton variant="solid" to="/contact?#contact-form">
             Domluvit konzultaci
           </UiButton>
           <UiButton

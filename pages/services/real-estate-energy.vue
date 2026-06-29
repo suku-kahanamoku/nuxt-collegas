@@ -88,7 +88,7 @@ const teamMembers = specialistSlugs
           </h2>
           <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            to="/contact"
+            to="/contact?#contact-form"
             >KONZULTOVAT SITUACI</NuxtLink
           >
         </div>
@@ -104,7 +104,7 @@ const teamMembers = specialistSlugs
         <div class="mt-stack-lg md:hidden">
           <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            to="/contact"
+            to="/contact?#contact-form"
             >KONZULTOVAT SITUACI</NuxtLink
           >
         </div>
@@ -115,7 +115,7 @@ const teamMembers = specialistSlugs
       title="Připraveni řídit energii i nemovitosti efektivněji?"
       body="Nastavíme vám strategii pro energie, realitní transakce, správu portfolia i developerské příležitosti tak, aby váš majetek dlouhodobě rostl na hodnotě."
     >
-      <UiButton to="/contact" class="shrink-0 group">
+      <UiButton to="/contact?#contact-form" class="shrink-0 group">
         Domluvit konzultaci
         <UIcon
           name="i-material-symbols-arrow-forward"
@@ -302,7 +302,7 @@ const teamMembers = specialistSlugs
               description:
                 'Rádi posoudíme vaši situaci a navrhneme další kroky.',
               label: 'Nezávazná konzultace',
-              to: '/contact',
+              to: '/contact?#contact-form',
             }"
           />
         </div>
@@ -452,7 +452,7 @@ const teamMembers = specialistSlugs
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton
-          to="/contact"
+          to="/contact?#contact-form"
           variant="solid"
           class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
         >
@@ -463,7 +463,7 @@ const teamMembers = specialistSlugs
           />
         </UiButton>
         <UiButton
-          to="/contact"
+          to="/contact?#contact-form"
           variant="outline"
           class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
         >

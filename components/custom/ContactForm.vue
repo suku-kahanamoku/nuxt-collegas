@@ -27,7 +27,10 @@ function handleSubmit() {
 </script>
 
 <template>
-  <div class="bg-primary-900 p-stack-lg lg:p-16 flex flex-col justify-center">
+  <div
+    class="bg-primary-900 p-stack-lg lg:p-16 flex flex-col justify-center"
+    id="contact-form"
+  >
     <div class="mb-stack-lg">
       <span
         class="text-label-caps text-secondary-fixed block mb-stack-sm uppercase tracking-widest font-semibold"
@@ -35,7 +38,7 @@ function handleSubmit() {
         Sjednejte konzultaci
       </span>
       <h2 class="text-headline-md font-serif text-on-primary">
-        Nezávazná konzultace zdarma
+        Nezávazná konzultace
       </h2>
       <p class="text-body-md text-on-primary-container mt-stack-xs">
         Vyplňte formulář a my se vám ozveme pro domluvení termínu osobního

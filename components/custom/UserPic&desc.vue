@@ -43,7 +43,7 @@ withDefaults(
               :src="bgImage"
               :alt="imgAlt"
               :class="[
-                'absolute inset-0 w-full h-full object-cover object-center',
+                'inset-0 w-full h-full object-cover object-top',
                 imgClass,
               ]"
               format="webp"
