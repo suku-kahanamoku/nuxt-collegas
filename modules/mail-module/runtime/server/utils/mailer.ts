@@ -48,11 +48,43 @@ export function SEND_SIGNUP_MAIL(event: H3Event, to: string, password: string) {
   });
 }
 
-export function SEND_CONTACT_FORM_MAIL(event: H3Event, to: string) {
+export function SEND_CONTACT_MAIL(event: H3Event, to: string) {
+  return sendPhpMail(event, {
+    template: "contact-email",
+    subject: "Potvrzení přijetí vašeho e-mailu",
+    to,
+  });
+}
+
+export function SEND_CONTACT_ADMIN_MAIL(
+  event: H3Event,
+  to: string,
+  email: string,
+) {
+  return sendPhpMail(event, {
+    template: "contact-email-admin",
+    subject: "Nová zpráva z kontaktního formuláře",
+    to,
+    email,
+  });
+}
+
+export function SEND_CONTACT_FORM_MAIL(
+  event: H3Event,
+  to: string,
+  interest: string,
+  message: string,
+  name: string,
+  phone: string,
+) {
   return sendPhpMail(event, {
     template: "contact-form",
+    subject: "Potvrzení přijetí vašeho požadavku na konzultaci",
     to,
-    subject: "Potvrzení přijetí vašeho e-mailu",
+    interest,
+    message,
+    name,
+    phone,
   });
 }
 
@@ -60,12 +92,20 @@ export function SEND_CONTACT_FORM_ADMIN_MAIL(
   event: H3Event,
   to: string,
   email: string,
+  interest: string,
+  message: string,
+  name: string,
+  phone: string,
 ) {
   return sendPhpMail(event, {
     template: "contact-form-admin",
     to,
-    subject: "Nová zpráva z kontaktního formuláře",
+    subject: "Nová zpráva z formuláře pro konzultaci",
     email,
+    interest,
+    message,
+    name,
+    phone,
   });
 }
 
