@@ -1,13 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-const defaultSiteUrl = "https://collegas.netlify.app";
-const siteUrl = process.env.FRONTEND_HOST || defaultSiteUrl;
+// https://nuxt.com/docs/api/configuration/nuxt-config;
 
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
   site: {
-    url: siteUrl,
+    url: process.env.FRONTEND_HOST,
     name: "COLLEGA ENTERPRISE",
   },
 
