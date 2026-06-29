@@ -7,7 +7,7 @@
     >
       <div class="space-y-stack-sm">
         <NuxtImg
-          src="/img/logo.svg"
+          src="/img/logo/logo.svg"
           alt="Collegas"
           class="h-10 w-auto brightness-0 invert"
           format="webp"

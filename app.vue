@@ -6,7 +6,7 @@ const organizationSchema = computed(() => ({
   "@type": "FinancialService",
   name: "COLLEGA ENTERPRISE",
   url: requestURL.origin,
-  logo: `${requestURL.origin}/img/logo.svg`,
+  logo: `${requestURL.origin}/img/logo/logo.svg`,
   description:
     "Nezávislé finanční poradenství a komplexní správa majetku pro jednotlivce i firmy.",
 }));

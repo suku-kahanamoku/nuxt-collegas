@@ -4,26 +4,91 @@ const navItems = [
     label: "Naše služby",
     to: "/services",
     type: "trigger",
+    slot: "services",
     children: [
       {
         label: "Finance",
         to: "/services/finance",
         icon: "i-material-symbols-account-balance-wallet",
+        type: "trigger",
+        children: [
+          {
+            label: "Finanční audit",
+            to: "/services/finance#audit",
+          },
+          {
+            label: "Finanční plán",
+            to: "/services/finance#plan",
+          },
+          {
+            label: "Zajištění rizik",
+            to: "/services/finance#risk",
+          },
+          {
+            label: "Odškodnění",
+            to: "/services/finance#compensation",
+          },
+        ],
       },
       {
         label: "Správa kapitálu",
         to: "/services/capital-management",
         icon: "i-material-symbols-trending-up",
+        type: "trigger",
+        children: [
+          {
+            label: "Péče o investiční majetek",
+            to: "/services/capital-management#asset-care",
+          },
+          {
+            label: "Financování",
+            to: "/services/capital-management#financing",
+          },
+          {
+            label: "Investiční příležitosti",
+            to: "/services/capital-management#opportunities",
+          },
+        ],
       },
       {
         label: "Daně a právo",
         to: "/services/tax-legal",
         icon: "i-material-symbols-balance",
+        type: "trigger",
+        children: [
+          {
+            label: "Daňové poradenství",
+            to: "/services/tax-legal#tax",
+          },
+          {
+            label: "Právní poradenství",
+            to: "/services/tax-legal#legal",
+          },
+        ],
       },
       {
         label: "Reality a energie",
         to: "/services/real-estate-energy",
         icon: "i-material-symbols-home-work",
+        type: "trigger",
+        children: [
+          {
+            label: "Energetická optimalizace",
+            to: "/services/real-estate-energy#energy",
+          },
+          {
+            label: "Realitní služby",
+            to: "/services/real-estate-energy#real-estate",
+          },
+          {
+            label: "Správa nemovitostí",
+            to: "/services/real-estate-energy#property-management",
+          },
+          {
+            label: "Developerské projekty",
+            to: "/services/real-estate-energy#development",
+          },
+        ],
       },
     ],
   },
@@ -39,7 +104,7 @@ const navItems = [
     <template #title>
       <NuxtLink to="/" aria-label="Collegas" class="block">
         <NuxtImg
-          src="/img/logo.svg"
+          src="/img/logo/logo_text.svg"
           alt="Collegas"
           class="h-10 w-auto"
           format="webp"
@@ -50,11 +115,44 @@ const navItems = [
     </template>
 
     <UNavigationMenu
-      :items="navItems"
+      :items="navItems as any"
       variant="link"
       color="primary"
-      :ui="{ link: 'text-sm font-semibold uppercase tracking-wider' }"
-    />
+      :ui="{
+        link: 'text-sm font-semibold uppercase tracking-wider',
+        viewportWrapper: 'w-4xl',
+      }"
+    >
+      <template #services-content="{ item }">
+        <div class="grid grid-cols-4 gap-8 p-6">
+          <div
+            v-for="service in (item as any).children"
+            :key="service.label"
+            class="space-y-2"
+          >
+            <ULink
+              :to="service.to"
+              class="flex items-center gap-2 font-semibold text-highlighted hover:text-primary"
+            >
+              <UIcon :name="service.icon" />
+              {{ service.label }}
+            </ULink>
+
+            <!-- children v children -->
+            <ul v-if="service.children?.length" class="ml-4 space-y-2">
+              <li v-for="sub in service.children" :key="sub.label">
+                <ULink
+                  :to="sub.to"
+                  class="flex items-center gap-2 text-sm text-muted hover:text-primary"
+                >
+                  {{ sub.label }}
+                </ULink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </template>
+    </UNavigationMenu>
 
     <template #right>
       <UButton

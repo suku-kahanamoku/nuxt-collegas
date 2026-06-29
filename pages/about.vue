@@ -75,7 +75,7 @@ const principles = [
               class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               data-alt="A professional portrait of a senior financial advisor in a dark, tailored charcoal suit, captured in a grand, oak-paneled library. The lighting is warm and cinematic, mimicking the soft glow of a desk lamp, casting gentle highlights on the subject's face. The mood is authoritative and trustworthy, reflecting a sense of legacy and quiet luxury in a dark forest green and gold-accented environment."
               alt="Zakladatelé COLLEGA ENTERPRISE"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxJagcbV6rZEBpcKTuLhy-PpSJgHnunDgtRE0pUGLjcjSaOscifWfZmsS8p7Fec5eT6tCBinrhk1RbQSnaDJS9IXiBNbGnPQb_qCQW93T12RutSBm2wm--HdBEyY4Q1arVE_F7BjOIDg75FJVblUW3wouNOT_yDqQ4FXq1vpu5UOK8ql_22ULX7nk3u1EbKPpxgBOEHyYrqXyyzJ6Ultl7bmXjdoGKOsWHuWWwBXuaA4_GeE1JE7jicrk5euPw3VIJsAQdhkrWa4"
+              src="/img/other/founders.png"
               format="webp"
               loading="lazy"
               sizes="sm:100vw md:50vw lg:50vw xl:50vw"
@@ -225,7 +225,7 @@ const principles = [
             <template #header>
               <UIcon
                 :name="principle.icon"
-                class="text-secondary-fixed size-10 mb-stack-md block"
+                class="text-secondary-fixed mb-stack-md block text-2xl"
               />
               <h3 class="font-headline-md text-headline-md mb-stack-sm">
                 {{ principle.title }}

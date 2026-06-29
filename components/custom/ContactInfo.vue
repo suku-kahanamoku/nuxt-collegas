@@ -12,6 +12,10 @@ const offices = [
     name: "Kancelář Břeclav",
     address: "nám. T. G. Masaryka 302/8, Břeclav",
   },
+  {
+    name: "Kancelář Boskovice",
+    address: "Masarykovo náměstí 36/35, Boskovice",
+  },
 ];
 </script>
 
@@ -23,11 +27,37 @@ const offices = [
       <div>
         <span
           class="text-label-caps text-secondary-800 block mb-stack-sm uppercase tracking-widest font-semibold"
+          >Pobočky</span
+        >
+        <ul class="space-y-stack-sm">
+          <li
+            v-for="office in offices"
+            :key="office.name"
+            class="flex gap-3 items-start"
+          >
+            <UIcon
+              name="i-material-symbols-location-on"
+              class="text-secondary-800 text-base mt-0.5 shrink-0"
+            />
+            <div>
+              <p class="text-body-md font-semibold text-on-surface">
+                {{ office.name }}
+              </p>
+              <p class="text-body-md text-on-surface-variant">
+                {{ office.address }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <span
+          class="text-label-caps text-secondary-800 block mb-stack-sm uppercase tracking-widest font-semibold"
         >
           Identifikace společnosti
         </span>
         <h2 class="text-headline-md font-serif text-primary-800 mb-stack-xs">
-          Finanční poradenství
+          Collegas s.r.o.
         </h2>
         <dl class="space-y-stack-sm">
           <div class="flex flex-col sm:flex-row sm:gap-4">
@@ -60,33 +90,6 @@ const offices = [
           </div>
         </dl>
       </div>
-
-      <div>
-        <span
-          class="text-label-caps text-secondary-800 block mb-stack-sm uppercase tracking-widest font-semibold"
-          >Provozovny</span
-        >
-        <ul class="space-y-stack-sm">
-          <li
-            v-for="office in offices"
-            :key="office.name"
-            class="flex gap-3 items-start"
-          >
-            <UIcon
-              name="i-material-symbols-location-on"
-              class="text-secondary-800 text-base mt-0.5 shrink-0"
-            />
-            <div>
-              <p class="text-body-md font-semibold text-on-surface">
-                {{ office.name }}
-              </p>
-              <p class="text-body-md text-on-surface-variant">
-                {{ office.address }}
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div
@@ -95,7 +98,7 @@ const offices = [
       <NuxtImg
         class="w-full h-full object-cover map-container"
         alt="Mapa lokace kanceláře – AZ Tower Brno"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzq1xi-LrxBGgAOlUUWsEFi_-Va0u2-g8Pg117jQnZrBQB0-RGR9r7RkieGawy1vegyxxea0UAPVymcqUUndqydpyFhVU2iJ0-WlFscTvipBVNiVcTjo4-1oRxwh-Ps1l_AwnUrVTAB5jH6RMQqY2DZFLl4li3SQIEWWGzvyGjb5cXjXl9h8LYlmjAAcCxNnqGBKkfot4xShX2-wYEhnQd1ldyYJL-495Bl6OlF1JKhJNcGh1Wxu3lfRtzsITdijoIm8aQjWKbGyQ"
+        src="/img/other/map.jpg"
         format="webp"
         loading="lazy"
         sizes="sm:100vw md:70vw lg:45vw xl:40vw"

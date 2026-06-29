@@ -10,13 +10,11 @@ const interestOptions = [
   "Jiné",
 ];
 
-const portfolioOptions = ["5–10 mil. Kč", "10–50 mil. Kč", "50 mil. Kč a více"];
-
 const form = reactive({
   name: "",
   email: "",
   interest: interestOptions[0],
-  portfolio: portfolioOptions[0],
+  phone: "",
   message: "",
 });
 
@@ -105,21 +103,16 @@ function handleSubmit() {
           <label
             class="text-label-caps text-on-primary-container block mb-stack-xs uppercase tracking-widest font-semibold"
           >
-            Velikost portfolia
+            Telefonní číslo
           </label>
-          <select
-            v-model="form.portfolio"
-            name="portfolio"
-            class="w-full bg-transparent border-0 border-b border-outline-variant/40 text-on-primary py-stack-xs focus:outline-none focus:border-secondary-fixed transition-colors appearance-none cursor-pointer"
-          >
-            <option
-              v-for="opt in portfolioOptions"
-              :key="opt"
-              class="bg-primary-900"
-            >
-              {{ opt }}
-            </option>
-          </select>
+          <input
+            v-model="form.phone"
+            type="tel"
+            name="phone"
+            required
+            placeholder="+420 123 456 789"
+            class="w-full bg-transparent border-0 border-b border-outline-variant/40 text-on-primary py-stack-xs focus:outline-none focus:border-secondary-fixed transition-colors placeholder:text-outline"
+          />
         </div>
       </div>
 

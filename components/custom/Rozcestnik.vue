@@ -1,36 +1,37 @@
 <script setup lang="ts">
 const destinations = [
   {
-    icon: "i-material-symbols-search",
-    title: "Chci finanční audit",
-    description: "Zjistěte, jak skutečně fungují vaše finance. Nezávislé posouzení smluv, struktur a nastavení.",
+    icon: "i-material-symbols-account-balance-wallet",
+    title: "Finance",
     label: "Začít audit",
-    to: "/contact",
+    description:
+      "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+    to: "/services/finance",
     highlight: true,
   },
   {
-    icon: "i-material-symbols-account-balance",
-    title: "Hledám poradenství",
-    description: "Investice, pojištění, realitní služby nebo daně – ukažte nám téma a najdeme správné řešení.",
-    label: "Naše služby",
-    to: "/services",
-    highlight: false,
+    icon: "i-material-symbols-trending-up",
+    title: "Správa kapitálu",
+    label: "Správa investic",
+    description:
+      "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
+    to: "/services/capital-management",
   },
   {
-    icon: "i-material-symbols-group",
-    title: "Chci vás poznat",
-    description: "Přes 10 let praxe, desítky odborníků a stovky klientů. Podívejte se, kdo za COLLEGA stojí.",
-    label: "O nás",
-    to: "/about",
-    highlight: false,
+    icon: "i-material-symbols-balance",
+    title: "Daně a právo",
+    label: "Chci poradit s daněmi",
+    description:
+      "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
+    to: "/services/tax-legal",
   },
   {
-    icon: "i-material-symbols-apartment",
-    title: "Chci vědět o Holdingu",
-    description: "Skupina s dlouhodobou historií, kterou tvoří desítky specialistů a tisíce klientů.",
-    label: "O Holdingu",
-    to: "/holding",
-    highlight: false,
+    icon: "i-material-symbols-home-work",
+    title: "Reality a energie",
+    label: "Realitní služby",
+    description:
+      "Realitní služby, správa nemovitostí, optimalizace energetických nákladů a developerské projekty. Efektivní správa a využití majetku.",
+    to: "/services/real-estate-energy",
   },
 ];
 </script>
@@ -39,9 +40,14 @@ const destinations = [
   <section class="py-section-gap bg-surface-container-lowest">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-800">Kde vám můžeme pomoci?</h2>
-        <p class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto">
-          Vyberte oblast, která vás zajímá, a zjistěte, co pro vás COLLEGA může udělat.
+        <h2 class="text-headline-lg font-serif text-primary-800">
+          Kde vám můžeme pomoci?
+        </h2>
+        <p
+          class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+        >
+          Vyberte oblast, která vás zajímá, a zjistěte, co pro vás COLLEGA může
+          udělat.
         </p>
         <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
@@ -56,7 +62,9 @@ const destinations = [
           <UIcon
             :name="dest.icon"
             class="text-4xl"
-            :class="dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
+            :class="
+              dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'
+            "
           />
 
           <h3
@@ -68,7 +76,9 @@ const destinations = [
 
           <p
             class="text-body-md flex-1"
-            :class="dest.highlight ? 'text-on-primary/70' : 'text-on-surface-variant'"
+            :class="
+              dest.highlight ? 'text-on-primary/70' : 'text-on-surface-variant'
+            "
           >
             {{ dest.description }}
           </p>
@@ -76,10 +86,15 @@ const destinations = [
           <template #footer>
             <span
               class="inline-flex items-center gap-1 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity"
-              :class="dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'"
+              :class="
+                dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'
+              "
             >
               {{ dest.label }}
-              <UIcon name="i-material-symbols-arrow-forward" class="text-body-md transition-transform duration-200 group-hover:translate-x-1" />
+              <UIcon
+                name="i-material-symbols-arrow-forward"
+                class="text-body-md transition-transform duration-200 group-hover:translate-x-1"
+              />
             </span>
           </template>
         </UiBaseCard>

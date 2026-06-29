@@ -42,7 +42,7 @@ defineProps<{
         {{ description }}
       </p>
       <div
-        class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-base"
+        class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-stack-sm"
       >
         <NuxtImg
           :src="managerImgSrc"

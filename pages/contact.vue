@@ -1,7 +1,7 @@
 <script setup lang="ts">
-definePageMeta({ title: "Kontakt | Finanční poradenství" });
+definePageMeta({ title: "Kontakt | Collegas s.r.o." });
 useHead({
-  title: "Kontakt | Finanční poradenství",
+  title: "Kontakt | Collegas s.r.o.",
   meta: [
     {
       name: "description",
