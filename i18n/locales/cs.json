@@ -9,14 +9,9 @@
       "title": "Collegas – Finanční poradenství",
       "description": "Nezávislé finanční poradenství skupiny COLLEGA ENTERPRISE. Finanční audit, plánování, zajištění rizik, správa majetku a právní poradenství."
     },
-    "navbar": {
-      "home": "Úvod",
-      "services": "Naše služby",
-      "holding": "Holding",
-      "our-people": "Naši lidé",
-      "about": "O nás",
-      "contact": "Kontakt"
+    "contact": {
+      "success_msg": "Děkujeme za Váš zájem! Budeme se snažit Vám co nejdříve odpovědět.",
+      "error_msg": "Omlouváme se, ale nedošlo k odeslání formuláře. Prosím, zkontrolujte své spojení a zkuste to znovu později."
     }
   }
 }
-

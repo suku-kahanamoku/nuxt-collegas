@@ -1,32 +1,51 @@
 <script setup lang="ts">
+import { useTimeoutFn } from "@vueuse/core";
+
 const email = ref("");
 const submitted = ref(false);
 const loading = ref(false);
-let resetTimeout: ReturnType<typeof setTimeout> | null = null;
+
+const { display } = useToastify();
+
+const { start, stop } = useTimeoutFn(
+  () => {
+    submitted.value = false;
+    email.value = "";
+  },
+  5000,
+  { immediate: false },
+);
 
 async function handleSubmit() {
   if (!email.value || loading.value) return;
+
   loading.value = true;
-  // TODO: wire up to actual backend/newsletter endpoint
-  await new Promise((resolve) => setTimeout(resolve, 600));
-  submitted.value = true;
-  loading.value = false;
 
-  if (resetTimeout) {
-    clearTimeout(resetTimeout);
+  try {
+    await useApi("/api/email/contact", {
+      method: "POST",
+      body: { email: email.value },
+    });
+
+    submitted.value = true;
+    stop();
+    start();
+
+    display({
+      type: "success",
+      message: "$.contact.success_msg",
+    });
+  } catch (error: any) {
+    display({
+      type: "error",
+      message: error?.data?.message || error?.message,
+    });
+  } finally {
+    loading.value = false;
   }
-
-  resetTimeout = setTimeout(() => {
-    submitted.value = false;
-    email.value = "";
-  }, 5000);
 }
 
-onBeforeUnmount(() => {
-  if (resetTimeout) {
-    clearTimeout(resetTimeout);
-  }
-});
+onBeforeUnmount(stop);
 </script>
 
 <template>
@@ -46,7 +65,7 @@ onBeforeUnmount(() => {
 
     <form
       v-else
-      class="mt-stack-lg flex flex-col sm:flex-row gap-3 justify-center"
+      class="mt-stack-lg flex flex-col gap-3 justify-center sm:flex-row"
       @submit.prevent="handleSubmit"
     >
       <input
@@ -54,8 +73,9 @@ onBeforeUnmount(() => {
         type="email"
         placeholder="váš@email.cz"
         required
-        class="flex-1 max-w-sm rounded-md border border-primary-container/40 bg-primary-container/20 px-5 py-3 text-on-primary placeholder:text-on-primary/40 outline-none focus:border-secondary-fixed/60 transition-colors text-body-md"
+        class="text-body-md flex-1 max-w-sm rounded-md border border-primary-container/40 bg-primary-container/20 px-5 py-3 text-on-primary outline-none transition-colors placeholder:text-on-primary/40 focus:border-secondary-fixed/60"
       />
+
       <UiButton type="submit" :loading="loading" class="shrink-0">
         Zanechat kontakt
       </UiButton>

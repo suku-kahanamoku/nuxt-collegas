@@ -1,13 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const defaultSiteUrl = "https://collegas.netlify.app";
+const siteUrl = process.env.FRONTEND_HOST || defaultSiteUrl;
 
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
+  site: {
+    url: siteUrl,
+    name: "COLLEGA ENTERPRISE",
+  },
+
   devtools: { enabled: true },
 
   modules: [
     "@nuxt/image",
+    "@nuxtjs/seo",
     "@suku-kahanamoku/auth-module",
     "@suku-kahanamoku/menu-module",
     "@suku-kahanamoku/form-module",
