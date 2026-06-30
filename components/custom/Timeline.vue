@@ -218,7 +218,6 @@ const events: TimelineEvent[] = [
                 class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1"
                 >{{ ev.year }}</span
               >
-              >
               <div
                 class="font-serif font-bold text-primary-800 text-sm leading-snug"
               >
