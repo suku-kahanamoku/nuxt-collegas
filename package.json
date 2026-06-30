@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/image": "^2.0.0",
+    "@nuxt/image": "^1.11.0",
     "@nuxtjs/seo": "^5.3.1",
     "@resvg/resvg-js": "^2.6.2",
     "@suku-kahanamoku/auth-module": "^1.1.4",
