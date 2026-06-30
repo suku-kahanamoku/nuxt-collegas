@@ -300,13 +300,14 @@ const sections: HoldingSection[] = [
                 <div
                   v-for="(node, ni) in level.nodes"
                   :key="ni"
-                  class="w-80 max-[1060px]:w-full max-w-80 flex flex-col items-center"
+                  class="w-80 max-[1060px]:w-full max-w-80 flex flex-col"
                 >
                   <div
-                    class="w-px h-10 shrink-0 bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
+                    class="w-px h-10 shrink-0 self-center bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
                   ></div>
 
                   <UiBranchCard
+                    class="flex-1"
                     :imgSrc="node.imgSrc"
                     :imgAlt="node.imgAlt"
                     :name="node.name"
