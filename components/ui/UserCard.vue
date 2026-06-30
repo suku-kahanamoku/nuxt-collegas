@@ -46,7 +46,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     </div>
 
     <div class="flex flex-1 flex-col">
-      <div class="min-h-20">
+      <div class="min-h-24">
         <h3
           class="font-headline-md text-[24px] text-primary-800 group-hover/user-card:text-secondary transition-colors line-clamp-2"
         >
@@ -59,7 +59,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
         </p>
       </div>
 
-      <div class="mt-auto min-h-[3rem] flex flex-col justify-end">
+      <div class="min-h-[3rem] flex flex-col justify-end">
         <p
           v-if="description"
           class="font-body-md text-on-surface-variant line-clamp-4"
