@@ -16,7 +16,7 @@ defineProps<{
   <div
     class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col"
   >
-    <div class="aspect-video overflow-hidden">
+    <div class="aspect-square relative overflow-hidden">
       <NuxtImg
         :src="imgSrc"
         :alt="imgAlt ?? name"

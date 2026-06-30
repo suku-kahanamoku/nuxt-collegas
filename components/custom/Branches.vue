@@ -3,7 +3,7 @@ import usersData from "~/assets/data/users.json";
 
 const branches = [
   {
-    imgSrc: "/img/branch/centrala.jpg",
+    imgSrc: "/img/branch/brno.png",
     imgAlt: "Centrála Brno",
     name: "Centrála – Brno",
     address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
@@ -21,7 +21,7 @@ const branches = [
     managerSlug: "igor-stransky",
   },
   {
-    imgSrc: "/img/branch/breclav.jpg",
+    imgSrc: "/img/branch/breclav.png",
     imgAlt: "Pobočka Břeclav",
     name: "Pobočka – Břeclav",
     address: "nám. T. G. Masaryka 302/8, 690 02 Břeclav",
@@ -30,7 +30,7 @@ const branches = [
     managerSlug: "zuzana-capkova",
   },
   {
-    imgSrc: "/img/branch/boskovice.webp",
+    imgSrc: "/img/branch/boskovice.png",
     imgAlt: "Pobočka Boskovice",
     name: "Pobočka – Boskovice",
     address: "Masarykovo náměstí 36/35, Boskovice",
