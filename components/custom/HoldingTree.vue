@@ -65,7 +65,7 @@ const sections: HoldingSection[] = [
               "Realitní development a investice do komerčních i rezidenčních nemovitostních projektů.",
             managerName: "Lukáš Formánek",
             managerImgSrc: "/img/user/formanek.png",
-            managerLabel: "Ředitel investic",
+            managerLabel: "Investice",
           },
           {
             name: "COLLEGA MAKLÉŘ s.r.o.",
@@ -77,7 +77,7 @@ const sections: HoldingSection[] = [
               "Zprostředkování pojištění, hypotečních úvěrů a pojistných produktů pro klienty.",
             managerName: "Filip Beneš",
             managerImgSrc: "/img/user/benes.png",
-            managerLabel: "Ředitel pojištění & hypoték",
+            managerLabel: "Pojištění & hypotéky",
           },
         ],
       },
@@ -105,7 +105,7 @@ const sections: HoldingSection[] = [
               "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby.",
             managerName: "Jan Radosta",
             managerImgSrc: "/img/user/radosta.png",
-            managerLabel: "Ředitel odškodnění",
+            managerLabel: "Odškodnění",
           },
           {
             name: "BULA & COLLEGAS s.r.o.",
@@ -154,7 +154,7 @@ const sections: HoldingSection[] = [
               "Realizace rezidenčních a komerčních development projektů na Moravě.",
             managerName: "Eva Pánková",
             managerImgSrc: "/img/user/pankova.png",
-            managerLabel: "Ředitelka developmentu",
+            managerLabel: "Development",
           },
           {
             name: "COLLEGA PROPERTY s.r.o.",
@@ -215,7 +215,7 @@ const sections: HoldingSection[] = [
               "Architektonické a designové služby pro rezidenční i komerční projekty.",
             managerName: "Lukáš Bajgar",
             managerImgSrc: "/img/user/bajgar.png",
-            managerLabel: "Ředitel designu",
+            managerLabel: "Design",
           },
           {
             name: "COLLEGAS SOLUTION s.r.o.",
@@ -239,7 +239,7 @@ const sections: HoldingSection[] = [
               "Zprostředkování prodeje a pronájmu nemovitostí pro klienty skupiny.",
             managerName: "Zuzana Čapková",
             managerImgSrc: "/img/user/capkova.png",
-            managerLabel: "Ředitelka realit",
+            managerLabel: "Reality",
           },
         ],
       },
@@ -291,7 +291,7 @@ const sections: HoldingSection[] = [
                 class="w-px h-14 shrink-0 bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
               ></div>
               <div
-                class="w-full max-w-3xl h-px bg-[linear-gradient(90deg,rgba(255,222,163,0.45),rgba(228,194,131,0.85),rgba(255,222,163,0.45))]"
+                class="w-full max-w-[688px] h-px bg-[linear-gradient(90deg,rgba(255,222,163,0.45),rgba(228,194,131,0.85),rgba(255,222,163,0.45))]"
               ></div>
 
               <div
