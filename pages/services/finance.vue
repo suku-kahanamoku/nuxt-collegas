@@ -113,10 +113,7 @@ const teamMembers = specialistSlugs
       </UiButton>
     </UiDarkBanner>
 
-    <CustomUserPic&desc
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
-      img-class="shadow-sm"
-    >
+    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
         <span class="font-display-xl text-display-xl leading-none">20+</span>
         <span class="font-label-caps uppercase tracking-widest"
@@ -217,7 +214,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="plan"
-              img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
+              img-src="/img/other/man.png"
               img-alt="Finanční poradce při konzultaci"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
@@ -242,7 +239,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="risk"
-              img-src="/img/intro/notes.png"
+              img-src="/img/other/wall.png"
               img-alt="Zajištění rizik"
               img-right
             >
@@ -268,7 +265,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="compensation"
-              img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
+              img-src="/img/other/building.png"
               img-alt="Odškodnění"
             >
               <div class="grid space-y-stack-md items-center from-bottom">

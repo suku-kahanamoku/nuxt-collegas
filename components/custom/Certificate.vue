@@ -91,7 +91,7 @@ function onImgErrorByIndex(i: number) {
       >
         <div class="lg:col-span-8 space-y-section-gap">
           <UiImageText
-            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB3ex9wSUxLroSQvcTshXAvZ2w3G94V2d6wFRbOiptcLcz3J6QFD4QKJh0xcZRH1aH8_o1BtmYaa-hqBft9MNxAHDBS3ZWj5KSGCpeNNpteBpGNiczfb9lwRjBcZGZ6ZDANcCZGqGageYcw_526l3s5HoxiTRMOWSFNrlc_VRcY4qs4w_c3xG-3-O6d_V1cPPSmExzUPcf9AO8USYGNGPdx3erBbS8iK_bswez8QXKPnThvwwiEzrlRe8DlpA_xyXbkFbjDZUZeL8"
+            img-src="/img/other/building.png"
             img-alt="Certifikace"
             img-right
           >
@@ -124,10 +124,7 @@ function onImgErrorByIndex(i: number) {
             </div>
           </UiImageText>
 
-          <UiImageText
-            img-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5N-971h-2cMzRDBs9ym4RemDHszAuUr22mg3Arp1DRL39QEZlfZ5mN82t3Bg0cZQ4npYmdvmzLVNTPrbaaM5Ft983hm9I1zb8Ms5046Cp6N8GSZHBAfC-AfBRm1RZZXnioJjubjrULdrgrEv9Qb54gW981NEKAj_yz4wHLzLZarPAk4sfDoUtwOgx_D7E06zWNkljByjwnvebCoF1dnBg0b7DZmXmTxQor-TFVhVnsv4IQAiIx-arr3BFCGVQWZDFf5r1rJnY1s"
-            img-alt="Certifikace"
-          >
+          <UiImageText img-src="/img/other/man.png" img-alt="Certifikace">
             <div class="grid space-y-stack-md items-center from-bottom">
               <h2 class="text-headline-lg font-serif text-primary-800">
                 Zkušenost

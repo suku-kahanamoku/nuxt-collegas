@@ -408,18 +408,6 @@
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
   },
   {
-    "slug": "nicola-ruskova",
-    "name": "Nicola Růsková",
-    "role": "Junior finanční konzultant",
-    "group": "consultants",
-    "photo": "",
-    "intro": "Podílí se na péči o klienty a na přípravě podkladů pro finanční řešení přizpůsobená konkrétní situaci.",
-    "about": "Nicola pracuje na přípravě podkladů a podpoře klientské péče. Svou prací přispívá ke kvalitnímu a personalizovanému servisu.",
-    "email": "nicola.ruskova@collegas.cz",
-    "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
-  },
-  {
     "slug": "pavel-prudil",
     "name": "Pavel Prudil",
     "role": "Finanční konzultant",
@@ -464,54 +452,6 @@
     "intro": "Je součástí poradenského týmu a podílí se na řešeních, která propojují každodenní finance s dlouhodobými cíli.",
     "about": "Antonín pomáhá klientům propojit aktuální finanční situaci s dlouhodobými plány. Ve svém přístupu kombinuje analytické myšlení s osobní péčí o klienta.",
     "email": "antonin.jez@collegas.cz",
-    "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
-  },
-  {
-    "slug": "hana-kureckova",
-    "name": "Hana Kurečková",
-    "role": "Finanční oddělení",
-    "group": "backoffice",
-    "photo": "",
-    "intro": "Je součástí interního zázemí, které podporuje plynulý chod klientských i administrativních procesů.",
-    "about": "Hana zajišťuje správnost a přehlednost finančních agend a přispívá ke spolehlivému chodu celého týmu.",
-    "email": "hana.kureckova@collegas.cz",
-    "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
-  },
-  {
-    "slug": "lucie-bohata",
-    "name": "Lucie Bohatá",
-    "role": "Asistentka",
-    "group": "backoffice",
-    "photo": "",
-    "intro": "Zajišťuje organizační a komunikační podporu, aby spolupráce s klienty probíhala hladce a bez zdržení.",
-    "about": "Lucie koordinuje interní komunikaci a administrativní procesy, díky nimž mohou kolegové plně soustředit na klienty.",
-    "email": "lucie.bohata@collegas.cz",
-    "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
-  },
-  {
-    "slug": "anna-kupkova",
-    "name": "Anna Kupková",
-    "role": "Registrační oddělení",
-    "group": "backoffice",
-    "photo": "",
-    "intro": "Stará se o správnost a návaznost interních procesů spojených s registrací a evidencí klientské agendy.",
-    "about": "Anna zodpovídá za přesnost registrační agendy a zajišťuje, aby veškeré procesy probíhaly v souladu s interními standardy.",
-    "email": "anna.kupkova@collegas.cz",
-    "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
-  },
-  {
-    "slug": "nikola-bednarikova",
-    "name": "Nikola Bednaříková",
-    "role": "Zpracování smluv",
-    "group": "backoffice",
-    "photo": "",
-    "intro": "Věnuje se přípravě a administraci smluvní dokumentace s důrazem na přesnost a přehlednost.",
-    "about": "Nikola zpracovává smluvní dokumentaci a dohlíží na její správnost, čímž přispívá k hladkému průběhu každé klientské transakce.",
-    "email": "nikola.bednarikova@collegas.cz",
     "brand": "COLLEGA ENTERPRISE",
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
   },
@@ -564,14 +504,14 @@
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
   },
   {
-    "slug": "hana-kucerova",
+    "slug": "hana-kureckova",
     "name": "Hana Kurečková",
     "role": "Senior finanční konzultant",
     "group": "senior",
-    "photo": "/img/user/kucerova.png",
+    "photo": "/img/user/kureckova.png",
     "intro": "Hana se specializuje na individuální finanční poradenství a dlouhodobé plánování pro klienty, kteří hledají stabilní a udržitelná řešení.",
     "about": "Hana přináší klientům odborné znalosti a zkušenosti v oblasti finančního plánování, s důrazem na dlouhodobou udržitelnost a individuální přístup. Pomáhá klientům najít řešení, která odpovídají jejich životní situaci a cílům.",
-    "email": "hana.kucerova@collegas.cz",
+    "email": "hana.kureckova@collegas.cz",
     "brand": "COLLEGA ENTERPRISE",
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
   }

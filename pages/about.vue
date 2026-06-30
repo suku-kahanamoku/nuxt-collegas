@@ -155,7 +155,7 @@ const principles = [
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
               alt="Sídlo a zázemí skupiny COLLEGA"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
+              src="/img/other/wall.png"
               format="webp"
               loading="lazy"
               sizes="sm:100vw md:50vw lg:33vw xl:33vw"
@@ -165,10 +165,7 @@ const principles = [
       </UContainer>
     </section>
 
-    <CustomUserPic&desc
-      bg-image="https://lh3.googleusercontent.com/aida-public/AB6AXuDsqrCbxLjupY1TswzG_UjcLT4wKDuirdPU7r3ElhKn2SkBwSBHEFFzSwf9cy7D_c-WPEHJfJJG_3_lvG_g4sS3Ab8y3EvUXvdc20wLP7emhzsK4c_wLnvtkGO4zLVVFKuAU9kmSxGnsuv51fZQeQxzpbkdVv2RkIB39NlYU0_ZPcIR9DASMnUbUbYrjB_MqqOO6Pmzi8RHa1lEfN-GWRg_HgncCVrTmLjE7xx2hDOfWfbewKqAPTadL-vp8J5AbuQNQ1eRP5_Jy48"
-      img-class="shadow-sm"
-    >
+    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
         <span class="font-display-xl text-display-xl leading-none">20+</span>
         <span class="font-label-caps uppercase tracking-widest"
@@ -245,47 +242,10 @@ const principles = [
     <CustomTimeline />
 
     <!-- ── Skupinové foto ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <span
-            class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-            >Náš tým</span
-          >
-          <h2 class="text-headline-lg font-serif text-primary-800">
-            Lidé, kteří stojí za COLLEGA
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Tým odborníků, kteří sdílejí společnou filozofii – pracovat poctivě,
-            mluvit otevřeně a stavět na dlouhodobých vztazích.
-          </p>
-          <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
-        </div>
-
-        <div class="w-full aspect-21/9 bg-surface-container overflow-hidden">
-          <NuxtImg
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDseSOT3mOT4qS4gX__-9DxF7GHt1hEjDWzMdt0PoEgPcgWGWwWgeXvRe4xE3ur2kX7fccXirstK97YhT84Lmg-PX7bVTUFLV9vEHmHZkxZ7VFYKMnf_3Ww8EfIOndCK4UZNIHn5LBH2KGUhoN4WftE31YSXfygb8472kXzEwb0yLzvUxH1JhuPiAFYD9ULPiXQ8XuVZl5xqk09zpPgrmzrFkWWTrT68lMOVOEiTv-xT7mT9GA7dqjX2h7EaSy0sUXIJZJGykzwWQ"
-            alt="Tým Collegas – skupinové foto"
-            class="w-full h-full object-cover object-top"
-            format="webp"
-            loading="lazy"
-            sizes="sm:100vw md:100vw lg:100vw xl:100vw"
-          />
-        </div>
-
-        <div class="text-center mt-stack-lg">
-          <NuxtLink
-            to="/our-people"
-            class="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary-700 hover:text-secondary-800 transition-colors"
-          >
-            Poznat celý tým
-            <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
-          </NuxtLink>
-        </div>
-      </UContainer>
-    </section>
+    <CustomPeopleCarousel
+      title="Lidé, kteří stojí za COLLEGA"
+      description="Tým odborníků, kteří sdílejí společnou filozofii – pracovat poctivě, mluvit otevřeně a stavět na dlouhodobých vztazích."
+    />
 
     <!-- ── CTA ── -->
     <UiDarkBanner

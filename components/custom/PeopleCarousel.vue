@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import usersData from "~/assets/data/users.json";
+
+const props = defineProps<{
+  title?: string;
+  description?: string;
+}>();
+
 const people = (Array.isArray(usersData) ? usersData : []) as any[];
 </script>
 
@@ -7,11 +13,16 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
   <section class="py-section-gap bg-background">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-800">Náš tým</h2>
+        <h2 class="text-headline-lg font-serif text-primary-800">
+          {{ props.title || "Náš tým" }}
+        </h2>
         <p
           class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
         >
-          Odborníci, kteří se postarají o vaši finanční budoucnost
+          {{
+            props.description ||
+            "Odborníci, kteří se postarají o vaši finanční budoucnost"
+          }}
         </p>
         <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
@@ -42,6 +53,16 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
           </div>
         </UiUserCard>
       </UMarquee>
+
+      <div class="text-center mt-stack-xl">
+        <NuxtLink
+          to="/our-people"
+          class="inline-flex items-center gap-2 font-label-caps uppercase tracking-widest text-secondary-700 hover:text-secondary-800 transition-colors"
+        >
+          Poznat celý tým
+          <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
+        </NuxtLink>
+      </div>
     </UContainer>
   </section>
 </template>

@@ -47,23 +47,23 @@ const metrics = computed(
     ],
 );
 
-const testimonials = computed(
+const references = computed(
   () =>
-    user.testimonials || [
+    user.references || [
       {
         quote:
-          "Díky spolupráci s Collegas mám konečně jasno ve svých financích. Každý krok mi byl srozumitelně vysvětlen.",
-        author: "Jana K. (32 let, maminka na mateřské)",
+          "Řešil jsem odhad nemovitosti, pronájem bytu, pojistku domácnosti a povinné ručení na druhé auto v rodině. Dal jsem na radu přítele a obrátil se na collegas. Vše se mnou vyřešil 1 člověk, během jednoho telefonátu a jedné schůzky. Po telefonu jsem jim popsal, co potřebuji, na následující osobní schůzce mi byly prezentovány různé modely služeb ( vč. hotových smluv ) od několika zprostředkovatelů s tím, že si stačilo jen vybrat, podepsat a odejít....",
+        author: "Tomáš Pečenka (Google recenze)",
       },
       {
         quote:
-          "Profesionální, férový přístup. Oceňuji, že poradce opravdu naslouchá a navrhuje konkrétní řešení.",
-        author: "Petr S. (45 let, podnikatel)",
+          'Oceňuji přátelský a osobní přístup, vysvětlení problematiky a zaměření se na konkrétní potřeby klienta. Na rozdíl od běžného "finančního poradenství" vás netlačí do nesmyslných pojistek...',
+        author: "Ondřej Daněk (Google recenze)",
       },
       {
         quote:
-          "Hledala jsem někoho, kdo mi vše vysvětlí bez složitých výrazů. Přesně to se povedlo.",
-        author: "Marie L. (58 let, zaměstnankyně)",
+          "Během mnohaleté spolupráce mi vždy dobře poradili a našli tu nejvýhodnější možnost, ať už v otázce pojištění, vyřízení hypotéky, či kde investovat. Služeb využívá celá naše rodina a jsme moc spokojení. Díky za skvělý servis a osobní přístup!",
+        author: "Martina Donátová (Google recenze)",
       },
     ],
 );
@@ -244,7 +244,7 @@ const testimonials = computed(
       </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- references -->
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <h2
@@ -254,7 +254,7 @@ const testimonials = computed(
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            v-for="(t, i) in testimonials"
+            v-for="(t, i) in references"
             :key="i"
             class="rounded-2xl p-6 border border-primary-800 shadow-lg"
             style="

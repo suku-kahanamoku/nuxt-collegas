@@ -31,7 +31,7 @@ const navItems = [
         ],
       },
       {
-        label: "Správa kapitálu",
+        label: "Investice",
         to: "/services/capital-management",
         icon: "i-material-symbols-trending-up",
         type: "trigger",
@@ -124,6 +124,23 @@ const navItems = [
       }"
     >
       <template #services-content="{ item }">
+        <div
+          class="font-semibold pt-6 px-6 font-serif text-2xl text-primary-800/80"
+        >
+          Klientům pomáháme v těchto oblastech:
+          <div
+            class="h-0.5 rounded-full w-20 mt-5"
+            style="
+              background: linear-gradient(
+                90deg,
+                rgb(116, 91, 38),
+                rgb(228, 194, 131),
+                rgb(116, 91, 38)
+              );
+              box-shadow: rgba(228, 194, 131, 0.45) 0px 1px 6px;
+            "
+          ></div>
+        </div>
         <div class="grid grid-cols-4 gap-8 p-6">
           <div
             v-for="service in (item as any).children"
@@ -132,7 +149,7 @@ const navItems = [
           >
             <ULink
               :to="service.to"
-              class="flex items-center gap-2 font-semibold text-highlighted hover:text-primary"
+              class="flex items-center gap-2 font-semibold text-secondary-800 hover:text-primary"
             >
               <UIcon :name="service.icon" />
               {{ service.label }}
@@ -154,7 +171,7 @@ const navItems = [
       </template>
     </UNavigationMenu>
 
-    <template #right>
+    <!-- <template #right>
       <UButton
         to="/client-zone"
         color="primary"
@@ -165,7 +182,7 @@ const navItems = [
       >
         Klientská zóna
       </UButton>
-    </template>
+    </template> -->
 
     <template #body>
       <UNavigationMenu

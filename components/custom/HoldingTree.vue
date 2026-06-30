@@ -2,16 +2,18 @@
 import holdingData from "~/assets/data/holding.json";
 
 interface HoldingNode {
+  title: string;
   name: string;
   category: string;
   imgSrc: string;
   imgAlt: string;
-  address: string;
   description?: string;
   managerName: string;
   managerImgSrc: string;
   managerImgAlt?: string;
   managerLabel?: string;
+  logoSrc?: string;
+  logoAlt?: string;
 }
 
 interface HoldingSection {
@@ -60,7 +62,7 @@ const sections: HoldingSection[] = holdingData;
           <div class="flex flex-col items-center">
             <!-- LEVEL 0 - ROOT -->
             <div class="w-106 max-[1060px]:w-90">
-              <UiBranchCard v-bind="getRootNode(section)" />
+              <UiTreeCard v-bind="getRootNode(section)" />
             </div>
 
             <!-- LEVEL 1..N -->
@@ -84,17 +86,19 @@ const sections: HoldingSection[] = holdingData;
                     class="w-px h-10 shrink-0 self-center bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
                   ></div>
 
-                  <UiBranchCard
+                  <UiTreeCard
                     class="flex-1"
                     :imgSrc="node.imgSrc"
                     :imgAlt="node.imgAlt"
+                    :title="node.title"
                     :name="node.name"
-                    :address="node.address"
                     :description="node.description"
                     :managerName="node.managerName"
                     :managerImgSrc="node.managerImgSrc"
                     :managerImgAlt="node.managerImgAlt"
                     :managerLabel="node.managerLabel"
+                    :logoSrc="node.logoSrc"
+                    :logoAlt="node.logoAlt"
                   />
                 </div>
               </div>

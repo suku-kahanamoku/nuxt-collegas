@@ -54,10 +54,10 @@ const pillars = [
           <div class="lg:col-span-8">
             <p class="text-body-lg text-on-surface-variant max-w-2xl">
               Skupina COLLEGA ENTERPRISE a.s. sdružuje přední společnosti z
-              oblasti financí, investic, realitního rozvoje, práva a podpůrných
-              služeb. Propojená struktura nám umožňuje poskytovat komplexní
-              řešení pod jednou střechou – od financování a pojištění přes
-              architektonický design až po správu a prodej nemovitostí.
+              oblasti financí, práva, realit a designu. Naše holdingová
+              struktura umožňuje efektivní spolupráci mezi jednotlivými
+              dceřinými společnostmi a poskytuje komplexní služby našim
+              klientům.
             </p>
           </div>
 
@@ -85,7 +85,9 @@ const pillars = [
     <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-800">Tři klíčové oblasti skupiny</h2>
+          <h2 class="text-headline-lg font-serif text-primary-800">
+            Tři klíčové oblasti skupiny
+          </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
           <UiBaseCard v-for="p in pillars" :key="p.title">
