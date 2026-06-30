@@ -2,11 +2,23 @@
 interface HoldingNode {
   name: string;
   category: string;
+  imgSrc: string;
+  imgAlt: string;
+  address: string;
+  description?: string;
+  managerName: string;
+  managerImgSrc: string;
+  managerImgAlt?: string;
+  managerLabel?: string;
 }
 
 interface HoldingSection {
   title: string;
   levels: { nodes: HoldingNode[] }[];
+}
+
+function getRootNode(section: HoldingSection): HoldingNode {
+  return section.levels[0]!.nodes[0]!;
 }
 
 const sections: HoldingSection[] = [
@@ -15,17 +27,58 @@ const sections: HoldingSection[] = [
     levels: [
       {
         nodes: [
-          { name: "COLLEGA ENTERPRISE a.s.", category: "Finance a právo" },
+          {
+            name: "COLLEGA ENTERPRISE a.s.",
+            category: "Mateřská společnost",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Centrála COLLEGA ENTERPRISE",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Mateřská společnost a sídlo skupiny COLLEGA. Zastřešuje strategické řízení, finanční plánování a rozvoj celého holdingu.",
+            managerName: "Ing. Tomáš Kalous",
+            managerImgSrc: "/img/user/kalous.png",
+            managerLabel: "Zakladatel & CEO",
+          },
         ],
       },
       {
         nodes: [
-          { name: "COLLEGA BROKERS a.s.", category: "Finance & investice" },
+          {
+            name: "COLLEGA BROKERS a.s.",
+            category: "Finance & investice",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Centrála COLLEGA BROKERS",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Finanční poradenství a zprostředkování investičních produktů pro privátní i firemní klienty.",
+            managerName: "Marek Butula",
+            managerImgSrc: "/img/user/butula.png",
+            managerLabel: "Zakladatel & byznys stratég",
+          },
           {
             name: "COLLEGA INVESTICE s.r.o.",
             category: "Develop & investice nemovitostí",
+            imgSrc: "/img/branch/breclav.jpg",
+            imgAlt: "Kancelář COLLEGA INVESTICE",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Realitní development a investice do komerčních i rezidenčních nemovitostních projektů.",
+            managerName: "Lukáš Formánek",
+            managerImgSrc: "/img/user/formanek.png",
+            managerLabel: "Ředitel investic",
           },
-          { name: "COLLEGA MAKLÉŘ s.r.o.", category: "Pojištění & hypotéky" },
+          {
+            name: "COLLEGA MAKLÉŘ s.r.o.",
+            category: "Pojištění & hypotéky",
+            imgSrc: "/img/branch/kromeriz.webp",
+            imgAlt: "Kancelář COLLEGA MAKLÉŘ",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Zprostředkování pojištění, hypotečních úvěrů a pojistných produktů pro klienty.",
+            managerName: "Filip Beneš",
+            managerImgSrc: "/img/user/benes.png",
+            managerLabel: "Ředitel pojištění & hypoték",
+          },
         ],
       },
       {
@@ -33,14 +86,38 @@ const sections: HoldingSection[] = [
           {
             name: "COLLEGAS s.r.o.",
             category: "Administrativa & podpora holdingu",
+            imgSrc: "/img/branch/boskovice.webp",
+            imgAlt: "Kancelář COLLEGAS",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Administrativní a provozní podpora celé skupiny COLLEGA, včetně HR a interních procesů.",
+            managerName: "Nikola Šmídová",
+            managerImgSrc: "/img/user/smidova.png",
+            managerLabel: "Manažer backoffice",
           },
           {
             name: "COLLEGAS ODŠKODNĚNÍ s.r.o.",
             category: "Odškodnění & náhrady",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Kancelář COLLEGAS ODŠKODNĚNÍ",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby.",
+            managerName: "Jan Radosta",
+            managerImgSrc: "/img/user/radosta.png",
+            managerLabel: "Ředitel odškodnění",
           },
           {
             name: "BULA & COLLEGAS s.r.o.",
             category: "Administrativa & podpora holdingu",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Kancelář BULA & COLLEGAS",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Poradenství v oblasti práva, administrativy a strategického řízení holdingu.",
+            managerName: "Marek Butula",
+            managerImgSrc: "/img/user/butula.png",
+            managerLabel: "Společník",
           },
         ],
       },
@@ -50,20 +127,59 @@ const sections: HoldingSection[] = [
     title: "Development",
     levels: [
       {
-        nodes: [{ name: "COLLEGA ENTERPRISE a.s.", category: "Development" }],
-      },
-      {
         nodes: [
-          { name: "", category: "" },
-          { name: "", category: "" },
-          { name: "", category: "" },
+          {
+            name: "COLLEGA ENTERPRISE a.s.",
+            category: "Development",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Centrála COLLEGA ENTERPRISE",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Development divize skupiny COLLEGA zaměřená na rezidenční a komerční projekty.",
+            managerName: "Ing. Tomáš Kalous",
+            managerImgSrc: "/img/user/kalous.png",
+            managerLabel: "Zakladatel & CEO",
+          },
         ],
       },
       {
         nodes: [
-          { name: "", category: "" },
-          { name: "", category: "" },
-          { name: "", category: "" },
+          {
+            name: "COLLEGA DEVELOPMENT s.r.o.",
+            category: "Výstavba & projekty",
+            imgSrc: "/img/branch/breclav.jpg",
+            imgAlt: "Projektová kancelář",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Realizace rezidenčních a komerčních development projektů na Moravě.",
+            managerName: "Eva Pánková",
+            managerImgSrc: "/img/user/pankova.png",
+            managerLabel: "Ředitelka developmentu",
+          },
+          {
+            name: "COLLEGA PROPERTY s.r.o.",
+            category: "Správa nemovitostí",
+            imgSrc: "/img/branch/kromeriz.webp",
+            imgAlt: "Kancelář správy nemovitostí",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Komplexní správa a facility management nemovitostního portfolia skupiny.",
+            managerName: "Josef Zídek",
+            managerImgSrc: "/img/user/zidek.png",
+            managerLabel: "Manažer správy",
+          },
+          {
+            name: "COLLEGA CONSULT s.r.o.",
+            category: "Inženýrská činnost",
+            imgSrc: "/img/branch/boskovice.webp",
+            imgAlt: "Kancelář inženýrské činnosti",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Inženýrská a konzultační činnost v oblasti stavebnictví a územního plánování.",
+            managerName: "David Strnad",
+            managerImgSrc: "/img/user/strnad.png",
+            managerLabel: "Vedoucí konzultant",
+          },
         ],
       },
     ],
@@ -72,18 +188,58 @@ const sections: HoldingSection[] = [
     title: "Software",
     levels: [
       {
-        nodes: [{ name: "COLLEGA ENTERPRISE a.s.", category: "Software" }],
+        nodes: [
+          {
+            name: "COLLEGA ENTERPRISE a.s.",
+            category: "Software",
+            imgSrc: "/img/branch/centrala.jpg",
+            imgAlt: "Centrála COLLEGA ENTERPRISE",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Technologická divize skupiny COLLEGA vyvíjející vlastní softwarová řešení.",
+            managerName: "Ing. Tomáš Kalous",
+            managerImgSrc: "/img/user/kalous.png",
+            managerLabel: "Zakladatel & CEO",
+          },
+        ],
       },
       {
         nodes: [
           {
             name: "COLLEGA DESIGN s.r.o.",
             category: "Architektura & design nemovitostí",
+            imgSrc: "/img/branch/breclav.jpg",
+            imgAlt: "Kancelář COLLEGA DESIGN",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Architektonické a designové služby pro rezidenční i komerční projekty.",
+            managerName: "Lukáš Bajgar",
+            managerImgSrc: "/img/user/bajgar.png",
+            managerLabel: "Ředitel designu",
           },
-          { name: "COLLEGAS SOLUTION s.r.o.", category: "Právo & poradenství" },
+          {
+            name: "COLLEGAS SOLUTION s.r.o.",
+            category: "IT & vývoj",
+            imgSrc: "/img/branch/kromeriz.webp",
+            imgAlt: "Kancelář COLLEGAS SOLUTION",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Vývoj softwarových řešení pro finanční a realitní služby skupiny.",
+            managerName: "Pavel Prudil",
+            managerImgSrc: "/img/user/prudil.png",
+            managerLabel: "Vedoucí vývoje",
+          },
           {
             name: "COLLEGAS REALITY s.r.o.",
             category: "Správa a prodej nemovitostí",
+            imgSrc: "/img/branch/boskovice.webp",
+            imgAlt: "Kancelář COLLEGAS REALITY",
+            address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            description:
+              "Zprostředkování prodeje a pronájmu nemovitostí pro klienty skupiny.",
+            managerName: "Zuzana Čapková",
+            managerImgSrc: "/img/user/capkova.png",
+            managerLabel: "Ředitelka realit",
           },
         ],
       },
@@ -124,79 +280,43 @@ const sections: HoldingSection[] = [
 
           <!-- Tree -->
           <div class="flex flex-col items-center">
-            <!-- LEVEL 1 - ROOT -->
-            <div
-              class="bg-white text-center rounded-[3px] w-90 max-[1060px]:w-75 px-10 py-8 max-[1060px]:px-6 max-[1060px]:py-7 transition-all duration-200 hover:-translate-y-0.75 hover:shadow-[0_16px_52px_rgba(0,0,0,0.36),0_3px_10px_rgba(0,0,0,0.2),0_0_0_1px_rgba(228,194,131,0.3),inset_0_1px_0_rgba(255,255,255,0.9)]"
-              style="
-                border: 1px solid rgba(170, 207, 190, 0.5);
-                border-top: 3px solid rgba(116, 91, 38, 0.68);
-                box-shadow:
-                  0 12px 48px rgba(0, 0, 0, 0.35),
-                  0 3px 10px rgba(0, 0, 0, 0.2),
-                  inset 0 1px 0 rgba(255, 255, 255, 0.9);
-              "
-            >
-              <div
-                class="font-serif font-bold text-primary-800 leading-snug text-body-lg tracking-normal"
-              >
-                {{ section.levels[0]?.nodes[0]?.name }}
-              </div>
-              <div
-                class="w-14.5 h-0.5 rounded-[2px] mx-auto my-3.5 bg-[linear-gradient(90deg,#745b26,#e4c283,#745b26)]"
-              ></div>
-              <div
-                class="font-semibold uppercase text-label-caps leading-normal tracking-widest text-[#2b4d41]"
-              >
-                {{ section.levels[0]?.nodes[0]?.category }}
-              </div>
+            <!-- LEVEL 0 - ROOT -->
+            <div class="w-106 max-[1060px]:w-90">
+              <UiBranchCard v-bind="getRootNode(section)" />
             </div>
 
-            <!-- LEVEL 2..N -->
+            <!-- LEVEL 1..N -->
             <template v-for="(level, li) in section.levels.slice(1)" :key="li">
               <div
                 class="w-px h-14 shrink-0 bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
               ></div>
               <div
-                class="w-166 h-px max-[1060px]:hidden bg-[linear-gradient(90deg,rgba(255,222,163,0.45),rgba(228,194,131,0.85),rgba(255,222,163,0.45))]"
+                class="w-full max-w-3xl h-px bg-[linear-gradient(90deg,rgba(255,222,163,0.45),rgba(228,194,131,0.85),rgba(255,222,163,0.45))]"
               ></div>
 
               <div
-                class="flex gap-18 max-[1060px]:flex-col max-[1060px]:gap-0 max-[1060px]:items-center"
+                class="flex gap-6 max-[1060px]:flex-col max-[1060px]:items-center"
               >
                 <div
                   v-for="(node, ni) in level.nodes"
                   :key="ni"
-                  class="w-65 max-[1060px]:w-75 flex flex-col items-center"
+                  class="w-80 max-[1060px]:w-full max-w-80 flex flex-col items-center"
                 >
                   <div
                     class="w-px h-10 shrink-0 bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
                   ></div>
 
-                  <div
-                    class="bg-white text-center rounded-[3px] w-65 max-[1060px]:w-75 px-6 py-5.5 transition-all duration-200 hover:-translate-y-0.5 hover:border-secondary-400/50 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3),0_2px_6px_rgba(0,0,0,0.14),0_0_0_1px_rgba(228,194,131,0.35),inset_0_1px_0_rgba(255,255,255,0.85)]"
-                    style="
-                      border: 1px solid rgba(170, 207, 190, 0.35);
-                      border-top: 2px solid rgba(116, 91, 38, 0.36);
-                      box-shadow:
-                        0 4px 24px rgba(0, 0, 0, 0.25),
-                        0 1px 4px rgba(0, 0, 0, 0.12),
-                        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-                    "
-                  >
-                    <div
-                      class="font-serif font-bold text-primary-800 leading-snug text-body-md tracking-normal min-h-10"
-                    >
-                      {{ node.name }}
-                    </div>
-                    <div
-                      class="w-10 h-[1.5px] rounded-[2px] mx-auto my-3 bg-[linear-gradient(90deg,#745b26,#e4c283,#745b26)]"
-                    ></div>
-                    <div
-                      class="font-semibold uppercase text-label-caps leading-normal tracking-widest text-secondary-700 min-h-6"
-                    >
-                      {{ node.category }}
-                    </div>
-                  </div>
+                  <UiBranchCard
+                    :imgSrc="node.imgSrc"
+                    :imgAlt="node.imgAlt"
+                    :name="node.name"
+                    :address="node.address"
+                    :description="node.description"
+                    :managerName="node.managerName"
+                    :managerImgSrc="node.managerImgSrc"
+                    :managerImgAlt="node.managerImgAlt"
+                    :managerLabel="node.managerLabel"
+                  />
                 </div>
               </div>
             </template>
