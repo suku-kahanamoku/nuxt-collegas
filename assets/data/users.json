@@ -238,12 +238,12 @@
     "group": "senior",
     "photo": "/img/user/strnad.png",
     "headline": "Senior konzultant s obchodní praxí",
-    "intro": "David klade důraz na dlouhodobé vztahy s klienty a řešení přizpůsobená konkrétním životním situacím.",
-    "about": "David kombinuje obchodní zkušenost s poradenstvím — pomáhá klientům najít praktická a dlouhodobě udržitelná řešení pro jejich finance.",
+    "intro": "Moje cesta k financím nevedla přes korporátní šablony, ale přes touhu dělat věci jinak – s absolutním důrazem na etiku, transparentnost a dlouhodobé partnerství.",
+    "about": "Když jsem v roce 2008 vstupoval do světa finančního poradenství, trh vypadal zcela jinak než dnes. Často se upřednostňoval rychlý prodej před skutečnými potřebami klienta. Sám jsem si v minulosti prošel zkušeností s neefektivně nastavenými produkty, které v praxi nefungovaly. To byl pro mě zásadní zlom. Rozhodl jsem se hlubokým studiem, náročnými certifikacemi a analýzami trhu změnit pravidla hry – nejdříve pro sebe a své blízké, a následně pro své klienty. Dnes, po téměř 30 letech zkušeností v oblasti obchodu, služeb a financí, vedu klienty k finanční nezávislosti a bezpečí s nadhledem seniorního partnera.\n\nFinanční trh je dnes složitější než kdy dřív. Moje role spočívá v tom, že pro Vás složité procesy zjednodušuji a přetvářím je v efektivní strategii. Věřím v takzvanou finanční alchymii – precizní míchání a optimalizaci produktů tak, aby portfolio dávalo dokonalý smysl jako celek. Výsledkem mé práce pro klienty je optimalizace nákladové složky a striktní eliminace zbytečných poplatků, cílené vyhledávání nadstandardních výnosů u investic a úspor, a komplexní ochrana a jistota – nastavení smluv tak, aby v klíčových momentech skutečně plnily svou roli a kryly Vaše záda.\n\nAbych mohl poskytovat servis na té nejvyšší úrovni, opírám se o silný tým špičkových specialistů na investice, hypotéky, pojištění i korporátní energie. Sdílíme unikátní know-how, které nám umožňuje řešit i ty nejnáročnější klientské situace. Rád Vás přivítám na osobní či online konzultaci v Brně (AZ Tower) nebo ve Žďáru nad Sázavou. Hledáte-li pro své finance stabilitu, strategické myšlení a partnera, na kterého se můžete spolehnout v každé životní etapě, jsem zde pro Vás.",
     "email": "david.strnad@collegas.cz",
     "phone": "+420 734 901 234",
     "brand": "COLLEGA ENTERPRISE",
-    "slogan": "Vztahy a výsledky jdou ruku v ruce.",
+    "slogan": "Ke každému klientskému portfoliu přistupuji s odpovědností, jako by šlo o mé vlastní finance.",
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)",
     "metrics": [
       {
@@ -348,11 +348,28 @@
     "role": "Finanční specialista",
     "group": "consultants",
     "photo": "/img/user/capkova.png",
-    "intro": "Součástí její práce je hledání řešení, která odpovídají konkrétní životní situaci každého klienta.",
-    "about": "Zuzana se zaměřuje na individuální přístup a hledání finančních řešení, která klientům skutečně vyhovují a pomáhají jim dosahovat jejich cílů.",
+    "headline": "Investice, pojištění a úvěry – vše na jednom místě",
+    "intro": "Hledáte spolehlivého partnera ve světě investic, pojištění nebo úvěrů? Nabízím široké spektrum finančních řešení šitých na míru – od DIP a penzijního spoření přes hypotéky až po energie a reality.",
+    "about": "Jako finanční specialista v Břeclavi pomáhám klientům orientovat se ve světě investic, pojištění, úvěrů, energií i realit. U investic kladu důraz na bezpečnost a jednoduchost – ať už jde o DIP s daňovými odpočty, doplňkové penzijní spoření se státními příspěvky, přípravu na důchod formou rent nebo rodinné plánování pro děti a studia. V pojištění nastavuji komplexní ochranu – životní a úrazové pojištění, ochranu nemovitostí proti živlům, krytí podnikatelských rizik i pojištění automobilů. Vše bez zbytečných poplatků a s důrazem na to, aby smlouvy v klíčových momentech skutečně plnily svou roli. V oblasti úvěrů zajistím výhodné podmínky u hypoték, refinancování, osobních i podnikatelských úvěrů – provedu vás celým procesem od žádosti až po podpis. Díky partnerství s Collegas mohu klientům nabídnout také optimalizaci nákladů na energie a komplexní realitní služby včetně prodeje, pronájmu i investic do nemovitostí – od Břeclavi a Brna po Slovensko a Rakousko. Ke každému klientovi přistupuji individuálně, s osobním zájmem a transparentností.",
     "email": "zuzana.capkova@collegas.cz",
+    "phone": "",
     "brand": "COLLEGA ENTERPRISE",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)"
+    "slogan": "Nechte své peníze pracovat pro vás – bezpečně, výhodně a bez stresu.",
+    "location": "Břeclav",
+    "metrics": [
+      {
+        "value": "100+",
+        "label": "Spokojených Klientů"
+      },
+      {
+        "value": "5",
+        "label": "Oblastí Finančních Služeb"
+      },
+      {
+        "value": "Břeclav",
+        "label": "Region Působnosti"
+      }
+    ]
   },
   {
     "slug": "jakub-zemanek",
