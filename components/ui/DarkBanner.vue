@@ -12,7 +12,7 @@ withDefaults(
 
 <template>
   <section
-    class="bg-primary-900 py-section-gap text-center relative overflow-hidden"
+    class="bg-primary-900 py-stack-lg md:py-section-gap text-center relative overflow-hidden"
   >
     <UContainer class="max-w-2xl mx-auto relative z-10">
       <h2 class="font-headline-lg text-headline-lg text-on-primary mb-stack-md">

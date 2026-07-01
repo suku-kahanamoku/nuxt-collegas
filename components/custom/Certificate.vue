@@ -68,7 +68,7 @@ function onImgErrorByIndex(i: number) {
 </script>
 
 <template>
-  <section class="py-section-gap bg-surface-container-lowest">
+  <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
     <UContainer>
       <div
         class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"

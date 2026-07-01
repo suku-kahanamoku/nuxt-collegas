@@ -90,7 +90,7 @@ const events: TimelineEvent[] = [
 
 <template>
   <section
-    class="py-section-gap px-gutter bg-primary-900"
+    class="py-stack-lg md:py-section-gap px-gutter bg-primary-900"
     style="
       background-image: linear-gradient(
         90deg,

@@ -127,7 +127,7 @@ const principles = [
 
     <CustomSlogan&Stats />
 
-    <section class="py-section-gap relative overflow-hidden">
+    <section class="py-stack-lg md:py-section-gap relative overflow-hidden">
       <UContainer
         class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-center"
       >
@@ -199,7 +199,7 @@ const principles = [
     </CustomUserPic&desc>
 
     <section
-      class="py-section-gap bg-primary-900 text-on-primary overflow-hidden"
+      class="py-stack-lg md:py-section-gap bg-primary-900 text-on-primary overflow-hidden"
     >
       <UContainer class="mx-auto px-gutter">
         <div class="text-center mb-stack-xl">

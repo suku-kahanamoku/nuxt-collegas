@@ -69,7 +69,7 @@ const teamMembers = specialistSlugs
       <template #attribution> — Chci jasno ve svých financích </template>
     </CustomTextComment>
 
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
           <h2 class="font-headline-lg text-headline-lg text-primary-800">
@@ -144,7 +144,7 @@ const teamMembers = specialistSlugs
       </div>
     </CustomUserPic&desc>
 
-    <section class="py-section-gap bg-white">
+    <section class="py-stack-lg md:py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
@@ -178,7 +178,7 @@ const teamMembers = specialistSlugs
       </UContainer>
     </section>
 
-    <section class="bg-surface-container-low py-section-gap">
+    <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
       <UContainer>
         <div
           class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
@@ -323,7 +323,7 @@ const teamMembers = specialistSlugs
       <CustomContactForm />
     </section>
 
-    <section class="py-section-gap bg-surface">
+    <section class="py-stack-lg md:py-section-gap bg-surface">
       <UContainer class="mx-auto px-gutter">
         <div
           class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-stack-md"

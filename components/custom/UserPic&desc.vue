@@ -26,7 +26,7 @@ withDefaults(
 </script>
 
 <template>
-  <section :class="['py-section-gap', bg]">
+  <section :class="['py-stack-lg md:py-section-gap', bg]">
     <UContainer>
       <div
         :class="[

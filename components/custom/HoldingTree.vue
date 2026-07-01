@@ -41,7 +41,7 @@ const sections: HoldingSection[] = holdingData;
     "
   >
     <template v-for="(section, si) in sections" :key="si">
-      <section class="py-section-gap px-gutter overflow-x-auto">
+      <section class="py-stack-lg md:py-section-gap px-gutter overflow-x-auto">
         <div class="max-w-7xl mx-auto">
           <!-- Header -->
           <header class="text-center mb-24 max-w-2xl mx-auto">

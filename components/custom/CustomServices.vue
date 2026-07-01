@@ -33,7 +33,7 @@ const services = [
 
 <template>
   <!-- ── Naše služby ── -->
-  <section class="bg-surface-container-low py-section-gap">
+  <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
     <UContainer>
       <div class="text-center mb-stack-lg">
         <h2 class="text-headline-lg font-serif text-primary-800">

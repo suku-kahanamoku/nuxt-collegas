@@ -81,7 +81,7 @@ const backoffice = computed(() =>
     </UiIntro>
 
     <!-- ── Zakladatelé ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -107,7 +107,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Seniorní tým ── -->
-    <section class="py-section-gap bg-surface-container-low">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -133,7 +133,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Konzultanti a specialisté ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -159,7 +159,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Juniorní tým ── -->
-    <section class="py-section-gap bg-surface-container-low">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -185,7 +185,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Backoffice ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">

@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="py-section-gap" :class="bg ?? 'bg-surface'">
+  <section class="py-stack-lg md:py-section-gap" :class="bg ?? 'bg-surface'">
     <UContainer class="space-y-20">
       <div
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"

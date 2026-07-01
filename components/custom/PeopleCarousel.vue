@@ -10,7 +10,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
 </script>
 
 <template>
-  <section class="py-section-gap bg-background">
+  <section class="py-stack-lg md:py-section-gap bg-background">
     <UContainer>
       <div class="text-center mb-stack-lg">
         <h2 class="text-headline-lg font-serif text-primary-800">

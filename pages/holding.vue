@@ -82,7 +82,7 @@ const pillars = [
     <CustomHoldingTree />
 
     <!-- ── Pilíře ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">

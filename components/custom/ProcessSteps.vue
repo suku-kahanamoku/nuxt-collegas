@@ -39,7 +39,7 @@ const steps = [
 </script>
 
 <template>
-  <section class="py-section-gap bg-primary-900 relative overflow-hidden">
+  <section class="py-stack-lg md:py-section-gap bg-primary-900 relative overflow-hidden">
     <!-- Radial glow -->
     <div
       aria-hidden="true"
