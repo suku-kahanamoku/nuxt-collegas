@@ -1,22 +1,6 @@
 <script setup lang="ts">
 const certifications = [
   {
-    name: "CFP® – Certified Financial Planner",
-    abbr: "CFP®",
-    year: "2015",
-    to: "https://www.cfp.net/",
-    img: "https://www.cfp.net/assets/images/logo-cfp-board-black-white.svg",
-    alt: "CFP® Certified Financial Planner",
-  },
-  {
-    name: "EFA – European Financial Advisor",
-    abbr: "EFA",
-    year: "2018",
-    to: "https://efpa.cz/",
-    img: "https://efpa.cz/static/img/10281/footer/EFPA_logo_paticka.png",
-    alt: "EFPA ČR – European Financial Advisor",
-  },
-  {
     name: "Makléřská licence ČNB",
     abbr: "ČNB",
     year: "2012",
@@ -25,20 +9,20 @@ const certifications = [
     alt: "Česká národní banka",
   },
   {
-    name: "Člen AFIZ",
-    abbr: "AFIZ",
+    name: "ESMA",
+    abbr: "ESMA",
     year: "průběžně",
-    to: "https://www.afiz.cz/",
-    img: "https://www.registrporadcu.cz/wp-content/uploads/2014/04/logo_afiz.jpg",
-    alt: "AFIZ – Asociace finančních zprostředkovatelů a poradců",
+    to: "https://www.esma.europa.eu/",
+    img: "https://www.esma.europa.eu/themes/custom/esma_webst_theme/assets/images/ESMALogo.png",
+    alt: "ESMA – European Securities and Markets Authority",
   },
   {
-    name: "Člen AFP ČR",
-    abbr: "AFP",
+    name: "EIOPA",
+    abbr: "EIOPA",
     year: "průběžně",
-    to: "https://www.afpcr.cz/",
-    img: "https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=400,height=400,fit=scale-down,quality=90,anim=true/by9itr17wbldjwhfjs1834be/o6v4q6sviylox2dd2y22i300/qp2LOfTFhpd0qHZoI09PI.png",
-    alt: "AFP ČR – Asociace finančních a majetkových poradců",
+    to: "https://www.eiopa.europa.eu/index_en",
+    img: "https://www.eiopa.europa.eu/sites/default/files/site-logo-overrides/EWPPA_EIOPA_logo.svg",
+    alt: "EIOPA – European Insurance and Occupational Pensions Authority",
   },
 ];
 
@@ -99,25 +83,18 @@ function onImgErrorByIndex(i: number) {
               <h2
                 class="text-headline-lg font-serif text-primary-800 leading-tight"
               >
-                Certifikáty
+                Regulace
               </h2>
               <ul class="flex flex-col gap-stack-sm">
-                <li
-                  v-for="cert in certifications"
-                  :key="`list-a-${cert.name}`"
-                  class="flex items-center gap-3"
-                >
+                <li class="flex items-center gap-3">
                   <UIcon
                     name="i-material-symbols-verified"
                     class="text-secondary-700 text-base shrink-0"
                   />
                   <span class="text-body-md text-primary-800">
-                    {{ cert.name }}
-                    <span
-                      v-if="cert.year"
-                      class="text-on-surface-variant font-normal"
-                      >&thinsp;({{ cert.year }})</span
-                    >
+                    Poskytujeme finanční služby pod dohledem České národní
+                    banky, příslušných evropských dohledových orgánů a jsme
+                    členy odborných asociací.
                   </span>
                 </li>
               </ul>
