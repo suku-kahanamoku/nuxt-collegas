@@ -115,7 +115,7 @@ const teamMembers = specialistSlugs
 
     <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
-        <span class="font-display-xl text-display-xl leading-none">20+</span>
+        <span class="text-headline-lg md:text-display-xl leading-none">20+</span>
         <span class="font-label-caps uppercase tracking-widest"
           >Let v oboru</span
         >

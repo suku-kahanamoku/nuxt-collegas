@@ -56,7 +56,7 @@ const branchesWithManagers = branches.map((branch) => {
   <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
     <UContainer class="mx-auto px-gutter">
       <h2
-        class="font-display-xl text-display-xl text-primary-800 mb-stack-lg text-center"
+        class="text-headline-lg md:text-display-xl text-primary-800 mb-stack-lg text-center"
       >
         Naše pobočky
       </h2>

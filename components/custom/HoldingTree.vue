@@ -52,7 +52,7 @@ const sections: HoldingSection[] = holdingData;
               Skupina COLLEGA
             </span>
             <h2
-              class="font-serif text-on-primary text-display-xl leading-tight tracking-tight"
+              class="font-serif text-on-primary text-headline-lg md:text-display-xl leading-tight tracking-tight"
             >
               {{ section.title }}
             </h2>

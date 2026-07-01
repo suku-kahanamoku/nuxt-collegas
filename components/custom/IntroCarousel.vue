@@ -42,7 +42,7 @@ const items = [
         </span>
 
         <h1
-          class="max-w-lg font-display-xl text-headline-lg md:text-display-xl text-on-primary mb-stack-md leading-tight"
+          class="max-w-lg text-headline-lg md:text-display-xl text-on-primary mb-stack-md leading-tight"
         >
           <UiTypewriter
             :words="['Finanční jistota, na které záleží']"

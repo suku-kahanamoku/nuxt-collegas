@@ -30,7 +30,7 @@ withDefaults(
       </span>
       <component
         :is="headingTag"
-        class="font-display-xl text-display-xl text-on-primary max-w-2xl"
+        class="text-headline-lg md:text-display-xl text-on-primary max-w-2xl"
       >
         {{ title }}
       </component>

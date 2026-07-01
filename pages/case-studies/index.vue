@@ -68,7 +68,7 @@ const filteredCaseStudies = computed(() => {
             >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+            <h1 class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-none">
               Modelové studie
             </h1>
           </template>

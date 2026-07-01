@@ -81,7 +81,7 @@ onBeforeUnmount(stop);
 <template>
   <div
     id="contact-form"
-    class="bg-primary-900 p-stack-lg lg:p-16 flex flex-col justify-center"
+    class="bg-primary-900 p-stack-md md:p-stack-lg flex flex-col justify-center"
   >
     <div class="mb-stack-lg">
       <span

@@ -64,7 +64,7 @@ const pillars = [
           <div class="lg:col-span-4 flex justify-end items-end">
             <div class="text-right">
               <span
-                class="text-display-xl font-serif text-primary-800/10 leading-none select-none"
+                class="text-headline-lg md:text-display-xl font-serif text-primary-800/10 leading-none select-none"
                 >9+</span
               >
               <p

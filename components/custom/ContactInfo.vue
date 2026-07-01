@@ -21,7 +21,7 @@ const offices = [
 
 <template>
   <div
-    class="bg-surface-container-lowest p-stack-lg lg:p-16 border border-outline-variant/30"
+    class="bg-surface-container-lowest p-stack-md md:p-stack-lg border border-outline-variant/30"
   >
     <div class="space-y-stack-lg mb-stack-lg">
       <div>
