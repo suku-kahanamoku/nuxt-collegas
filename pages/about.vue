@@ -239,7 +239,7 @@ const principles = [
     </section>
 
     <!-- ── Timeline ── -->
-    <CustomTimeline />
+    <!-- <CustomTimeline /> -->
 
     <!-- ── Skupinové foto ── -->
     <CustomPeopleCarousel

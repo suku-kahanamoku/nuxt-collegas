@@ -112,6 +112,6 @@ const pillars = [
     </section>
 
     <!-- ── Timeline ── -->
-    <CustomTimeline />
+    <!-- <CustomTimeline /> -->
   </div>
 </template>
