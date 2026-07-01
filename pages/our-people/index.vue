@@ -38,6 +38,9 @@ const seniorTeam = computed(() =>
 const consultants = computed(() =>
   users.filter((u) => u.group === "consultants").map(toCardProps),
 );
+const juniors = computed(() =>
+  users.filter((u) => u.group === "junior").map(toCardProps),
+);
 const backoffice = computed(() =>
   users.filter((u) => u.group === "backoffice").map(toCardProps),
 );
@@ -46,9 +49,7 @@ const backoffice = computed(() =>
 <template>
   <div class="w-full">
     <!-- ── Intro ── -->
-    <UiIntro
-      bg-image="/img/other/wall.png"
-    >
+    <UiIntro bg-image="/img/other/wall.png">
       <template #header>
         <UiTitle size="md">
           <template #eyebrow>
@@ -146,6 +147,32 @@ const backoffice = computed(() =>
         >
           <CustomTeamCard
             v-for="person in consultants"
+            :key="person.name"
+            v-bind="person"
+          />
+        </div>
+      </UContainer>
+    </section>
+
+    <!-- ── Juniorní tým ── -->
+    <section class="py-section-gap bg-surface-container-lowest">
+      <UContainer>
+        <div class="text-center mb-stack-lg">
+          <h2 class="text-headline-lg font-serif text-primary-800">
+            Juniorní tým
+          </h2>
+          <p
+            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+          >
+            Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční
+            témata a pomáhají převádět strategii do konkrétních kroků.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
+        >
+          <CustomTeamCard
+            v-for="person in juniors"
             :key="person.name"
             v-bind="person"
           />
