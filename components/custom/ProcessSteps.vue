@@ -12,7 +12,7 @@ const steps = [
     icon: "i-material-symbols-search",
     title: "Analýza a audit",
     description:
-      "Projdeme vaše smlouvy, portfolio a celkovou strukturu financí – bez závislosti na produktech.",
+      "Projdeme vaše smlouvy, portfolio a celkovou strukturu financí – nezávisle na produktech.",
   },
   {
     number: 3,

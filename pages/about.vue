@@ -28,7 +28,7 @@ const values = [
     icon: "verified",
     title: "Odpovědnost",
     description:
-      "Za každé doporučení stojíme plnou váhou svého jména. Licencujeme se, vzděláváme se a podléháme dohledu ČNB – protože důvěra se nezíská, ale zaslouží.",
+      "Za každým doporučením si pevně stojíme. Máme potřebné licence, neustále se vzděláváme a podléháme dohledu ČNB. Důvěra se totíž nezíská, ale zaslouží.",
   },
 ];
 
