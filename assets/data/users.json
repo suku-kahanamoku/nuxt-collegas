@@ -5,7 +5,7 @@
     "role": "Zakladatel",
     "group": "founders",
     "photo": "/img/user/kalous.png",
-    "headline": "Zakladatel & strateg",
+    "headline": "Zakladatel",
     "intro": "Zakladatel skupiny Collegas, se zaměřením na strategii služeb a finanční plánování pro privátní klienty.",
     "about": "Tomáš spoluzakládal Collegas a vede strategický rozvoj firemních služeb. V praxi kombinuje finanční analýzu s dlouhodobým plánováním pro rodiny a podnikatele. Pomáhá klientům jasně definovat cíle a vytvořit realizovatelný plán, který roste s jejich životní fází.",
     "email": "tomas.kalous@collegas.cz",
@@ -34,7 +34,7 @@
     "role": "Zakladatel",
     "group": "founders",
     "photo": "/img/user/butula.png",
-    "headline": "Zakladatel & byznys stratég",
+    "headline": "Zakladatel & výkonný ředitel",
     "intro": "Marek se soustředí na budování vztahů a dlouhodobých strategií pro klienty i partnery.",
     "about": "Marek se zaměřuje na strategické řízení a rozvoj poradenských služeb. Ve své práci preferuje přístup založený na důvěře, transparentnosti a dlouhodobém výsledku pro klienty.",
     "email": "marek.butula@collegas.cz",
@@ -49,7 +49,7 @@
       },
       {
         "value": "CEO",
-        "label": "Zakladatel"
+        "label": "Výkonný ředitel"
       },
       {
         "value": "400+",
