@@ -64,7 +64,7 @@ const principles = [
   <div class="w-full">
     <!-- ── Intro ── -->
     <section
-      class="bg-primary-900 py-section-gap relative min-h-screen overflow-hidden"
+      class="bg-primary-900 py-stack-lg md:py-section-gap relative min-h-screen overflow-hidden"
     >
       <UContainer
         class="mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center"
@@ -97,7 +97,9 @@ const principles = [
             >SLOVO ZAKLADATELŮ</span
           >
           <h1 class="sr-only">O nás</h1>
-          <h2 class="text-headline-lg font-serif text-on-primary mb-stack-md">
+          <h2
+            class="text-headline-lg font-serif text-on-primary mb-stack-md leading-tight"
+          >
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>
           <div class="space-y-stack-md mb-stack-lg">

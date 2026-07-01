@@ -15,9 +15,11 @@ useHead({
 
 <template>
   <div class="w-full">
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter max-w-4xl">
-        <h1 class="font-headline-lg text-headline-lg text-primary-800 mb-stack-md">
+        <h1
+          class="font-headline-lg text-headline-lg text-primary-800 mb-stack-md leading-tight"
+        >
           Ochrana soukromi a zpracovani osobnich udaju
         </h1>
         <p class="font-body-md text-on-surface-variant mb-stack-lg">
@@ -41,12 +43,18 @@ useHead({
             <h2 class="font-headline-md text-primary-800 mb-stack-sm">
               Ucely a pravni zaklady zpracovani
             </h2>
-            <ul class="list-disc pl-6 space-y-2 font-body-md text-on-surface-variant">
+            <ul
+              class="list-disc pl-6 space-y-2 font-body-md text-on-surface-variant"
+            >
               <li>poskytovani financnich sluzeb a zprostredkovani produktu,</li>
               <li>plneni zakonych povinnosti podle relevantnich predpisu,</li>
               <li>zpracovani na zaklade souhlasu, je-li udelen,</li>
-              <li>opravneny zajem (napr. kontrola povinnosti, reklamace, spory),</li>
-              <li>primy marketing vlastnich sluzeb, pokud to pravo umoznuje.</li>
+              <li>
+                opravneny zajem (napr. kontrola povinnosti, reklamace, spory),
+              </li>
+              <li>
+                primy marketing vlastnich sluzeb, pokud to pravo umoznuje.
+              </li>
             </ul>
           </section>
 
@@ -55,10 +63,11 @@ useHead({
               Prijemci osobnich udaju
             </h2>
             <p class="font-body-md text-on-surface-variant">
-              Udaje mohou byt predavany zejmena spolupracujicim financnim institucim,
-              obchodnim zastupcum, compliance/risk/AML partnerum, poskytovatelum
-              systemu, CNB, FAU, pravnim zastupcum a dalsim statnim organum,
-              pokud to vyzaduje pravni predpis nebo opravneny zajem.
+              Udaje mohou byt predavany zejmena spolupracujicim financnim
+              institucim, obchodnim zastupcum, compliance/risk/AML partnerum,
+              poskytovatelum systemu, CNB, FAU, pravnim zastupcum a dalsim
+              statnim organum, pokud to vyzaduje pravni predpis nebo opravneny
+              zajem.
             </p>
           </section>
 
@@ -78,7 +87,9 @@ useHead({
             <h2 class="font-headline-md text-primary-800 mb-stack-sm">
               Vase prava
             </h2>
-            <ul class="list-disc pl-6 space-y-2 font-body-md text-on-surface-variant">
+            <ul
+              class="list-disc pl-6 space-y-2 font-body-md text-on-surface-variant"
+            >
               <li>pravo na pristup k osobnim udajum,</li>
               <li>pravo na opravu a doplneni nepresnych udaju,</li>
               <li>pravo na omezeni zpracovani,</li>

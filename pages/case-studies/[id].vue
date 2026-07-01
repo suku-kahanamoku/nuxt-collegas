@@ -51,7 +51,7 @@ useHead(() => ({
 
 <template>
   <div class="w-full" v-if="caseStudy">
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <NuxtLink
           to="/case-studies"
@@ -84,7 +84,9 @@ useHead(() => ({
               }}</span>
             </div>
 
-            <h1 class="font-headline-lg text-headline-lg text-primary-800">
+            <h1
+              class="font-headline-lg text-headline-lg text-primary-800 leading-tight"
+            >
               {{ caseStudy.title }}
             </h1>
 

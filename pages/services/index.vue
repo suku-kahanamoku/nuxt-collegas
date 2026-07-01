@@ -25,7 +25,9 @@ useHead({
             >
           </template>
           <template #title>
-            <h1 class="text-display-xl font-serif text-on-primary leading-none">
+            <h1
+              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-tight"
+            >
               Naše služby
             </h1>
           </template>
@@ -34,7 +36,7 @@ useHead({
 
       <template #description>
         <p
-          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
+          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90 leading-relaxed"
         >
           Čtyři klíčové oblasti, ve kterých pomáháme našim klientům – finance,
           správa kapitálu, daně a právo, reality a energie. Každá oblast je

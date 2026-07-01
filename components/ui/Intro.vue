@@ -33,7 +33,7 @@ const { bgImage, ui } = toRefs(props);
     ></div>
     <div v-else-if="ui && ui.bg" class="absolute inset-0 bg-primary-900"></div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-gutter w-full pt-16 pb-24">
+    <div class="relative z-10 max-w-7xl mx-auto px-gutter w-full py-stack-lg md:py-section-gap">
       <div class="mb-stack-md">
         <slot name="header"></slot>
       </div>

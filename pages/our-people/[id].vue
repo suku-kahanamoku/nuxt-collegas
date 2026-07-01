@@ -88,7 +88,9 @@ const references = computed(
       </div>
 
       <!-- Text content -->
-      <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 py-24">
+      <div
+        class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 py-stack-lg md:py-section-gap"
+      >
         <!-- Role badge -->
         <p
           class="text-xs font-bold uppercase tracking-widest mb-5 transition-all duration-700 text-secondary-400"
@@ -101,7 +103,7 @@ const references = computed(
 
         <!-- Animated name -->
         <h1
-          class="font-bold text-white leading-none mb-6"
+          class="font-bold text-white leading-tight mb-6"
           style="font-size: clamp(3rem, 8vw, 7rem)"
         >
           <span

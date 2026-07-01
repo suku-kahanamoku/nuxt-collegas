@@ -33,7 +33,7 @@ const items = [
       />
     </UCarousel>
 
-    <UContainer class="relative z-20 w-full">
+    <UContainer class="relative z-20 w-full py-stack-lg">
       <div class="max-w-2xl">
         <span class="font-label-caps text-secondary-fixed mb-stack-sm block">
           <span class="inline-block from-top">
@@ -42,7 +42,7 @@ const items = [
         </span>
 
         <h1
-          class="max-w-lg font-display-xl text-display-xl text-on-primary mb-stack-md leading-tight"
+          class="max-w-lg font-display-xl text-headline-lg md:text-display-xl text-on-primary mb-stack-md leading-tight"
         >
           <UiTypewriter
             :words="['Finanční jistota, na které záleží']"

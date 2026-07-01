@@ -85,7 +85,7 @@ const filteredCaseStudies = computed(() => {
       </template>
     </UiIntro>
 
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex flex-wrap gap-3 mb-stack-lg">
           <button

@@ -15,10 +15,10 @@ useHead({
 
 <template>
   <div class="w-full">
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter max-w-4xl">
         <h1
-          class="font-headline-lg text-headline-lg text-primary-800 mb-stack-md"
+          class="font-headline-lg text-headline-lg text-primary-800 mb-stack-md leading-tight"
         >
           Právní informace
         </h1>

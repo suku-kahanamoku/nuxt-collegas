@@ -20,7 +20,7 @@ useHead({
         <UiTitle eyebrow="Kontakt" size="md">
           <template #title>
             <h1
-              class="text-display-xl font-serif text-primary-800 leading-none"
+              class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
             >
               Spojte se s námi
             </h1>

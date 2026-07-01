@@ -41,7 +41,7 @@ const pillars = [
         <UiTitle eyebrow="Skupina COLLEGA" size="md">
           <template #title>
             <h1
-              class="text-display-xl font-serif text-primary-800 leading-none"
+              class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
             >
               Holdingová <br />struktura
             </h1>
