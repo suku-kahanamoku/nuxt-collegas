@@ -92,7 +92,7 @@ const backoffice = computed(() =>
             přístup ke klientské práci.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+        <div class="w-2/3 grid grid-cols-1 md:grid-cols-2 gap-stack-md justify-center mx-auto">
           <CustomTeamCard
             v-for="person in founders"
             :key="person.name"
@@ -155,7 +155,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Juniorní tým ── -->
-    <section class="py-section-gap bg-surface-container-lowest">
+    <section class="py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
@@ -181,7 +181,7 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── Backoffice ── -->
-    <section class="py-section-gap bg-surface-container-low">
+    <section class="py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2 class="text-headline-lg font-serif text-primary-800">
