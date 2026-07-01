@@ -9,7 +9,7 @@ const branches = [
     address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
     description:
       "Sídlo skupiny Collegas v nejvyšší kancelářské budově na Moravě. Výborná dostupnost z centra Brna, parkování v areálu budovy.",
-    managerSlug: "iveta-butulova",
+    managerSlug: "marek-butula",
   },
   {
     imgSrc: "/img/branch/kromeriz.webp",
@@ -36,7 +36,7 @@ const branches = [
     address: "Masarykovo náměstí 36/35, Boskovice",
     description:
       "Kancelář na hlavním náměstí Boskovic. Pohodlné parkování přímo před budovou, schůzky po domluvě s poradcem.",
-    managerSlug: "jakub-zemanek",
+    managerSlug: "iveta-butulova",
   },
 ];
 

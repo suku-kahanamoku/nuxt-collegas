@@ -31,7 +31,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
         pause-on-hover
         :overlay="false"
         :ui="{
-          root: '[--gap:--spacing(4)] [--duration:40s]',
+          root: '[--gap:--spacing(4)] [--duration:150s]',
           content: 'w-auto py-1',
         }"
       >

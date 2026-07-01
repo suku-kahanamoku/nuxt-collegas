@@ -92,7 +92,7 @@ const backoffice = computed(() =>
             přístup ke klientské práci.
           </p>
         </div>
-        <div class="w-2/3 grid grid-cols-1 md:grid-cols-2 gap-stack-md justify-center mx-auto">
+        <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-stack-md justify-center mx-auto">
           <CustomTeamCard
             v-for="person in founders"
             :key="person.name"
