@@ -206,8 +206,7 @@ const teamMembers = specialistSlugs
                   Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu
                   financí a přeložíme vám je do srozumitelného obrazu. Díky tomu
                   získáte jasný základ pro další rozhodování - bez tlaku, bez
-                  chaosu a bez závislosti na konkrétních produktech nebo
-                  institucích.
+                  chaosu a nezávisle na konkrétních produktech nebo institucích.
                 </p>
               </div>
             </UiImageText>
