@@ -213,7 +213,7 @@ const references = computed(
         </div>
 
         <!-- Metrics -->
-        <div class="mt-20 grid grid-cols-3 gap-8 border-t pt-16 border-white/8">
+        <!-- <div class="mt-20 grid grid-cols-3 gap-8 border-t pt-16 border-white/8">
           <div v-for="(m, idx) in metrics" :key="idx" class="text-center">
             <p
               class="text-5xl font-bold mb-2"
@@ -234,7 +234,7 @@ const references = computed(
               {{ m.label }}
             </p>
           </div>
-        </div>
+        </div> -->
 
         <div class="mt-16 text-center">
           <UiButton :to="`/contact?to=${email}`" class="rounded-full"
