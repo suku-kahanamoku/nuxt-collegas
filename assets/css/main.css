@@ -152,8 +152,13 @@
   );
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
 button {
