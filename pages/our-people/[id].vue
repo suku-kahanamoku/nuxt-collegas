@@ -163,7 +163,7 @@ const references = computed(
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           "
         >
-          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+          <UiButton :to="`/contact#contact-form`" class="rounded-full"
             >Naplánovat Konzultaci</UiButton
           >
         </div>
@@ -229,7 +229,7 @@ const references = computed(
         </div> -->
 
         <div class="mt-16 text-center">
-          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+          <UiButton :to="`/contact#contact-form`" class="rounded-full"
             >Naplánovat Konzultaci</UiButton
           >
         </div>
@@ -285,7 +285,7 @@ const references = computed(
           </div>
         </div>
         <div class="mt-16 text-center">
-          <UiButton :to="`/contact?to=${email}`" class="rounded-full"
+          <UiButton :to="`/contact#contact-form`" class="rounded-full"
             >Naplánovat Konzultaci</UiButton
           >
         </div>
