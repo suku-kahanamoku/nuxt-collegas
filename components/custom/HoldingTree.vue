@@ -36,7 +36,7 @@ const sections: HoldingSection[] = holdingData;
         <div class="max-w-7xl mx-auto">
           <header class="text-center mb-stack-xl max-w-2xl mx-auto">
             <h2
-              class="font-serif text-on-primary text-headline-md md:text-headline-lg leading-tight tracking-tight"
+              class="text-headline-md md:text-headline-lg font-serif text-on-primary leading-tight tracking-tight"
             >
               {{ section.title }}
             </h2>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-withDefaults(
+const props = withDefaults(
   defineProps<{
     bgImage: string;
     label?: string;
@@ -19,26 +19,31 @@ withDefaults(
   >
     <div
       class="absolute inset-0 bg-cover bg-center mask-gradient-to-right"
-      :style="{ backgroundImage: `url(${bgImage})` }"
+      :style="{ backgroundImage: `url(${props.bgImage})` }"
     />
     <UContainer class="relative z-10 mx-auto px-gutter w-full from-left">
       <span
-        v-if="label"
+        v-if="props.label"
         class="font-label-caps text-secondary-fixed mb-stack-sm block uppercase"
       >
-        {{ label }}
+        {{ props.label }}
       </span>
       <component
-        :is="headingTag"
-        class="text-headline-lg md:text-display-xl text-on-primary max-w-2xl"
+        :is="props.headingTag"
+        :class="[
+          props.headingTag === 'h1'
+            ? 'text-headline-lg md:text-display-xl'
+            : 'text-headline-md md:text-headline-lg',
+          'text-on-primary max-w-2xl',
+        ]"
       >
-        {{ title }}
+        {{ props.title }}
       </component>
       <p
-        v-if="body"
+        v-if="props.body"
         class="font-body-lg text-body-lg text-primary-100 max-w-xl mt-stack-md"
       >
-        {{ body }}
+        {{ props.body }}
       </p>
       <slot />
     </UContainer>

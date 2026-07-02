@@ -103,8 +103,7 @@ const references = computed(
 
         <!-- Animated name -->
         <h1
-          class="font-bold text-white leading-tight mb-6"
-          style="font-size: clamp(3rem, 8vw, 7rem)"
+          class="text-headline-lg md:text-display-xl font-bold text-white leading-tight mb-6"
         >
           <span
             v-for="(part, i) in nameParts"
@@ -204,7 +203,7 @@ const references = computed(
               O mně
             </p>
             <h2
-              class="text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight"
+              class="text-headline-md md:text-headline-lg font-bold text-white mb-8 leading-tight"
             >
               Něco Málo O Mně
             </h2>
@@ -250,7 +249,7 @@ const references = computed(
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <h2
-          class="text-4xl lg:text-5xl font-bold text-white mb-16 text-center leading-tight"
+          class="text-headline-md md:text-headline-lg font-bold text-white mb-16 text-center leading-tight"
         >
           Výsledky a Reference
         </h2>
@@ -300,7 +299,7 @@ const references = computed(
           >
             Kontakt
           </p>
-          <h2 class="text-4xl font-bold text-white mb-12">Kde mě najdete</h2>
+          <h2 class="text-headline-md md:text-headline-lg font-bold text-white mb-12">Kde mě najdete</h2>
           <div class="space-y-5">
             <NuxtLink
               v-if="phone"

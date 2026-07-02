@@ -64,7 +64,7 @@ const steps = [
           class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold block mb-stack-sm"
           >Jak to funguje</span
         >
-        <h2 class="text-headline-lg font-serif text-on-primary">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
           Proces spolupráce
         </h2>
         <p class="text-body-lg text-on-primary/55 mt-stack-sm max-w-xl mx-auto">
@@ -123,7 +123,7 @@ const steps = [
 
               <!-- Title -->
               <h3
-                class="text-title-sm font-serif text-on-primary mb-2 transition-colors duration-200 group-hover:text-secondary-fixed"
+                class="text-title-md md:text-title-lg font-serif text-on-primary mb-2 transition-colors duration-200 group-hover:text-secondary-fixed"
               >
                 {{ step.title }}
               </h3>

@@ -72,7 +72,7 @@ const teamMembers = specialistSlugs
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
-          <h2 class="text-headline-lg text-primary-800">
+          <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
           <NuxtLink
@@ -129,7 +129,7 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -155,7 +155,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
               >Naši specialisté</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Poradci pro daně a právo
             </h2>
           </div>
@@ -195,7 +195,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Daňové poradenství
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -219,7 +219,7 @@ const teamMembers = specialistSlugs
               img-alt="Právní poradenství"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Právní poradenství
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -243,7 +243,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Daňové a právní zázemí
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -305,7 +305,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Daňové a právní služby
             </h2>
           </div>
@@ -321,7 +321,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/tax-legal#tax">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Daňové poradenství
               </h3>
@@ -343,7 +343,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/tax-legal#legal">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Právní poradenství
               </h3>
@@ -365,7 +365,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/tax-legal#tax-legal-overview">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Daňové a právní zázemí
               </h3>

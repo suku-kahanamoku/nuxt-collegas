@@ -84,7 +84,7 @@ const pillars = [
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-lg font-serif text-primary-800">
+          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
             Tři klíčové oblasti skupiny
           </h2>
         </div>
@@ -96,7 +96,7 @@ const pillars = [
                   <UIcon :name="p.icon" class="text-secondary-700 size-8" />
                 </template>
                 <template #title>
-                  <h3 class="text-title-lg font-serif text-primary-800">
+                  <h3 class="text-title-md md:text-title-lg font-serif text-primary-800">
                     {{ p.title }}
                   </h3>
                 </template>

@@ -85,7 +85,7 @@ useHead(() => ({
             </div>
 
             <h1
-              class="text-headline-lg text-primary-800 leading-tight"
+              class="text-headline-lg md:text-display-xl text-primary-800 leading-tight"
             >
               {{ caseStudy.title }}
             </h1>
@@ -97,7 +97,7 @@ useHead(() => ({
 
               <div class="grid grid-cols-1 gap-stack-md">
                 <article class="space-y-3">
-                  <h2 class="font-headline-md text-primary-800">
+                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">
                     Výchozí situace
                   </h2>
                   <p class="font-body-lg text-body-lg text-on-surface-variant">
@@ -106,21 +106,21 @@ useHead(() => ({
                 </article>
 
                 <article class="space-y-3">
-                  <h2 class="font-headline-md text-primary-800">Výzva</h2>
+                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Výzva</h2>
                   <p class="font-body-lg text-body-lg text-on-surface-variant">
                     {{ caseStudy.detail.challenge }}
                   </p>
                 </article>
 
                 <article class="space-y-3">
-                  <h2 class="font-headline-md text-primary-800">Řešení</h2>
+                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Řešení</h2>
                   <p class="font-body-lg text-body-lg text-on-surface-variant">
                     {{ caseStudy.detail.solution }}
                   </p>
                 </article>
 
                 <article class="space-y-3">
-                  <h2 class="font-headline-md text-primary-800">Výsledek</h2>
+                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Výsledek</h2>
                   <p class="font-body-lg text-body-lg text-on-surface-variant">
                     {{ caseStudy.detail.result }}
                   </p>

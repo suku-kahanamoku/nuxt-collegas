@@ -29,7 +29,7 @@ defineProps<{
     >
       <h3
         v-if="title"
-        class="text-headline-md font-serif text-primary-800 mb-stack-md"
+        class="text-title-md md:text-title-lg font-serif text-primary-800 mb-stack-md"
       >
         {{ title }}
       </h3>
@@ -60,7 +60,7 @@ defineProps<{
       v-if="callout && callout.title"
       class="bg-surface-container p-stack-lg"
     >
-      <h4 class="text-lg font-serif text-primary-800 mb-stack-sm">
+      <h4 class="text-title-md font-serif text-primary-800 mb-stack-sm">
         {{ callout.title }}
       </h4>
       <p

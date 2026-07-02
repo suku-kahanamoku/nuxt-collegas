@@ -13,7 +13,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
   <section class="py-stack-lg md:py-section-gap bg-background">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           {{ props.title || "Náš tým" }}
         </h2>
         <p

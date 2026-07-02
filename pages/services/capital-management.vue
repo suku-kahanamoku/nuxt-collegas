@@ -77,7 +77,7 @@ const teamMembers = specialistSlugs
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
-          <h2 class="text-headline-lg text-primary-800">
+          <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
           <NuxtLink
@@ -134,7 +134,7 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -159,7 +159,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
               >Naši specialisté</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Poradci pro správu kapitálu
             </h2>
           </div>
@@ -199,7 +199,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Péče o investiční majetek
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -224,7 +224,7 @@ const teamMembers = specialistSlugs
               img-alt="Financování bydlení a projektů"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Financování
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -250,7 +250,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Investiční příležitosti
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -314,7 +314,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Strategie růstu kapitálu
             </h2>
           </div>
@@ -330,7 +330,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/capital-management#asset-care">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Péče o investiční majetek
               </h3>
@@ -352,7 +352,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/capital-management#financing">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Financování
               </h3>
@@ -374,7 +374,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/capital-management#opportunities">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Investiční příležitosti
               </h3>

@@ -48,7 +48,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     <div class="flex flex-1 flex-col">
       <div class="min-h-24">
         <h3
-          class="font-headline-md text-[24px] text-primary-800 group-hover/user-card:text-secondary transition-colors line-clamp-2"
+          class="text-title-md md:text-title-lg text-primary-800 group-hover/user-card:text-secondary transition-colors line-clamp-2"
         >
           {{ name }}
         </h3>

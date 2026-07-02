@@ -1,13 +1,18 @@
 <script setup lang="ts">
-defineProps<{
-  label?: string;
-  headingTag?: "h1" | "h2";
-  bg?: string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    label?: string;
+    headingTag?: "h1" | "h2";
+    bg?: string;
+  }>(),
+  {
+    headingTag: "h2",
+  },
+);
 </script>
 
 <template>
-  <section class="py-stack-lg md:py-section-gap" :class="bg ?? 'bg-surface'">
+  <section class="py-stack-lg md:py-section-gap" :class="props.bg ?? 'bg-surface'">
     <UContainer class="space-y-20">
       <div
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"
@@ -15,14 +20,19 @@ defineProps<{
         <!-- Levá strana: label + heading + body -->
         <div class="md:col-span-7">
           <span
-            v-if="label"
+            v-if="props.label"
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-            >{{ label }}</span
+            >{{ props.label }}</span
           >
           <slot name="label" />
           <component
-            :is="headingTag ?? 'h2'"
-            class="text-headline-md md:text-headline-lg text-primary-800 mb-8 leading-tight"
+            :is="props.headingTag"
+            :class="[
+              props.headingTag === 'h1'
+                ? 'text-headline-lg md:text-display-xl'
+                : 'text-headline-md md:text-headline-lg',
+              'text-primary-800 mb-8 leading-tight',
+            ]"
           >
             <slot name="heading" />
           </component>

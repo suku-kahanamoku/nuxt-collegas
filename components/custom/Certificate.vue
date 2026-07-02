@@ -81,7 +81,7 @@ function onImgErrorByIndex(i: number) {
           >
             <div class="grid space-y-stack-md items-center from-left">
               <h2
-                class="text-headline-lg font-serif text-primary-800 leading-tight"
+                class="text-headline-md md:text-headline-lg font-serif text-primary-800 leading-tight"
               >
                 Regulace
               </h2>
@@ -103,7 +103,7 @@ function onImgErrorByIndex(i: number) {
 
           <UiImageText img-src="/img/other/man.png" img-alt="Certifikace">
             <div class="grid space-y-stack-md items-center from-bottom">
-              <h2 class="text-headline-lg font-serif text-primary-800">
+              <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                 Zkušenost
               </h2>
               <ul class="flex flex-col gap-stack-sm">

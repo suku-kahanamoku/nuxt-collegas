@@ -90,7 +90,7 @@ onBeforeUnmount(stop);
         Sjednejte konzultaci
       </span>
 
-      <h2 class="text-headline-md font-serif text-on-primary">
+      <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
         Nezávazná konzultace
       </h2>
 

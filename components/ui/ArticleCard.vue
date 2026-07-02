@@ -61,7 +61,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     </div>
 
     <h4
-      class="font-headline-md text-2xl text-primary-800 group-hover:text-secondary transition-colors mb-4"
+      class="text-title-md text-primary-800 group-hover:text-secondary transition-colors mb-4"
     >
       {{ title }}
     </h4>

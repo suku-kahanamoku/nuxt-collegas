@@ -72,7 +72,7 @@ const teamMembers = specialistSlugs
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
-          <h2 class="text-headline-lg text-primary-800">
+          <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
           <NuxtLink
@@ -126,7 +126,7 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -152,7 +152,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
               >Naši specialisté</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Poradci pro finance
             </h2>
           </div>
@@ -192,7 +192,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Nezávislý finanční audit
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -217,7 +217,7 @@ const teamMembers = specialistSlugs
               img-alt="Finanční poradce při konzultaci"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Finanční plán
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -243,7 +243,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Zajištění rizik
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -268,7 +268,7 @@ const teamMembers = specialistSlugs
               img-alt="Odškodnění"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Odškodnění
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -333,7 +333,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Komplexní finanční péče
             </h2>
           </div>
@@ -351,7 +351,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/finance#audit">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Nezávislý finanční audit
               </h3>
@@ -374,7 +374,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/finance#plan">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Finanční plán
               </h3>
@@ -397,7 +397,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/finance#risk">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Zajištění rizik
               </h3>
@@ -420,7 +420,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/finance#compensation">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Odškodnění
               </h3>

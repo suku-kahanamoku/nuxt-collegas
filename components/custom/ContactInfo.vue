@@ -56,7 +56,7 @@ const offices = [
         >
           Identifikace společnosti
         </span>
-        <h2 class="text-headline-md font-serif text-primary-800 mb-stack-xs">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800 mb-stack-xs">
           Collegas s.r.o.
         </h2>
         <dl class="space-y-stack-sm">

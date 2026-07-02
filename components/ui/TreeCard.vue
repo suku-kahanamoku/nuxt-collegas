@@ -25,7 +25,7 @@ defineProps<{
       />
     </div>
     <div class="p-stack-md grow flex flex-col">
-      <h3 class="font-headline-md text-headline-sm text-primary-800 mb-base">
+      <h3 class="text-title-md md:text-title-lg text-primary-800 mb-base">
         {{ title }}
       </h3>
       <p

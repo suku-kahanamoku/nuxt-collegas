@@ -18,7 +18,7 @@ useHead({
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter max-w-4xl">
         <h1
-          class="text-headline-lg text-primary-800 mb-stack-md leading-tight"
+          class="text-headline-lg md:text-display-xl text-primary-800 mb-stack-md leading-tight"
         >
           Ochrana soukromi a zpracovani osobnich udaju
         </h1>
@@ -30,7 +30,7 @@ useHead({
 
         <div class="space-y-stack-lg">
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Spravce osobnich udaju
             </h2>
             <p class="font-body-md text-on-surface-variant">
@@ -40,7 +40,7 @@ useHead({
           </section>
 
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Ucely a pravni zaklady zpracovani
             </h2>
             <ul
@@ -59,7 +59,7 @@ useHead({
           </section>
 
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Prijemci osobnich udaju
             </h2>
             <p class="font-body-md text-on-surface-variant">
@@ -72,7 +72,7 @@ useHead({
           </section>
 
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Doba ulozeni udaju
             </h2>
             <p class="font-body-md text-on-surface-variant">
@@ -84,7 +84,7 @@ useHead({
           </section>
 
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Vase prava
             </h2>
             <ul
@@ -100,7 +100,7 @@ useHead({
           </section>
 
           <section>
-            <h2 class="font-headline-md text-primary-800 mb-stack-sm">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
               Uplatneni prav
             </h2>
             <p class="font-body-md text-on-surface-variant">

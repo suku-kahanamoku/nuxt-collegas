@@ -40,7 +40,7 @@ const destinations = [
   <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
     <UContainer>
       <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Kde vám můžeme pomoci?
         </h2>
         <p
@@ -68,7 +68,7 @@ const destinations = [
           />
 
           <h3
-            class="text-title-md font-serif leading-tight"
+            class="text-title-md md:text-title-lg font-serif leading-tight"
             :class="dest.highlight ? 'text-on-primary' : 'text-primary-800'"
           >
             {{ dest.title }}

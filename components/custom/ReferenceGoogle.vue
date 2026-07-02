@@ -25,7 +25,7 @@ const selected = computed(() => references[selectedIndex.value]);
       class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
       >Ohlasy klientů</span
     >
-    <h2 class="text-headline-lg text-primary-800 mb-6">
+    <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-6">
       {{ selected?.name }}
     </h2>
 

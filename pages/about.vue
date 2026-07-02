@@ -98,7 +98,7 @@ const principles = [
           >
           <h1 class="sr-only">O nás</h1>
           <h2
-            class="text-headline-lg font-serif text-on-primary mb-stack-md leading-tight"
+            class="text-headline-md md:text-headline-lg font-serif text-on-primary mb-stack-md leading-tight"
           >
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>
@@ -112,7 +112,7 @@ const principles = [
                 String(i + 1).padStart(2, "0")
               }}</span>
               <div>
-                <h4 class="font-body-lg font-bold text-on-primary mb-1">
+                <h4 class="text-title-md font-bold text-on-primary mb-1">
                   {{ val.title }}
                 </h4>
                 <p class="text-on-primary-container">
@@ -136,7 +136,7 @@ const principles = [
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Co je pro nás podstatné</span
           >
-          <h2 class="text-headline-lg font-serif text-primary-800 mb-stack-md">
+          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800 mb-stack-md">
             Každý klient má jinou výchozí situaci
           </h2>
           <p
@@ -180,7 +180,7 @@ const principles = [
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -207,7 +207,7 @@ const principles = [
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >Jak pracujeme</span
           >
-          <h2 class="text-headline-lg font-serif text-on-primary">
+          <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
             Naše principy spolupráce
           </h2>
           <div class="w-12 h-px bg-secondary-fixed/50 mx-auto mt-stack-md" />
@@ -226,7 +226,7 @@ const principles = [
                 :name="principle.icon"
                 class="text-secondary-fixed mb-stack-md block text-2xl"
               />
-              <h3 class="font-headline-md text-headline-md mb-stack-sm">
+              <h3 class="text-title-md md:text-title-lg mb-stack-sm">
                 {{ principle.title }}
               </h3>
             </template>

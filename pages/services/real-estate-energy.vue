@@ -83,7 +83,7 @@ const teamMembers = specialistSlugs
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
-          <h2 class="text-headline-lg text-primary-800">
+          <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
           <NuxtLink
@@ -140,7 +140,7 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-lg font-serif text-primary-800">
+        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -166,7 +166,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
               >Naši specialisté</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Poradci pro reality a energii
             </h2>
           </div>
@@ -206,7 +206,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Energetická optimalizace
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -230,7 +230,7 @@ const teamMembers = specialistSlugs
               img-alt="Realitní služby"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Realitní služby
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -253,7 +253,7 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Správa nemovitostí
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -276,7 +276,7 @@ const teamMembers = specialistSlugs
               img-alt="Developerské projekty"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-lg font-serif text-primary-800">
+                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
                   Developerské projekty
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -339,7 +339,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               Realitní a energetické služby
             </h2>
           </div>
@@ -357,7 +357,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/real-estate-energy#energy">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Energetická optimalizace
               </h3>
@@ -379,7 +379,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/real-estate-energy#real-estate">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Realitní služby
               </h3>
@@ -401,7 +401,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/real-estate-energy#property-management">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Správa nemovitostí
               </h3>
@@ -423,7 +423,7 @@ const teamMembers = specialistSlugs
           <UiBaseCard to="/services/real-estate-energy#development">
             <template #header>
               <h3
-                class="font-headline-md text-primary-800 group-hover:text-secondary transition-colors"
+                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
                 Developerské projekty
               </h3>
