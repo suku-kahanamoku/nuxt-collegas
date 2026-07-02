@@ -22,7 +22,7 @@ defineProps<{
           <slot name="label" />
           <component
             :is="headingTag ?? 'h2'"
-            class="font-headline-lg text-headline-lg text-primary-800 mb-8 leading-tight"
+            class="text-headline-md md:text-headline-lg text-primary-800 mb-8 leading-tight"
           >
             <slot name="heading" />
           </component>

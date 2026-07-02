@@ -72,7 +72,7 @@ const teamMembers = specialistSlugs
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
         <div class="flex justify-between items-center">
-          <h2 class="font-headline-lg text-headline-lg text-primary-800">
+          <h2 class="text-headline-lg text-primary-800">
             Modelové situace
           </h2>
           <NuxtLink
@@ -155,7 +155,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
               >Naši specialisté</span
             >
-            <h2 class="font-headline-lg text-headline-lg text-primary-800">
+            <h2 class="text-headline-lg text-primary-800">
               Poradci pro daně a právo
             </h2>
           </div>
@@ -305,7 +305,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="font-headline-lg text-headline-lg text-primary-800">
+            <h2 class="text-headline-lg text-primary-800">
               Daňové a právní služby
             </h2>
           </div>

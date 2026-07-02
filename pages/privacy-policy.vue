@@ -18,7 +18,7 @@ useHead({
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter max-w-4xl">
         <h1
-          class="font-headline-lg text-headline-lg text-primary-800 mb-stack-md leading-tight"
+          class="text-headline-lg text-primary-800 mb-stack-md leading-tight"
         >
           Ochrana soukromi a zpracovani osobnich udaju
         </h1>

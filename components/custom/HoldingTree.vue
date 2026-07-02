@@ -21,7 +21,7 @@ const sections: HoldingSection[] = holdingData;
 
 <template>
   <div
-    class="bg-primary-900"
+    class="bg-primary-900 py-stack-xl"
     style="
       background-image: radial-gradient(
         circle at center,
@@ -32,23 +32,23 @@ const sections: HoldingSection[] = holdingData;
     "
   >
     <template v-for="(section, si) in sections" :key="si">
-      <section class="py-stack-lg md:py-section-gap px-gutter overflow-x-auto">
+      <section class="py-stack-lg px-gutter overflow-x-auto">
         <div class="max-w-7xl mx-auto">
-          <header class="text-center mb-24 max-w-2xl mx-auto">
+          <header class="text-center mb-stack-xl max-w-2xl mx-auto">
             <h2
-              class="font-serif text-on-primary text-headline-lg md:text-display-xl leading-tight tracking-tight"
+              class="font-serif text-on-primary text-headline-md md:text-headline-lg leading-tight tracking-tight"
             >
               {{ section.title }}
             </h2>
           </header>
 
           <div
-            class="flex gap-6 max-[1060px]:flex-col max-[1060px]:items-center justify-center flex-wrap"
+            class="flex gap-6 items-center justify-center flex-wrap"
           >
             <div
               v-for="(node, ni) in section.nodes"
               :key="ni"
-              class="w-80 max-[1060px]:w-full max-w-80 flex flex-col"
+              class="flex w-80 max-[1060px]:w-full max-w-80"
             >
               <UiTreeCard
                 class="flex-1"

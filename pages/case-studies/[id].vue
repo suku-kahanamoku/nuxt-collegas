@@ -85,7 +85,7 @@ useHead(() => ({
             </div>
 
             <h1
-              class="font-headline-lg text-headline-lg text-primary-800 leading-tight"
+              class="text-headline-lg text-primary-800 leading-tight"
             >
               {{ caseStudy.title }}
             </h1>
