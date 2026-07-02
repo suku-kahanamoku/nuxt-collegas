@@ -1,8 +1,8 @@
 <script setup lang="ts">
-definePageMeta({ title: "Ochrana soukromí | COLLEGA ENTERPRISE" });
+definePageMeta({ title: "Ochrana soukromí | COLLEGAS" });
 
 useHead({
-  title: "Ochrana soukromí | COLLEGA ENTERPRISE",
+  title: "Ochrana soukromí | COLLEGAS",
   meta: [
     {
       name: "description",

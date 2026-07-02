@@ -49,7 +49,7 @@ const sections: HoldingSection[] = holdingData;
               v-if="si === 0"
               class="block text-label-caps font-semibold tracking-widest uppercase text-secondary-fixed mb-stack-md"
             >
-              Skupina COLLEGA
+              COLLEGAS
             </span>
             <h2
               class="font-serif text-on-primary text-headline-lg md:text-display-xl leading-tight tracking-tight"
@@ -60,31 +60,26 @@ const sections: HoldingSection[] = holdingData;
 
           <!-- Tree -->
           <div class="flex flex-col items-center">
-            <!-- LEVEL 0 - ROOT -->
-            <div class="w-106 max-[1060px]:w-90">
-              <UiTreeCard v-bind="getRootNode(section)" />
-            </div>
-
             <!-- LEVEL 1..N -->
             <template v-for="(level, li) in section.levels.slice(1)" :key="li">
-              <div
+              <!-- <div
                 class="w-px h-14 shrink-0 bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
               ></div>
               <div
                 class="w-full max-w-[688px] h-px bg-[linear-gradient(90deg,rgba(255,222,163,0.45),rgba(228,194,131,0.85),rgba(255,222,163,0.45))]"
-              ></div>
+              ></div> -->
 
               <div
-                class="flex gap-6 max-[1060px]:flex-col max-[1060px]:items-center"
+                class="flex gap-6 space-y-6 max-[1060px]:flex-col max-[1060px]:items-center"
               >
                 <div
                   v-for="(node, ni) in level.nodes"
                   :key="ni"
                   class="w-80 max-[1060px]:w-full max-w-80 flex flex-col"
                 >
-                  <div
+                  <!-- <div
                     class="w-px h-10 shrink-0 self-center bg-[linear-gradient(180deg,rgba(228,194,131,0.72),rgba(255,222,163,0.35))]"
-                  ></div>
+                  ></div> -->
 
                   <UiTreeCard
                     class="flex-1"

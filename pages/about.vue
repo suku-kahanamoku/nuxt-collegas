@@ -1,12 +1,12 @@
 <script setup lang="ts">
-definePageMeta({ title: "O nás | COLLEGA ENTERPRISE" });
+definePageMeta({ title: "O nás | COLLEGAS" });
 useHead({
-  title: "O nás | COLLEGA ENTERPRISE",
+  title: "O nás | COLLEGAS",
   meta: [
     {
       name: "description",
       content:
-        "Příběh vzniku a hodnoty skupiny COLLEGA ENTERPRISE a.s. – diskrétnost, nezávislost a odpovědnost od roku 2014.",
+        "Příběh vzniku a hodnoty skupiny COLLEGAS a.s. – diskrétnost, nezávislost a odpovědnost od roku 2014.",
     },
   ],
 });
@@ -74,7 +74,7 @@ const principles = [
             <NuxtImg
               class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700"
               data-alt="A professional portrait of a senior financial advisor in a dark, tailored charcoal suit, captured in a grand, oak-paneled library. The lighting is warm and cinematic, mimicking the soft glow of a desk lamp, casting gentle highlights on the subject's face. The mood is authoritative and trustworthy, reflecting a sense of legacy and quiet luxury in a dark forest green and gold-accented environment."
-              alt="Zakladatelé COLLEGA ENTERPRISE"
+              alt="Zakladatelé COLLEGAS"
               src="/img/other/founders.png"
               format="webp"
               loading="lazy"

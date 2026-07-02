@@ -4,7 +4,7 @@ const requestURL = useRequestURL();
 const organizationSchema = computed(() => ({
   "@context": "https://schema.org",
   "@type": "FinancialService",
-  name: "COLLEGA ENTERPRISE",
+  name: "COLLEGAS",
   url: requestURL.origin,
   logo: `${requestURL.origin}/img/logo/logo.svg`,
   description:

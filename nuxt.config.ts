@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   site: {
     url: process.env.FRONTEND_HOST,
-    name: "COLLEGA ENTERPRISE",
+    name: "COLLEGAS",
   },
 
   devtools: { enabled: true },

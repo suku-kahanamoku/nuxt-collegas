@@ -2,14 +2,14 @@
 import { computed } from "vue";
 import usersData from "~/assets/data/users.json";
 
-definePageMeta({ title: "Naši lidé | COLLEGA ENTERPRISE" });
+definePageMeta({ title: "Naši lidé | COLLEGAS" });
 useHead({
-  title: "Naši lidé | COLLEGA ENTERPRISE",
+  title: "Naši lidé | COLLEGAS",
   meta: [
     {
       name: "description",
       content:
-        "Tým poradců a asistentů skupiny COLLEGA ENTERPRISE a.s. – zkušení odborníci, kteří pečují o vaše finance a majetek.",
+        "Tým poradců a asistentů skupiny COLLEGAS a.s. – zkušení odborníci, kteří pečují o vaše finance a majetek.",
     },
   ],
 });

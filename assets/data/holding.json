@@ -1,64 +1,20 @@
 [
   {
-    "title": "Finance a právo",
+    "title": "Finance, právo, daně",
     "levels": [
       {
         "nodes": [
           {
             "title": "Holding",
-            "name": "COLLEGA ENTERPRISE a.s.",
+            "name": "COLLEGAS a.s.",
             "category": "Mateřská společnost",
             "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Centrála COLLEGA ENTERPRISE",
+            "imgAlt": "Centrála COLLEGAS",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
             "description": "Mateřská společnost a sídlo skupiny COLLEGA. Zastřešuje strategické řízení, finanční plánování a rozvoj celého holdingu.",
             "managerName": "Ing. Tomáš Kalous",
             "managerImgSrc": "/img/user/kalous.png",
             "managerLabel": "Zakladatel & CEO"
-          }
-        ]
-      },
-      {
-        "nodes": [
-          {
-            "title": "Finance & pojištění",
-            "name": "COLLEGA BROKERS a.s.",
-            "category": "Finance & investice",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Centrála COLLEGA BROKERS",
-            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Finanční poradenství a zprostředkování investičních produktů pro privátní i firemní klienty.",
-            "managerName": "Marek Butula",
-            "managerImgSrc": "/img/user/butula.png",
-            "managerLabel": "Zakladatel & byznys stratég",
-            "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
-            "logoAlt": "Česká národní banka"
-          },
-          {
-            "title": "Investiční sprostředkovatel",
-            "name": "COLLEGA INVESTICE s.r.o.",
-            "category": "Develop & investice nemovitostí",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Kancelář COLLEGA INVESTICE",
-            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Licencovaný subjekt pro investiční zprostředkování a správu investičních produktů.",
-            "managerName": "Ing. Tomáš Kalous",
-            "managerImgSrc": "/img/user/kalous.png",
-            "managerLabel": "Investice",
-            "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
-            "logoAlt": "Česká národní banka"
-          },
-          {
-            "title": "Průmyslové pojištění",
-            "name": "COLLEGA MAKLÉŘ s.r.o.",
-            "category": "Pojištění & hypotéky",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Kancelář COLLEGA MAKLÉŘ",
-            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele.",
-            "managerName": "Petr Kittner",
-            "managerImgSrc": "/img/logo/logo.svg",
-            "managerLabel": "Pojištění & hypotéky"
           }
         ]
       },
@@ -89,6 +45,50 @@
             "managerLabel": "Specialista odškodnění"
           },
           {
+            "title": "Finance & pojištění",
+            "name": "COLLEGA BROKERS a.s.",
+            "category": "Finance & investice",
+            "imgSrc": "/img/intro/stamp.png",
+            "imgAlt": "Centrála COLLEGA BROKERS",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Broker poolové služby.",
+            "managerName": "Marek Butula",
+            "managerImgSrc": "/img/user/butula.png",
+            "managerLabel": "Zakladatel & byznys stratég",
+            "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
+            "logoAlt": "Česká národní banka"
+          }
+        ]
+      },
+      {
+        "nodes": [
+          {
+            "title": "Průmyslové pojištění",
+            "name": "COLLEGA MAKLÉŘ s.r.o.",
+            "category": "Pojištění & hypotéky",
+            "imgSrc": "/img/intro/stamp.png",
+            "imgAlt": "Kancelář COLLEGA MAKLÉŘ",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele.",
+            "managerName": "Petr Kittner",
+            "managerImgSrc": "/img/logo/logo.svg",
+            "managerLabel": "Pojištění & hypotéky"
+          },
+          {
+            "title": "Investiční sprostředkovatel",
+            "name": "COLLEGA INVESTICE s.r.o.",
+            "category": "Develop & investice nemovitostí",
+            "imgSrc": "/img/intro/stamp.png",
+            "imgAlt": "Kancelář COLLEGA INVESTICE",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Broker poolové služby.",
+            "managerName": "Ing. Tomáš Kalous",
+            "managerImgSrc": "/img/user/kalous.png",
+            "managerLabel": "Investice",
+            "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
+            "logoAlt": "Česká národní banka"
+          },
+          {
             "title": "Učetnictví & daně",
             "name": "BULA & COLLEGAS s.r.o.",
             "category": "Administrativa & podpora holdingu",
@@ -105,16 +105,16 @@
     ]
   },
   {
-    "title": "Development",
+    "title": "Development & reality",
     "levels": [
       {
         "nodes": [
           {
             "title": "Holding",
-            "name": "COLLEGA ENTERPRISE a.s.",
+            "name": "COLLEGAS a.s.",
             "category": "Development",
             "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Centrála COLLEGA ENTERPRISE",
+            "imgAlt": "Centrála COLLEGAS",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
             "description": "Development divize skupiny COLLEGA zaměřená na rezidenční a komerční projekty.",
             "managerName": "Ing. Tomáš Kalous",
@@ -126,56 +126,96 @@
       {
         "nodes": [
           {
-            "title": "Development",
-            "name": "COLLEGAS DEVELOPMENT s.r.o.",
+            "title": "Developerský projekt",
+            "name": "REZIDENCE SRUBEC",
             "category": "Výstavba & projekty",
-            "imgSrc": "/img/intro/stamp.png",
+            "imgSrc": "/img/other/building.png",
             "imgAlt": "Projektová kancelář",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Realizace rezidenčních a komerčních development projektů na Moravě.",
+            "description": "Výstavba bytového domu.",
             "managerName": "Marek Butula",
             "managerImgSrc": "/img/user/butula.png",
             "managerLabel": "Zakladatel"
           },
           {
-            "title": "Správa nemovitostí",
-            "name": "COLLEGAS PROPERTY s.r.o.",
-            "category": "Správa nemovitostí",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Kancelář správy nemovitostí",
+            "title": "Developerský projekt",
+            "name": "REZIDENCE GREEN",
+            "category": "Výstavba & projekty",
+            "imgSrc": "/img/other/building.png",
+            "imgAlt": "Projektová kancelář",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Komplexní správa a facility management nemovitostního portfolia skupiny.",
+            "description": "Výstavba bytového domu.",
             "managerName": "Marek Butula",
             "managerImgSrc": "/img/user/butula.png",
             "managerLabel": "Zakladatel"
           },
           {
-            "title": "Inženýrská činnost",
-            "name": "COLLEGAS CONSULT s.r.o.",
-            "category": "Inženýrská činnost",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Kancelář inženýrské činnosti",
+            "title": "Developerský projekt",
+            "name": "REZIDENCE VRCHLABÍ",
+            "category": "Výstavba & projekty",
+            "imgSrc": "/img/other/building.png",
+            "imgAlt": "Projektová kancelář",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Inženýrská a konzultační činnost v oblasti stavebnictví a územního plánování.",
+            "description": "Výstavba bytového domu.",
             "managerName": "Marek Butula",
             "managerImgSrc": "/img/user/butula.png",
-            "managerLabel": "Vedoucí konzultant"
+            "managerLabel": "Zakladatel"
+          }
+        ]
+      },
+      {
+        "nodes": [
+          {
+            "title": "Reality",
+            "name": "COLLEGAS REALITY s.r.o.",
+            "category": "Reality",
+            "imgSrc": "/img/other/building.png",
+            "imgAlt": "Projektová kancelář",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Prodej a správa nemovitostí.",
+            "managerName": "Marek Butula",
+            "managerImgSrc": "/img/user/butula.png",
+            "managerLabel": "Zakladatel"
+          },
+          {
+            "title": "Kancelaře",
+            "name": "M DEAL s.r.o.",
+            "category": "Reality",
+            "imgSrc": "/img/other/building.png",
+            "imgAlt": "Projektová kancelář",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Nákup a pronájem kancelářských prostor.",
+            "managerName": "Marek Butula",
+            "managerImgSrc": "/img/user/butula.png",
+            "managerLabel": "Zakladatel"
+          },
+          {
+            "title": "Energetika",
+            "name": "COLLEGAS INVESTING s.r.o.",
+            "category": "Energetika",
+            "imgSrc": "/img/other/building.png",
+            "imgAlt": "Projektová kancelář",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Licencovaný energetický makléř.",
+            "managerName": "Marek Butula",
+            "managerImgSrc": "/img/user/butula.png",
+            "managerLabel": "Zakladatel"
           }
         ]
       }
     ]
   },
   {
-    "title": "Software",
+    "title": "Software & technologie",
     "levels": [
       {
         "nodes": [
           {
             "title": "Holding",
-            "name": "COLLEGA ENTERPRISE a.s.",
+            "name": "COLLEGAS a.s.",
             "category": "Software",
             "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Centrála COLLEGA ENTERPRISE",
+            "imgAlt": "Centrála COLLEGAS",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
             "description": "Technologická divize skupiny COLLEGA vyvíjející vlastní softwarová řešení.",
             "managerName": "Ing. Tomáš Kalous",
@@ -187,28 +227,28 @@
       {
         "nodes": [
           {
-            "title": "Design",
-            "name": "COLLEGA DESIGN s.r.o.",
-            "category": "Architektura & design nemovitostí",
-            "imgSrc": "/img/intro/stamp.png",
-            "imgAlt": "Kancelář COLLEGA DESIGN",
-            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
-            "description": "Grafický a architektonický design.",
-            "managerName": "Filip Hrazdíra",
-            "managerImgSrc": "/img/logo/logo.svg",
-            "managerLabel": "Design"
-          },
-          {
             "title": "Software & IT",
             "name": "COLLEGA SOLUTION s.r.o.",
             "category": "IT & vývoj",
-            "imgSrc": "/img/intro/stamp.png",
+            "imgSrc": "/img/other/wall.png",
             "imgAlt": "Kancelář COLLEGA SOLUTION",
             "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
             "description": "Vývoj softwarových řešení pro firmy.",
             "managerName": "Filip Hrazdíra",
             "managerImgSrc": "/img/logo/logo.svg",
             "managerLabel": "Vedoucí vývoje"
+          },
+          {
+            "title": "Výrobní technologie",
+            "name": "DIAMOND FISH",
+            "category": "Výrobní technologie",
+            "imgSrc": "/img/other/wall.png",
+            "imgAlt": "Kancelář DIAMOND FISH",
+            "address": "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+            "description": "Chov a zpracování ryb.",
+            "managerName": "Filip Hrazdíra",
+            "managerImgSrc": "/img/logo/logo.svg",
+            "managerLabel": "Vedoucí výroby"
           }
         ]
       }

@@ -53,7 +53,7 @@ defineProps<{
           loading="lazy"
         />
       </div>
-      <div
+      <!-- <div
         class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-stack-sm"
       >
         <NuxtImg
@@ -74,7 +74,7 @@ defineProps<{
             {{ managerName }}
           </span>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

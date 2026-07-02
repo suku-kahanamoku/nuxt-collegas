@@ -1,12 +1,12 @@
 <script setup lang="ts">
-definePageMeta({ title: "Holdingová struktura | COLLEGA ENTERPRISE" });
+definePageMeta({ title: "Holding | COLLEGAS" });
 useHead({
-  title: "Holdingová struktura | COLLEGA ENTERPRISE",
+  title: "Holding | COLLEGAS",
   meta: [
     {
       name: "description",
       content:
-        "Přehled holdingové struktury skupiny COLLEGA ENTERPRISE a.s. – přehled dceřiných společností a jejich zaměření.",
+        "Přehled holdingové struktury skupiny COLLEGAS a.s. – přehled dceřiných společností a jejich zaměření.",
     },
   ],
 });
@@ -38,12 +38,12 @@ const pillars = [
     <!-- ── Hero ── -->
     <UiIntro variant="light" :ui="{ bg: false }">
       <template #header>
-        <UiTitle eyebrow="Skupina COLLEGA" size="md">
+        <UiTitle eyebrow="COLLEGAS" size="md">
           <template #title>
             <h1
               class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
             >
-              Holdingová <br />struktura
+              Holding
             </h1>
           </template>
         </UiTitle>
@@ -53,11 +53,10 @@ const pillars = [
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
           <div class="lg:col-span-8">
             <p class="text-body-lg text-on-surface-variant max-w-2xl">
-              Skupina COLLEGA ENTERPRISE a.s. sdružuje přední společnosti z
-              oblasti financí, práva, realit a designu. Naše holdingová
-              struktura umožňuje efektivní spolupráci mezi jednotlivými
-              dceřinými společnostmi a poskytuje komplexní služby našim
-              klientům.
+              Collegas sdružuje přední společnosti z oblasti
+              financí, práva, realit a designu. Naše holdingová struktura
+              umožňuje efektivní spolupráci mezi jednotlivými dceřinými
+              společnostmi a poskytuje komplexní služby našim klientům.
             </p>
           </div>
 
@@ -65,7 +64,7 @@ const pillars = [
             <div class="text-right">
               <span
                 class="text-headline-lg md:text-display-xl font-serif text-primary-800/10 leading-none select-none"
-                >9+</span
+                >14+</span
               >
               <p
                 class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold"
