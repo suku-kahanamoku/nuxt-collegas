@@ -89,6 +89,9 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    build: {
+      cssCodeSplit: false,
+    },
     optimizeDeps: {
       include: [
         "@vue/devtools-core",

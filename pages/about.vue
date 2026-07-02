@@ -275,7 +275,7 @@ const principles = [
           />
         </UiButton>
         <UiButton
-          to="/contact#branches"
+          to="/contact"
           variant="outline"
           class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
         >
