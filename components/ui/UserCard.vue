@@ -40,7 +40,6 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
         :alt="imgAlt || name"
         class="w-full h-full object-cover group-hover/user-card:scale-105 transition-transform duration-700 grayscale group-hover/user-card:grayscale-0"
         format="webp"
-        loading="lazy"
         sizes="sm:100vw md:50vw lg:33vw xl:33vw"
       />
     </div>

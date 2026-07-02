@@ -34,7 +34,6 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
         :alt="name"
         class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         format="webp"
-        loading="lazy"
         sizes="sm:100vw md:50vw lg:33vw xl:25vw"
       />
       <div
@@ -65,7 +64,9 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
       <!-- Accent line + name -->
       <div>
         <div class="w-8 h-px bg-secondary-400 mb-3" />
-        <h3 class="text-title-md md:text-title-lg font-serif font-bold text-primary-800 leading-snug">
+        <h3
+          class="text-title-md md:text-title-lg font-serif font-bold text-primary-800 leading-snug"
+        >
           {{ name }}
         </h3>
       </div>
