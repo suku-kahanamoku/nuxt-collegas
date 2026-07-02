@@ -248,7 +248,7 @@ const references = computed(
           <div
             v-for="(t, i) in references"
             :key="i"
-            class="rounded-2xl p-6 border border-primary-800 shadow-lg"
+            class="rounded-2xl p-6 border border-primary-800 shadow-lg flex flex-col"
             style="
               background: linear-gradient(
                 230deg,
@@ -260,17 +260,28 @@ const references = computed(
             <p class="text-white leading-relaxed mb-6 text-sm">
               "{{ t.quote }}"
             </p>
-            <p class="text-sm font-medium text-white/75">
-              {{ t.author }}
-            </p>
-            <div class="flex gap-1 mt-3">
-              <UIcon
-                v-for="s in 5"
-                :key="s"
-                name="i-material-symbols-star"
-                class="w-4 h-4 text-secondary-400"
-              />
-            </div>
+
+            <UUser
+              :name="t.author"
+              :avatar="{ src: t.authorImage, alt: t.author }"
+              size="md"
+              class="mt-auto"
+              :ui="{
+                name: 'text-white',
+                description: 'line-clamp-1 text-white/60',
+              }"
+            >
+              <template #description>
+                <div class="flex gap-0.5">
+                  <UIcon
+                    v-for="s in t.rating"
+                    :key="s"
+                    name="i-material-symbols-star"
+                    class="w-3 h-3 text-secondary-400"
+                  />
+                </div>
+              </template>
+            </UUser>
           </div>
         </div>
         <div class="mt-16 text-center">
