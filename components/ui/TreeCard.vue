@@ -5,10 +5,6 @@ defineProps<{
   title: string;
   name: string;
   description?: string;
-  managerName: string;
-  managerImgSrc: string;
-  managerImgAlt?: string;
-  managerLabel?: string;
   logoSrc?: string;
   logoAlt?: string;
 }>();
@@ -53,28 +49,6 @@ defineProps<{
           loading="lazy"
         />
       </div>
-      <!-- <div
-        class="mt-auto pt-stack-md border-t border-outline-variant/20 flex items-center gap-stack-sm"
-      >
-        <NuxtImg
-          :src="managerImgSrc"
-          :alt="managerImgAlt ?? managerName"
-          class="w-12 h-12 rounded-full object-cover border border-outline-variant/30"
-          format="webp"
-          loading="lazy"
-          sizes="sm:48px md:48px lg:48px xl:48px"
-        />
-        <div>
-          <span
-            class="font-label-caps text-label-caps text-secondary-800 block uppercase"
-          >
-            {{ managerLabel ?? "Vedoucí pobočky" }}
-          </span>
-          <span class="font-body-md text-body-md text-on-surface font-semibold">
-            {{ managerName }}
-          </span>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
