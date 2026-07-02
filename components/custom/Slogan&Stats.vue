@@ -40,9 +40,7 @@ const stats = [
       odpovědně."
     </template>
 
-    <template #attribution>
-      — Ing. Tomáš Kalous &amp; Marek Butula, zakladatelé
-    </template>
+    <template #attribution> — Marek Butula, zakladatel </template>
 
     <template #footer>
       <div

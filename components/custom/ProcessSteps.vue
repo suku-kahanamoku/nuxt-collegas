@@ -39,7 +39,9 @@ const steps = [
 </script>
 
 <template>
-  <section class="py-stack-lg md:py-section-gap bg-primary-900 relative overflow-hidden">
+  <section
+    class="py-stack-lg md:py-section-gap bg-primary-900 relative overflow-hidden"
+  >
     <!-- Radial glow -->
     <div
       aria-hidden="true"
@@ -59,12 +61,14 @@ const steps = [
 
     <UContainer class="relative z-10 zoom-in">
       <!-- Header -->
-      <div class="text-center mb-20">
+      <div class="text-center mb-10 md:mb-20">
         <span
           class="text-label-caps text-secondary-fixed uppercase tracking-widest font-semibold block mb-stack-sm"
           >Jak to funguje</span
         >
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
+        <h2
+          class="text-headline-md md:text-headline-lg font-serif text-on-primary"
+        >
           Proces spolupráce
         </h2>
         <p class="text-body-lg text-on-primary/55 mt-stack-sm max-w-xl mx-auto">
@@ -95,12 +99,12 @@ const steps = [
           <template v-for="(step, i) in steps" :key="step.number">
             <!-- Step block -->
             <div
-              class="flex-1 group flex flex-col items-center text-center relative px-4 py-8 lg:py-0"
+              class="flex-1 group flex flex-col items-center text-center relative px-4 py-4 lg:py-0"
             >
               <!-- Ghost number watermark -->
               <span
                 aria-hidden="true"
-                class="absolute bottom-4 lg:bottom-auto lg:top-[-3rem] right-6 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 text-[5rem] leading-none font-serif text-primary-800 select-none pointer-events-none tracking-tighter"
+                class="absolute lg:bottom-auto lg:top-[-3rem] right-6 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 text-[5rem] leading-none font-serif text-primary-800 select-none pointer-events-none tracking-tighter"
                 >{{ step.number }}</span
               >
 

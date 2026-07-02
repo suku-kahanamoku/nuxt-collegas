@@ -124,12 +124,11 @@ const teamMembers = specialistSlugs
       </UiButton>
     </UiDarkBanner>
 
-    <CustomUserPic&desc
-      bg-image="/img/intro/stamp.png"
-      img-class="shadow-sm"
-    >
+    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
-        <span class="text-headline-lg md:text-display-xl leading-none">20+</span>
+        <span class="text-headline-lg md:text-display-xl leading-none"
+          >20+</span
+        >
         <span class="font-label-caps uppercase tracking-widest"
           >Let v oboru</span
         >
@@ -140,7 +139,9 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+        <h2
+          class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+        >
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -158,9 +159,11 @@ const teamMembers = specialistSlugs
       </div>
     </CustomUserPic&desc>
 
-    <section class="py-stack-lg md:py-section-gap bg-white">
+    <!-- <section class="py-stack-lg md:py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-stack-lg"
+        >
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
@@ -190,13 +193,11 @@ const teamMembers = specialistSlugs
           />
         </div>
       </UContainer>
-    </section>
+    </section> -->
 
     <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
       <UContainer>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl"
-        >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
@@ -206,7 +207,9 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Energetická optimalizace
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -230,7 +233,9 @@ const teamMembers = specialistSlugs
               img-alt="Realitní služby"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Realitní služby
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -253,7 +258,9 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Správa nemovitostí
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -276,7 +283,9 @@ const teamMembers = specialistSlugs
               img-alt="Developerské projekty"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Developerské projekty
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -316,18 +325,6 @@ const teamMembers = specialistSlugs
       body="Od energetické optimalizace přes realitní služby až po správu nemovitostí a developerské projekty. Nastavujeme systém, který dlouhodobě chrání i rozvíjí váš majetek."
       heading-tag="h2"
     />
-
-    <CustomBranches />
-
-    <section
-      class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-0 mb-section-gap"
-    >
-      <!-- Levá strana: info + mapa -->
-      <CustomContactInfo />
-
-      <!-- Pravá strana: formulář -->
-      <CustomContactForm />
-    </section>
 
     <section class="py-stack-lg md:py-section-gap bg-surface">
       <UContainer class="mx-auto px-gutter">
@@ -448,7 +445,7 @@ const teamMembers = specialistSlugs
     <!-- ── CTA ── -->
     <UiDarkBanner
       title="Začněme nezávaznou konzultací"
-      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
+      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGAS pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton

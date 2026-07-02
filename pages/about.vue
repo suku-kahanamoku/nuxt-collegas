@@ -6,7 +6,7 @@ useHead({
     {
       name: "description",
       content:
-        "Příběh vzniku a hodnoty skupiny COLLEGAS a.s. – diskrétnost, nezávislost a odpovědnost od roku 2014.",
+        "Příběh vzniku a hodnoty skupiny COLLEGAS – diskrétnost, nezávislost a odpovědnost od roku 2014.",
     },
   ],
 });
@@ -158,7 +158,7 @@ const principles = [
             <NuxtImg
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
-              alt="Sídlo a zázemí skupiny COLLEGA"
+              alt="Sídlo a zázemí skupiny COLLEGAS"
               src="/img/other/wall.png"
               format="webp"
               loading="lazy"
@@ -260,7 +260,7 @@ const principles = [
     <!-- ── CTA ── -->
     <UiDarkBanner
       title="Začněme nezávaznou konzultací"
-      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
+      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGAS pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton

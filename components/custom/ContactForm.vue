@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { useTimeoutFn } from "@vueuse/core";
 
+import usersData from "~/assets/data/users.json";
+
+const userOptions = usersData.map((user) => ({
+  value: user.slug,
+  label: user.name,
+}));
+
 const interestOptions = [
   "Finanční audit",
   "Finanční plán",
@@ -18,6 +25,7 @@ const initialForm = {
   interest: interestOptions[0],
   phone: "",
   message: "",
+  consultant: "",
 };
 
 const form = reactive({ ...initialForm });
@@ -54,6 +62,7 @@ async function handleSubmit() {
         interest: form.interest,
         phone: form.phone,
         message: form.message,
+        consultant: form.consultant,
       },
     });
 
@@ -90,7 +99,9 @@ onBeforeUnmount(stop);
         Sjednejte konzultaci
       </span>
 
-      <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
+      <h2
+        class="text-headline-md md:text-headline-lg font-serif text-on-primary"
+      >
         Nezávazná konzultace
       </h2>
 
@@ -193,11 +204,36 @@ onBeforeUnmount(stop);
         </div>
       </div>
 
+      <div class="grid grid-cols-1">
+        <div>
+          <label
+            class="text-label-caps text-on-primary-container block mb-stack-xs uppercase tracking-widest font-semibold"
+          >
+            Finanční poradce (volitelné)
+          </label>
+
+          <select
+            v-model="form.consultant"
+            name="consultant"
+            class="w-full bg-transparent border-0 border-b border-outline-variant/40 text-on-primary py-stack-xs focus:outline-none focus:border-secondary-fixed transition-colors appearance-none cursor-pointer"
+          >
+            <option
+              v-for="opt in userOptions"
+              :key="opt.value"
+              :value="opt.value"
+              class="bg-primary-900"
+            >
+              {{ opt.label }}
+            </option>
+          </select>
+        </div>
+      </div>
+
       <div>
         <label
           class="text-label-caps text-on-primary-container block mb-stack-xs uppercase tracking-widest font-semibold"
         >
-          Popis situace
+          Popis situace (volitelné)
         </label>
 
         <textarea

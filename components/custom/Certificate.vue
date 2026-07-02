@@ -45,7 +45,7 @@ const seniority = [
   },
   {
     icon: "i-material-symbols-workspace-premium",
-    text: "Člen odborných asociací AFIZ a AFP ČR od jejich vzniku",
+    text: "Práce pod dohledem České národní banky a evropských dohledových orgánů",
   },
 ];
 

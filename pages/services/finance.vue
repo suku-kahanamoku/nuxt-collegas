@@ -148,9 +148,11 @@ const teamMembers = specialistSlugs
       </div>
     </CustomUserPic&desc>
 
-    <section class="py-stack-lg md:py-section-gap bg-white">
+    <!-- <section class="py-stack-lg md:py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-stack-lg"
+        >
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
@@ -180,13 +182,11 @@ const teamMembers = specialistSlugs
           />
         </div>
       </UContainer>
-    </section>
+    </section> -->
 
     <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
       <UContainer>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl"
-        >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
@@ -323,18 +323,6 @@ const teamMembers = specialistSlugs
       heading-tag="h2"
     />
 
-    <CustomBranches />
-
-    <section
-      class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-0 mb-section-gap"
-    >
-      <!-- Levá strana: info + mapa -->
-      <CustomContactInfo />
-
-      <!-- Pravá strana: formulář -->
-      <CustomContactForm />
-    </section>
-
     <section class="py-stack-lg md:py-section-gap bg-surface">
       <UContainer class="mx-auto px-gutter">
         <div
@@ -458,7 +446,7 @@ const teamMembers = specialistSlugs
     <!-- ── CTA ── -->
     <UiDarkBanner
       title="Začněme nezávaznou konzultací"
-      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGA pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
+      body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGAS pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton

@@ -2,7 +2,6 @@
 import { useRoute, useHead } from "#imports";
 import { ref, onMounted, computed } from "vue";
 
-import { useIntroAnimate } from "~/composables/useIntroAnimate";
 import usersData from "~/assets/data/users.json";
 
 const route = useRoute();
@@ -31,12 +30,8 @@ useHead({
 const email = user.email || `${slug.replace(/-/g, ".")}@collegas.cz`;
 const phone = user.phone || "";
 
-const { mounted, splitChars } = useIntroAnimate({
-  stagger: 30,
-  initialDelay: 80,
-});
-
-const nameParts = computed(() => splitChars(user.name));
+const mounted = ref(false);
+onMounted(() => setTimeout(() => (mounted.value = true), 80));
 
 const metrics = computed(
   () =>
@@ -105,16 +100,12 @@ const references = computed(
         <h1
           class="text-headline-lg md:text-display-xl font-bold text-white leading-tight mb-6"
         >
-          <span
-            v-for="(part, i) in nameParts"
-            :key="i"
-            class="inline-block transition-all duration-500 ease-out"
-            :style="{ transitionDelay: part.delay }"
-            :class="
-              mounted ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-            "
-            >{{ part.ch === " " ? "\u00A0" : part.ch }}</span
-          >
+          <UiTypewriter
+            :key="user.slug || user.name"
+            :words="[user.name]"
+            :loop="false"
+            :show-cursor="false"
+          />
         </h1>
 
         <!-- Quote -->
@@ -299,7 +290,11 @@ const references = computed(
           >
             Kontakt
           </p>
-          <h2 class="text-headline-md md:text-headline-lg font-bold text-white mb-12">Kde mě najdete</h2>
+          <h2
+            class="text-headline-md md:text-headline-lg font-bold text-white mb-12"
+          >
+            Kde mě najdete
+          </h2>
           <div class="space-y-5">
             <NuxtLink
               v-if="phone"

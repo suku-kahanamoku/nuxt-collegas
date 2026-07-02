@@ -9,7 +9,7 @@ useHead({
     {
       name: "description",
       content:
-        "Tým poradců a asistentů skupiny COLLEGAS a.s. – zkušení odborníci, kteří pečují o vaše finance a majetek.",
+        "Tým poradců a asistentů skupiny COLLEGAS – zkušení odborníci, kteří pečují o vaše finance a majetek.",
     },
   ],
 });
@@ -73,7 +73,7 @@ const backoffice = computed(() =>
           class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
         >
           Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a
-          podpůrných rolí skupiny COLLEGA přistupuje ke každému klientovi
+          podpůrných rolí skupiny COLLEGAS přistupuje ke každému klientovi
           individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou
           spolupráci.
         </p>

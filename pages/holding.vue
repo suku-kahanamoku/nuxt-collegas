@@ -6,7 +6,7 @@ useHead({
     {
       name: "description",
       content:
-        "Přehled holdingové struktury skupiny COLLEGAS a.s. – přehled dceřiných společností a jejich zaměření.",
+        "Přehled holdingové struktury skupiny COLLEGAS – přehled dceřiných společností a jejich zaměření.",
     },
   ],
 });
