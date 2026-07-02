@@ -79,7 +79,7 @@ const stats = [
             class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Člen AFIZ <br />&amp; AFP ČR</span
+            >Regulováno<br />EIOPA</span
           >
         </div>
       </div>
