@@ -36,14 +36,14 @@ const sections: HoldingSection[] = holdingData;
         <div class="max-w-7xl mx-auto">
           <header class="text-center mb-stack-xl max-w-2xl mx-auto">
             <h2
-              class="text-headline-md md:text-headline-lg font-serif text-on-primary leading-tight tracking-tight"
+              class="text-headline-md md:text-headline-lg font-serif text-on-primary leading-tight"
             >
               {{ section.title }}
             </h2>
           </header>
 
           <div
-            class="flex gap-6 items-center justify-center flex-wrap"
+            class="flex gap-6 items-stretch justify-center flex-wrap"
           >
             <div
               v-for="(node, ni) in section.nodes"
@@ -51,7 +51,7 @@ const sections: HoldingSection[] = holdingData;
               class="flex w-80 max-[1060px]:w-full max-w-80"
             >
               <UiTreeCard
-                class="flex-1"
+                class="flex-1 h-full"
                 :imgSrc="node.imgSrc"
                 :imgAlt="node.imgAlt"
                 :title="node.title"

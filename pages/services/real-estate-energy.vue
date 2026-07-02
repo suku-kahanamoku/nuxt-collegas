@@ -82,7 +82,7 @@ const teamMembers = specialistSlugs
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center mb-stack-lg">
           <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
@@ -160,7 +160,7 @@ const teamMembers = specialistSlugs
 
     <section class="py-stack-lg md:py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"

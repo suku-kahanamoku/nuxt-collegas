@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <div
-    class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col"
+    class="h-full bg-surface-container-lowest border border-outline-variant/30 flex flex-col"
   >
     <div class="h-40 relative overflow-hidden">
       <NuxtImg
@@ -35,7 +35,7 @@ defineProps<{
       </p>
       <div
         v-if="description"
-        class="font-body-md text-body-md text-on-surface-variant mb-stack-lg"
+        class="font-body-md text-body-md text-on-surface-variant"
       >
         <p>
           {{ description }}

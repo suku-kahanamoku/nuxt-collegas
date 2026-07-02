@@ -89,7 +89,7 @@ const pillars = [
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <UiBaseCard v-for="p in pillars" :key="p.title">
+          <UiBaseCard v-for="p in pillars" :key="p.title" class="h-full">
             <template #header>
               <UiTitle size="sm">
                 <template #eyebrow>

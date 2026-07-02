@@ -249,7 +249,7 @@ const references = computed(
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <h2
-          class="text-headline-md md:text-headline-lg font-bold text-white mb-16 text-center leading-tight"
+          class="text-headline-md md:text-headline-lg font-bold text-white mb-stack-lg text-center leading-tight"
         >
           Výsledky a Reference
         </h2>

@@ -71,7 +71,7 @@ const teamMembers = specialistSlugs
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center mb-stack-lg">
           <h2 class="text-headline-md md:text-headline-lg text-primary-800">
             Modelové situace
           </h2>
@@ -115,7 +115,9 @@ const teamMembers = specialistSlugs
 
     <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
-        <span class="text-headline-lg md:text-display-xl leading-none">20+</span>
+        <span class="text-headline-lg md:text-display-xl leading-none"
+          >20+</span
+        >
         <span class="font-label-caps uppercase tracking-widest"
           >Let v oboru</span
         >
@@ -126,7 +128,9 @@ const teamMembers = specialistSlugs
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+        <h2
+          class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+        >
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -146,7 +150,7 @@ const teamMembers = specialistSlugs
 
     <section class="py-stack-lg md:py-section-gap bg-white">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg">
           <div>
             <span
               class="font-label-caps text-secondary-800 tracking-widest uppercase block mb-4"
@@ -192,7 +196,9 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Nezávislý finanční audit
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -217,7 +223,9 @@ const teamMembers = specialistSlugs
               img-alt="Finanční poradce při konzultaci"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Finanční plán
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -243,7 +251,9 @@ const teamMembers = specialistSlugs
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Zajištění rizik
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
@@ -268,7 +278,9 @@ const teamMembers = specialistSlugs
               img-alt="Odškodnění"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
-                <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
                   Odškodnění
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
