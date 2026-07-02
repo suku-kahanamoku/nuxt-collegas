@@ -67,7 +67,7 @@ const principles = [
       class="bg-primary-900 py-stack-lg md:py-section-gap relative min-h-screen overflow-hidden"
     >
       <UContainer
-        class="mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center"
+        class="mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-stack-md md:gap-stack-xl items-center"
       >
         <div class="relative order-2 lg:order-1">
           <div class="aspect-4/5 bg-primary-container overflow-hidden">
@@ -98,7 +98,7 @@ const principles = [
           >
           <h1 class="sr-only">O nás</h1>
           <h2
-            class="text-headline-md md:text-headline-lg font-serif text-on-primary mb-stack-md leading-tight"
+            class="text-headline-md md:text-headline-lg font-serif text-on-primary mb-stack-lg leading-tight"
           >
             Všechno začalo jednoduchou myšlenkou dvou přátel
           </h2>
@@ -136,7 +136,9 @@ const principles = [
             class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
             >Co je pro nás podstatné</span
           >
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800 mb-stack-md">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800 mb-stack-md"
+          >
             Každý klient má jinou výchozí situaci
           </h2>
           <p
@@ -169,7 +171,9 @@ const principles = [
 
     <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
       <template #overlay>
-        <span class="text-headline-lg md:text-display-xl leading-none">20+</span>
+        <span class="text-headline-lg md:text-display-xl leading-none"
+          >20+</span
+        >
         <span class="font-label-caps uppercase tracking-widest"
           >Let v oboru</span
         >
@@ -180,7 +184,9 @@ const principles = [
           class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
           >Naše zásady</span
         >
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+        <h2
+          class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+        >
           Naše principy
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
@@ -207,7 +213,9 @@ const principles = [
             class="font-label-caps text-secondary-fixed uppercase tracking-widest block mb-4"
             >Jak pracujeme</span
           >
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-on-primary">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-on-primary"
+          >
             Naše principy spolupráce
           </h2>
           <div class="w-12 h-px bg-secondary-fixed/50 mx-auto mt-stack-md" />

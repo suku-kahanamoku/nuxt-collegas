@@ -8,7 +8,6 @@ const selected = computed(() => references[selectedIndex.value]);
   <CustomUserPic&desc
     bg="bg-surface-container-low"
     cols="lg"
-    gap="gap-20"
     img-class="border-12 border-white rounded-md shadow-lg"
     :bg-image="selected?.avatar"
     overlay-class="-bottom-8 -right-8 bg-primary-800 p-6 max-w-xs hidden md:flex flex-col"

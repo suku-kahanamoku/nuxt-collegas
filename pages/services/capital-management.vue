@@ -188,7 +188,7 @@ const teamMembers = specialistSlugs
     <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
       <UContainer>
         <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap lg:gap-stack-xl"
+          class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl"
         >
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">

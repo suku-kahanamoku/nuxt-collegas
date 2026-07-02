@@ -6,7 +6,6 @@ withDefaults(
     imgAlt?: string;
     imgClass?: string;
     cols?: "md" | "lg";
-    gap?: string;
     leftClass?: string;
     rightClass?: string;
     overlayClass?: string;
@@ -16,7 +15,6 @@ withDefaults(
     imgAlt: "",
     imgClass: "",
     cols: "md",
-    gap: "gap-12 lg:gap-section-gap",
     leftClass: "",
     rightClass: "",
     overlayClass:
@@ -30,9 +28,8 @@ withDefaults(
     <UContainer>
       <div
         :class="[
-          'grid grid-cols-1 items-center',
+          'grid grid-cols-1 items-center gap-stack-lg lg:gap-stack-xl',
           cols === 'lg' ? 'lg:grid-cols-2' : 'md:grid-cols-2',
-          gap,
         ]"
       >
         <!-- Left: image + overlay -->
