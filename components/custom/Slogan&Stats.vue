@@ -73,15 +73,6 @@ const stats = [
             >Celorepubliková <br />působnost</span
           >
         </div>
-        <div class="flex items-center gap-4">
-          <UIcon
-            name="i-material-symbols-military-tech"
-            class="text-headline-lg text-secondary-800"
-          />
-          <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Regulováno<br />EIOPA</span
-          >
-        </div>
       </div>
     </template>
   </CustomTextComment>

@@ -32,7 +32,7 @@ defineProps<{
       />
     </div>
     <div class="p-stack-md grow flex flex-col">
-      <h3 class="text-title-md md:text-title-lg text-primary-800 mb-base">
+      <h3 class="text-title-md md:text-title-lg text-primary-800 mb-stack-sm">
         {{ name }}
       </h3>
       <p

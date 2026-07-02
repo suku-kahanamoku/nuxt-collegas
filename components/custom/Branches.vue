@@ -12,7 +12,7 @@ const branches = [
     managerSlug: "marek-butula",
   },
   {
-    imgSrc: "/img/branch/kromeriz.webp",
+    imgSrc: "/img/branch/kromeriz.png",
     imgAlt: "Pobočka Kroměříž",
     name: "Pobočka – Kroměříž",
     address: "Tovačovského 2784/24, 767 01 Kroměříž",
