@@ -169,7 +169,7 @@ const principles = [
       </UContainer>
     </section>
 
-    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
+    <CustomUserPic&desc bg-image="/img/other/compass.png" img-class="shadow-sm">
       <template #overlay>
         <span class="text-headline-lg md:text-display-xl leading-none"
           >20+</span

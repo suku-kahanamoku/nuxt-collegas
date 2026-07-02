@@ -113,7 +113,7 @@ const teamMembers = specialistSlugs
       </UiButton>
     </UiDarkBanner>
 
-    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
+    <CustomUserPic&desc bg-image="/img/other/compass.png" img-class="shadow-sm">
       <template #overlay>
         <span class="text-headline-lg md:text-display-xl leading-none"
           >20+</span
@@ -191,7 +191,7 @@ const teamMembers = specialistSlugs
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
               id="tax"
-              img-src="/img/intro/notes.png"
+              img-src="/img/other/tax_consult.png"
               img-alt="Daňové poradenství"
               img-right
             >

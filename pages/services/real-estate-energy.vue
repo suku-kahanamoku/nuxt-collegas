@@ -124,7 +124,7 @@ const teamMembers = specialistSlugs
       </UiButton>
     </UiDarkBanner>
 
-    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
+    <CustomUserPic&desc bg-image="/img/other/compass.png" img-class="shadow-sm">
       <template #overlay>
         <span class="text-headline-lg md:text-display-xl leading-none"
           >20+</span
@@ -202,7 +202,7 @@ const teamMembers = specialistSlugs
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
               id="energy"
-              img-src="/img/intro/notes.png"
+              img-src="/img/other/energy_optimalization.png"
               img-alt="Energetická optimalizace"
               img-right
             >
@@ -229,7 +229,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="real-estate"
-              img-src="/img/other/man.png"
+              img-src="/img/other/reality.png"
               img-alt="Realitní služby"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
@@ -253,7 +253,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="property-management"
-              img-src="/img/intro/notes.png"
+              img-src="/img/other/building.png"
               img-alt="Správa nemovitostí"
               img-right
             >
@@ -279,7 +279,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="development"
-              img-src="/img/other/man.png"
+              img-src="/img/other/develop_project.png"
               img-alt="Developerské projekty"
             >
               <div class="grid space-y-stack-md items-center from-bottom">

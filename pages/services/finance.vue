@@ -113,7 +113,7 @@ const teamMembers = specialistSlugs
       </UiButton>
     </UiDarkBanner>
 
-    <CustomUserPic&desc bg-image="/img/intro/stamp.png" img-class="shadow-sm">
+    <CustomUserPic&desc bg-image="/img/other/compass.png" img-class="shadow-sm">
       <template #overlay>
         <span class="text-headline-lg md:text-display-xl leading-none"
           >20+</span
@@ -246,7 +246,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="risk"
-              img-src="/img/other/wall.png"
+              img-src="/img/other/risk_headging.png"
               img-alt="Zajištění rizik"
               img-right
             >
@@ -274,7 +274,7 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="compensation"
-              img-src="/img/other/building.png"
+              img-src="/img/other/compensation.png"
               img-alt="Odškodnění"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
