@@ -168,7 +168,7 @@ const steps = [
 
       <!-- CTA -->
       <div class="text-center mt-16">
-        <UiButton to="/contact?#contact-form" class="shrink-0 group">
+        <UiButton to="/contact#contact-form" class="shrink-0 group">
           Začít první krok
           <UIcon
             name="i-material-symbols-arrow-forward"

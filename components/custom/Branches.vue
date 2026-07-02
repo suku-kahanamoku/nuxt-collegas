@@ -53,7 +53,10 @@ const branchesWithManagers = branches.map((branch) => {
 </script>
 
 <template>
-  <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
+  <section
+    class="bg-surface-container-low py-stack-lg md:py-section-gap"
+    id="contact-form"
+  >
     <UContainer class="mx-auto px-gutter">
       <h2
         class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-lg text-center"

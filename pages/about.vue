@@ -264,7 +264,7 @@ const principles = [
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton
-          to="/contact"
+          to="/contact#contact-form"
           variant="solid"
           class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
         >
@@ -275,7 +275,7 @@ const principles = [
           />
         </UiButton>
         <UiButton
-          to="/contact"
+          to="/contact#branches"
           variant="outline"
           class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
         >

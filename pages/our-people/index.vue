@@ -84,7 +84,9 @@ const backoffice = computed(() =>
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+          >
             Zakladatelé
           </h2>
           <p
@@ -110,7 +112,9 @@ const backoffice = computed(() =>
     <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+          >
             Seniorní tým
           </h2>
           <p
@@ -136,7 +140,9 @@ const backoffice = computed(() =>
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+          >
             Konzultanti a specialisté
           </h2>
           <p
@@ -162,7 +168,9 @@ const backoffice = computed(() =>
     <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+          >
             Juniorní tým
           </h2>
           <p
@@ -188,7 +196,9 @@ const backoffice = computed(() =>
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer>
         <div class="text-center mb-stack-lg">
-          <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
+          <h2
+            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+          >
             Backoffice a podpora
           </h2>
           <p
@@ -217,7 +227,7 @@ const backoffice = computed(() =>
     >
       <div class="flex justify-center">
         <UiButton
-          to="/contact"
+          to="/contact#contact-form"
           variant="solid"
           class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
         >

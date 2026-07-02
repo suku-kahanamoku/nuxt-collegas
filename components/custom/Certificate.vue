@@ -130,7 +130,7 @@ function onImgErrorByIndex(i: number) {
             description:
               'Rádi posoudíme vaši situaci a navrhneme vhodné řešení.',
             label: 'Nezávazná konzultace',
-            to: '/contact?#contact-form',
+            to: '/contact#contact-form',
           }"
         >
           <template #item="{ link, index }">

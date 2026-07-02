@@ -82,7 +82,7 @@ const teamMembers = specialistSlugs
           </h2>
           <NuxtLink
             class="hidden md:flex items-center gap-2 font-label-caps text-secondary-800 border-b border-secondary-800 py-1"
-            to="/contact?#contact-form"
+            to="/contact#contact-form"
             >KONZULTOVAT SITUACI</NuxtLink
           >
         </div>
@@ -98,7 +98,7 @@ const teamMembers = specialistSlugs
         <div class="mt-stack-lg md:hidden">
           <NuxtLink
             class="w-full justify-center flex items-center gap-2 font-label-caps text-secondary-800 border border-secondary-800 py-4"
-            to="/contact?#contact-form"
+            to="/contact#contact-form"
             >KONZULTOVAT SITUACI</NuxtLink
           >
         </div>
@@ -109,7 +109,7 @@ const teamMembers = specialistSlugs
       title="Připraveni posunout kapitál dál?"
       body="Nastavíme péči o investice, financování i výběr příležitostí tak, aby vaše rozhodnutí zapadala do dlouhodobé strategie a podporovala růst majetku."
     >
-      <UiButton to="/contact?#contact-form" class="shrink-0 group">
+      <UiButton to="/contact#contact-form" class="shrink-0 group">
         Domluvit konzultaci
         <UIcon
           name="i-material-symbols-arrow-forward"
@@ -284,7 +284,7 @@ const teamMembers = specialistSlugs
               description:
                 'Rádi posoudíme vaši situaci a navrhneme další kroky.',
               label: 'Nezávazná konzultace',
-              to: '/contact?#contact-form',
+              to: '/contact#contact-form',
             }"
           />
         </div>
@@ -399,7 +399,7 @@ const teamMembers = specialistSlugs
     >
       <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
         <UiButton
-          to="/contact?#contact-form"
+          to="/contact#contact-form"
           variant="solid"
           class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
         >
@@ -410,7 +410,7 @@ const teamMembers = specialistSlugs
           />
         </UiButton>
         <UiButton
-          to="/contact?#contact-form"
+          to="/contact#contact-form"
           variant="outline"
           class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
         >
