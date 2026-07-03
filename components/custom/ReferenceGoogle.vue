@@ -3,6 +3,10 @@ import references from "~/assets/data/references.json";
 
 const selectedIndex = ref(0);
 const selected = computed(() => references[selectedIndex.value]);
+
+function selectReference(index: number) {
+  selectedIndex.value = index;
+}
 </script>
 <template>
   <CustomUserPic&desc
@@ -60,7 +64,7 @@ const selected = computed(() => references[selectedIndex.value]);
           'w-64 shrink-0',
           selectedIndex === i && 'border-secondary/50 border-[0.5px]',
         ]"
-        @click="selectedIndex = i"
+        @click="selectReference(i)"
       >
         <template #footer>
           <UUser
@@ -119,14 +123,14 @@ const selected = computed(() => references[selectedIndex.value]);
 
           <div class="flex items-center gap-2 text-sm">
             <div
-              class="font-semibold text-gray-900"
+              class="font-semibold text-gray-950"
               aria-label="5 z&nbsp;5"
               role="listitem"
             >
               5/5
             </div>
 
-            <span class="text-gray-600" role="listitem">
+            <span class="text-gray-800" role="listitem">
               239&nbsp;recenzí
             </span>
           </div>
@@ -168,14 +172,14 @@ const selected = computed(() => references[selectedIndex.value]);
 
           <div class="flex items-center gap-2 text-sm">
             <div
-              class="font-semibold text-gray-900"
+              class="font-semibold text-gray-950"
               aria-label="5 z&nbsp;5"
               role="listitem"
             >
               5,0
             </div>
 
-            <span class="text-gray-600" role="listitem">
+            <span class="text-gray-800" role="listitem">
               162&nbsp;recenzí
             </span>
           </div>
