@@ -121,7 +121,7 @@ function selectReference(index: number) {
             </div>
           </div>
 
-          <div class="flex items-center gap-2 text-sm">
+          <div class="flex items-center gap-2 text-sm" role="list">
             <div
               class="font-semibold text-gray-950"
               aria-label="5 z&nbsp;5"
@@ -170,7 +170,7 @@ function selectReference(index: number) {
             </div>
           </div>
 
-          <div class="flex items-center gap-2 text-sm">
+          <div class="flex items-center gap-2 text-sm" role="list">
             <div
               class="font-semibold text-gray-950"
               aria-label="5 z&nbsp;5"

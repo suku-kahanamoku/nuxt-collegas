@@ -34,6 +34,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
         :alt="name"
         class="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         format="webp"
+        loading="lazy"
         sizes="sm:100vw md:50vw lg:33vw xl:25vw"
       />
       <div

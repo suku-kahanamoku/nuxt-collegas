@@ -41,6 +41,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
           class="w-72 shrink-0"
           :img-src="person.photo"
           :img-alt="person.name"
+          img-loading="eager"
           :name="person.name"
           :role="person.role"
           :to="`/our-people/${person.slug}`"

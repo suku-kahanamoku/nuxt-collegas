@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     "@suku-kahanamoku/lang-module",
     "@suku-kahanamoku/common-module",
     "@suku-kahanamoku/seo-module",
-    "nuxt-gtag",
+    /* "nuxt-gtag", */
   ],
 
   image: {
@@ -108,9 +108,9 @@ export default defineNuxtConfig({
     },
   },
 
-  gtag: {
+  /* gtag: {
     id: process.env.NUXT_PUBLIC_GTAG_ID,
-  },
+  }, */
 
   pwa: {
     manifest: {

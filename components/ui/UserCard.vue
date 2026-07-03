@@ -5,6 +5,7 @@ withDefaults(
   defineProps<{
     imgSrc: string;
     imgAlt?: string;
+    imgLoading?: "lazy" | "eager";
     name: string;
     role: string;
     description?: string;
@@ -12,6 +13,7 @@ withDefaults(
   }>(),
   {
     imgAlt: "",
+    imgLoading: "lazy",
     description: "",
     to: "",
   },
@@ -38,6 +40,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
       <NuxtImg
         :src="imgSrc"
         :alt="imgAlt || name"
+        :loading="imgLoading"
         class="w-full h-full object-cover group-hover/user-card:scale-105 transition-transform duration-700 grayscale group-hover/user-card:grayscale-0"
         format="webp"
         sizes="sm:100vw md:50vw lg:33vw xl:33vw"

@@ -350,7 +350,5 @@ const references = computed(
         </div>
       </UContainer>
     </section>
-
-    <PeopleCarousel />
   </div>
 </template>
