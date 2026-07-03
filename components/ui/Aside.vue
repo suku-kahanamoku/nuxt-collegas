@@ -60,9 +60,9 @@ defineProps<{
       v-if="callout && callout.title"
       class="bg-surface-container p-stack-lg"
     >
-      <h4 class="text-title-md font-serif text-primary-800 mb-stack-sm">
+      <h3 class="text-title-md font-serif text-primary-800 mb-stack-sm">
         {{ callout.title }}
-      </h4>
+      </h3>
       <p
         v-if="callout.description"
         class="text-body-sm text-on-surface-variant mb-stack-md"

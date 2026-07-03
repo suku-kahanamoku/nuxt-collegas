@@ -60,11 +60,11 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
       }}</span>
     </div>
 
-    <h4
+    <h3
       class="text-title-md text-primary-800 group-hover:text-secondary transition-colors mb-4"
     >
       {{ title }}
-    </h4>
+    </h3>
 
     <p
       v-if="description"

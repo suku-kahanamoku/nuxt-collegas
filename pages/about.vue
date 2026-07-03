@@ -112,9 +112,9 @@ const principles = [
                 String(i + 1).padStart(2, "0")
               }}</span>
               <div>
-                <h4 class="text-title-md font-bold text-on-primary mb-1">
+                <h3 class="text-title-md font-bold text-on-primary mb-1">
                   {{ val.title }}
-                </h4>
+                </h3>
                 <p class="text-on-primary-container">
                   {{ val.description }}
                 </p>
