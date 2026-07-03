@@ -10,7 +10,7 @@ defineProps<{
   <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
     <div
       class="bg-surface-container-highest overflow-hidden aspect-4/5"
-      :class="imgRight ? 'order-1 md:order-2' : undefined"
+      :class="imgRight ? 'order-2' : 'order-1'"
     >
       <NuxtImg
         :src="imgSrc"
@@ -23,7 +23,7 @@ defineProps<{
     </div>
     <div
       class="grid space-y-stack-md items-center"
-      :class="imgRight ? 'order-2 md:order-1' : undefined"
+      :class="imgRight ? 'order-1' : 'md:order-2'"
     >
       <slot />
     </div>

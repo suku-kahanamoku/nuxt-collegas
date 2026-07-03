@@ -12,8 +12,11 @@ const props = withDefaults(
 </script>
 
 <template>
-  <section class="py-stack-lg md:py-section-gap" :class="props.bg ?? 'bg-surface'">
-    <UContainer class="space-y-20">
+  <section
+    class="py-stack-lg md:py-section-gap"
+    :class="props.bg ?? 'bg-surface'"
+  >
+    <UContainer class="space-y-stack-xl md:space-y-section-gap">
       <div
         class="mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center"
       >

@@ -44,7 +44,7 @@ const stats = [
 
     <template #footer>
       <div
-        class="flex flex-wrap justify-between items-center gap-12 from-bottom"
+        class="flex flex-wrap justify-between items-center gap-8 from-bottom"
       >
         <div class="flex items-center gap-4">
           <UIcon

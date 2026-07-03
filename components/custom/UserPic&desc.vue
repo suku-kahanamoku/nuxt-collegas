@@ -32,8 +32,14 @@ withDefaults(
           cols === 'lg' ? 'lg:grid-cols-2' : 'md:grid-cols-2',
         ]"
       >
-        <!-- Left: image + overlay -->
-        <div :class="['relative', leftClass]">
+        <!-- Left: image + overlay (visually first on desktop via CSS order) -->
+        <div
+          :class="[
+            cols === 'lg' ? 'lg:order-first' : 'md:order-first',
+            'order-last',
+            leftClass,
+          ]"
+        >
           <div class="aspect-4/5 relative">
             <NuxtImg
               v-if="bgImage"
@@ -61,8 +67,14 @@ withDefaults(
           </div>
         </div>
 
-        <!-- Right: content -->
-        <div :class="rightClass">
+        <!-- Right: content (first in DOM = first on mobile) -->
+        <div
+          :class="[
+            cols === 'lg' ? 'lg:order-last' : 'md:order-last',
+            'order-first',
+            rightClass,
+          ]"
+        >
           <slot />
         </div>
       </div>

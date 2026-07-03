@@ -294,8 +294,8 @@ const references = computed(
 
     <!-- Contact section -->
     <section class="py-24 border-t border-white/6 bg-primary-950">
-      <UContainer class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+      <UContainer class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-4">
+        <div class="max-w-7xl mx-auto px-4">
           <p
             class="text-xs font-bold uppercase tracking-widest mb-4 text-secondary-400"
           >
