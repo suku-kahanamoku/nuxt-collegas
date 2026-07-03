@@ -143,17 +143,10 @@ const selected = computed(() => references[selectedIndex.value]);
           <div class="flex items-center gap-2">
             <div class="flex items-center">
               <div class="flex items-center" aria-hidden="true">
-                <img
+                <NuxtImg
                   class="h-8 w-32"
-                  id="tsuid_AStCas2iIPia1fIPj4_asQ8_80"
-                  src="https://www.seznam.cz/media/img/logo_v2.svg"
-                  data-iid="AStCas2iIPia1fIPj4_asQ8_101"
-                  data-deferred="3"
-                  alt=""
-                  data-csiid="AStCas2iIPia1fIPj4_asQ8_11"
-                  data-atf="1"
-                  data-ims="1782721282126"
-                  data-iml="1782721282152"
+                  src="/img/logo/seznam.svg"
+                  alt="seznam.cz"
                 />
               </div>
             </div>

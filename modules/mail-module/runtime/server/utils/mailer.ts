@@ -1,7 +1,7 @@
 import type { H3Event } from "h3";
 import { phpApiFetch } from "@/server/utils/phpApi";
 
-const LOGO_PATH = "https://vinozezajeci.cz/img/logo_white.svg";
+const LOGO_PATH = `${useRuntimeConfig().public.baseURL}/img/logo/logo.svg`;
 
 async function sendPhpMail(
   event: H3Event,
