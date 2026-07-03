@@ -28,7 +28,8 @@ const items = [
         :src="item"
         alt=""
         format="webp"
-        loading="lazy"
+        loading="eager"
+        fetchpriority="high"
         sizes="sm:100vw md:100vw lg:100vw xl:100vw"
       />
     </UCarousel>

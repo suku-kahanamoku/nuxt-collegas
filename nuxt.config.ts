@@ -57,6 +57,7 @@ export default defineNuxtConfig({
 
   image: {
     domains: ["lh3.googleusercontent.com"],
+    quality: 65,
   },
 
   colorMode: {
