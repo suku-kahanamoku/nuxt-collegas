@@ -14,7 +14,7 @@ function selectReference(index: number) {
     cols="lg"
     img-class="border-12 border-white rounded-md shadow-lg"
     :bg-image="selected?.avatar"
-    overlay-class="-bottom-8 -right-8 bg-primary-800 p-6 max-w-xs hidden md:flex flex-col"
+    overlay-class="-bottom-8 -right-8 bg-primary-800 p-6 max-w-xs hidden lg:flex flex-col"
   >
     <template #overlay>
       <p class="text-body-lg italic mb-4 whitespace-break-spaces">"{{ selected?.quote }}"</p>

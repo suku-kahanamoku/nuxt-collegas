@@ -158,6 +158,14 @@ html {
 
 body {
   font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    overflow-x: visible;
+  }
 }
 
 button {
