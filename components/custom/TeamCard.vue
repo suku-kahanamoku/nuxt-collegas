@@ -7,7 +7,7 @@ const props = defineProps<{
   website?: string | null;
   websiteLabel?: string;
   photo?: string | null;
-  bio: string;
+  description: string;
 }>();
 
 const isInternal = computed(() => !!props.website?.startsWith("/"));
@@ -72,8 +72,10 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
         </h3>
       </div>
 
-      <p class="text-sm text-on-surface-variant leading-relaxed flex-1 whitespace-break-spaces">
-        {{ bio }}
+      <p
+        class="text-sm text-on-surface-variant leading-relaxed flex-1 line-clamp-6"
+      >
+        {{ description }}
       </p>
 
       <!-- Contacts -->

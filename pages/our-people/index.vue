@@ -20,7 +20,7 @@ function toCardProps(u: any) {
   return {
     name: u.name,
     role: u.role,
-    bio: u.intro || u.about || "",
+    description: u.intro || u.about || "",
     photo: u.photo,
     email: u.email,
     phone: u.phone,
