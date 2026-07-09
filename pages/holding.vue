@@ -102,7 +102,7 @@ const pillars = [
                 </template>
               </UiTitle>
             </template>
-            <p class="text-body-md text-on-surface-variant">
+            <p class="text-body-md text-on-surface-variant whitespace-break-spaces">
               {{ p.description }}
             </p>
           </UiBaseCard>

@@ -17,7 +17,7 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
           {{ props.title || "Náš tým" }}
         </h2>
         <p
-          class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
+          class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto whitespace-break-spaces"
         >
           {{
             props.description ||

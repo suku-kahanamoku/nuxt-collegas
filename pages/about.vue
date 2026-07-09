@@ -115,7 +115,7 @@ const principles = [
                 <h3 class="text-title-md font-bold text-on-primary mb-1">
                   {{ val.title }}
                 </h3>
-                <p class="text-on-primary-container">
+                <p class="text-on-primary-container whitespace-break-spaces">
                   {{ val.description }}
                 </p>
               </div>
@@ -239,7 +239,7 @@ const principles = [
               </h3>
             </template>
             <p
-              class="font-body-md text-on-primary-container group-hover:text-on-primary transition-colors"
+              class="font-body-md text-on-primary-container group-hover:text-on-primary transition-colors whitespace-break-spaces"
             >
               {{ principle.description }}
             </p>

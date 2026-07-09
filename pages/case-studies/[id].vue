@@ -91,7 +91,7 @@ useHead(() => ({
             </h1>
 
             <div class="space-y-stack-lg">
-              <p class="font-body-lg text-body-lg text-on-surface-variant">
+              <p class="font-body-lg text-body-lg text-on-surface-variant whitespace-break-spaces">
                 {{ caseStudy.description }}
               </p>
 

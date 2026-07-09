@@ -134,7 +134,7 @@ const steps = [
 
               <!-- Description -->
               <p
-                class="text-body-sm text-on-primary/55 leading-relaxed max-w-[15rem]"
+                class="text-body-sm text-on-primary/55 leading-relaxed max-w-[15rem] whitespace-break-spaces"
               >
                 {{ step.description }}
               </p>

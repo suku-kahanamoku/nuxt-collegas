@@ -111,7 +111,7 @@ const references = computed(
         <!-- Quote -->
         <p
           v-if="user.slogan"
-          class="text-lg font-semibold mb-10 transition-all duration-700 delay-500 text-secondary-50"
+          class="text-lg font-semibold mb-10 transition-all duration-700 delay-500 text-secondary-50 whitespace-break-spaces"
           :class="
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           "
@@ -198,7 +198,9 @@ const references = computed(
             >
               Něco Málo O Mně
             </h2>
-            <p class="text-base leading-relaxed text-white/60">
+            <p
+              class="text-base leading-relaxed text-white/60 whitespace-break-spaces"
+            >
               {{ user.about || user.description }}
             </p>
           </div>
@@ -257,7 +259,7 @@ const references = computed(
               );
             "
           >
-            <p class="text-white leading-relaxed mb-6 text-sm">
+            <p class="text-white leading-relaxed mb-6 text-sm whitespace-break-spaces">
               "{{ t.quote }}"
             </p>
 

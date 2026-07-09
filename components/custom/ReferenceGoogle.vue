@@ -17,7 +17,7 @@ function selectReference(index: number) {
     overlay-class="-bottom-8 -right-8 bg-primary-800 p-6 max-w-xs hidden md:flex flex-col"
   >
     <template #overlay>
-      <p class="text-body-lg italic mb-4">"{{ selected?.quote }}"</p>
+      <p class="text-body-lg italic mb-4 whitespace-break-spaces">"{{ selected?.quote }}"</p>
       <span class="font-label-caps text-secondary-fixed"
         >— {{ selected?.name }},
         {{ selected?.company || selected?.destination }}</span
@@ -34,10 +34,10 @@ function selectReference(index: number) {
 
     <div class="space-y-8">
       <div class="border-l-2 pl-6 border-secondary">
-        <p class="text-body-lg text-on-surface-variant italic mb-3">
+        <p class="text-body-lg text-on-surface-variant italic mb-3 whitespace-break-spaces">
           {{ selected?.quote }}
         </p>
-        <span class="font-label-caps text-primary-800">{{
+        <span class="font-label-caps text-primary-800 whitespace-break-spaces">{{
           selected?.description
         }}</span>
       </div>
@@ -58,7 +58,7 @@ function selectReference(index: number) {
         :description="ref.quote"
         :ui="{
           description:
-            'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+            'before:content-[open-quote] after:content-[close-quote] line-clamp-3 whitespace-break-spaces',
         }"
         :class="[
           'w-64 shrink-0',

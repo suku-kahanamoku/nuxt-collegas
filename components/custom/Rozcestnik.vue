@@ -75,7 +75,7 @@ const destinations = [
           </h3>
 
           <p
-            class="text-body-md flex-1"
+            class="text-body-md flex-1 whitespace-break-spaces"
             :class="
               dest.highlight ? 'text-on-primary/70' : 'text-on-surface-variant'
             "

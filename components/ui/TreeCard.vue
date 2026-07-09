@@ -35,7 +35,7 @@ defineProps<{
       </p>
       <div
         v-if="description"
-        class="font-body-md text-body-md text-on-surface-variant"
+        class="font-body-md text-body-md text-on-surface-variant whitespace-break-spaces"
       >
         <p>
           {{ description }}

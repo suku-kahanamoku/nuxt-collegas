@@ -64,7 +64,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
       <div class="min-h-[3rem] flex flex-col justify-end">
         <p
           v-if="description"
-          class="font-body-md text-on-surface-variant line-clamp-4"
+          class="font-body-md text-on-surface-variant line-clamp-4 whitespace-break-spaces"
         >
           {{ description }}
         </p>

@@ -55,7 +55,7 @@ const services = [
             </UiTitle>
           </template>
 
-          <p class="text-body-md text-on-surface-variant flex-1">
+          <p class="text-body-md text-on-surface-variant flex-1 whitespace-break-spaces">
             {{ s.description }}
           </p>
 

@@ -65,7 +65,7 @@ defineProps<{
       </h3>
       <p
         v-if="callout.description"
-        class="text-body-sm text-on-surface-variant mb-stack-md"
+        class="text-body-sm text-on-surface-variant mb-stack-md whitespace-break-spaces"
       >
         {{ callout.description }}
       </p>

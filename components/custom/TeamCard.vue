@@ -72,7 +72,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
         </h3>
       </div>
 
-      <p class="text-sm text-on-surface-variant leading-relaxed flex-1">
+      <p class="text-sm text-on-surface-variant leading-relaxed flex-1 whitespace-break-spaces">
         {{ bio }}
       </p>
 
