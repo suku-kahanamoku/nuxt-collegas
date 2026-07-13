@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import servicePages from "~/assets/data/service-pages";
 
 definePageMeta({ title: "Finance | Finanční poradenství" });
 useHead({
@@ -14,20 +15,15 @@ useHead({
   ],
 });
 
-const relatedLinks = [
-  { label: "Nezávislý finanční audit", to: "/services/finance#audit" },
-  { label: "Finanční plán", to: "/services/finance#plan" },
-  { label: "Zajištění rizik", to: "/services/finance#risk" },
-  {
-    label: "Odškodnění",
-    to: "/services/finance#compensation",
-  },
-];
+const financePage = servicePages.finance;
 
 const caseStudies = caseStudiesData.finance.map((cs) => ({
   ...cs,
   to: `/case-studies/${cs.slug}`,
 }));
+
+const relatedLinks = [...financePage.asideMenus];
+const serviceCards = [...financePage.related.cards];
 
 const specialistSlugs = ["lukas-formanek", "filip-benes", "tomas-kalous"];
 
@@ -333,102 +329,31 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
-              Komplexní finanční péče
+              <h2 class="text-headline-md md:text-headline-lg text-primary-800">
+              {{ financePage.related.title }}
             </h2>
           </div>
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Všechny oblasti financí řešíme v souvislostech. Každá služba
-            navazuje na předchozí a podporuje dlouhodobou stabilitu.
+            {{ financePage.related.description }}
           </p>
         </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
-        >
-          <!-- Service 1 -->
-          <UiBaseCard to="/services/finance#audit">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+          <UiBaseCard
+            v-for="service in serviceCards"
+            :key="service.to"
+            :to="service.to"
+          >
             <template #header>
               <h3
                 class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
-                Nezávislý finanční audit
+                {{ service.title }}
               </h3>
             </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Detailní rozbor smluv, nákladů a nastavení vašich financí. Získáte
-              jasný přehled, odhalení slabých míst a doporučení konkrétních
-              kroků.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 2 -->
-          <UiBaseCard to="/services/finance#plan">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Finanční plán
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Strategie, která propojuje rezervy, investice i financování v
-              souladu s vašimi cíli. Praktický plán pro dnešní rozhodování i
-              budoucí etapy života.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 3 -->
-          <UiBaseCard to="/services/finance#risk">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Zajištění rizik
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je
-              správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší
-              reálné situaci.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 4 -->
-          <UiBaseCard to="/services/finance#compensation">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Odškodnění
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné
-              pojistné události, cílem je jediné: získat spravedlivé odškodnění
-              v plné výši.
+              {{ service.description }}
             </p>
             <template #footer>
               <div

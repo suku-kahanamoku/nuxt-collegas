@@ -1,39 +1,5 @@
 <script setup lang="ts">
-const destinations = [
-  {
-    icon: "i-material-symbols-account-balance-wallet",
-    title: "Finance",
-    label: "Začít audit",
-    description:
-      "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
-    to: "/services/finance",
-    highlight: true,
-  },
-  {
-    icon: "i-material-symbols-trending-up",
-    title: "Správa kapitálu",
-    label: "Správa investic",
-    description:
-      "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
-    to: "/services/capital-management",
-  },
-  {
-    icon: "i-material-symbols-balance",
-    title: "Daně a právo",
-    label: "Chci poradit s daněmi",
-    description:
-      "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
-    to: "/services/tax-legal",
-  },
-  {
-    icon: "i-material-symbols-home-work",
-    title: "Reality a energie",
-    label: "Realitní služby",
-    description:
-      "Realitní služby, správa nemovitostí, optimalizace energetických nákladů a developerské projekty. Efektivní správa a využití majetku.",
-    to: "/services/real-estate-energy",
-  },
-];
+import destinations from "~/assets/data/service-menu.json";
 </script>
 
 <template>
@@ -55,7 +21,7 @@ const destinations = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-stack-md">
         <UiBaseCard
           v-for="dest in destinations"
-          :key="dest.to"
+          :key="dest.key"
           :to="dest.to"
           :highlight="dest.highlight"
         >
@@ -90,7 +56,7 @@ const destinations = [
                 dest.highlight ? 'text-secondary-fixed' : 'text-secondary-700'
               "
             >
-              {{ dest.label }}
+              {{ dest.ctaLabel }}
               <UIcon
                 name="i-material-symbols-arrow-forward"
                 class="text-body-md transition-transform duration-200 group-hover:translate-x-1"

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import services from "~/assets/data/service-menu.json";
+
 const navItems = [
   {
     label: "Naše služby",
@@ -7,9 +9,9 @@ const navItems = [
     slot: "services",
     children: [
       {
-        label: "Finance",
-        to: "/services/finance",
-        icon: "i-material-symbols-account-balance-wallet",
+        label: services[0].navLabel,
+        to: services[0].to,
+        icon: services[0].icon,
         type: "trigger",
         children: [
           {
@@ -31,9 +33,9 @@ const navItems = [
         ],
       },
       {
-        label: "Investice",
-        to: "/services/capital-management",
-        icon: "i-material-symbols-trending-up",
+        label: services[1].navLabel,
+        to: services[1].to,
+        icon: services[1].icon,
         type: "trigger",
         children: [
           {
@@ -51,9 +53,9 @@ const navItems = [
         ],
       },
       {
-        label: "Daně a právo",
-        to: "/services/tax-legal",
-        icon: "i-material-symbols-balance",
+        label: services[2].navLabel,
+        to: services[2].to,
+        icon: services[2].icon,
         type: "trigger",
         children: [
           {
@@ -67,9 +69,9 @@ const navItems = [
         ],
       },
       {
-        label: "Reality a energie",
-        to: "/services/real-estate-energy",
-        icon: "i-material-symbols-home-work",
+        label: services[3].navLabel,
+        to: services[3].to,
+        icon: services[3].icon,
         type: "trigger",
         children: [
           {

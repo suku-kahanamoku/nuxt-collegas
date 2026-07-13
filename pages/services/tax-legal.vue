@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import servicePages from "~/assets/data/service-pages";
 
 definePageMeta({ title: "Daně a právo | Finanční poradenství" });
 useHead({
@@ -14,16 +15,7 @@ useHead({
   ],
 });
 
-const relatedLinks = [
-  {
-    label: "Daňové poradenství",
-    to: "/services/tax-legal#tax",
-  },
-  {
-    label: "Právní poradenství",
-    to: "/services/tax-legal#legal",
-  },
-];
+const taxPage = servicePages["tax-legal"];
 
 const caseStudies = caseStudiesData.tax.map((cs) => ({
   ...cs,
@@ -269,7 +261,7 @@ const teamMembers = specialistSlugs
 
           <UiAside
             title="Naše služby"
-            :menus="relatedLinks"
+            :menus="[...taxPage.asideMenus]"
             :callout="{
               title: 'Nezávazná konzultace',
               description:
@@ -301,73 +293,30 @@ const teamMembers = specialistSlugs
               >Související služby</span
             >
             <h2 class="text-headline-md md:text-headline-lg text-primary-800">
-              Daňové a právní služby
+              {{ taxPage.related.title }}
             </h2>
           </div>
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Daně a právo nastavujeme v souvislostech, aby rozhodnutí dávala
-            smysl nejen dnes, ale i v dlouhodobém horizontu.
+            {{ taxPage.related.description }}
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <!-- Service 1 -->
-          <UiBaseCard to="/services/tax-legal#tax">
+          <UiBaseCard
+            v-for="service in taxPage.related.cards"
+            :key="service.to"
+            :to="service.to"
+          >
             <template #header>
               <h3
                 class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
-                Daňové poradenství
+                {{ service.title }}
               </h3>
             </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Optimalizace daňové zátěže v návaznosti na příjmy, majetek,
-              podnikání a investice. Srozumitelně, legálně a dlouhodobě.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 2 -->
-          <UiBaseCard to="/services/tax-legal#legal">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Právní poradenství
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Smluvní agenda, převody nemovitostí, vlastnické struktury a
-              investiční vztahy nastavené s důrazem na jistotu a prevenci rizik.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 3 -->
-          <UiBaseCard to="/services/tax-legal#tax-legal-overview">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Daňové a právní zázemí
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Propojený přístup, který snižuje nejistotu, předchází problémům a
-              pomáhá dělat důležitá rozhodnutí s klidem a kontrolou.
+              {{ service.description }}
             </p>
             <template #footer>
               <div

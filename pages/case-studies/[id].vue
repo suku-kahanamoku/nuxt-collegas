@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
+import services from "~/assets/data/service-menu.json";
 
 type CaseStudyCategory = keyof typeof caseStudiesData;
 type CaseStudyItem = (typeof caseStudiesData)[CaseStudyCategory][number];
@@ -22,12 +23,9 @@ if (!caseStudy.value) {
   });
 }
 
-const serviceLabel: Record<string, string> = {
-  finance: "Finance",
-  capital: "Správa kapitálu",
-  tax: "Daně a právo",
-  "real-estate": "Reality a energie",
-};
+const serviceLabel = Object.fromEntries(
+  services.map((service) => [service.serviceCategory, service.title]),
+) as Record<string, string>;
 
 const metaDescription = computed(() => {
   const raw = caseStudy.value?.description || "Detail modelové studie.";

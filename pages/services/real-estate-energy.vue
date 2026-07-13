@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import servicePages from "~/assets/data/service-pages";
 
 definePageMeta({ title: "Reality a energie | Finanční poradenství" });
 useHead({
@@ -14,24 +15,7 @@ useHead({
   ],
 });
 
-const relatedLinks = [
-  {
-    label: "Energetická optimalizace",
-    to: "/services/real-estate-energy#energy",
-  },
-  {
-    label: "Realitní služby",
-    to: "/services/real-estate-energy#real-estate",
-  },
-  {
-    label: "Správa nemovitostí",
-    to: "/services/real-estate-energy#property-management",
-  },
-  {
-    label: "Developerské projekty",
-    to: "/services/real-estate-energy#development",
-  },
-];
+const realEstatePage = servicePages["real-estate-energy"];
 
 const caseStudies = caseStudiesData["real-estate"].map((cs) => ({
   ...cs,
@@ -305,7 +289,7 @@ const teamMembers = specialistSlugs
 
           <UiAside
             title="Naše služby"
-            :menus="relatedLinks"
+            :menus="[...realEstatePage.asideMenus]"
             :callout="{
               title: 'Nezávazná konzultace',
               description:
@@ -337,97 +321,30 @@ const teamMembers = specialistSlugs
               >Související služby</span
             >
             <h2 class="text-headline-md md:text-headline-lg text-primary-800">
-              Realitní a energetické služby
+              {{ realEstatePage.related.title }}
             </h2>
           </div>
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Propojujeme energie, reality i provoz majetku do jednoho funkčního
-            rámce s cílem snížit náklady a zvýšit dlouhodobou výkonnost.
+            {{ realEstatePage.related.description }}
           </p>
         </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
-        >
-          <!-- Service 1 -->
-          <UiBaseCard to="/services/real-estate-energy#energy">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+          <UiBaseCard
+            v-for="service in realEstatePage.related.cards"
+            :key="service.to"
+            :to="service.to"
+          >
             <template #header>
               <h3
                 class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
-                Energetická optimalizace
+                {{ service.title }}
               </h3>
             </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Analyzujeme spotřebu, smlouvy i sazby a navrhujeme řešení, která
-              dlouhodobě snižují energetické náklady v domácnosti i firmě.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 2 -->
-          <UiBaseCard to="/services/real-estate-energy#real-estate">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Realitní služby
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Kompletní servis pro prodej i pronájem od přípravy nemovitosti po
-              právní vypořádání transakce.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 3 -->
-          <UiBaseCard to="/services/real-estate-energy#property-management">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Správa nemovitostí
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Zajišťujeme výběr nájemníků, provozní servis, administrativu i
-              ekonomický přehled, aby majetek fungoval bez starostí.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 4 -->
-          <UiBaseCard to="/services/real-estate-energy#development">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Developerské projekty
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Podílíme se na přípravě, financování, realizaci i prodeji projektů
-              s důrazem na ekonomiku, načasování a tržní atraktivitu.
+              {{ service.description }}
             </p>
             <template #footer>
               <div

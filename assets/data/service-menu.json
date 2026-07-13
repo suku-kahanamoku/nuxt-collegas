@@ -1,0 +1,43 @@
+[
+  {
+    "key": "finance",
+    "serviceCategory": "finance",
+    "icon": "i-material-symbols-account-balance-wallet",
+    "title": "Finance",
+    "navLabel": "Finance",
+    "description": "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+    "to": "/services/finance",
+    "ctaLabel": "Začít audit",
+    "highlight": true
+  },
+  {
+    "key": "capital-management",
+    "serviceCategory": "capital",
+    "icon": "i-material-symbols-trending-up",
+    "title": "Správa kapitálu",
+    "navLabel": "Investice",
+    "description": "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
+    "to": "/services/capital-management",
+    "ctaLabel": "Správa investic"
+  },
+  {
+    "key": "tax-legal",
+    "serviceCategory": "tax",
+    "icon": "i-material-symbols-balance",
+    "title": "Daně a právo",
+    "navLabel": "Daně a právo",
+    "description": "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
+    "to": "/services/tax-legal",
+    "ctaLabel": "Chci poradit s daněmi"
+  },
+  {
+    "key": "real-estate-energy",
+    "serviceCategory": "real-estate",
+    "icon": "i-material-symbols-home-work",
+    "title": "Reality a energie",
+    "navLabel": "Reality a energie",
+    "description": "Realitní služby, správa nemovitostí, optimalizace energetických nákladů a developerské projekty. Efektivní správa a využití majetku.",
+    "to": "/services/real-estate-energy",
+    "ctaLabel": "Realitní služby"
+  }
+]

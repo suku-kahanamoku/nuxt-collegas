@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import servicePages from "~/assets/data/service-pages";
 
 definePageMeta({ title: "Správa kapitálu | Finanční poradenství" });
 useHead({
@@ -14,20 +15,7 @@ useHead({
   ],
 });
 
-const relatedLinks = [
-  {
-    label: "Péče o investiční majetek",
-    to: "/services/capital-management#asset-care",
-  },
-  {
-    label: "Financování",
-    to: "/services/capital-management#financing",
-  },
-  {
-    label: "Investiční příležitosti",
-    to: "/services/capital-management#opportunities",
-  },
-];
+const capitalPage = servicePages["capital-management"];
 
 const caseStudies = caseStudiesData.capital.map((cs) => ({
   ...cs,
@@ -261,16 +249,10 @@ const teamMembers = specialistSlugs
                   Investiční příležitosti
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Investiční příležitosti nevznikají každý den. Naším cílem není
-                  nabídnout cokoliv, co zrovna funguje, ale vybírat a vytvářet
-                  příležitosti, které obstojí z pohledu výnosu, rizika i
-                  dlouhodobé strategie.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Aktivně vyhledáváme projekty a investice napříč oblastmi,
-                  například v nemovitostech nebo developerských záměrech. Každou
-                  příležitost detailně analyzujeme a předkládáme pouze ty, za
-                  kterými si dokážeme stát.
+                  Výjimečné investiční příležitosti se neobjevují každý den.
+                  Naším cílem proto není nabízet krátkodobé trendy, ale pečlivě
+                  vyhledávat a spoluvytvářet projekty, které dlouhodobě obstojí
+                  v poměru výnosu, rizika a strategického přínosu.
                 </p>
               </div>
             </UiImageText>
@@ -278,7 +260,7 @@ const teamMembers = specialistSlugs
 
           <UiAside
             title="Naše služby"
-            :menus="relatedLinks"
+            :menus="[...capitalPage.asideMenus]"
             :callout="{
               title: 'Nezávazná konzultace',
               description:
@@ -310,74 +292,30 @@ const teamMembers = specialistSlugs
               >Související služby</span
             >
             <h2 class="text-headline-md md:text-headline-lg text-primary-800">
-              Strategie růstu kapitálu
+              {{ capitalPage.related.title }}
             </h2>
           </div>
           <p
             class="font-body-md text-on-surface-variant max-w-sm md:text-right"
           >
-            Propojujeme dlouhodobou správu investic, financování a výběr
-            příležitostí do jednoho funkčního systému.
+            {{ capitalPage.related.description }}
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-          <!-- Service 1 -->
-          <UiBaseCard to="/services/capital-management#asset-care">
+          <UiBaseCard
+            v-for="service in capitalPage.related.cards"
+            :key="service.to"
+            :to="service.to"
+          >
             <template #header>
               <h3
                 class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
               >
-                Péče o investiční majetek
+                {{ service.title }}
               </h3>
             </template>
             <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Kontinuální řízení portfolia, pravidelné vyhodnocování výkonnosti
-              a úpravy strategie podle vývoje trhu i vašich cílů.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 2 -->
-          <UiBaseCard to="/services/capital-management#financing">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Financování
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Nastavení úvěrů pro bydlení, rekonstrukce i projekty tak, aby byly
-              bezpečné, přehledné a zároveň podporovaly další růst kapitálu.
-            </p>
-            <template #footer>
-              <div
-                class="inline-flex items-center gap-2 font-label-caps text-secondary-800 border-b border-transparent group-hover:border-secondary py-1 transition-all"
-              >
-                ZOBRAZIT SLUŽBU
-                <UIcon name="i-material-symbols-north-east" class="text-sm" />
-              </div>
-            </template>
-          </UiBaseCard>
-          <!-- Service 3 -->
-          <UiBaseCard to="/services/capital-management#opportunities">
-            <template #header>
-              <h3
-                class="text-title-md md:text-title-lg text-primary-800 group-hover:text-secondary transition-colors"
-              >
-                Investiční příležitosti
-              </h3>
-            </template>
-            <p class="font-body-md text-on-surface-variant mb-stack-lg">
-              Vyhledáváme a analyzujeme příležitosti, které dávají smysl z
-              pohledu výnosu, struktury i rizik a zapadají do strategie vašeho
-              portfolia.
+              {{ service.description }}
             </p>
             <template #footer>
               <div
