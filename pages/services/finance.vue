@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
-import servicePages from "~/assets/data/service-pages";
+import servicePages from "~/assets/data/service-pages.json";
 
 definePageMeta({ title: "Finance | Finanční poradenství" });
 useHead({
