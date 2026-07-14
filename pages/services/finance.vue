@@ -62,8 +62,9 @@ const teamMembers = specialistSlugs
       </template>
 
       <template #quote>
-        „Audit vám nepřinese jen seznam změn, ale především klid a kontrolu.
-        Budete přesně vědět, jak na tom jste a jaké kroky dávají smysl dál."
+        „Audit vašich rodinných financí vám nepřinese jen seznam změn, ale
+        především klid a kontrolu. Budete přesně vědět, jak na tom jste a jaké
+        kroky dávají smysl dál."
       </template>
 
       <template #attribution> — Chci jasno ve svých financích </template>
