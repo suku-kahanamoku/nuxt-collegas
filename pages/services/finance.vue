@@ -50,23 +50,23 @@ const teamMembers = specialistSlugs
       <template #heading>Finance</template>
 
       <template #body>
-        Je prvním krokem k tomu, abyste získali dokonalý přehled a klid. Za
-        vašimi financemi nevidíme jen stohy papírů a smluv, ale vnímáme je v
-        celkovém kontextu vašeho života. Společně projdeme, co vám už teď skvěle
-        funguje, případně kde efektivně snížit výdaje a kde naopak maximalizovat
-        růst vašeho majetku.
-      </template>
-
-      <template #quote>
-        „Našim dlouhodobým účelem je pomáhat rodinám, jednotlivcům ale také
+        Našim dlouhodobým účelem je pomáhat rodinám, jednotlivcům ale také
         firmám orientovat se ve světě financí, daní a realit. Tím pomáháme lidem
         vyřešit to podstatné aby měli čas, klid a pohodu na věci, které je baví
         a v kterých vynikají, a v důsledku toho jim také pomáháme zkvalitňovat
         život. My vynikáme v precizní práci finančních poradců a analytiků
-        rodinných a firemních financí."
+        rodinných a firemních financí.
+        <br />
+        <br />
+        Jsme Collegas
       </template>
 
-      <template #attribution> — Jsme Collegas </template>
+      <template #quote>
+        „Audit vám nepřinese jen seznam změn, ale především klid a kontrolu.
+        Budete přesně vědět, jak na tom jste a jaké kroky dávají smysl dál."
+      </template>
+
+      <template #attribution> — Chci jasno ve svých financích </template>
     </CustomTextComment>
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
@@ -202,18 +202,11 @@ const teamMembers = specialistSlugs
                   Nezávislý audit vašich rodinných financí
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Nezávislý audit vašich rodinných financí je první krok k tomu,
-                  abyste ve svých financích měli skutečný přehled a jistotu.
-                  Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše
-                  finance jako na celek - jak spolu jednotlivé části fungují,
-                  kde dávají smysl a kde naopak vznikají zbytečné náklady nebo
-                  rizika.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu
-                  financí a přeložíme vám je do srozumitelného obrazu. Díky tomu
-                  získáte jasný základ pro další rozhodování - bez tlaku, bez
-                  chaosu a nezávisle na konkrétních produktech nebo institucích.
+                  Je prvním krokem k tomu, abyste získali dokonalý přehled a
+                  klid. Za vašimi financemi nevidíme jen stohy papírů a smluv,
+                  ale vnímáme je v celkovém kontextu vašeho života. Společně
+                  projdeme, co vám už teď skvěle funguje, případně kde efektivně
+                  snížit výdaje a kde naopak maximalizovat růst vašeho majetku.
                 </p>
               </div>
             </UiImageText>
