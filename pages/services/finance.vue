@@ -50,19 +50,23 @@ const teamMembers = specialistSlugs
       <template #heading>Finance</template>
 
       <template #body>
-        Nezávislý finanční audit je první krok k tomu, abyste ve svých financích
-        měli skutečný přehled a jistotu. Nehodnotíme jen jednotlivé produkty,
-        ale díváme se na vaše finance jako na celek. Ukážeme vám, co je
-        nastavené správně, kde zbytečně přeplácíte a kde vám naopak unikají
-        příležitosti.
+        Je prvním krokem k tomu, abyste získali dokonalý přehled a klid. Za
+        vašimi financemi nevidíme jen stohy papírů a smluv, ale vnímáme je v
+        celkovém kontextu vašeho života. Společně projdeme, co vám už teď skvěle
+        funguje, případně kde efektivně snížit výdaje a kde naopak maximalizovat
+        růst vašeho majetku.
       </template>
 
       <template #quote>
-        „Audit vám nepřinese jen seznam změn, ale především klid a kontrolu.
-        Budete přesně vědět, jak na tom jste a jaké kroky dávají smysl dál."
+        „Našim dlouhodobým účelem je pomáhat rodinám, jednotlivcům ale také
+        firmám orientovat se ve světě financí, daní a realit. Tím pomáháme lidem
+        vyřešit to podstatné aby měli čas, klid a pohodu na věci, které je baví
+        a v kterých vynikají, a v důsledku toho jim také pomáháme zkvalitňovat
+        život. My vynikáme v precizní práci finančních poradců a analytiků
+        rodinných a firemních financí."
       </template>
 
-      <template #attribution> — Chci jasno ve svých financích </template>
+      <template #attribution> — Jsme Collegas </template>
     </CustomTextComment>
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
@@ -97,7 +101,7 @@ const teamMembers = specialistSlugs
     </section>
 
     <UiDarkBanner
-      title="Připraveni získat kontrolu nad financemi?"
+      title="Získejte kontrolu nad svými financemi ještě dnes."
       body="Nezávisle posoudíme vaši situaci, nastavíme finanční plán, ochranu rizik i odškodnění tak, aby vaše finance pracovaly dlouhodobě ve váš prospěch."
     >
       <UiButton to="/contact#contact-form" class="shrink-0 group">
@@ -115,7 +119,7 @@ const teamMembers = specialistSlugs
           >20+</span
         >
         <span class="font-label-caps uppercase tracking-widest"
-          >Let v oboru</span
+          >LET ZKUŠENOSTÍ PRO VÁS</span
         >
       </template>
 
@@ -188,21 +192,22 @@ const teamMembers = specialistSlugs
             <UiImageText
               id="audit"
               img-src="/img/intro/notes.png"
-              img-alt="Nezávislý finanční audit a plán"
+              img-alt="Nezávislý audit vašich rodinných financí a plán"
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Nezávislý finanční audit
+                  Nezávislý audit vašich rodinných financí
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Nezávislý finanční audit je první krok k tomu, abyste ve svých
-                  financích měli skutečný přehled a jistotu. Nehodnotíme jen
-                  jednotlivé produkty, ale díváme se na vaše finance jako na
-                  celek - jak spolu jednotlivé části fungují, kde dávají smysl a
-                  kde naopak vznikají zbytečné náklady nebo rizika.
+                  Nezávislý audit vašich rodinných financí je první krok k tomu,
+                  abyste ve svých financích měli skutečný přehled a jistotu.
+                  Nehodnotíme jen jednotlivé produkty, ale díváme se na vaše
+                  finance jako na celek - jak spolu jednotlivé části fungují,
+                  kde dávají smysl a kde naopak vznikají zbytečné náklady nebo
+                  rizika.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
                   Detailně projdeme vaše smlouvy, nastavení i celkovou strukturu
@@ -277,20 +282,21 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Odškodnění
+                  Collegas Odškodnění
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Odškodnění je oblast, do které se člověk dostane nečekaně -
-                  často ve chvíli, kdy řeší zdravotní, pracovní nebo osobní
-                  komplikace. A právě tehdy je nejdůležitější mít po svém boku
-                  někoho, kdo se v procesu vyzná a dokáže vás jím bezpečně
-                  provést.
+                  Do situace, kdy musíte řešit pojistnou událost, se většinou
+                  dostanete nečekaně – často ve chvíli, kdy prožíváte náročné
+                  zdravotní, pracovní nebo osobní komplikace. Právě v takových
+                  momentech potřebujete mít vedle sebe partnera, který se v
+                  celém procesu dokonale vyzná a bezpečně vás jím provede.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Pomáháme vám zorientovat se v nárocích, které vám skutečně
-                  vznikají, a postaráme se o jejich uplatnění vůči pojišťovnám
-                  nebo odpovědným subjektům. Výsledkem je nejen vyšší finanční
-                  kompenzace, ale především úleva.
+                  V rámci divize Collegas Odškodnění vám pomůžeme přesně
+                  vyčíslit a zorientovat se v nárocích, na které máte skutečné
+                  právo. Kompletně se postaráme o jejich uplatnění vůči
+                  pojišťovnám i viníkům. Výsledkem pro vás bude nejen
+                  spravedlivé finanční odškodnění, ale především obrovská úleva.
                 </p>
               </div>
             </UiImageText>
@@ -315,7 +321,7 @@ const teamMembers = specialistSlugs
       bg-image="/img/intro/stamp.png"
       label="FINANCE"
       title="Jasno, plán a ochrana"
-      body="Od nezávislého auditu přes finanční plán až po ochranu rizik a odškodnění. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
+      body="Od nezávislého rodinného auditu přes finanční plán až po ochranu rizik a odškodnění. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
       heading-tag="h2"
     />
 
@@ -329,7 +335,7 @@ const teamMembers = specialistSlugs
               class="font-label-caps text-secondary-800 block mb-stack-sm uppercase"
               >Související služby</span
             >
-              <h2 class="text-headline-md md:text-headline-lg text-primary-800">
+            <h2 class="text-headline-md md:text-headline-lg text-primary-800">
               {{ financePage.related.title }}
             </h2>
           </div>
@@ -339,7 +345,9 @@ const teamMembers = specialistSlugs
             {{ financePage.related.description }}
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
+        >
           <UiBaseCard
             v-for="service in serviceCards"
             :key="service.to"

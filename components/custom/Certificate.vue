@@ -29,23 +29,31 @@ const certifications = [
 const seniority = [
   {
     icon: "i-material-symbols-library-books",
-    text: "Více než 20 let aktivní praxe v oblasti finančního poradenství",
+    text: "Více než 20 let aktivní praxe našich poradců ve finančním světě",
   },
   {
     icon: "i-material-symbols-group",
-    text: "Zkušenosti s více než 20 000 klienty napříč celou ČR",
+    text: "Zkušenosti s více než 10 000 klienty po celé České republice",
   },
   {
     icon: "i-material-symbols-handshake",
-    text: "Dlouhodobá spolupráce s předními pojišťovnami a investičními společnostmi",
+    text: "Vytváříme řešení na míru každému klientovi",
   },
   {
-    icon: "i-material-symbols-school",
-    text: "Pravidelné vzdělávání a sledování legislativních změn",
+    icon: "i-material-symbols-rocket-launch",
+    text: "V poradenství využíváme nejmodernější technologie",
   },
   {
     icon: "i-material-symbols-workspace-premium",
-    text: "Práce pod dohledem České národní banky a evropských dohledových orgánů",
+    text: "Dlouhodobé partnerství s předními pojišťovnami a investičními domy",
+  },
+  {
+    icon: "i-material-symbols-school",
+    text: "Soustavné vzdělávání týmu a sledování legislativních změn",
+  },
+  {
+    icon: "i-material-symbols-verified-user-outline",
+    text: "Práce pod přímým dohledem České národní banky a evropských kontrolních orgánů",
   },
 ];
 
@@ -90,9 +98,8 @@ function onImgErrorByIndex(i: number) {
                     class="text-secondary-700 text-base shrink-0"
                   />
                   <span class="text-body-md text-primary-800">
-                    Poskytujeme finanční služby pod dohledem České národní
-                    banky, příslušných evropských dohledových orgánů a jsme
-                    členy odborných asociací.
+                    Všechny naše služby poskytujeme v plném souladu s pravidly
+                    České národní banky a evropských dohledových orgánů.
                   </span>
                 </li>
               </ul>
@@ -104,7 +111,7 @@ function onImgErrorByIndex(i: number) {
               <h2
                 class="text-headline-md md:text-headline-lg font-serif text-primary-800"
               >
-                Zkušenost
+                Proč nám klienti věří
               </h2>
               <ul class="flex flex-col gap-stack-sm">
                 <li

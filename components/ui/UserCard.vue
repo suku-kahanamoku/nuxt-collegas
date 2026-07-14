@@ -55,7 +55,7 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
           {{ name }}
         </h3>
         <p
-          class="font-label-caps text-secondary-800 uppercase tracking-widest mt-1 line-clamp-2"
+          class="font-label-caps text-secondary-800 uppercase tracking-widest mt-1 whitespace-break-spaces"
         >
           {{ role }}
         </p>

@@ -1,37 +1,8 @@
 [
   {
-    "slug": "tomas-kalous",
-    "name": "Ing. Tomáš Kalous",
-    "role": "Zakladatel",
-    "group": "founders",
-    "photo": "/img/user/kalous.png",
-    "headline": "Zakladatel",
-    "intro": "",
-    "about": "",
-    "email": "tomas.kalous@collegas.cz",
-    "phone": "+420 774 344 864",
-    "brand": "COLLEGAS",
-    "slogan": "",
-    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)",
-    "metrics": [
-      {
-        "value": "20+",
-        "label": "Let Praxe"
-      },
-      {
-        "value": "CEO",
-        "label": "Zakladatel"
-      },
-      {
-        "value": "500+",
-        "label": "Spokojených Klientů"
-      }
-    ]
-  },
-  {
     "slug": "marek-butula",
     "name": "Marek Butula",
-    "role": "Zakladatel & výkonný ředitel",
+    "role": "Zakladatel\nvýkonný ředitel",
     "group": "founders",
     "photo": "/img/user/butula.png",
     "headline": "Zakladatel & výkonný ředitel",
@@ -100,6 +71,35 @@
     ]
   },
   {
+    "slug": "tomas-kalous",
+    "name": "Ing. Tomáš Kalous",
+    "role": "Zakladatel",
+    "group": "founders",
+    "photo": "/img/user/kalous.png",
+    "headline": "Zakladatel",
+    "intro": "",
+    "about": "",
+    "email": "tomas.kalous@collegas.cz",
+    "phone": "+420 774 344 864",
+    "brand": "COLLEGAS",
+    "slogan": "",
+    "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)",
+    "metrics": [
+      {
+        "value": "20+",
+        "label": "Let Praxe"
+      },
+      {
+        "value": "CEO",
+        "label": "Zakladatel"
+      },
+      {
+        "value": "500+",
+        "label": "Spokojených Klientů"
+      }
+    ]
+  },
+  {
     "slug": "lukas-formanek",
     "name": "Bc. Lukáš Formánek",
     "role": "Senior finanční specialista",
@@ -143,10 +143,10 @@
   {
     "slug": "filip-benes",
     "name": "Filip Beneš",
-    "role": "Specialista na odškodnění",
+    "role": "Specialista Collegas odškodnění",
     "group": "consultants",
     "photo": "/img/user/benes.png",
-    "headline": "Specialista na odškodnění",
+    "headline": "Specialista Collegas odškodnění",
     "intro": "",
     "about": "",
     "email": "filip.benes@collegas.cz",
@@ -172,10 +172,10 @@
   {
     "slug": "jan-radosta",
     "name": "Ing. Jan Radosta",
-    "role": "Hypotéční specialista",
+    "role": "Specialista pro privátní klientelu",
     "group": "consultants",
     "photo": "/img/user/radosta.png",
-    "headline": "Hypotéční specialista",
+    "headline": "Specialista pro privátní klientelu",
     "intro": "",
     "about": "Oblasti financí se věnuji více než 20 let. Po celou tuto dobu jsem sbíral nové zkušenosti a poznatky a stal jsem se profesionálem v oblasti financí a úvěrů.\n\nPrioritou pro mne je spokojený klient. Proto každý pracovní případ řeším s maximální pečlivostí, precizností a silnou orientací na nejlepší možný výsledek.\n\nRočně se vždy účastním několika školení různých bankovních subjektů, abych měl vždy aktuální informace a novinky z ČNB a mohl je předat dál mezi své a potencionální klienty.",
     "email": "jan.radosta@collegas.cz",
@@ -1055,7 +1055,7 @@
   {
     "slug": "tomas-rozsypal",
     "name": "Ing. Tomáš Rozsypal",
-    "role": "Specialista na odškodnění",
+    "role": "Specialista Collegas odškodnění",
     "group": "consultants",
     "photo": "/img/user/rozsypal.png",
     "intro": "",
@@ -2390,7 +2390,7 @@
   {
     "slug": "jana-grebenscikova",
     "name": "Jana Grebenščiková",
-    "role": "Asistentka realitní kanceláře",
+    "role": "Asistentka Collegas reality",
     "group": "backoffice",
     "photo": "/img/user/grebenscikova.png",
     "intro": "",
@@ -2415,7 +2415,7 @@
   {
     "slug": "hana-kureckova",
     "name": "Ing. Hana Kurečková",
-    "role": "Finanční oddělení",
+    "role": "Manažer finanční oddělení",
     "group": "backoffice",
     "photo": "/img/user/kureckova.png",
     "intro": "",
@@ -2509,7 +2509,7 @@
   {
     "slug": "martin-benus",
     "name": "Martin Beňuš",
-    "role": "Realitní specialista",
+    "role": "Jednatel Collegas reality\nMakléř Collegas reality",
     "group": "consultants",
     "photo": "/img/user/benus.png",
     "intro": "",
@@ -2522,7 +2522,7 @@
   {
     "slug": "gabriela-podobova",
     "name": "Ing. Gabriela Podobová",
-    "role": "Makléř realitní kanceláře",
+    "role": "Makléř Collegas reality",
     "group": "consultants",
     "photo": "/img/user/podobova.png",
     "intro": "",
@@ -2536,7 +2536,7 @@
   {
     "slug": "pavel-sagat",
     "name": "Pavel Šagát",
-    "role": "Makléř realitní kanceláře",
+    "role": "Makléř Collegas reality",
     "group": "consultants",
     "photo": "/img/user/sagat.png",
     "intro": "",
@@ -2549,7 +2549,7 @@
   {
     "slug": "klara-seplava",
     "name": "Klára Šeplavá",
-    "role": "Asistentka odškodnění",
+    "role": "Asistentka Collegas odškodnění",
     "group": "backoffice",
     "photo": "/img/user/seplava.png",
     "intro": "",
@@ -2576,7 +2576,7 @@
   {
     "slug": "lucie-simova",
     "name": "Bc. Lucie Šímová",
-    "role": "Odškodnění",
+    "role": "Collegas odškodnění",
     "group": "consultants",
     "photo": "/img/user/simova.png",
     "intro": "",
@@ -2590,7 +2590,7 @@
   {
     "slug": "jakub-sima",
     "name": "Bc. Jakub Šíma",
-    "role": "Odškodnění",
+    "role": "Collegas odškodnění",
     "group": "consultants",
     "photo": "/img/intro/stamp.png",
     "intro": "",

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 definePageMeta({
-  title: "Nezávislý finanční audit | Finanční poradenství",
+  title: "Nezávislý audit vašich rodinných financí | Finanční poradenství",
 });
 
 useHead({
-  title: "Nezávislý finanční audit | Finanční poradenství",
+  title: "Nezávislý audit vašich rodinných financí | Finanční poradenství",
   meta: [
     {
       name: "description",
       content:
-        "Nezávislý finanční audit odhalí slabá místa ve smlouvách i nákladech. Získáte jasný přehled financí, konkrétní doporučení a plán dalších kroků.",
+        "Nezávislý audit vašich rodinných financí odhalí slabá místa ve smlouvách i nákladech. Získáte jasný přehled financí, konkrétní doporučení a plán dalších kroků.",
     },
   ],
 });

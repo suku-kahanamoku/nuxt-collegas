@@ -1,7 +1,10 @@
 const servicePages = {
   finance: {
     asideMenus: [
-      { label: "Nezávislý finanční audit", to: "/services/finance#audit" },
+      {
+        label: "Nezávislý audit vašich rodinných financí",
+        to: "/services/finance#audit",
+      },
       { label: "Finanční plán", to: "/services/finance#plan" },
       { label: "Zajištění rizik", to: "/services/finance#risk" },
       { label: "Odškodnění", to: "/services/finance#compensation" },
@@ -12,7 +15,7 @@ const servicePages = {
         "Všechny oblasti financí řešíme v souvislostech. Každá služba navazuje na předchozí a podporuje dlouhodobou stabilitu.",
       cards: [
         {
-          title: "Nezávislý finanční audit",
+          title: "Nezávislý audit vašich rodinných financí",
           description:
             "Detailní rozbor smluv, nákladů a nastavení vašich financí. Získáte jasný přehled, odhalení slabých míst a doporučení konkrétních kroků.",
           to: "/services/finance#audit",
@@ -40,9 +43,15 @@ const servicePages = {
   },
   "capital-management": {
     asideMenus: [
-      { label: "Péče o investiční majetek", to: "/services/capital-management#asset-care" },
+      {
+        label: "Péče o investiční majetek",
+        to: "/services/capital-management#asset-care",
+      },
       { label: "Financování", to: "/services/capital-management#financing" },
-      { label: "Investiční příležitosti", to: "/services/capital-management#opportunities" },
+      {
+        label: "Investiční příležitosti",
+        to: "/services/capital-management#opportunities",
+      },
     ],
     related: {
       title: "Strategie růstu kapitálu",
@@ -103,10 +112,22 @@ const servicePages = {
   },
   "real-estate-energy": {
     asideMenus: [
-      { label: "Energetická optimalizace", to: "/services/real-estate-energy#energy" },
-      { label: "Realitní služby", to: "/services/real-estate-energy#real-estate" },
-      { label: "Správa nemovitostí", to: "/services/real-estate-energy#property-management" },
-      { label: "Developerské projekty", to: "/services/real-estate-energy#development" },
+      {
+        label: "Energetická optimalizace",
+        to: "/services/real-estate-energy#energy",
+      },
+      {
+        label: "Realitní služby",
+        to: "/services/real-estate-energy#real-estate",
+      },
+      {
+        label: "Správa nemovitostí",
+        to: "/services/real-estate-energy#property-management",
+      },
+      {
+        label: "Developerské projekty",
+        to: "/services/real-estate-energy#development",
+      },
     ],
     related: {
       title: "Realitní a energetické služby",

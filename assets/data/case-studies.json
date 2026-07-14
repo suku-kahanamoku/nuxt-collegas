@@ -3,10 +3,10 @@
     {
       "slug": "audit-financi-uspora-148k",
       "serviceCategory": "finance",
-      "category": "Finanční audit",
+      "category": "Audit rodinných financí",
       "year": "2024",
-      "title": "Audit financí: úspora 148 000 Kč ročně",
-      "description": "U klienta jsme při nezávislém auditu objevili zbytečné nákladové položky a duplicitní smlouvy. Po úpravě celkového nastavení získal dokonalý přehled, nižší finanční zatížení a jasný plán dalších kroků.",
+      "title": "Audit vašich rodinných financí: úspora 148 000 Kč ročně",
+      "description": "U klienta jsme při nezávislém rodinném auditu objevili zbytečné nákladové položky a duplicitní smlouvy. Po úpravě celkového nastavení získal dokonalý přehled, nižší finanční zatížení a jasný plán dalších kroků.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
       "imgAlt": "Klient při konzultaci nad finančním auditem",
       "detail": {
@@ -19,7 +19,7 @@
     {
       "slug": "rodinny-plan-strategie-15-let",
       "serviceCategory": "finance",
-      "category": "Financni plan",
+      "category": "Finanční plán",
       "year": "2023",
       "title": "Rodinný plán: jasná strategie na 15 let",
       "description": "Rodina řešila financování bydlení, tvorbu rezerv i investiční aktivity bez vzájemné provázanosti. Nastavili jsme jednotnou strategii, která efektivně propojuje každodenní alokaci zdrojů s dlouhodobými životními cíli.",
@@ -35,7 +35,7 @@
     {
       "slug": "odskodneni-navyseni-420k",
       "serviceCategory": "finance",
-      "category": "Odskodneni",
+      "category": "Odškodnění",
       "year": "2024",
       "title": "Po nehodě: navýšení odškodnění o 420 000 Kč",
       "description": "Klient měl po dopravní nehodě pojišťovnou výrazně podhodnocené nároky. Převzali jsme kompletní komunikaci s pojistitelem a pomohli uplatnit odškodné v plné legislativní výši.",
@@ -53,7 +53,7 @@
     {
       "slug": "rebalance-portfolia-stabilita-vynosu",
       "serviceCategory": "capital",
-      "category": "Pece o majetek",
+      "category": "Péče o majetek",
       "year": "2024",
       "title": "Rebalancí portfolia k vyšší stabilitě výnosu",
       "description": "Portfolio klienta jsme průběžně upravili podle aktuálního vývoje na trzích a jeho dlouhodobých cílů. Výsledkem je vyváženější struktura aktiv, snížení celkového kolísání a prokazatelně lepší dlouhodobá výkonnost.",
@@ -85,7 +85,7 @@
     {
       "slug": "investicni-prilezitost-vynos-riziko",
       "serviceCategory": "capital",
-      "category": "Investicni prilezitosti",
+      "category": "Investiční příležitosti",
       "year": "2024",
       "title": "Výběr příležitostí s důrazem na výnos a riziko",
       "description": "Po detailní analýze několika investičních projektů jsme doporučili variantu, která přesně zapadla do dlouhodobé strategie klienta. Díky správně zvolené struktuře zvýšil potenciál růstu při zachování plně kontrolovaného rizika.",
@@ -103,12 +103,12 @@
     {
       "slug": "danova-optimalizace-bez-rizik",
       "serviceCategory": "tax",
-      "category": "Danove poradenstvi",
+      "category": "Daňové poradenství",
       "year": "2024",
       "title": "Daňová optimalizace bez zbytečných rizik",
       "description": "Klient generoval příjmy z podnikání i investičních aktivit bez jednotné a provázané struktury. Nastavili jsme komplexní daňové řešení v širších souvislostech, čímž jsme eliminovali neefektivní odvody a snížili zbytečnou daňovou zátěž.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
-      "imgAlt": "Podnikatel konzultuje danove nastaveni",
+      "imgAlt": "Podnikatel konzultuje daňové nastavení",
       "detail": {
         "overview": "Klient disponoval více příjmovými zdroji, avšak scházel jim jednotný daňový rámec. Tento stav vedl k neefektivnímu zdanění a zbytečnému odlivu kapitálu, který mohl být dále zhodnocován.",
         "challenge": "Sjednotit a konsolidovat celkové daňové nastavení tak, aby plně respektovalo aktuální legislativu, minimalizovalo právní rizika a současně zajistilo, že klient nebude odvádět více, než je zákonně nutné.",
@@ -119,12 +119,12 @@
     {
       "slug": "pravni-zazemi-majetek-investice",
       "serviceCategory": "tax",
-      "category": "Pravni poradenstvi",
+      "category": "Právní poradenství",
       "year": "2023",
       "title": "Právní zázemí pro majetek a investice",
       "description": "Nastavili jsme smluvní dokumentaci a majetkoprávní vztahy tak, aby garantovaly dlouhodobou funkčnost, právní jistotu a udržitelný rozvoj.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
-      "imgAlt": "Klient resi pravni nastaveni majetku",
+      "imgAlt": "Klient řeší právní nastavení majetku",
       "detail": {
         "overview": "Klient disponoval nejednotnou smluvní dokumentací. Chybějící provázanost smluv vystavovala klientovo podnikání i soukromý majetek zbytečným právním a provozním hrozbám.",
         "challenge": "Nastavit právní strukturu celkového majetku a investičních aktivit tak, aby byla maximálně přehledná a připravená na budoucí rozšiřování.",
@@ -135,12 +135,12 @@
     {
       "slug": "komplexni-danove-pravni-zazemi",
       "serviceCategory": "tax",
-      "category": "Dane a pravo",
+      "category": "Daně a právo",
       "year": "2024",
       "title": "Komplexní zázemí pro klidné rozhodování",
       "description": "Propojili jsme daňové a právní poradenství do jednoho synergického celku. Klient díky tomu získal jasný rámec pro rozhodování, který eliminuje zbytečné vícenáklady a neočekávaná rizika.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
-      "imgAlt": "Poradce vysvetluje danove a pravni souvislosti",
+      "imgAlt": "Poradce vysvětluje daňové a právní souvislosti",
       "detail": {
         "overview": "Oddělené řešení daňové a právní agendy vedlo v minulosti k nejasnostem, procesním duplicitám a zbytečným výdajům při klíčových majetkových rozhodnutích.",
         "challenge": "Propojit obě specializované oblasti do jednotného a koordinovaného postupu, který bude pro klienta maximálně srozumitelný, efektivně řiditelný a dlouhodobě funkční.",
@@ -153,12 +153,12 @@
     {
       "slug": "energie-snizeni-nakladu-27",
       "serviceCategory": "real-estate",
-      "category": "Energeticka optimalizace",
+      "category": "Energetická optimalizace",
       "year": "2024",
       "title": "Snížení energetických nákladů o 27 procent ročně",
       "description": "Po detailní analýze spotřeby, smluvních podmínek a distribučních sazeb jsme nastavili efektivnější strukturu odběru. Klient díky tomu získal dlouhodobě udržitelný ekonomický model s okamžitým dopadem na provozní výdaje.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCyMCJXuap5zYsd6-EcXAOJc272ZF2horQ16S9yI4zoOTZBOXpa1C3AbQTj5EvLoa264GVAdDRfd5uFvI06sdOCpGmDavFqS3lILinQveRoZxIH_kU6_w4ZIDz1eFdFOKvN96N2G4j7ntbwme1_fJUgUSoraa7JVA01w7vHBedDiF4Sxb-gSQeS7xT3XsgkftY32khRKOpC8kOTNkGngh3fVxZgSR0N-sUda8QzTXDnm-2NxXFpvUe3NsR7yT5pgt8ISXlKUwAWGgQ",
-      "imgAlt": "Majitel firmy resi optimalizaci energetickych nakladu",
+      "imgAlt": "Majitel firmy řeší optimalizaci energetických nákladů",
       "detail": {
         "overview": "Klient dlouhodobě vynakládal vysoké částky za energie bez jasného zdůvodnění, proč tyto náklady rostou i navzdory stabilnímu a neměnnému provozu.",
         "challenge": "Přesně identifikovat skutečné příčiny ztráty energetické efektivity a navrhnout model, který zajistí stabilitu a ochranu nákladů i při budoucí cenové volatilitě na komoditních trzích.",
@@ -169,12 +169,12 @@
     {
       "slug": "prodej-nemovitosti-vyssi-cena",
       "serviceCategory": "real-estate",
-      "category": "Realitni sluzby",
+      "category": "Realitní služby",
       "year": "2023",
       "title": "Prodej nemovitosti s vyšší realizovanou cenou",
       "description": "Díky preciznímu ocenění, profesionální prezentaci a zkušenému vyjednávání jsme dosáhli nadstandardního finančního výsledku při zachování bezpečného právního průběhu celé transakce.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7LgD9NDR-JFsNYPVhMLNMhpUrYdjTmTpsEqU9DgH6cvTfkjcutzQ53N_t5IrvwJhYHfytH4EXNWO9LREq0-ptivi9eoWBH-uVzdL4Z1XRgNZI-H7LufK_CGiZ2mLoYz0nuSZ6a1feL7AQU2-TmxF6ezTpY2UUnswEbPCl60YzX3Ge-nfSk80Erxx3oy-SAXJHWQ-iKfnn4K4vBZHwlwF-WRbFmW5d7v_uw3Y-N-Eo5YAqVG11bDzgNXbTjcYe14kOBZJEgu37OP8",
-      "imgAlt": "Majitel prodava investicni byt s plnym servisem",
+      "imgAlt": "Majitel prodává investiční byt s plným servisem",
       "detail": {
         "overview": "Vlastník plánoval prodej investiční nemovitosti v krátkém časovém horizontu, avšak s požadavkem na maximalizaci výnosu a eliminaci jakýchkoliv právních či procesních komplikací.",
         "challenge": "Správně stanovit tržní hodnotu, efektivně oslovit bonitní segment zájemců a garantovat bezpečný transakční postup od prvních prohlídek až po finální finanční vypořádání.",
@@ -185,12 +185,12 @@
     {
       "slug": "sprava-nemovitosti-stabilni-vynos",
       "serviceCategory": "real-estate",
-      "category": "Sprava nemovitosti",
+      "category": "Správa nemovitostí",
       "year": "2024",
       "title": "Stabilní výnos bez provozních starostí",
       "description": "Převzali jsme kompletní správu nájemních jednotek od výběru nájemců až po technický servis. Míra obsazenosti i provozní kvalita zůstaly dlouhodobě stabilní, a to bez jakékoliv operativní zátěže pro vlastníka.",
       "imgSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuChj0M9c4RWC7HJZPOLrRNFwo6-2-8sKhJlyvWH4sn1gRnphBu8mbBbKYYRxWFhTl9b14dNZ5JBIkKY-xSfCGAy0l8gE3OPKlr3rhARzLLez_kDuyBbaja_jJl96FUu8BbcYFHQqT67vEoqhtIXgtvHqX-0OaxyFK7PFOJKeT6rLa4AskGB8M6up9FEVtubalwiWoeE8Hqz_pUBkDH5sBy5LwX9NrY3nJhZl0x-SxZorQNqlMx3GHiGcSdPHSwUCallfzKlRydPI5Y",
-      "imgAlt": "Investor sleduje vynosy z portfolia najemnich nemovitosti",
+      "imgAlt": "Investor sleduje výnosy z portfolia nájemních nemovitostí",
       "detail": {
         "overview": "Majitel nemovitostního portfolia čelil vysoké operativní zátěži a nepravidelnosti cashflow v důsledku neefektivního interního managementu pronájmů.",
         "challenge": "Stabilizovat míru obsazenosti, minimalizovat provozní incidenty, zajistit prověření bonity nájemců a nastavit transparentní reporting celkové výkonnosti portfolia.",

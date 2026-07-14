@@ -3,9 +3,9 @@ import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
 import servicePages from "~/assets/data/service-pages";
 
-definePageMeta({ title: "Správa kapitálu | Finanční poradenství" });
+definePageMeta({ title: "Růst a ochrana majetku | Finanční poradenství" });
 useHead({
-  title: "Správa kapitálu | Finanční poradenství",
+  title: "Růst a ochrana majetku | Finanční poradenství",
   meta: [
     {
       name: "description",
@@ -44,14 +44,19 @@ const teamMembers = specialistSlugs
 <template>
   <div class="w-full">
     <CustomTextComment heading-tag="h1" label="Naše služby">
-      <template #heading>Správa kapitálu</template>
+      <template #heading>Růst a ochrana majetku</template>
 
       <template #body>
-        Péče o investiční majetek vnímáme jako dlouhodobé partnerství, jehož
-        cílem je chránit a rozvíjet váš kapitál v souladu s vašimi ambicemi i
-        životním stylem. Nejde pouze o výběr investic, ale o citlivé a
-        kontinuální řízení celého portfolia s ohledem na vaše priority, časový
-        horizont i toleranci k riziku.
+        <p>
+          Investování pro nás znamená dlouhodobou péči o vaše finanční zázemí.
+          Společně se staráme o to, aby váš majetek neztrácel hodnotu a rostl
+          přesně podle vašich osobních priorit a potřeb.
+        </p>
+        <br />
+        <p>
+          Každý krok nastavujeme podle vašeho finančního plánu tak, aby vám váš
+          majetek přinášel radost.
+        </p>
       </template>
 
       <template #quote>
@@ -112,7 +117,7 @@ const teamMembers = specialistSlugs
           >20+</span
         >
         <span class="font-label-caps uppercase tracking-widest"
-          >Let v oboru</span
+          >LET ZKUŠENOSTÍ PRO VÁS</span
         >
       </template>
 

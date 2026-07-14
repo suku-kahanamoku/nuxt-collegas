@@ -15,7 +15,7 @@ const navItems = [
         type: "trigger",
         children: [
           {
-            label: "Finanční audit",
+            label: "Audit rodinných financí",
             to: "/services/finance#audit",
           },
           {

@@ -54,7 +54,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
 
       <!-- Role badge on photo -->
       <p
-        class="absolute bottom-4 left-5 right-5 text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-400"
+        class="absolute bottom-4 left-5 right-5 text-[10px] font-bold uppercase tracking-widest leading-relaxed text-secondary-400 whitespace-break-spaces"
       >
         {{ role }}
       </p>
@@ -73,7 +73,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
       </div>
 
       <p
-        class="text-sm text-on-surface-variant leading-relaxed flex-1 line-clamp-6"
+        class="text-sm text-on-surface-variant leading-relaxed flex-1 line-clamp-6 whitespace-break-spaces"
       >
         {{ description }}
       </p>

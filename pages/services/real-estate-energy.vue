@@ -114,7 +114,7 @@ const teamMembers = specialistSlugs
           >20+</span
         >
         <span class="font-label-caps uppercase tracking-widest"
-          >Let v oboru</span
+          >LET ZKUŠENOSTÍ PRO VÁS</span
         >
       </template>
 

@@ -88,7 +88,7 @@ const references = computed(
       >
         <!-- Role badge -->
         <p
-          class="text-xs font-bold uppercase tracking-widest mb-5 transition-all duration-700 text-secondary-400"
+          class="text-xs font-bold uppercase tracking-widest leading-relaxed mb-5 transition-all duration-700 text-secondary-400 whitespace-break-spaces"
           :class="
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
           "
@@ -259,7 +259,9 @@ const references = computed(
               );
             "
           >
-            <p class="text-white leading-relaxed mb-6 text-sm whitespace-break-spaces">
+            <p
+              class="text-white leading-relaxed mb-6 text-sm whitespace-break-spaces"
+            >
               "{{ t.quote }}"
             </p>
 

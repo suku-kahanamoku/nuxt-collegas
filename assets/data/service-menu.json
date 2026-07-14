@@ -5,7 +5,7 @@
     "icon": "i-material-symbols-account-balance-wallet",
     "title": "Finance",
     "navLabel": "Finance",
-    "description": "Nezávislý finanční audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+    "description": "Nezávislý audit vašich rodinných financí, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
     "to": "/services/finance",
     "ctaLabel": "Začít audit",
     "highlight": true
@@ -14,7 +14,7 @@
     "key": "capital-management",
     "serviceCategory": "capital",
     "icon": "i-material-symbols-trending-up",
-    "title": "Správa kapitálu",
+    "title": "Růst a ochrana majetku",
     "navLabel": "Investice",
     "description": "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
     "to": "/services/capital-management",

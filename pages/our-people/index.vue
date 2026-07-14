@@ -108,20 +108,21 @@ const backoffice = computed(() =>
       </UContainer>
     </section>
 
-    <!-- ── Seniorní tým ── -->
+    <!-- ── Tým seniorních poradců ── -->
     <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
       <UContainer>
         <div class="text-center mb-stack-lg">
           <h2
             class="text-headline-md md:text-headline-lg font-serif text-primary-800"
           >
-            Seniorní tým
+            Tým seniorních poradců
           </h2>
           <p
             class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
           >
-            Zkušení konzultanti a specialisté, kteří vedou klientské vztahy a
-            pomáhají nastavovat komplexní řešení s dlouhodobou perspektivou.
+            Profesionální konzultanti, kteří vás osobně provázejí klíčovými
+            rozhodnutími a pomáhají vám stavět bezpečná finanční řešení s
+            dlouhodobým výhledem.
           </p>
         </div>
         <div

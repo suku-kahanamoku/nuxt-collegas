@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const stats = [
-  { value: "20+", label: "Let v oboru", duration: 3000, interval: 400 },
+  { value: "20+", label: "LET ZKUŠENOSTÍ PRO VÁS", duration: 3000, interval: 400 },
   {
     value: "3",
-    label: "Licencované subjekty pod ČNB",
+    label: "LICENCOVANÉ SUBJEKTY POD ČNB",
     duration: 3000,
     interval: 1000,
   },
   {
     value: "9+",
-    label: "Společností ve skupině",
+    label: "SPOLEČNOSTÍ VE SKUPINĚ",
     duration: 3000,
     interval: 300,
   },
   {
     value: "100%",
-    label: "Nezávislost na bankách",
+    label: "NEZÁVISLOST NA BANKÁCH",
     duration: 3500,
     interval: 60,
   },
@@ -29,9 +29,11 @@ const stats = [
     </template>
 
     <template #body>
-      Více než 20 let stavíme naši práci na individuálním přístupu, analytickém
-      myšlení a měřitelných výsledcích. Jsme partnerem při důležitých finančních
-      rozhodnutích a hledáme řešení, která dávají smysl v souvislostech.
+      Naši práci opíráme o více než 20 let praktických zkušeností našich
+      poradců. Zakládáme si na individuálním přístupu, analytickém myšlení a
+      měřitelných výsledcích. Jsme vaším spolehlivým partnerem při důležitých
+      finančních rozhodnutích a vždy hledáme řešení, která dávají smysl v
+      širších souvislostech.
     </template>
 
     <template #quote>
@@ -52,7 +54,7 @@ const stats = [
             class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Regulováno <br />ČNB</span
+            >REGULOVÁNO <br />ČNB</span
           >
         </div>
         <div class="flex items-center gap-4">
@@ -61,7 +63,7 @@ const stats = [
             class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >20+ let <br />v oboru</span
+            >20+ LET <br />ZKUŠENOSTÍ PRO VÁS</span
           >
         </div>
         <div class="flex items-center gap-4">
@@ -70,7 +72,7 @@ const stats = [
             class="text-headline-lg text-secondary-800"
           />
           <span class="font-label-caps text-xs tracking-widest uppercase"
-            >Celorepubliková <br />působnost</span
+            >CELOREPUBLIKOVÁ <br />PŮSOBNOST</span
           >
         </div>
       </div>

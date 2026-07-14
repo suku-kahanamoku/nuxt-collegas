@@ -55,9 +55,10 @@ const items = [
         <p
           class="font-body-lg text-body-lg text-on-primary/70 mb-stack-lg from-bottom"
         >
-          Jsme poradenský tým specializovaný na komplexní finanční plánování.
-          Klientům pomáháme zvládat zásadní životní rozhodnutí – od financování
-          bydlení přes ochranu majetku až po dlouhodobé budování kapitálu.
+          Stojíme při vás, když řešíte důležité životní kroky. Jako
+          profesionální poradenský tým dáváme financím jasný řád a logiku.
+          Postaráme se o to, abyste měli nejvýhodnější hypotéku, bezpečně
+          chráněný majetek a spolehlivý plán pro dlouhodobé zhodnocování peněz.
         </p>
 
         <div class="flex gap-stack-md items-center flex-wrap from-bottom">

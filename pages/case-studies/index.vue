@@ -10,7 +10,7 @@ useHead({
     {
       name: "description",
       content:
-        "Souhrn modelových studií napříč oblastmi finance, správa kapitálu, daně a právo, reality a energie.",
+        "Souhrn modelových studií napříč oblastmi finance, Růst a ochrana majetku, daně a právo, reality a energie.",
     },
   ],
 });
@@ -26,7 +26,7 @@ const serviceLabel = Object.fromEntries(
 const filterOptions: Array<{ label: string; value: FilterValue }> = [
   { label: "Vše", value: "all" },
   { label: "Finance", value: "finance" },
-  { label: "Správa kapitálu", value: "capital" },
+  { label: "Růst a ochrana majetku", value: "capital" },
   { label: "Daně a právo", value: "tax" },
   { label: "Reality a energie", value: "real-estate" },
 ];
@@ -66,7 +66,9 @@ const filteredCaseStudies = computed(() => {
             >
           </template>
           <template #title>
-            <h1 class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-none">
+            <h1
+              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-none"
+            >
               Modelové studie
             </h1>
           </template>
@@ -78,7 +80,7 @@ const filteredCaseStudies = computed(() => {
           class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
         >
           Souhrn reálných situací, na kterých ukazujeme náš přístup napříč
-          financemi, správou kapitálu, daněmi a právem i realitami a energiemi.
+          financemi, růstem a ochranou majetku, daněmi a právem i realitami a energiemi.
         </p>
       </template>
     </UiIntro>

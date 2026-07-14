@@ -9,7 +9,7 @@ const userOptions = usersData.map((user) => ({
 }));
 
 const interestOptions = [
-  "Finanční audit",
+  "Audit rodinných financí",
   "Finanční plán",
   "Péče o investiční majetek",
   "Zajištění rizik",
