@@ -49,7 +49,7 @@ const servicePages = {
       },
       { label: "Financování", to: "/services/capital-management#financing" },
       {
-        label: "Investiční příležitosti",
+        label: "Řešení na míru",
         to: "/services/capital-management#opportunities",
       },
     ],
@@ -71,7 +71,7 @@ const servicePages = {
           to: "/services/capital-management#financing",
         },
         {
-          title: "Investiční příležitosti",
+          title: "Řešení na míru",
           description:
             "Vyhledáváme a analyzujeme příležitosti, které dávají smysl z pohledu výnosu, struktury i rizik a zapadají do strategie vašeho portfolia.",
           to: "/services/capital-management#opportunities",

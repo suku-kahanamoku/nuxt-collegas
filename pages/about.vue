@@ -87,7 +87,7 @@ const principles = [
             <p
               class="text-on-secondary-fixed font-headline-md italic leading-tight"
             >
-              „Nechtěli jsme jen plnit plán. Chtěli jsme nést odpovědnost."
+              „Je snadné žít v přítomnosti, když máte vyřešenou budoucnost."
             </p>
           </div>
         </div>
@@ -187,19 +187,20 @@ const principles = [
         <h2
           class="text-headline-md md:text-headline-lg font-serif text-primary-800"
         >
-          Naše principy
+          Jak přistupujeme k vašemu majetku
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Základem je důkladná analýza a otevřená komunikace. Nejprve definujeme
-          vaše cíle, časový horizont a toleranci k riziku. Teprve poté
-          navrhujeme konkrétní strukturu řešení.
+          Základem naší práce je hluboké porozumění vaší situaci a naprostá
+          otevřenost. Než navrhneme konkrétní řešení, společně detailně
+          definujeme vaše cíle, časové možnosti a přístup k riziku. Každou
+          strategii stavíme na míru vaší aktuální situaci.
         </p>
         <p
           class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
         >
-          „Nepracujeme s iluzí bezrizikového výnosu. Každé rozhodnutí má své
-          scénáře – pozitivní i negativní. Naší rolí je tato rizika
-          transparentně pojmenovat, kvantifikovat a řídit."
+          „Neslibujeme iluzi bezrizikového výnosu. Každá investice má své
+          scénáře. Naší rolí je tato rizika férově pojmenovat, srozumitelně vám
+          je vysvětlit a efektivně je řídit."
         </p>
       </div>
     </CustomUserPic&desc>

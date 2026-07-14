@@ -123,7 +123,7 @@ const teamMembers = specialistSlugs
         <h2
           class="text-headline-md md:text-headline-lg font-serif text-primary-800"
         >
-          Naše principy
+          Jak přistupujeme k daním a právu
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
           Daňové a právní otázky řešíme jako jeden celek. Zaměřujeme se na to,

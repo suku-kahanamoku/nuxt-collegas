@@ -131,7 +131,7 @@ const teamMembers = specialistSlugs
         <h2
           class="text-headline-md md:text-headline-lg font-serif text-primary-800"
         >
-          Naše principy
+          Jak přistupujeme k vašim financím
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
           Finance nastavujeme jako jeden funkční celek, který vychází z vašich

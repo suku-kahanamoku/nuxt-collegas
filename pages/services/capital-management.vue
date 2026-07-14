@@ -10,7 +10,7 @@ useHead({
     {
       name: "description",
       content:
-        "Péče o investiční majetek, chytré financování a investiční příležitosti v jednom celku. Pomáháme vám dlouhodobě chránit i rozvíjet kapitál.",
+        "Péče o investiční majetek, chytré financování a řešení na míru v jednom celku. Pomáháme vám dlouhodobě chránit i rozvíjet kapitál.",
     },
   ],
 });
@@ -129,7 +129,7 @@ const teamMembers = specialistSlugs
         <h2
           class="text-headline-md md:text-headline-lg font-serif text-primary-800"
         >
-          Naše principy
+          Jak přistupujeme k vašemu majetku
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
           Kapitál řídíme v souvislostech. Vyhodnocujeme výkonnost portfolia,
@@ -244,20 +244,33 @@ const teamMembers = specialistSlugs
             <UiImageText
               id="opportunities"
               img-src="/img/other/compass.png"
-              img-alt="Investiční příležitosti"
+              img-alt="Řešení na míru"
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Investiční příležitosti
+                  Řešení na míru
                 </h2>
+                <p class="text-body-md text-on-surface-variant">
+                  Naši specialisté na základě vašich přání, cílů ale také potřeb
+                  zpracují finanční plán vám na míru. Ten vám představíme,
+                  společně upravíme a nastavíme tak, aby splňoval vše, co od něj
+                  očekáváte. V průběhu času ho aktualizujeme a doplňujeme
+                  společně s vámi.
+                </p>
                 <p class="text-body-md text-on-surface-variant">
                   Výjimečné investiční příležitosti se neobjevují každý den.
                   Naším cílem proto není nabízet krátkodobé trendy, ale pečlivě
                   vyhledávat a spoluvytvářet projekty, které dlouhodobě obstojí
                   v poměru výnosu, rizika a strategického přínosu.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Aktivně monitorujeme trh napříč obory – se zaměřením na
+                  prémiové nemovitosti a developerské záměry. Každý projekt
+                  podrobujeme detailní analýze a partnerům předkládáme pouze ty
+                  příležitosti, za kterými si stoprocentně stojíme.
                 </p>
               </div>
             </UiImageText>
@@ -280,9 +293,9 @@ const teamMembers = specialistSlugs
 
     <UiImgDarkBanner
       bg-image="/img/intro/stamp.png"
-      label="SPRAVA KAPITALU"
+      label="Růst a ochrana majetku"
       title="Růst, stabilita a příležitosti"
-      body="Kapitál řídíme aktivně a v souvislostech. Propojujeme péči o investice, financování i přístup k příležitostem s cílem dlouhodobě chránit a rozvíjet váš majetek."
+      body="K vašemu majetku přistupujeme s maximální odpovědností. Spojujeme strategické řízení investic, zajištění financování a přístup k unikátním příležitostem. Vytváříme tak pevný štít pro váš majetek, který ho chrání před riziky a zároveň mu dává prostor bezpečně růst."
       heading-tag="h2"
     />
 

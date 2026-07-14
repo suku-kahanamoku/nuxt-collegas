@@ -126,7 +126,7 @@ const teamMembers = specialistSlugs
         <h2
           class="text-headline-md md:text-headline-lg font-serif text-primary-800"
         >
-          Naše principy
+          Jak přistupujeme k vašemu majetku
         </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
           Každé rozhodnutí stavíme na datech, znalosti trhu a provozní realitě.

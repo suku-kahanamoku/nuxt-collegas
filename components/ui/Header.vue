@@ -47,7 +47,7 @@ const navItems = [
             to: "/services/capital-management#financing",
           },
           {
-            label: "Investiční příležitosti",
+            label: "Řešení na míru",
             to: "/services/capital-management#opportunities",
           },
         ],
