@@ -1,35 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config;
 
-import caseStudiesData from "./assets/data/case-studies.json";
-import usersData from "./assets/data/users.json";
-
-const staticRoutes = [
-  "/",
-  "/about",
-  "/contact",
-  "/holding",
-  "/legal-information",
-  "/privacy-policy",
-  "/services",
-  "/services/finance",
-  "/services/capital-management",
-  "/services/real-estate-energy",
-  "/services/tax-legal",
-  "/our-people",
-  "/case-studies",
-];
-
-const userRoutes = (Array.isArray(usersData) ? usersData : [])
-  .map((user) => user.slug)
-  .filter(Boolean)
-  .map((slug) => `/our-people/${slug}`);
-
-const caseStudyRoutes = Object.values(caseStudiesData)
-  .flat()
-  .map((caseStudy) => caseStudy.slug)
-  .filter(Boolean)
-  .map((slug) => `/case-studies/${slug}`);
-
 export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
@@ -83,7 +53,6 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [...staticRoutes, ...userRoutes, ...caseStudyRoutes],
     },
   },
 
