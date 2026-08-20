@@ -37,6 +37,16 @@ const loansService = services.find(
         efektivitu práce s vlastními prostředky. Výsledkem je financování, které
         odpovídá vaší situaci dnes a zároveň vás neomezuje do budoucna.
       </template>
+
+      <template #quote>
+        „Zajistíme pro vás strukturu financování, která přesně odpovídá vašim
+        záměrům, chrání vaše vlastní úspory a neomezuje vás do budoucna.“
+      </template>
+
+      <template #attribution>
+        — Svěřte správu svých závazků do rukou specialistů a domluvte si
+        individuální konzultaci.
+      </template>
     </CustomTextComment>
 
     <section class="bg-surface-container-low py-stack-lg md:py-section-gap">

@@ -32,6 +32,16 @@ const insuranceService = services.find(
         o to mít sjednané pojištění, ale mít ho nastavené tak, aby vás skutečně
         chránilo v situacích, kdy to nejvíce potřebujete.
       </template>
+
+      <template #quote>
+        „Péči o rizika propojujeme s vaší dlouhodobou strategií, aby ochrana
+        zdraví a majetku dávala dokonalý smysl z pohledu ceny i kvality.“
+      </template>
+
+      <template #attribution>
+        — Získejte jistotu, že je váš majetek správně chráněn, a nechte si své
+        smlouvy odborně prověřit.
+      </template>
     </CustomTextComment>
 
     <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
