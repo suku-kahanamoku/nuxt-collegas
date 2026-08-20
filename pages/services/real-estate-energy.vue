@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import services from "~/assets/data/service-menu.json";
 import servicePages from "~/assets/data/service-pages.json";
 
 definePageMeta({ title: "Reality a energie | Finanční poradenství" });
@@ -16,6 +17,9 @@ useHead({
 });
 
 const realEstatePage = servicePages["real-estate-energy"];
+const realEstateService = services.find(
+  (service) => service.key === "real-estate-energy",
+)!;
 
 const caseStudies = caseStudiesData["real-estate"].map((cs) => ({
   ...cs,
@@ -44,7 +48,7 @@ const teamMembers = specialistSlugs
 <template>
   <div class="w-full">
     <CustomTextComment heading-tag="h1" label="Naše služby">
-      <template #heading>Reality a energie</template>
+      <template #heading>{{ realEstateService.navLabel }}</template>
 
       <template #body>
         Energetická optimalizace a práce s nemovitostmi nejsou oddělené oblasti,
@@ -185,42 +189,16 @@ const teamMembers = specialistSlugs
           <!-- Obsah -->
           <div class="lg:col-span-8 space-y-section-gap">
             <UiImageText
-              id="energy"
-              img-src="/img/other/energy_optimalization.png"
-              img-alt="Energetická optimalizace"
-              img-right
-            >
-              <div class="grid space-y-stack-md items-center from-left">
-                <h2
-                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-                >
-                  Energetická optimalizace
-                </h2>
-                <p class="text-body-md text-on-surface-variant">
-                  Energetická optimalizace není jen o změně dodavatele, ale o
-                  celkovém řízení toho, jak a za kolik energii využíváte.
-                  Největší úspory často vznikají kombinací správně nastavených
-                  smluv, tarifů, spotřeby a technického řešení.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Analyzujeme vaši spotřebu, smluvní podmínky, distribuční sazby
-                  i způsob využívání energie v domácnosti nebo firmě.
-                  Identifikujeme slabá místa a navrhujeme efektivnější
-                  nastavení, které vede ke snížení nákladů.
-                </p>
-              </div>
-            </UiImageText>
-
-            <UiImageText
               id="real-estate"
               img-src="/img/other/reality.png"
               img-alt="Realitní služby"
+              img-right
             >
               <div class="grid space-y-stack-md items-center from-bottom">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Realitní služby
+                  {{ realEstatePage.asideMenus[0].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Realitní služby u nás nejsou jen o zprostředkování prodeje
@@ -239,13 +217,12 @@ const teamMembers = specialistSlugs
               id="property-management"
               img-src="/img/other/building.png"
               img-alt="Správa nemovitostí"
-              img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Správa nemovitostí
+                  {{ realEstatePage.asideMenus[1].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Správa nemovitostí znamená, že váš majetek funguje tak, jak má
@@ -262,6 +239,33 @@ const teamMembers = specialistSlugs
             </UiImageText>
 
             <UiImageText
+              id="energy"
+              img-src="/img/other/energy_optimalization.png"
+              img-alt="Energetická optimalizace"
+              img-right
+            >
+              <div class="grid space-y-stack-md items-center from-left">
+                <h2
+                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
+                >
+                  {{ realEstatePage.asideMenus[2].label }}
+                </h2>
+                <p class="text-body-md text-on-surface-variant">
+                  Energetická optimalizace není jen o změně dodavatele, ale o
+                  celkovém řízení toho, jak a za kolik energii využíváte.
+                  Největší úspory často vznikají kombinací správně nastavených
+                  smluv, tarifů, spotřeby a technického řešení.
+                </p>
+                <p class="text-body-md text-on-surface-variant">
+                  Analyzujeme vaši spotřebu, smluvní podmínky, distribuční sazby
+                  i způsob využívání energie v domácnosti nebo firmě.
+                  Identifikujeme slabá místa a navrhujeme efektivnější
+                  nastavení, které vede ke snížení nákladů.
+                </p>
+              </div>
+            </UiImageText>
+
+            <UiImageText
               id="development"
               img-src="/img/other/develop_project.png"
               img-alt="Developerské projekty"
@@ -270,7 +274,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Developerské projekty
+                  {{ realEstatePage.asideMenus[3].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Developerské projekty vnímáme jako komplexní proces, kde se

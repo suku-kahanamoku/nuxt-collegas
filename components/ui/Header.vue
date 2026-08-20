@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import services from "~/assets/data/service-menu.json";
+import servicePages from "~/assets/data/service-pages.json";
+
+type ServiceKey = keyof typeof servicePages;
+
+const serviceNavItems = services.map((service) => ({
+  label: service.navLabel,
+  to: service.to,
+  icon: service.icon,
+  type: "trigger",
+  children: servicePages[service.key as ServiceKey].asideMenus,
+}));
 
 const navItems = [
   {
@@ -7,92 +18,7 @@ const navItems = [
     to: "/services",
     type: "trigger",
     slot: "services",
-    children: [
-      {
-        label: services[0].navLabel,
-        to: services[0].to,
-        icon: services[0].icon,
-        type: "trigger",
-        children: [
-          {
-            label: "Audit rodinných financí",
-            to: "/services/finance#audit",
-          },
-          {
-            label: "Finanční plán",
-            to: "/services/finance#plan",
-          },
-          {
-            label: "Zajištění rizik",
-            to: "/services/finance#risk",
-          },
-          {
-            label: "Odškodnění",
-            to: "/services/finance#compensation",
-          },
-        ],
-      },
-      {
-        label: services[1].navLabel,
-        to: services[1].to,
-        icon: services[1].icon,
-        type: "trigger",
-        children: [
-          {
-            label: "Péče o investiční majetek",
-            to: "/services/capital-management#asset-care",
-          },
-          {
-            label: "Financování",
-            to: "/services/capital-management#financing",
-          },
-          {
-            label: "Řešení na míru",
-            to: "/services/capital-management#opportunities",
-          },
-        ],
-      },
-      {
-        label: services[2].navLabel,
-        to: services[2].to,
-        icon: services[2].icon,
-        type: "trigger",
-        children: [
-          {
-            label: "Daňové poradenství",
-            to: "/services/tax-legal#tax",
-          },
-          {
-            label: "Právní poradenství",
-            to: "/services/tax-legal#legal",
-          },
-        ],
-      },
-      {
-        label: services[3].navLabel,
-        to: services[3].to,
-        icon: services[3].icon,
-        type: "trigger",
-        children: [
-          {
-            label: "Energetická optimalizace",
-            to: "/services/real-estate-energy#energy",
-          },
-          {
-            label: "Realitní služby",
-            to: "/services/real-estate-energy#real-estate",
-          },
-          {
-            label: "Správa nemovitostí",
-            to: "/services/real-estate-energy#property-management",
-          },
-          {
-            label: "Developerské projekty",
-            to: "/services/real-estate-energy#development",
-          },
-        ],
-      },
-    ],
+    children: serviceNavItems,
   },
   { label: "Holding", to: "/holding" },
   { label: "Naši lidé", to: "/our-people" },

@@ -1,21 +1,25 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import services from "~/assets/data/service-menu.json";
 import servicePages from "~/assets/data/service-pages.json";
 
-definePageMeta({ title: "Finance | Finanční poradenství" });
+definePageMeta({
+  title: "Komplexní finanční plánování | Finanční poradenství",
+});
 useHead({
-  title: "Finance | Finanční poradenství",
+  title: "Komplexní finanční plánování | Finanční poradenství",
   meta: [
     {
       name: "description",
       content:
-        "Nezávislý audit, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme chránit majetek a rozhodovat se s jistotou.",
+        "Nezávislý audit rodinných financí a finanční plán v jednom celku. Pomáháme vám mít finance pod kontrolou a rozhodovat se s jistotou.",
     },
   ],
 });
 
 const financePage = servicePages.finance;
+const financeService = services.find((service) => service.key === "finance")!;
 
 const caseStudies = caseStudiesData.finance.map((cs) => ({
   ...cs,
@@ -47,7 +51,7 @@ const teamMembers = specialistSlugs
 <template>
   <div class="w-full">
     <CustomTextComment heading-tag="h1" label="Naše služby">
-      <template #heading>Finance</template>
+      <template #heading>{{ financeService.navLabel }}</template>
 
       <template #body>
         Našim dlouhodobým účelem je pomáhat rodinám, jednotlivcům ale také
@@ -103,7 +107,7 @@ const teamMembers = specialistSlugs
 
     <UiDarkBanner
       title="Získejte kontrolu nad svými financemi ještě dnes."
-      body="Nezávisle posoudíme vaši situaci, nastavíme finanční plán, ochranu rizik i odškodnění tak, aby vaše finance pracovaly dlouhodobě ve váš prospěch."
+      body="Nezávisle posoudíme vaši situaci a nastavíme finanční plán tak, aby vaše finance pracovaly dlouhodobě ve váš prospěch."
     >
       <UiButton to="/contact#contact-form" class="shrink-0 group">
         Domluvit konzultaci
@@ -200,7 +204,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Nezávislý audit vašich rodinných financí
+                  {{ financePage.asideMenus[0].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Je prvním krokem k tomu, abyste získali dokonalý přehled a
@@ -221,7 +225,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Finanční plán
+                  {{ financePage.asideMenus[1].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Finanční plán je nástroj, který dává vašim penězům jasný směr
@@ -240,60 +244,25 @@ const teamMembers = specialistSlugs
             </UiImageText>
 
             <UiImageText
-              id="risk"
-              img-src="/img/other/risk_headging.png"
-              img-alt="Zajištění rizik"
+              id="long-term-service"
+              img-src="/img/other/compass.png"
+              img-alt="Dlouhodobý servis"
               img-right
             >
               <div class="grid space-y-stack-md items-center from-left">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Zajištění rizik
+                  {{ financePage.asideMenus[2].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Zajištění rizik je základním stavebním kamenem každé stabilní
-                  finanční strategie. Nejde jen o to mít sjednané pojištění, ale
-                  mít ho nastavené tak, aby vás skutečně chránilo v situacích,
-                  kdy to nejvíce potřebujete.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Detailně analyzujeme vaše stávající pojistné smlouvy a
-                  identifikujeme nedostatečné krytí, zbytečné duplicity i
-                  oblasti, kde naopak platíte více, než je nutné. Výsledkem je
-                  řešení, které dává smysl nejen z pohledu ceny, ale především
-                  kvality ochrany.
+                  Finanční plán pravidelně aktualizujeme podle změn na trhu i ve
+                  vašem životě. Jsme vám trvalou oporou při každém důležitém
+                  finančním rozhodnutí.
                 </p>
               </div>
             </UiImageText>
 
-            <UiImageText
-              id="compensation"
-              img-src="/img/other/compensation.png"
-              img-alt="Odškodnění"
-            >
-              <div class="grid space-y-stack-md items-center from-bottom">
-                <h2
-                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-                >
-                  Collegas Odškodnění
-                </h2>
-                <p class="text-body-md text-on-surface-variant">
-                  Do situace, kdy musíte řešit pojistnou událost, se většinou
-                  dostanete nečekaně – často ve chvíli, kdy prožíváte náročné
-                  zdravotní, pracovní nebo osobní komplikace. Právě v takových
-                  momentech potřebujete mít vedle sebe partnera, který se v
-                  celém procesu dokonale vyzná a bezpečně vás jím provede.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  V rámci divize Collegas Odškodnění vám pomůžeme přesně
-                  vyčíslit a zorientovat se v nárocích, na které máte skutečné
-                  právo. Kompletně se postaráme o jejich uplatnění vůči
-                  pojišťovnám i viníkům. Výsledkem pro vás bude nejen
-                  spravedlivé finanční odškodnění, ale především obrovská úleva.
-                </p>
-              </div>
-            </UiImageText>
           </div>
 
           <UiAside
@@ -314,8 +283,8 @@ const teamMembers = specialistSlugs
     <UiImgDarkBanner
       bg-image="/img/intro/stamp.png"
       label="FINANCE"
-      title="Jasno, plán a ochrana"
-      body="Od nezávislého rodinného auditu přes finanční plán až po ochranu rizik a odškodnění. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
+      title="Jasno a plán"
+      body="Od nezávislého rodinného auditu po finanční plán. Vaše finance nastavíme jako funkční celek, který dává smysl dnes i v budoucnu."
       heading-tag="h2"
     />
 
@@ -340,7 +309,7 @@ const teamMembers = specialistSlugs
           </p>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md"
+          class="grid grid-cols-1 md:grid-cols-2 gap-stack-md"
         >
           <UiBaseCard
             v-for="service in serviceCards"

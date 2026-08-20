@@ -3,9 +3,9 @@
     "key": "finance",
     "serviceCategory": "finance",
     "icon": "i-material-symbols-account-balance-wallet",
-    "title": "Finance",
-    "navLabel": "Finance",
-    "description": "Nezávislý audit vašich rodinných financí, finanční plán, zajištění rizik a odškodnění v jednom celku. Pomáháme vám mít finance pod kontrolou, chránit majetek a rozhodovat se s jistotou.",
+    "title": "Komplexní finanční plánování",
+    "navLabel": "Komplexní finanční plánování",
+    "description": "Nezávislý audit vašich rodinných financí a finanční plán v jednom celku. Pomáháme vám mít finance pod kontrolou a rozhodovat se s jistotou.",
     "to": "/services/finance",
     "ctaLabel": "Začít audit",
     "highlight": true
@@ -14,21 +14,31 @@
     "key": "capital-management",
     "serviceCategory": "capital",
     "icon": "i-material-symbols-trending-up",
-    "title": "Růst a ochrana majetku",
+    "title": "Investice",
     "navLabel": "Investice",
-    "description": "Péče o investiční majetek, financování bydlení a dalších projektů, hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií.",
+    "description": "Péče o investiční majetek a hledání vhodných investičních příležitostí. Budujeme váš majetek s dlouhodobou strategií a připravujeme řešení na míru.",
     "to": "/services/capital-management",
     "ctaLabel": "Správa investic"
   },
   {
-    "key": "tax-legal",
-    "serviceCategory": "tax",
-    "icon": "i-material-symbols-balance",
-    "title": "Daně a právo",
-    "navLabel": "Daně a právo",
-    "description": "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
-    "to": "/services/tax-legal",
-    "ctaLabel": "Chci poradit s daněmi"
+    "key": "insurance",
+    "serviceCategory": "insurance",
+    "icon": "i-material-symbols-health-and-safety",
+    "title": "Pojištění",
+    "navLabel": "Pojištění",
+    "description": "Pojištění rizik, která mohou ohrozit klientův život nebo majetek, je základním stavebním kamenem každé stabilní finanční strategie. Nejde jen o to mít sjednané pojištění, ale mít ho nastavené tak, aby vás skutečně chránilo v situacích, kdy to nejvíce potřebujete.",
+    "to": "/services/insurance",
+    "ctaLabel": "Chci řešit pojištění"
+  },
+  {
+    "key": "loans-financing",
+    "serviceCategory": "loans",
+    "icon": "i-material-symbols-real-estate-agent",
+    "title": "Úvěry a financování",
+    "navLabel": "Úvěry a financování",
+    "description": "Pomáháme vám nastavit financování tak, aby bylo dlouhodobě zvládnutelné, přehledné a bezpečné. Provedeme vás hypotékami, spotřebitelskými úvěry, konsolidacemi i podnikatelským financováním.",
+    "to": "/services/loans-financing",
+    "ctaLabel": "Chci řešit financování"
   },
   {
     "key": "real-estate-energy",
@@ -39,5 +49,15 @@
     "description": "Realitní služby, správa nemovitostí, optimalizace energetických nákladů a developerské projekty. Efektivní správa a využití majetku.",
     "to": "/services/real-estate-energy",
     "ctaLabel": "Realitní služby"
+  },
+  {
+    "key": "tax-legal",
+    "serviceCategory": "tax",
+    "icon": "i-material-symbols-balance",
+    "title": "Daně a právo",
+    "navLabel": "Daně a právo",
+    "description": "Daňové poradenství a právní zázemí pro majetek, podnikání a investice. Zajišťujeme právní zabezpečení a minimalizujeme daňovou zátěž.",
+    "to": "/services/tax-legal",
+    "ctaLabel": "Chci poradit s daněmi"
   }
 ]

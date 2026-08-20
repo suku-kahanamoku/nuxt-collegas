@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import services from "~/assets/data/service-menu.json";
 import servicePages from "~/assets/data/service-pages.json";
 
-definePageMeta({ title: "Růst a ochrana majetku | Finanční poradenství" });
+definePageMeta({ title: "Investice | Finanční poradenství" });
 useHead({
-  title: "Růst a ochrana majetku | Finanční poradenství",
+  title: "Investice | Finanční poradenství",
   meta: [
     {
       name: "description",
@@ -16,6 +17,9 @@ useHead({
 });
 
 const capitalPage = servicePages["capital-management"];
+const capitalService = services.find(
+  (service) => service.key === "capital-management",
+)!;
 
 const caseStudies = caseStudiesData.capital.map((cs) => ({
   ...cs,
@@ -44,7 +48,7 @@ const teamMembers = specialistSlugs
 <template>
   <div class="w-full">
     <CustomTextComment heading-tag="h1" label="Naše služby">
-      <template #heading>Růst a ochrana majetku</template>
+      <template #heading>{{ capitalService.navLabel }}</template>
 
       <template #body>
         <p>
@@ -196,7 +200,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Péče o investiční majetek
+                  {{ capitalPage.asideMenus[0].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Vaše investice průběžně analyzujeme, vyhodnocujeme jejich
@@ -216,27 +220,26 @@ const teamMembers = specialistSlugs
 
             <UiImageText
               id="financing"
-              img-src="/img/other/financing.png"
-              img-alt="Financování bydlení a projektů"
+              img-src="/img/other/compass.png"
+              img-alt="Investiční příležitosti"
             >
               <div class="grid space-y-stack-md items-center from-bottom">
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Financování
+                  {{ capitalPage.asideMenus[1].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
-                  Ať už kupujete první nemovitost, rekonstruujete nebo řešíte
-                  změnu současného úvěru, cílem je nastavit financování tak, aby
-                  pro vás bylo dlouhodobě zvládnutelné, přehledné a bezpečné.
-                  Pomáháme vám zorientovat se v možnostech a projít celým
-                  procesem bez zbytečného stresu.
+                  Výjimečné investiční příležitosti se neobjevují každý den.
+                  Naším cílem proto není nabízet krátkodobé trendy, ale pečlivě
+                  vyhledávat a spoluvytvářet projekty, které dlouhodobě obstojí
+                  v poměru výnosu, rizika a strategického přínosu.
                 </p>
                 <p class="text-body-md text-on-surface-variant">
-                  Správně nastavené využití bankovního kapitálu může výrazně
-                  zvýšit efektivitu práce s vlastními prostředky. Výsledkem je
-                  financování, které odpovídá vaší situaci dnes a zároveň vás
-                  neomezuje do budoucna.
+                  Aktivně monitorujeme trh napříč obory – se zaměřením na
+                  prémiové nemovitosti a developerské záměry. Každý projekt
+                  podrobujeme detailní analýze a partnerům předkládáme pouze ty
+                  příležitosti, za kterými si stoprocentně stojíme.
                 </p>
               </div>
             </UiImageText>
@@ -251,7 +254,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Řešení na míru
+                  {{ capitalPage.asideMenus[2].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Naši specialisté na základě vašich přání, cílů ale také potřeb
@@ -259,18 +262,6 @@ const teamMembers = specialistSlugs
                   společně upravíme a nastavíme tak, aby splňoval vše, co od něj
                   očekáváte. V průběhu času ho aktualizujeme a doplňujeme
                   společně s vámi.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Výjimečné investiční příležitosti se neobjevují každý den.
-                  Naším cílem proto není nabízet krátkodobé trendy, ale pečlivě
-                  vyhledávat a spoluvytvářet projekty, které dlouhodobě obstojí
-                  v poměru výnosu, rizika a strategického přínosu.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Aktivně monitorujeme trh napříč obory – se zaměřením na
-                  prémiové nemovitosti a developerské záměry. Každý projekt
-                  podrobujeme detailní analýze a partnerům předkládáme pouze ty
-                  příležitosti, za kterými si stoprocentně stojíme.
                 </p>
               </div>
             </UiImageText>

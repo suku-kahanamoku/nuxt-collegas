@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import caseStudiesData from "~/assets/data/case-studies.json";
 import usersData from "~/assets/data/users.json";
+import services from "~/assets/data/service-menu.json";
 import servicePages from "~/assets/data/service-pages.json";
 
 definePageMeta({ title: "Daně a právo | Finanční poradenství" });
@@ -16,6 +17,7 @@ useHead({
 });
 
 const taxPage = servicePages["tax-legal"];
+const taxService = services.find((service) => service.key === "tax-legal")!;
 
 const caseStudies = caseStudiesData.tax.map((cs) => ({
   ...cs,
@@ -44,7 +46,7 @@ const teamMembers = specialistSlugs
 <template>
   <div class="w-full">
     <CustomTextComment heading-tag="h1" label="Naše služby">
-      <template #heading>Daně a právo</template>
+      <template #heading>{{ taxService.navLabel }}</template>
 
       <template #body>
         Daně asi nikdy nebudou vaše oblíbené téma. To ale neznamená, že byste
@@ -191,7 +193,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Daňové poradenství
+                  {{ taxPage.asideMenus[0].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Díváme se na vaše daně v souvislostech, ne izolovaně. Příjmy,
@@ -217,7 +219,7 @@ const teamMembers = specialistSlugs
                 <h2
                   class="text-headline-md md:text-headline-lg font-serif text-primary-800"
                 >
-                  Právní poradenství
+                  {{ taxPage.asideMenus[1].label }}
                 </h2>
                 <p class="text-body-md text-on-surface-variant">
                   Právní poradenství u nás není jednorázová služba, ale
@@ -233,30 +235,6 @@ const teamMembers = specialistSlugs
               </div>
             </UiImageText>
 
-            <UiImageText
-              id="tax-legal-overview"
-              img-src="/img/intro/notes.png"
-              img-alt="Daně a právo v souvislostech"
-              img-right
-            >
-              <div class="grid space-y-stack-md items-center from-left">
-                <h2
-                  class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-                >
-                  Daňové a právní zázemí
-                </h2>
-                <p class="text-body-md text-on-surface-variant">
-                  Daňová a právní oblast jsou v praxi úzce propojené. Když se
-                  řeší odděleně, vznikají zbytečné náklady, rizika a nejistota.
-                  Když se řeší společně, získáte pevný rámec pro správu majetku,
-                  podnikání i investic.
-                </p>
-                <p class="text-body-md text-on-surface-variant">
-                  Výsledkem je klid, jistota a vědomí, že vaše rozhodnutí stojí
-                  na pevných základech a jsou podpořena profesionálním zázemím.
-                </p>
-              </div>
-            </UiImageText>
           </div>
 
           <UiAside

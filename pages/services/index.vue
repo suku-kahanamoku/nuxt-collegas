@@ -7,7 +7,7 @@ useHead({
     {
       name: "description",
       content:
-        "Přehled služeb COLLEGAS: finance, růst a ochrana majetku, daně a právo, reality i energie. Každou oblast propojujeme do funkčního celku.",
+        "Přehled služeb COLLEGAS: finance, investice, pojištění, úvěry a financování, reality a energie, daně a právo. Každou oblast propojujeme do funkčního celku.",
     },
   ],
 });
@@ -38,9 +38,9 @@ useHead({
         <p
           class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90 leading-relaxed"
         >
-          Čtyři klíčové oblasti, ve kterých pomáháme našim klientům – finance,
-          růst a ochrana majetku, daně a právo, reality a energie. Každá oblast
-          je propojená, aby tvořila jeden funkční celek.
+          Šest klíčových oblastí, ve kterých pomáháme našim klientům – finance,
+          investice, pojištění, úvěry a financování, reality a energie, daně a
+          právo. Každá oblast je propojená, aby tvořila jeden funkční celek.
         </p>
       </template>
     </UiIntro>

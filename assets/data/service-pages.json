@@ -1,17 +1,16 @@
 {
   "finance": {
     "asideMenus": [
-      { "label": "Nezávislý finanční audit", "to": "/services/finance#audit" },
+      { "label": "Audit rodinných financí", "to": "/services/finance#audit" },
       { "label": "Finanční plán", "to": "/services/finance#plan" },
-      { "label": "Zajištění rizik", "to": "/services/finance#risk" },
-      { "label": "Odškodnění", "to": "/services/finance#compensation" }
+      { "label": "Dlouhodobý servis", "to": "/services/finance#long-term-service" }
     ],
     "related": {
       "title": "Komplexní finanční péče",
       "description": "Všechny oblasti financí řešíme v souvislostech. Každá služba navazuje na předchozí a podporuje dlouhodobou stabilitu.",
       "cards": [
         {
-          "title": "Nezávislý finanční audit",
+          "title": "Audit rodinných financí",
           "description": "Detailní rozbor smluv, nákladů a nastavení vašich financí. Získáte jasný přehled, odhalení slabých míst a doporučení konkrétních kroků.",
           "to": "/services/finance#audit"
         },
@@ -21,14 +20,65 @@
           "to": "/services/finance#plan"
         },
         {
-          "title": "Zajištění rizik",
-          "description": "Ať už jde o ochranu majetku, zdraví nebo podnikání, klíčové je správně vyhodnotit rizika a nastavit krytí, které odpovídá vaší reálné situaci.",
-          "to": "/services/finance#risk"
+          "title": "Dlouhodobý servis",
+          "description": "Finanční plán pravidelně aktualizujeme podle změn na trhu i ve vašem životě. Jsme vám trvalou oporou při každém důležitém finančním rozhodnutí.",
+          "to": "/services/finance#long-term-service"
+        }
+      ]
+    }
+  },
+  "insurance": {
+    "asideMenus": [
+      { "label": "Ochrana vašeho zdraví a majetku", "to": "/services/insurance#health-and-property" },
+      { "label": "Optimalizace vašich pojistných smluv", "to": "/services/insurance#contract-optimization" },
+      { "label": "Pomoc s odškodnění pojistné události", "to": "/services/insurance#compensation" }
+    ],
+    "related": {
+      "title": "Komplexní pojistná ochrana",
+      "description": "Správné nastavení pojištění propojujeme s podporou při pojistné události, abyste měli jistotu před ní i během jejího řešení.",
+      "cards": [
+        {
+          "title": "Ochrana vašeho zdraví a majetku",
+          "description": "Život přináší příležitosti, ale i nečekaná rizika. Správně nastavená ochrana zdraví a majetku je základním kamenem každé úspěšné dlouhodobé strategie.",
+          "to": "/services/insurance#health-and-property"
         },
         {
-          "title": "Odškodnění",
-          "description": "Ať už jde o pracovní úrazy, autonehody, školní úrazy nebo jiné pojistné události, cílem je jediné: získat spravedlivé odškodnění v plné výši.",
-          "to": "/services/finance#compensation"
+          "title": "Optimalizace vašich pojistných smluv",
+          "description": "Navrhneme pro vás řešení, které minimalizuje hrozby a zajistí stabilitu vašeho rodinného i firemního zázemí.",
+          "to": "/services/insurance#contract-optimization"
+        },
+        {
+          "title": "Pomoc s odškodnění pojistné události",
+          "description": "Pomůžeme vám uplatnit nároky vůči pojišťovnám i viníkům a získat spravedlivé finanční odškodnění.",
+          "to": "/services/insurance#compensation"
+        }
+      ]
+    }
+  },
+  "loans-financing": {
+    "asideMenus": [
+      { "label": "Hypoteční úvěry na bydlení", "to": "/services/loans-financing#mortgages" },
+      { "label": "Spotřebitelské úvěry a konsolidace", "to": "/services/loans-financing#consumer-loans" },
+      { "label": "Podnikatelské úvěry", "to": "/services/loans-financing#business-loans" }
+    ],
+    "related": {
+      "title": "Financování podle vašich potřeb",
+      "description": "Hledáme bezpečné a dlouhodobě udržitelné řešení pro bydlení, osobní potřeby i rozvoj podnikání.",
+      "cards": [
+        {
+          "title": "Hypoteční úvěry na bydlení",
+          "description": "Pomůžeme vám bezpečně projít cestou k vlastnímu bydlení a najdeme nejvýhodnější podmínky na trhu.",
+          "to": "/services/loans-financing#mortgages"
+        },
+        {
+          "title": "Spotřebitelské úvěry a konsolidace",
+          "description": "Pomůžeme vám financovat aktuální potřeby bez zbytečně vysokých úroků a vnést do splátek jasný řád.",
+          "to": "/services/loans-financing#consumer-loans"
+        },
+        {
+          "title": "Podnikatelské úvěry",
+          "description": "Navrhneme strukturu financování, která podpoří růst firmy a neohrozí její cash flow.",
+          "to": "/services/loans-financing#business-loans"
         }
       ]
     }
@@ -36,8 +86,8 @@
   "capital-management": {
     "asideMenus": [
       { "label": "Péče o investiční majetek", "to": "/services/capital-management#asset-care" },
-      { "label": "Financování", "to": "/services/capital-management#financing" },
-      { "label": "Investiční příležitosti", "to": "/services/capital-management#opportunities" }
+      { "label": "Investiční příležitosti", "to": "/services/capital-management#financing" },
+      { "label": "Řešení na míru", "to": "/services/capital-management#opportunities" }
     ],
     "related": {
       "title": "Strategie růstu kapitálu",
@@ -49,13 +99,13 @@
           "to": "/services/capital-management#asset-care"
         },
         {
-          "title": "Financování",
-          "description": "Nastavení úvěrů pro bydlení, rekonstrukce i projekty tak, aby byly bezpečné, přehledné a zároveň podporovaly další růst kapitálu.",
+          "title": "Investiční příležitosti",
+          "description": "Vyhledáváme a analyzujeme příležitosti, které dávají smysl z pohledu výnosu, struktury i rizik a zapadají do strategie vašeho portfolia.",
           "to": "/services/capital-management#financing"
         },
         {
-          "title": "Investiční příležitosti",
-          "description": "Vyhledáváme a analyzujeme příležitosti, které dávají smysl z pohledu výnosu, struktury i rizik a zapadají do strategie vašeho portfolia.",
+          "title": "Řešení na míru",
+          "description": "Na základě vašich přání, cílů a potřeb připravíme individuální řešení, které společně průběžně aktualizujeme.",
           "to": "/services/capital-management#opportunities"
         }
       ]
@@ -79,31 +129,21 @@
           "title": "Právní poradenství",
           "description": "Smluvní agenda, převody nemovitostí, vlastnické struktury a investiční vztahy nastavené s důrazem na jistotu a prevenci rizik.",
           "to": "/services/tax-legal#legal"
-        },
-        {
-          "title": "Daňové a právní zázemí",
-          "description": "Propojený přístup, který snižuje nejistotu, předchází problémům a pomáhá dělat důležitá rozhodnutí s klidem a kontrolou.",
-          "to": "/services/tax-legal#tax-legal-overview"
         }
       ]
     }
   },
   "real-estate-energy": {
     "asideMenus": [
-      { "label": "Energetická optimalizace", "to": "/services/real-estate-energy#energy" },
       { "label": "Realitní služby", "to": "/services/real-estate-energy#real-estate" },
       { "label": "Správa nemovitostí", "to": "/services/real-estate-energy#property-management" },
+      { "label": "Energetická optimalizace", "to": "/services/real-estate-energy#energy" },
       { "label": "Developerské projekty", "to": "/services/real-estate-energy#development" }
     ],
     "related": {
       "title": "Realitní a energetické služby",
       "description": "Propojujeme energie, reality i provoz majetku do jednoho funkčního rámce s cílem snížit náklady a zvýšit dlouhodobou výkonnost.",
       "cards": [
-        {
-          "title": "Energetická optimalizace",
-          "description": "Analyzujeme spotřebu, smlouvy i sazby a navrhujeme řešení, která dlouhodobě snižují energetické náklady v domácnosti i firmě.",
-          "to": "/services/real-estate-energy#energy"
-        },
         {
           "title": "Realitní služby",
           "description": "Kompletní servis pro prodej i pronájem od přípravy nemovitosti po právní vypořádání transakce.",
@@ -113,6 +153,11 @@
           "title": "Správa nemovitostí",
           "description": "Zajišťujeme výběr nájemníků, provozní servis, administrativu i ekonomický přehled, aby majetek fungoval bez starostí.",
           "to": "/services/real-estate-energy#property-management"
+        },
+        {
+          "title": "Energetická optimalizace",
+          "description": "Analyzujeme spotřebu, smlouvy i sazby a navrhujeme řešení, která dlouhodobě snižují energetické náklady v domácnosti i firmě.",
+          "to": "/services/real-estate-energy#energy"
         },
         {
           "title": "Developerské projekty",
