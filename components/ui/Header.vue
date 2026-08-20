@@ -46,7 +46,8 @@ const navItems = [
       color="primary"
       :ui="{
         link: 'text-sm font-semibold uppercase tracking-wider',
-        viewportWrapper: 'w-3xl',
+        viewportWrapper:
+          'left-1/2 -translate-x-1/2 w-[calc(100vw-2rem)] max-w-[96rem]',
       }"
     >
       <template #services-content="{ item }">
@@ -67,7 +68,9 @@ const navItems = [
             "
           ></div>
         </div>
-        <div class="grid grid-cols-4 gap-4 p-6">
+        <div
+          class="grid grid-cols-[repeat(auto-fit,minmax(min(13rem,100%),1fr))] gap-4 p-6"
+        >
           <div
             v-for="service in (item as any).children"
             :key="service.label"
