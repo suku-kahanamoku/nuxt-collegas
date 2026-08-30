@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-05-04",
   ssr: true,
 
+  experimental: {
+    payloadExtraction: false,
+  },
+
   site: {
     url: process.env.FRONTEND_HOST,
     name: "COLLEGAS",
@@ -64,6 +68,7 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: "cs",
+    trailingSlash: true,
     langDir: "locales/",
     locales: [
       {
