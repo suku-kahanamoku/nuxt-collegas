@@ -64,7 +64,6 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: "cs",
-    trailingSlash: true,
     langDir: "locales/",
     locales: [
       {
