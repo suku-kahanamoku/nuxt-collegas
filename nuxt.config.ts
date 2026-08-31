@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   site: {
     url: process.env.FRONTEND_HOST,
     name: "COLLEGAS",
+    trailingSlash: false,
   },
 
   devtools: { enabled: true },
@@ -52,7 +53,9 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      routes: ["/"],
       crawlLinks: true,
+      autoSubfolderIndex: false,
     },
   },
 
@@ -83,6 +86,10 @@ export default defineNuxtConfig({
   }, */
 
   pwa: {
+    registerType: "autoUpdate",
+    workbox: {
+      navigateFallback: undefined,
+    },
     manifest: {
       name: "Collegas",
       short_name: "Collegas",
