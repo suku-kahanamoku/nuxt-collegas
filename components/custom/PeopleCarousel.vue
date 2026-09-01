@@ -27,9 +27,34 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
         <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
       </div>
 
+      <div
+        class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:hidden"
+        aria-label="Profily členů týmu"
+      >
+        <UiUserCard
+          v-for="person in people"
+          :key="`mobile-${person.slug || person.name}`"
+          class="w-[78vw] max-w-72 shrink-0 snap-center"
+          :img-src="person.photo"
+          :img-alt="person.name"
+          img-loading="eager"
+          :name="person.name"
+          :role="person.role"
+          :to="`/our-people/${person.slug}`"
+        >
+          <div
+            class="inline-flex items-center text-on-surface-variant group-hover/user-card:text-secondary transition-colors font-label-caps uppercase tracking-widest gap-2"
+          >
+            Zobrazit profil
+            <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
+          </div>
+        </UiUserCard>
+      </div>
+
       <UMarquee
         pause-on-hover
         :overlay="false"
+        class="hidden md:flex"
         :ui="{
           root: '[--gap:--spacing(4)] [--duration:150s]',
           content: 'w-auto py-1',

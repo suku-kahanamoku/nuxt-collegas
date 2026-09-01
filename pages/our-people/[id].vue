@@ -80,6 +80,7 @@ const references = computed(
           loading="lazy"
           sizes="sm:100vw md:100vw lg:60vw xl:50vw"
         />
+        <div class="absolute inset-0 bg-primary-950/65 md:hidden" />
       </div>
 
       <!-- Text content -->
@@ -175,7 +176,7 @@ const references = computed(
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div
-            class="overflow-hidden rounded-2xl bg-primary-900/80"
+            class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:block"
             style="aspect-ratio: 4/5"
           >
             <NuxtImg

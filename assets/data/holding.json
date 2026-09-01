@@ -5,21 +5,21 @@
       {
         "title": "Finanční poradenství",
         "name": "COLLEGAS s.r.o.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/intro/main.png",
         "imgAlt": "Kancelář COLLEGAS",
         "description": "Privátní finanční poradenství pro rodiny i podnikatele."
       },
       {
         "title": "Odškodnění & náhrady",
         "name": "COLLEGAS ODŠKODNĚNÍ s.r.o.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/other/compensation.png",
         "imgAlt": "Kancelář COLLEGAS ODŠKODNĚNÍ",
         "description": "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby."
       },
       {
         "title": "Finance & pojištění",
         "name": "COLLEGA BROKERS a.s.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/other/financing.png",
         "imgAlt": "Centrála COLLEGA BROKERS",
         "description": "Broker poolové služby.",
         "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
@@ -28,14 +28,14 @@
       {
         "title": "Průmyslové pojištění",
         "name": "COLLEGA MAKLÉŘ s.r.o.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/other/risk_headging.png",
         "imgAlt": "Kancelář COLLEGA MAKLÉŘ",
         "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele."
       },
       {
         "title": "Investiční zprostředkovatel",
         "name": "COLLEGA INVESTICE s.r.o.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/other/investment_property.png",
         "imgAlt": "Kancelář COLLEGA INVESTICE",
         "description": "Broker poolové služby.",
         "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
@@ -44,7 +44,7 @@
       {
         "title": "Účetnictví & daně",
         "name": "BULA & COLLEGAS s.r.o.",
-        "imgSrc": "/img/intro/stamp.png",
+        "imgSrc": "/img/other/tax_consult.png",
         "imgAlt": "Kancelář BULA & COLLEGAS",
         "description": "Účetnictví a daňové poradenství pro firmy i jednotlivce."
       }
@@ -54,45 +54,31 @@
     "title": "Development & reality",
     "nodes": [
       {
-        "title": "Developerský projekt",
-        "name": "REZIDENCE SRUBEC",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
-        "description": "Výstavba bytového domu."
-      },
-      {
-        "title": "Developerský projekt",
-        "name": "REZIDENCE GREEN",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
-        "description": "Výstavba bytového domu."
-      },
-      {
-        "title": "Developerský projekt",
-        "name": "REZIDENCE VRCHLABÍ",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
-        "description": "Výstavba bytového domu."
+        "title": "Developerské projekty",
+        "name": "REZIDENCE SRUBEC, GREEN A VRCHLABÍ",
+        "imgSrc": "/img/other/develop_project.png",
+        "imgAlt": "Přehled developerských projektů COLLEGAS",
+        "description": "Výstavba bytových domů v lokalitách Srubec, Green a Vrchlabí."
       },
       {
         "title": "Reality",
         "name": "COLLEGAS REALITY s.r.o.",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
+        "imgSrc": "/img/other/reality.png",
+        "imgAlt": "Prodej a správa nemovitostí",
         "description": "Prodej a správa nemovitostí."
       },
       {
         "title": "Kanceláře",
         "name": "M DEAL s.r.o.",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
+        "imgSrc": "/img/branch/az_tower.jpg",
+        "imgAlt": "Kancelářské prostory v AZ Tower",
         "description": "Nákup a pronájem kancelářských prostor."
       },
       {
         "title": "Energetika",
         "name": "COLLEGAS INVESTING s.r.o.",
-        "imgSrc": "/img/other/building.png",
-        "imgAlt": "Projektová kancelář",
+        "imgSrc": "/img/other/energy_optimalization.png",
+        "imgAlt": "Energetická optimalizace nemovitostí",
         "description": "Licencovaný energetický makléř."
       }
     ]
@@ -103,14 +89,14 @@
       {
         "title": "Software & IT",
         "name": "COLLEGA SOLUTION s.r.o.",
-        "imgSrc": "/img/other/wall.png",
+        "imgSrc": "/img/intro/notes.png",
         "imgAlt": "Kancelář COLLEGA SOLUTION",
         "description": "Vývoj softwarových řešení pro firmy."
       },
       {
         "title": "Výrobní technologie",
         "name": "DIAMOND FISH",
-        "imgSrc": "/img/other/wall.png",
+        "imgSrc": "/img/intro/cafe.png",
         "imgAlt": "Kancelář DIAMOND FISH",
         "description": "Chov a zpracování ryb."
       }

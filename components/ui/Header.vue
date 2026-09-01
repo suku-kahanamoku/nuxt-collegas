@@ -119,7 +119,14 @@ const navItems = [
         variant="link"
         color="primary"
         orientation="vertical"
-        :ui="{ list: 'space-y-1', link: 'text-lg' }"
+        :ui="{
+          list: 'space-y-1',
+          link: 'text-lg items-start py-2',
+          linkLabel:
+            'whitespace-normal break-words overflow-visible text-clip text-left leading-snug',
+          childLinkLabel:
+            'whitespace-normal break-words overflow-visible text-clip text-left leading-snug',
+        }"
       />
     </template>
   </UHeader>

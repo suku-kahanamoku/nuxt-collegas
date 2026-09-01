@@ -157,9 +157,8 @@ const principles = [
           <div class="w-full aspect-4/5 bg-surface-container overflow-hidden">
             <NuxtImg
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              data-alt="A sophisticated architectural detail of a modern corporate headquarters in London. The image features clean lines of dark wood and brushed metal with soft, natural morning light filtering through large windows. The atmosphere is quiet, professional, and reflects a sense of enduring legacy and high-end financial stability using a palette of deep greens and neutral tones."
-              alt="Sídlo a zázemí skupiny COLLEGAS"
-              src="/img/other/wall.png"
+              alt="Zakladatelé společnosti COLLEGAS"
+              src="/img/other/founders.png"
               format="webp"
               loading="lazy"
               sizes="sm:100vw md:50vw lg:33vw xl:33vw"

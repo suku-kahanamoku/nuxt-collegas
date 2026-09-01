@@ -51,10 +51,6 @@ const seniority = [
     icon: "i-material-symbols-school",
     text: "Soustavné vzdělávání týmu a sledování legislativních změn",
   },
-  {
-    icon: "i-material-symbols-verified-user-outline",
-    text: "Práce pod přímým dohledem České národní banky a evropských kontrolních orgánů",
-  },
 ];
 
 const relatedLinks = computed(() =>
