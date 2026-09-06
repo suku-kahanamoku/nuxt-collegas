@@ -22,6 +22,7 @@ const navItems = [
   },
   { label: "Holding", to: "/holding" },
   { label: "Naši lidé", to: "/our-people" },
+  { label: "Reference", to: "/references" },
   { label: "O nás", to: "/about" },
   { label: "Kontakt", to: "/contact" },
 ];

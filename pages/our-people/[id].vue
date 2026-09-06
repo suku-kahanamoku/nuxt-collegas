@@ -248,46 +248,17 @@ const references = computed(
           Výsledky a Reference
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div
+          <CustomReviewCard
             v-for="(t, i) in references"
             :key="i"
-            class="rounded-2xl p-6 border border-primary-800 shadow-lg flex flex-col"
-            style="
-              background: linear-gradient(
-                230deg,
-                rgba(4, 41, 30, 0.35) 0%,
-                transparent 97%
-              );
-            "
-          >
-            <p
-              class="text-white leading-relaxed mb-6 text-sm whitespace-break-spaces"
-            >
-              "{{ t.quote }}"
-            </p>
-
-            <UUser
-              :name="t.author"
-              :avatar="{ src: t.authorImage, alt: t.author }"
-              size="md"
-              class="mt-auto"
-              :ui="{
-                name: 'text-white',
-                description: 'line-clamp-1 text-white/60',
-              }"
-            >
-              <template #description>
-                <div class="flex gap-0.5">
-                  <UIcon
-                    v-for="s in t.rating"
-                    :key="s"
-                    name="i-material-symbols-star"
-                    class="w-3 h-3 text-secondary-400"
-                  />
-                </div>
-              </template>
-            </UUser>
-          </div>
+            :quote="t.quote"
+            :author="t.reviewerName || t.author"
+            :avatar="t.authorImage"
+            :rating="t.rating"
+            :date="t.date"
+            :source="t.source"
+            :href="t.googleProfile"
+          />
         </div>
         <div class="mt-16 text-center">
           <UiButton :to="`/contact#contact-form`" class="rounded-full"

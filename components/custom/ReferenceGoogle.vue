@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import references from "~/assets/data/references.json";
+import reviewPlatforms from "~/assets/data/review-platforms.json";
 
 const selectedIndex = ref(0);
 const selected = computed(() => references[selectedIndex.value]);
@@ -45,7 +46,9 @@ function selectReference(index: number) {
           >
             Ohlasy klientů
           </span>
-          <h2 class="mb-6 text-headline-md text-primary-800 md:text-headline-lg">
+          <h2
+            class="mb-6 text-headline-md text-primary-800 md:text-headline-lg"
+          >
             {{ selected?.name }}
           </h2>
 
@@ -55,7 +58,9 @@ function selectReference(index: number) {
             >
               {{ selected?.quote }}
             </p>
-            <span class="font-label-caps text-primary-800 whitespace-break-spaces">
+            <span
+              class="font-label-caps text-primary-800 whitespace-break-spaces"
+            >
               {{ selected?.description }}
             </span>
           </div>
@@ -70,87 +75,31 @@ function selectReference(index: number) {
               content: 'w-auto py-1 cursor-pointer',
             }"
           >
-            <UPageCard
+            <CustomReviewCard
               v-for="(ref, i) in references"
               :key="ref.name"
-              variant="subtle"
-              :description="ref.quote"
-              :ui="{
-                description:
-                  'before:content-[open-quote] after:content-[close-quote] line-clamp-3 whitespace-break-spaces',
-              }"
+              :quote="ref.quote"
+              :author="ref.name"
+              :avatar="ref.avatar"
+              :author-description="ref.company || ref.destination"
               :class="[
-                'w-64 shrink-0',
-                selectedIndex === i && 'border-secondary/50 border-[0.5px]',
+                'w-72 shrink-0 cursor-pointer transition-shadow',
+                selectedIndex === i && 'ring-2 ring-secondary-400',
               ]"
+              role="button"
+              tabindex="0"
               @click="selectReference(i)"
-            >
-              <template #footer>
-                <UUser
-                  :name="ref.name"
-                  :description="ref.company || ref.destination"
-                  :avatar="{ src: ref.avatar, alt: ref.name }"
-                  size="md"
-                  :ui="{ description: 'line-clamp-1' }"
-                />
-              </template>
-            </UPageCard>
+              @keydown.enter="selectReference(i)"
+              @keydown.space.prevent="selectReference(i)"
+            />
           </UMarquee>
 
           <div class="mt-12 flex gap-4">
-            <a
-              href="https://www.google.com/search?q=Collegas+s.r.o.+Recenze"
-              class="block min-w-0 flex-1 rounded-lg border border-gray-200 bg-white p-4 transition hover:bg-gray-50"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Recenze COLLEGAS na Googlu"
-            >
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2">
-                  <svg class="h-8 w-8 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.8 3-4.3 3-7.3Z" />
-                    <path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1a5.8 5.8 0 0 1-5.5-4H3.2v2.6A10 10 0 0 0 12 22Z" />
-                    <path fill="#FBBC05" d="M6.5 14.1a6 6 0 0 1 0-4.2V7.3H3.2a10 10 0 0 0 0 9.4l3.3-2.6Z" />
-                    <path fill="#EA4335" d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.8A9.7 9.7 0 0 0 3.2 7.3l3.3 2.6A5.8 5.8 0 0 1 12 5.9Z" />
-                  </svg>
-                  <span class="text-sm font-medium text-gray-900">Google</span>
-                  <UIcon
-                    name="i-material-symbols-open-in-new"
-                    class="ml-auto size-4 shrink-0 text-gray-500"
-                  />
-                </div>
-                <div class="flex items-center gap-2 text-sm">
-                  <strong class="text-gray-950">5/5</strong>
-                  <span class="whitespace-nowrap text-gray-800">239 recenzí</span>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="https://www.firmy.cz/detail/13020239-collegas-brno-styrice.html#rating"
-              class="block min-w-0 flex-1 rounded-lg border border-gray-200 bg-white p-4 transition hover:bg-gray-50"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Recenze COLLEGAS na Seznamu"
-            >
-              <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-2">
-                  <NuxtImg
-                    class="h-8 min-w-0 max-w-32 object-contain"
-                    src="/img/logo/seznam.svg"
-                    alt="Seznam.cz"
-                  />
-                  <UIcon
-                    name="i-material-symbols-open-in-new"
-                    class="ml-auto size-4 shrink-0 text-gray-500"
-                  />
-                </div>
-                <div class="flex items-center gap-2 text-sm">
-                  <strong class="text-gray-950">5,0</strong>
-                  <span class="whitespace-nowrap text-gray-800">162 recenzí</span>
-                </div>
-              </div>
-            </a>
+            <CustomReviewPlatformCard
+              v-for="platform in reviewPlatforms"
+              :key="platform.id"
+              :platform="platform"
+            />
           </div>
         </div>
       </div>
