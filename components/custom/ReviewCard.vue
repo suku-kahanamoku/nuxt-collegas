@@ -23,6 +23,8 @@ const props = withDefaults(
     href?: string;
     contextLinks?: ContextLink[];
     theme?: "light" | "dark";
+    maxQuoteLines?: 3;
+    uniformHeight?: boolean;
   }>(),
   {
     theme: "dark",
@@ -52,7 +54,8 @@ const userUi = computed(() => ({
 <template>
   <article
     :class="[
-      'flex h-full min-w-0 flex-col rounded-2xl border p-6',
+      'flex min-w-0 flex-col rounded-2xl border p-6',
+      uniformHeight ? 'h-56' : 'h-full',
       isDark
         ? 'border-primary-800 bg-primary-950 shadow-lg [background-image:linear-gradient(230deg,rgba(4,41,30,0.35)_0%,transparent_97%)]'
         : 'border-primary-100 bg-white shadow-sm',
@@ -84,6 +87,7 @@ const userUi = computed(() => ({
       :class="[
         'mb-6 text-sm leading-relaxed whitespace-break-spaces',
         isDark ? 'text-white' : 'text-on-surface',
+        maxQuoteLines === 3 && 'line-clamp-3',
       ]"
     >
       „{{ quote }}“

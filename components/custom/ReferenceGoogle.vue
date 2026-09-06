@@ -83,6 +83,8 @@ function selectReference(index: number) {
               :avatar="ref.avatar"
               :author-description="ref.company || ref.destination"
               theme="light"
+              :max-quote-lines="3"
+              uniform-height
               :class="[
                 'w-72 shrink-0 cursor-pointer transition-shadow',
                 selectedIndex === i && 'ring-2 ring-secondary-400',
