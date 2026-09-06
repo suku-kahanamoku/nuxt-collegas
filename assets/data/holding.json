@@ -1,104 +1,129 @@
 [
   {
-    "title": "Finance, právo, daně",
+    "id": "finance-and-taxes",
+    "title": "Finance a daně",
     "nodes": [
       {
         "title": "Finanční poradenství",
-        "name": "COLLEGAS s.r.o.",
+        "names": ["Collegas s.r.o."],
         "imgSrc": "/img/intro/main.png",
-        "imgAlt": "Kancelář COLLEGAS",
+        "imgAlt": "Kancelář Collegas",
         "description": "Privátní finanční poradenství pro rodiny i podnikatele."
       },
       {
-        "title": "Odškodnění & náhrady",
-        "name": "COLLEGAS ODŠKODNĚNÍ s.r.o.",
+        "title": "Odškodnění a náhrady",
+        "names": ["Collegas Odškodnění s.r.o."],
         "imgSrc": "/img/other/compensation.png",
-        "imgAlt": "Kancelář COLLEGAS ODŠKODNĚNÍ",
+        "imgAlt": "Odškodnění a náhrady škod",
         "description": "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby."
       },
       {
-        "title": "Finance & pojištění",
-        "name": "COLLEGA BROKERS a.s.",
+        "title": "Brokerpoolové služby",
+        "names": ["Collega Brokers a.s.", "Collegas Investice s.r.o."],
         "imgSrc": "/img/other/financing.png",
-        "imgAlt": "Centrála COLLEGA BROKERS",
-        "description": "Broker poolové služby.",
-        "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
-        "logoAlt": "Česká národní banka"
+        "imgAlt": "Brokerpoolové služby"
       },
       {
-        "title": "Průmyslové pojištění",
-        "name": "COLLEGA MAKLÉŘ s.r.o.",
+        "title": "Specializované průmyslové pojištění",
+        "names": ["Collega Makléř s.r.o."],
         "imgSrc": "/img/other/risk_headging.png",
-        "imgAlt": "Kancelář COLLEGA MAKLÉŘ",
+        "imgAlt": "Specializované průmyslové pojištění",
         "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele."
       },
       {
-        "title": "Investiční zprostředkovatel",
-        "name": "COLLEGA INVESTICE s.r.o.",
-        "imgSrc": "/img/other/investment_property.png",
-        "imgAlt": "Kancelář COLLEGA INVESTICE",
-        "description": "Broker poolové služby.",
-        "logoSrc": "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
-        "logoAlt": "Česká národní banka"
-      },
-      {
-        "title": "Účetnictví & daně",
-        "name": "BULA & COLLEGAS s.r.o.",
+        "title": "Daňové poradenství a účetnictví",
+        "names": ["BULA&Collegas"],
         "imgSrc": "/img/other/tax_consult.png",
-        "imgAlt": "Kancelář BULA & COLLEGAS",
+        "imgAlt": "Daňové poradenství a účetnictví",
         "description": "Účetnictví a daňové poradenství pro firmy i jednotlivce."
+      },
+      {
+        "title": "Honorované poradenství",
+        "names": ["Fiduciam consiglio s.r.o."],
+        "imgSrc": "/img/other/investment_property.png",
+        "imgAlt": "Honorované poradenství"
       }
     ]
   },
   {
-    "title": "Development & reality",
+    "id": "real-estate",
+    "title": "Realitní činnost a správa nemovitostí",
     "nodes": [
       {
-        "title": "Developerské projekty",
-        "name": "REZIDENCE SRUBEC, GREEN A VRCHLABÍ",
-        "imgSrc": "/img/other/develop_project.png",
-        "imgAlt": "Přehled developerských projektů COLLEGAS",
-        "description": "Výstavba bytových domů v lokalitách Srubec, Green a Vrchlabí."
-      },
-      {
-        "title": "Reality",
-        "name": "COLLEGAS REALITY s.r.o.",
+        "title": "Realitní kancelář",
+        "names": ["Collegas Reality s.r.o."],
         "imgSrc": "/img/other/reality.png",
-        "imgAlt": "Prodej a správa nemovitostí",
-        "description": "Prodej a správa nemovitostí."
+        "imgAlt": "Realitní kancelář Collegas Reality",
+        "description": "Prodej, pronájem a výkup nemovitostí."
       },
       {
-        "title": "Kanceláře",
-        "name": "M DEAL s.r.o.",
-        "imgSrc": "/img/branch/az_tower.jpg",
-        "imgAlt": "Kancelářské prostory v AZ Tower",
-        "description": "Nákup a pronájem kancelářských prostor."
+        "title": "Správa nemovitostí",
+        "names": ["Postaráme.cz"],
+        "imgSrc": "/img/other/reality.png",
+        "imgAlt": "Správa nemovitostí"
       },
       {
-        "title": "Energetika",
-        "name": "COLLEGAS INVESTING s.r.o.",
-        "imgSrc": "/img/other/energy_optimalization.png",
-        "imgAlt": "Energetická optimalizace nemovitostí",
-        "description": "Licencovaný energetický makléř."
+        "title": "Zajišťování krátkodobého ubytování",
+        "imgSrc": "/img/intro/cafe.png",
+        "imgAlt": "Krátkodobé ubytování v Brně",
+        "description": "V 8 apartmánech v Brně zajišťujeme ubytování převážně pro zahraniční klienty."
       }
     ]
   },
   {
-    "title": "Software & technologie",
+    "id": "it-services",
+    "title": "IT služby",
     "nodes": [
       {
-        "title": "Software & IT",
-        "name": "COLLEGA SOLUTION s.r.o.",
+        "title": "IT řešení na míru",
+        "names": ["Collega Solution s.r.o."],
         "imgSrc": "/img/intro/notes.png",
-        "imgAlt": "Kancelář COLLEGA SOLUTION",
-        "description": "Vývoj softwarových řešení pro firmy."
+        "imgAlt": "IT řešení na míru"
+      }
+    ]
+  },
+  {
+    "id": "completed-investments",
+    "title": "Realizované investiční projekty",
+    "nodes": [
+      {
+        "title": "Kancelářské prostory v AZ Tower v 11. patře",
+        "imgSrc": "/img/branch/az_tower.jpg",
+        "imgAlt": "Kancelářské prostory v AZ Tower v 11. patře"
       },
       {
-        "title": "Výrobní technologie",
-        "name": "DIAMOND FISH",
+        "title": "Kancelářské prostory v AZ Tower ve 2. patře",
+        "imgSrc": "/img/branch/az_tower.jpg",
+        "imgAlt": "Kancelářské prostory v AZ Tower"
+      },
+      {
+        "title": "RAS rybí farma",
+        "names": ["Diamond Fish"],
         "imgSrc": "/img/intro/cafe.png",
-        "imgAlt": "Kancelář DIAMOND FISH",
+        "imgAlt": "Diamond Fish",
         "description": "Chov a zpracování ryb."
+      }
+    ]
+  },
+  {
+    "id": "upcoming-projects",
+    "title": "Projekty v přípravě",
+    "nodes": [
+      {
+        "title": "Bytový dům",
+        "names": ["Rezidence Srubec"],
+        "imgSrc": "/img/other/develop_project.png",
+        "imgAlt": "Rezidence Srubec"
+      },
+      {
+        "title": "Bytový dům u Brna",
+        "imgSrc": "/img/other/develop_project.png",
+        "imgAlt": "Projekt bytového domu u Brna"
+      },
+      {
+        "title": "Výstavba bytů v Krkonoších",
+        "imgSrc": "/img/other/develop_project.png",
+        "imgAlt": "Projekt výstavby bytů v Krkonoších"
       }
     ]
   }

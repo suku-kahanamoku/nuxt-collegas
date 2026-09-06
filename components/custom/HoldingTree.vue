@@ -3,15 +3,18 @@ import holdingData from "~/assets/data/holding.json";
 
 interface HoldingNode {
   title: string;
-  name: string;
+  names?: string[];
   imgSrc: string;
-  imgAlt: string;
+  imgAlt?: string;
   description?: string;
+  href?: string;
+  linkLabel?: string;
   logoSrc?: string;
   logoAlt?: string;
 }
 
 interface HoldingSection {
+  id: string;
   title: string;
   nodes: HoldingNode[];
 }
@@ -31,8 +34,8 @@ const sections: HoldingSection[] = holdingData;
       );
     "
   >
-    <template v-for="(section, si) in sections" :key="si">
-      <section class="py-stack-lg px-gutter overflow-x-auto">
+    <template v-for="section in sections" :key="section.id">
+      <section :id="section.id" class="py-stack-lg px-gutter">
         <div class="max-w-7xl mx-auto">
           <header class="text-center mb-stack-xl max-w-2xl mx-auto">
             <h2
@@ -43,22 +46,24 @@ const sections: HoldingSection[] = holdingData;
           </header>
 
           <div
-            class="flex gap-6 items-stretch justify-center flex-wrap"
+            class="holding-card-grid"
           >
             <div
-              v-for="(node, ni) in section.nodes"
-              :key="ni"
-              class="flex w-80 max-[1060px]:w-full max-w-80"
+              v-for="node in section.nodes"
+              :key="node.title"
+              class="holding-card-grid__item"
             >
               <UiTreeCard
                 class="flex-1 h-full"
-                :imgSrc="node.imgSrc"
-                :imgAlt="node.imgAlt"
+                :img-src="node.imgSrc"
+                :img-alt="node.imgAlt"
                 :title="node.title"
-                :name="node.name"
+                :names="node.names"
                 :description="node.description"
-                :logoSrc="node.logoSrc"
-                :logoAlt="node.logoAlt"
+                :href="node.href"
+                :link-label="node.linkLabel"
+                :logo-src="node.logoSrc"
+                :logo-alt="node.logoAlt"
               />
             </div>
           </div>
@@ -67,3 +72,20 @@ const sections: HoldingSection[] = holdingData;
     </template>
   </div>
 </template>
+
+<style scoped>
+.holding-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.holding-card-grid__item {
+  display: flex;
+  flex: 0 1 20rem;
+  width: 100%;
+  max-width: 20rem;
+}
+</style>
