@@ -3,6 +3,11 @@ import { computed, ref, watch } from "vue";
 
 import reviewPlatforms from "~/assets/data/review-platforms.json";
 import usersData from "~/assets/data/users.json";
+import {
+  getReviewerName,
+  getReviewSource,
+  reviewSourceLabels,
+} from "~/utils/reviews";
 
 definePageMeta({ title: "Reference | COLLEGAS" });
 useHead({
@@ -46,23 +51,6 @@ type Reference = RawReference & {
   advisers: Adviser[];
 };
 
-const sourceLabels: Record<string, string> = {
-  google: "Google",
-  seznam: "Seznam.cz",
-  facebook: "Facebook",
-  other: "Klientská",
-};
-
-function getSource(reference: RawReference) {
-  if (reference.source) return reference.source.toLowerCase();
-
-  const author = reference.author?.toLowerCase() || "";
-  if (author.includes("seznam")) return "seznam";
-  if (author.includes("facebook")) return "facebook";
-  if (author.includes("google")) return "google";
-  return "other";
-}
-
 const references = computed<Reference[]>(() => {
   const unique = new Map<string, Reference>();
 
@@ -82,14 +70,14 @@ const references = computed<Reference[]>(() => {
         continue;
       }
 
-      const source = getSource(reference);
+      const source = getReviewSource(reference.source, reference.author);
       unique.set(key, {
         ...reference,
         key,
         source,
         reviewerName:
           reference.reviewerName ||
-          reference.author?.replace(/\s*\([^)]*recenze\)\s*$/i, "") ||
+          (reference.author && getReviewerName(reference.author)) ||
           "Klient COLLEGAS",
         advisers: [{ name: person.name, slug: person.slug }],
       });
@@ -103,12 +91,21 @@ const availableSources = computed(() =>
   ["google", "seznam", "facebook"]
     .map((id) => ({
       id,
-      label: sourceLabels[id],
+      label: reviewSourceLabels[id as keyof typeof reviewSourceLabels],
       count: references.value.filter((reference) => reference.source === id)
         .length,
     }))
     .filter((source) => source.count > 0),
 );
+
+const filterOptions = computed(() => [
+  { label: "Všechny", value: "all", count: references.value.length },
+  ...availableSources.value.map((source) => ({
+    label: source.label,
+    value: source.id,
+    count: source.count,
+  })),
+]);
 
 const activeSource = ref("all");
 const visibleCount = ref(12);
@@ -130,35 +127,11 @@ watch(activeSource, () => {
 
 <template>
   <div class="w-full">
-    <UiIntro>
-      <template #header>
-        <UiTitle size="md">
-          <template #eyebrow>
-            <span
-              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-            >
-              Zkušenosti našich klientů
-            </span>
-          </template>
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-tight"
-            >
-              Reference
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p
-          class="text-body-lg text-on-primary-container max-w-2xl mt-stack-md opacity-90"
-        >
-          Nejlépe o naší práci vypovídají lidé, kterým pomáháme pečovat o
-          finance, majetek a jejich dlouhodobé plány.
-        </p>
-      </template>
-    </UiIntro>
+    <UiPageIntro
+      eyebrow="Zkušenosti našich klientů"
+      title="Reference"
+      description="Nejlépe o naší práci vypovídají lidé, kterým pomáháme pečovat o finance, majetek a jejich dlouhodobé plány."
+    />
 
     <section class="bg-surface-container-lowest py-stack-lg md:py-section-gap">
       <UContainer>
@@ -201,38 +174,14 @@ watch(activeSource, () => {
           </p>
         </div>
 
-        <div
+        <UiFilterTabs
           v-if="availableSources.length > 1"
-          class="mb-stack-lg flex flex-wrap justify-center gap-2"
+          v-model="activeSource"
+          :options="filterOptions"
+          theme="dark"
           aria-label="Filtrovat reference podle zdroje"
-        >
-          <button
-            type="button"
-            :class="[
-              'rounded-full border px-4 py-2 text-sm font-semibold transition-colors',
-              activeSource === 'all'
-                ? 'border-secondary-400 bg-secondary-400 text-primary-950'
-                : 'border-primary-700 text-white hover:border-secondary-400',
-            ]"
-            @click="activeSource = 'all'"
-          >
-            Všechny ({{ references.length }})
-          </button>
-          <button
-            v-for="source in availableSources"
-            :key="source.id"
-            type="button"
-            :class="[
-              'rounded-full border px-4 py-2 text-sm font-semibold transition-colors',
-              activeSource === source.id
-                ? 'border-secondary-400 bg-secondary-400 text-primary-950'
-                : 'border-primary-700 text-white hover:border-secondary-400',
-            ]"
-            @click="activeSource = source.id"
-          >
-            {{ source.label }} ({{ source.count }})
-          </button>
-        </div>
+          class="mb-stack-lg"
+        />
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <CustomReviewCard

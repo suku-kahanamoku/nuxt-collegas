@@ -168,41 +168,11 @@ const principles = [
       </UContainer>
     </section>
 
-    <CustomUserPic&desc bg-image="/img/other/compass.png" img-class="shadow-sm">
-      <template #overlay>
-        <span class="text-headline-lg md:text-display-xl leading-none"
-          >20+</span
-        >
-        <span class="font-label-caps uppercase tracking-widest"
-          >LET ZKUŠENOSTÍ PRO VÁS</span
-        >
-      </template>
-
-      <div class="space-y-stack-md from-right">
-        <span
-          class="font-label-caps text-secondary-700 uppercase tracking-widest block mb-4"
-          >Naše zásady</span
-        >
-        <h2
-          class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-        >
-          Jak přistupujeme k vašemu majetku
-        </h2>
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          Základem naší práce je hluboké porozumění vaší situaci a naprostá
-          otevřenost. Než navrhneme konkrétní řešení, společně detailně
-          definujeme vaše cíle, časové možnosti a přístup k riziku. Každou
-          strategii stavíme na míru vaší aktuální situaci.
-        </p>
-        <p
-          class="font-body-md text-body-md text-on-surface-variant border-l-2 border-secondary pl-stack-md italic"
-        >
-          „Neslibujeme iluzi bezrizikového výnosu. Každá investice má své
-          scénáře. Naší rolí je tato rizika férově pojmenovat, srozumitelně vám
-          je vysvětlit a efektivně je řídit."
-        </p>
-      </div>
-    </CustomUserPic&desc>
+    <CustomPrinciplesFeature
+      title="Jak přistupujeme k vašemu majetku"
+      body="Základem naší práce je hluboké porozumění vaší situaci a naprostá otevřenost. Než navrhneme konkrétní řešení, společně detailně definujeme vaše cíle, časové možnosti a přístup k riziku. Každou strategii stavíme na míru vaší aktuální situaci."
+      quote="Neslibujeme iluzi bezrizikového výnosu. Každá investice má své scénáře. Naší rolí je tato rizika férově pojmenovat, srozumitelně vám je vysvětlit a efektivně je řídit."
+    />
 
     <section
       class="py-stack-lg md:py-section-gap bg-primary-900 text-on-primary overflow-hidden"
@@ -248,9 +218,6 @@ const principles = [
       </UContainer>
     </section>
 
-    <!-- ── Timeline ── -->
-    <!-- <CustomTimeline /> -->
-
     <!-- ── Skupinové foto ── -->
     <CustomPeopleCarousel
       title="Lidé, kteří stojí za COLLEGA"
@@ -258,30 +225,11 @@ const principles = [
     />
 
     <!-- ── CTA ── -->
-    <UiDarkBanner
+    <CustomConsultationBanner
       title="Začněme nezávaznou konzultací"
       body="Zjistěte, jak vám může nezávislé poradenství skupiny COLLEGAS pomoci dosáhnout vašich cílů. Bez závazků, bez poplatků za první schůzku."
-    >
-      <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
-        <UiButton
-          to="/contact#contact-form"
-          variant="solid"
-          class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
-        >
-          Kontaktovat nás
-          <UIcon
-            name="i-material-symbols-arrow-forward"
-            class="size-5 transition-transform duration-200 group-hover:translate-x-1"
-          />
-        </UiButton>
-        <UiButton
-          to="/contact"
-          variant="outline"
-          class="justify-center px-10 py-4 text-base border-on-primary text-on-primary hover:bg-on-primary/10"
-        >
-          Naše pobočky
-        </UiButton>
-      </div>
-    </UiDarkBanner>
+      secondary-label="Naše pobočky"
+      secondary-to="/contact"
+    />
   </div>
 </template>

@@ -1,40 +1,77 @@
 <script setup lang="ts">
 import services from "~/assets/data/service-menu.json";
+
+withDefaults(
+  defineProps<{
+    title?: string;
+    description?: string;
+    background?: string;
+  }>(),
+  {
+    title: "Naše služby",
+    description: "",
+    background: "bg-surface-container-low",
+  },
+);
 </script>
 
 <template>
-  <!-- ── Naše služby ── -->
-  <section class="bg-surface-container-low py-stack-lg md:py-section-gap">
+  <section :class="['py-stack-lg md:py-section-gap', background]">
     <UContainer>
-      <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
-          Naše služby
-        </h2>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-stack-md">
-        <UiBaseCard v-for="s in services" :key="s.key" :to="s.to">
-          <template #header>
-            <UiTitle size="sm">
-              <template #eyebrow>
-                <UIcon :name="s.icon" class="text-secondary-700 text-4xl" />
-              </template>
-              <template #title>
-                <h3 class="text-title-md md:text-title-lg font-serif text-primary-800">
-                  {{ s.title }}
-                </h3>
-              </template>
-            </UiTitle>
-          </template>
+      <UiSectionHeading
+        :title="title"
+        :description="description"
+        :divider="Boolean(description)"
+        class="mb-stack-lg"
+      />
 
-          <p class="text-body-md text-on-surface-variant flex-1 whitespace-break-spaces">
-            {{ s.description }}
+      <div
+        class="grid grid-cols-[repeat(auto-fit,minmax(min(16rem,100%),1fr))] gap-stack-md"
+      >
+        <UiBaseCard
+          v-for="service in services"
+          :key="service.key"
+          :to="service.to"
+          :highlight="service.highlight"
+        >
+          <UIcon
+            :name="service.icon"
+            :class="[
+              'text-4xl',
+              service.highlight ? 'text-secondary-fixed' : 'text-secondary-700',
+            ]"
+          />
+
+          <h3
+            :class="[
+              'text-title-md md:text-title-lg font-serif leading-tight',
+              service.highlight ? 'text-on-primary' : 'text-primary-800',
+            ]"
+          >
+            {{ service.title }}
+          </h3>
+
+          <p
+            :class="[
+              'text-body-md flex-1 whitespace-break-spaces',
+              service.highlight
+                ? 'text-on-primary/70'
+                : 'text-on-surface-variant',
+            ]"
+          >
+            {{ service.description }}
           </p>
 
           <template #footer>
             <span
-              class="inline-flex items-center gap-1 text-secondary-700 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity"
+              :class="[
+                'inline-flex items-center gap-1 text-label-caps font-semibold uppercase tracking-widest group-hover:opacity-70 transition-opacity',
+                service.highlight
+                  ? 'text-secondary-fixed'
+                  : 'text-secondary-700',
+              ]"
             >
-              {{ s.ctaLabel }}
+              {{ service.ctaLabel }}
               <UIcon
                 name="i-material-symbols-arrow-forward"
                 class="text-body-md transition-transform duration-200 group-hover:translate-x-1"

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useTimeoutFn } from "@vueuse/core";
-
 import usersData from "~/assets/data/users.json";
 
 const userOptions = usersData.map((user) => ({
@@ -30,61 +28,23 @@ const initialForm = {
 
 const form = reactive({ ...initialForm });
 
-const submitted = ref(false);
-const loading = ref(false);
-
-const { display } = useToastify();
-
 function resetForm() {
   Object.assign(form, initialForm);
 }
 
-const { start, stop } = useTimeoutFn(
-  () => {
-    submitted.value = false;
-    resetForm();
-  },
-  5000,
-  { immediate: false },
+const { submitted, loading, submit } = useFormSubmission(
+  () =>
+    useApi("/api/email/contact-form", {
+      method: "POST",
+      body: { ...form },
+    }),
+  resetForm,
 );
 
 async function handleSubmit() {
-  if (!form.name || !form.email || !form.phone || loading.value) return;
-
-  loading.value = true;
-
-  try {
-    await useApi("/api/email/contact-form", {
-      method: "POST",
-      body: {
-        name: form.name,
-        email: form.email,
-        interest: form.interest,
-        phone: form.phone,
-        message: form.message,
-        consultant: form.consultant,
-      },
-    });
-
-    submitted.value = true;
-    stop();
-    start();
-
-    display({
-      type: "success",
-      message: "$.contact.success_msg",
-    });
-  } catch (error: any) {
-    display({
-      type: "error",
-      message: error?.data?.message || error?.message,
-    });
-  } finally {
-    loading.value = false;
-  }
+  if (!form.name || !form.email || !form.phone) return;
+  await submit();
 }
-
-onBeforeUnmount(stop);
 </script>
 
 <template>
@@ -111,19 +71,7 @@ onBeforeUnmount(stop);
       </p>
     </div>
 
-    <div
-      v-if="submitted"
-      class="flex flex-col items-center justify-center gap-3 py-stack-lg text-center"
-    >
-      <UIcon
-        name="i-material-symbols-check-circle"
-        class="text-secondary-fixed text-5xl"
-      />
-
-      <p class="text-body-lg text-secondary-fixed font-medium">
-        Díky! Ozveme se vám brzy.
-      </p>
-    </div>
+    <UiSubmissionSuccess v-if="submitted" class="py-stack-lg" />
 
     <form v-else class="space-y-stack-md" @submit.prevent="handleSubmit">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">

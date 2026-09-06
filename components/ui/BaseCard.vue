@@ -1,16 +1,10 @@
 <script setup lang="ts">
-import { resolveComponent, computed, ref } from "vue";
+import { computed, ref } from "vue";
 
 const props = defineProps({
   to: { type: [String, Object], required: false },
   highlight: { type: Boolean, default: false },
 });
-
-const isInternal = (to?: string | object) => {
-  if (typeof to === "string") return to.startsWith("/");
-  return true;
-};
-const NuxtLinkComponent = resolveComponent("NuxtLink");
 
 const spotlightStyle = ref<Record<string, string>>({
   "--spotlight-x": "-9999px",
@@ -49,15 +43,8 @@ const spotlightColors = computed(() => {
 </script>
 
 <template>
-  <component
-    :is="props.to ? (isInternal(props.to) ? NuxtLinkComponent : 'a') : 'div'"
-    v-bind="
-      props.to
-        ? isInternal(props.to)
-          ? { to: props.to }
-          : { href: props.to, target: '_blank', rel: 'noopener' }
-        : {}
-    "
+  <UiLinkRoot
+    :to="props.to"
     :style="spotlightStyle"
     :class="[
       rootClass,
@@ -91,5 +78,5 @@ const spotlightColors = computed(() => {
         <slot name="footer" />
       </div>
     </div>
-  </component>
+  </UiLinkRoot>
 </template>

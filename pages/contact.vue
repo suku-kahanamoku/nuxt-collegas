@@ -14,27 +14,12 @@ useHead({
 
 <template>
   <div class="w-full">
-    <!-- ── Hero ── -->
-    <UiIntro variant="light" :ui="{ bg: false }">
-      <template #header>
-        <UiTitle eyebrow="Kontakt" size="md">
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
-            >
-              Spojte se s námi
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p>
-          Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně
-          najdeme ten správný první krok.
-        </p>
-      </template>
-    </UiIntro>
+    <UiPageIntro
+      eyebrow="Kontakt"
+      title="Spojte se s námi"
+      description="Každá dobrá spolupráce začíná rozhovorem. Ozvěte se nám a společně najdeme ten správný první krok."
+      theme="light"
+    />
 
     <!-- ── Dvousloupcový obsah ── -->
     <section

@@ -21,16 +21,11 @@ defineProps<{
         0 6px 24px rgba(4, 41, 30, 0.09);
     "
   >
-    <div class="aspect-square relative overflow-hidden">
-      <NuxtImg
-        :src="imgSrc"
-        :alt="imgAlt ?? name"
-        class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300"
-        format="webp"
-        loading="lazy"
-        sizes="sm:100vw md:50vw lg:33vw xl:33vw"
-      />
-    </div>
+    <UiCardImage
+      :src="imgSrc"
+      :alt="imgAlt ?? name"
+      container-class="aspect-square"
+    />
     <div class="p-stack-md grow flex flex-col">
       <h3 class="text-title-md md:text-title-lg text-primary-800 mb-stack-sm">
         {{ name }}

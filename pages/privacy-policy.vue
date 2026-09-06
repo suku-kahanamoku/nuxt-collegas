@@ -14,20 +14,10 @@ useHead({
 </script>
 
 <template>
-  <div class="w-full">
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
-      <UContainer class="mx-auto px-gutter max-w-4xl">
-        <h1
-          class="text-headline-lg md:text-display-xl text-primary-800 mb-stack-md leading-tight"
-        >
-          Ochrana soukromi a zpracovani osobnich udaju
-        </h1>
-        <p class="font-body-md text-on-surface-variant mb-stack-lg">
-          Tato stranka shrnuje informace o zpracovani osobnich udaju spolecnosti
-          Collegas s.r.o. v souladu s GDPR. Text je zpracovan podle verejne
-          dostupnych informaci z oficialniho dokumentu spolocnosti.
-        </p>
-
+  <UiLegalPage
+    title="Ochrana soukromi a zpracovani osobnich udaju"
+    intro="Tato stranka shrnuje informace o zpracovani osobnich udaju spolecnosti Collegas s.r.o. v souladu s GDPR. Text je zpracovan podle verejne dostupnych informaci z oficialniho dokumentu spolocnosti."
+  >
         <div class="space-y-stack-lg">
           <section>
             <h2 class="text-headline-md md:text-headline-lg text-primary-800 mb-stack-sm">
@@ -117,7 +107,5 @@ useHead({
             </p>
           </section>
         </div>
-      </UContainer>
-    </section>
-  </div>
+  </UiLegalPage>
 </template>

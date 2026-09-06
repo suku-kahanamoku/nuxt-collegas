@@ -14,16 +14,11 @@ defineProps<{
   <div
     class="h-full bg-surface-container-lowest border border-outline-variant/30 flex flex-col"
   >
-    <div class="h-40 relative overflow-hidden">
-      <NuxtImg
-        :src="imgSrc"
-        :alt="imgAlt ?? name"
-        class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-300"
-        format="webp"
-        loading="lazy"
-        sizes="sm:100vw md:50vw lg:33vw xl:33vw"
-      />
-    </div>
+    <UiCardImage
+      :src="imgSrc"
+      :alt="imgAlt ?? name"
+      container-class="h-40"
+    />
     <div class="p-stack-md grow flex flex-col">
       <h3 class="text-title-md md:text-title-lg text-primary-800 mb-stack-sm">
         {{ title }}

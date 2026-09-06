@@ -33,15 +33,6 @@ const phone = user.phone || "";
 const mounted = ref(false);
 onMounted(() => setTimeout(() => (mounted.value = true), 80));
 
-const metrics = computed(
-  () =>
-    user.metrics || [
-      { value: "10+", label: "Let Praxe" },
-      { value: "PFP", label: "Oborový Titul" },
-      { value: "100+", label: "Spokojených Klientů" },
-    ],
-);
-
 const references = computed(
   () =>
     user.references || [
@@ -121,41 +112,15 @@ const references = computed(
         </p>
 
         <!-- Contact info row -->
-        <div
-          class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 text-white text-sm mb-10 transition-all duration-700 delay-700"
+        <CustomContactLinks
+          :phone="phone"
+          :email="email"
+          :location="user.location"
+          class="mb-10 transition-all duration-700 delay-700"
           :class="
             mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           "
-        >
-          <NuxtLink
-            v-if="phone"
-            :to="`tel:${phone}`"
-            class="flex items-center gap-2 hover:opacity-75 transition-opacity"
-          >
-            <UIcon
-              name="mdi:phone"
-              class="w-5 h-5 shrink-0 text-secondary-400"
-            />
-            {{ phone }}
-          </NuxtLink>
-          <NuxtLink
-            :to="`mailto:${email}`"
-            class="flex items-center gap-2 hover:opacity-75 transition-opacity"
-          >
-            <UIcon
-              name="i-material-symbols-mail"
-              class="w-5 h-5 shrink-0 text-secondary-400"
-            />
-            {{ email }}
-          </NuxtLink>
-          <span v-if="user.location" class="flex items-center gap-2">
-            <UIcon
-              name="i-material-symbols-location-on"
-              class="w-5 h-5 shrink-0 text-secondary-400"
-            />
-            {{ user.location }}
-          </span>
-        </div>
+        />
 
         <!-- CTA -->
         <div
@@ -206,30 +171,6 @@ const references = computed(
             </p>
           </div>
         </div>
-
-        <!-- Metrics -->
-        <!-- <div class="mt-20 grid grid-cols-3 gap-8 border-t pt-16 border-white/8">
-          <div v-for="(m, idx) in metrics" :key="idx" class="text-center">
-            <p
-              class="text-5xl font-bold mb-2"
-              style="
-                background: linear-gradient(
-                  24deg,
-                  var(--color-secondary-400) 0%,
-                  rgba(255, 255, 255, 0.55) 100%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-              "
-            >
-              {{ m.value }}
-            </p>
-            <p class="text-sm text-white/40">
-              {{ m.label }}
-            </p>
-          </div>
-        </div> -->
 
         <div class="mt-16 text-center">
           <UiButton :to="`/contact#contact-form`" class="rounded-full"
@@ -282,39 +223,12 @@ const references = computed(
           >
             Kde mě najdete
           </h2>
-          <div class="space-y-5">
-            <NuxtLink
-              v-if="phone"
-              :to="`tel:${phone}`"
-              class="flex items-center gap-4 text-white hover:opacity-75 transition-opacity text-base"
-            >
-              <UIcon
-                name="mdi:phone"
-                class="w-6 h-6 shrink-0 text-secondary-400"
-              />
-              {{ phone }}
-            </NuxtLink>
-            <NuxtLink
-              :to="`mailto:${email}`"
-              class="flex items-center gap-4 text-white hover:opacity-75 transition-opacity text-base"
-            >
-              <UIcon
-                name="i-material-symbols-mail"
-                class="w-6 h-6 shrink-0 text-secondary-400"
-              />
-              {{ email }}
-            </NuxtLink>
-            <span
-              v-if="user.location"
-              class="flex items-center gap-4 text-white text-base"
-            >
-              <UIcon
-                name="i-material-symbols-location-on"
-                class="w-6 h-6 shrink-0 text-secondary-400"
-              />
-              {{ user.location }}
-            </span>
-          </div>
+          <CustomContactLinks
+            :phone="phone"
+            :email="email"
+            :location="user.location"
+            size="md"
+          />
         </div>
         <div v-if="user.location" class="h-64 rounded-2xl overflow-hidden">
           <iframe

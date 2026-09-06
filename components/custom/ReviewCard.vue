@@ -1,83 +1,96 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import {
+  getReviewerName,
+  getReviewSource,
+  reviewSourceLabels,
+} from "~/utils/reviews";
 
 type ContextLink = {
   label: string;
   to: string;
 };
 
-const props = defineProps<{
-  quote: string;
-  author: string;
-  avatar?: string;
-  authorDescription?: string;
-  rating?: number;
-  date?: string;
-  source?: string;
-  href?: string;
-  contextLinks?: ContextLink[];
-}>();
+const props = withDefaults(
+  defineProps<{
+    quote: string;
+    author: string;
+    avatar?: string;
+    authorDescription?: string;
+    rating?: number;
+    date?: string;
+    source?: string;
+    href?: string;
+    contextLinks?: ContextLink[];
+    theme?: "light" | "dark";
+  }>(),
+  {
+    theme: "dark",
+  },
+);
 
-const sourceLabels: Record<string, string> = {
-  google: "Google recenze",
-  seznam: "Seznam.cz recenze",
-  facebook: "Facebook recenze",
-  other: "Klientská reference",
-};
-
-const resolvedSource = computed(() => {
-  if (props.source) return props.source.toLowerCase();
-
-  const author = props.author.toLowerCase();
-  if (author.includes("seznam")) return "seznam";
-  if (author.includes("facebook")) return "facebook";
-  if (author.includes("google")) return "google";
-  return "other";
-});
+const resolvedSource = computed(() => getReviewSource(props.source, props.author));
+const isDark = computed(() => props.theme === "dark");
 
 const sourceLabel = computed(
-  () => sourceLabels[resolvedSource.value] || sourceLabels.other,
+  () =>
+    resolvedSource.value === "other"
+      ? "Klientská reference"
+      : `${reviewSourceLabels[resolvedSource.value]} recenze`,
 );
 
-const authorName = computed(() =>
-  props.author.replace(/\s*\([^)]*recenze\)\s*$/i, ""),
-);
+const authorName = computed(() => getReviewerName(props.author));
+
+const userUi = computed(() => ({
+  name: isDark.value ? "text-white" : "text-primary-800",
+  description: isDark.value
+    ? "line-clamp-1 text-white/60"
+    : "line-clamp-1 text-on-surface-variant",
+}));
 </script>
 
 <template>
   <article
-    class="flex h-full min-w-0 flex-col rounded-2xl border border-primary-800 bg-primary-950 p-6 shadow-lg"
-    style="
-      background-image: linear-gradient(
-        230deg,
-        rgba(4, 41, 30, 0.35) 0%,
-        transparent 97%
-      );
-    "
+    :class="[
+      'flex h-full min-w-0 flex-col rounded-2xl border p-6',
+      isDark
+        ? 'border-primary-800 bg-primary-950 shadow-lg [background-image:linear-gradient(230deg,rgba(4,41,30,0.35)_0%,transparent_97%)]'
+        : 'border-primary-100 bg-white shadow-sm',
+    ]"
   >
     <div class="mb-5 flex items-center gap-3">
       <span
-        class="rounded-full bg-white/8 px-3 py-1 text-xs font-semibold text-secondary-300"
+        :class="[
+          'rounded-full px-3 py-1 text-xs font-semibold',
+          isDark
+            ? 'bg-white/8 text-secondary-300'
+            : 'bg-surface-container-low text-secondary-800',
+        ]"
       >
         {{ sourceLabel }}
       </span>
-      <span v-if="date" class="ml-auto text-xs text-white/45">
+      <span
+        v-if="date"
+        :class="[
+          'ml-auto text-xs',
+          isDark ? 'text-white/45' : 'text-on-surface-variant',
+        ]"
+      >
         {{ date }}
       </span>
     </div>
 
-    <p class="mb-6 text-sm leading-relaxed text-white whitespace-break-spaces">
+    <p
+      :class="[
+        'mb-6 text-sm leading-relaxed whitespace-break-spaces',
+        isDark ? 'text-white' : 'text-on-surface',
+      ]"
+    >
       „{{ quote }}“
     </p>
 
     <div class="mt-auto">
-      <component
-        :is="href ? 'a' : 'div'"
-        :href="href"
-        :target="href ? '_blank' : undefined"
-        :rel="href ? 'noopener noreferrer' : undefined"
-        class="inline-block max-w-full"
-      >
+      <UiLinkRoot :to="href" class="inline-block max-w-full">
         <UUser
           :name="authorName"
           :avatar="
@@ -90,10 +103,7 @@ const authorName = computed(() =>
               : undefined
           "
           size="md"
-          :ui="{
-            name: 'text-white',
-            description: 'line-clamp-1 text-white/60',
-          }"
+          :ui="userUi"
         >
           <template v-if="rating || authorDescription" #description>
             <span
@@ -111,18 +121,28 @@ const authorName = computed(() =>
             <span v-else>{{ authorDescription }}</span>
           </template>
         </UUser>
-      </component>
+      </UiLinkRoot>
 
       <p
         v-if="contextLinks?.length"
-        class="mt-4 border-t border-white/8 pt-4 text-xs text-white/45"
+        :class="[
+          'mt-4 border-t pt-4 text-xs',
+          isDark
+            ? 'border-white/8 text-white/45'
+            : 'border-primary-100 text-on-surface-variant',
+        ]"
       >
         Spolupráce s
         <template v-for="(link, index) in contextLinks" :key="link.to">
           <span v-if="index > 0">, </span>
           <NuxtLink
             :to="link.to"
-            class="text-secondary-300 transition-colors hover:text-secondary-200"
+            :class="[
+              'transition-colors',
+              isDark
+                ? 'text-secondary-300 hover:text-secondary-200'
+                : 'text-secondary-800 hover:text-secondary-700',
+            ]"
           >
             {{ link.label }}
           </NuxtLink>

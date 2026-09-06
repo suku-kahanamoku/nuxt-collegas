@@ -1,51 +1,21 @@
 <script setup lang="ts">
-import { useTimeoutFn } from "@vueuse/core";
-
 const email = ref("");
-const submitted = ref(false);
-const loading = ref(false);
 
-const { display } = useToastify();
-
-const { start, stop } = useTimeoutFn(
+const { submitted, loading, submit } = useFormSubmission(
+  () =>
+    useApi("/api/email/contact", {
+      method: "POST",
+      body: { email: email.value },
+    }),
   () => {
-    submitted.value = false;
     email.value = "";
   },
-  5000,
-  { immediate: false },
 );
 
 async function handleSubmit() {
-  if (!email.value || loading.value) return;
-
-  loading.value = true;
-
-  try {
-    await useApi("/api/email/contact", {
-      method: "POST",
-      body: { email: email.value },
-    });
-
-    submitted.value = true;
-    stop();
-    start();
-
-    display({
-      type: "success",
-      message: "$.contact.success_msg",
-    });
-  } catch (error: any) {
-    display({
-      type: "error",
-      message: error?.data?.message || error?.message,
-    });
-  } finally {
-    loading.value = false;
-  }
+  if (!email.value) return;
+  await submit();
 }
-
-onBeforeUnmount(stop);
 </script>
 
 <template>
@@ -53,15 +23,7 @@ onBeforeUnmount(stop);
     title="Zanechte nám kontakt"
     body="Ozveme se vám do 24 hodin a domluvíme se na prvním kroku bez závazků."
   >
-    <div v-if="submitted" class="mt-stack-lg flex flex-col items-center gap-3">
-      <UIcon
-        name="i-material-symbols-check-circle"
-        class="text-secondary-fixed text-5xl"
-      />
-      <p class="text-body-lg text-secondary-fixed font-medium">
-        Díky! Ozveme se vám brzy.
-      </p>
-    </div>
+    <UiSubmissionSuccess v-if="submitted" class="mt-stack-lg" />
 
     <form
       v-else

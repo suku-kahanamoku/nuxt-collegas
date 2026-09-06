@@ -108,24 +108,21 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
       </div>
 
       <!-- Profile CTA -->
-      <NuxtLink
-        v-if="website && isInternal"
+      <UiLinkRoot
+        v-if="website"
         :to="website"
-        class="inline-flex items-center gap-2 text-sm font-semibold text-secondary-700 hover:text-secondary-800 transition-all duration-200 group-hover:gap-3"
-      >
-        {{ websiteLabel || "Zobrazit profil" }}
-        <UIcon name="i-material-symbols-arrow-forward" class="text-base" />
-      </NuxtLink>
-      <a
-        v-else-if="website"
-        :href="website"
-        target="_blank"
-        rel="noopener"
         class="inline-flex items-center gap-2 text-sm font-semibold text-secondary-700 hover:text-secondary-800 transition-colors"
       >
-        {{ websiteLabel || "Osobní web" }}
-        <UIcon name="i-material-symbols-open-in-new" class="text-base" />
-      </a>
+        {{ websiteLabel || (isInternal ? "Zobrazit profil" : "Osobní web") }}
+        <UIcon
+          :name="
+            isInternal
+              ? 'i-material-symbols-arrow-forward'
+              : 'i-material-symbols-open-in-new'
+          "
+          class="text-base"
+        />
+      </UiLinkRoot>
     </div>
   </div>
 </template>

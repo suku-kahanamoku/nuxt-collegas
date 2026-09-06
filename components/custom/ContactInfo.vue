@@ -1,20 +1,15 @@
 <script setup lang="ts">
-const offices = [
+import branches from "~/assets/data/branches";
+
+const companyDetails = [
+  { label: "IČO", value: "022 62 975" },
   {
-    name: "Centrála",
-    address: "AZ TOWER, 11. patro, Pražákova 1008/69, 639 00 Brno",
+    label: "Spisová značka",
+    value: "C 80725 vedená u Krajského soudu v Brně",
   },
   {
-    name: "Kancelář Kroměříž",
-    address: "Tovačovského 2784/24, Kroměříž",
-  },
-  {
-    name: "Kancelář Břeclav",
-    address: "nám. T. G. Masaryka 302/8, Břeclav",
-  },
-  {
-    name: "Kancelář Boskovice",
-    address: "Masarykovo náměstí 36/35, Boskovice",
+    label: "Sídlo",
+    value: "Pražákova 1008/69, Brno-město, 639 00 Brno",
   },
 ];
 </script>
@@ -31,8 +26,8 @@ const offices = [
         >
         <ul class="space-y-stack-sm">
           <li
-            v-for="office in offices"
-            :key="office.name"
+            v-for="office in branches"
+            :key="office.contactName"
             class="flex gap-3 items-start"
           >
             <UIcon
@@ -41,7 +36,7 @@ const offices = [
             />
             <div>
               <p class="text-body-md font-semibold text-on-surface">
-                {{ office.name }}
+                {{ office.contactName }}
               </p>
               <p class="text-body-md text-on-surface-variant">
                 {{ office.address }}
@@ -60,32 +55,18 @@ const offices = [
           Collegas s.r.o.
         </h2>
         <dl class="space-y-stack-sm">
-          <div class="flex flex-col sm:flex-row sm:gap-4">
+          <div
+            v-for="detail in companyDetails"
+            :key="detail.label"
+            class="flex flex-col sm:flex-row sm:gap-4"
+          >
             <dt
               class="text-label-caps text-secondary-800 uppercase shrink-0 w-40 tracking-widest font-semibold"
             >
-              IČO
-            </dt>
-            <dd class="text-body-md text-on-surface">022 62 975</dd>
-          </div>
-          <div class="flex flex-col sm:flex-row sm:gap-4">
-            <dt
-              class="text-label-caps text-secondary-800 uppercase shrink-0 w-40 tracking-widest font-semibold"
-            >
-              Spisová značka
+              {{ detail.label }}
             </dt>
             <dd class="text-body-md text-on-surface-variant">
-              C 80725 vedená u Krajského soudu v Brně
-            </dd>
-          </div>
-          <div class="flex flex-col sm:flex-row sm:gap-4">
-            <dt
-              class="text-label-caps text-secondary-800 uppercase shrink-0 w-40 tracking-widest font-semibold"
-            >
-              Sídlo
-            </dt>
-            <dd class="text-body-md text-on-surface-variant">
-              Pražákova 1008/69, Brno-město, 639 00 Brno
+              {{ detail.value }}
             </dd>
           </div>
         </dl>

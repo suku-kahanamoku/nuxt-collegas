@@ -35,20 +35,7 @@ const pillars = [
 
 <template>
   <div class="w-full">
-    <!-- ── Hero ── -->
-    <UiIntro variant="light" :ui="{ bg: false }">
-      <template #header>
-        <UiTitle eyebrow="COLLEGAS" size="md">
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
-            >
-              Holding
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
+    <UiPageIntro eyebrow="COLLEGAS" title="Holding" theme="light">
       <template #description>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-end">
           <div class="lg:col-span-8">
@@ -75,7 +62,7 @@ const pillars = [
           </div>
         </div>
       </template>
-    </UiIntro>
+    </UiPageIntro>
 
     <!-- ── Holding Tree ── -->
     <CustomHoldingTree />
@@ -110,7 +97,5 @@ const pillars = [
       </UContainer>
     </section>
 
-    <!-- ── Timeline ── -->
-    <!-- <CustomTimeline /> -->
   </div>
 </template>

@@ -36,6 +36,13 @@ const metaDescription = computed(() => {
   return `${raw.slice(0, maxLength - 1).trimEnd()}…`;
 });
 
+const detailSections = computed(() => [
+  { title: "Výchozí situace", body: caseStudy.value?.detail.overview },
+  { title: "Výzva", body: caseStudy.value?.detail.challenge },
+  { title: "Řešení", body: caseStudy.value?.detail.solution },
+  { title: "Výsledek", body: caseStudy.value?.detail.result },
+]);
+
 useHead(() => ({
   title: `${caseStudy.value?.title || "Modelová studie"} | Finanční poradenství`,
   meta: [
@@ -94,33 +101,18 @@ useHead(() => ({
               </p>
 
               <div class="grid grid-cols-1 gap-stack-md">
-                <article class="space-y-3">
-                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">
-                    Výchozí situace
+                <article
+                  v-for="section in detailSections"
+                  :key="section.title"
+                  class="space-y-3"
+                >
+                  <h2
+                    class="text-headline-md md:text-headline-lg text-primary-800"
+                  >
+                    {{ section.title }}
                   </h2>
                   <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    {{ caseStudy.detail.overview }}
-                  </p>
-                </article>
-
-                <article class="space-y-3">
-                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Výzva</h2>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    {{ caseStudy.detail.challenge }}
-                  </p>
-                </article>
-
-                <article class="space-y-3">
-                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Řešení</h2>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    {{ caseStudy.detail.solution }}
-                  </p>
-                </article>
-
-                <article class="space-y-3">
-                  <h2 class="text-headline-md md:text-headline-lg text-primary-800">Výsledek</h2>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant">
-                    {{ caseStudy.detail.result }}
+                    {{ section.body }}
                   </p>
                 </article>
               </div>

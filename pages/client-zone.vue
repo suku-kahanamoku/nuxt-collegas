@@ -15,27 +15,12 @@ useHead({
 
 <template>
   <div class="w-full">
-    <UiIntro variant="light" :ui="{ bg: false }">
-      <template #header>
-        <UiTitle eyebrow="COLLEGAS" size="md">
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-primary-800 leading-tight"
-            >
-              Klientská zóna
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p class="text-body-lg text-on-surface-variant max-w-2xl mt-stack-md">
-          Přístup do klientské zóny připravujeme. Pokud potřebujete řešit
-          dokumenty, přehled spolupráce nebo další servisní požadavky, ozvěte se
-          nám a nasměrujeme vás na správný další krok.
-        </p>
-      </template>
-    </UiIntro>
+    <UiPageIntro
+      eyebrow="COLLEGAS"
+      title="Klientská zóna"
+      description="Přístup do klientské zóny připravujeme. Pokud potřebujete řešit dokumenty, přehled spolupráce nebo další servisní požadavky, ozvěte se nám a nasměrujeme vás na správný další krok."
+      theme="light"
+    />
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">

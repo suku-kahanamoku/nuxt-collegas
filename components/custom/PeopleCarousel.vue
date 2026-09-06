@@ -12,20 +12,15 @@ const people = (Array.isArray(usersData) ? usersData : []) as any[];
 <template>
   <section class="py-stack-lg md:py-section-gap bg-background">
     <UContainer>
-      <div class="text-center mb-stack-lg">
-        <h2 class="text-headline-md md:text-headline-lg font-serif text-primary-800">
-          {{ props.title || "Náš tým" }}
-        </h2>
-        <p
-          class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto whitespace-break-spaces"
-        >
-          {{
-            props.description ||
-            "Odborníci, kteří se postarají o vaši finanční budoucnost"
-          }}
-        </p>
-        <div class="w-12 h-px bg-secondary-700 mx-auto mt-stack-md" />
-      </div>
+      <UiSectionHeading
+        :title="props.title || 'Náš tým'"
+        :description="
+          props.description ||
+          'Odborníci, kteří se postarají o vaši finanční budoucnost'
+        "
+        divider
+        class="mb-stack-lg"
+      />
 
       <div
         class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:hidden"

@@ -15,35 +15,11 @@ useHead({
 
 <template>
   <div class="w-full">
-    <UiIntro>
-      <template #header>
-        <UiTitle size="md">
-          <template #eyebrow>
-            <span
-              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-              >Naše služby</span
-            >
-          </template>
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-tight"
-            >
-              Naše služby
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p
-          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90 leading-relaxed"
-        >
-          Šest klíčových oblastí, ve kterých pomáháme našim klientům – finance,
-          investice, pojištění, úvěry a financování, reality a energie, daně a
-          právo. Každá oblast je propojená, aby tvořila jeden funkční celek.
-        </p>
-      </template>
-    </UiIntro>
+    <UiPageIntro
+      eyebrow="Naše služby"
+      title="Naše služby"
+      description="Šest klíčových oblastí, ve kterých pomáháme našim klientům – finance, investice, pojištění, úvěry a financování, reality a energie, daně a právo. Každá oblast je propojená, aby tvořila jeden funkční celek."
+    />
 
     <CustomServices />
   </div>

@@ -37,18 +37,9 @@ const dividerWidths: Record<string, string> = {
       </h3>
     </slot>
 
-    <div
+    <UiGoldDivider
       v-if="divider"
-      :class="['h-0.5', dividerWidths[props.size] ?? 'w-20', 'rounded-full']"
-      style="
-        background: linear-gradient(
-          90deg,
-          rgb(116, 91, 38),
-          rgb(228, 194, 131),
-          rgb(116, 91, 38)
-        );
-        box-shadow: rgba(228, 194, 131, 0.45) 0px 1px 6px;
-      "
-    ></div>
+      :width-class="dividerWidths[props.size] ?? 'w-20'"
+    />
   </div>
 </template>

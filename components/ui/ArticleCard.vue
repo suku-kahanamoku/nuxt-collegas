@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { resolveComponent } from "vue";
-
 withDefaults(
   defineProps<{
     imgSrc: string;
@@ -20,20 +18,12 @@ withDefaults(
   },
 );
 
-const isInternal = (to?: string) => !!to && to.startsWith("/");
-const NuxtLinkComponent = resolveComponent("NuxtLink");
 </script>
 
 <template>
-  <component
-    :is="to ? (isInternal(to) ? NuxtLinkComponent : 'a') : 'article'"
-    v-bind="
-      to
-        ? isInternal(to)
-          ? { to }
-          : { href: to, target: '_blank', rel: 'noopener' }
-        : {}
-    "
+  <UiLinkRoot
+    :to="to"
+    fallback-tag="article"
     class="flex flex-col group cursor-pointer"
   >
     <div class="overflow-hidden aspect-video mb-stack-md bg-surface-variant">
@@ -74,5 +64,5 @@ const NuxtLinkComponent = resolveComponent("NuxtLink");
     </p>
 
     <slot />
-  </component>
+  </UiLinkRoot>
 </template>

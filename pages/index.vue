@@ -38,7 +38,11 @@ useHead({
     <CustomPeopleCarousel />
 
     <!-- 7. Rozcestník -->
-    <CustomRozcestnik />
+    <CustomServices
+      title="Kde vám můžeme pomoci?"
+      description="Vyberte oblast, která vás zajímá, a zjistěte, co pro vás COLLEGA může udělat."
+      background="bg-surface-container-lowest"
+    />
 
     <!-- CTA – zanechat email -->
     <CustomEmailCapture />

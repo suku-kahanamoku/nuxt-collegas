@@ -82,6 +82,7 @@ function selectReference(index: number) {
               :author="ref.name"
               :avatar="ref.avatar"
               :author-description="ref.company || ref.destination"
+              theme="light"
               :class="[
                 'w-72 shrink-0 cursor-pointer transition-shadow',
                 selectedIndex === i && 'ring-2 ring-secondary-400',

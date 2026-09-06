@@ -29,191 +29,85 @@ function toCardProps(u: any) {
   };
 }
 
-const founders = computed(() =>
-  users.filter((u) => u.group === "founders").map(toCardProps),
-);
-const seniorTeam = computed(() =>
-  users.filter((u) => u.group === "senior").map(toCardProps),
-);
-const consultants = computed(() =>
-  users.filter((u) => u.group === "consultants").map(toCardProps),
-);
-const juniors = computed(() =>
-  users.filter((u) => u.group === "junior").map(toCardProps),
-);
-const backoffice = computed(() =>
-  users.filter((u) => u.group === "backoffice").map(toCardProps),
+const groupDefinitions = [
+  {
+    key: "founders",
+    title: "Zakladatelé",
+    description:
+      "Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý přístup ke klientské práci.",
+    background: "bg-surface-container-lowest",
+    gridClass: "lg:w-2/3 md:grid-cols-2",
+  },
+  {
+    key: "senior",
+    title: "Tým seniorních poradců",
+    description:
+      "Profesionální konzultanti, kteří vás osobně provázejí klíčovými rozhodnutími a pomáhají vám stavět bezpečná finanční řešení s dlouhodobým výhledem.",
+    background: "bg-surface-container-low",
+    gridClass: "md:grid-cols-2 lg:grid-cols-3",
+  },
+  {
+    key: "consultants",
+    title: "Konzultanti a specialisté",
+    description:
+      "Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků.",
+    background: "bg-surface-container-lowest",
+    gridClass: "md:grid-cols-2 lg:grid-cols-3",
+  },
+  {
+    key: "junior",
+    title: "Juniorní tým",
+    description:
+      "Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční témata a pomáhají převádět strategii do konkrétních kroků.",
+    background: "bg-surface-container-low",
+    gridClass: "md:grid-cols-2 lg:grid-cols-3",
+  },
+  {
+    key: "backoffice",
+    title: "Backoffice a podpora",
+    description:
+      "Profesionální interní tým, který drží administrativu, servis i klientskou zkušenost přesnou, rychlou a spolehlivou.",
+    background: "bg-surface-container-lowest",
+    gridClass: "md:grid-cols-2 lg:grid-cols-3",
+  },
+] as const;
+
+const teamGroups = computed(() =>
+  groupDefinitions.map((group) => ({
+    ...group,
+    people: users.filter((user) => user.group === group.key).map(toCardProps),
+  })),
 );
 </script>
 
 <template>
   <div class="w-full">
-    <!-- ── Intro ── -->
-    <UiIntro bg-image="/img/other/wall.png">
-      <template #header>
-        <UiTitle size="md">
-          <template #eyebrow>
-            <span
-              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-              >Kdo jsme</span
-            >
-          </template>
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-tight"
-            >
-              Naši lidé
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
+    <UiPageIntro
+      eyebrow="Kdo jsme"
+      title="Naši lidé"
+      description="Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a podpůrných rolí skupiny COLLEGAS přistupuje ke každému klientovi individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou spolupráci."
+      bg-image="/img/other/wall.png"
+    />
 
-      <template #description>
-        <p
-          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
-        >
-          Za každým řešením stojí konkrétní člověk. Tým poradců, specialistů a
-          podpůrných rolí skupiny COLLEGAS přistupuje ke každému klientovi
-          individuálně – s odpovědností, diskrétností a důrazem na dlouhodobou
-          spolupráci.
-        </p>
-      </template>
-    </UiIntro>
-
-    <!-- ── Zakladatelé ── -->
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
+    <section
+      v-for="group in teamGroups"
+      :key="group.key"
+      :class="['py-stack-lg md:py-section-gap', group.background]"
+    >
       <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2
-            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-          >
-            Zakladatelé
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Lidé, kteří dali skupině COLLEGA její směr, hodnoty a dlouhodobý
-            přístup ke klientské práci.
-          </p>
-        </div>
+        <UiSectionHeading
+          :title="group.title"
+          :description="group.description"
+          class="mb-stack-lg"
+        />
         <div
-          class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-stack-md justify-center mx-auto"
+          :class="[
+            'grid grid-cols-1 gap-stack-md justify-center mx-auto',
+            group.gridClass || 'md:grid-cols-2 lg:grid-cols-3',
+          ]"
         >
           <CustomTeamCard
-            v-for="person in founders"
-            :key="person.name"
-            v-bind="person"
-          />
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- ── Tým seniorních poradců ── -->
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2
-            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-          >
-            Tým seniorních poradců
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Profesionální konzultanti, kteří vás osobně provázejí klíčovými
-            rozhodnutími a pomáhají vám stavět bezpečná finanční řešení s
-            dlouhodobým výhledem.
-          </p>
-        </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard
-            v-for="person in seniorTeam"
-            :key="person.name"
-            v-bind="person"
-          />
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- ── Konzultanti a specialisté ── -->
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2
-            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-          >
-            Konzultanti a specialisté
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční
-            témata a pomáhají převádět strategii do konkrétních kroků.
-          </p>
-        </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard
-            v-for="person in consultants"
-            :key="person.name"
-            v-bind="person"
-          />
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- ── Juniorní tým ── -->
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-low">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2
-            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-          >
-            Juniorní tým
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Lidé, kteří každý den pracují s klienty, rozvíjejí jejich finanční
-            témata a pomáhají převádět strategii do konkrétních kroků.
-          </p>
-        </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard
-            v-for="person in juniors"
-            :key="person.name"
-            v-bind="person"
-          />
-        </div>
-      </UContainer>
-    </section>
-
-    <!-- ── Backoffice ── -->
-    <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
-      <UContainer>
-        <div class="text-center mb-stack-lg">
-          <h2
-            class="text-headline-md md:text-headline-lg font-serif text-primary-800"
-          >
-            Backoffice a podpora
-          </h2>
-          <p
-            class="text-body-lg text-on-surface-variant mt-stack-sm max-w-2xl mx-auto"
-          >
-            Profesionální interní tým, který drží administrativu, servis i
-            klientskou zkušenost přesnou, rychlou a spolehlivou.
-          </p>
-        </div>
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
-        >
-          <CustomTeamCard
-            v-for="person in backoffice"
+            v-for="person in group.people"
             :key="person.name"
             v-bind="person"
           />
@@ -222,23 +116,10 @@ const backoffice = computed(() =>
     </section>
 
     <!-- ── CTA ── -->
-    <UiDarkBanner
+    <CustomConsultationBanner
       title="Chcete se přidat?"
       body="Hledáme lidi, kteří chtějí dělat finanční poradenství s plnou odpovědností a skutečným zájmem o klienta."
-    >
-      <div class="flex justify-center">
-        <UiButton
-          to="/contact#contact-form"
-          variant="solid"
-          class="group justify-center px-10 py-4 text-base bg-secondary-fixed text-primary-800 hover:bg-secondary-fixed/80 transition-colors"
-        >
-          Napište nám
-          <UIcon
-            name="i-material-symbols-arrow-forward"
-            class="size-5 transition-transform duration-200 group-hover:translate-x-1"
-          />
-        </UiButton>
-      </div>
-    </UiDarkBanner>
+      primary-label="Napište nám"
+    />
   </div>
 </template>

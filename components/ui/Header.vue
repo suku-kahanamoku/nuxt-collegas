@@ -56,18 +56,7 @@ const navItems = [
           class="font-semibold pt-6 px-6 font-serif text-2xl text-primary-800/80"
         >
           Klientům pomáháme v těchto oblastech:
-          <div
-            class="h-0.5 rounded-full w-20 mt-5"
-            style="
-              background: linear-gradient(
-                90deg,
-                rgb(116, 91, 38),
-                rgb(228, 194, 131),
-                rgb(116, 91, 38)
-              );
-              box-shadow: rgba(228, 194, 131, 0.45) 0px 1px 6px;
-            "
-          ></div>
+          <UiGoldDivider class="mt-5" />
         </div>
         <div
           class="grid grid-cols-[repeat(auto-fit,minmax(min(13rem,100%),1fr))] gap-4 p-6"

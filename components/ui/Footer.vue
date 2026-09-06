@@ -1,3 +1,25 @@
+<script setup lang="ts">
+const footerLinks = [
+  { label: "Právní informace", to: "/legal-information" },
+  { label: "Ochrana soukromí", to: "/privacy-policy" },
+  { label: "Kontakt", to: "/contact" },
+];
+
+const utilityLinks = [
+  {
+    label: "Klientská zóna",
+    to: "/client-zone",
+    icon: "i-material-symbols-lock-open-outline",
+  },
+  { label: "Jazyk", icon: "i-material-symbols-language" },
+  {
+    label: "Kontakt",
+    to: "/contact",
+    icon: "i-material-symbols-mail-outline",
+  },
+];
+</script>
+
 <template>
   <footer
     class="bg-primary-900 text-on-primary w-full py-stack-lg border-t border-primary-container"
@@ -26,62 +48,28 @@
           class="flex flex-wrap gap-x-stack-md gap-y-stack-sm md:justify-end"
         >
           <UButton
+            v-for="link in footerLinks"
+            :key="link.to"
             variant="link"
             color="primary"
-            to="/legal-information"
+            :to="link.to"
             class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Právní informace</UButton
           >
-          >
-          <UButton
-            variant="link"
-            color="primary"
-            to="/privacy-policy"
-            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Ochrana soukromí</UButton
-          >
-          >
-          <UButton
-            variant="link"
-            color="primary"
-            to="/contact"
-            class="text-on-primary-container hover:text-secondary-fixed p-0 text-base normal-case tracking-normal font-normal"
-            >Kontakt</UButton
-          >
+            {{ link.label }}
+          </UButton>
         </div>
         <div class="flex gap-stack-md mt-stack-lg items-center">
           <UButton
+            v-for="link in utilityLinks"
+            :key="link.label"
             variant="link"
             color="secondary"
-            to="/client-zone"
-            aria-label="Klientská zóna"
+            :to="link.to"
+            :aria-label="link.label"
             class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
           >
             <UIcon
-              name="i-material-symbols-lock-open-outline"
-              style="width: 1.75rem; height: 1.75rem"
-            />
-          </UButton>
-          <UButton
-            variant="link"
-            color="secondary"
-            aria-label="Jazyk"
-            class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
-          >
-            <UIcon
-              name="i-material-symbols-language"
-              style="width: 1.75rem; height: 1.75rem"
-            />
-          </UButton>
-          <UButton
-            variant="link"
-            color="secondary"
-            to="/contact"
-            aria-label="Kontakt"
-            class="text-secondary-fixed! hover:text-secondary-fixed/60! transition-colors"
-          >
-            <UIcon
-              name="i-material-symbols-mail-outline"
+              :name="link.icon"
               style="width: 1.75rem; height: 1.75rem"
             />
           </UButton>

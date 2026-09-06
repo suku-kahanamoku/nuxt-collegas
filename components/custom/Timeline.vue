@@ -139,17 +139,16 @@ const events: TimelineEvent[] = [
         <div
           v-for="(ev, i) in events"
           :key="i"
-          class="group grid gap-0 mb-5"
-          :class="
-            i % 2 === 0
-              ? 'grid-cols-[1fr_48px_1fr] sm:grid-cols-[1fr_48px_1fr]'
-              : 'grid-cols-[1fr_48px_1fr]'
-          "
+          class="group grid grid-cols-[1fr_48px_1fr] gap-0 mb-5"
         >
-          <!-- LEFT: even = card, odd = empty -->
-          <div v-if="i % 2 === 0" class="tl-card-left">
+          <div
+            :class="[
+              'row-start-1',
+              i % 2 === 0 ? 'col-start-1 sm:mr-4' : 'col-start-3 sm:ml-4',
+            ]"
+          >
             <div
-              class="from-bottom bg-white rounded-sm p-3 sm:p-4 sm:mr-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
+              class="from-bottom bg-white rounded-sm p-3 sm:p-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
               style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
             >
               <span
@@ -164,7 +163,7 @@ const events: TimelineEvent[] = [
               </div>
               <template v-if="ev.note">
                 <div
-                  class="w-7 h-px my-2 ml-auto"
+                  :class="['w-7 h-px my-2', i % 2 === 0 && 'ml-auto']"
                   style="
                     background: linear-gradient(
                       90deg,
@@ -175,18 +174,19 @@ const events: TimelineEvent[] = [
                   "
                 ></div>
                 <div
-                  class="text-xs font-semibold uppercase tracking-wide text-secondary-700 text-right"
+                  :class="[
+                    'text-xs font-semibold uppercase tracking-wide text-secondary-700',
+                    i % 2 === 0 && 'text-right',
+                  ]"
                 >
                   {{ ev.note }}
                 </div>
               </template>
             </div>
           </div>
-          <div v-else class="hidden sm:block"></div>
 
-          <!-- CENTER: dot -->
           <div
-            class="hidden sm:flex justify-center items-start pt-5 relative z-10"
+            class="col-start-2 row-start-1 hidden sm:flex justify-center items-start pt-5 relative z-10"
           >
             <div
               data-tl-dot
@@ -206,57 +206,8 @@ const events: TimelineEvent[] = [
               "
             ></div>
           </div>
-
-          <!-- RIGHT: odd = card, even = empty -->
-          <div v-if="i % 2 !== 0" class="tl-card-right">
-            <div
-              class="from-bottom bg-white rounded-sm p-3 sm:p-4 sm:ml-4 border border-primary-100/35 shadow-[0_4px_20px_rgba(0,0,0,0.22),0_1px_4px_rgba(0,0,0,0.10),inset_0_1px_0_rgba(255,255,255,0.8)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-secondary-400/55 hover:shadow-[0_8px_28px_rgba(0,0,0,0.28),0_2px_6px_rgba(0,0,0,0.12),0_0_0_1px_rgba(228,194,131,0.28),inset_0_1px_0_rgba(255,255,255,0.8)]"
-              style="border-top: 2px solid rgba(116, 91, 38, 0.36)"
-            >
-              <span
-                v-if="ev.year"
-                class="block text-xs font-bold tracking-widest uppercase text-secondary-700 mb-1"
-                >{{ ev.year }}</span
-              >
-              <div
-                class="font-serif font-bold text-primary-800 text-sm leading-snug"
-              >
-                {{ ev.name }}
-              </div>
-              <template v-if="ev.note">
-                <div
-                  class="w-7 h-px my-2"
-                  style="
-                    background: linear-gradient(
-                      90deg,
-                      #745b26,
-                      #e4c283,
-                      #745b26
-                    );
-                  "
-                ></div>
-                <div
-                  class="text-xs font-semibold uppercase tracking-wide text-secondary-700"
-                >
-                  {{ ev.note }}
-                </div>
-              </template>
-            </div>
-          </div>
-          <div v-else class="hidden sm:block"></div>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-@media (max-width: 640px) {
-  .tl-card-left {
-    grid-column: 1;
-  }
-  .tl-card-right {
-    grid-column: 3;
-  }
-}
-</style>

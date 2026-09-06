@@ -17,13 +17,12 @@ useHead({
 
 type CaseStudyCategory = keyof typeof caseStudiesData;
 type CaseStudyItem = (typeof caseStudiesData)[CaseStudyCategory][number];
-type FilterValue = "all" | CaseStudyCategory;
 
 const serviceLabel = Object.fromEntries(
   services.map((service) => [service.serviceCategory, service.title]),
 ) as Record<string, string>;
 
-const filterOptions: Array<{ label: string; value: FilterValue }> = [
+const filterOptions = [
   { label: "Vše", value: "all" },
   { label: "Finance", value: "finance" },
   { label: "Růst a ochrana majetku", value: "capital" },
@@ -31,7 +30,7 @@ const filterOptions: Array<{ label: string; value: FilterValue }> = [
   { label: "Reality a energie", value: "real-estate" },
 ];
 
-const selectedFilter = ref<FilterValue>("all");
+const selectedFilter = ref("all");
 
 const caseStudies = (Object.keys(caseStudiesData) as CaseStudyCategory[])
   .flatMap((key) =>
@@ -56,53 +55,20 @@ const filteredCaseStudies = computed(() => {
 
 <template>
   <div class="w-full">
-    <UiIntro>
-      <template #header>
-        <UiTitle size="md">
-          <template #eyebrow>
-            <span
-              class="text-label-caps text-secondary-fixed uppercase block tracking-widest font-semibold"
-              >Případové studie</span
-            >
-          </template>
-          <template #title>
-            <h1
-              class="text-headline-lg md:text-display-xl font-serif text-on-primary leading-none"
-            >
-              Modelové studie
-            </h1>
-          </template>
-        </UiTitle>
-      </template>
-
-      <template #description>
-        <p
-          class="text-body-lg text-on-primary-container max-w-xl mt-stack-md opacity-90"
-        >
-          Souhrn reálných situací, na kterých ukazujeme náš přístup napříč
-          financemi, růstem a ochranou majetku, daněmi a právem i realitami a energiemi.
-        </p>
-      </template>
-    </UiIntro>
+    <UiPageIntro
+      eyebrow="Případové studie"
+      title="Modelové studie"
+      description="Souhrn reálných situací, na kterých ukazujeme náš přístup napříč financemi, růstem a ochranou majetku, daněmi a právem i realitami a energiemi."
+    />
 
     <section class="py-stack-lg md:py-section-gap bg-surface-container-lowest">
       <UContainer class="mx-auto px-gutter">
-        <div class="flex flex-wrap gap-3 mb-stack-lg">
-          <button
-            v-for="option in filterOptions"
-            :key="option.value"
-            type="button"
-            class="px-4 py-2 border text-sm uppercase tracking-wide transition-colors"
-            :class="
-              selectedFilter === option.value
-                ? 'border-secondary-800 bg-secondary-800 text-white'
-                : 'border-secondary-800 text-secondary-800 hover:bg-secondary-50'
-            "
-            @click="selectedFilter = option.value"
-          >
-            {{ option.label }}
-          </button>
-        </div>
+        <UiFilterTabs
+          v-model="selectedFilter"
+          :options="filterOptions"
+          aria-label="Filtrovat modelové studie podle oblasti"
+          class="mb-stack-lg justify-start"
+        />
 
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md"
