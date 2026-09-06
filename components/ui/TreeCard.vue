@@ -6,15 +6,21 @@ defineProps<{
   names?: string[];
   description?: string;
   href?: string;
-  linkLabel?: string;
   logoSrc?: string;
   logoAlt?: string;
 }>();
 </script>
 
 <template>
-  <div
-    class="h-full bg-surface-container-lowest border border-outline-variant/30 flex flex-col overflow-hidden"
+  <UiLinkRoot
+    :to="href"
+    fallback-tag="article"
+    :aria-label="href ? `${title} – navštívit web` : undefined"
+    :class="[
+      'group h-full bg-surface-container-lowest border border-outline-variant/30 flex flex-col overflow-hidden transition-all duration-200',
+      href &&
+        'cursor-pointer hover:-translate-y-1 hover:border-secondary-400 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-400',
+    ]"
   >
     <UiCardImage
       :src="imgSrc"
@@ -50,15 +56,6 @@ defineProps<{
         class="h-12 w-auto max-w-full pt-4 object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90"
         loading="lazy"
       />
-
-      <UiLinkRoot
-        v-if="href"
-        :to="href"
-        class="mt-stack-md inline-flex items-center gap-2 self-start border-b border-secondary-700 pb-1 font-label-caps uppercase text-secondary-800 transition-colors hover:text-secondary-700"
-      >
-        {{ linkLabel || "Navštívit web" }}
-        <UIcon name="i-material-symbols-open-in-new" class="size-4" />
-      </UiLinkRoot>
     </div>
-  </div>
+  </UiLinkRoot>
 </template>

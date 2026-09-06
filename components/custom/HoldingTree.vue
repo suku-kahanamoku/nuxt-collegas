@@ -8,7 +8,6 @@ interface HoldingNode {
   imgAlt?: string;
   description?: string;
   href?: string;
-  linkLabel?: string;
   logoSrc?: string;
   logoAlt?: string;
 }
@@ -50,7 +49,7 @@ const sections: HoldingSection[] = holdingData;
           >
             <div
               v-for="node in section.nodes"
-              :key="node.title"
+              :key="`${node.title}-${node.names?.join('-') || ''}`"
               class="holding-card-grid__item"
             >
               <UiTreeCard
@@ -61,7 +60,6 @@ const sections: HoldingSection[] = holdingData;
                 :names="node.names"
                 :description="node.description"
                 :href="node.href"
-                :link-label="node.linkLabel"
                 :logo-src="node.logoSrc"
                 :logo-alt="node.logoAlt"
               />

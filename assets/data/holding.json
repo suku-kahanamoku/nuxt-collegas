@@ -8,40 +8,46 @@
         "names": ["Collegas s.r.o."],
         "imgSrc": "/img/intro/main.png",
         "imgAlt": "Kancelář Collegas",
-        "description": "Privátní finanční poradenství pro rodiny i podnikatele."
+        "description": "Privátní finanční poradenství pro rodiny i podnikatele.",
+        "href": "https://collegas.cz/"
       },
       {
         "title": "Odškodnění a náhrady",
         "names": ["Collegas Odškodnění s.r.o."],
         "imgSrc": "/img/other/compensation.png",
         "imgAlt": "Odškodnění a náhrady škod",
-        "description": "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby."
+        "description": "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby.",
+        "href": "https://www.odskodneniprovas.cz/"
       },
       {
         "title": "Brokerpoolové služby",
         "names": ["Collega Brokers a.s.", "Collegas Investice s.r.o."],
         "imgSrc": "/img/other/financing.png",
-        "imgAlt": "Brokerpoolové služby"
+        "imgAlt": "Brokerpoolové služby Collega Brokers",
+        "href": "https://www.collegabrokers.cz/"
       },
       {
         "title": "Specializované průmyslové pojištění",
         "names": ["Collega Makléř s.r.o."],
         "imgSrc": "/img/other/risk_headging.png",
         "imgAlt": "Specializované průmyslové pojištění",
-        "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele."
+        "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele.",
+        "href": "https://www.collegamakler.cz/"
       },
       {
         "title": "Daňové poradenství a účetnictví",
-        "names": ["BULA&Collegas"],
+        "names": ["Bula & Collegas s.r.o."],
         "imgSrc": "/img/other/tax_consult.png",
         "imgAlt": "Daňové poradenství a účetnictví",
-        "description": "Účetnictví a daňové poradenství pro firmy i jednotlivce."
+        "description": "Účetnictví a daňové poradenství pro firmy i jednotlivce.",
+        "href": "https://bula-collegas.cz/"
       },
       {
         "title": "Honorované poradenství",
-        "names": ["Fiduciam consiglio s.r.o."],
+        "names": ["Fiduciam consilio s.r.o."],
         "imgSrc": "/img/other/investment_property.png",
-        "imgAlt": "Honorované poradenství"
+        "imgAlt": "Honorované poradenství",
+        "href": "https://www.fiduciam.cz/"
       }
     ]
   },
@@ -54,13 +60,15 @@
         "names": ["Collegas Reality s.r.o."],
         "imgSrc": "/img/other/reality.png",
         "imgAlt": "Realitní kancelář Collegas Reality",
-        "description": "Prodej, pronájem a výkup nemovitostí."
+        "description": "Prodej, pronájem a výkup nemovitostí.",
+        "href": "https://www.collegasreality.cz/"
       },
       {
         "title": "Správa nemovitostí",
         "names": ["Postaráme.cz"],
         "imgSrc": "/img/other/reality.png",
-        "imgAlt": "Správa nemovitostí"
+        "imgAlt": "Správa nemovitostí",
+        "href": "https://www.postarame.cz/"
       },
       {
         "title": "Zajišťování krátkodobého ubytování",
@@ -78,7 +86,8 @@
         "title": "IT řešení na míru",
         "names": ["Collega Solution s.r.o."],
         "imgSrc": "/img/intro/notes.png",
-        "imgAlt": "IT řešení na míru"
+        "imgAlt": "IT řešení na míru",
+        "href": "https://www.collegasolution.cz/"
       }
     ]
   },
@@ -101,7 +110,8 @@
         "names": ["Diamond Fish"],
         "imgSrc": "/img/intro/cafe.png",
         "imgAlt": "Diamond Fish",
-        "description": "Chov a zpracování ryb."
+        "description": "Chov a zpracování ryb.",
+        "href": "https://diamondfish.eu/"
       }
     ]
   },
