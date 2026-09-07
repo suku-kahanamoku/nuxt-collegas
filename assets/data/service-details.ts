@@ -246,7 +246,7 @@ const serviceDetails: Record<string, ServiceDetailConfig> = {
       },
       {
         id: "business-loans",
-        imgSrc: "/img/other/office.png",
+        imgSrc: "/img/other/building.png",
         imgAlt: "Podnikatelské úvěry",
         imgRight: true,
         paragraphs: [
@@ -343,7 +343,7 @@ const serviceDetails: Record<string, ServiceDetailConfig> = {
       },
       {
         id: "property-management",
-        imgSrc: "/img/other/office.png",
+        imgSrc: "/img/other/building.png",
         imgAlt: "Správa nemovitostí",
         paragraphs: [
           "Správa nemovitostí znamená, že váš majetek funguje tak, jak má - bez zbytečných starostí, výpadků příjmů nebo neřešených problémů. Zajišťujeme kompletní správu od výběru nájemníků po technický servis a ekonomickou agendu.",
