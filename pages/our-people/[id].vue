@@ -162,7 +162,7 @@ const references = computed(
             <h2
               class="text-headline-md md:text-headline-lg font-bold text-white mb-8 leading-tight"
             >
-              Něco Málo O Mně
+              Něco málo o mně
             </h2>
             <p
               class="text-base leading-relaxed text-white/60 whitespace-break-spaces"
