@@ -77,7 +77,7 @@ function onImgErrorByIndex(i: number) {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-xl">
         <div class="lg:col-span-8 space-y-stack-xl">
           <UiImageText
-            img-src="/img/other/building.png"
+            img-src="/img/other/office.png"
             img-alt="Certifikace"
             img-right
           >
