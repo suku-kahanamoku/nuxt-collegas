@@ -8,7 +8,7 @@ const certifications = [
     img: "https://www.cnb.cz/export/system/modules/cz.nelasoft.opencms.cnb/resources/img/LOGO-2RC_RGB.svg",
     alt: "Česká národní banka",
   },
-  {
+  /**{
     name: "ESMA",
     abbr: "ESMA",
     year: "průběžně",
@@ -23,7 +23,7 @@ const certifications = [
     to: "https://www.eiopa.europa.eu/index_en",
     img: "https://www.eiopa.europa.eu/sites/default/files/site-logo-overrides/EWPPA_EIOPA_logo.svg",
     alt: "EIOPA – European Insurance and Occupational Pensions Authority",
-  },
+  },*/
 ];
 
 const seniority = [

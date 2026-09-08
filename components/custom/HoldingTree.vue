@@ -6,6 +6,7 @@ interface HoldingNode {
   names?: string[];
   imgSrc: string;
   imgAlt?: string;
+  imgClass?: string;
   description?: string;
   href?: string;
   logoSrc?: string;
@@ -44,9 +45,7 @@ const sections: HoldingSection[] = holdingData;
             </h2>
           </header>
 
-          <div
-            class="holding-card-grid"
-          >
+          <div class="holding-card-grid">
             <div
               v-for="node in section.nodes"
               :key="`${node.title}-${node.names?.join('-') || ''}`"
@@ -56,6 +55,7 @@ const sections: HoldingSection[] = holdingData;
                 class="flex-1 h-full"
                 :img-src="node.imgSrc"
                 :img-alt="node.imgAlt"
+                :img-class="node.imgClass"
                 :title="node.title"
                 :names="node.names"
                 :description="node.description"

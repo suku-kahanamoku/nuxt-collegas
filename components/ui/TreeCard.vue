@@ -2,6 +2,7 @@
 defineProps<{
   imgSrc: string;
   imgAlt?: string;
+  imgClass?: string;
   title: string;
   names?: string[];
   description?: string;
@@ -26,6 +27,7 @@ defineProps<{
       :src="imgSrc"
       :alt="imgAlt ?? title"
       container-class="h-40"
+      :img-class="imgClass"
     />
     <div class="p-stack-md grow flex flex-col">
       <h3 class="text-title-md md:text-title-lg text-primary-800 mb-stack-sm">

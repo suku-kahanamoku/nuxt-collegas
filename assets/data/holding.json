@@ -58,8 +58,9 @@
         "names": [
           "Fiduciam consilio s.r.o."
         ],
-        "imgSrc": "/img/holding/fiduciam.webp",
+        "imgSrc": "/img/logo/fiduciam.svg",
         "imgAlt": "Honorované poradenství",
+        "imgClass": "object-contain",
         "href": "https://www.fiduciam.cz/"
       }
     ]
