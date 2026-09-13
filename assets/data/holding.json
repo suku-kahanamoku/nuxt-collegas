@@ -122,8 +122,17 @@
       },
       {
         "title": "Kancelářské prostory v AZ Tower ve 2. patře",
-        "imgSrc": "/img/holding/2nd_floor.png",
-        "imgAlt": "Kancelářské prostory v AZ Tower"
+        "imgSrc": "/img/branch/2nd_floor/01.png",
+        "imgAlt": "Kancelářské prostory v AZ Tower",
+        "gallery": [
+          "/img/branch/2nd_floor/01.png",
+          "/img/branch/2nd_floor/02.png",
+          "/img/branch/2nd_floor/03.png",
+          "/img/branch/2nd_floor/04.png",
+          "/img/branch/2nd_floor/05.png",
+          "/img/branch/2nd_floor/06.png",
+          "/img/branch/2nd_floor/07.png"
+        ]
       },
       {
         "title": "RAS rybí farma",

@@ -11,6 +11,7 @@ interface HoldingNode {
   href?: string;
   logoSrc?: string;
   logoAlt?: string;
+  gallery?: string[];
 }
 
 interface HoldingSection {
@@ -46,10 +47,14 @@ const sections: HoldingSection[] = holdingData;
           </header>
 
           <div class="holding-card-grid">
-            <div
+            <UiImageGallery
               v-for="node in section.nodes"
               :key="`${node.title}-${node.names?.join('-') || ''}`"
-              class="holding-card-grid__item"
+              :images="node.gallery ?? []"
+              :class="[
+                'holding-card-grid__item',
+                node.gallery && 'holding-card-grid__item--gallery',
+              ]"
             >
               <UiTreeCard
                 class="flex-1 h-full"
@@ -63,7 +68,7 @@ const sections: HoldingSection[] = holdingData;
                 :logo-src="node.logoSrc"
                 :logo-alt="node.logoAlt"
               />
-            </div>
+            </UiImageGallery>
           </div>
         </div>
       </section>
@@ -85,5 +90,22 @@ const sections: HoldingSection[] = holdingData;
   flex: 0 1 20rem;
   width: 100%;
   max-width: 20rem;
+}
+
+.holding-card-grid__item--gallery {
+  cursor: pointer;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.holding-card-grid__item--gallery:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.holding-card-grid__item--gallery:focus-visible {
+  outline: 2px solid var(--color-secondary-400);
+  outline-offset: 2px;
 }
 </style>
