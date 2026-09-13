@@ -123,8 +123,16 @@
     "nodes": [
       {
         "title": "Kancelářské prostory v AZ Tower v 11. patře",
-        "imgSrc": "/img/holding/11th_floor.png",
-        "imgAlt": "Kancelářské prostory v AZ Tower v 11. patře"
+        "imgSrc": "/img/branch/11th_floor/01.png",
+        "imgAlt": "Kancelářské prostory v AZ Tower v 11. patře",
+        "gallery": [
+          "/img/branch/11th_floor/01.png",
+          "/img/branch/11th_floor/02.png",
+          "/img/branch/11th_floor/03.png",
+          "/img/branch/11th_floor/04.png",
+          "/img/branch/11th_floor/05.png",
+          "/img/branch/11th_floor/06.png"
+        ]
       },
       {
         "title": "Kancelářské prostory v AZ Tower ve 2. patře",
