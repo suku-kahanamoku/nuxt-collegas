@@ -90,9 +90,15 @@
       },
       {
         "title": "Zajišťování krátkodobého ubytování",
-        "imgSrc": "/img/holding/dejsislofika.jpg",
+        "imgSrc": "/img/branch/accomodation/01.jpg",
         "imgAlt": "Krátkodobé ubytování v Brně",
-        "description": "V 8 apartmánech v Brně zajišťujeme ubytování převážně pro zahraniční klienty."
+        "description": "V 8 apartmánech v Brně zajišťujeme ubytování převážně pro zahraniční klienty.",
+        "gallery": [
+          "/img/branch/accomodation/01.jpg",
+          "/img/branch/accomodation/02.jpg",
+          "/img/branch/accomodation/03.jpg",
+          "/img/branch/accomodation/04.jpg"
+        ]
       }
     ]
   },
