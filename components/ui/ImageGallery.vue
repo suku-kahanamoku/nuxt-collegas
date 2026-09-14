@@ -13,10 +13,22 @@ const props = defineProps<{
   images: string[];
 }>();
 
+const $img = useImage();
+
 let lightbox: PhotoSwipeLightbox | null = null;
 let itemsPromise: Promise<GalleryItem[]> | null = null;
 let isOpening = false;
 let isUnmounted = false;
+
+function getOptimizedSrc(src: string) {
+  return $img(src, {
+    width: 1600,
+    height: 1600,
+    fit: "inside",
+    format: "webp",
+    quality: $img.options.quality ?? 65,
+  });
+}
 
 function getLightbox() {
   lightbox ??= new PhotoSwipeLightbox({
@@ -33,18 +45,19 @@ function createGalleryItems() {
     props.images.map(
       (src, index) =>
         new Promise<GalleryItem>((resolve, reject) => {
+          const optimizedSrc = getOptimizedSrc(src);
           const image = new Image();
           image.onload = () => {
             resolve({
-              src,
+              src: optimizedSrc,
               width: image.naturalWidth,
               height: image.naturalHeight,
               alt: `Fotografie ${index + 1}`,
             });
           };
           image.onerror = () =>
-            reject(new Error(`Nepodařilo se načíst ${src}`));
-          image.src = src;
+            reject(new Error(`Nepodařilo se načíst ${optimizedSrc}`));
+          image.src = optimizedSrc;
         }),
     ),
   );
