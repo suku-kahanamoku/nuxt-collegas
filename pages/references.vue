@@ -151,7 +151,6 @@ watch(activeSource, () => {
             v-for="platform in reviewPlatforms"
             :key="platform.id"
             :platform="platform"
-            featured
           />
         </div>
       </UContainer>

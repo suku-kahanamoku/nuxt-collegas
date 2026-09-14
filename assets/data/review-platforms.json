@@ -4,13 +4,13 @@
     "name": "Google",
     "rating": "5/5",
     "countLabel": "239 recenzí",
-    "href": "https://www.google.com/search?q=Collegas+s.r.o.+Recenze"
+    "href": "https://search.google.com/local/writereview?placeid=ChIJOQMV58CVEkcRG8u3IAFGCqE"
   },
   {
     "id": "seznam",
     "name": "Seznam.cz",
     "rating": "5,0",
     "countLabel": "174 hodnocení",
-    "href": "https://www.firmy.cz/detail/13020239-collegas-brno-styrice.html#rating"
+    "href": "https://www.firmy.cz/detail/13020239-collegas-brno-styrice.html#pridat-hodnoceni"
   }
 ]
