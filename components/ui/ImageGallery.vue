@@ -24,7 +24,7 @@ function getOptimizedSrc(src: string) {
   return $img(src, {
     width: 1600,
     height: 1600,
-    fit: "inside",
+    fit: "contain",
     format: "webp",
     quality: $img.options.quality ?? 65,
   });
