@@ -142,7 +142,7 @@ function onImgErrorByIndex(i: number) {
                 v-if="link.img && !imgErrorByIndex[index]"
                 :src="link.img"
                 :alt="link.alt || link.label"
-                class="h-8 w-auto max-w-full object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90 transition-opacity group-hover:opacity-100"
+                class="h-12 w-auto max-w-full object-contain grayscale saturate-0 contrast-125 brightness-75 opacity-90 transition-opacity group-hover:opacity-100"
                 loading="lazy"
                 @error="onImgErrorByIndex(index)"
               />
