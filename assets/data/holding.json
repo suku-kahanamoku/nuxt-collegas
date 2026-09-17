@@ -60,6 +60,7 @@
         ],
         "imgSrc": "/img/logo/fiduciam.svg",
         "imgAlt": "Honorované poradenství",
+        "imgContainerClass": "bg-[#063643]",
         "imgClass": "object-contain",
         "href": "https://www.fiduciam.cz/"
       }

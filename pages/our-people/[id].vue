@@ -246,7 +246,21 @@ const references = computed(
               v-else
               class="text-base leading-relaxed text-white/60 whitespace-break-spaces"
             >
-              {{ user.about || user.description }}
+              <template
+                v-for="(part, partIndex) in splitHighlightedText(
+                  user.about || user.description,
+                  user.aboutHighlights,
+                )"
+                :key="partIndex"
+              >
+                <em
+                  v-if="part.highlighted"
+                  class="font-semibold text-secondary-300"
+                >
+                  {{ part.text }}
+                </em>
+                <template v-else>{{ part.text }}</template>
+              </template>
             </p>
             <NuxtImg
               v-if="user.sign"
@@ -259,8 +273,8 @@ const references = computed(
         </div>
 
         <div class="mt-16 text-center">
-          <UiButton :to="`/contact#contact-form`" class="rounded-full"
-            >Naplánovat Konzultaci</UiButton
+          <UiButton :to="`mailto:${email}`" class="rounded-full"
+            >Začněme nezávaznou konzultací</UiButton
           >
         </div>
       </div>

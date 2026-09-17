@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const qrCodeServiceUrl = "https://api.qrserver.com/v1/create-qr-code/";
-
 defineProps<{
   platform: {
     id: string;
@@ -10,10 +8,6 @@ defineProps<{
     href: string;
   };
 }>();
-
-function getQrCodeSrc(href: string) {
-  return `${qrCodeServiceUrl}?size=320x320&data=${encodeURIComponent(href)}`;
-}
 </script>
 
 <template>
@@ -80,13 +74,6 @@ function getQrCodeSrc(href: string) {
         </div>
       </div>
 
-      <img
-        v-if="platform.id === 'google' || platform.id === 'seznam'"
-        :src="getQrCodeSrc(platform.href)"
-        :alt="`QR kód pro otevření hodnocení na ${platform.name}`"
-        class="h-20 w-20 shrink-0 rounded-lg border border-gray-200 bg-white object-contain p-2 sm:h-24 sm:w-24"
-        loading="lazy"
-      />
     </div>
   </a>
 </template>

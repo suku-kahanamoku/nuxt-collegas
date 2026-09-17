@@ -24,9 +24,13 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
     "
   >
     <!-- Photo — portrait -->
-    <div
+    <UiLinkRoot
+      :to="website || undefined"
+      fallback-tag="div"
       class="relative overflow-hidden bg-primary-50"
+      :class="website ? 'cursor-pointer' : ''"
       style="aspect-ratio: 3/4"
+      :aria-label="website ? `Zobrazit profil ${name}` : undefined"
     >
       <NuxtImg
         v-if="photo"
@@ -58,7 +62,7 @@ const isInternal = computed(() => !!props.website?.startsWith("/"));
       >
         {{ role }}
       </p>
-    </div>
+    </UiLinkRoot>
 
     <!-- Body -->
     <div class="flex flex-col flex-1 px-6 py-5 gap-4">

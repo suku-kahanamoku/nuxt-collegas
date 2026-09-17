@@ -2,6 +2,7 @@
 defineProps<{
   imgSrc: string;
   imgAlt?: string;
+  imgContainerClass?: string;
   imgClass?: string;
   title: string;
   names?: string[];
@@ -26,7 +27,7 @@ defineProps<{
     <UiCardImage
       :src="imgSrc"
       :alt="imgAlt ?? title"
-      container-class="h-40"
+      :container-class="['h-40', imgContainerClass].filter(Boolean).join(' ')"
       :img-class="imgClass"
     />
     <div class="p-stack-md grow flex flex-col">

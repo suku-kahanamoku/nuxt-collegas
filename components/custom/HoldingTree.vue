@@ -6,6 +6,7 @@ interface HoldingNode {
   names?: string[];
   imgSrc: string;
   imgAlt?: string;
+  imgContainerClass?: string;
   imgClass?: string;
   description?: string;
   href?: string;
@@ -60,6 +61,7 @@ const sections: HoldingSection[] = holdingData;
                 class="flex-1 h-full"
                 :img-src="node.imgSrc"
                 :img-alt="node.imgAlt"
+                :img-container-class="node.imgContainerClass"
                 :img-class="node.imgClass"
                 :title="node.title"
                 :names="node.names"
