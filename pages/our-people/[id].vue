@@ -273,9 +273,9 @@ const references = computed(
         </div>
 
         <div class="mt-16 text-center">
-          <UiButton :to="`mailto:${email}`" class="rounded-full"
-            >Začněme nezávaznou konzultací</UiButton
-          >
+          <UiButton :to="`mailto:${email}`" class="rounded-full">
+            Začněme nezávaznou konzultací
+          </UiButton>
         </div>
       </div>
     </section>
