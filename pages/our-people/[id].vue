@@ -33,6 +33,35 @@ const phone = user.phone || "";
 const mounted = ref(false);
 onMounted(() => setTimeout(() => (mounted.value = true), 80));
 
+const splitHighlightedText = (text: string, highlights: string[] = []) => {
+  const parts: { text: string; highlighted: boolean }[] = [];
+  let remaining = text;
+
+  while (remaining) {
+    const match = highlights
+      .map((highlight) => ({ highlight, index: remaining.indexOf(highlight) }))
+      .filter(({ index }) => index >= 0)
+      .sort((a, b) => a.index - b.index)[0];
+
+    if (!match) {
+      parts.push({ text: remaining, highlighted: false });
+      break;
+    }
+
+    if (match.index > 0) {
+      parts.push({
+        text: remaining.slice(0, match.index),
+        highlighted: false,
+      });
+    }
+
+    parts.push({ text: match.highlight, highlighted: true });
+    remaining = remaining.slice(match.index + match.highlight.length);
+  }
+
+  return parts;
+};
+
 const references = computed(
   () =>
     user.references || [
@@ -139,7 +168,10 @@ const references = computed(
     <!-- About section -->
     <section class="py-24 bg-primary-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-16"
+          :class="user.aboutSections ? 'items-start' : 'items-center'"
+        >
           <div
             class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:block"
             style="aspect-ratio: 4/5"
@@ -164,11 +196,65 @@ const references = computed(
             >
               Něco málo o mně
             </h2>
+            <div
+              v-if="user.aboutSections"
+              class="space-y-6 text-base leading-relaxed text-white/60"
+            >
+              <template
+                v-for="(block, blockIndex) in user.aboutSections"
+                :key="blockIndex"
+              >
+                <h3
+                  v-if="block.type === 'heading'"
+                  class="pt-4 text-center text-xl font-semibold italic text-secondary-300"
+                >
+                  {{ block.text }}
+                </h3>
+                <ul
+                  v-else-if="block.type === 'list'"
+                  class="list-disc space-y-2 pl-6 marker:text-secondary-400"
+                >
+                  <li v-for="item in block.items" :key="item">{{ item }}</li>
+                </ul>
+                <p
+                  v-else
+                  :class="
+                    block.type === 'quote'
+                      ? 'border-y border-secondary-400/25 py-5 text-center text-lg font-semibold italic text-secondary-200'
+                      : ''
+                  "
+                >
+                  <template
+                    v-for="(part, partIndex) in splitHighlightedText(
+                      block.text,
+                      block.highlights,
+                    )"
+                    :key="partIndex"
+                  >
+                    <em
+                      v-if="part.highlighted"
+                      class="font-semibold text-secondary-300"
+                    >
+                      {{ part.text }}
+                    </em>
+                    <template v-else>{{ part.text }}</template>
+                  </template>
+                </p>
+              </template>
+            </div>
             <p
+              v-else
               class="text-base leading-relaxed text-white/60 whitespace-break-spaces"
             >
               {{ user.about || user.description }}
             </p>
+            <NuxtImg
+              v-if="user.sign"
+              :src="user.sign"
+              :alt="`Podpis ${user.name}`"
+              class="mx-auto mt-8 h-auto w-full max-w-56 object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
 

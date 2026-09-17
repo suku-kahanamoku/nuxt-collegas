@@ -398,8 +398,113 @@
     "group": "senior",
     "photo": "/img/user/butulova.png",
     "headline": "Specialista pro privátní klientelu",
-    "intro": "",
-    "about": "",
+    "intro": "Více než 17 let propojuji ve světě financí strategické myšlení, zkušenosti a individuální přístup ke každému klientovi.",
+    "about": "Jsem Iveta Butulová a více než 17 let se pohybuji ve světě financí, kde propojuji strategické myšlení, zkušenosti a individuální přístup ke každému klientovi.",
+    "aboutSections": [
+      {
+        "type": "paragraph",
+        "text": "Jsem Iveta Butulová a více než 17 let se pohybuji ve světě financí, kde propojuji strategické myšlení, zkušenosti a individuální přístup ke každému klientovi."
+      },
+      {
+        "type": "quote",
+        "text": "„Zkušenosti mi daly jistotu. Pokora mi pomáhá ji správně využít.“"
+      },
+      {
+        "type": "paragraph",
+        "text": "Dnes působím jako specialistka pro privátní klientelu, manažerka obchodního týmu a partnerka společnosti. Společně se svým týmem pečujeme o více než 1000 klientů, kterým pomáháme budovat stabilitu, růst a dlouhodobou jistotu. Spravujeme majetek přesahující 100 milionů korun.",
+        "highlights": [
+          "1000 klientů",
+          "Spravujeme majetek přesahující 100 milionů korun."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Jsem držitelkou prestižní certifikace PFP (European Financial Planner), která potvrzuje vysokou úroveň odbornosti v oblasti komplexního finančního plánování.",
+        "highlights": [
+          "PFP (European Financial Planner)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Finance pro mě nikdy nebyly jen o číslech. Jsou především o lidech, jejich příbězích, plánech a jistotě do budoucna."
+      },
+      {
+        "type": "quote",
+        "text": "„Postupem času se z pracovního vztahu často stává vztah přátelský, založený na důvěře a dlouhodobé spolupráci.“"
+      },
+      {
+        "type": "paragraph",
+        "text": "Specializuji se na finanční plánování a dlouhodobou správu klientů. Nejvíce mě naplňuje moment, kdy klient přichází bez jasných očekávání a odchází s pocitem, že má ve svých financích konečně jasno — a že má vedle sebe někoho, na koho se může spolehnout."
+      },
+      {
+        "type": "paragraph",
+        "text": "Kromě finanční praxe se věnuji také lektorství a rozvoji nových poradců. Ráda se zabývám firemní organizací a plánováním firemních událostí."
+      },
+      {
+        "type": "heading",
+        "text": "Můj život mimo finance"
+      },
+      {
+        "type": "paragraph",
+        "text": "Jsem manželkou, maminkou a ženou, která věří v rovnováhu mezi prací, rodinou i osobním prostorem."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cestování je pro mě přirozenou součástí života. Díky více než 50 procestovaným zemím jsem získala nadhled, otevřenost a schopnost vnímat věci v širších souvislostech. Právě tento přesah mi umožňuje lépe chápat nejen finance, ale i životní situace a rozhodování klientů, se kterými spolupracuji."
+      },
+      {
+        "type": "paragraph",
+        "text": "Baví mě také rekonstrukce a proměny nemovitostí — proces, kdy z původního stavu vzniká nová hodnota. Stejný princip uplatňuji i ve své práci: hledám potenciál, dávám věcem směr a vytvářím dlouhodobě funkční řešení.",
+        "highlights": [
+          "Baví mě také rekonstrukce a proměny nemovitostí"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Věřím, že když máte ve financích jasno, získáváte prostor žít život podle sebe. Sama pracuji proto, že chci – protože mě moje práce naplňuje a dává mi smysl. A právě tuto svobodu a jistotu chci přinášet i svým klientům."
+      },
+      {
+        "type": "heading",
+        "text": "V čem vám mohu pomoci"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pomáhám klientům nastavit jejich finance tak, aby dávaly smysl nejen dnes, ale i v budoucnu."
+      },
+      {
+        "type": "paragraph",
+        "text": "Po jediné konzultaci se mnou pochopíte, jak má vypadat skutečně kvalitní péče o finance — přehledná, srozumitelná a dlouhodobě udržitelná."
+      },
+      {
+        "type": "paragraph",
+        "text": "Zajistím vám:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "jasný finanční plán a směr",
+          "pocit klidu a kontroly nad vašimi financemi",
+          "systematické plnění vašich životních cílů",
+          "ochranu před riziky, která mohou vaše plány ohrozit"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Každé řešení vychází z hlubokého pochopení vaší situace. Bez univerzálních modelů. Bez kompromisů."
+      },
+      {
+        "type": "paragraph",
+        "text": "S klienty neřeším jednorázová rozhodnutí. Budujeme spolu vztah, který se postupně stává přirozenou součástí jejich života."
+      },
+      {
+        "type": "paragraph",
+        "text": "Diskrétnost, důvěra a kontinuita jsou pro mě samozřejmostí."
+      },
+      {
+        "type": "quote",
+        "text": "„Dávám vašim financím směr. Vašemu životu klid.“"
+      }
+    ],
     "email": "iveta.butulova@collegas.cz",
     "phone": "+420 722 953 525",
     "brand": "COLLEGAS",
@@ -407,11 +512,11 @@
     "location": "Pražákova 1008/69, 619 00 Brno (AZ Tower)",
     "metrics": [
       {
-        "value": "10+",
+        "value": "17+",
         "label": "Let Praxe"
       },
       {
-        "value": "CFP",
+        "value": "PFP",
         "label": "Certifikát"
       },
       {
@@ -419,6 +524,7 @@
         "label": "Spokojených Klientů"
       }
     ],
+    "sign": "/img/other/butulova_sign.jpeg",
     "references": [
       {
         "quote": "Spolupráce s paní Ivetou Butulovou byla naprosto skvělá. Vše mi pečlivě vysvětlila, měla přehled o trhu i aktuálních možnostech a pomohla mi nastavit finanční plán, který dává smysl a je realistický. Oceňuji její ochotu, trpělivost a to, že …",
