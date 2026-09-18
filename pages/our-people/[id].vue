@@ -170,7 +170,7 @@ const references = computed(
       <div class="max-w-5xl mx-auto px-6 lg:px-16">
         <div class="flow-root">
           <div
-            class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:float-left md:mr-10 md:mb-6 md:block md:w-72 lg:w-80"
+            class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:float-left md:mr-10 md:mb-6 md:block md:w-80 lg:w-96"
             style="aspect-ratio: 4/5"
           >
             <NuxtImg
@@ -179,7 +179,7 @@ const references = computed(
               class="w-full h-full object-cover object-top"
               format="webp"
               loading="lazy"
-              sizes="sm:100vw md:40vw lg:33vw"
+              sizes="sm:100vw md:45vw lg:33vw"
             />
           </div>
           <div>
