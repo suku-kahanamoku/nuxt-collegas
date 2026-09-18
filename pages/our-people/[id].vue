@@ -167,13 +167,10 @@ const references = computed(
 
     <!-- About section -->
     <section class="py-24 bg-primary-950">
-      <div class="max-w-7xl mx-auto px-6 lg:px-16">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-16"
-          :class="user.aboutSections ? 'items-start' : 'items-center'"
-        >
+      <div class="max-w-5xl mx-auto px-6 lg:px-16">
+        <div class="flow-root">
           <div
-            class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:block"
+            class="hidden overflow-hidden rounded-2xl bg-primary-900/80 md:float-left md:mr-10 md:mb-6 md:block md:w-72 lg:w-80"
             style="aspect-ratio: 4/5"
           >
             <NuxtImg
@@ -182,7 +179,7 @@ const references = computed(
               class="w-full h-full object-cover object-top"
               format="webp"
               loading="lazy"
-              sizes="sm:100vw md:100vw lg:50vw xl:50vw"
+              sizes="sm:100vw md:40vw lg:33vw"
             />
           </div>
           <div>
@@ -220,7 +217,7 @@ const references = computed(
                   v-else
                   :class="
                     block.type === 'quote'
-                      ? 'border-y border-secondary-400/25 py-5 text-center text-lg font-semibold italic text-secondary-200'
+                      ? 'py-5 text-center text-lg font-semibold italic text-secondary-200'
                       : ''
                   "
                 >
