@@ -73,12 +73,85 @@
   {
     "slug": "tomas-kalous",
     "name": "Ing. Tomáš Kalous",
-    "role": "Zakladatel",
+    "role": "Specialista pro privátní klientelu",
     "group": "founders",
     "photo": "/img/user/kalous.png",
-    "headline": "Zakladatel",
-    "intro": "",
-    "about": "",
+    "headline": "Specialista pro privátní klientelu",
+    "intro": "Jsem finanční a investiční profesionál s více než 20 lety zkušeností a pevným základem v technickém vzdělání.",
+    "about": "Jsem finanční a investiční profesionál s více než 20 lety zkušeností a pevným základem v technickém vzdělání. Mým cílem je dosahovat výsledků, které přinášejí spokojenost a prosperitu nejen pro mě, ale především pro mé klienty a kolegy.",
+    "aboutSections": [
+      {
+        "type": "heading",
+        "text": "Profesionální shrnutí"
+      },
+      {
+        "type": "paragraph",
+        "text": "Jsem finanční a investiční profesionál s více než 20 lety zkušeností a pevným základem v technickém vzdělání. Mým cílem je dosahovat výsledků, které přinášejí spokojenost a prosperitu nejen pro mě, ale především pro mé klienty a kolegy.",
+        "highlights": [
+          "více než 20 lety zkušeností"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Vzdělání"
+      },
+      {
+        "type": "paragraph",
+        "text": "Jsem absolventem VUT v Brně, oboru konstrukce a dopravní stavby, což mi poskytlo silný analytický základ pro mé finanční dovednosti."
+      },
+      {
+        "type": "heading",
+        "text": "Profesionální zkušenosti"
+      },
+      {
+        "type": "paragraph",
+        "text": "Od roku 2005 jsem součástí finančního sektoru, kde jsem začínal jako finanční poradce. Postupem času jsem se vypracoval na vedoucí pozice, kde jsem řídil týmy desítek lidí. Založení vlastní společnosti Collegas bylo pro mě zlomovým okamžikem, který mi přinesl svobodu a umožnil mi dělat věci podle vlastního uvážení a přesvědčení.",
+        "highlights": [
+          "Od roku 2005",
+          "řídil týmy desítek lidí",
+          "Založení vlastní společnosti Collegas"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Vize a hodnoty"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sdílení znalostí a zkušeností s kolegy a partnery je pro mě klíčové pro dosažení dlouhodobé prosperity. Věřím, že společným růstem můžeme všichni dosáhnout většího úspěchu."
+      },
+      {
+        "type": "heading",
+        "text": "Odborné zaměření"
+      },
+      {
+        "type": "paragraph",
+        "text": "Specializuji se na investiční příležitosti — jejich vyhledávání, akvizice a zhodnocování. Tato oblast je mou profesní zálibou a zdrojem neustálé inspirace.",
+        "highlights": [
+          "investiční příležitosti"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Osobní zájmy"
+      },
+      {
+        "type": "paragraph",
+        "text": "Basketbal nejen formoval mé týmové dovednosti, ale také mě naučil důležitosti strategie a adaptability — vlastnosti, které jsou stejně důležité na hřišti jako v oblasti financí."
+      },
+      {
+        "type": "heading",
+        "text": "Závěr"
+      },
+      {
+        "type": "paragraph",
+        "text": "Děkuji za návštěvu mého profilu. Pokud máte jakékoli dotazy nebo potřebujete pomoc, neváhejte se na mě obrátit. Společně můžeme dosáhnout skvělých věcí."
+      },
+      {
+        "type": "quote",
+        "text": "„Sílu a čest.“"
+      }
+    ],
     "email": "tomas.kalous@collegas.cz",
     "phone": "+420 774 344 864",
     "brand": "COLLEGAS",
@@ -178,7 +251,9 @@
     "headline": "Specialista pro privátní klientelu",
     "intro": "",
     "about": "Oblasti financí se věnuji více než 20 let. Po celou tuto dobu jsem sbíral nové zkušenosti a poznatky a stal jsem se profesionálem v oblasti financí a úvěrů.\n\nPrioritou pro mne je spokojený klient. Proto každý pracovní případ řeším s maximální pečlivostí, precizností a silnou orientací na nejlepší možný výsledek.\n\nRočně se vždy účastním několika školení různých bankovních subjektů, abych měl vždy aktuální informace a novinky z ČNB a mohl je předat dál mezi své a potencionální klienty.",
-    "aboutHighlights": ["více než 20 let"],
+    "aboutHighlights": [
+      "více než 20 let"
+    ],
     "email": "jan.radosta@collegas.cz",
     "phone": "+420 731 011 108",
     "brand": "COLLEGAS",
@@ -2408,7 +2483,9 @@
     "photo": "/img/user/podobova.png",
     "intro": "",
     "about": "V oboru pracuji od roku 2010 a mám za sebou řadu větších realitních projektů. Stejně tak ráda spolupracuji na drobnějších zakázkách.\n\nV každé nemovitosti dokážu objevit její jedinečnost, krásu i hodnotu pro kupujícího nebo nájemníka.",
-    "aboutHighlights": ["od roku 2010"],
+    "aboutHighlights": [
+      "od roku 2010"
+    ],
     "slogan": "Spolehlivost, optimismus a profesionalita jsou základem každé spolupráce.",
     "email": "gabriela.podobova@collegas.cz",
     "phone": "+420 603 788 391",
@@ -2490,7 +2567,9 @@
     "photo": "/img/user/svancara.png",
     "intro": "",
     "about": "Můj „finanční“ příběh se začal psát již v 15 letech. Tehdy jsem si jako student přivydělával doučováním a vydělané peníze jsem nechtěl jen tak utratit. Narazil jsem na videa o investování, které mě zcela pohltilo. Začal jsem tedy zajímat více - číst knihy, poslouchat podcasty a testovat trhy „na papíře“. Později, při studiích na gymnáziu, jsem už investoval na vlastní pěst a s vlastním kapitálem. Po čase si mé okolí všimlo nově nabytých znalostí a postupně ke mně začali chodit pro radu ohledně investování nejen vrstevníci, ale i dospělí. Tehdy mi došlo, že finance jsou obor, kterému se chci v životě věnovat dále. Moje cesta proto přirozeně vedla na Ekonomicko-správní fakultu Masarykovy univerzity. Abych svou expertízu posunul na mezinárodní úroveň, aktuálně se připravuji na prestižní globální zkoušku CFA (Chartered Financial Analyst), která je ve světě považována za nejvyšší standard finanční odbornosti.\n\nBěhem školy jsem chtěl teorii okamžitě propojit s praxí, a tak jsem nastoupil do jedné z velkých poradenských společností. Rok a půl v tomto prostředí mi otevřel oči. Viděl jsem trh zevnitř a pochopil jsem, jak funguje klasická provizní mašinerie. Nikdy jsem nebyl člověk, který bezmyšlenkovitě poslouchá pokyny manažerů. Neustále jsem se ptal „PROČ?“ – proč máme klientovi nabízet tento produkt, když existuje levnější a efektivnější alternativa?\n\nČasem jsem zjistil, že pro řadu poradců je bohužel prioritou jejich vlastní peněženka a honba za smlouvami místo dlouhodobé přidané hodnoty pro klienta. Věděl jsem, že musím odejít. Odmítl jsem dělat práci způsobem, který s sebou nese předražené vstupní poplatky nebo neustálé „přesjednávání“ smluv. Hledal jsem alternativu, která by mi umožnila poskytovat klientům skutečnou kvalitu a dělat práci tak, jak považuji za správné. Věděl jsem, že nechci pracovat ani v „jednobarevné“ bance nebo pojišťovně, protože bych měl neustálou tendenci posílat lidi ke konkurenci za rohem, pokud by pro ně měla výhodnější řešení. Po desítkách schůzek napříč trhem jsem zakotvil v Collegas, kde působím již více než dva roky a našel jsem zde absolutní shodu v hodnotách.\n\nKdyž za mnou lidé v mých začátcích chodili pro rady ohledně výběru konkrétních akcií, brzy se debata stočila k dalším tématům: „Dominiku, jak máme vyřešit hypotéku na dům? Kdy refinancovat? Jak správně nastavit pojistku a máme si připlatit za připojištění splátek?“ V ten moment mi došla zásadní věc: Řešit investice a kupovat jednotlivé „skvělé cihly“ nemá žádný smysl, pokud nemáte pevné základy celého finančního domu. K čemu je rodině vyvážené portfolio na kapitálovém trhu, když nemá vytvořenou kratkodobou rezervu, přeplácí statisíce na drahých retailových produktech nebo riskuje ztrátu střechy nad hlavou kvůli skrytým výlukám v pojistné smlouvě?\n\nSkutečné poradenství tak vnímám jako promyšlený celek, kde je vše se vším provázáno. Moje práce nespočívá v prodeji smluv, ale v roli odborného partnera, který sází na tvrdá fakta namísto emocí. Transparentnost je u mě vždy na prvním místě – moji klienti dopředu přesně vědí, co a proč řešíme, jakým způsobem jsem za svou práci odměňován a kolik za dané služby reálně zaplatí. Moje hlavní expertíza spočívá v hloubkových finančních auditech a komplexním risk managementu – tedy v neprůstřelné ochraně a optimalizaci rodinného příjmu a majetku. Finanční svět je ale příliš složitý, než aby jeden člověk detailně rozuměl všemu. Na komplexní případy proto nejsem sám. V rámci sítě Collegas úzce spolupracuji s týmem specializovaných odborníků na daně, právo a reality. Pro své klienty funguji jako hlavní partner, který koordinuje celou strategii. Spolupracuji primárně s rodinami a podnikateli, kteří si váží svého času i peněz a chtějí dlouhodobě růst. Výsledkem mé práce pak nejsou stohy bezvýznamných papírů, ale klid, řád a srozumitelnost. Díky tomu ode mě klienti dostávají neprůstřelné řešení na míru, na které se mohou v jakékoliv životní fázi stoprocentně spolehnout.",
-    "aboutHighlights": ["CFA (Chartered Financial Analyst)"],
+    "aboutHighlights": [
+      "CFA (Chartered Financial Analyst)"
+    ],
     "slogan": "Chráním váš rozpočet, majetek i čas. Na rovinu, bez skrytých poplatků a prodejního tlaku.",
     "email": "dominik.svancara@collegas.cz",
     "phone": "+420 731 001 621",
@@ -2719,7 +2798,9 @@
     "photo": "/img/intro/stamp.png",
     "intro": "",
     "about": "Oblasti financí jsem se začal věnovat od roku 2003, tehdy souběžně s prací IT specialisty na VUT Brno.\n\nPostupně jsem se zaměřil čistě na neživotní pojištění a tuto specializaci si udržuji i nyní, kdy už na VUT z důvodu důchodového věku nepracuji.\n\nRočně se vždy účastním několika školení různých bankovních subjektů, abych měl vždy aktuální informace a novinky a mohl je předat dál mezi své a potencionální klienty. Baví mne hledat pro klienta nejoptimálnější varianty pojištění pro jeho specifické potřeby.",
-    "aboutHighlights": ["od roku 2003"],
+    "aboutHighlights": [
+      "od roku 2003"
+    ],
     "email": "jiri.kuchta@collegas.cz",
     "phone": "+420 603 892 547",
     "brand": "COLLEGAS",
