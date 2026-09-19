@@ -5,9 +5,6 @@
     "nodes": [
       {
         "title": "Finanční poradenství",
-        "names": [
-          "Collegas s.r.o."
-        ],
         "imgSrc": "/img/intro/main.png",
         "imgAlt": "Kancelář Collegas",
         "description": "Privátní finanční poradenství pro rodiny i podnikatele.",
@@ -15,9 +12,6 @@
       },
       {
         "title": "Odškodnění a náhrady",
-        "names": [
-          "Collegas Odškodnění s.r.o."
-        ],
         "imgSrc": "/img/holding/compensation.jpg",
         "imgAlt": "Odškodnění a náhrady škod",
         "description": "Specializace na odškodnění a náhrady škod pro fyzické i právnické osoby.",
@@ -25,19 +19,13 @@
       },
       {
         "title": "Brokerpoolové služby",
-        "names": [
-          "Collega Brokers a.s.",
-          "Collegas Investice s.r.o."
-        ],
         "imgSrc": "/img/holding/brokerpool.jpg",
         "imgAlt": "Brokerpoolové služby Collega Brokers",
+        "description": "Komplexní zázemí a podpora pro finanční poradce a zprostředkovatele.",
         "href": "https://www.collegabrokers.cz/"
       },
       {
         "title": "Specializované průmyslové pojištění",
-        "names": [
-          "Collega Makléř s.r.o."
-        ],
         "imgSrc": "/img/holding/makler.jpg",
         "imgAlt": "Specializované průmyslové pojištění",
         "description": "Specialista na průmyslové pojištění a profesní odpovědnost pro firmy a podnikatele.",
@@ -45,9 +33,6 @@
       },
       {
         "title": "Daňové poradenství a účetnictví",
-        "names": [
-          "Bula & Collegas s.r.o."
-        ],
         "imgSrc": "/img/holding/bula.jpg",
         "imgAlt": "Daňové poradenství a účetnictví",
         "description": "Účetnictví a daňové poradenství pro firmy i jednotlivce.",
@@ -55,13 +40,11 @@
       },
       {
         "title": "Honorované poradenství",
-        "names": [
-          "Fiduciam consilio s.r.o."
-        ],
         "imgSrc": "/img/logo/fiduciam.svg",
         "imgAlt": "Honorované poradenství",
         "imgContainerClass": "bg-[#063643]",
         "imgClass": "object-contain",
+        "description": "Nezávislé finanční poradenství hrazené přímo klientem.",
         "href": "https://www.fiduciam.cz/"
       }
     ]
@@ -72,9 +55,6 @@
     "nodes": [
       {
         "title": "Realitní kancelář",
-        "names": [
-          "Collegas Reality s.r.o."
-        ],
         "imgSrc": "/img/holding/reality.jpg",
         "imgAlt": "Realitní kancelář Collegas Reality",
         "description": "Prodej, pronájem a výkup nemovitostí.",
@@ -82,11 +62,9 @@
       },
       {
         "title": "Správa nemovitostí",
-        "names": [
-          "Postaráme.cz"
-        ],
         "imgSrc": "/img/holding/nemovitosti.jpg",
         "imgAlt": "Správa nemovitostí",
+        "description": "Komplexní péče o nemovitosti a jejich každodenní provoz.",
         "href": "https://www.postarame.cz/"
       },
       {
@@ -111,11 +89,9 @@
     "nodes": [
       {
         "title": "IT řešení na míru",
-        "names": [
-          "Collega Solution s.r.o."
-        ],
         "imgSrc": "/img/holding/networking.jpg",
         "imgAlt": "IT řešení na míru",
+        "description": "Vývoj webových aplikací a digitálních řešení podle potřeb klienta.",
         "href": "https://www.collegasolution.cz/"
       }
     ]
@@ -128,6 +104,7 @@
         "title": "Kancelářské prostory v AZ Tower v 11. patře",
         "imgSrc": "/img/branch/11th_floor/01.png",
         "imgAlt": "Kancelářské prostory v AZ Tower v 11. patře",
+        "description": "Moderní kancelářské zázemí v 11. patře brněnské AZ Tower.",
         "gallery": [
           "/img/branch/11th_floor/01.png",
           "/img/branch/11th_floor/02.png",
@@ -141,6 +118,7 @@
         "title": "Kancelářské prostory v AZ Tower ve 2. patře",
         "imgSrc": "/img/branch/2nd_floor/01.png",
         "imgAlt": "Kancelářské prostory v AZ Tower",
+        "description": "Komfortní kancelářské prostory ve 2. patře brněnské AZ Tower.",
         "gallery": [
           "/img/branch/2nd_floor/01.png",
           "/img/branch/2nd_floor/02.png",
@@ -169,22 +147,22 @@
     "nodes": [
       {
         "title": "Bytový dům České Budějovice",
-        "names": [
-          "Rezidence Srubec"
-        ],
         "imgSrc": "/img/holding/srubec.png",
         "imgAlt": "Rezidence Srubec",
+        "description": "Připravovaný projekt moderního bydlení v Českých Budějovicích.",
         "href": "https://www.srubec-hills.cz/"
       },
       {
         "title": "Výstavba bytů u Slavkova",
         "imgSrc": "/img/holding/krizanovice.png",
-        "imgAlt": "Projekt výstavby bytů u Slavkova"
+        "imgAlt": "Projekt výstavby bytů u Slavkova",
+        "description": "Připravovaný rezidenční projekt v klidné lokalitě u Slavkova."
       },
       {
         "title": "Výstavba bytů v Krkonoších",
         "imgSrc": "/img/holding/krkonose.png",
-        "imgAlt": "Projekt výstavby bytů v Krkonoších"
+        "imgAlt": "Projekt výstavby bytů v Krkonoších",
+        "description": "Připravovaný projekt horského bydlení v Krkonoších."
       }
     ]
   }

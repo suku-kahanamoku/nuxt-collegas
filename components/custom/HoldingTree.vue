@@ -50,7 +50,7 @@ const sections: HoldingSection[] = holdingData;
           <div class="holding-card-grid">
             <UiImageGallery
               v-for="node in section.nodes"
-              :key="`${node.title}-${node.names?.join('-') || ''}`"
+              :key="node.title"
               :images="node.gallery ?? []"
               :class="[
                 'holding-card-grid__item',
